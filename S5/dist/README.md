@@ -9,9 +9,29 @@ agentic, India-first model trained on **20T token exposures**
 a hypothesis; if the compute envelope changes, the percentages stay fixed and
 the token counts rescale.
 
-The companion [`V5 Mixture & Curriculum`](index.html) makes the hypothesis
-interactive: moving one lane renormalises the others, displays benchmark impact,
-and compares required exposure with published supply evidence.
+**[Open the interactive V5 Mixture & Curriculum site](https://midhaworks.github.io/ERAV5/).**
+It renormalises the other lanes when one moves, displays benchmark impact, and
+compares required exposure with published supply evidence. GitHub displays the
+repository's [`index.html`](index.html) as source; the Pages link above is the
+rendered submission.
+
+## Reviewer map
+
+This README is the submitted specification. The table below maps every grading
+requirement to the decision that can be challenged and the section containing
+its evidence.
+
+| Review question | Committed decision | Evidence |
+|---|---|---|
+| Does every capability have a budget? | Eight exclusive lanes sum to 100% of the 18T main phase; the 2T anneal is separately accounted | [§3](#3-main-pretraining-mixture) |
+| Is Indic more than one headline number? | Main Indic = 35% verified / 15% unverified / 30% translated / 20% synthetic; anneal Indic = 50/0/30/20 | [Indic ledger below](#indic-ledger-at-a-glance), [§5](#5-indic-is-four-ledgers-not-one) |
+| Are scarce capabilities explicit and sourced? | Agentic, reasoning and long-context are separate lanes with named inventories, acceptance rules and benchmarks | [§3](#3-main-pretraining-mixture), [§4](#4-supply-reality) |
+| Can the selector starve a lane? | No: 61% of every main-phase window is protected; only 39% is adaptive | [§6](#6-protected-selector-and-anneal-reserve) |
+| Is cooldown capacity reserved? | Yes: 10% / 2T is inaccessible until annealing and has its own locked mixture | [§6](#anneal-reserve) |
+| Is curriculum operational rather than aspirational? | Four difficulty bands and five visible-reasoning bands have definitions, examples and a staged schedule | [§7](#7-curriculum) |
+| Are the shares feasible against real supply? | Demand, published discovery supply, overlap risk, epoch caps and shortfalls are stated lane by lane | [§4](#4-supply-reality), [§5](#5-indic-is-four-ledgers-not-one) |
+| What would falsify the plan? | Pre-registered 1B screening and 3B confirmation gates determine promotion or revision | [§9](#9-proxy-experiments) |
+| Is cleaning aimed at actual bottlenecks? | The next 100B accepted-token tranche targets agentic, verified Indic, long-context, India-domain and safety | [§8](#8-data-gates-and-the-next-cleaning-tranche) |
 
 ## 1. Decisions in one page
 
@@ -28,6 +48,29 @@ and compares required exposure with published supply evidence.
   repository-level coding agents rather than generic function-calling chat.
 - Full-scale approval is blocked if accepted unique data cannot meet the stated
   effective-epoch caps. A percentage is not permission to fabricate supply.
+
+### Indic ledger at a glance
+
+Indic is **12% of the 18T main phase (2.16T)** and **17% of the 2T anneal
+(340B)**. The realised full-run exposure is therefore **2.50T, or 12.5% of the
+20T run**. These four counters are recorded separately throughout ingestion,
+sampling and evaluation:
+
+| Indic tier | Main split | Main exposure | Anneal split | Anneal exposure | Full-run exposure | Share of full 20T | Primary inventory and acceptance rule |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **Verified** | 35% | 756B | 50% | 170B | **926B** | **4.63%** | Provenance-backed native text: Sangraha verified, licensed literature/news, reviewed Bhashini monolingual/OCR/transcript text |
+| **Unverified** | 15% | 324B | 0% | 0 | **324B** | **1.62%** | Filtered native web text such as Sangraha unverified and IndicCorpV2; admitted only after language, quality and dedup gates |
+| **Translated** | 30% | 648B | 30% | 102B | **750B** | **3.75%** | Licensed native-script parallel text from BPCC/Samanantar-family and accepted Bhashini sentence pairs; pair-level quality checks required |
+| **Synthetic** | 20% | 432B | 20% | 68B | **500B** | **2.50%** | Romanised/transliterated and source-grounded generated tasks; provenance retained and model-only self-training loops rejected |
+| **Indic total** | **100%** | **2.160T** | **100%** | **340B** | **2.500T** | **12.50%** | Four independent ledgers; no tier silently compensates for another |
+
+The split is deliberately testable. Verified data receives the largest share
+because native quality is the target capability; unverified data is capped and
+removed from annealing; translated data supplies cross-lingual coverage without
+being mislabeled native authorship; synthetic data covers romanisation,
+code-mixing and scarce task formats but is capped to limit model-generated
+artifacts. The supply gaps and maximum effective epochs that may invalidate
+these shares are quantified in [§5](#5-indic-is-four-ledgers-not-one).
 
 ## 2. Accounting rules
 
@@ -164,7 +207,7 @@ environment is rejected, not counted as synthetic agentic data.
 
 The 2.16T main-pretraining Indic target is split before language sampling:
 
-| Tier | Share of Indic | Share of total run | Exposure | Maximum effective epochs | What qualifies |
+| Tier | Share of Indic | Share of main phase | Main exposure | Maximum effective epochs | What qualifies |
 |---|---:|---:|---:|---:|---|
 | **Verified** | **35%** | 4.2% | 0.756T | 4× | Human-authored trusted domains, reviewed OCR/transcripts and sources with document provenance |
 | **Unverified** | **15%** | 1.8% | 0.324T | 2× | Filtered multilingual/web corpora that pass language, quality and dedup gates but lack document-level human verification |
