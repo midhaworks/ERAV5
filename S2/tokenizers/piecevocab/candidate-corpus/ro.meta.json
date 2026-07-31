@@ -1,0 +1,13 @@
+{
+  "code": "ro",
+  "name": "Romanian",
+  "autonym": "română",
+  "title": "India",
+  "domain": "ro.wikipedia.org",
+  "article_url": "https://ro.wikipedia.org/wiki/India",
+  "source_url": "https://ro.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:28:05Z",
+  "characters": 214742,
+  "faithful_units": 67862
+}

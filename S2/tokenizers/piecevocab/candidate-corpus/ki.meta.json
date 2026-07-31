@@ -1,0 +1,13 @@
+{
+  "code": "ki",
+  "name": "Kikuyu",
+  "autonym": "Gĩkũyũ",
+  "title": "India",
+  "domain": "ki.wikipedia.org",
+  "article_url": "https://ki.wikipedia.org/wiki/India",
+  "source_url": "https://ki.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:19:15Z",
+  "characters": 3911,
+  "faithful_units": 1419
+}

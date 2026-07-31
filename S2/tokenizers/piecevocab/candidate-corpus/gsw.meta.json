@@ -1,0 +1,13 @@
+{
+  "code": "gsw",
+  "name": "Alemannic",
+  "autonym": "Alemannisch",
+  "title": "Indien",
+  "domain": "als.wikipedia.org",
+  "article_url": "https://als.wikipedia.org/wiki/Indien",
+  "source_url": "https://als.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:16:02Z",
+  "characters": 82699,
+  "faithful_units": 22974
+}

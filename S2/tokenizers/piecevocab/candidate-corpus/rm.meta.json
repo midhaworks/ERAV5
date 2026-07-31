@@ -1,0 +1,13 @@
+{
+  "code": "rm",
+  "name": "Romansh",
+  "autonym": "rumantsch",
+  "title": "India",
+  "domain": "rm.wikipedia.org",
+  "article_url": "https://rm.wikipedia.org/wiki/India",
+  "source_url": "https://rm.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:27:19Z",
+  "characters": 526,
+  "faithful_units": 193
+}

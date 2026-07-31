@@ -1,0 +1,13 @@
+{
+  "code": "vls",
+  "name": "West Flemish",
+  "autonym": "West-Vlams",
+  "title": "Indië",
+  "domain": "vls.wikipedia.org",
+  "article_url": "https://vls.wikipedia.org/wiki/Indi%C3%AB",
+  "source_url": "https://vls.wikipedia.org/w/rest.php/v1/page/Indi%C3%AB/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:06Z",
+  "characters": 9519,
+  "faithful_units": 3043
+}

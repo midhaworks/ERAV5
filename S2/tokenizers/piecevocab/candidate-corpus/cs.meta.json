@@ -1,0 +1,13 @@
+{
+  "code": "cs",
+  "name": "Czech",
+  "autonym": "čeština",
+  "title": "Indie",
+  "domain": "cs.wikipedia.org",
+  "article_url": "https://cs.wikipedia.org/wiki/Indie",
+  "source_url": "https://cs.wikipedia.org/w/rest.php/v1/page/Indie/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:11:10Z",
+  "characters": 235695,
+  "faithful_units": 71985
+}

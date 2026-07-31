@@ -1,0 +1,13 @@
+{
+  "code": "cv",
+  "name": "Chuvash",
+  "autonym": "чӑвашла",
+  "title": "Инди",
+  "domain": "cv.wikipedia.org",
+  "article_url": "https://cv.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8",
+  "source_url": "https://cv.wikipedia.org/w/rest.php/v1/page/%D0%98%D0%BD%D0%B4%D0%B8/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:11:14Z",
+  "characters": 21304,
+  "faithful_units": 7397
+}

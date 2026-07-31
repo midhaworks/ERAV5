@@ -1,0 +1,13 @@
+{
+  "code": "eu",
+  "name": "Basque",
+  "autonym": "euskara",
+  "title": "India",
+  "domain": "eu.wikipedia.org",
+  "article_url": "https://eu.wikipedia.org/wiki/India",
+  "source_url": "https://eu.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:13:14Z",
+  "characters": 147388,
+  "faithful_units": 48755
+}

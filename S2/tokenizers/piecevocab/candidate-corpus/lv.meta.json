@@ -1,0 +1,13 @@
+{
+  "code": "lv",
+  "name": "Latvian",
+  "autonym": "latviešu",
+  "title": "Indija",
+  "domain": "lv.wikipedia.org",
+  "article_url": "https://lv.wikipedia.org/wiki/Indija",
+  "source_url": "https://lv.wikipedia.org/w/rest.php/v1/page/Indija/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:22:13Z",
+  "characters": 171845,
+  "faithful_units": 51843
+}

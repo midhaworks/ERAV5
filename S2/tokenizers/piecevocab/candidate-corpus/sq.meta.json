@@ -1,0 +1,13 @@
+{
+  "code": "sq",
+  "name": "Albanian",
+  "autonym": "shqip",
+  "title": "India",
+  "domain": "sq.wikipedia.org",
+  "article_url": "https://sq.wikipedia.org/wiki/India",
+  "source_url": "https://sq.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:30:17Z",
+  "characters": 20214,
+  "faithful_units": 6203
+}

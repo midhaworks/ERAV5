@@ -1,0 +1,13 @@
+{
+  "code": "st",
+  "name": "Southern Sotho",
+  "autonym": "Sesotho",
+  "title": "India",
+  "domain": "st.wikipedia.org",
+  "article_url": "https://st.wikipedia.org/wiki/India",
+  "source_url": "https://st.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:31:07Z",
+  "characters": 844,
+  "faithful_units": 306
+}

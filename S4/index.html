@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="S4 assignment: an auditable eight-stage cleanup of a 61,000-record reasoning dataset.">
+  <title>S4 · Reasoning Dataset Cleanup</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to analysis</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="S4 cleanup report home">
+      <span class="brand-mark">S4</span>
+      <span>Dataset field report</span>
+    </a>
+    <nav aria-label="Report sections">
+      <a href="#strategies">Strategies</a>
+      <a href="#dataset">Dataset</a>
+      <a href="#cleanup">Cleanup</a>
+      <a href="#results">Results</a>
+    </nav>
+    <a class="header-link" href="data/cleanup-report.json">Raw report ↗</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Session 4 · Data cleaning &amp; deduplication</p>
+        <h1><span data-value="input_rows">61,000</span> in.<br><em><span data-value="output_rows">57,528</span> ready.</em></h1>
+        <p class="hero-deck">
+          A reproducible audit of a reasoning-summary dataset through the
+          session’s complete eight-stage cleaning pipeline.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#strategies">Explore the 8 strategies</a>
+          <a class="button button-secondary" href="https://www.youtube.com/watch?v=GpS-oisqkqA&t=430s">Watch the source session ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-score" aria-label="Retention summary">
+        <div class="score-orbit">
+          <svg viewBox="0 0 160 160" role="img" aria-labelledby="retention-title">
+            <title id="retention-title">94.31 percent of records retained</title>
+            <circle class="orbit-base" cx="80" cy="80" r="62"></circle>
+            <circle class="orbit-value" cx="80" cy="80" r="62" pathLength="100" data-ring="retention"></circle>
+          </svg>
+          <div class="score-value"><strong data-value="retention_percent">94.31%</strong><span>retained</span></div>
+        </div>
+        <dl class="score-list">
+          <div><dt>Quarantined</dt><dd data-value="rejected_rows">3,472</dd></div>
+          <div><dt>Output size</dt><dd data-value="output_mb">75.45 MB</dd></div>
+          <div><dt>Run status</dt><dd><span class="status-dot"></span>Verified</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="metric-strip" aria-label="Headline statistics">
+      <article>
+        <p>Strategies found</p>
+        <strong>8</strong>
+        <span>One connected pipeline</span>
+      </article>
+      <article>
+        <p>Dataset selected</p>
+        <strong data-value="input_mb">79.37 MB</strong>
+        <span>Measured inside 10–100 MB</span>
+      </article>
+      <article>
+        <p>Rows changed</p>
+        <strong data-value="normalized_user_rows">16,086</strong>
+        <span>Unicode/newline normalization</span>
+      </article>
+      <article>
+        <p>Estimated output</p>
+        <strong data-value="estimated_tokens_compact">1.80 cr</strong>
+        <span>Tokens at ≈4 characters/token</span>
+      </article>
+    </section>
+
+    <section class="report-section strategies-section" id="strategies">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">01 · Session finding</p>
+          <h2>Eight strategies, in order</h2>
+        </div>
+        <p>The session presents these as stages, not an à-la-carte checklist. Select one to see how it was applied here.</p>
+      </div>
+
+      <div class="strategy-layout">
+        <div class="strategy-rail" id="strategy-rail" role="tablist" aria-label="Cleaning strategies"></div>
+        <article class="strategy-detail" id="strategy-detail" role="tabpanel" tabindex="0" aria-live="polite">
+          <p class="detail-index">Strategy <span id="detail-number">01</span> / 08</p>
+          <h3 id="detail-name">Extract</h3>
+          <p class="detail-why" id="detail-why"></p>
+          <div class="detail-grid">
+            <div><span>Applied here</span><p id="detail-applied"></p></div>
+            <div><span>Observed result</span><p id="detail-result"></p></div>
+          </div>
+          <a id="detail-source" class="text-link" href="https://www.youtube.com/watch?v=GpS-oisqkqA&t=430s">Open this section in the session ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="report-section dataset-section" id="dataset">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">02 · Dataset decision</p>
+          <h2>Different from the example.<br>Size proven two ways.</h2>
+        </div>
+        <p>The ambiguous “10–100M” brief is interpreted as 10–100 MB of source data. Both the Hugging Face file listing and the downloaded JSONL measurement place this dataset inside that band.</p>
+      </div>
+
+      <article class="chosen-dataset">
+        <div class="dataset-label">Selected dataset</div>
+        <div class="dataset-title">
+          <div>
+            <p>SupraLabs /</p>
+            <h3>reasoning-summaries-61k</h3>
+          </div>
+          <a class="round-link" href="https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k" aria-label="Open selected dataset on Hugging Face">↗</a>
+        </div>
+        <div class="dataset-facts">
+          <div><span>Records</span><strong>61,000</strong></div>
+          <div><span>Downloaded</span><strong data-value="input_mb">79.37 MB</strong></div>
+          <div><span>Format</span><strong>JSONL</strong></div>
+          <div><span>Declared license</span><strong>Apache-2.0</strong></div>
+        </div>
+        <p class="dataset-rationale">It mirrors the example’s reasoning-oriented structure while providing enough volume to expose meaningful normalization, PII, duplication and provenance problems.</p>
+
+        <div class="size-proof" aria-label="Dataset size evidence">
+          <div class="size-proof-heading">
+            <div><span>10–100 MB requirement</span><h4>Evidence chain</h4></div>
+            <strong class="proof-status"><i></i><span data-value="size_verdict">PASS</span></strong>
+          </div>
+          <div class="size-proof-grid">
+            <div>
+              <span>Assignment band</span>
+              <strong>10.00–100.00 MB</strong>
+              <p>Decimal units: <span data-value="assignment_min_bytes">1,00,00,000</span> to <span data-value="assignment_max_bytes">10,00,00,000</span> bytes.</p>
+            </div>
+            <div>
+              <span>Published evidence</span>
+              <strong data-value="hf_size_mb">79.4 MB</strong>
+              <p><a href="https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k/tree/main">Hugging Face’s file listing</a> reports this size for <code>dataset.jsonl</code>.</p>
+            </div>
+            <div>
+              <span>Local measurement</span>
+              <strong data-value="local_size_mb">79.368728 MB</strong>
+              <p><span data-value="input_bytes">7,93,68,728</span> exact UTF-8 bytes in the downloaded JSONL.</p>
+            </div>
+          </div>
+          <p class="proof-equation"><code><span data-value="assignment_min_bytes">1,00,00,000</span> ≤ <span data-value="input_bytes">7,93,68,728</span> ≤ <span data-value="assignment_max_bytes">10,00,00,000</span> bytes</code><span>Published size corroborates the local byte count; SHA-256 below fixes the exact audited input.</span></p>
+        </div>
+      </article>
+
+      <div class="candidate-table-wrap">
+        <table class="candidate-table">
+          <caption>Dataset candidates considered</caption>
+          <thead>
+            <tr><th>Candidate</th><th>Scale</th><th>Decision</th><th>Reason</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://huggingface.co/datasets/lordx64/reasoning-distill-opus-4-7-max-sft">Lordx64 reasoning distill ↗</a></td>
+              <td>15.8 MB</td>
+              <td><span class="decision example">Example</span></td>
+              <td>Explicitly supplied as the reference; not reused.</td>
+            </tr>
+            <tr>
+              <td><a href="https://huggingface.co/datasets/ai4bharat/indic-align">AI4Bharat IndicAlign ↗</a></td>
+              <td>28.2 GB</td>
+              <td><span class="decision skip">Skipped</span></td>
+              <td>Relevant from S3, but far outside the size band.</td>
+            </tr>
+            <tr>
+              <td><a href="https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k">SupraLabs reasoning summaries ↗</a></td>
+              <td>79.4 MB</td>
+              <td><span class="decision selected">Selected</span></td>
+              <td>Comparable task, usable schema and in-range download.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="report-section cleanup-section" id="cleanup">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">03 · What changed</p>
+          <h2>Clean, quarantine,<br>or document the risk.</h2>
+        </div>
+        <p>Destructive filters are intentionally conservative. Rejected records are quarantined with reason codes rather than silently deleted.</p>
+      </div>
+
+      <div class="cleanup-grid">
+        <article class="chart-card">
+          <div class="card-topline">
+            <div>
+              <p class="mini-kicker">Audit explorer</p>
+              <h3 id="chart-title">Quarantine reasons</h3>
+            </div>
+            <div class="segmented-control" role="group" aria-label="Choose audit view">
+              <button class="active" data-chart-mode="rejections">Quarantined</button>
+              <button data-chart-mode="mutations">Mutated</button>
+            </div>
+          </div>
+          <div class="bar-chart" id="bar-chart" aria-live="polite"></div>
+          <p class="chart-note" id="chart-note">Primary reason per rejected row; categories therefore sum exactly to the quarantine total.</p>
+        </article>
+
+        <article class="language-card">
+          <p class="mini-kicker">Language-ID decision</p>
+          <h3>Profile, don’t over-filter.</h3>
+          <div class="language-visual">
+            <div class="language-ring" aria-hidden="true"></div>
+            <div><strong data-value="latin_rows">57,469</strong><span>Latin-dominant retained</span></div>
+          </div>
+          <div class="language-breakdown">
+            <div><span class="legend-dot latin"></span>Latin-dominant <strong data-value="latin_percent">99.90%</strong></div>
+            <div><span class="legend-dot mixed"></span>Mixed-script <strong data-value="mixed_rows">59</strong></div>
+          </div>
+          <p class="card-note">Unicode script profiling is not presented as language classification. Mixed-script reasoning was retained because code, names and translations can be valid.</p>
+        </article>
+      </div>
+
+      <div class="before-after">
+        <div class="before-after-heading">
+          <div><p class="mini-kicker">PII example</p><h3>Useful context stays. Identifiers do not.</h3></div>
+          <p>High-confidence replacement avoids inventing synthetic personal data.</p>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-panel before">
+            <span>Before</span>
+            <p>Contact John at <mark>john@example.com</mark> or call <mark>+1 415-555-2671</mark> to confirm the request.</p>
+          </div>
+          <div class="diff-arrow" aria-hidden="true">→</div>
+          <div class="diff-panel after">
+            <span>After</span>
+            <p>Contact John at <mark>[REDACTED_EMAIL]</mark> or call <mark>[REDACTED_PHONE]</mark> to confirm the request.</p>
+          </div>
+        </div>
+        <div class="mutation-stats">
+          <div><strong data-value="email_redactions">1,075</strong><span>Email patterns redacted</span></div>
+          <div><strong data-value="phone_redactions">383</strong><span>Phone patterns redacted</span></div>
+          <div><strong>0</strong><span>Secret patterns detected</span></div>
+        </div>
+      </div>
+
+      <article class="concern-card">
+        <div class="concern-icon">!</div>
+        <div>
+          <p class="mini-kicker">Additional concern found</p>
+          <h3>Collection-level license ≠ record-level provenance.</h3>
+          <p>The dataset card declares Apache-2.0, but one named upstream code dataset has no discoverable license and records carry no source field. Code-dominant rows cannot be traced safely.</p>
+        </div>
+        <div class="concern-action"><strong>1,502</strong><span>code-dominant records quarantined</span></div>
+      </article>
+    </section>
+
+    <section class="report-section results-section" id="results">
+      <div class="section-heading light">
+        <div>
+          <p class="section-kicker">04 · Final statistics</p>
+          <h2>The cleaned corpus,<br>with receipts.</h2>
+        </div>
+        <p>Counts come directly from the deterministic cleanup report. Numbers are displayed using the Indian grouping system.</p>
+      </div>
+
+      <div class="funnel-card">
+        <div class="funnel-numbers">
+          <div><span>Raw records</span><strong data-value="input_rows">61,000</strong></div>
+          <div class="funnel-arrow">→</div>
+          <div><span>Quarantined</span><strong class="negative">−<span data-value="rejected_rows">3,472</span></strong></div>
+          <div class="funnel-arrow">→</div>
+          <div><span>Clean records</span><strong class="positive" data-value="output_rows">57,528</strong></div>
+        </div>
+        <div class="funnel-track"><span data-funnel-fill></span></div>
+        <div class="funnel-caption"><span>0</span><strong data-value="retention_percent">94.31% retained</strong><span data-value="input_rows">61,000</span></div>
+      </div>
+
+      <article class="comparison-card">
+        <div class="comparison-heading">
+          <div>
+            <p class="mini-kicker">Measured before → after</p>
+            <h3>Raw and clean, on the same basis.</h3>
+          </div>
+          <p>Bytes are exact JSONL file measurements. Characters count the two training fields. Tokens are explicitly marked as a 4-characters-per-token estimate, not a tokenizer run.</p>
+        </div>
+        <div class="stats-table-wrap">
+          <table class="stats-table">
+            <thead>
+              <tr><th>Measure</th><th>Raw input</th><th>Clean output</th><th>Absolute change</th><th>Rate</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Records</th>
+                <td data-value="input_rows">61,000</td>
+                <td data-value="output_rows">57,528</td>
+                <td data-value="rows_removed">−3,472</td>
+                <td data-value="row_reduction">−5.69%</td>
+              </tr>
+              <tr>
+                <th>JSONL bytes</th>
+                <td data-value="input_bytes">7,93,68,728</td>
+                <td data-value="output_bytes">7,54,45,546</td>
+                <td data-value="bytes_removed">−39,23,182</td>
+                <td>−<span data-value="byte_reduction">4.94%</span></td>
+              </tr>
+              <tr>
+                <th>Training-field characters</th>
+                <td data-value="input_characters">7,56,58,341</td>
+                <td data-value="output_characters">7,21,54,409</td>
+                <td data-value="characters_removed">−35,03,932</td>
+                <td data-value="character_reduction">−4.63%</td>
+              </tr>
+              <tr>
+                <th>Estimated tokens (≈4 chars)</th>
+                <td data-value="estimated_input_tokens">1,89,14,585</td>
+                <td data-value="estimated_tokens">1,80,38,602</td>
+                <td data-value="estimated_tokens_removed">−8,75,983</td>
+                <td data-value="estimated_token_reduction">−4.63%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <div class="result-grid">
+        <article><span>Retained</span><strong data-value="retention_percent">94.31%</strong><p><span data-value="output_rows">57,528</span> clean records</p></article>
+        <article><span>Quarantined</span><strong data-value="rejection_percent">5.69%</strong><p><span data-value="rejected_rows">3,472</span> records with reason codes</p></article>
+        <article><span>Output file</span><strong data-value="output_mb">75.45 MB</strong><p><span data-value="output_bytes">7,54,45,546</span> exact bytes</p></article>
+        <article><span>In-place PII redactions</span><strong data-value="pii_redactions">1,458</strong><p>Email + contextual phone patterns</p></article>
+      </div>
+
+      <div class="measurement-grid">
+        <article>
+          <span>User-field length</span>
+          <strong><span data-value="user_p50">462</span> / <span data-value="user_p95">1,874</span></strong>
+          <p>Median / p95 characters; observed range <span data-value="user_min">5</span>–<span data-value="user_max">1,21,596</span>.</p>
+        </article>
+        <article>
+          <span>Summary length</span>
+          <strong><span data-value="summary_p50">255</span> / <span data-value="summary_p95">336</span></strong>
+          <p>Median / p95 characters; observed range <span data-value="summary_min">69</span>–<span data-value="summary_max">763</span>.</p>
+        </article>
+        <article>
+          <span>Retained script profile</span>
+          <strong><span data-value="latin_rows">57,469</span> / <span data-value="mixed_rows">59</span></strong>
+          <p>Latin-dominant / mixed-script; profiling informed review, not deletion.</p>
+        </article>
+        <article>
+          <span>Normalisation coverage</span>
+          <strong data-value="normalized_user_rows">16,086</strong>
+          <p>User rows changed by deterministic Unicode, newline, control-character or trailing-space normalisation.</p>
+        </article>
+      </div>
+
+      <article class="manifest-card">
+        <div class="manifest-heading">
+          <div><p class="mini-kicker">Reproducibility manifest</p><h3>Same input. Same policy. Verifiable output.</h3></div>
+          <span class="verified-pill"><i></i> SHA-256 recorded</span>
+        </div>
+        <div class="hash-list">
+          <div><span>Input dataset</span><code data-hash="input_sha256"></code><button data-copy="input_sha256">Copy</button></div>
+          <div><span>Clean output</span><code data-hash="output_sha256"></code><button data-copy="output_sha256">Copy</button></div>
+          <div><span>Quarantine</span><code data-hash="quarantine_sha256"></code><button data-copy="quarantine_sha256">Copy</button></div>
+          <div><span>Pipeline</span><code data-hash="pipeline_sha256"></code><button data-copy="pipeline_sha256">Copy</button></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="sources-section">
+      <p class="section-kicker">Sources &amp; scope</p>
+      <div class="sources-grid">
+        <p><sup>01</sup> Strategy names and ordering follow the <a href="https://www.youtube.com/watch?v=GpS-oisqkqA&t=430s">Session 4 pipeline demonstration</a>.</p>
+        <p><sup>02</sup> Dataset metadata and license come from the <a href="https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k">dataset card</a>; the published 79.4 MB evidence comes from its <a href="https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k/tree/main">file listing</a>.</p>
+        <p><sup>03</sup> Exact local bytes, before/after counts, hashes and distributions come from the <a href="data/cleanup-report.json">generated cleanup report</a>.</p>
+      </div>
+      <p class="scope-note">This is an assignment-scale audit, not a legal certification. Quarantined data is retained locally for review; it is not included in the cleaned output.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>S4 · Data Cleaning &amp; Deduplication</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

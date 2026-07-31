@@ -1,0 +1,56 @@
+{
+  "model": {
+    "name": "V5",
+    "parameters": 40000000000,
+    "training_token_budget": 20000000000000,
+    "main_pretraining_tokens": 18000000000000,
+    "maximum_context_tokens": 131072
+  },
+  "anneal": {
+    "reserve_percent": 10,
+    "reserve_tokens": 2000000000000,
+    "editable_guardrails_percent": {"indic": 8, "agentic": 8, "safety_grounding": 1},
+    "indic_tiers_percent": {"verified": 50, "unverified": 0, "translated": 30, "synthetic": 20}
+  },
+  "lanes": [
+    {"id": "general", "target_percent": 26, "protected_floor_percent": 12, "anneal_percent": 8},
+    {"id": "code", "target_percent": 24, "protected_floor_percent": 18, "anneal_percent": 22},
+    {"id": "agentic", "target_percent": 12, "protected_floor_percent": 8, "anneal_percent": 20},
+    {"id": "reasoning", "target_percent": 14, "protected_floor_percent": 8, "anneal_percent": 20},
+    {"id": "indic", "target_percent": 12, "protected_floor_percent": 8, "anneal_percent": 17},
+    {"id": "long_context", "target_percent": 8, "protected_floor_percent": 4, "anneal_percent": 10},
+    {"id": "india_domain", "target_percent": 3, "protected_floor_percent": 2, "anneal_percent": 2},
+    {"id": "safety_grounding", "target_percent": 1, "protected_floor_percent": 1, "anneal_percent": 1}
+  ],
+  "agentic_subslots": [
+    {"id": "repository_coding_agents", "share_of_agentic_percent": 60, "share_of_main_phase_percent": 7.2},
+    {"id": "tool_and_api_workflows", "share_of_agentic_percent": 15, "share_of_main_phase_percent": 1.8},
+    {"id": "browser_and_retrieval", "share_of_agentic_percent": 10, "share_of_main_phase_percent": 1.2},
+    {"id": "terminal_and_environment", "share_of_agentic_percent": 10, "share_of_main_phase_percent": 1.2},
+    {"id": "planning_and_recovery", "share_of_agentic_percent": 5, "share_of_main_phase_percent": 0.6}
+  ],
+  "agentic_provenance": [
+    {"id": "real_or_replayed", "share_of_agentic_percent": 35},
+    {"id": "generated_execution_verified", "share_of_agentic_percent": 55},
+    {"id": "simulated_human_audited", "share_of_agentic_percent": 10}
+  ],
+  "indic_tiers": [
+    {"id": "verified", "share_of_indic_percent": 35, "share_of_main_phase_percent": 4.2, "maximum_effective_epochs": 4},
+    {"id": "unverified", "share_of_indic_percent": 15, "share_of_main_phase_percent": 1.8, "maximum_effective_epochs": 2},
+    {"id": "translated", "share_of_indic_percent": 30, "share_of_main_phase_percent": 3.6, "maximum_effective_epochs": 2},
+    {"id": "synthetic", "share_of_indic_percent": 20, "share_of_main_phase_percent": 2.4, "maximum_effective_epochs": 2}
+  ],
+  "difficulty_bands": [
+    {"id": "D0", "percent": 20},
+    {"id": "D1", "percent": 35},
+    {"id": "D2", "percent": 30},
+    {"id": "D3", "percent": 15}
+  ],
+  "reasoning_length_bands": [
+    {"id": "R0", "percent": 35, "min_tokens": 0, "max_tokens": 128},
+    {"id": "R1", "percent": 35, "min_tokens": 129, "max_tokens": 512},
+    {"id": "R2", "percent": 20, "min_tokens": 513, "max_tokens": 2048},
+    {"id": "R3", "percent": 8, "min_tokens": 2049, "max_tokens": 8192},
+    {"id": "R4", "percent": 2, "min_tokens": 8193, "max_tokens": 32768}
+  ]
+}

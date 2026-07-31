@@ -1,0 +1,13 @@
+{
+  "code": "bs",
+  "name": "Bosnian",
+  "autonym": "bosanski",
+  "title": "Indija",
+  "domain": "bs.wikipedia.org",
+  "article_url": "https://bs.wikipedia.org/wiki/Indija",
+  "source_url": "https://bs.wikipedia.org/w/rest.php/v1/page/Indija/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:07:09Z",
+  "characters": 129958,
+  "faithful_units": 43157
+}

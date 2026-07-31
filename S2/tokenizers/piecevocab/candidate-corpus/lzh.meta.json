@@ -1,0 +1,13 @@
+{
+  "code": "lzh",
+  "name": "Literary Chinese",
+  "autonym": "文言",
+  "title": "印度",
+  "domain": "zh-classical.wikipedia.org",
+  "article_url": "https://zh-classical.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6",
+  "source_url": "https://zh-classical.wikipedia.org/w/rest.php/v1/page/%E5%8D%B0%E5%BA%A6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:22:15Z",
+  "characters": 10822,
+  "faithful_units": 4396
+}

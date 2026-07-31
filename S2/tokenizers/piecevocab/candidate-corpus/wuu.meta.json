@@ -1,0 +1,13 @@
+{
+  "code": "wuu",
+  "name": "Wu",
+  "autonym": "吴语",
+  "title": "印度",
+  "domain": "wuu.wikipedia.org",
+  "article_url": "https://wuu.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6",
+  "source_url": "https://wuu.wikipedia.org/w/rest.php/v1/page/%E5%8D%B0%E5%BA%A6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:14Z",
+  "characters": 8714,
+  "faithful_units": 3703
+}

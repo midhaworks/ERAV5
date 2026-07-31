@@ -1,0 +1,13 @@
+{
+  "code": "ia",
+  "name": "Interlingua",
+  "autonym": "interlingua",
+  "title": "India",
+  "domain": "ia.wikipedia.org",
+  "article_url": "https://ia.wikipedia.org/wiki/India",
+  "source_url": "https://ia.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:17:20Z",
+  "characters": 17490,
+  "faithful_units": 5613
+}

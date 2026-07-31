@@ -1,0 +1,13 @@
+{
+  "code": "pcd",
+  "name": "Picard",
+  "autonym": "Picard",
+  "title": "Inde",
+  "domain": "pcd.wikipedia.org",
+  "article_url": "https://pcd.wikipedia.org/wiki/Inde",
+  "source_url": "https://pcd.wikipedia.org/w/rest.php/v1/page/Inde/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:27:03Z",
+  "characters": 2493,
+  "faithful_units": 810
+}

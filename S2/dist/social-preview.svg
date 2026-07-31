@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#214a58"/>
+      <stop offset="0.62" stop-color="#285563"/>
+      <stop offset="1" stop-color="#4d7882"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="12%" r="65%">
+      <stop offset="0" stop-color="#d9de83" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#d9de83" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#102c34" flood-opacity=".3"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <circle cx="1138" cy="565" r="245" fill="#e5d3be" opacity=".12"/>
+
+  <g transform="translate(76 82)" filter="url(#shadow)">
+    <rect width="214" height="214" rx="46" fill="#f7faf8"/>
+    <rect x="42" y="43" width="130" height="25" rx="13" fill="#285563"/>
+    <rect x="42" y="88" width="58" height="25" rx="13" fill="#e5d3be"/>
+    <rect x="116" y="88" width="56" height="25" rx="13" fill="#285563"/>
+    <rect x="42" y="133" width="40" height="25" rx="13" fill="#285563"/>
+    <rect x="98" y="133" width="74" height="25" rx="13" fill="#e5d3be"/>
+  </g>
+
+  <text x="340" y="112" fill="#d9de83" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="4">ERA V5 · ASSIGNMENT 2</text>
+  <text x="340" y="192" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700">Faithful Multilingual</text>
+  <text x="340" y="262" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700">Tokenizers</text>
+  <text x="340" y="320" fill="#d7e5e5" font-family="Arial, Helvetica, sans-serif" font-size="27">PieceVocab + BPE · faithful Markdown evaluation</text>
+
+  <g transform="translate(76 388)" font-family="Arial, Helvetica, sans-serif">
+    <rect width="210" height="58" rx="29" fill="#ffffff" fill-opacity=".12" stroke="#ffffff" stroke-opacity=".3"/>
+    <text x="105" y="37" fill="#ffffff" font-size="22" font-weight="700" text-anchor="middle">10,000 tokens</text>
+    <rect x="226" width="265" height="58" rx="29" fill="#ffffff" fill-opacity=".12" stroke="#ffffff" stroke-opacity=".3"/>
+    <text x="358" y="37" fill="#ffffff" font-size="22" font-weight="700" text-anchor="middle">Exact encode → decode</text>
+    <rect x="507" width="310" height="58" rx="29" fill="#ffffff" fill-opacity=".12" stroke="#ffffff" stroke-opacity=".3"/>
+    <text x="662" y="37" fill="#ffffff" font-size="22" font-weight="700" text-anchor="middle">86 eligible languages</text>
+  </g>
+
+  <line x1="76" y1="510" x2="1124" y2="510" stroke="#ffffff" stroke-opacity=".2"/>
+  <text x="76" y="564" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Avnish Midha</text>
+  <text x="1124" y="564" fill="#d9de83" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="end">Wikipedia “India” page corpus</text>
+</svg>

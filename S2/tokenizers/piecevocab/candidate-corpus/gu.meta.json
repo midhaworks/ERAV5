@@ -1,0 +1,13 @@
+{
+  "code": "gu",
+  "name": "Gujarati",
+  "autonym": "ગુજરાતી",
+  "title": "ભારત",
+  "domain": "gu.wikipedia.org",
+  "article_url": "https://gu.wikipedia.org/wiki/%E0%AA%AD%E0%AA%BE%E0%AA%B0%E0%AA%A4",
+  "source_url": "https://gu.wikipedia.org/w/rest.php/v1/page/%E0%AA%AD%E0%AA%BE%E0%AA%B0%E0%AA%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:16:05Z",
+  "characters": 67298,
+  "faithful_units": 22382
+}

@@ -1,0 +1,13 @@
+{
+  "code": "ku",
+  "name": "Kurdish",
+  "autonym": "kurdî",
+  "title": "Hindistan",
+  "domain": "ku.wikipedia.org",
+  "article_url": "https://ku.wikipedia.org/wiki/Hindistan",
+  "source_url": "https://ku.wikipedia.org/w/rest.php/v1/page/Hindistan/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:20:16Z",
+  "characters": 48476,
+  "faithful_units": 15763
+}

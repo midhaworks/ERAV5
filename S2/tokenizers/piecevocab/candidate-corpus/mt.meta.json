@@ -1,0 +1,13 @@
+{
+  "code": "mt",
+  "name": "Maltese",
+  "autonym": "Malti",
+  "title": "Indja",
+  "domain": "mt.wikipedia.org",
+  "article_url": "https://mt.wikipedia.org/wiki/Indja",
+  "source_url": "https://mt.wikipedia.org/w/rest.php/v1/page/Indja/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:24:05Z",
+  "characters": 23964,
+  "faithful_units": 8377
+}

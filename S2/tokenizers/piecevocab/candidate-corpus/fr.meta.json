@@ -1,0 +1,13 @@
+{
+  "code": "fr",
+  "name": "French",
+  "autonym": "français",
+  "title": "Inde",
+  "domain": "fr.wikipedia.org",
+  "article_url": "https://fr.wikipedia.org/wiki/Inde",
+  "source_url": "https://fr.wikipedia.org/w/rest.php/v1/page/Inde/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:14:06Z",
+  "characters": 366002,
+  "faithful_units": 112602
+}

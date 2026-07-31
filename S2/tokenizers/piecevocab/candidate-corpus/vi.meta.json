@@ -1,0 +1,13 @@
+{
+  "code": "vi",
+  "name": "Vietnamese",
+  "autonym": "Tiếng Việt",
+  "title": "Ấn Độ",
+  "domain": "vi.wikipedia.org",
+  "article_url": "https://vi.wikipedia.org/wiki/%E1%BA%A4n_%C4%90%E1%BB%99",
+  "source_url": "https://vi.wikipedia.org/w/rest.php/v1/page/%E1%BA%A4n%20%C4%90%E1%BB%99/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:05Z",
+  "characters": 318390,
+  "faithful_units": 110353
+}

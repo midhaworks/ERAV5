@@ -1,0 +1,13 @@
+{
+  "code": "kge",
+  "name": "Komering",
+  "autonym": "Kumoring",
+  "title": "Indiya",
+  "domain": "kge.wikipedia.org",
+  "article_url": "https://kge.wikipedia.org/wiki/Indiya",
+  "source_url": "https://kge.wikipedia.org/w/rest.php/v1/page/Indiya/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:19:14Z",
+  "characters": 17333,
+  "faithful_units": 5978
+}

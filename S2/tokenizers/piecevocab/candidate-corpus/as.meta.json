@@ -1,0 +1,13 @@
+{
+  "code": "as",
+  "name": "Assamese",
+  "autonym": "অসমীয়া",
+  "title": "ভাৰত",
+  "domain": "as.wikipedia.org",
+  "article_url": "https://as.wikipedia.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A7%B0%E0%A6%A4",
+  "source_url": "https://as.wikipedia.org/w/rest.php/v1/page/%E0%A6%AD%E0%A6%BE%E0%A7%B0%E0%A6%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:15Z",
+  "characters": 163253,
+  "faithful_units": 53321
+}

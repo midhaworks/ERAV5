@@ -1,0 +1,13 @@
+{
+  "code": "pa",
+  "name": "Punjabi",
+  "autonym": "ਪੰਜਾਬੀ",
+  "title": "ਭਾਰਤ",
+  "domain": "pa.wikipedia.org",
+  "article_url": "https://pa.wikipedia.org/wiki/%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4",
+  "source_url": "https://pa.wikipedia.org/w/rest.php/v1/page/%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:26:16Z",
+  "characters": 126280,
+  "faithful_units": 40052
+}

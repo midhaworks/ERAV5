@@ -1,0 +1,13 @@
+{
+  "code": "br",
+  "name": "Breton",
+  "autonym": "brezhoneg",
+  "title": "India",
+  "domain": "br.wikipedia.org",
+  "article_url": "https://br.wikipedia.org/wiki/India",
+  "source_url": "https://br.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:07:07Z",
+  "characters": 29740,
+  "faithful_units": 10023
+}

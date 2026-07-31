@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563eb"/>
+      <stop offset=".34" stop-color="#7c3aed"/>
+      <stop offset=".67" stop-color="#ea580c"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bg)"/>
+  <circle cx="20" cy="22" r="11" fill="#eff6ff"/>
+  <circle cx="44" cy="22" r="11" fill="#fff7ed"/>
+  <circle cx="20" cy="43" r="11" fill="#f5f3ff"/>
+  <circle cx="44" cy="43" r="11" fill="#f0fdf4"/>
+  <text x="20" y="27" text-anchor="middle" font-family="Noto Sans Devanagari, Devanagari Sangam MN, sans-serif" font-size="15" font-weight="800" fill="#2563eb">अ</text>
+  <text x="44" y="27" text-anchor="middle" font-family="Noto Sans Bengali, Bangla Sangam MN, sans-serif" font-size="15" font-weight="800" fill="#ea580c">আ</text>
+  <text x="20" y="48" text-anchor="middle" font-family="Noto Sans Tamil, Tamil Sangam MN, sans-serif" font-size="15" font-weight="800" fill="#7c3aed">அ</text>
+  <text x="44" y="48" text-anchor="middle" font-family="Noto Sans Telugu, Telugu Sangam MN, sans-serif" font-size="15" font-weight="800" fill="#16a34a">అ</text>
+</svg>

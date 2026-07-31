@@ -1,0 +1,13 @@
+{
+  "code": "ast",
+  "name": "Asturian",
+  "autonym": "asturianu",
+  "title": "India",
+  "domain": "ast.wikipedia.org",
+  "article_url": "https://ast.wikipedia.org/wiki/India",
+  "source_url": "https://ast.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:20Z",
+  "characters": 52966,
+  "faithful_units": 16624
+}

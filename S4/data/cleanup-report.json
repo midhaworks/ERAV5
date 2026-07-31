@@ -1,0 +1,174 @@
+{
+  "dataset": {
+    "id": "SupraLabs/reasoning-summaries-61k",
+    "source_url": "https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k",
+    "files_url": "https://huggingface.co/datasets/SupraLabs/reasoning-summaries-61k/tree/main",
+    "declared_license": "apache-2.0",
+    "input_sha256": "c9947e8c7cc140ea3f58331c439d2d33f71f6db4c5f3135a4aa036d0683fc846",
+    "output_sha256": "558c213accb98c1c529f9ea9e30995684ea6dd3350dfb00aecc1dfce62c50aa0",
+    "quarantine_sha256": "926a69b599d2d38f9fad2b90b90d4d7307a93b98969d8e07d6c3b91601116edc",
+    "pipeline_sha256": "649d7ed8a4151bae250f2794cfca208ce41d885ed7d7a7c10e6b4524977c79d3",
+    "record_schema": [
+      "user",
+      "assistant"
+    ],
+    "size_evidence": {
+      "interpretation": "10–100 MB decimal file-size band",
+      "assignment_min_bytes": 10000000,
+      "assignment_max_bytes": 100000000,
+      "hugging_face_listed_size_mb": 79.4,
+      "local_input_bytes": 79368728,
+      "local_input_mb_decimal": 79.368728,
+      "within_assignment_band": true,
+      "measurement": "Exact UTF-8 bytes summed from the downloaded JSONL; cross-checked against the local file size."
+    }
+  },
+  "stages": [
+    {
+      "number": 1,
+      "name": "Extract",
+      "applied": "Parse JSONL and nested assistant JSON; enforce the two-field record schema."
+    },
+    {
+      "number": 2,
+      "name": "Normalize",
+      "applied": "NFC Unicode, newline and control-character normalization while preserving meaningful structure."
+    },
+    {
+      "number": 3,
+      "name": "Language ID",
+      "applied": "Conservative Unicode script profiling; report mixed scripts without deleting multilingual reasoning."
+    },
+    {
+      "number": 4,
+      "name": "Quality filter",
+      "applied": "Schema, field-length, completeness, compression, injection and high-confidence toxicity gates."
+    },
+    {
+      "number": 5,
+      "name": "Deduplicate",
+      "applied": "Canonical SHA-256 exact matching plus 64-bit 3-word-shingle SimHash near matching."
+    },
+    {
+      "number": 6,
+      "name": "PII scrub",
+      "applied": "Redact high-confidence email, contextual phone and secret patterns."
+    },
+    {
+      "number": 7,
+      "name": "Decontaminate",
+      "applied": "Quarantine named benchmark traces and code records with unresolved source provenance."
+    },
+    {
+      "number": 8,
+      "name": "Manifest",
+      "applied": "Record source, policy, counts, distributions and SHA-256 hashes for reproducibility."
+    }
+  ],
+  "policy": {
+    "deterministic": true,
+    "unicode_normalization": "NFC",
+    "language_id_method": "Unicode script-family profile, used for reporting rather than deletion",
+    "near_duplicate_method": "64-bit 3-word-shingle SimHash; Hamming distance <= 3",
+    "benchmark_markers_quarantined": true,
+    "high_confidence_pii_and_secret_redaction": true,
+    "code_dominant_records_quarantined": "record-level upstream provenance is unavailable",
+    "unresolved_provenance_concern": "The collection card names an upstream code dataset with no discoverable license and provides no per-record source field."
+  },
+  "counts": {
+    "input_rows": 61000,
+    "output_rows": 57528,
+    "rejected_rows": 3472,
+    "rejection_rate": 0.056918032786885245,
+    "retention_rate": 0.9430819672131148,
+    "input_bytes": 79368728,
+    "output_bytes": 75445546,
+    "bytes_removed": 3923182,
+    "input_megabytes_decimal": 79.368728,
+    "output_megabytes_decimal": 75.445546,
+    "byte_reduction": 0.04942982077273561,
+    "input_characters": 75658341,
+    "output_characters": 72154409,
+    "characters_removed": 3503932,
+    "character_reduction": 0.04631256717616894,
+    "estimated_input_tokens_at_4_chars": 18914585,
+    "estimated_output_tokens_at_4_chars": 18038602,
+    "estimated_tokens_removed_at_4_chars": 875983,
+    "estimated_token_reduction": 0.04631256778829673,
+    "average_input_bytes_per_row": 1301.1266885245902,
+    "average_output_bytes_per_row": 1311.4578292309832
+  },
+  "mutations": {
+    "email_redactions": 1075,
+    "normalized_summary_fields": 0,
+    "normalized_user_rows": 16086,
+    "phone_redactions": 383,
+    "secret_redactions": 0
+  },
+  "primary_rejections": {
+    "benchmark_contamination": 10,
+    "code_provenance_unknown": 1502,
+    "exact_duplicate": 1,
+    "incomplete_or_placeholder_task": 59,
+    "invalid_summary_schema": 11,
+    "near_duplicate": 5,
+    "non_compressive_summary": 1,
+    "prompt_injection": 1,
+    "user_length_outlier": 1882
+  },
+  "issue_occurrences": {
+    "benchmark_contamination": 10,
+    "code_provenance_unknown": 1502,
+    "exact_duplicate": 1,
+    "incomplete_or_placeholder_task": 59,
+    "invalid_summary_schema": 11,
+    "near_duplicate": 5,
+    "non_compressive_summary": 1,
+    "prompt_injection": 1,
+    "user_length_outlier": 1882
+  },
+  "script_profiles": {
+    "all_valid_rows": {
+      "cyrillic_dominant": 1,
+      "latin_dominant": 60921,
+      "mixed_script": 66,
+      "no_letters": 1
+    },
+    "retained_rows": {
+      "latin_dominant": 57469,
+      "mixed_script": 59
+    }
+  },
+  "lengths": {
+    "user": {
+      "min": 5,
+      "p50": 462,
+      "p95": 1874,
+      "max": 121596
+    },
+    "title": {
+      "min": 8,
+      "p50": 23,
+      "p95": 30,
+      "max": 57
+    },
+    "sub_title": {
+      "min": 37,
+      "p50": 79,
+      "p95": 98,
+      "max": 141
+    },
+    "summary": {
+      "min": 69,
+      "p50": 255,
+      "p95": 336,
+      "max": 763
+    },
+    "cur_task": {
+      "min": 50,
+      "p50": 111,
+      "p95": 142,
+      "max": 226
+    }
+  }
+}

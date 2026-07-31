@@ -1,0 +1,13 @@
+{
+  "code": "ilo",
+  "name": "Iloko",
+  "autonym": "Ilokano",
+  "title": "India",
+  "domain": "ilo.wikipedia.org",
+  "article_url": "https://ilo.wikipedia.org/wiki/India",
+  "source_url": "https://ilo.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:02Z",
+  "characters": 44379,
+  "faithful_units": 14260
+}

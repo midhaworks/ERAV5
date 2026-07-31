@@ -1,0 +1,13 @@
+{
+  "code": "li",
+  "name": "Limburgish",
+  "autonym": "Limburgs",
+  "title": "India",
+  "domain": "li.wikipedia.org",
+  "article_url": "https://li.wikipedia.org/wiki/India",
+  "source_url": "https://li.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:21:15Z",
+  "characters": 13713,
+  "faithful_units": 4685
+}

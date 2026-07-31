@@ -1,0 +1,13 @@
+{
+  "code": "sl",
+  "name": "Slovenian",
+  "autonym": "slovenščina",
+  "title": "Indija",
+  "domain": "sl.wikipedia.org",
+  "article_url": "https://sl.wikipedia.org/wiki/Indija",
+  "source_url": "https://sl.wikipedia.org/w/rest.php/v1/page/Indija/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:30:10Z",
+  "characters": 113409,
+  "faithful_units": 34056
+}

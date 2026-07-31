@@ -1,0 +1,13 @@
+{
+  "code": "tr",
+  "name": "Turkish",
+  "autonym": "Türkçe",
+  "title": "Hindistan",
+  "domain": "tr.wikipedia.org",
+  "article_url": "https://tr.wikipedia.org/wiki/Hindistan",
+  "source_url": "https://tr.wikipedia.org/w/rest.php/v1/page/Hindistan/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:12Z",
+  "characters": 99375,
+  "faithful_units": 31664
+}

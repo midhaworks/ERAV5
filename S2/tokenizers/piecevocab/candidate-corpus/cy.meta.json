@@ -1,0 +1,13 @@
+{
+  "code": "cy",
+  "name": "Welsh",
+  "autonym": "Cymraeg",
+  "title": "India",
+  "domain": "cy.wikipedia.org",
+  "article_url": "https://cy.wikipedia.org/wiki/India",
+  "source_url": "https://cy.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:11:17Z",
+  "characters": 232837,
+  "faithful_units": 74434
+}

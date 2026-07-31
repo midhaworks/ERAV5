@@ -1,0 +1,13 @@
+{
+  "code": "dag",
+  "name": "Dagbani",
+  "autonym": "dagbanli",
+  "title": "India",
+  "domain": "dag.wikipedia.org",
+  "article_url": "https://dag.wikipedia.org/wiki/India",
+  "source_url": "https://dag.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:11:22Z",
+  "characters": 8620,
+  "faithful_units": 2826
+}

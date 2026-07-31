@@ -1,0 +1,13 @@
+{
+  "code": "ga",
+  "name": "Irish",
+  "autonym": "Gaeilge",
+  "title": "An India",
+  "domain": "ga.wikipedia.org",
+  "article_url": "https://ga.wikipedia.org/wiki/An_India",
+  "source_url": "https://ga.wikipedia.org/w/rest.php/v1/page/An%20India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:14:13Z",
+  "characters": 69027,
+  "faithful_units": 21787
+}

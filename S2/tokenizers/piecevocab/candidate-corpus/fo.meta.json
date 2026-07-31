@@ -1,0 +1,13 @@
+{
+  "code": "fo",
+  "name": "Faroese",
+  "autonym": "føroyskt",
+  "title": "India",
+  "domain": "fo.wikipedia.org",
+  "article_url": "https://fo.wikipedia.org/wiki/India",
+  "source_url": "https://fo.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:14:03Z",
+  "characters": 36478,
+  "faithful_units": 10885
+}

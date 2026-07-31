@@ -1,0 +1,13 @@
+{
+  "code": "an",
+  "name": "Aragonese",
+  "autonym": "aragonés",
+  "title": "India",
+  "domain": "an.wikipedia.org",
+  "article_url": "https://an.wikipedia.org/wiki/India",
+  "source_url": "https://an.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:05:03Z",
+  "characters": 90186,
+  "faithful_units": 28390
+}

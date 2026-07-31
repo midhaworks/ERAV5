@@ -1,0 +1,13 @@
+{
+  "code": "stq",
+  "name": "Saterland Frisian",
+  "autonym": "Seeltersk",
+  "title": "Indien",
+  "domain": "stq.wikipedia.org",
+  "article_url": "https://stq.wikipedia.org/wiki/Indien",
+  "source_url": "https://stq.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:31:08Z",
+  "characters": 14355,
+  "faithful_units": 4479
+}

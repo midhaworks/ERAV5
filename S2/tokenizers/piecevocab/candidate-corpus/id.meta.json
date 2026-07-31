@@ -1,0 +1,13 @@
+{
+  "code": "id",
+  "name": "Indonesian",
+  "autonym": "Bahasa Indonesia",
+  "title": "India",
+  "domain": "id.wikipedia.org",
+  "article_url": "https://id.wikipedia.org/wiki/India",
+  "source_url": "https://id.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:04:16Z",
+  "characters": 69284,
+  "faithful_units": 21498
+}

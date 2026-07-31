@@ -1,0 +1,13 @@
+{
+  "code": "pam",
+  "name": "Pampanga",
+  "autonym": "Kapampangan",
+  "title": "India",
+  "domain": "pam.wikipedia.org",
+  "article_url": "https://pam.wikipedia.org/wiki/India",
+  "source_url": "https://pam.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:26:17Z",
+  "characters": 16725,
+  "faithful_units": 5426
+}

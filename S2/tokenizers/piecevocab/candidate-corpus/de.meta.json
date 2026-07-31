@@ -1,0 +1,13 @@
+{
+  "code": "de",
+  "name": "German",
+  "autonym": "Deutsch",
+  "title": "Indien",
+  "domain": "de.wikipedia.org",
+  "article_url": "https://de.wikipedia.org/wiki/Indien",
+  "source_url": "https://de.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:12:06Z",
+  "characters": 455952,
+  "faithful_units": 124456
+}

@@ -1,0 +1,13 @@
+{
+  "code": "bbc",
+  "name": "Batak Toba",
+  "autonym": "Batak Toba",
+  "title": "India",
+  "domain": "bbc.wikipedia.org",
+  "article_url": "https://bbc.wikipedia.org/wiki/India",
+  "source_url": "https://bbc.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:06:13Z",
+  "characters": 2451,
+  "faithful_units": 790
+}

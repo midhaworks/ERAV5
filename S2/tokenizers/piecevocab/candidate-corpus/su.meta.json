@@ -1,0 +1,13 @@
+{
+  "code": "su",
+  "name": "Sundanese",
+  "autonym": "Sunda",
+  "title": "India",
+  "domain": "su.wikipedia.org",
+  "article_url": "https://su.wikipedia.org/wiki/India",
+  "source_url": "https://su.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:31:10Z",
+  "characters": 81340,
+  "faithful_units": 25023
+}

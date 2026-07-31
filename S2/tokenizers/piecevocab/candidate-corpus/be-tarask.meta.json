@@ -1,0 +1,13 @@
+{
+  "code": "be-tarask",
+  "name": "Belarusian (Taraškievica orthography)",
+  "autonym": "беларуская (тарашкевіца)",
+  "title": "Індыя",
+  "domain": "be-tarask.wikipedia.org",
+  "article_url": "https://be-tarask.wikipedia.org/wiki/%D0%86%D0%BD%D0%B4%D1%8B%D1%8F",
+  "source_url": "https://be-tarask.wikipedia.org/w/rest.php/v1/page/%D0%86%D0%BD%D0%B4%D1%8B%D1%8F/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:31Z",
+  "characters": 45328,
+  "faithful_units": 12284
+}

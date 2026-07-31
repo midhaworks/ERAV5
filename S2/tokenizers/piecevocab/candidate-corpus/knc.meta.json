@@ -1,0 +1,13 @@
+{
+  "code": "knc",
+  "name": "Central Kanuri",
+  "autonym": "Yerwa Kanuri",
+  "title": "India",
+  "domain": "knc.wikipedia.org",
+  "article_url": "https://knc.wikipedia.org/wiki/India",
+  "source_url": "https://knc.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:20:08Z",
+  "characters": 10180,
+  "faithful_units": 3211
+}

@@ -1,0 +1,13 @@
+{
+  "code": "nso",
+  "name": "Northern Sotho",
+  "autonym": "Sesotho sa Leboa",
+  "title": "India",
+  "domain": "nso.wikipedia.org",
+  "article_url": "https://nso.wikipedia.org/wiki/India",
+  "source_url": "https://nso.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:16Z",
+  "characters": 1466,
+  "faithful_units": 496
+}

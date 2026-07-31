@@ -1,0 +1,13 @@
+{
+  "code": "lfn",
+  "name": "Lingua Franca Nova",
+  "autonym": "Lingua Franca Nova",
+  "title": "Barat",
+  "domain": "lfn.wikipedia.org",
+  "article_url": "https://lfn.wikipedia.org/wiki/Barat",
+  "source_url": "https://lfn.wikipedia.org/w/rest.php/v1/page/Barat/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:21:12Z",
+  "characters": 13015,
+  "faithful_units": 4364
+}

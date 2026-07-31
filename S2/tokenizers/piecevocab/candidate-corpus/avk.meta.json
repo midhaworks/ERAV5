@@ -1,0 +1,13 @@
+{
+  "code": "avk",
+  "name": "Kotava",
+  "autonym": "Kotava",
+  "title": "Barata",
+  "domain": "avk.wikipedia.org",
+  "article_url": "https://avk.wikipedia.org/wiki/Barata",
+  "source_url": "https://avk.wikipedia.org/w/rest.php/v1/page/Barata/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:24Z",
+  "characters": 5898,
+  "faithful_units": 2131
+}

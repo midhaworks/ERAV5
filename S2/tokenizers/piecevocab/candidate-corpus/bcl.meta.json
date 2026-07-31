@@ -1,0 +1,13 @@
+{
+  "code": "bcl",
+  "name": "Central Bikol",
+  "autonym": "Bikol Central",
+  "title": "Indya",
+  "domain": "bcl.wikipedia.org",
+  "article_url": "https://bcl.wikipedia.org/wiki/Indya",
+  "source_url": "https://bcl.wikipedia.org/w/rest.php/v1/page/Indya/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:06:14Z",
+  "characters": 39033,
+  "faithful_units": 12658
+}

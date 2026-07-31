@@ -1,0 +1,13 @@
+{
+  "code": "vec",
+  "name": "Venetian",
+  "autonym": "vèneto",
+  "title": "Ìndia",
+  "domain": "vec.wikipedia.org",
+  "article_url": "https://vec.wikipedia.org/wiki/%C3%8Cndia",
+  "source_url": "https://vec.wikipedia.org/w/rest.php/v1/page/%C3%8Cndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:34:17Z",
+  "characters": 105773,
+  "faithful_units": 34229
+}

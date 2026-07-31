@@ -1,0 +1,13 @@
+{
+  "code": "pdc",
+  "name": "Pennsylvania German",
+  "autonym": "Deitsch",
+  "title": "India",
+  "domain": "pdc.wikipedia.org",
+  "article_url": "https://pdc.wikipedia.org/wiki/India",
+  "source_url": "https://pdc.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:27:04Z",
+  "characters": 587,
+  "faithful_units": 212
+}

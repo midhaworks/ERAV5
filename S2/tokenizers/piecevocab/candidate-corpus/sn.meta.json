@@ -1,0 +1,13 @@
+{
+  "code": "sn",
+  "name": "Shona",
+  "autonym": "chiShona",
+  "title": "India",
+  "domain": "sn.wikipedia.org",
+  "article_url": "https://sn.wikipedia.org/wiki/India",
+  "source_url": "https://sn.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:30:14Z",
+  "characters": 1101,
+  "faithful_units": 402
+}

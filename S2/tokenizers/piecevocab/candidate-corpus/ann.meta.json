@@ -1,0 +1,13 @@
+{
+  "code": "ann",
+  "name": "Obolo",
+  "autonym": "Obolo",
+  "title": "India",
+  "domain": "ann.wikipedia.org",
+  "article_url": "https://ann.wikipedia.org/wiki/India",
+  "source_url": "https://ann.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:05:05Z",
+  "characters": 685,
+  "faithful_units": 204
+}

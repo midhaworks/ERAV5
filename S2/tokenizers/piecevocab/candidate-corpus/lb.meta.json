@@ -1,0 +1,13 @@
+{
+  "code": "lb",
+  "name": "Luxembourgish",
+  "autonym": "Lëtzebuergesch",
+  "title": "Indien",
+  "domain": "lb.wikipedia.org",
+  "article_url": "https://lb.wikipedia.org/wiki/Indien",
+  "source_url": "https://lb.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:21:08Z",
+  "characters": 45927,
+  "faithful_units": 13654
+}

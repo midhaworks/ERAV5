@@ -1,0 +1,13 @@
+{
+  "code": "km",
+  "name": "Khmer",
+  "autonym": "ភាសាខ្មែរ",
+  "title": "ឥណ្ឌា",
+  "domain": "km.wikipedia.org",
+  "article_url": "https://km.wikipedia.org/wiki/%E1%9E%A5%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%B6",
+  "source_url": "https://km.wikipedia.org/w/rest.php/v1/page/%E1%9E%A5%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%B6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:20:05Z",
+  "characters": 81722,
+  "faithful_units": 26899
+}

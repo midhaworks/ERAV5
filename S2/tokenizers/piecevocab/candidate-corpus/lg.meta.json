@@ -1,0 +1,13 @@
+{
+  "code": "lg",
+  "name": "Ganda",
+  "autonym": "Luganda",
+  "title": "India",
+  "domain": "lg.wikipedia.org",
+  "article_url": "https://lg.wikipedia.org/wiki/India",
+  "source_url": "https://lg.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:21:13Z",
+  "characters": 433,
+  "faithful_units": 159
+}

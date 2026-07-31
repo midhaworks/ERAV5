@@ -1,0 +1,13 @@
+{
+  "code": "oc",
+  "name": "Occitan",
+  "autonym": "occitan",
+  "title": "Índia",
+  "domain": "oc.wikipedia.org",
+  "article_url": "https://oc.wikipedia.org/wiki/%C3%8Dndia",
+  "source_url": "https://oc.wikipedia.org/w/rest.php/v1/page/%C3%8Dndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:26:06Z",
+  "characters": 159230,
+  "faithful_units": 44616
+}

@@ -1,0 +1,13 @@
+{
+  "code": "mr",
+  "name": "Marathi",
+  "autonym": "मराठी",
+  "title": "भारत",
+  "domain": "mr.wikipedia.org",
+  "article_url": "https://mr.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+  "source_url": "https://mr.wikipedia.org/w/rest.php/v1/page/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:23:20Z",
+  "characters": 97859,
+  "faithful_units": 29766
+}

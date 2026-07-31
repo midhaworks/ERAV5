@@ -1,0 +1,13 @@
+{
+  "code": "bew",
+  "name": "Betawi",
+  "autonym": "Betawi",
+  "title": "Hindi",
+  "domain": "bew.wikipedia.org",
+  "article_url": "https://bew.wikipedia.org/wiki/Hindi",
+  "source_url": "https://bew.wikipedia.org/w/rest.php/v1/page/Hindi/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:32Z",
+  "characters": 5241,
+  "faithful_units": 1861
+}

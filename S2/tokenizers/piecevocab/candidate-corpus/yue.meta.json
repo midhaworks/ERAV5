@@ -1,0 +1,13 @@
+{
+  "code": "yue",
+  "name": "Cantonese",
+  "autonym": "粵語",
+  "title": "印度",
+  "domain": "zh-yue.wikipedia.org",
+  "article_url": "https://zh-yue.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6",
+  "source_url": "https://zh-yue.wikipedia.org/w/rest.php/v1/page/%E5%8D%B0%E5%BA%A6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:36:11Z",
+  "characters": 40375,
+  "faithful_units": 16121
+}

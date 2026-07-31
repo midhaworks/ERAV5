@@ -1,0 +1,13 @@
+{
+  "code": "az",
+  "name": "Azerbaijani",
+  "autonym": "azərbaycanca",
+  "title": "Hindistan",
+  "domain": "az.wikipedia.org",
+  "article_url": "https://az.wikipedia.org/wiki/Hindistan",
+  "source_url": "https://az.wikipedia.org/w/rest.php/v1/page/Hindistan/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:06:04Z",
+  "characters": 63785,
+  "faithful_units": 16628
+}

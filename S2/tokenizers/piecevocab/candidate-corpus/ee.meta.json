@@ -1,0 +1,13 @@
+{
+  "code": "ee",
+  "name": "Ewe",
+  "autonym": "eʋegbe",
+  "title": "India",
+  "domain": "ee.wikipedia.org",
+  "article_url": "https://ee.wikipedia.org/wiki/India",
+  "source_url": "https://ee.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:12:18Z",
+  "characters": 837,
+  "faithful_units": 300
+}

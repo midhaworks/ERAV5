@@ -1,0 +1,13 @@
+{
+  "code": "jv",
+  "name": "Javanese",
+  "autonym": "Jawa",
+  "title": "Indhi",
+  "domain": "jv.wikipedia.org",
+  "article_url": "https://jv.wikipedia.org/wiki/Indhi",
+  "source_url": "https://jv.wikipedia.org/w/rest.php/v1/page/Indhi/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:18Z",
+  "characters": 25395,
+  "faithful_units": 8125
+}

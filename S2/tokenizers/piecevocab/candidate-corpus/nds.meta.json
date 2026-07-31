@@ -1,0 +1,13 @@
+{
+  "code": "nds",
+  "name": "Low German",
+  "autonym": "Plattdüütsch",
+  "title": "Indien",
+  "domain": "nds.wikipedia.org",
+  "article_url": "https://nds.wikipedia.org/wiki/Indien",
+  "source_url": "https://nds.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:02Z",
+  "characters": 28794,
+  "faithful_units": 8964
+}

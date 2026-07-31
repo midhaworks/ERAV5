@@ -1,0 +1,13 @@
+{
+  "code": "sc",
+  "name": "Sardinian",
+  "autonym": "sardu",
+  "title": "Ìndia",
+  "domain": "sc.wikipedia.org",
+  "article_url": "https://sc.wikipedia.org/wiki/%C3%8Cndia",
+  "source_url": "https://sc.wikipedia.org/w/rest.php/v1/page/%C3%8Cndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:29:04Z",
+  "characters": 18245,
+  "faithful_units": 6068
+}

@@ -1,0 +1,13 @@
+{
+  "code": "ur",
+  "name": "Urdu",
+  "autonym": "اردو",
+  "title": "بھارت",
+  "domain": "ur.wikipedia.org",
+  "article_url": "https://ur.wikipedia.org/wiki/%D8%A8%DA%BE%D8%A7%D8%B1%D8%AA",
+  "source_url": "https://ur.wikipedia.org/w/rest.php/v1/page/%D8%A8%DA%BE%D8%A7%D8%B1%D8%AA/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:34:13Z",
+  "characters": 84896,
+  "faithful_units": 29528
+}

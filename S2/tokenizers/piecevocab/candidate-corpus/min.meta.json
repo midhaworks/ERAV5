@@ -1,0 +1,13 @@
+{
+  "code": "min",
+  "name": "Minangkabau",
+  "autonym": "Minangkabau",
+  "title": "India",
+  "domain": "min.wikipedia.org",
+  "article_url": "https://min.wikipedia.org/wiki/India",
+  "source_url": "https://min.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:23:10Z",
+  "characters": 42925,
+  "faithful_units": 12533
+}

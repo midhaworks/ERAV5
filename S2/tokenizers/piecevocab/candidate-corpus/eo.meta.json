@@ -1,0 +1,13 @@
+{
+  "code": "eo",
+  "name": "Esperanto",
+  "autonym": "Esperanto",
+  "title": "Barato",
+  "domain": "eo.wikipedia.org",
+  "article_url": "https://eo.wikipedia.org/wiki/Barato",
+  "source_url": "https://eo.wikipedia.org/w/rest.php/v1/page/Barato/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:13:04Z",
+  "characters": 133818,
+  "faithful_units": 40737
+}

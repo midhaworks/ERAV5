@@ -1,0 +1,71 @@
+{
+  "variant": "faithful_shared_bpe_language_search_winner",
+  "languages": [
+    "en",
+    "hi",
+    "te",
+    "sd"
+  ],
+  "fourth_language": {
+    "code": "sd",
+    "name": "Sindhi"
+  },
+  "weights": {
+    "en": 3,
+    "hi": 4,
+    "te": 6,
+    "sd": 4
+  },
+  "metrics": {
+    "weights": {
+      "en": 3,
+      "hi": 4,
+      "te": 6,
+      "sd": 4
+    },
+    "vocab_size": 10000,
+    "rows": {
+      "en": {
+        "tokens": 118682,
+        "faithful_units": 186426,
+        "ratio": 0.6366172100458091,
+        "unknown_tokens": 0,
+        "exact_roundtrip": true,
+        "visible_roundtrip": true
+      },
+      "hi": {
+        "tokens": 55394,
+        "faithful_units": 88359,
+        "ratio": 0.6269197252119195,
+        "unknown_tokens": 0,
+        "exact_roundtrip": true,
+        "visible_roundtrip": true
+      },
+      "te": {
+        "tokens": 23126,
+        "faithful_units": 36293,
+        "ratio": 0.6372027663736809,
+        "unknown_tokens": 0,
+        "exact_roundtrip": true,
+        "visible_roundtrip": true
+      },
+      "sd": {
+        "tokens": 47123,
+        "faithful_units": 73802,
+        "ratio": 0.6385057315519904,
+        "unknown_tokens": 0,
+        "exact_roundtrip": true,
+        "visible_roundtrip": true
+      }
+    },
+    "spread": 0.011586006340070898,
+    "raw_score": 86311.01784757704,
+    "hindi_penalty": 1.0,
+    "adjusted_score": 86311.01784757704,
+    "all_under_1_2": true,
+    "all_exact_roundtrip": true
+  },
+  "candidate_count": 306,
+  "optimization_scope": "exhaustive_all_candidates",
+  "vocab_size": 10000
+}

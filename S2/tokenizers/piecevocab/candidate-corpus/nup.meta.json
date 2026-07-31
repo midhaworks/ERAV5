@@ -1,0 +1,13 @@
+{
+  "code": "nup",
+  "name": "Nupe",
+  "autonym": "Nupe",
+  "title": "India",
+  "domain": "nup.wikipedia.org",
+  "article_url": "https://nup.wikipedia.org/wiki/India",
+  "source_url": "https://nup.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:17Z",
+  "characters": 631,
+  "faithful_units": 186
+}

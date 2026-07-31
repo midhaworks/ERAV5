@@ -1,0 +1,13 @@
+{
+  "code": "gan",
+  "name": "Gan",
+  "autonym": "贛語",
+  "title": "印度",
+  "domain": "gan.wikipedia.org",
+  "article_url": "https://gan.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6",
+  "source_url": "https://gan.wikipedia.org/w/rest.php/v1/page/%E5%8D%B0%E5%BA%A6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:15:01Z",
+  "characters": 3971,
+  "faithful_units": 1514
+}

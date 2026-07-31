@@ -1,0 +1,13 @@
+{
+  "code": "ta",
+  "name": "Tamil",
+  "autonym": "தமிழ்",
+  "title": "இந்தியா",
+  "domain": "ta.wikipedia.org",
+  "article_url": "https://ta.wikipedia.org/wiki/%E0%AE%87%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%BE",
+  "source_url": "https://ta.wikipedia.org/w/rest.php/v1/page/%E0%AE%87%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%BE/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:32:06Z",
+  "characters": 643241,
+  "faithful_units": 185869
+}

@@ -1,0 +1,13 @@
+{
+  "code": "nap",
+  "name": "Neapolitan",
+  "autonym": "Napulitano",
+  "title": "Innia",
+  "domain": "nap.wikipedia.org",
+  "article_url": "https://nap.wikipedia.org/wiki/Innia",
+  "source_url": "https://nap.wikipedia.org/w/rest.php/v1/page/Innia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:24:18Z",
+  "characters": 11785,
+  "faithful_units": 4265
+}

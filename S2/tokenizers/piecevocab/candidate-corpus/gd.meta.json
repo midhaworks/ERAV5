@@ -1,0 +1,13 @@
+{
+  "code": "gd",
+  "name": "Scottish Gaelic",
+  "autonym": "Gàidhlig",
+  "title": "Na h-Innseachan",
+  "domain": "gd.wikipedia.org",
+  "article_url": "https://gd.wikipedia.org/wiki/Na_h-Innseachan",
+  "source_url": "https://gd.wikipedia.org/w/rest.php/v1/page/Na%20h-Innseachan/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:15:05Z",
+  "characters": 26222,
+  "faithful_units": 8577
+}

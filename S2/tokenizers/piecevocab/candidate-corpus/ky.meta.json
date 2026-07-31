@@ -1,0 +1,13 @@
+{
+  "code": "ky",
+  "name": "Kyrgyz",
+  "autonym": "кыргызча",
+  "title": "Индия",
+  "domain": "ky.wikipedia.org",
+  "article_url": "https://ky.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F",
+  "source_url": "https://ky.wikipedia.org/w/rest.php/v1/page/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:21:02Z",
+  "characters": 45952,
+  "faithful_units": 10380
+}

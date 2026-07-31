@@ -1,0 +1,13 @@
+{
+  "code": "pap",
+  "name": "Papiamento",
+  "autonym": "Papiamentu",
+  "title": "India",
+  "domain": "pap.wikipedia.org",
+  "article_url": "https://pap.wikipedia.org/wiki/India",
+  "source_url": "https://pap.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:27:02Z",
+  "characters": 14524,
+  "faithful_units": 4514
+}

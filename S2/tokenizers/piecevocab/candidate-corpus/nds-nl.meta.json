@@ -1,0 +1,13 @@
+{
+  "code": "nds-nl",
+  "name": "Low Saxon",
+  "autonym": "Nedersaksies",
+  "title": "India",
+  "domain": "nds-nl.wikipedia.org",
+  "article_url": "https://nds-nl.wikipedia.org/wiki/India",
+  "source_url": "https://nds-nl.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:04Z",
+  "characters": 25308,
+  "faithful_units": 7961
+}

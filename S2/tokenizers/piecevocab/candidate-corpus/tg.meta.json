@@ -1,0 +1,13 @@
+{
+  "code": "tg",
+  "name": "Tajik",
+  "autonym": "тоҷикӣ",
+  "title": "Ҳиндустон",
+  "domain": "tg.wikipedia.org",
+  "article_url": "https://tg.wikipedia.org/wiki/%D2%B2%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D0%BE%D0%BD",
+  "source_url": "https://tg.wikipedia.org/w/rest.php/v1/page/%D2%B2%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D0%BE%D0%BD/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:32:14Z",
+  "characters": 81678,
+  "faithful_units": 19787
+}

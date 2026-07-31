@@ -1,0 +1,13 @@
+{
+  "code": "hif",
+  "name": "Fiji Hindi",
+  "autonym": "Fiji Hindi",
+  "title": "India",
+  "domain": "hif.wikipedia.org",
+  "article_url": "https://hif.wikipedia.org/wiki/India",
+  "source_url": "https://hif.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:16:16Z",
+  "characters": 43211,
+  "faithful_units": 13103
+}

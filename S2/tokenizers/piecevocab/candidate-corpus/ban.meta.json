@@ -1,0 +1,13 @@
+{
+  "code": "ban",
+  "name": "Balinese",
+  "autonym": "Basa Bali",
+  "title": "India",
+  "domain": "ban.wikipedia.org",
+  "article_url": "https://ban.wikipedia.org/wiki/India",
+  "source_url": "https://ban.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:06:10Z",
+  "characters": 35227,
+  "faithful_units": 11940
+}

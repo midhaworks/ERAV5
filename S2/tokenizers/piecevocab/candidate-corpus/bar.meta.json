@@ -1,0 +1,13 @@
+{
+  "code": "bar",
+  "name": "Bavarian",
+  "autonym": "Boarisch",
+  "title": "Indien",
+  "domain": "bar.wikipedia.org",
+  "article_url": "https://bar.wikipedia.org/wiki/Indien",
+  "source_url": "https://bar.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:06:12Z",
+  "characters": 16825,
+  "faithful_units": 5456
+}

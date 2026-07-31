@@ -1,0 +1,13 @@
+{
+  "code": "vo",
+  "name": "Volapük",
+  "autonym": "Volapük",
+  "title": "Lindän",
+  "domain": "vo.wikipedia.org",
+  "article_url": "https://vo.wikipedia.org/wiki/Lind%C3%A4n",
+  "source_url": "https://vo.wikipedia.org/w/rest.php/v1/page/Lind%C3%A4n/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:07Z",
+  "characters": 4111,
+  "faithful_units": 1446
+}

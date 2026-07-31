@@ -1,0 +1,13 @@
+{
+  "code": "rw",
+  "name": "Kinyarwanda",
+  "autonym": "Ikinyarwanda",
+  "title": "Ubuhinde",
+  "domain": "rw.wikipedia.org",
+  "article_url": "https://rw.wikipedia.org/wiki/Ubuhinde",
+  "source_url": "https://rw.wikipedia.org/w/rest.php/v1/page/Ubuhinde/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:28:15Z",
+  "characters": 961,
+  "faithful_units": 339
+}

@@ -1,0 +1,13 @@
+{
+  "code": "da",
+  "name": "Danish",
+  "autonym": "dansk",
+  "title": "Indien",
+  "domain": "da.wikipedia.org",
+  "article_url": "https://da.wikipedia.org/wiki/Indien",
+  "source_url": "https://da.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:11:19Z",
+  "characters": 256115,
+  "faithful_units": 78784
+}

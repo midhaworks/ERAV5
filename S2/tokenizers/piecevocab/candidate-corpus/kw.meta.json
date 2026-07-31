@@ -1,0 +1,13 @@
+{
+  "code": "kw",
+  "name": "Cornish",
+  "autonym": "kernowek",
+  "title": "Eynda",
+  "domain": "kw.wikipedia.org",
+  "article_url": "https://kw.wikipedia.org/wiki/Eynda",
+  "source_url": "https://kw.wikipedia.org/w/rest.php/v1/page/Eynda/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:20:18Z",
+  "characters": 9411,
+  "faithful_units": 3396
+}

@@ -1,0 +1,13 @@
+{
+  "code": "awa",
+  "name": "Awadhi",
+  "autonym": "अवधी",
+  "title": "भारत",
+  "domain": "awa.wikipedia.org",
+  "article_url": "https://awa.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+  "source_url": "https://awa.wikipedia.org/w/rest.php/v1/page/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:06:02Z",
+  "characters": 179765,
+  "faithful_units": 58767
+}

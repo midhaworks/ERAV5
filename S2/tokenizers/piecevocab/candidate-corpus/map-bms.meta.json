@@ -1,0 +1,13 @@
+{
+  "code": "map-bms",
+  "name": "Banyumasan",
+  "autonym": "Basa Banyumasan",
+  "title": "India",
+  "domain": "map-bms.wikipedia.org",
+  "article_url": "https://map-bms.wikipedia.org/wiki/India",
+  "source_url": "https://map-bms.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:22:18Z",
+  "characters": 8449,
+  "faithful_units": 2983
+}

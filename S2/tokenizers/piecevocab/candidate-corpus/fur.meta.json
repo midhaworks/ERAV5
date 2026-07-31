@@ -1,0 +1,13 @@
+{
+  "code": "fur",
+  "name": "Friulian",
+  "autonym": "furlan",
+  "title": "Indie",
+  "domain": "fur.wikipedia.org",
+  "article_url": "https://fur.wikipedia.org/wiki/Indie",
+  "source_url": "https://fur.wikipedia.org/w/rest.php/v1/page/Indie/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:14:10Z",
+  "characters": 3004,
+  "faithful_units": 1055
+}

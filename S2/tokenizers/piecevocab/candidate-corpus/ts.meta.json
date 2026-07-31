@@ -1,0 +1,13 @@
+{
+  "code": "ts",
+  "name": "Tsonga",
+  "autonym": "Xitsonga",
+  "title": "Indiya",
+  "domain": "ts.wikipedia.org",
+  "article_url": "https://ts.wikipedia.org/wiki/Indiya",
+  "source_url": "https://ts.wikipedia.org/w/rest.php/v1/page/Indiya/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:15Z",
+  "characters": 30015,
+  "faithful_units": 10152
+}

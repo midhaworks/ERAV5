@@ -1,0 +1,13 @@
+{
+  "code": "frr",
+  "name": "Northern Frisian",
+  "autonym": "Nordfriisk",
+  "title": "Indien",
+  "domain": "frr.wikipedia.org",
+  "article_url": "https://frr.wikipedia.org/wiki/Indien",
+  "source_url": "https://frr.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:14:08Z",
+  "characters": 11018,
+  "faithful_units": 3925
+}

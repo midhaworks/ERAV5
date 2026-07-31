@@ -1,0 +1,13 @@
+{
+  "code": "it",
+  "name": "Italian",
+  "autonym": "italiano",
+  "title": "India",
+  "domain": "it.wikipedia.org",
+  "article_url": "https://it.wikipedia.org/wiki/India",
+  "source_url": "https://it.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:10Z",
+  "characters": 306614,
+  "faithful_units": 93895
+}

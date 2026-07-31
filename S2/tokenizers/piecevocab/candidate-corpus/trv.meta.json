@@ -1,0 +1,13 @@
+{
+  "code": "trv",
+  "name": "Taroko",
+  "autonym": "Seediq",
+  "title": "India",
+  "domain": "trv.wikipedia.org",
+  "article_url": "https://trv.wikipedia.org/wiki/India",
+  "source_url": "https://trv.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:13Z",
+  "characters": 20608,
+  "faithful_units": 5047
+}

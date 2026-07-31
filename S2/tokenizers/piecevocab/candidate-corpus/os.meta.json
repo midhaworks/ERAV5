@@ -1,0 +1,13 @@
+{
+  "code": "os",
+  "name": "Ossetic",
+  "autonym": "ирон",
+  "title": "Инди",
+  "domain": "os.wikipedia.org",
+  "article_url": "https://os.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8",
+  "source_url": "https://os.wikipedia.org/w/rest.php/v1/page/%D0%98%D0%BD%D0%B4%D0%B8/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:26:14Z",
+  "characters": 36779,
+  "faithful_units": 13303
+}

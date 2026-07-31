@@ -1,0 +1,13 @@
+{
+  "code": "scn",
+  "name": "Sicilian",
+  "autonym": "sicilianu",
+  "title": "Innia",
+  "domain": "scn.wikipedia.org",
+  "article_url": "https://scn.wikipedia.org/wiki/Innia",
+  "source_url": "https://scn.wikipedia.org/w/rest.php/v1/page/Innia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:29:06Z",
+  "characters": 7481,
+  "faithful_units": 2486
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ERA V5 Model data-mixture and curriculum specification for a coding-agentic, reasoning-rich, Indic-native language model.">
+  <title>V5 Data Mixture &amp; Curriculum</title>
+  <meta name="theme-color" content="#17182f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><span>V5</span> Data Mixture &amp; Curriculum</a>
+    <nav aria-label="Page sections">
+      <a href="#composer">Mixture</a>
+      <a href="#breakdown">Breakdown</a>
+      <a href="#supply">Supply</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#curriculum">Curriculum</a>
+    </nav>
+    <a class="readme-link" href="README.md">Specification ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="hero-copy">General web supplies breadth. Code, agentic trajectories, controlled reasoning, long context and native Indic data determine what V5 can actually do.</p>
+      <div class="hero-metrics">
+        <div><strong>20T</strong><span>fixed token budget</span></div>
+        <div><strong>100%</strong><span>always conserved</span></div>
+        <div><strong>8%</strong><span>Indic protected floor</span></div>
+        <div><strong>8%</strong><span>agentic protected floor</span></div>
+      </div>
+    </section>
+
+    <section class="section composer-section" id="composer">
+      <div class="section-heading">
+        <div><p class="kicker">01 · Interactive hypothesis</p><h2>Move one lane.<br>The others make room.</h2></div>
+        <p>Every change is renormalised against the remaining lanes. Indic and agentic cannot cross their protected floors; total exposure stays at exactly 100%.</p>
+      </div>
+
+      <div class="preset-bar" role="group" aria-label="Mixture presets">
+        <button class="preset active" data-preset="main"><strong>Main pretraining</strong><span>Abundant web, protected capabilities</span></button>
+        <button class="preset" data-preset="anneal"><strong>Annealing</strong><span>Scarce, high-value data upsampled</span></button>
+        <button class="preset danger" data-preset="naive"><strong>Naive web-heavy</strong><span>Indic and agentic collapse to floors</span></button>
+      </div>
+
+      <div class="composer-grid">
+        <div class="lane-controls" id="lane-controls" aria-label="Capability allocation sliders"></div>
+        <aside class="allocation-panel">
+          <div class="donut" id="mixture-donut" role="img" aria-label="Current mixture allocation"><div><strong id="total-share">100.0%</strong><span>allocated</span></div></div>
+          <div class="allocation-copy">
+            <p class="mini-label">Current preset</p>
+            <h3 id="preset-name">Main pretraining</h3>
+            <p id="preset-note">General web remains the largest single lane, while coding and agentic work jointly receive 36%.</p>
+          </div>
+          <div class="priority-total"><span>Current phase budget</span><strong id="phase-budget">18.00T</strong><small>The full run is 18T main + 2T protected anneal</small></div>
+          <div class="priority-total"><span>Code + agentic</span><strong id="priority-share">36.0%</strong><small>Direct capability exposure</small></div>
+          <div class="priority-total"><span>+ reasoning + long context</span><strong id="extended-priority-share">58.0%</strong><small>Codex-style capability stack</small></div>
+          <div class="floor-note" id="floor-note">Protected floor active: 61% of every window is non-negotiable.</div>
+        </aside>
+      </div>
+
+      <article class="benchmark-panel" id="benchmark-panel" aria-live="polite">
+        <div><p class="mini-label">Benchmarks influenced by the selected lane</p><h3 id="active-lane-name">General web</h3></div>
+        <div class="benchmark-list" id="benchmark-list"></div>
+      </article>
+
+      <article class="breakdown-panel" id="breakdown">
+        <div class="breakdown-heading">
+          <div><p class="mini-label">Fixed budget accounting</p><h3>Complete data-mixture breakup</h3></div>
+          <p>The 18T main phase and protected 2T anneal each sum to 100%. Their token-weighted combination is the realised 20T mixture.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="mixture-table">
+            <thead><tr><th>Capability lane</th><th>Main share</th><th>Main tokens</th><th>Anneal share</th><th>Anneal tokens</th><th>Final exposure</th><th>Realised share</th></tr></thead>
+            <tbody>
+              <tr><th>General web</th><td>26%</td><td>4.68T</td><td>8%</td><td>160B</td><td>4.84T</td><td>24.2%</td></tr>
+              <tr><th>Code</th><td>24%</td><td>4.32T</td><td>22%</td><td>440B</td><td>4.76T</td><td>23.8%</td></tr>
+              <tr><th>Agentic</th><td>12%</td><td>2.16T</td><td>20%</td><td>400B</td><td>2.56T</td><td>12.8%</td></tr>
+              <tr><th>Reasoning, mathematics &amp; science</th><td>14%</td><td>2.52T</td><td>20%</td><td>400B</td><td>2.92T</td><td>14.6%</td></tr>
+              <tr><th>Indic</th><td>12%</td><td>2.16T</td><td>17%</td><td>340B</td><td>2.50T</td><td>12.5%</td></tr>
+              <tr><th>Long-context</th><td>8%</td><td>1.44T</td><td>10%</td><td>200B</td><td>1.64T</td><td>8.2%</td></tr>
+              <tr><th>India-domain</th><td>3%</td><td>0.54T</td><td>2%</td><td>40B</td><td>0.58T</td><td>2.9%</td></tr>
+              <tr><th>Safety &amp; grounding</th><td>1%</td><td>0.18T</td><td>1%</td><td>20B</td><td>0.20T</td><td>1.0%</td></tr>
+            </tbody>
+            <tfoot><tr><th>Total</th><td>100%</td><td>18.00T</td><td>100%</td><td>2.00T</td><td>20.00T</td><td>100%</td></tr></tfoot>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="section supply-section" id="supply">
+      <div class="section-heading">
+        <div><p class="kicker">02 · Demand versus evidence</p><h2>A target is not<br>a data inventory.</h2></div>
+        <p>Required exposure follows the live sliders and the selected phase budget: 18T for main/naive, 2T for annealing. Supply is shown only where a published token count is comparable; “unmeasured” is preferable to wishful arithmetic.</p>
+      </div>
+      <div class="supply-grid" id="supply-grid"></div>
+      <p class="supply-footnote">Published discovery sizes still require V5 tokenisation, licence filtering and cross-source deduplication before becoming accepted supply. Long-context documents are charged only to the long-context lane, never counted twice.</p>
+
+      <article class="bhashini-panel">
+        <div class="bhashini-intro">
+          <p class="mini-label">Indic inventory check · Bhashini</p>
+          <h3>Bhashini is not one translation dataset.</h3>
+          <p>The official repository spans parallel and monolingual text, speech, OCR and transliteration. Each asset enters a different V5 ledger; record counts are discovery evidence, not token totals.</p>
+        </div>
+        <div class="table-scroll">
+          <table class="bhashini-table">
+            <thead><tr><th>Published asset</th><th>Disclosed scale</th><th>V5 treatment</th></tr></thead>
+            <tbody>
+              <tr><th>Parallel sentences</th><td>24,60,00,000 pairs</td><td><strong>Translated tier</strong> after pair-level quality checks and cross-source deduplication</td></tr>
+              <tr><th>Monolingual text</th><td>37,00,000 entries</td><td><strong>Verified or unverified tier</strong>, determined by authorship and document provenance</td></tr>
+              <tr><th>ASR / TTS</th><td>14,000 ASR hours · 476 TTS hours</td><td>Audio is outside text-only pretraining; accepted transcripts/prompts become native text with speech provenance</td></tr>
+              <tr><th>OCR</th><td>25,00,000 image samples</td><td>Only corrected extracted text is eligible; images and raw OCR output are not token supply</td></tr>
+              <tr><th>Transliteration</th><td>2,05,60,000 entries</td><td><strong>Synthetic/romanised tier</strong>, kept separate from native-script text</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="bhashini-source">Sources: <a href="https://sansad.in/getFile/loksabhaquestions/annex/186/AU486_qctfVt.pdf?source=pqals">Government of India dataset inventory</a> and <a href="https://bhashini.gov.in/bhashadaan/en/terms-and-conditions">BhashaDaan collection definitions</a>. Dataset-level licences and overlap must still be audited.</p>
+      </article>
+    </section>
+
+    <section class="section capability-section" id="capabilities">
+      <div class="section-heading light">
+        <div><p class="kicker">03 · Capability anatomy</p><h2>What the scarce<br>lanes contain.</h2></div>
+        <p>Agentic, reasoning and Indic are not labels pasted onto generic text. Each has an internal mixture and a verification rule.</p>
+      </div>
+
+      <div class="capability-cards">
+        <article class="cap-card agent-card">
+          <p class="card-index">A · Agentic</p>
+          <h3>Operate, observe, recover.</h3>
+          <p>Long-horizon traces must preserve state across tool calls and include failed actions, observations, replanning and verified completion.</p>
+          <div class="stack-list">
+            <div><span>Repository coding agents</span><strong>60%</strong></div>
+            <div><span>Tool and API workflows</span><strong>15%</strong></div>
+            <div><span>Browser and retrieval</span><strong>10%</strong></div>
+            <div><span>Terminal and environment</span><strong>10%</strong></div>
+            <div><span>Planning and recovery</span><strong>5%</strong></div>
+          </div>
+          <p class="card-rule">35% real/replayed · 55% generated and execution-verified · 10% simulated and human-audited</p>
+        </article>
+
+        <article class="cap-card reasoning-card">
+          <p class="card-index">B · Reasoning</p>
+          <h3>Spend thought where it pays.</h3>
+          <p>Visible solution or trajectory length is scheduled by difficulty. Simple work stays short; hard work earns a larger reasoning budget.</p>
+          <div class="reason-bars">
+            <div style="--w:35%"><span>R0 · 0–128</span><strong>35%</strong></div>
+            <div style="--w:35%"><span>R1 · 129–512</span><strong>35%</strong></div>
+            <div style="--w:20%"><span>R2 · 513–2,048</span><strong>20%</strong></div>
+            <div style="--w:8%"><span>R3 · 2,049–8,192</span><strong>8%</strong></div>
+            <div style="--w:2%"><span>R4 · 8,193–32,768</span><strong>2%</strong></div>
+          </div>
+          <p class="card-rule">Code is executed · math is checked · agent trajectories are replayed</p>
+        </article>
+
+        <article class="cap-card indic-card">
+          <p class="card-index">C · Indic</p>
+          <h3>Native, not translated-only.</h3>
+          <p>The headline allocation is four separate ledgers. The anneal removes unverified data and concentrates trusted native text.</p>
+          <div class="tier-grid">
+            <div><strong>35%</strong><span>Verified</span></div>
+            <div><strong>15%</strong><span>Unverified</span></div>
+            <div><strong>30%</strong><span>Translated</span></div>
+            <div><strong>20%</strong><span>Synthetic</span></div>
+          </div>
+          <p class="card-rule">22-language macro + worst-language score; Hindi-weighted averages are insufficient</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section curriculum-section" id="curriculum">
+      <div class="section-heading">
+        <div><p class="kicker">04 · Curriculum</p><h2>Earn complexity<br>in stages.</h2></div>
+        <p>Context, task difficulty and reasoning depth grow separately. Progression requires held-out evidence, not merely elapsed tokens.</p>
+      </div>
+      <div class="timeline">
+        <article><span>0–20%</span><strong>Foundation</strong><p>8K context. D0/D1 = 80%. Local code edits, direct facts and short native-language generation.</p></article>
+        <article><span>20–60%</span><strong>Composition</strong><p>Grow to 32K. Introduce multi-file code, short tool workflows and R2 reasoning.</p></article>
+        <article><span>60–90%</span><strong>Operation</strong><p>Grow to 64K. Full repositories, failure recovery, multi-document reasoning and target difficulty mix.</p></article>
+        <article><span>90–100%</span><strong>Anneal</strong><p>128K only after RULER passes. High-quality scarce lanes, harder tasks and no unverified Indic.</p></article>
+      </div>
+      <div class="curriculum-gate"><strong>Promotion rule</strong><span>Do not increase context or reasoning length unless the current band improves its target benchmark without regressing short-context or easy-task performance.</span></div>
+    </section>
+  </main>
+
+  <footer><span>V5 mixture &amp; curriculum hypothesis</span><a href="README.md">Read the defensible specification →</a></footer>
+</body>
+</html>

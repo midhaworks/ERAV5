@@ -1,0 +1,13 @@
+{
+  "code": "or",
+  "name": "Odia",
+  "autonym": "ଓଡ଼ିଆ",
+  "title": "ଭାରତ",
+  "domain": "or.wikipedia.org",
+  "article_url": "https://or.wikipedia.org/wiki/%E0%AC%AD%E0%AC%BE%E0%AC%B0%E0%AC%A4",
+  "source_url": "https://or.wikipedia.org/w/rest.php/v1/page/%E0%AC%AD%E0%AC%BE%E0%AC%B0%E0%AC%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:26:12Z",
+  "characters": 63571,
+  "faithful_units": 14544
+}

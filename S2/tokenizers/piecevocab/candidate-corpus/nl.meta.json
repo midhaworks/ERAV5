@@ -1,0 +1,13 @@
+{
+  "code": "nl",
+  "name": "Dutch",
+  "autonym": "Nederlands",
+  "title": "India",
+  "domain": "nl.wikipedia.org",
+  "article_url": "https://nl.wikipedia.org/wiki/India",
+  "source_url": "https://nl.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:11Z",
+  "characters": 143647,
+  "faithful_units": 40372
+}

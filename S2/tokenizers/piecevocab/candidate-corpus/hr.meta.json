@@ -1,0 +1,13 @@
+{
+  "code": "hr",
+  "name": "Croatian",
+  "autonym": "hrvatski",
+  "title": "Indija",
+  "domain": "hr.wikipedia.org",
+  "article_url": "https://hr.wikipedia.org/wiki/Indija",
+  "source_url": "https://hr.wikipedia.org/w/rest.php/v1/page/Indija/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:16:18Z",
+  "characters": 43563,
+  "faithful_units": 14110
+}

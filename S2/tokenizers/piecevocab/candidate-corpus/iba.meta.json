@@ -1,0 +1,13 @@
+{
+  "code": "iba",
+  "name": "Iban",
+  "autonym": "Jaku Iban",
+  "title": "India",
+  "domain": "iba.wikipedia.org",
+  "article_url": "https://iba.wikipedia.org/wiki/India",
+  "source_url": "https://iba.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:17:22Z",
+  "characters": 30267,
+  "faithful_units": 10028
+}

@@ -1,0 +1,13 @@
+{
+  "code": "sv",
+  "name": "Swedish",
+  "autonym": "svenska",
+  "title": "Indien",
+  "domain": "sv.wikipedia.org",
+  "article_url": "https://sv.wikipedia.org/wiki/Indien",
+  "source_url": "https://sv.wikipedia.org/w/rest.php/v1/page/Indien/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:31:12Z",
+  "characters": 145423,
+  "faithful_units": 44057
+}

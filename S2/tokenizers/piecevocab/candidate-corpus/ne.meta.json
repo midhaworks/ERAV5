@@ -1,0 +1,13 @@
+{
+  "code": "ne",
+  "name": "Nepali",
+  "autonym": "नेपाली",
+  "title": "भारत",
+  "domain": "ne.wikipedia.org",
+  "article_url": "https://ne.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+  "source_url": "https://ne.wikipedia.org/w/rest.php/v1/page/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:06Z",
+  "characters": 54989,
+  "faithful_units": 18352
+}

@@ -1,0 +1,13 @@
+{
+  "code": "lld",
+  "name": "Ladin",
+  "autonym": "Ladin",
+  "title": "India",
+  "domain": "lld.wikipedia.org",
+  "article_url": "https://lld.wikipedia.org/wiki/India",
+  "source_url": "https://lld.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:22:02Z",
+  "characters": 12906,
+  "faithful_units": 4285
+}

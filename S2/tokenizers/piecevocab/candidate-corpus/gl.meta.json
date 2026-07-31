@@ -1,0 +1,13 @@
+{
+  "code": "gl",
+  "name": "Galician",
+  "autonym": "galego",
+  "title": "India",
+  "domain": "gl.wikipedia.org",
+  "article_url": "https://gl.wikipedia.org/wiki/India",
+  "source_url": "https://gl.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:15:07Z",
+  "characters": 238136,
+  "faithful_units": 73737
+}

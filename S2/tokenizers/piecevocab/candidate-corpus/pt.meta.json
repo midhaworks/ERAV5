@@ -1,0 +1,13 @@
+{
+  "code": "pt",
+  "name": "Portuguese",
+  "autonym": "português",
+  "title": "Índia",
+  "domain": "pt.wikipedia.org",
+  "article_url": "https://pt.wikipedia.org/wiki/%C3%8Dndia",
+  "source_url": "https://pt.wikipedia.org/w/rest.php/v1/page/%C3%8Dndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:27:16Z",
+  "characters": 423041,
+  "faithful_units": 132510
+}

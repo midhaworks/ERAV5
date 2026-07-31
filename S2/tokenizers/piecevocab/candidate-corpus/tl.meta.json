@@ -1,0 +1,13 @@
+{
+  "code": "tl",
+  "name": "Tagalog",
+  "autonym": "Tagalog",
+  "title": "Indiya",
+  "domain": "tl.wikipedia.org",
+  "article_url": "https://tl.wikipedia.org/wiki/Indiya",
+  "source_url": "https://tl.wikipedia.org/w/rest.php/v1/page/Indiya/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:03Z",
+  "characters": 59025,
+  "faithful_units": 17434
+}

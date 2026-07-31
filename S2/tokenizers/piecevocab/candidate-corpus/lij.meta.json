@@ -1,0 +1,13 @@
+{
+  "code": "lij",
+  "name": "Ligurian",
+  "autonym": "Ligure",
+  "title": "India",
+  "domain": "lij.wikipedia.org",
+  "article_url": "https://lij.wikipedia.org/wiki/India",
+  "source_url": "https://lij.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:21:16Z",
+  "characters": 12740,
+  "faithful_units": 4617
+}

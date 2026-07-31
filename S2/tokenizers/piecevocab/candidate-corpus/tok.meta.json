@@ -1,0 +1,13 @@
+{
+  "code": "tok",
+  "name": "Toki Pona",
+  "autonym": "toki pona",
+  "title": "ma Palata",
+  "domain": "tok.wikipedia.org",
+  "article_url": "https://tok.wikipedia.org/wiki/ma_Palata",
+  "source_url": "https://tok.wikipedia.org/w/rest.php/v1/page/ma%20Palata/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:08Z",
+  "characters": 15159,
+  "faithful_units": 5572
+}

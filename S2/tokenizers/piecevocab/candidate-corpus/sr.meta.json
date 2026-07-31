@@ -1,0 +1,13 @@
+{
+  "code": "sr",
+  "name": "Serbian",
+  "autonym": "српски / srpski",
+  "title": "Индија",
+  "domain": "sr.wikipedia.org",
+  "article_url": "https://sr.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%98%D0%B0",
+  "source_url": "https://sr.wikipedia.org/w/rest.php/v1/page/%D0%98%D0%BD%D0%B4%D0%B8%D1%98%D0%B0/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:31:03Z",
+  "characters": 153897,
+  "faithful_units": 48215
+}

@@ -1,0 +1,13 @@
+{
+  "code": "btm",
+  "name": "Batak Mandailing",
+  "autonym": "Batak Mandailing",
+  "title": "India",
+  "domain": "btm.wikipedia.org",
+  "article_url": "https://btm.wikipedia.org/wiki/India",
+  "source_url": "https://btm.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:07:10Z",
+  "characters": 16844,
+  "faithful_units": 5747
+}

@@ -1,0 +1,13 @@
+{
+  "code": "sh",
+  "name": "Serbo-Croatian",
+  "autonym": "srpskohrvatski / српскохрватски",
+  "title": "Indija",
+  "domain": "sh.wikipedia.org",
+  "article_url": "https://sh.wikipedia.org/wiki/Indija",
+  "source_url": "https://sh.wikipedia.org/w/rest.php/v1/page/Indija/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:29:21Z",
+  "characters": 141783,
+  "faithful_units": 43435
+}

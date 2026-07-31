@@ -1,0 +1,13 @@
+{
+  "code": "nov",
+  "name": "Novial",
+  "autonym": "Novial",
+  "title": "India",
+  "domain": "nov.wikipedia.org",
+  "article_url": "https://nov.wikipedia.org/wiki/India",
+  "source_url": "https://nov.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:14Z",
+  "characters": 7594,
+  "faithful_units": 2610
+}

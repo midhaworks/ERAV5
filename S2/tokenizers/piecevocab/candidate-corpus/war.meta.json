@@ -1,0 +1,13 @@
+{
+  "code": "war",
+  "name": "Waray",
+  "autonym": "Winaray",
+  "title": "India",
+  "domain": "war.wikipedia.org",
+  "article_url": "https://war.wikipedia.org/wiki/India",
+  "source_url": "https://war.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:12Z",
+  "characters": 86599,
+  "faithful_units": 27278
+}

@@ -1,0 +1,13 @@
+{
+  "code": "ha",
+  "name": "Hausa",
+  "autonym": "Hausa",
+  "title": "Indiya",
+  "domain": "ha.wikipedia.org",
+  "article_url": "https://ha.wikipedia.org/wiki/Indiya",
+  "source_url": "https://ha.wikipedia.org/w/rest.php/v1/page/Indiya/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:16:09Z",
+  "characters": 91426,
+  "faithful_units": 29941
+}

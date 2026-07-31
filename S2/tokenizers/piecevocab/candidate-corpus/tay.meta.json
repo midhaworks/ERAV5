@@ -1,0 +1,13 @@
+{
+  "code": "tay",
+  "name": "Atayal",
+  "autonym": "Tayal",
+  "title": "India",
+  "domain": "tay.wikipedia.org",
+  "article_url": "https://tay.wikipedia.org/wiki/India",
+  "source_url": "https://tay.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:32:07Z",
+  "characters": 2219,
+  "faithful_units": 744
+}

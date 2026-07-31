@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:huggingface.co)",
+      "WebFetch(domain:www.sarvam.ai)",
+      "WebFetch(domain:www.forbes.com)",
+      "Bash(python3 -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python3 -c \"import fitz; print\\('fitz ok'\\)\")",
+      "WebFetch(domain:ar5iv.labs.arxiv.org)",
+      "WebFetch(domain:benchlm.ai)",
+      "WebFetch(domain:allenai.org)",
+      "Bash(python3 -m venv venv)",
+      "Bash(./venv/bin/pip install *)",
+      "Bash(curl -sL -o flores.tar.gz https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz)",
+      "Bash(tar xzf *)",
+      "Bash(curl -s \"https://huggingface.co/api/datasets/nvidia/Nemotron-CC-v2\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"https://datasets-server.huggingface.co/splits?dataset=nvidia%2FNemotron-CC-v2\")",
+      "Bash(./venv/bin/python fert.py)",
+      "Bash(echo \"EXIT=$?\")"
+    ]
+  }
+}

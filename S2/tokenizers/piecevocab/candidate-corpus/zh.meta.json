@@ -1,0 +1,13 @@
+{
+  "code": "zh",
+  "name": "Chinese",
+  "autonym": "中文",
+  "title": "印度",
+  "domain": "zh.wikipedia.org",
+  "article_url": "https://zh.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6",
+  "source_url": "https://zh.wikipedia.org/w/rest.php/v1/page/%E5%8D%B0%E5%BA%A6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:36:23Z",
+  "characters": 198639,
+  "faithful_units": 76813
+}

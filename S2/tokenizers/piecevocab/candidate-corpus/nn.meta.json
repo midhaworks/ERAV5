@@ -1,0 +1,13 @@
+{
+  "code": "nn",
+  "name": "Norwegian Nynorsk",
+  "autonym": "norsk nynorsk",
+  "title": "India",
+  "domain": "nn.wikipedia.org",
+  "article_url": "https://nn.wikipedia.org/wiki/India",
+  "source_url": "https://nn.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:12Z",
+  "characters": 72795,
+  "faithful_units": 21035
+}

@@ -1,0 +1,13 @@
+{
+  "code": "tpi",
+  "name": "Tok Pisin",
+  "autonym": "Tok Pisin",
+  "title": "India",
+  "domain": "tpi.wikipedia.org",
+  "article_url": "https://tpi.wikipedia.org/wiki/India",
+  "source_url": "https://tpi.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:10Z",
+  "characters": 16797,
+  "faithful_units": 5869
+}

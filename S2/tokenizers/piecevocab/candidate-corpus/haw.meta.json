@@ -1,0 +1,13 @@
+{
+  "code": "haw",
+  "name": "Hawaiian",
+  "autonym": "Hawaiʻi",
+  "title": "ʻĪnia",
+  "domain": "haw.wikipedia.org",
+  "article_url": "https://haw.wikipedia.org/wiki/%CA%BB%C4%AAnia",
+  "source_url": "https://haw.wikipedia.org/w/rest.php/v1/page/%CA%BB%C4%AAnia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:16:11Z",
+  "characters": 8009,
+  "faithful_units": 2544
+}

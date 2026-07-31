@@ -1,0 +1,13 @@
+{
+  "code": "tk",
+  "name": "Turkmen",
+  "autonym": "Türkmençe",
+  "title": "Hindistan",
+  "domain": "tk.wikipedia.org",
+  "article_url": "https://tk.wikipedia.org/wiki/Hindistan",
+  "source_url": "https://tk.wikipedia.org/w/rest.php/v1/page/Hindistan/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:33:01Z",
+  "characters": 42928,
+  "faithful_units": 15571
+}

@@ -1,0 +1,13 @@
+{
+  "code": "ny",
+  "name": "Nyanja",
+  "autonym": "Chi-Chewa",
+  "title": "India",
+  "domain": "ny.wikipedia.org",
+  "article_url": "https://ny.wikipedia.org/wiki/India",
+  "source_url": "https://ny.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:26:04Z",
+  "characters": 754,
+  "faithful_units": 273
+}

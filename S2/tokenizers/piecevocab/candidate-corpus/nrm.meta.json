@@ -1,0 +1,13 @@
+{
+  "code": "nrm",
+  "name": "Norman",
+  "autonym": "Nouormand",
+  "title": "Înde",
+  "domain": "nrm.wikipedia.org",
+  "article_url": "https://nrm.wikipedia.org/wiki/%C3%8Ende",
+  "source_url": "https://nrm.wikipedia.org/w/rest.php/v1/page/%C3%8Ende/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:25:15Z",
+  "characters": 3126,
+  "faithful_units": 1108
+}

@@ -1,0 +1,13 @@
+{
+  "code": "is",
+  "name": "Icelandic",
+  "autonym": "íslenska",
+  "title": "Indland",
+  "domain": "is.wikipedia.org",
+  "article_url": "https://is.wikipedia.org/wiki/Indland",
+  "source_url": "https://is.wikipedia.org/w/rest.php/v1/page/Indland/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:07Z",
+  "characters": 96180,
+  "faithful_units": 31113
+}

@@ -1,0 +1,13 @@
+{
+  "code": "af",
+  "name": "Afrikaans",
+  "autonym": "Afrikaans",
+  "title": "Indië",
+  "domain": "af.wikipedia.org",
+  "article_url": "https://af.wikipedia.org/wiki/Indi%C3%AB",
+  "source_url": "https://af.wikipedia.org/w/rest.php/v1/page/Indi%C3%AB/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:08Z",
+  "characters": 56471,
+  "faithful_units": 18370
+}

@@ -1,0 +1,13 @@
+{
+  "code": "sg",
+  "name": "Sango",
+  "autonym": "Sängö",
+  "title": "Indïi",
+  "domain": "sg.wikipedia.org",
+  "article_url": "https://sg.wikipedia.org/wiki/Ind%C3%AFi",
+  "source_url": "https://sg.wikipedia.org/w/rest.php/v1/page/Ind%C3%AFi/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:29:12Z",
+  "characters": 545,
+  "faithful_units": 174
+}

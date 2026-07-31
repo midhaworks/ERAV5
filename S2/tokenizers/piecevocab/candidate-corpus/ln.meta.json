@@ -1,0 +1,13 @@
+{
+  "code": "ln",
+  "name": "Lingala",
+  "autonym": "lingála",
+  "title": "India",
+  "domain": "ln.wikipedia.org",
+  "article_url": "https://ln.wikipedia.org/wiki/India",
+  "source_url": "https://ln.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:22:05Z",
+  "characters": 5342,
+  "faithful_units": 1959
+}

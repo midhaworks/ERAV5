@@ -1,0 +1,13 @@
+{
+  "code": "sa",
+  "name": "Sanskrit",
+  "autonym": "संस्कृतम्",
+  "title": "भारतम्",
+  "domain": "sa.wikipedia.org",
+  "article_url": "https://sa.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A4%AE%E0%A5%8D",
+  "source_url": "https://sa.wikipedia.org/w/rest.php/v1/page/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A4%AE%E0%A5%8D/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:28:17Z",
+  "characters": 53451,
+  "faithful_units": 15757
+}

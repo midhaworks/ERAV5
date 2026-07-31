@@ -1,0 +1,13 @@
+{
+  "code": "hi",
+  "name": "Hindi",
+  "autonym": "हिन्दी",
+  "title": "भारत",
+  "domain": "hi.wikipedia.org",
+  "article_url": "https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+  "source_url": "https://hi.wikipedia.org/w/rest.php/v1/page/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:04:14Z",
+  "characters": 266728,
+  "faithful_units": 88359
+}

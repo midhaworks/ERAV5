@@ -1,0 +1,13 @@
+{
+  "code": "sm",
+  "name": "Samoan",
+  "autonym": "Gagana Samoa",
+  "title": "Igitia",
+  "domain": "sm.wikipedia.org",
+  "article_url": "https://sm.wikipedia.org/wiki/Igitia",
+  "source_url": "https://sm.wikipedia.org/w/rest.php/v1/page/Igitia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:30:11Z",
+  "characters": 1893,
+  "faithful_units": 711
+}

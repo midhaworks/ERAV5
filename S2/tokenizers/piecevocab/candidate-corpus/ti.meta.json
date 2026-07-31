@@ -1,0 +1,13 @@
+{
+  "code": "ti",
+  "name": "Tigrinya",
+  "autonym": "ትግርኛ",
+  "title": "ህንዲ",
+  "domain": "ti.wikipedia.org",
+  "article_url": "https://ti.wikipedia.org/wiki/%E1%88%85%E1%8A%95%E1%8B%B2",
+  "source_url": "https://ti.wikipedia.org/w/rest.php/v1/page/%E1%88%85%E1%8A%95%E1%8B%B2/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:32:18Z",
+  "characters": 4303,
+  "faithful_units": 1710
+}

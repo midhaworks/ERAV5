@@ -1,0 +1,13 @@
+{
+  "code": "fi",
+  "name": "Finnish",
+  "autonym": "suomi",
+  "title": "Intia",
+  "domain": "fi.wikipedia.org",
+  "article_url": "https://fi.wikipedia.org/wiki/Intia",
+  "source_url": "https://fi.wikipedia.org/w/rest.php/v1/page/Intia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:13:23Z",
+  "characters": 147918,
+  "faithful_units": 43395
+}

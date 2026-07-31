@@ -1,0 +1,13 @@
+{
+  "code": "es",
+  "name": "Spanish",
+  "autonym": "español",
+  "title": "India",
+  "domain": "es.wikipedia.org",
+  "article_url": "https://es.wikipedia.org/wiki/India",
+  "source_url": "https://es.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:13:07Z",
+  "characters": 265446,
+  "faithful_units": 80521
+}

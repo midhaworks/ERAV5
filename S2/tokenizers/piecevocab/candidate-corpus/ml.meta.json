@@ -1,0 +1,13 @@
+{
+  "code": "ml",
+  "name": "Malayalam",
+  "autonym": "മലയാളം",
+  "title": "ഇന്ത്യ",
+  "domain": "ml.wikipedia.org",
+  "article_url": "https://ml.wikipedia.org/wiki/%E0%B4%87%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B5%8D%E0%B4%AF",
+  "source_url": "https://ml.wikipedia.org/w/rest.php/v1/page/%E0%B4%87%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B5%8D%E0%B4%AF/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:23:14Z",
+  "characters": 137289,
+  "faithful_units": 41367
+}

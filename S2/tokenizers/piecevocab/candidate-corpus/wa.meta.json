@@ -1,0 +1,13 @@
+{
+  "code": "wa",
+  "name": "Walloon",
+  "autonym": "walon",
+  "title": "Inde",
+  "domain": "wa.wikipedia.org",
+  "article_url": "https://wa.wikipedia.org/wiki/Inde",
+  "source_url": "https://wa.wikipedia.org/w/rest.php/v1/page/Inde/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:10Z",
+  "characters": 5422,
+  "faithful_units": 1818
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive review of two faithful 10,000-token multilingual tokenizers.">
+  <link rel="canonical" href="https://tokenizer.abmera.workers.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tokenizer.abmera.workers.dev/">
+  <meta property="og:site_name" content="Faithful Multilingual Tokenizers">
+  <meta property="og:title" content="Faithful Multilingual Tokenizers">
+  <meta property="og:description" content="PieceVocab and BPE solutions selected from 86 Wikipedia India pages with at least 5,000 visible words; all writing directions included.">
+  <meta property="og:image" content="https://tokenizer.abmera.workers.dev/social-preview.png?v=4">
+  <meta property="og:image:secure_url" content="https://tokenizer.abmera.workers.dev/social-preview.png?v=4">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Faithful Multilingual Tokenizers — PieceVocab and BPE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Faithful Multilingual Tokenizers">
+  <meta name="twitter:description" content="Two faithful 10,000-token multilingual tokenizer solutions: PieceVocab and BPE.">
+  <meta name="twitter:image" content="https://tokenizer.abmera.workers.dev/social-preview.png?v=4">
+  <title>Faithful Multilingual Tokenizers</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./s2-tokenizer-favicon-v4.png" type="image/png">
+  <link rel="shortcut icon" href="./s2-tokenizer-favicon-v4.png" type="image/png">
+  <link rel="apple-touch-icon" href="./s2-tokenizer-favicon-v4.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-row">
+      <div>
+        <h1>Faithful Multilingual Tokenizers</h1>
+        <p class="author-line">By <a href="https://www.linkedin.com/in/avnishbm/" target="_blank" rel="noopener noreferrer">Avnish Midha</a></p>
+      </div>
+      <div class="constraint-badges" aria-label="Submission constraints">
+        <div class="constraint-badge"><strong>10,000</strong><span>vocabulary</span></div>
+        <div class="constraint-badge"><strong>≤ 1.2</strong><span>English fertility</span></div>
+        <div class="constraint-badge"><strong>Exact</strong><span>encode → decode</span></div>
+        <div class="constraint-badge corpus-badge"><strong>India</strong><span>Wikipedia page corpus</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <nav class="approach-tabs" aria-label="Tokenizer approach">
+      <button class="approach-tab active" data-approach="piece" aria-selected="true">
+        PieceVocab
+      </button>
+      <button class="approach-tab" data-approach="bpe" aria-selected="false">
+        BPE
+      </button>
+    </nav>
+
+    <section class="hero-card">
+      <div>
+        <p class="eyebrow" id="approachKind"></p>
+        <h2 id="approachTitle"></h2>
+        <p id="approachDescription" class="lede"></p>
+      </div>
+      <div class="score-block">
+        <span>Adjusted score</span>
+        <strong id="score"></strong>
+        <small id="spread"></small>
+      </div>
+    </section>
+
+    <div id="languagePills" class="language-pills" aria-label="Training languages"></div>
+
+    <nav class="subtabs" aria-label="Review section">
+      <button class="subtab active" data-panel="summary">Summary</button>
+      <button class="subtab" data-panel="tokenize">Tokenize</button>
+      <button class="subtab" data-panel="vocabulary">Vocabulary</button>
+      <button class="subtab" data-panel="download">Download</button>
+    </nav>
+
+    <section id="panel-tokenize" class="panel">
+      <div class="work-grid">
+        <article class="card input-card">
+          <div class="card-head">
+            <div><p class="eyebrow">Live test</p><h3>Input text</h3></div>
+            <button id="resetSample" class="text-button">Reset sample</button>
+          </div>
+          <textarea id="textInput" spellcheck="false" aria-label="Text to tokenize"></textarea>
+          <div class="fetch-row">
+            <input id="wikiUrl" type="url" value="https://en.wikipedia.org/wiki/India" aria-label="Wikipedia URL">
+            <button id="fetchWiki" class="button secondary">Fetch article</button>
+          </div>
+          <p id="status" class="status" aria-live="polite"></p>
+        </article>
+
+        <article class="card result-card">
+          <div class="card-head">
+            <div><p class="eyebrow">Result</p><h3>Encoded pieces</h3></div>
+            <div class="view-switch">
+              <button class="view-button active" data-view="tokens">Text</button>
+              <button class="view-button" data-view="ids">IDs</button>
+            </div>
+          </div>
+          <div id="tokenOutput" class="token-output"></div>
+          <div class="decode-box">
+            <span id="roundtripBadge" class="pass-badge"></span>
+            <code id="decodedText"></code>
+          </div>
+        </article>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><span>Tokens</span><strong id="tokenCount">—</strong></div>
+        <div class="stat"><span>Faithful units</span><strong id="unitCount">—</strong></div>
+        <div class="stat"><span>Fertility</span><strong id="fertility">—</strong></div>
+        <div class="stat"><span>Round trip</span><strong id="roundtripStat">—</strong></div>
+      </div>
+    </section>
+
+    <section id="panel-vocabulary" class="panel">
+      <article class="card">
+        <div class="vocab-heading">
+          <div><p class="eyebrow">Saved artifact</p><h3><span id="vocabSize">—</span> vocabulary entries</h3></div>
+          <input id="vocabSearch" type="search" placeholder="Search token text…" aria-label="Search vocabulary">
+        </div>
+        <div id="vocabGrid" class="vocab-grid"></div>
+        <div class="pagination">
+          <button id="prevPage" class="button secondary">Previous</button>
+          <span id="pageInfo"></span>
+          <button id="nextPage" class="button secondary">Next</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="panel-summary" class="panel active">
+      <div id="summary"></div>
+    </section>
+
+    <section id="panel-download" class="panel">
+      <article class="card download-card">
+        <p class="eyebrow">Submission files</p>
+        <h3 id="downloadTitle"></h3>
+        <p id="downloadNote" class="lede"></p>
+        <div id="downloadLinks" class="download-links"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>Faithful Markdown evaluation · 86 eligible candidates · RTL included · 5,000+ visible words · exact 10,000-entry vocabularies</span>
+    <span>© 2026 <a href="https://www.linkedin.com/in/avnishbm/" target="_blank" rel="noopener noreferrer">Avnish Midha</a>. All rights reserved. · <a href="https://www.linkedin.com/in/avnishbm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+  </footer>
+  <script src="tokenizers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

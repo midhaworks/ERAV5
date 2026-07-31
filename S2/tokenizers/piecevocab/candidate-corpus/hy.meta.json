@@ -1,0 +1,13 @@
+{
+  "code": "hy",
+  "name": "Armenian",
+  "autonym": "հայերեն",
+  "title": "Հնդկաստան",
+  "domain": "hy.wikipedia.org",
+  "article_url": "https://hy.wikipedia.org/wiki/%D5%80%D5%B6%D5%A4%D5%AF%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6",
+  "source_url": "https://hy.wikipedia.org/w/rest.php/v1/page/%D5%80%D5%B6%D5%A4%D5%AF%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:17:16Z",
+  "characters": 322539,
+  "faithful_units": 101165
+}

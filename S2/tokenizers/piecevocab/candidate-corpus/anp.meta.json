@@ -1,0 +1,13 @@
+{
+  "code": "anp",
+  "name": "Angika",
+  "autonym": "अंगिका",
+  "title": "भारत",
+  "domain": "anp.wikipedia.org",
+  "article_url": "https://anp.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+  "source_url": "https://anp.wikipedia.org/w/rest.php/v1/page/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:05:07Z",
+  "characters": 124669,
+  "faithful_units": 39397
+}

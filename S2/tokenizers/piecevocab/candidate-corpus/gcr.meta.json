@@ -1,0 +1,13 @@
+{
+  "code": "gcr",
+  "name": "Guianan Creole",
+  "autonym": "kriyòl gwiyannen",
+  "title": "End",
+  "domain": "gcr.wikipedia.org",
+  "article_url": "https://gcr.wikipedia.org/wiki/End",
+  "source_url": "https://gcr.wikipedia.org/w/rest.php/v1/page/End/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:15:03Z",
+  "characters": 929,
+  "faithful_units": 275
+}

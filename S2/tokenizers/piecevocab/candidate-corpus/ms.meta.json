@@ -1,0 +1,13 @@
+{
+  "code": "ms",
+  "name": "Malay",
+  "autonym": "Bahasa Melayu",
+  "title": "India",
+  "domain": "ms.wikipedia.org",
+  "article_url": "https://ms.wikipedia.org/wiki/India",
+  "source_url": "https://ms.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:24:03Z",
+  "characters": 108394,
+  "faithful_units": 34001
+}

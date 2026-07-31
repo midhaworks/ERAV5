@@ -1,0 +1,13 @@
+{
+  "code": "bi",
+  "name": "Bislama",
+  "autonym": "Bislama",
+  "title": "India",
+  "domain": "bi.wikipedia.org",
+  "article_url": "https://bi.wikipedia.org/wiki/India",
+  "source_url": "https://bi.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:10:04Z",
+  "characters": 3326,
+  "faithful_units": 1222
+}

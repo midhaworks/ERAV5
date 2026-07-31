@@ -1,0 +1,13 @@
+{
+  "code": "io",
+  "name": "Ido",
+  "autonym": "Ido",
+  "title": "India",
+  "domain": "io.wikipedia.org",
+  "article_url": "https://io.wikipedia.org/wiki/India",
+  "source_url": "https://io.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:05Z",
+  "characters": 27586,
+  "faithful_units": 8884
+}

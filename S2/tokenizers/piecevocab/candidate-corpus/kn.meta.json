@@ -1,0 +1,13 @@
+{
+  "code": "kn",
+  "name": "Kannada",
+  "autonym": "ಕನ್ನಡ",
+  "title": "ಭಾರತ",
+  "domain": "kn.wikipedia.org",
+  "article_url": "https://kn.wikipedia.org/wiki/%E0%B2%AD%E0%B2%BE%E0%B2%B0%E0%B2%A4",
+  "source_url": "https://kn.wikipedia.org/w/rest.php/v1/page/%E0%B2%AD%E0%B2%BE%E0%B2%B0%E0%B2%A4/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:20:07Z",
+  "characters": 38454,
+  "faithful_units": 12293
+}

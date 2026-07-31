@@ -1,0 +1,4051 @@
+{
+  "policy": {
+    "min_visible_word_runs": 5000,
+    "writing_direction_filter": null
+  },
+  "candidate_count": 86,
+  "ranking": [
+    {
+      "code": "yo",
+      "name": "Yoruba",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 326,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9657,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4583373083113463,
+        "te": 0.4007786125024763,
+        "yo": 0.11200417679050967
+      },
+      "rows": {
+        "en": {
+          "tokens": 144890,
+          "faithful_units": 186426,
+          "ratio": 0.7771984594423524,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 68761,
+          "faithful_units": 88359,
+          "ratio": 0.7782002965176157,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28253,
+          "faithful_units": 36293,
+          "ratio": 0.778469677348249,
+          "exact_roundtrip": true
+        },
+        "yo": {
+          "tokens": 24477,
+          "faithful_units": 31492,
+          "ratio": 0.7772450146068843,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.0012712179058965711,
+      "raw_score": 786647.1950729131,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 786647.1950729131,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ps",
+      "name": "Pashto",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 359,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9624,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47258084715050624,
+        "te": 0.3837833831843106,
+        "ps": 0.14820072173391916
+      },
+      "rows": {
+        "en": {
+          "tokens": 140408,
+          "faithful_units": 186426,
+          "ratio": 0.7531567485222018,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 66548,
+          "faithful_units": 88359,
+          "ratio": 0.7531547437159769,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 27289,
+          "faithful_units": 36293,
+          "ratio": 0.7519080814482132,
+          "exact_roundtrip": true
+        },
+        "ps": {
+          "tokens": 19285,
+          "faithful_units": 25580,
+          "ratio": 0.7539093041438624,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.002001222695649174,
+      "raw_score": 499694.5128466131,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 499694.5128466131,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "is",
+      "name": "Icelandic",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 309,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9674,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.46450683990813096,
+        "te": 0.39071192221352613,
+        "is": 0.14724098275958128
+      },
+      "rows": {
+        "en": {
+          "tokens": 146736,
+          "faithful_units": 186426,
+          "ratio": 0.7871005117311963,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69544,
+          "faithful_units": 88359,
+          "ratio": 0.787061872587965,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28513,
+          "faithful_units": 36293,
+          "ratio": 0.7856335932548977,
+          "exact_roundtrip": true
+        },
+        "is": {
+          "tokens": 24420,
+          "faithful_units": 31113,
+          "ratio": 0.7848809179442676,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.0022195937869287086,
+      "raw_score": 450532.8884451951,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 450532.8884451951,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ms",
+      "name": "Malay",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 299,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9684,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47537065324838873,
+        "te": 0.4106203439862066,
+        "ms": 0.33757446923410406
+      },
+      "rows": {
+        "en": {
+          "tokens": 152155,
+          "faithful_units": 186426,
+          "ratio": 0.8161683456170277,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 71906,
+          "faithful_units": 88359,
+          "ratio": 0.8137937278602067,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29605,
+          "faithful_units": 36293,
+          "ratio": 0.815722040062822,
+          "exact_roundtrip": true
+        },
+        "ms": {
+          "tokens": 27747,
+          "faithful_units": 34001,
+          "ratio": 0.8160642334048999,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.002374617756821018,
+      "raw_score": 421120.4085910375,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 421120.4085910375,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "nn",
+      "name": "Norwegian Nynorsk",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 305,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9678,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48071898959035075,
+        "te": 0.4152133467754075,
+        "nn": 0.382483283017537
+      },
+      "rows": {
+        "en": {
+          "tokens": 154650,
+          "faithful_units": 186426,
+          "ratio": 0.8295516719770848,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73406,
+          "faithful_units": 88359,
+          "ratio": 0.830769927228692,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30203,
+          "faithful_units": 36293,
+          "ratio": 0.832199046648114,
+          "exact_roundtrip": true
+        },
+        "nn": {
+          "tokens": 17453,
+          "faithful_units": 21035,
+          "ratio": 0.8297123841217019,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.002647374671029157,
+      "raw_score": 377732.70664830145,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 377732.70664830145,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "sv",
+      "name": "Swedish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 309,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9674,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.46295851123197385,
+        "te": 0.4043732530119527,
+        "sv": 0.47397547818538305
+      },
+      "rows": {
+        "en": {
+          "tokens": 160935,
+          "faithful_units": 186426,
+          "ratio": 0.8632647806636413,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 76154,
+          "faithful_units": 88359,
+          "ratio": 0.8618703244717573,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31324,
+          "faithful_units": 36293,
+          "ratio": 0.8630865456148569,
+          "exact_roundtrip": true
+        },
+        "sv": {
+          "tokens": 37912,
+          "faithful_units": 44057,
+          "ratio": 0.8605215970220397,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.002743183641601643,
+      "raw_score": 364539.93995682226,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 364539.93995682226,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ru",
+      "name": "Russian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 394,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9589,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5041682153645516,
+        "te": 0.2589443094710826,
+        "ru": 0.8130632603982741
+      },
+      "rows": {
+        "en": {
+          "tokens": 200490,
+          "faithful_units": 186426,
+          "ratio": 1.0754401210131634,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 95260,
+          "faithful_units": 88359,
+          "ratio": 1.0781018345612785,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 39141,
+          "faithful_units": 36293,
+          "ratio": 1.0784724327005208,
+          "exact_roundtrip": true
+        },
+        "ru": {
+          "tokens": 124498,
+          "faithful_units": 115429,
+          "ratio": 1.0785677775948852,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.0031276565817217605,
+      "raw_score": 319728.1970930148,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 319728.1970930148,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "tk",
+      "name": "Turkmen",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 331,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9652,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4427563515435744,
+        "te": 0.3636055534977854,
+        "tk": 0.22824167234754025
+      },
+      "rows": {
+        "en": {
+          "tokens": 146481,
+          "faithful_units": 186426,
+          "ratio": 0.7857326767725532,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69615,
+          "faithful_units": 88359,
+          "ratio": 0.7878654126914066,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28557,
+          "faithful_units": 36293,
+          "ratio": 0.7868459482544843,
+          "exact_roundtrip": true
+        },
+        "tk": {
+          "tokens": 12219,
+          "faithful_units": 15571,
+          "ratio": 0.7847280200372487,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.003137392654157911,
+      "raw_score": 318736.0047760436,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 318736.0047760436,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "war",
+      "name": "Waray",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 300,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9683,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4630128399782918,
+        "te": 0.38970778907317516,
+        "war": 0.16979548343118878
+      },
+      "rows": {
+        "en": {
+          "tokens": 143836,
+          "faithful_units": 186426,
+          "ratio": 0.7715447416132943,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 68020,
+          "faithful_units": 88359,
+          "ratio": 0.7698140540295838,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28064,
+          "faithful_units": 36293,
+          "ratio": 0.7732620615545698,
+          "exact_roundtrip": true
+        },
+        "war": {
+          "tokens": 21089,
+          "faithful_units": 27278,
+          "ratio": 0.7731138646528338,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.0034480075249859743,
+      "raw_score": 290022.568904941,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 290022.568904941,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "vec",
+      "name": "Venetian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 337,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9646,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.43468246396984317,
+        "te": 0.3569567902693716,
+        "vec": 0.1290084893091635
+      },
+      "rows": {
+        "en": {
+          "tokens": 147555,
+          "faithful_units": 186426,
+          "ratio": 0.7914936757748383,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69631,
+          "faithful_units": 88359,
+          "ratio": 0.7880464921513372,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28556,
+          "faithful_units": 36293,
+          "ratio": 0.7868183947317664,
+          "exact_roundtrip": true
+        },
+        "vec": {
+          "tokens": 26949,
+          "faithful_units": 34229,
+          "ratio": 0.7873148499810102,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.0046752810430719105,
+      "raw_score": 213890.88501574792,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 213890.88501574792,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ro",
+      "name": "Romanian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 311,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9672,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.45612442967763256,
+        "te": 0.39235456900398774,
+        "ro": 0.3634405205079951
+      },
+      "rows": {
+        "en": {
+          "tokens": 161199,
+          "faithful_units": 186426,
+          "ratio": 0.8646808921502366,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 76077,
+          "faithful_units": 88359,
+          "ratio": 0.8609988795708416,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31409,
+          "faithful_units": 36293,
+          "ratio": 0.8654285950458767,
+          "exact_roundtrip": true
+        },
+        "ro": {
+          "tokens": 58410,
+          "faithful_units": 67862,
+          "ratio": 0.8607173381273762,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.004711256918500495,
+      "raw_score": 212257.58163880423,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 212257.58163880423,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "or",
+      "name": "Odia",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 364,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9619,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.45312026118834403,
+        "te": 0.37656209275544433,
+        "or": 0.33387895028840625
+      },
+      "rows": {
+        "en": {
+          "tokens": 147534,
+          "faithful_units": 186426,
+          "ratio": 0.7913810305429501,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69667,
+          "faithful_units": 88359,
+          "ratio": 0.7884539209361808,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28539,
+          "faithful_units": 36293,
+          "ratio": 0.7863499848455625,
+          "exact_roundtrip": true
+        },
+        "or": {
+          "tokens": 11463,
+          "faithful_units": 14544,
+          "ratio": 0.7881600660066007,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.005031045697387548,
+      "raw_score": 198765.8352058432,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 198765.8352058432,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "et",
+      "name": "Estonian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 338,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9645,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48927741841928907,
+        "te": 0.2374472883648547,
+        "et": 2.0325537954185995
+      },
+      "rows": {
+        "en": {
+          "tokens": 253052,
+          "faithful_units": 186426,
+          "ratio": 1.3573857723708067,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 120330,
+          "faithful_units": 88359,
+          "ratio": 1.3618307133398975,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 49358,
+          "faithful_units": 36293,
+          "ratio": 1.3599867743090954,
+          "exact_roundtrip": true
+        },
+        "et": {
+          "tokens": 128315,
+          "faithful_units": 94290,
+          "ratio": 1.3608548096298654,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.00444494096909076,
+      "raw_score": 224974.86624767393,
+      "hindi_penalty": 1.1443753333983815,
+      "adjusted_score": 196591.85206271426,
+      "all_under_1_2": false,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "cy",
+      "name": "Welsh",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 304,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9679,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4620932654030136,
+        "te": 0.4069577750202218,
+        "cy": 0.3705747691333386
+      },
+      "rows": {
+        "en": {
+          "tokens": 160124,
+          "faithful_units": 186426,
+          "ratio": 0.8589145290892901,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 76061,
+          "faithful_units": 88359,
+          "ratio": 0.8608178001109111,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31376,
+          "faithful_units": 36293,
+          "ratio": 0.8645193287961866,
+          "exact_roundtrip": true
+        },
+        "cy": {
+          "tokens": 64107,
+          "faithful_units": 74434,
+          "ratio": 0.8612596394120966,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.005604799706896535,
+      "raw_score": 178418.50776032737,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 178418.50776032737,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "km",
+      "name": "Khmer",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 377,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9606,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4354628183584689,
+        "te": 0.3701656278429108,
+        "km": 0.1289269888336333
+      },
+      "rows": {
+        "en": {
+          "tokens": 146075,
+          "faithful_units": 186426,
+          "ratio": 0.7835548689560469,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69428,
+          "faithful_units": 88359,
+          "ratio": 0.7857490465034688,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28308,
+          "faithful_units": 36293,
+          "ratio": 0.7799851210977323,
+          "exact_roundtrip": true
+        },
+        "km": {
+          "tokens": 21074,
+          "faithful_units": 26899,
+          "ratio": 0.783449198854976,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.0057639254057364475,
+      "raw_score": 173492.87674763578,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 173492.87674763578,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "fi",
+      "name": "Finnish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 302,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9681,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4845093090614798,
+        "te": 0.41510678672975343,
+        "fi": 0.6931835859446035
+      },
+      "rows": {
+        "en": {
+          "tokens": 167786,
+          "faithful_units": 186426,
+          "ratio": 0.9000139465525195,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 80130,
+          "faithful_units": 88359,
+          "ratio": 0.9068685702644892,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 32906,
+          "faithful_units": 36293,
+          "ratio": 0.9066762185545422,
+          "exact_roundtrip": true
+        },
+        "fi": {
+          "tokens": 39303,
+          "faithful_units": 43395,
+          "ratio": 0.905703422053232,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.006854623711969654,
+      "raw_score": 145886.9285929998,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 145886.9285929998,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "pnb",
+      "name": "Western Punjabi",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 399,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9584,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4564266415080759,
+        "te": 0.3888844085959984,
+        "pnb": 0.2790993380558547
+      },
+      "rows": {
+        "en": {
+          "tokens": 149903,
+          "faithful_units": 186426,
+          "ratio": 0.8040884855116776,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 71386,
+          "faithful_units": 88359,
+          "ratio": 0.8079086454124651,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29432,
+          "faithful_units": 36293,
+          "ratio": 0.8109552806326289,
+          "exact_roundtrip": true
+        },
+        "pnb": {
+          "tokens": 27523,
+          "faithful_units": 34147,
+          "ratio": 0.8060151697074414,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.006866795120951341,
+      "raw_score": 145628.3437012546,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 145628.3437012546,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "as",
+      "name": "Assamese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 363,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9620,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4613164561443109,
+        "te": 0.40037136284604663,
+        "as": 0.23417476548024332
+      },
+      "rows": {
+        "en": {
+          "tokens": 152435,
+          "faithful_units": 186426,
+          "ratio": 0.8176702820422044,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 72329,
+          "faithful_units": 88359,
+          "ratio": 0.8185810160821195,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29648,
+          "faithful_units": 36293,
+          "ratio": 0.8169068415396908,
+          "exact_roundtrip": true
+        },
+        "as": {
+          "tokens": 43943,
+          "faithful_units": 53321,
+          "ratio": 0.8241218281727649,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.007214986633074072,
+      "raw_score": 138600.39537924028,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 138600.39537924028,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "su",
+      "name": "Sundanese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 303,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9680,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4945727903007543,
+        "te": 0.4053825027147507,
+        "su": 0.33334538773881645
+      },
+      "rows": {
+        "en": {
+          "tokens": 147454,
+          "faithful_units": 186426,
+          "ratio": 0.7909519058500424,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69769,
+          "faithful_units": 88359,
+          "ratio": 0.7896083024932378,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28644,
+          "faithful_units": 36293,
+          "ratio": 0.7892431047309398,
+          "exact_roundtrip": true
+        },
+        "su": {
+          "tokens": 19931,
+          "faithful_units": 25023,
+          "ratio": 0.7965072133637054,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.007264108632765609,
+      "raw_score": 137663.13949235057,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 137663.13949235057,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "el",
+      "name": "Greek",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 357,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9626,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49285539405314205,
+        "te": 0.37957908724259104,
+        "el": 0.6266203352489902
+      },
+      "rows": {
+        "en": {
+          "tokens": 178242,
+          "faithful_units": 186426,
+          "ratio": 0.9561005439155482,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 85140,
+          "faithful_units": 88359,
+          "ratio": 0.9635690761552304,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34735,
+          "faithful_units": 36293,
+          "ratio": 0.9570716116055438,
+          "exact_roundtrip": true
+        },
+        "el": {
+          "tokens": 82382,
+          "faithful_units": 86172,
+          "ratio": 0.956018196165808,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.007550879989422388,
+      "raw_score": 132434.895191136,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 132434.895191136,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "bg",
+      "name": "Bulgarian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 357,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9626,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.46349058635226026,
+        "te": 0.39327592603861805,
+        "bg": 0.4481294373007955
+      },
+      "rows": {
+        "en": {
+          "tokens": 156226,
+          "faithful_units": 186426,
+          "ratio": 0.8380054284273653,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73365,
+          "faithful_units": 88359,
+          "ratio": 0.8303059111126201,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30216,
+          "faithful_units": 36293,
+          "ratio": 0.8325572424434464,
+          "exact_roundtrip": true
+        },
+        "bg": {
+          "tokens": 25658,
+          "faithful_units": 30717,
+          "ratio": 0.835302926718104,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.007699517314745163,
+      "raw_score": 129878.27147098217,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 129878.27147098217,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "tr",
+      "name": "Turkish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 389,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9594,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.43706194456828534,
+        "te": 0.38857710360054304,
+        "tr": 0.3255383499382378
+      },
+      "rows": {
+        "en": {
+          "tokens": 150454,
+          "faithful_units": 186426,
+          "ratio": 0.8070440818340789,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 71892,
+          "faithful_units": 88359,
+          "ratio": 0.8136352833327675,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29580,
+          "faithful_units": 36293,
+          "ratio": 0.8150332019948751,
+          "exact_roundtrip": true
+        },
+        "tr": {
+          "tokens": 25699,
+          "faithful_units": 31664,
+          "ratio": 0.8116157150075796,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.007989120160796115,
+      "raw_score": 125170.22899557317,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 125170.22899557317,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ko",
+      "name": "Korean",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 1116,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 8867,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47886516733764656,
+        "te": 0.3868302277834191,
+        "ko": 0.6497909376686932
+      },
+      "rows": {
+        "en": {
+          "tokens": 173419,
+          "faithful_units": 186426,
+          "ratio": 0.9302296889918789,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 81951,
+          "faithful_units": 88359,
+          "ratio": 0.9274776762978304,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33719,
+          "faithful_units": 36293,
+          "ratio": 0.9290772325241782,
+          "exact_roundtrip": true
+        },
+        "ko": {
+          "tokens": 44193,
+          "faithful_units": 47921,
+          "ratio": 0.92220529621669,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.008024392775188849,
+      "raw_score": 124620.02147900414,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 124620.02147900414,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "sk",
+      "name": "Slovak",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 325,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9658,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4641621456576666,
+        "te": 0.3976349117747324,
+        "sk": 0.5112721702450385
+      },
+      "rows": {
+        "en": {
+          "tokens": 156086,
+          "faithful_units": 186426,
+          "ratio": 0.8372544602147769,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73325,
+          "faithful_units": 88359,
+          "ratio": 0.8298532124627939,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30226,
+          "faithful_units": 36293,
+          "ratio": 0.8328327776706251,
+          "exact_roundtrip": true
+        },
+        "sk": {
+          "tokens": 28279,
+          "faithful_units": 33750,
+          "ratio": 0.8378962962962963,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.008043083833502385,
+      "raw_score": 124330.42110473031,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 124330.42110473031,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "an",
+      "name": "Aragonese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 303,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9680,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4710202319389444,
+        "te": 0.4069175238498933,
+        "an": 0.4691628230542904
+      },
+      "rows": {
+        "en": {
+          "tokens": 155229,
+          "faithful_units": 186426,
+          "ratio": 0.8326574619420039,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73404,
+          "faithful_units": 88359,
+          "ratio": 0.8307472922962007,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30109,
+          "faithful_units": 36293,
+          "ratio": 0.8296090155126333,
+          "exact_roundtrip": true
+        },
+        "an": {
+          "tokens": 23398,
+          "faithful_units": 28390,
+          "ratio": 0.824163437830222,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.008494024111781906,
+      "raw_score": 117729.82826984423,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 117729.82826984423,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "eu",
+      "name": "Basque",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 344,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9639,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4554943818140038,
+        "te": 0.39805209858236856,
+        "eu": 0.239558616009428
+      },
+      "rows": {
+        "en": {
+          "tokens": 161517,
+          "faithful_units": 186426,
+          "ratio": 0.8663866628045445,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 76385,
+          "faithful_units": 88359,
+          "ratio": 0.864484659174504,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31470,
+          "faithful_units": 36293,
+          "ratio": 0.8671093599316673,
+          "exact_roundtrip": true
+        },
+        "eu": {
+          "tokens": 41846,
+          "faithful_units": 48755,
+          "ratio": 0.8582914572864322,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.008817902645235076,
+      "raw_score": 113405.65214114371,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 113405.65214114371,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "da",
+      "name": "Danish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 308,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9675,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.501702791022762,
+        "te": 0.3684476741000217,
+        "da": 0.7803170011800273
+      },
+      "rows": {
+        "en": {
+          "tokens": 181445,
+          "faithful_units": 186426,
+          "ratio": 0.973281623807838,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 85212,
+          "faithful_units": 88359,
+          "ratio": 0.9643839337249177,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35185,
+          "faithful_units": 36293,
+          "ratio": 0.9694706968285896,
+          "exact_roundtrip": true
+        },
+        "da": {
+          "tokens": 76554,
+          "faithful_units": 78784,
+          "ratio": 0.971694760357433,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.008897690082920295,
+      "raw_score": 112388.72007011867,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 112388.72007011867,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "awa",
+      "name": "Awadhi",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 332,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9651,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.39258479141787594,
+        "te": 0.38843625784322827,
+        "awa": 0.2326379531902715
+      },
+      "rows": {
+        "en": {
+          "tokens": 150750,
+          "faithful_units": 186426,
+          "ratio": 0.8086318431978372,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 71604,
+          "faithful_units": 88359,
+          "ratio": 0.8103758530540183,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29675,
+          "faithful_units": 36293,
+          "ratio": 0.8176507866530736,
+          "exact_roundtrip": true
+        },
+        "awa": {
+          "tokens": 47527,
+          "faithful_units": 58767,
+          "ratio": 0.80873619548386,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.00901894345523635,
+      "raw_score": 110877.73251526545,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 110877.73251526545,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "mn",
+      "name": "Mongolian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 443,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9540,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4734309913646151,
+        "te": 0.40019099417956505,
+        "mn": 0.46273537123452385
+      },
+      "rows": {
+        "en": {
+          "tokens": 156434,
+          "faithful_units": 186426,
+          "ratio": 0.8391211526289252,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73527,
+          "faithful_units": 88359,
+          "ratio": 0.8321393406444165,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30106,
+          "faithful_units": 36293,
+          "ratio": 0.8295263549444797,
+          "exact_roundtrip": true
+        },
+        "mn": {
+          "tokens": 23396,
+          "faithful_units": 27944,
+          "ratio": 0.8372459204122531,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.009594797684445489,
+      "raw_score": 104223.14600975277,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 104223.14600975277,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ta",
+      "name": "Tamil",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 346,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9637,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5126051823125437,
+        "te": 0.2507602262192197,
+        "ta": 1.0216267075090089
+      },
+      "rows": {
+        "en": {
+          "tokens": 216614,
+          "faithful_units": 186426,
+          "ratio": 1.1619302028686986,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 102074,
+          "faithful_units": 88359,
+          "ratio": 1.1552190495591848,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 42210,
+          "faithful_units": 36293,
+          "ratio": 1.1630341939216928,
+          "exact_roundtrip": true
+        },
+        "ta": {
+          "tokens": 216503,
+          "faithful_units": 185869,
+          "ratio": 1.164815004115802,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.009595954556617325,
+      "raw_score": 104210.58104223771,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 104210.58104223771,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 357,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9626,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5111238337150255,
+        "te": 0.3171297110353977,
+        "fr": 0.8982493181892053
+      },
+      "rows": {
+        "en": {
+          "tokens": 193250,
+          "faithful_units": 186426,
+          "ratio": 1.036604336305022,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 92109,
+          "faithful_units": 88359,
+          "ratio": 1.0424404984212134,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 37524,
+          "faithful_units": 36293,
+          "ratio": 1.0339183864657095,
+          "exact_roundtrip": true
+        },
+        "fr": {
+          "tokens": 116249,
+          "faithful_units": 112602,
+          "ratio": 1.0323884122839737,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010052086137239735,
+      "raw_score": 99481.83753572531,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 99481.83753572531,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "hy",
+      "name": "Armenian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 400,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9583,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48471285268876974,
+        "te": 0.38325483289193474,
+        "hy": 0.5263357664677594
+      },
+      "rows": {
+        "en": {
+          "tokens": 176348,
+          "faithful_units": 186426,
+          "ratio": 0.9459410168109599,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 84203,
+          "faithful_units": 88359,
+          "ratio": 0.9529646102830498,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34640,
+          "faithful_units": 36293,
+          "ratio": 0.9544540269473453,
+          "exact_roundtrip": true
+        },
+        "hy": {
+          "tokens": 95522,
+          "faithful_units": 101165,
+          "ratio": 0.9442198388770819,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010234188070263328,
+      "raw_score": 97711.70835775639,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 97711.70835775639,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "bs",
+      "name": "Bosnian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 304,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9679,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47266973916365623,
+        "te": 0.3884789172846465,
+        "bs": 0.2035455891088296
+      },
+      "rows": {
+        "en": {
+          "tokens": 147603,
+          "faithful_units": 186426,
+          "ratio": 0.7917511505905829,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 70878,
+          "faithful_units": 88359,
+          "ratio": 0.8021593725596713,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28992,
+          "faithful_units": 36293,
+          "ratio": 0.7988317306367619,
+          "exact_roundtrip": true
+        },
+        "bs": {
+          "tokens": 34264,
+          "faithful_units": 43157,
+          "ratio": 0.7939384109182751,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010408221969088416,
+      "raw_score": 96077.88947717677,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 96077.88947717677,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "he",
+      "name": "Hebrew",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 334,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9649,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.46503701459114816,
+        "te": 0.3939347915248206,
+        "he": 0.4651541533684298
+      },
+      "rows": {
+        "en": {
+          "tokens": 156751,
+          "faithful_units": 186426,
+          "ratio": 0.8408215592245717,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73355,
+          "faithful_units": 88359,
+          "ratio": 0.8301927364501636,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30276,
+          "faithful_units": 36293,
+          "ratio": 0.8342104538065191,
+          "exact_roundtrip": true
+        },
+        "he": {
+          "tokens": 36326,
+          "faithful_units": 43277,
+          "ratio": 0.8393835062504332,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010628822774408131,
+      "raw_score": 94083.79659954253,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 94083.79659954253,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ja",
+      "name": "Japanese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 1867,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 8116,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5002263982683781,
+        "te": 0.247183245076087,
+        "ja": 0.5202207885519058
+      },
+      "rows": {
+        "en": {
+          "tokens": 209353,
+          "faithful_units": 186426,
+          "ratio": 1.1229817729286689,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 99304,
+          "faithful_units": 88359,
+          "ratio": 1.123869668058715,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 40505,
+          "faithful_units": 36293,
+          "ratio": 1.1160554376877083,
+          "exact_roundtrip": true
+        },
+        "ja": {
+          "tokens": 126651,
+          "faithful_units": 112405,
+          "ratio": 1.1267381344246252,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010682696736916908,
+      "raw_score": 93609.32212408812,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 93609.32212408812,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "zh",
+      "name": "Chinese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 2051,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 7932,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5022756008751933,
+        "te": 0.2845455838255329,
+        "zh": 0.379814752676272
+      },
+      "rows": {
+        "en": {
+          "tokens": 195554,
+          "faithful_units": 186426,
+          "ratio": 1.0489631274607618,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 92567,
+          "faithful_units": 88359,
+          "ratio": 1.0476238979617243,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 38299,
+          "faithful_units": 36293,
+          "ratio": 1.0552723665720662,
+          "exact_roundtrip": true
+        },
+        "zh": {
+          "tokens": 80233,
+          "faithful_units": 76813,
+          "ratio": 1.044523713433924,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010748653138142217,
+      "raw_score": 93034.9121092616,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 93034.9121092616,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "bh",
+      "name": "Bhojpuri",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 328,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9655,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4107145651014846,
+        "te": 0.3811531935245624,
+        "bh": 0.21452890996561916
+      },
+      "rows": {
+        "en": {
+          "tokens": 149788,
+          "faithful_units": 186426,
+          "ratio": 0.8034716187656228,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 70360,
+          "faithful_units": 88359,
+          "ratio": 0.7962969250444211,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29293,
+          "faithful_units": 36293,
+          "ratio": 0.8071253409748437,
+          "exact_roundtrip": true
+        },
+        "bh": {
+          "tokens": 42537,
+          "faithful_units": 53155,
+          "ratio": 0.8002445677734926,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.010828415930422608,
+      "raw_score": 92349.61109967007,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 92349.61109967007,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 318,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9665,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5144863901286141,
+        "te": 0.24610597610969534,
+        "de": 1.4097760485853734
+      },
+      "rows": {
+        "en": {
+          "tokens": 222211,
+          "faithful_units": 186426,
+          "ratio": 1.1919528391962495,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 105569,
+          "faithful_units": 88359,
+          "ratio": 1.1947735940877557,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 42965,
+          "faithful_units": 36293,
+          "ratio": 1.1838371035736919,
+          "exact_roundtrip": true
+        },
+        "de": {
+          "tokens": 148736,
+          "faithful_units": 124456,
+          "ratio": 1.1950890274474513,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.011251923873759395,
+      "raw_score": 88873.69051012683,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 88873.69051012683,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "sh",
+      "name": "Serbo-Croatian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 311,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9672,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47382541275617157,
+        "te": 0.3992334187401698,
+        "sh": 0.4934840940608179
+      },
+      "rows": {
+        "en": {
+          "tokens": 157993,
+          "faithful_units": 186426,
+          "ratio": 0.8474837200819628,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 74904,
+          "faithful_units": 88359,
+          "ratio": 0.8477234916646861,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30348,
+          "faithful_units": 36293,
+          "ratio": 0.8361943074422065,
+          "exact_roundtrip": true
+        },
+        "sh": {
+          "tokens": 36762,
+          "faithful_units": 43435,
+          "ratio": 0.8463681362956141,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.011529184222479616,
+      "raw_score": 86736.40569036957,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 86736.40569036957,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ami",
+      "name": "Amis",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 629,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9354,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4394267225342206,
+        "te": 0.39222280332589077,
+        "ami": 0.24288857791293286
+      },
+      "rows": {
+        "en": {
+          "tokens": 152841,
+          "faithful_units": 186426,
+          "ratio": 0.8198480898587107,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 71821,
+          "faithful_units": 88359,
+          "ratio": 0.8128317432293258,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29678,
+          "faithful_units": 36293,
+          "ratio": 0.8177334472212272,
+          "exact_roundtrip": true
+        },
+        "ami": {
+          "tokens": 11984,
+          "faithful_units": 14829,
+          "ratio": 0.8081462000134871,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.011701889845223579,
+      "raw_score": 85456.28212422246,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 85456.28212422246,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "uk",
+      "name": "Ukrainian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 379,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9604,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48462356018744784,
+        "te": 0.38343556542812784,
+        "uk": 0.7747648538446771
+      },
+      "rows": {
+        "en": {
+          "tokens": 175263,
+          "faithful_units": 186426,
+          "ratio": 0.9401210131633999,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 82690,
+          "faithful_units": 88359,
+          "ratio": 0.935841283853371,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33694,
+          "faithful_units": 36293,
+          "ratio": 0.9283883944562312,
+          "exact_roundtrip": true
+        },
+        "uk": {
+          "tokens": 62277,
+          "faithful_units": 66644,
+          "ratio": 0.9344727207250465,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.011732618707168685,
+      "raw_score": 85232.46386495074,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 85232.46386495074,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "xmf",
+      "name": "Mingrelian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 452,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9531,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4389568046948601,
+        "te": 0.39218069992243926,
+        "xmf": 0.3668540413482622
+      },
+      "rows": {
+        "en": {
+          "tokens": 151995,
+          "faithful_units": 186426,
+          "ratio": 0.8153100962312124,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 72986,
+          "faithful_units": 88359,
+          "ratio": 0.8260165914055161,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29612,
+          "faithful_units": 36293,
+          "ratio": 0.8159149147218472,
+          "exact_roundtrip": true
+        },
+        "xmf": {
+          "tokens": 24553,
+          "faithful_units": 29686,
+          "ratio": 0.8270902108738126,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.011780114642600203,
+      "raw_score": 84888.81732811997,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 84888.81732811997,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "be",
+      "name": "Belarusian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 406,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9577,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.45207357844813406,
+        "te": 0.3814357900408202,
+        "be": 0.458093899750556
+      },
+      "rows": {
+        "en": {
+          "tokens": 163886,
+          "faithful_units": 186426,
+          "ratio": 0.879094117773272,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 77174,
+          "faithful_units": 88359,
+          "ratio": 0.8734141400423273,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31473,
+          "faithful_units": 36293,
+          "ratio": 0.8671920204998209,
+          "exact_roundtrip": true
+        },
+        "be": {
+          "tokens": 19207,
+          "faithful_units": 21988,
+          "ratio": 0.8735219210478443,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.01190209727345104,
+      "raw_score": 84018.80584782414,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 84018.80584782414,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ca",
+      "name": "Catalan",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 359,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9624,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4643776060159433,
+        "te": 0.3994056105294425,
+        "ca": 0.3453940851564889
+      },
+      "rows": {
+        "en": {
+          "tokens": 156625,
+          "faithful_units": 186426,
+          "ratio": 0.8401456878332422,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 74997,
+          "faithful_units": 88359,
+          "ratio": 0.8487760160255322,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30372,
+          "faithful_units": 36293,
+          "ratio": 0.8368555919874356,
+          "exact_roundtrip": true
+        },
+        "ca": {
+          "tokens": 31511,
+          "faithful_units": 37657,
+          "ratio": 0.8367899726478477,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.011986043377684497,
+      "raw_score": 83430.3671770278,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 83430.3671770278,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ha",
+      "name": "Hausa",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 354,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9629,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4618760715000357,
+        "te": 0.37936828849323834,
+        "ha": 0.16861869537578011
+      },
+      "rows": {
+        "en": {
+          "tokens": 149082,
+          "faithful_units": 186426,
+          "ratio": 0.7996845933507128,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 69745,
+          "faithful_units": 88359,
+          "ratio": 0.7893366833033421,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29083,
+          "faithful_units": 36293,
+          "ratio": 0.8013391012040889,
+          "exact_roundtrip": true
+        },
+        "ha": {
+          "tokens": 23901,
+          "faithful_units": 29941,
+          "ratio": 0.7982699308640326,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.012002417900746853,
+      "raw_score": 83316.54573848614,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 83316.54573848614,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "th",
+      "name": "Thai",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 363,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9620,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49320643967560673,
+        "te": 0.3868335019047812,
+        "th": 0.4663237218999432
+      },
+      "rows": {
+        "en": {
+          "tokens": 175928,
+          "faithful_units": 186426,
+          "ratio": 0.9436881121731947,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 84450,
+          "faithful_units": 88359,
+          "ratio": 0.955760024445727,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34524,
+          "faithful_units": 36293,
+          "ratio": 0.9512578183120712,
+          "exact_roundtrip": true
+        },
+        "th": {
+          "tokens": 88604,
+          "faithful_units": 93819,
+          "ratio": 0.9444142444494186,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.012071912272532348,
+      "raw_score": 82836.91741823999,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 82836.91741823999,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "az",
+      "name": "Azerbaijani",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 305,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9678,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.45790622704642536,
+        "te": 0.3861934641895283,
+        "az": 0.3673755835463748
+      },
+      "rows": {
+        "en": {
+          "tokens": 163375,
+          "faithful_units": 186426,
+          "ratio": 0.8763530837973245,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 76332,
+          "faithful_units": 88359,
+          "ratio": 0.8638848334634842,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31484,
+          "faithful_units": 36293,
+          "ratio": 0.8674951092497176,
+          "exact_roundtrip": true
+        },
+        "az": {
+          "tokens": 14395,
+          "faithful_units": 16628,
+          "ratio": 0.8657084435891268,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.012468250333840247,
+      "raw_score": 80203.71529483062,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 80203.71529483062,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "pt",
+      "name": "Portuguese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 328,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9655,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5036995652719314,
+        "te": 0.31433773324272407,
+        "pt": 0.7208867645687533
+      },
+      "rows": {
+        "en": {
+          "tokens": 193221,
+          "faithful_units": 186426,
+          "ratio": 1.0364487786038428,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 90467,
+          "faithful_units": 88359,
+          "ratio": 1.0238572188458448,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 37529,
+          "faithful_units": 36293,
+          "ratio": 1.034056154079299,
+          "exact_roundtrip": true
+        },
+        "pt": {
+          "tokens": 136563,
+          "faithful_units": 132510,
+          "ratio": 1.0305863708399365,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.012591559757997972,
+      "raw_score": 79418.27853096713,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 79418.27853096713,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "arz",
+      "name": "Egyptian Arabic",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 345,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9638,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49462103470961644,
+        "te": 0.3893755076864719,
+        "arz": 0.616673578572056
+      },
+      "rows": {
+        "en": {
+          "tokens": 177883,
+          "faithful_units": 186426,
+          "ratio": 0.9541748468561252,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 83219,
+          "faithful_units": 88359,
+          "ratio": 0.9418282234973234,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34648,
+          "faithful_units": 36293,
+          "ratio": 0.9546744551290882,
+          "exact_roundtrip": true
+        },
+        "arz": {
+          "tokens": 91898,
+          "faithful_units": 96406,
+          "ratio": 0.9532394249320582,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.012846231631764793,
+      "raw_score": 77843.84001976941,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 77843.84001976941,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "gl",
+      "name": "Galician",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 308,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9675,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4867780315000613,
+        "te": 0.40138659570705687,
+        "gl": 0.6099809574227012
+      },
+      "rows": {
+        "en": {
+          "tokens": 173847,
+          "faithful_units": 186426,
+          "ratio": 0.9325255060989347,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 81274,
+          "faithful_units": 88359,
+          "ratio": 0.9198157516495207,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33678,
+          "faithful_units": 36293,
+          "ratio": 0.9279475380927451,
+          "exact_roundtrip": true
+        },
+        "gl": {
+          "tokens": 67788,
+          "faithful_units": 73737,
+          "ratio": 0.9193213719028439,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.013204134196090789,
+      "raw_score": 75733.85616574994,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 75733.85616574994,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 326,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9657,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.495124796302288,
+        "te": 0.38561739610680446,
+        "es": 0.6942669659861769
+      },
+      "rows": {
+        "en": {
+          "tokens": 178930,
+          "faithful_units": 186426,
+          "ratio": 0.959791016274554,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 83961,
+          "faithful_units": 88359,
+          "ratio": 0.9502257834516008,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34727,
+          "faithful_units": 36293,
+          "ratio": 0.9568511834238007,
+          "exact_roundtrip": true
+        },
+        "es": {
+          "tokens": 76143,
+          "faithful_units": 80521,
+          "ratio": 0.9456290905478074,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.014161925726746571,
+      "raw_score": 70611.8658786195,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 70611.8658786195,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "pl",
+      "name": "Polish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 374,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9609,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4712093846406652,
+        "te": 0.40049213288070024,
+        "pl": 0.4013046585272132
+      },
+      "rows": {
+        "en": {
+          "tokens": 157027,
+          "faithful_units": 186426,
+          "ratio": 0.8423020394151031,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 75004,
+          "faithful_units": 88359,
+          "ratio": 0.8488552382892518,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30379,
+          "faithful_units": 36293,
+          "ratio": 0.8370484666464607,
+          "exact_roundtrip": true
+        },
+        "pl": {
+          "tokens": 34292,
+          "faithful_units": 40276,
+          "ratio": 0.85142516635217,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.014376699705709317,
+      "raw_score": 69556.99294483261,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 69556.99294483261,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 352,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9631,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.5060215200551134,
+        "te": 0.25965012587512926,
+        "ar": 0.9391631101321773
+      },
+      "rows": {
+        "en": {
+          "tokens": 202722,
+          "faithful_units": 186426,
+          "ratio": 1.0874126999452867,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 94807,
+          "faithful_units": 88359,
+          "ratio": 1.0729750223519958,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 39126,
+          "faithful_units": 36293,
+          "ratio": 1.0780591298597526,
+          "exact_roundtrip": true
+        },
+        "ar": {
+          "tokens": 194170,
+          "faithful_units": 180551,
+          "ratio": 1.0754302108545508,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.014437677593290843,
+      "raw_score": 69263.21726873149,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 69263.21726873149,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ka",
+      "name": "Georgian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 372,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9611,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4633608872246365,
+        "te": 0.39686831817368107,
+        "ka": 0.5501076060602698
+      },
+      "rows": {
+        "en": {
+          "tokens": 168123,
+          "faithful_units": 186426,
+          "ratio": 0.901821634321393,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 80131,
+          "faithful_units": 88359,
+          "ratio": 0.9068798877307348,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33000,
+          "faithful_units": 36293,
+          "ratio": 0.9092662496900229,
+          "exact_roundtrip": true
+        },
+        "ka": {
+          "tokens": 25357,
+          "faithful_units": 28344,
+          "ratio": 0.894616144510302,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.014650105179720874,
+      "raw_score": 68258.89560057431,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 68258.89560057431,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "hu",
+      "name": "Hungarian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 320,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9663,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4850382868493095,
+        "te": 0.3821895982725785,
+        "hu": 0.8236009371817071
+      },
+      "rows": {
+        "en": {
+          "tokens": 173713,
+          "faithful_units": 186426,
+          "ratio": 0.9318067222383144,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 83108,
+          "faithful_units": 88359,
+          "ratio": 0.9405719847440555,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33693,
+          "faithful_units": 36293,
+          "ratio": 0.9283608409335133,
+          "exact_roundtrip": true
+        },
+        "hu": {
+          "tokens": 55444,
+          "faithful_units": 59882,
+          "ratio": 0.9258875789051801,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.014684405838875314,
+      "raw_score": 68099.45264197291,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 68099.45264197291,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ckb",
+      "name": "Central Kurdish",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 350,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9633,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49127356708811665,
+        "te": 0.38220126472896165,
+        "ckb": 0.5834522266601012
+      },
+      "rows": {
+        "en": {
+          "tokens": 175588,
+          "faithful_units": 186426,
+          "ratio": 0.9418643322283372,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 82851,
+          "faithful_units": 88359,
+          "ratio": 0.9376633959189217,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33636,
+          "faithful_units": 36293,
+          "ratio": 0.9267902901385943,
+          "exact_roundtrip": true
+        },
+        "ckb": {
+          "tokens": 131091,
+          "faithful_units": 139485,
+          "ratio": 0.9398214861813098,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015074042089742945,
+      "raw_score": 66339.20709830344,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 66339.20709830344,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "pa",
+      "name": "Punjabi",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 367,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9616,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47518220537926803,
+        "te": 0.40188863049683277,
+        "pa": 0.5525210891870677
+      },
+      "rows": {
+        "en": {
+          "tokens": 157146,
+          "faithful_units": 186426,
+          "ratio": 0.8429403623958032,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 74177,
+          "faithful_units": 88359,
+          "ratio": 0.8394956937040935,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30039,
+          "faithful_units": 36293,
+          "ratio": 0.8276802689223818,
+          "exact_roundtrip": true
+        },
+        "pa": {
+          "tokens": 33638,
+          "faithful_units": 40052,
+          "ratio": 0.8398581843603315,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015260093473421388,
+      "raw_score": 65530.39807663741,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 65530.39807663741,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "it",
+      "name": "Italian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 320,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9663,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4972657191920945,
+        "te": 0.358410743145086,
+        "it": 0.8327070684214332
+      },
+      "rows": {
+        "en": {
+          "tokens": 183747,
+          "faithful_units": 186426,
+          "ratio": 0.9856296868462554,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 88016,
+          "faithful_units": 88359,
+          "ratio": 0.9961181090777397,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35708,
+          "faithful_units": 36293,
+          "ratio": 0.9838811892100405,
+          "exact_roundtrip": true
+        },
+        "it": {
+          "tokens": 92085,
+          "faithful_units": 93895,
+          "ratio": 0.9807231481974547,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015394960880285025,
+      "raw_score": 64956.31965395977,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 64956.31965395977,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "vi",
+      "name": "Vietnamese",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 408,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9575,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.488450721480216,
+        "te": 0.3842109312437358,
+        "vi": 0.5305883659443298
+      },
+      "rows": {
+        "en": {
+          "tokens": 174758,
+          "faithful_units": 186426,
+          "ratio": 0.9374121635394205,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 82865,
+          "faithful_units": 88359,
+          "ratio": 0.9378218404463609,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33476,
+          "faithful_units": 36293,
+          "ratio": 0.9223817265037335,
+          "exact_roundtrip": true
+        },
+        "vi": {
+          "tokens": 102866,
+          "faithful_units": 110353,
+          "ratio": 0.9321540873379065,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015440113942627343,
+      "raw_score": 64766.36142167203,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 64766.36142167203,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ce",
+      "name": "Chechen",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 374,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9609,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49411861174813515,
+        "te": 0.3581087504035943,
+        "ce": 0.6286790977215673
+      },
+      "rows": {
+        "en": {
+          "tokens": 185897,
+          "faithful_units": 186426,
+          "ratio": 0.9971624129681482,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 88377,
+          "faithful_units": 88359,
+          "ratio": 1.0002037143924218,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35731,
+          "faithful_units": 36293,
+          "ratio": 0.9845149202325517,
+          "exact_roundtrip": true
+        },
+        "ce": {
+          "tokens": 104340,
+          "faithful_units": 104827,
+          "ratio": 0.9953542503362683,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015688794159870123,
+      "raw_score": 63739.761629218694,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 63739.761629218694,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "oc",
+      "name": "Occitan",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 312,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9671,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48996142128697573,
+        "te": 0.38249556974691523,
+        "oc": 0.798583790158579
+      },
+      "rows": {
+        "en": {
+          "tokens": 172896,
+          "faithful_units": 186426,
+          "ratio": 0.9274242863119951,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 83346,
+          "faithful_units": 88359,
+          "ratio": 0.9432655417105218,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33685,
+          "faithful_units": 36293,
+          "ratio": 0.9281404127517703,
+          "exact_roundtrip": true
+        },
+        "oc": {
+          "tokens": 41839,
+          "faithful_units": 44616,
+          "ratio": 0.9377577550654473,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015841255398526655,
+      "raw_score": 63126.31005829291,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 63126.31005829291,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ur",
+      "name": "Urdu",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 409,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9574,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4594557982477407,
+        "te": 0.3734684415418917,
+        "ur": 0.27738843547250763
+      },
+      "rows": {
+        "en": {
+          "tokens": 149697,
+          "faithful_units": 186426,
+          "ratio": 0.8029834894274404,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 71196,
+          "faithful_units": 88359,
+          "ratio": 0.8057583268257903,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 29576,
+          "faithful_units": 36293,
+          "ratio": 0.8149229879040035,
+          "exact_roundtrip": true
+        },
+        "ur": {
+          "tokens": 23591,
+          "faithful_units": 29528,
+          "ratio": 0.7989366025467353,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.015986385357268262,
+      "raw_score": 62553.2274902498,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 62553.2274902498,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "tl",
+      "name": "Tagalog",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 296,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9687,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4813655528200276,
+        "te": 0.4006778177244482,
+        "tl": 0.312389348032709
+      },
+      "rows": {
+        "en": {
+          "tokens": 149557,
+          "faithful_units": 186426,
+          "ratio": 0.802232521214852,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 70848,
+          "faithful_units": 88359,
+          "ratio": 0.8018198485723016,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28530,
+          "faithful_units": 36293,
+          "ratio": 0.7861020031411016,
+          "exact_roundtrip": true
+        },
+        "tl": {
+          "tokens": 13780,
+          "faithful_units": 17434,
+          "ratio": 0.7904095445680853,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.016130518073750433,
+      "raw_score": 61994.28905059926,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 61994.28905059926,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "nl",
+      "name": "Dutch",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 307,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9676,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4860830392527616,
+        "te": 0.4010803568726947,
+        "nl": 0.7070127756857145
+      },
+      "rows": {
+        "en": {
+          "tokens": 169977,
+          "faithful_units": 186426,
+          "ratio": 0.9117665990795275,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 80182,
+          "faithful_units": 88359,
+          "ratio": 0.9074570785092634,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33535,
+          "faithful_units": 36293,
+          "ratio": 0.9240073843440884,
+          "exact_roundtrip": true
+        },
+        "nl": {
+          "tokens": 37090,
+          "faithful_units": 40372,
+          "ratio": 0.9187060338848707,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.016550305834824974,
+      "raw_score": 60421.844162892194,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 60421.844162892194,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "eo",
+      "name": "Esperanto",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 309,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9674,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47459467236220504,
+        "te": 0.40130606110966816,
+        "eo": 0.6850838473614543
+      },
+      "rows": {
+        "en": {
+          "tokens": 166244,
+          "faithful_units": 186426,
+          "ratio": 0.8917425680967247,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 78512,
+          "faithful_units": 88359,
+          "ratio": 0.8885569098790163,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 32859,
+          "faithful_units": 36293,
+          "ratio": 0.9053812029868019,
+          "exact_roundtrip": true
+        },
+        "eo": {
+          "tokens": 36425,
+          "faithful_units": 40737,
+          "ratio": 0.894150281071262,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.01682429310778566,
+      "raw_score": 59437.86128745208,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 59437.86128745208,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "cs",
+      "name": "Czech",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 328,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9655,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49018179922278204,
+        "te": 0.3568878040629705,
+        "cs": 1.0072678212880508
+      },
+      "rows": {
+        "en": {
+          "tokens": 183257,
+          "faithful_units": 186426,
+          "ratio": 0.983001298102196,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 88349,
+          "faithful_units": 88359,
+          "ratio": 0.9998868253375435,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35677,
+          "faithful_units": 36293,
+          "ratio": 0.9830270300057863,
+          "exact_roundtrip": true
+        },
+        "cs": {
+          "tokens": 71482,
+          "faithful_units": 71985,
+          "ratio": 0.9930124331457942,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.01688552723534742,
+      "raw_score": 59222.31423764157,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 59222.31423764157,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "fa",
+      "name": "Persian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 477,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9506,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4945298766523433,
+        "te": 0.36748345911819114,
+        "fa": 0.6053285599852329
+      },
+      "rows": {
+        "en": {
+          "tokens": 184447,
+          "faithful_units": 186426,
+          "ratio": 0.9893845279091972,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 85907,
+          "faithful_units": 88359,
+          "ratio": 0.9722495727656493,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35414,
+          "faithful_units": 36293,
+          "ratio": 0.975780453530984,
+          "exact_roundtrip": true
+        },
+        "fa": {
+          "tokens": 107419,
+          "faithful_units": 108729,
+          "ratio": 0.9879516964195385,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.017134955143547903,
+      "raw_score": 58360.234481065796,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 58360.234481065796,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "anp",
+      "name": "Angika",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 330,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9653,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.3698566073748844,
+        "te": 0.380334416286381,
+        "anp": 0.29791411980449356
+      },
+      "rows": {
+        "en": {
+          "tokens": 149713,
+          "faithful_units": 186426,
+          "ratio": 0.8030693143660219,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 70231,
+          "faithful_units": 88359,
+          "ratio": 0.7948369718987313,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28610,
+          "faithful_units": 36293,
+          "ratio": 0.7883062849585319,
+          "exact_roundtrip": true
+        },
+        "anp": {
+          "tokens": 31747,
+          "faithful_units": 39397,
+          "ratio": 0.805822778384141,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.017516493425609014,
+      "raw_score": 57089.05176980261,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 57089.05176980261,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "sr",
+      "name": "Serbian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 376,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9607,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4726518581870608,
+        "te": 0.3968087638164866,
+        "sr": 0.4546143339868446
+      },
+      "rows": {
+        "en": {
+          "tokens": 158479,
+          "faithful_units": 186426,
+          "ratio": 0.8500906525913767,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 75013,
+          "faithful_units": 88359,
+          "ratio": 0.8489570954854627,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31447,
+          "faithful_units": 36293,
+          "ratio": 0.8664756289091561,
+          "exact_roundtrip": true
+        },
+        "sr": {
+          "tokens": 40985,
+          "faithful_units": 48215,
+          "ratio": 0.8500466659753189,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.01751853342369336,
+      "raw_score": 57082.403864214226,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 57082.403864214226,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "mg",
+      "name": "Malagasy",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 310,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9673,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4668833384430581,
+        "te": 0.3896724825189117,
+        "mg": 0.2835784252653992
+      },
+      "rows": {
+        "en": {
+          "tokens": 150496,
+          "faithful_units": 186426,
+          "ratio": 0.8072693722978554,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 70922,
+          "faithful_units": 88359,
+          "ratio": 0.8026573410744803,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 28652,
+          "faithful_units": 36293,
+          "ratio": 0.7894635329126829,
+          "exact_roundtrip": true
+        },
+        "mg": {
+          "tokens": 38102,
+          "faithful_units": 47474,
+          "ratio": 0.802586679024308,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.01780583938517255,
+      "raw_score": 56161.35124933956,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 56161.35124933956,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "simple",
+      "name": "Simple English",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 415,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9568,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47635770170048974,
+        "te": 0.4053507925257296,
+        "simple": 0.25714657239691996
+      },
+      "rows": {
+        "en": {
+          "tokens": 155407,
+          "faithful_units": 186426,
+          "ratio": 0.8336122643837233,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 73108,
+          "faithful_units": 88359,
+          "ratio": 0.8273973222874863,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30030,
+          "faithful_units": 36293,
+          "ratio": 0.8274322872179208,
+          "exact_roundtrip": true
+        },
+        "simple": {
+          "tokens": 48429,
+          "faithful_units": 57295,
+          "ratio": 0.8452570032289031,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.017859680941416767,
+      "raw_score": 55992.041698852,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 55992.041698852,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "lv",
+      "name": "Latvian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 324,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9659,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47762166805148737,
+        "te": 0.3990387411370441,
+        "lv": 0.7864606503892596
+      },
+      "rows": {
+        "en": {
+          "tokens": 171089,
+          "faithful_units": 186426,
+          "ratio": 0.9177314323109438,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 80183,
+          "faithful_units": 88359,
+          "ratio": 0.907468395975509,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33552,
+          "faithful_units": 36293,
+          "ratio": 0.9244757942302924,
+          "exact_roundtrip": true
+        },
+        "lv": {
+          "tokens": 47986,
+          "faithful_units": 51843,
+          "ratio": 0.9256022992496576,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.018133903274148655,
+      "raw_score": 55145.32557508349,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 55145.32557508349,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "nb",
+      "name": "Norwegian Bokmål",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 304,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9679,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4687798513689077,
+        "te": 0.3975113765077902,
+        "nb": 0.5705435681411597
+      },
+      "rows": {
+        "en": {
+          "tokens": 163398,
+          "faithful_units": 186426,
+          "ratio": 0.8764764571465353,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 78572,
+          "faithful_units": 88359,
+          "ratio": 0.8892359578537558,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 32063,
+          "faithful_units": 36293,
+          "ratio": 0.8834485989033698,
+          "exact_roundtrip": true
+        },
+        "nb": {
+          "tokens": 42836,
+          "faithful_units": 49239,
+          "ratio": 0.8699608034281768,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.019275154425578922,
+      "raw_score": 51880.25879953309,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 51880.25879953309,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "bn",
+      "name": "Bangla",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 371,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9612,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48787229349428984,
+        "te": 0.37861727484690155,
+        "bn": 0.48682058138031775
+      },
+      "rows": {
+        "en": {
+          "tokens": 174795,
+          "faithful_units": 186426,
+          "ratio": 0.9376106337098903,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 83146,
+          "faithful_units": 88359,
+          "ratio": 0.9410020484613905,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34755,
+          "faithful_units": 36293,
+          "ratio": 0.9576226820599013,
+          "exact_roundtrip": true
+        },
+        "bn": {
+          "tokens": 83173,
+          "faithful_units": 88548,
+          "ratio": 0.9392984595925373,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.020012048350011025,
+      "raw_score": 49969.89725939019,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 49969.89725939019,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "azb",
+      "name": "South Azerbaijani",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 376,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9607,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.46872286998063034,
+        "te": 0.39628343670330723,
+        "azb": 0.48100411664415704
+      },
+      "rows": {
+        "en": {
+          "tokens": 155766,
+          "faithful_units": 186426,
+          "ratio": 0.8355379614431463,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 74957,
+          "faithful_units": 88359,
+          "ratio": 0.8483233173757059,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30053,
+          "faithful_units": 36293,
+          "ratio": 0.828066018240432,
+          "exact_roundtrip": true
+        },
+        "azb": {
+          "tokens": 22371,
+          "faithful_units": 26473,
+          "ratio": 0.8450496732519927,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.020257299135273854,
+      "raw_score": 49364.92240758339,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 49364.92240758339,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "mr",
+      "name": "Marathi",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 302,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9681,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.44950163224469974,
+        "te": 0.39825236125288366,
+        "mr": 0.5184518174118988
+      },
+      "rows": {
+        "en": {
+          "tokens": 158097,
+          "faithful_units": 186426,
+          "ratio": 0.8480415821827427,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 75187,
+          "faithful_units": 88359,
+          "ratio": 0.850926334612207,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31499,
+          "faithful_units": 36293,
+          "ratio": 0.8679084120904857,
+          "exact_roundtrip": true
+        },
+        "mr": {
+          "tokens": 25226,
+          "faithful_units": 29766,
+          "ratio": 0.8474769871665658,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.020431424923919916,
+      "raw_score": 48944.212345623455,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 48944.212345623455,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "sl",
+      "name": "Slovenian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 315,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9668,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4695113420362292,
+        "te": 0.39956691117939136,
+        "sl": 0.5458541813959433
+      },
+      "rows": {
+        "en": {
+          "tokens": 158549,
+          "faithful_units": 186426,
+          "ratio": 0.8504661366976709,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 74779,
+          "faithful_units": 88359,
+          "ratio": 0.846308808383979,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 30159,
+          "faithful_units": 36293,
+          "ratio": 0.8309866916485272,
+          "exact_roundtrip": true
+        },
+        "sl": {
+          "tokens": 28245,
+          "faithful_units": 34056,
+          "ratio": 0.829369274136716,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.021096862560954888,
+      "raw_score": 47400.4130761488,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 47400.4130761488,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "kk",
+      "name": "Kazakh",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 381,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9602,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.47920012014308855,
+        "te": 0.3799238171408021,
+        "kk": 0.6493844692221598
+      },
+      "rows": {
+        "en": {
+          "tokens": 173525,
+          "faithful_units": 186426,
+          "ratio": 0.9307982792099815,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 80394,
+          "faithful_units": 88359,
+          "ratio": 0.9098563813533426,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 33612,
+          "faithful_units": 36293,
+          "ratio": 0.9261290055933651,
+          "exact_roundtrip": true
+        },
+        "kk": {
+          "tokens": 27497,
+          "faithful_units": 29534,
+          "ratio": 0.9310286449515812,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.02117226359823865,
+      "raw_score": 47231.605414321,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 47231.605414321,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "uz",
+      "name": "Uzbek",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 309,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9674,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49114545941003124,
+        "te": 0.369641826960354,
+        "uz": 0.6157848972826743
+      },
+      "rows": {
+        "en": {
+          "tokens": 177461,
+          "faithful_units": 186426,
+          "ratio": 0.9519112141010374,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 85340,
+          "faithful_units": 88359,
+          "ratio": 0.9658325694043618,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35188,
+          "faithful_units": 36293,
+          "ratio": 0.9695533573967432,
+          "exact_roundtrip": true
+        },
+        "uz": {
+          "tokens": 23376,
+          "faithful_units": 23976,
+          "ratio": 0.974974974974975,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.023063760873937578,
+      "raw_score": 43358.0631305459,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 43358.0631305459,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ml",
+      "name": "Malayalam",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 367,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9616,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4599835317038479,
+        "te": 0.3907321738950001,
+        "ml": 0.5503642264741058
+      },
+      "rows": {
+        "en": {
+          "tokens": 164869,
+          "faithful_units": 186426,
+          "ratio": 0.8843669874373746,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 78332,
+          "faithful_units": 88359,
+          "ratio": 0.8865197659547981,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31328,
+          "faithful_units": 36293,
+          "ratio": 0.8631967597057284,
+          "exact_roundtrip": true
+        },
+        "ml": {
+          "tokens": 35713,
+          "faithful_units": 41367,
+          "ratio": 0.8633210046655546,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.02332300624906969,
+      "raw_score": 42876.11936989847,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 42876.11936989847,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "sd",
+      "name": "Sindhi",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 384,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9599,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.45695560155251286,
+        "te": 0.3868142570388369,
+        "sd": 0.4014775280883459
+      },
+      "rows": {
+        "en": {
+          "tokens": 163999,
+          "faithful_units": 186426,
+          "ratio": 0.879700256402004,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 78511,
+          "faithful_units": 88359,
+          "ratio": 0.8885455924127706,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 32778,
+          "faithful_units": 36293,
+          "ratio": 0.9031493676466537,
+          "exact_roundtrip": true
+        },
+        "sd": {
+          "tokens": 65807,
+          "faithful_units": 73802,
+          "ratio": 0.8916696024497981,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.023449111244649656,
+      "raw_score": 42645.539507522626,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 42645.539507522626,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "gsw",
+      "name": "Alemannic",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 306,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9677,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4642928499128776,
+        "te": 0.3990500701682236,
+        "gsw": 0.4724794928637914
+      },
+      "rows": {
+        "en": {
+          "tokens": 163951,
+          "faithful_units": 186426,
+          "ratio": 0.8794427815862594,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 78591,
+          "faithful_units": 88359,
+          "ratio": 0.8894509897124232,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 31401,
+          "faithful_units": 36293,
+          "ratio": 0.8652081668641336,
+          "exact_roundtrip": true
+        },
+        "gsw": {
+          "tokens": 19868,
+          "faithful_units": 22974,
+          "ratio": 0.8648036911291025,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.02464729858332071,
+      "raw_score": 40572.39768567249,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 40572.39768567249,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "mk",
+      "name": "Macedonian",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 366,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9617,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.4927965276530441,
+        "te": 0.3558136168223043,
+        "mk": 0.7120240691110269
+      },
+      "rows": {
+        "en": {
+          "tokens": 182183,
+          "faithful_units": 186426,
+          "ratio": 0.977240299099911,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 85234,
+          "faithful_units": 88359,
+          "ratio": 0.9646329179823221,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35650,
+          "faithful_units": 36293,
+          "ratio": 0.9822830848924035,
+          "exact_roundtrip": true
+        },
+        "mk": {
+          "tokens": 25046,
+          "faithful_units": 24567,
+          "ratio": 1.0194977001668906,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.05486478218456847,
+      "raw_score": 18226.628452400284,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 18226.628452400284,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "ky",
+      "name": "Kyrgyz",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 366,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9617,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.48567396351022696,
+        "te": 0.3810434874406126,
+        "ky": 0.37585286960989
+      },
+      "rows": {
+        "en": {
+          "tokens": 178390,
+          "faithful_units": 186426,
+          "ratio": 0.9568944245974274,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 85280,
+          "faithful_units": 88359,
+          "ratio": 0.9651535214296223,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 34838,
+          "faithful_units": 36293,
+          "ratio": 0.9599096244454853,
+          "exact_roundtrip": true
+        },
+        "ky": {
+          "tokens": 9368,
+          "faithful_units": 10380,
+          "ratio": 0.902504816955684,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.06264870447393833,
+      "raw_score": 15962.022014613198,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 15962.022014613198,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "kaa",
+      "name": "Kara-Kalpak",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 309,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9674,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49301874915092414,
+        "te": 0.35511505985273323,
+        "kaa": 0.44116740010716987
+      },
+      "rows": {
+        "en": {
+          "tokens": 186442,
+          "faithful_units": 186426,
+          "ratio": 1.0000858249385816,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 88769,
+          "faithful_units": 88359,
+          "ratio": 1.0046401611607194,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35724,
+          "faithful_units": 36293,
+          "ratio": 0.9843220455735265,
+          "exact_roundtrip": true
+        },
+        "kaa": {
+          "tokens": 11043,
+          "faithful_units": 11742,
+          "ratio": 0.9404701073071027,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.06417005385361674,
+      "raw_score": 15583.592968165138,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 15583.592968165138,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    },
+    {
+      "code": "tg",
+      "name": "Tajik",
+      "optimized": true,
+      "vocab_size": 10000,
+      "character_tokens": 375,
+      "unicode_fallback_tokens": 17,
+      "whole_piece_tokens": 9608,
+      "weights": {
+        "en": 1.0,
+        "hi": 0.49794145194635175,
+        "te": 0.3560936473143073,
+        "tg": 0.6377743972180033
+      },
+      "rows": {
+        "en": {
+          "tokens": 181944,
+          "faithful_units": 186426,
+          "ratio": 0.9759582890798494,
+          "exact_roundtrip": true
+        },
+        "hi": {
+          "tokens": 83187,
+          "faithful_units": 88359,
+          "ratio": 0.9414660645774624,
+          "exact_roundtrip": true
+        },
+        "te": {
+          "tokens": 35742,
+          "faithful_units": 36293,
+          "ratio": 0.9848180089824484,
+          "exact_roundtrip": true
+        },
+        "tg": {
+          "tokens": 20891,
+          "faithful_units": 19787,
+          "ratio": 1.055794208318593,
+          "exact_roundtrip": true
+        }
+      },
+      "spread": 0.11432814374113054,
+      "raw_score": 8746.752700404786,
+      "hindi_penalty": 1.0,
+      "adjusted_score": 8746.752700404786,
+      "all_under_1_2": true,
+      "all_exact_roundtrip": true
+    }
+  ]
+}

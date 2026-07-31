@@ -1,0 +1,13 @@
+{
+  "code": "ca",
+  "name": "Catalan",
+  "autonym": "català",
+  "title": "Índia",
+  "domain": "ca.wikipedia.org",
+  "article_url": "https://ca.wikipedia.org/wiki/%C3%8Dndia",
+  "source_url": "https://ca.wikipedia.org/w/rest.php/v1/page/%C3%8Dndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:10:11Z",
+  "characters": 116753,
+  "faithful_units": 37657
+}

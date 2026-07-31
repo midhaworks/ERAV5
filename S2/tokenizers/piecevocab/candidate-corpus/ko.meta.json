@@ -1,0 +1,13 @@
+{
+  "code": "ko",
+  "name": "Korean",
+  "autonym": "한국어",
+  "title": "인도",
+  "domain": "ko.wikipedia.org",
+  "article_url": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%8F%84",
+  "source_url": "https://ko.wikipedia.org/w/rest.php/v1/page/%EC%9D%B8%EB%8F%84/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:20:11Z",
+  "characters": 122570,
+  "faithful_units": 47921
+}

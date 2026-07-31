@@ -1,0 +1,13 @@
+{
+  "code": "ig",
+  "name": "Igbo",
+  "autonym": "Igbo",
+  "title": "Ndia",
+  "domain": "ig.wikipedia.org",
+  "article_url": "https://ig.wikipedia.org/wiki/Ndia",
+  "source_url": "https://ig.wikipedia.org/w/rest.php/v1/page/Ndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:17:25Z",
+  "characters": 15998,
+  "faithful_units": 5665
+}

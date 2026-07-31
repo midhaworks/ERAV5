@@ -1,0 +1,13 @@
+{
+  "code": "tet",
+  "name": "Tetum",
+  "autonym": "tetun",
+  "title": "Índia",
+  "domain": "tet.wikipedia.org",
+  "article_url": "https://tet.wikipedia.org/wiki/%C3%8Dndia",
+  "source_url": "https://tet.wikipedia.org/w/rest.php/v1/page/%C3%8Dndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:32:12Z",
+  "characters": 5894,
+  "faithful_units": 2042
+}

@@ -1,0 +1,13 @@
+{
+  "code": "zu",
+  "name": "Zulu",
+  "autonym": "isiZulu",
+  "title": "India",
+  "domain": "zu.wikipedia.org",
+  "article_url": "https://zu.wikipedia.org/wiki/India",
+  "source_url": "https://zu.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:37:02Z",
+  "characters": 924,
+  "faithful_units": 323
+}

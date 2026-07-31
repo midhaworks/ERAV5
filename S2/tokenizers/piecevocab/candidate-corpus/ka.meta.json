@@ -1,0 +1,13 @@
+{
+  "code": "ka",
+  "name": "Georgian",
+  "autonym": "ქართული",
+  "title": "ინდოეთი",
+  "domain": "ka.wikipedia.org",
+  "article_url": "https://ka.wikipedia.org/wiki/%E1%83%98%E1%83%9C%E1%83%93%E1%83%9D%E1%83%94%E1%83%97%E1%83%98",
+  "source_url": "https://ka.wikipedia.org/w/rest.php/v1/page/%E1%83%98%E1%83%9C%E1%83%93%E1%83%9D%E1%83%94%E1%83%97%E1%83%98/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:19:02Z",
+  "characters": 100715,
+  "faithful_units": 28344
+}

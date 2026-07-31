@@ -1,0 +1,13 @@
+{
+  "code": "av",
+  "name": "Avaric",
+  "autonym": "авар",
+  "title": "Индия",
+  "domain": "av.wikipedia.org",
+  "article_url": "https://av.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F",
+  "source_url": "https://av.wikipedia.org/w/rest.php/v1/page/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:09:23Z",
+  "characters": 14444,
+  "faithful_units": 4880
+}

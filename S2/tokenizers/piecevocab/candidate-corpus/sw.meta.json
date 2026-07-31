@@ -1,0 +1,13 @@
+{
+  "code": "sw",
+  "name": "Swahili",
+  "autonym": "Kiswahili",
+  "title": "Uhindi",
+  "domain": "sw.wikipedia.org",
+  "article_url": "https://sw.wikipedia.org/wiki/Uhindi",
+  "source_url": "https://sw.wikipedia.org/w/rest.php/v1/page/Uhindi/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:31:14Z",
+  "characters": 39885,
+  "faithful_units": 12689
+}

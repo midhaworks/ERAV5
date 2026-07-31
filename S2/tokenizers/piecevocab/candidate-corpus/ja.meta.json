@@ -1,0 +1,13 @@
+{
+  "code": "ja",
+  "name": "Japanese",
+  "autonym": "日本語",
+  "title": "インド",
+  "domain": "ja.wikipedia.org",
+  "article_url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%89",
+  "source_url": "https://ja.wikipedia.org/w/rest.php/v1/page/%E3%82%A4%E3%83%B3%E3%83%89/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:14Z",
+  "characters": 311696,
+  "faithful_units": 112405
+}

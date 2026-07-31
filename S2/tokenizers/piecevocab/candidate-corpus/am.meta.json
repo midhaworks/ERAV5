@@ -1,0 +1,13 @@
+{
+  "code": "am",
+  "name": "Amharic",
+  "autonym": "አማርኛ",
+  "title": "ህንድ",
+  "domain": "am.wikipedia.org",
+  "article_url": "https://am.wikipedia.org/wiki/%E1%88%85%E1%8A%95%E1%8B%B5",
+  "source_url": "https://am.wikipedia.org/w/rest.php/v1/page/%E1%88%85%E1%8A%95%E1%8B%B5/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:05:01Z",
+  "characters": 16071,
+  "faithful_units": 4301
+}

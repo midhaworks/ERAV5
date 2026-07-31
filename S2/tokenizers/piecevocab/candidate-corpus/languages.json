@@ -1,0 +1,2474 @@
+[
+  {
+    "code": "ab",
+    "name": "Abkhazian",
+    "autonym": "аԥсшәа",
+    "title": "Индиа",
+    "domain": "ab.wikipedia.org",
+    "article_url": "https://ab.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%B0"
+  },
+  {
+    "code": "ace",
+    "name": "Acehnese",
+    "autonym": "Acèh",
+    "title": "India",
+    "domain": "ace.wikipedia.org",
+    "article_url": "https://ace.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ady",
+    "name": "Adyghe",
+    "autonym": "адыгабзэ",
+    "title": "Индие",
+    "domain": "ady.wikipedia.org",
+    "article_url": "https://ady.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%B5"
+  },
+  {
+    "code": "af",
+    "name": "Afrikaans",
+    "autonym": "Afrikaans",
+    "title": "Indië",
+    "domain": "af.wikipedia.org",
+    "article_url": "https://af.wikipedia.org/wiki/Indi%C3%AB"
+  },
+  {
+    "code": "am",
+    "name": "Amharic",
+    "autonym": "አማርኛ",
+    "title": "ህንድ",
+    "domain": "am.wikipedia.org",
+    "article_url": "https://am.wikipedia.org/wiki/%E1%88%85%E1%8A%95%E1%8B%B5"
+  },
+  {
+    "code": "ami",
+    "name": "Amis",
+    "autonym": "Pangcah",
+    "title": "India",
+    "domain": "ami.wikipedia.org",
+    "article_url": "https://ami.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "an",
+    "name": "Aragonese",
+    "autonym": "aragonés",
+    "title": "India",
+    "domain": "an.wikipedia.org",
+    "article_url": "https://an.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ang",
+    "name": "Old English",
+    "autonym": "Ænglisc",
+    "title": "Indea",
+    "domain": "ang.wikipedia.org",
+    "article_url": "https://ang.wikipedia.org/wiki/Indea"
+  },
+  {
+    "code": "ann",
+    "name": "Obolo",
+    "autonym": "Obolo",
+    "title": "India",
+    "domain": "ann.wikipedia.org",
+    "article_url": "https://ann.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "anp",
+    "name": "Angika",
+    "autonym": "अंगिका",
+    "title": "भारत",
+    "domain": "anp.wikipedia.org",
+    "article_url": "https://anp.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "ar",
+    "name": "Arabic",
+    "autonym": "العربية",
+    "title": "الهند",
+    "domain": "ar.wikipedia.org",
+    "article_url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "arc",
+    "name": "Aramaic",
+    "autonym": "ܐܪܡܝܐ",
+    "title": "ܗܢܕܘ",
+    "domain": "arc.wikipedia.org",
+    "article_url": "https://arc.wikipedia.org/wiki/%DC%97%DC%A2%DC%95%DC%98"
+  },
+  {
+    "code": "ary",
+    "name": "Moroccan Arabic",
+    "autonym": "الدارجة",
+    "title": "لهند",
+    "domain": "ary.wikipedia.org",
+    "article_url": "https://ary.wikipedia.org/wiki/%D9%84%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "arz",
+    "name": "Egyptian Arabic",
+    "autonym": "مصرى",
+    "title": "الهند",
+    "domain": "arz.wikipedia.org",
+    "article_url": "https://arz.wikipedia.org/wiki/%D8%A7%D9%84%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "as",
+    "name": "Assamese",
+    "autonym": "অসমীয়া",
+    "title": "ভাৰত",
+    "domain": "as.wikipedia.org",
+    "article_url": "https://as.wikipedia.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A7%B0%E0%A6%A4"
+  },
+  {
+    "code": "ast",
+    "name": "Asturian",
+    "autonym": "asturianu",
+    "title": "India",
+    "domain": "ast.wikipedia.org",
+    "article_url": "https://ast.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "atj",
+    "name": "Atikamekw",
+    "autonym": "Atikamekw",
+    "title": "Inda",
+    "domain": "atj.wikipedia.org",
+    "article_url": "https://atj.wikipedia.org/wiki/Inda"
+  },
+  {
+    "code": "av",
+    "name": "Avaric",
+    "autonym": "авар",
+    "title": "Индия",
+    "domain": "av.wikipedia.org",
+    "article_url": "https://av.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "avk",
+    "name": "Kotava",
+    "autonym": "Kotava",
+    "title": "Barata",
+    "domain": "avk.wikipedia.org",
+    "article_url": "https://avk.wikipedia.org/wiki/Barata"
+  },
+  {
+    "code": "awa",
+    "name": "Awadhi",
+    "autonym": "अवधी",
+    "title": "भारत",
+    "domain": "awa.wikipedia.org",
+    "article_url": "https://awa.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "ay",
+    "name": "Aymara",
+    "autonym": "Aymar aru",
+    "title": "Indya",
+    "domain": "ay.wikipedia.org",
+    "article_url": "https://ay.wikipedia.org/wiki/Indya"
+  },
+  {
+    "code": "az",
+    "name": "Azerbaijani",
+    "autonym": "azərbaycanca",
+    "title": "Hindistan",
+    "domain": "az.wikipedia.org",
+    "article_url": "https://az.wikipedia.org/wiki/Hindistan"
+  },
+  {
+    "code": "azb",
+    "name": "South Azerbaijani",
+    "autonym": "تۆرکجه",
+    "title": "هیندیستان",
+    "domain": "azb.wikipedia.org",
+    "article_url": "https://azb.wikipedia.org/wiki/%D9%87%DB%8C%D9%86%D8%AF%DB%8C%D8%B3%D8%AA%D8%A7%D9%86"
+  },
+  {
+    "code": "ba",
+    "name": "Bashkir",
+    "autonym": "башҡортса",
+    "title": "Һиндостан",
+    "domain": "ba.wikipedia.org",
+    "article_url": "https://ba.wikipedia.org/wiki/%D2%BA%D0%B8%D0%BD%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%BD"
+  },
+  {
+    "code": "ban",
+    "name": "Balinese",
+    "autonym": "Basa Bali",
+    "title": "India",
+    "domain": "ban.wikipedia.org",
+    "article_url": "https://ban.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "bar",
+    "name": "Bavarian",
+    "autonym": "Boarisch",
+    "title": "Indien",
+    "domain": "bar.wikipedia.org",
+    "article_url": "https://bar.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "bbc",
+    "name": "Batak Toba",
+    "autonym": "Batak Toba",
+    "title": "India",
+    "domain": "bbc.wikipedia.org",
+    "article_url": "https://bbc.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "bcl",
+    "name": "Central Bikol",
+    "autonym": "Bikol Central",
+    "title": "Indya",
+    "domain": "bcl.wikipedia.org",
+    "article_url": "https://bcl.wikipedia.org/wiki/Indya"
+  },
+  {
+    "code": "be",
+    "name": "Belarusian",
+    "autonym": "беларуская",
+    "title": "Індыя",
+    "domain": "be.wikipedia.org",
+    "article_url": "https://be.wikipedia.org/wiki/%D0%86%D0%BD%D0%B4%D1%8B%D1%8F"
+  },
+  {
+    "code": "be-tarask",
+    "name": "Belarusian (Taraškievica orthography)",
+    "autonym": "беларуская (тарашкевіца)",
+    "title": "Індыя",
+    "domain": "be-tarask.wikipedia.org",
+    "article_url": "https://be-tarask.wikipedia.org/wiki/%D0%86%D0%BD%D0%B4%D1%8B%D1%8F"
+  },
+  {
+    "code": "bew",
+    "name": "Betawi",
+    "autonym": "Betawi",
+    "title": "Hindi",
+    "domain": "bew.wikipedia.org",
+    "article_url": "https://bew.wikipedia.org/wiki/Hindi"
+  },
+  {
+    "code": "bg",
+    "name": "Bulgarian",
+    "autonym": "български",
+    "title": "Индия",
+    "domain": "bg.wikipedia.org",
+    "article_url": "https://bg.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "bh",
+    "name": "Bhojpuri",
+    "autonym": "भोजपुरी",
+    "title": "भारत",
+    "domain": "bh.wikipedia.org",
+    "article_url": "https://bh.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "bi",
+    "name": "Bislama",
+    "autonym": "Bislama",
+    "title": "India",
+    "domain": "bi.wikipedia.org",
+    "article_url": "https://bi.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "bjn",
+    "name": "Banjar",
+    "autonym": "Banjar",
+    "title": "Hindia",
+    "domain": "bjn.wikipedia.org",
+    "article_url": "https://bjn.wikipedia.org/wiki/Hindia"
+  },
+  {
+    "code": "blk",
+    "name": "Pa'O",
+    "autonym": "ပအိုဝ်ႏဘာႏသာႏ",
+    "title": "အေင်ဒိယခမ်းထီ",
+    "domain": "blk.wikipedia.org",
+    "article_url": "https://blk.wikipedia.org/wiki/%E1%80%A1%E1%80%B1%E1%80%84%E1%80%BA%E1%80%92%E1%80%AD%E1%80%9A%E1%80%81%E1%80%99%E1%80%BA%E1%80%B8%E1%80%91%E1%80%AE"
+  },
+  {
+    "code": "bn",
+    "name": "Bangla",
+    "autonym": "বাংলা",
+    "title": "ভারত",
+    "domain": "bn.wikipedia.org",
+    "article_url": "https://bn.wikipedia.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4"
+  },
+  {
+    "code": "bo",
+    "name": "Tibetan",
+    "autonym": "བོད་ཡིག",
+    "title": "རྒྱ་གར།",
+    "domain": "bo.wikipedia.org",
+    "article_url": "https://bo.wikipedia.org/wiki/%E0%BD%A2%E0%BE%92%E0%BE%B1%E0%BC%8B%E0%BD%82%E0%BD%A2%E0%BC%8D"
+  },
+  {
+    "code": "bpy",
+    "name": "Bishnupriya",
+    "autonym": "বিষ্ণুপ্রিয়া মণিপুরী",
+    "title": "ভারত",
+    "domain": "bpy.wikipedia.org",
+    "article_url": "https://bpy.wikipedia.org/wiki/%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4"
+  },
+  {
+    "code": "br",
+    "name": "Breton",
+    "autonym": "brezhoneg",
+    "title": "India",
+    "domain": "br.wikipedia.org",
+    "article_url": "https://br.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "bs",
+    "name": "Bosnian",
+    "autonym": "bosanski",
+    "title": "Indija",
+    "domain": "bs.wikipedia.org",
+    "article_url": "https://bs.wikipedia.org/wiki/Indija"
+  },
+  {
+    "code": "btm",
+    "name": "Batak Mandailing",
+    "autonym": "Batak Mandailing",
+    "title": "India",
+    "domain": "btm.wikipedia.org",
+    "article_url": "https://btm.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "bug",
+    "name": "Buginese",
+    "autonym": "Basa Ugi",
+    "title": "ᨕᨗᨉᨗᨐ",
+    "domain": "bug.wikipedia.org",
+    "article_url": "https://bug.wikipedia.org/wiki/%E1%A8%95%E1%A8%97%E1%A8%89%E1%A8%97%E1%A8%90"
+  },
+  {
+    "code": "bxr",
+    "name": "Russia Buriat",
+    "autonym": "буряад",
+    "title": "Энэдхэг",
+    "domain": "bxr.wikipedia.org",
+    "article_url": "https://bxr.wikipedia.org/wiki/%D0%AD%D0%BD%D1%8D%D0%B4%D1%85%D1%8D%D0%B3"
+  },
+  {
+    "code": "ca",
+    "name": "Catalan",
+    "autonym": "català",
+    "title": "Índia",
+    "domain": "ca.wikipedia.org",
+    "article_url": "https://ca.wikipedia.org/wiki/%C3%8Dndia"
+  },
+  {
+    "code": "cbk-zam",
+    "name": "Chavacano",
+    "autonym": "Chavacano de Zamboanga",
+    "title": "India",
+    "domain": "cbk-zam.wikipedia.org",
+    "article_url": "https://cbk-zam.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "cdo",
+    "name": "Mindong",
+    "autonym": "閩東語 / Mìng-dĕ̤ng-ngṳ̄",
+    "title": "Éng-dô",
+    "domain": "cdo.wikipedia.org",
+    "article_url": "https://cdo.wikipedia.org/wiki/%C3%89ng-d%C3%B4"
+  },
+  {
+    "code": "ce",
+    "name": "Chechen",
+    "autonym": "нохчийн",
+    "title": "ХӀиндойчоь",
+    "domain": "ce.wikipedia.org",
+    "article_url": "https://ce.wikipedia.org/wiki/%D0%A5%D3%80%D0%B8%D0%BD%D0%B4%D0%BE%D0%B9%D1%87%D0%BE%D1%8C"
+  },
+  {
+    "code": "ceb",
+    "name": "Cebuano",
+    "autonym": "Cebuano",
+    "title": "Indya",
+    "domain": "ceb.wikipedia.org",
+    "article_url": "https://ceb.wikipedia.org/wiki/Indya"
+  },
+  {
+    "code": "ch",
+    "name": "Chamorro",
+    "autonym": "Chamoru",
+    "title": "India",
+    "domain": "ch.wikipedia.org",
+    "article_url": "https://ch.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "chr",
+    "name": "Cherokee",
+    "autonym": "ᏣᎳᎩ",
+    "title": "ᎢᏂᏗᎢᎠ",
+    "domain": "chr.wikipedia.org",
+    "article_url": "https://chr.wikipedia.org/wiki/%E1%8E%A2%E1%8F%82%E1%8F%97%E1%8E%A2%E1%8E%A0"
+  },
+  {
+    "code": "chy",
+    "name": "Cheyenne",
+    "autonym": "Tsetsêhestâhese",
+    "title": "India",
+    "domain": "chy.wikipedia.org",
+    "article_url": "https://chy.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ckb",
+    "name": "Central Kurdish",
+    "autonym": "کوردی",
+    "title": "ھیندستان",
+    "domain": "ckb.wikipedia.org",
+    "article_url": "https://ckb.wikipedia.org/wiki/%DA%BE%DB%8C%D9%86%D8%AF%D8%B3%D8%AA%D8%A7%D9%86"
+  },
+  {
+    "code": "co",
+    "name": "Corsican",
+    "autonym": "corsu",
+    "title": "India",
+    "domain": "co.wikipedia.org",
+    "article_url": "https://co.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "crh",
+    "name": "Crimean Tatar",
+    "autonym": "qırımtatarca",
+    "title": "İndistan",
+    "domain": "crh.wikipedia.org",
+    "article_url": "https://crh.wikipedia.org/wiki/%C4%B0ndistan"
+  },
+  {
+    "code": "cs",
+    "name": "Czech",
+    "autonym": "čeština",
+    "title": "Indie",
+    "domain": "cs.wikipedia.org",
+    "article_url": "https://cs.wikipedia.org/wiki/Indie"
+  },
+  {
+    "code": "csb",
+    "name": "Kashubian",
+    "autonym": "kaszëbsczi",
+    "title": "Indie",
+    "domain": "csb.wikipedia.org",
+    "article_url": "https://csb.wikipedia.org/wiki/Indie"
+  },
+  {
+    "code": "cu",
+    "name": "Church Slavic",
+    "autonym": "словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ",
+    "title": "Їндїꙗ",
+    "domain": "cu.wikipedia.org",
+    "article_url": "https://cu.wikipedia.org/wiki/%D0%87%D0%BD%D0%B4%D1%97%EA%99%97"
+  },
+  {
+    "code": "cv",
+    "name": "Chuvash",
+    "autonym": "чӑвашла",
+    "title": "Инди",
+    "domain": "cv.wikipedia.org",
+    "article_url": "https://cv.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8"
+  },
+  {
+    "code": "cy",
+    "name": "Welsh",
+    "autonym": "Cymraeg",
+    "title": "India",
+    "domain": "cy.wikipedia.org",
+    "article_url": "https://cy.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "da",
+    "name": "Danish",
+    "autonym": "dansk",
+    "title": "Indien",
+    "domain": "da.wikipedia.org",
+    "article_url": "https://da.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "dag",
+    "name": "Dagbani",
+    "autonym": "dagbanli",
+    "title": "India",
+    "domain": "dag.wikipedia.org",
+    "article_url": "https://dag.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "de",
+    "name": "German",
+    "autonym": "Deutsch",
+    "title": "Indien",
+    "domain": "de.wikipedia.org",
+    "article_url": "https://de.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "din",
+    "name": "Dinka",
+    "autonym": "Thuɔŋjäŋ",
+    "title": "Indiɛn",
+    "domain": "din.wikipedia.org",
+    "article_url": "https://din.wikipedia.org/wiki/Indi%C9%9Bn"
+  },
+  {
+    "code": "diq",
+    "name": "Dimli",
+    "autonym": "Zazaki",
+    "title": "Hindıstan",
+    "domain": "diq.wikipedia.org",
+    "article_url": "https://diq.wikipedia.org/wiki/Hind%C4%B1stan"
+  },
+  {
+    "code": "dsb",
+    "name": "Lower Sorbian",
+    "autonym": "dolnoserbski",
+    "title": "Indiska",
+    "domain": "dsb.wikipedia.org",
+    "article_url": "https://dsb.wikipedia.org/wiki/Indiska"
+  },
+  {
+    "code": "dtp",
+    "name": "Central Dusun",
+    "autonym": "Kadazandusun",
+    "title": "India",
+    "domain": "dtp.wikipedia.org",
+    "article_url": "https://dtp.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "dty",
+    "name": "Doteli",
+    "autonym": "डोटेली",
+    "title": "भारत",
+    "domain": "dty.wikipedia.org",
+    "article_url": "https://dty.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "dv",
+    "name": "Divehi",
+    "autonym": "ދިވެހިބަސް",
+    "title": "އިންޑިޔާ",
+    "domain": "dv.wikipedia.org",
+    "article_url": "https://dv.wikipedia.org/wiki/%DE%87%DE%A8%DE%82%DE%B0%DE%91%DE%A8%DE%94%DE%A7"
+  },
+  {
+    "code": "dz",
+    "name": "Dzongkha",
+    "autonym": "ཇོང་ཁ",
+    "title": "རྒྱ་གར",
+    "domain": "dz.wikipedia.org",
+    "article_url": "https://dz.wikipedia.org/wiki/%E0%BD%A2%E0%BE%92%E0%BE%B1%E0%BC%8B%E0%BD%82%E0%BD%A2"
+  },
+  {
+    "code": "ee",
+    "name": "Ewe",
+    "autonym": "eʋegbe",
+    "title": "India",
+    "domain": "ee.wikipedia.org",
+    "article_url": "https://ee.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "el",
+    "name": "Greek",
+    "autonym": "Ελληνικά",
+    "title": "Ινδία",
+    "domain": "el.wikipedia.org",
+    "article_url": "https://el.wikipedia.org/wiki/%CE%99%CE%BD%CE%B4%CE%AF%CE%B1"
+  },
+  {
+    "code": "eml",
+    "name": "Emiliano-Romagnolo",
+    "autonym": "emiliàn e rumagnòl",
+    "title": "Ìndia",
+    "domain": "eml.wikipedia.org",
+    "article_url": "https://eml.wikipedia.org/wiki/%C3%8Cndia"
+  },
+  {
+    "code": "en",
+    "name": "English",
+    "autonym": "English",
+    "title": "India",
+    "domain": "en.wikipedia.org",
+    "article_url": "https://en.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "eo",
+    "name": "Esperanto",
+    "autonym": "Esperanto",
+    "title": "Barato",
+    "domain": "eo.wikipedia.org",
+    "article_url": "https://eo.wikipedia.org/wiki/Barato"
+  },
+  {
+    "code": "es",
+    "name": "Spanish",
+    "autonym": "español",
+    "title": "India",
+    "domain": "es.wikipedia.org",
+    "article_url": "https://es.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "et",
+    "name": "Estonian",
+    "autonym": "eesti",
+    "title": "India",
+    "domain": "et.wikipedia.org",
+    "article_url": "https://et.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "eu",
+    "name": "Basque",
+    "autonym": "euskara",
+    "title": "India",
+    "domain": "eu.wikipedia.org",
+    "article_url": "https://eu.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ext",
+    "name": "Extremaduran",
+    "autonym": "estremeñu",
+    "title": "La Índia",
+    "domain": "ext.wikipedia.org",
+    "article_url": "https://ext.wikipedia.org/wiki/La_%C3%8Dndia"
+  },
+  {
+    "code": "fa",
+    "name": "Persian",
+    "autonym": "فارسی",
+    "title": "هند",
+    "domain": "fa.wikipedia.org",
+    "article_url": "https://fa.wikipedia.org/wiki/%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "ff",
+    "name": "Fula",
+    "autonym": "Fulfulde",
+    "title": "Hinndi",
+    "domain": "ff.wikipedia.org",
+    "article_url": "https://ff.wikipedia.org/wiki/Hinndi"
+  },
+  {
+    "code": "fi",
+    "name": "Finnish",
+    "autonym": "suomi",
+    "title": "Intia",
+    "domain": "fi.wikipedia.org",
+    "article_url": "https://fi.wikipedia.org/wiki/Intia"
+  },
+  {
+    "code": "fj",
+    "name": "Fijian",
+    "autonym": "Na Vosa Vakaviti",
+    "title": "Idia",
+    "domain": "fj.wikipedia.org",
+    "article_url": "https://fj.wikipedia.org/wiki/Idia"
+  },
+  {
+    "code": "fo",
+    "name": "Faroese",
+    "autonym": "føroyskt",
+    "title": "India",
+    "domain": "fo.wikipedia.org",
+    "article_url": "https://fo.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "fr",
+    "name": "French",
+    "autonym": "français",
+    "title": "Inde",
+    "domain": "fr.wikipedia.org",
+    "article_url": "https://fr.wikipedia.org/wiki/Inde"
+  },
+  {
+    "code": "frp",
+    "name": "Arpitan",
+    "autonym": "arpetan",
+    "title": "Inda",
+    "domain": "frp.wikipedia.org",
+    "article_url": "https://frp.wikipedia.org/wiki/Inda"
+  },
+  {
+    "code": "frr",
+    "name": "Northern Frisian",
+    "autonym": "Nordfriisk",
+    "title": "Indien",
+    "domain": "frr.wikipedia.org",
+    "article_url": "https://frr.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "fur",
+    "name": "Friulian",
+    "autonym": "furlan",
+    "title": "Indie",
+    "domain": "fur.wikipedia.org",
+    "article_url": "https://fur.wikipedia.org/wiki/Indie"
+  },
+  {
+    "code": "fy",
+    "name": "Western Frisian",
+    "autonym": "Frysk",
+    "title": "Yndia",
+    "domain": "fy.wikipedia.org",
+    "article_url": "https://fy.wikipedia.org/wiki/Yndia"
+  },
+  {
+    "code": "ga",
+    "name": "Irish",
+    "autonym": "Gaeilge",
+    "title": "An India",
+    "domain": "ga.wikipedia.org",
+    "article_url": "https://ga.wikipedia.org/wiki/An_India"
+  },
+  {
+    "code": "gag",
+    "name": "Gagauz",
+    "autonym": "Gagauz",
+    "title": "İndiya",
+    "domain": "gag.wikipedia.org",
+    "article_url": "https://gag.wikipedia.org/wiki/%C4%B0ndiya"
+  },
+  {
+    "code": "gan",
+    "name": "Gan",
+    "autonym": "贛語",
+    "title": "印度",
+    "domain": "gan.wikipedia.org",
+    "article_url": "https://gan.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6"
+  },
+  {
+    "code": "gcr",
+    "name": "Guianan Creole",
+    "autonym": "kriyòl gwiyannen",
+    "title": "End",
+    "domain": "gcr.wikipedia.org",
+    "article_url": "https://gcr.wikipedia.org/wiki/End"
+  },
+  {
+    "code": "gd",
+    "name": "Scottish Gaelic",
+    "autonym": "Gàidhlig",
+    "title": "Na h-Innseachan",
+    "domain": "gd.wikipedia.org",
+    "article_url": "https://gd.wikipedia.org/wiki/Na_h-Innseachan"
+  },
+  {
+    "code": "gl",
+    "name": "Galician",
+    "autonym": "galego",
+    "title": "India",
+    "domain": "gl.wikipedia.org",
+    "article_url": "https://gl.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "glk",
+    "name": "Gilaki",
+    "autonym": "گیلکی",
+    "title": "هند",
+    "domain": "glk.wikipedia.org",
+    "article_url": "https://glk.wikipedia.org/wiki/%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "gn",
+    "name": "Guarani",
+    "autonym": "Avañe'ẽ",
+    "title": "Índia",
+    "domain": "gn.wikipedia.org",
+    "article_url": "https://gn.wikipedia.org/wiki/%C3%8Dndia"
+  },
+  {
+    "code": "gom",
+    "name": "Goan Konkani",
+    "autonym": "गोंयची कोंकणी / Gõychi Konknni",
+    "title": "भारत",
+    "domain": "gom.wikipedia.org",
+    "article_url": "https://gom.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "got",
+    "name": "Gothic",
+    "autonym": "𐌲𐌿𐍄𐌹𐍃𐌺",
+    "title": "𐌹𐌽𐌳𐌹𐌰",
+    "domain": "got.wikipedia.org",
+    "article_url": "https://got.wikipedia.org/wiki/%F0%90%8C%B9%F0%90%8C%BD%F0%90%8C%B3%F0%90%8C%B9%F0%90%8C%B0"
+  },
+  {
+    "code": "gpe",
+    "name": "Ghanaian Pidgin",
+    "autonym": "Ghanaian Pidgin",
+    "title": "India",
+    "domain": "gpe.wikipedia.org",
+    "article_url": "https://gpe.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "gsw",
+    "name": "Alemannic",
+    "autonym": "Alemannisch",
+    "title": "Indien",
+    "domain": "als.wikipedia.org",
+    "article_url": "https://als.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "gu",
+    "name": "Gujarati",
+    "autonym": "ગુજરાતી",
+    "title": "ભારત",
+    "domain": "gu.wikipedia.org",
+    "article_url": "https://gu.wikipedia.org/wiki/%E0%AA%AD%E0%AA%BE%E0%AA%B0%E0%AA%A4"
+  },
+  {
+    "code": "gv",
+    "name": "Manx",
+    "autonym": "Gaelg",
+    "title": "Yn Injey",
+    "domain": "gv.wikipedia.org",
+    "article_url": "https://gv.wikipedia.org/wiki/Yn_Injey"
+  },
+  {
+    "code": "ha",
+    "name": "Hausa",
+    "autonym": "Hausa",
+    "title": "Indiya",
+    "domain": "ha.wikipedia.org",
+    "article_url": "https://ha.wikipedia.org/wiki/Indiya"
+  },
+  {
+    "code": "hak",
+    "name": "Hakka Chinese",
+    "autonym": "客家語 / Hak-kâ-ngî",
+    "title": "Yin-thu",
+    "domain": "hak.wikipedia.org",
+    "article_url": "https://hak.wikipedia.org/wiki/Yin-thu"
+  },
+  {
+    "code": "haw",
+    "name": "Hawaiian",
+    "autonym": "Hawaiʻi",
+    "title": "ʻĪnia",
+    "domain": "haw.wikipedia.org",
+    "article_url": "https://haw.wikipedia.org/wiki/%CA%BB%C4%AAnia"
+  },
+  {
+    "code": "he",
+    "name": "Hebrew",
+    "autonym": "עברית",
+    "title": "הודו",
+    "domain": "he.wikipedia.org",
+    "article_url": "https://he.wikipedia.org/wiki/%D7%94%D7%95%D7%93%D7%95"
+  },
+  {
+    "code": "hi",
+    "name": "Hindi",
+    "autonym": "हिन्दी",
+    "title": "भारत",
+    "domain": "hi.wikipedia.org",
+    "article_url": "https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "hif",
+    "name": "Fiji Hindi",
+    "autonym": "Fiji Hindi",
+    "title": "India",
+    "domain": "hif.wikipedia.org",
+    "article_url": "https://hif.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "hr",
+    "name": "Croatian",
+    "autonym": "hrvatski",
+    "title": "Indija",
+    "domain": "hr.wikipedia.org",
+    "article_url": "https://hr.wikipedia.org/wiki/Indija"
+  },
+  {
+    "code": "hsb",
+    "name": "Upper Sorbian",
+    "autonym": "hornjoserbsce",
+    "title": "Indiska",
+    "domain": "hsb.wikipedia.org",
+    "article_url": "https://hsb.wikipedia.org/wiki/Indiska"
+  },
+  {
+    "code": "ht",
+    "name": "Haitian Creole",
+    "autonym": "Kreyòl ayisyen",
+    "title": "End",
+    "domain": "ht.wikipedia.org",
+    "article_url": "https://ht.wikipedia.org/wiki/End"
+  },
+  {
+    "code": "hu",
+    "name": "Hungarian",
+    "autonym": "magyar",
+    "title": "India",
+    "domain": "hu.wikipedia.org",
+    "article_url": "https://hu.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "hy",
+    "name": "Armenian",
+    "autonym": "հայերեն",
+    "title": "Հնդկաստան",
+    "domain": "hy.wikipedia.org",
+    "article_url": "https://hy.wikipedia.org/wiki/%D5%80%D5%B6%D5%A4%D5%AF%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+  },
+  {
+    "code": "hyw",
+    "name": "Western Armenian",
+    "autonym": "Արեւմտահայերէն",
+    "title": "Հնդկաստան",
+    "domain": "hyw.wikipedia.org",
+    "article_url": "https://hyw.wikipedia.org/wiki/%D5%80%D5%B6%D5%A4%D5%AF%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6"
+  },
+  {
+    "code": "ia",
+    "name": "Interlingua",
+    "autonym": "interlingua",
+    "title": "India",
+    "domain": "ia.wikipedia.org",
+    "article_url": "https://ia.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "iba",
+    "name": "Iban",
+    "autonym": "Jaku Iban",
+    "title": "India",
+    "domain": "iba.wikipedia.org",
+    "article_url": "https://iba.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "id",
+    "name": "Indonesian",
+    "autonym": "Bahasa Indonesia",
+    "title": "India",
+    "domain": "id.wikipedia.org",
+    "article_url": "https://id.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ie",
+    "name": "Interlingue",
+    "autonym": "Interlingue",
+    "title": "India",
+    "domain": "ie.wikipedia.org",
+    "article_url": "https://ie.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ig",
+    "name": "Igbo",
+    "autonym": "Igbo",
+    "title": "Ndia",
+    "domain": "ig.wikipedia.org",
+    "article_url": "https://ig.wikipedia.org/wiki/Ndia"
+  },
+  {
+    "code": "ik",
+    "name": "Inupiaq",
+    "autonym": "Iñupiatun",
+    "title": "Initiaq",
+    "domain": "ik.wikipedia.org",
+    "article_url": "https://ik.wikipedia.org/wiki/Initiaq"
+  },
+  {
+    "code": "ilo",
+    "name": "Iloko",
+    "autonym": "Ilokano",
+    "title": "India",
+    "domain": "ilo.wikipedia.org",
+    "article_url": "https://ilo.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "inh",
+    "name": "Ingush",
+    "autonym": "гӀалгӀай",
+    "title": "ХӀиндиче",
+    "domain": "inh.wikipedia.org",
+    "article_url": "https://inh.wikipedia.org/wiki/%D0%A5%D3%80%D0%B8%D0%BD%D0%B4%D0%B8%D1%87%D0%B5"
+  },
+  {
+    "code": "io",
+    "name": "Ido",
+    "autonym": "Ido",
+    "title": "India",
+    "domain": "io.wikipedia.org",
+    "article_url": "https://io.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "is",
+    "name": "Icelandic",
+    "autonym": "íslenska",
+    "title": "Indland",
+    "domain": "is.wikipedia.org",
+    "article_url": "https://is.wikipedia.org/wiki/Indland"
+  },
+  {
+    "code": "it",
+    "name": "Italian",
+    "autonym": "italiano",
+    "title": "India",
+    "domain": "it.wikipedia.org",
+    "article_url": "https://it.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "iu",
+    "name": "Inuktitut",
+    "autonym": "ᐃᓄᒃᑎᑐᑦ / inuktitut",
+    "title": "ᐃᓐᑎᐊ",
+    "domain": "iu.wikipedia.org",
+    "article_url": "https://iu.wikipedia.org/wiki/%E1%90%83%E1%93%90%E1%91%8E%E1%90%8A"
+  },
+  {
+    "code": "ja",
+    "name": "Japanese",
+    "autonym": "日本語",
+    "title": "インド",
+    "domain": "ja.wikipedia.org",
+    "article_url": "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%83%89"
+  },
+  {
+    "code": "jam",
+    "name": "Jamaican Creole English",
+    "autonym": "Patois",
+    "title": "India",
+    "domain": "jam.wikipedia.org",
+    "article_url": "https://jam.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "jbo",
+    "name": "Lojban",
+    "autonym": "la .lojban.",
+    "title": "xingu'e",
+    "domain": "jbo.wikipedia.org",
+    "article_url": "https://jbo.wikipedia.org/wiki/xingu%27e"
+  },
+  {
+    "code": "jv",
+    "name": "Javanese",
+    "autonym": "Jawa",
+    "title": "Indhi",
+    "domain": "jv.wikipedia.org",
+    "article_url": "https://jv.wikipedia.org/wiki/Indhi"
+  },
+  {
+    "code": "ka",
+    "name": "Georgian",
+    "autonym": "ქართული",
+    "title": "ინდოეთი",
+    "domain": "ka.wikipedia.org",
+    "article_url": "https://ka.wikipedia.org/wiki/%E1%83%98%E1%83%9C%E1%83%93%E1%83%9D%E1%83%94%E1%83%97%E1%83%98"
+  },
+  {
+    "code": "kaa",
+    "name": "Kara-Kalpak",
+    "autonym": "Qaraqalpaqsha",
+    "title": "Hindstan",
+    "domain": "kaa.wikipedia.org",
+    "article_url": "https://kaa.wikipedia.org/wiki/Hindstan"
+  },
+  {
+    "code": "kab",
+    "name": "Kabyle",
+    "autonym": "Taqbaylit",
+    "title": "Lhend",
+    "domain": "kab.wikipedia.org",
+    "article_url": "https://kab.wikipedia.org/wiki/Lhend"
+  },
+  {
+    "code": "kai",
+    "name": "Karekare",
+    "autonym": "Karai-karai",
+    "title": "Indiya",
+    "domain": "kai.wikipedia.org",
+    "article_url": "https://kai.wikipedia.org/wiki/Indiya"
+  },
+  {
+    "code": "kbd",
+    "name": "Kabardian",
+    "autonym": "адыгэбзэ",
+    "title": "Индиэ",
+    "domain": "kbd.wikipedia.org",
+    "article_url": "https://kbd.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8D"
+  },
+  {
+    "code": "kbp",
+    "name": "Kabiye",
+    "autonym": "Kabɩyɛ",
+    "title": "Ɛndɩ",
+    "domain": "kbp.wikipedia.org",
+    "article_url": "https://kbp.wikipedia.org/wiki/%C6%90nd%C9%A9"
+  },
+  {
+    "code": "kcg",
+    "name": "Tyap",
+    "autonym": "Tyap",
+    "title": "Ndiya",
+    "domain": "kcg.wikipedia.org",
+    "article_url": "https://kcg.wikipedia.org/wiki/Ndiya"
+  },
+  {
+    "code": "kg",
+    "name": "Kongo",
+    "autonym": "Kongo",
+    "title": "India",
+    "domain": "kg.wikipedia.org",
+    "article_url": "https://kg.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "kge",
+    "name": "Komering",
+    "autonym": "Kumoring",
+    "title": "Indiya",
+    "domain": "kge.wikipedia.org",
+    "article_url": "https://kge.wikipedia.org/wiki/Indiya"
+  },
+  {
+    "code": "ki",
+    "name": "Kikuyu",
+    "autonym": "Gĩkũyũ",
+    "title": "India",
+    "domain": "ki.wikipedia.org",
+    "article_url": "https://ki.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "kk",
+    "name": "Kazakh",
+    "autonym": "қазақша",
+    "title": "Үндістан",
+    "domain": "kk.wikipedia.org",
+    "article_url": "https://kk.wikipedia.org/wiki/%D2%AE%D0%BD%D0%B4%D1%96%D1%81%D1%82%D0%B0%D0%BD"
+  },
+  {
+    "code": "km",
+    "name": "Khmer",
+    "autonym": "ភាសាខ្មែរ",
+    "title": "ឥណ្ឌា",
+    "domain": "km.wikipedia.org",
+    "article_url": "https://km.wikipedia.org/wiki/%E1%9E%A5%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%B6"
+  },
+  {
+    "code": "kn",
+    "name": "Kannada",
+    "autonym": "ಕನ್ನಡ",
+    "title": "ಭಾರತ",
+    "domain": "kn.wikipedia.org",
+    "article_url": "https://kn.wikipedia.org/wiki/%E0%B2%AD%E0%B2%BE%E0%B2%B0%E0%B2%A4"
+  },
+  {
+    "code": "knc",
+    "name": "Central Kanuri",
+    "autonym": "Yerwa Kanuri",
+    "title": "India",
+    "domain": "knc.wikipedia.org",
+    "article_url": "https://knc.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ko",
+    "name": "Korean",
+    "autonym": "한국어",
+    "title": "인도",
+    "domain": "ko.wikipedia.org",
+    "article_url": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EB%8F%84"
+  },
+  {
+    "code": "krc",
+    "name": "Karachay-Balkar",
+    "autonym": "къарачай-малкъар",
+    "title": "Индия",
+    "domain": "krc.wikipedia.org",
+    "article_url": "https://krc.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "ks",
+    "name": "Kashmiri",
+    "autonym": "کٲشُر",
+    "title": "ہِندوستان",
+    "domain": "ks.wikipedia.org",
+    "article_url": "https://ks.wikipedia.org/wiki/%DB%81%D9%90%D9%86%D8%AF%D9%88%D8%B3%D8%AA%D8%A7%D9%86"
+  },
+  {
+    "code": "ku",
+    "name": "Kurdish",
+    "autonym": "kurdî",
+    "title": "Hindistan",
+    "domain": "ku.wikipedia.org",
+    "article_url": "https://ku.wikipedia.org/wiki/Hindistan"
+  },
+  {
+    "code": "kv",
+    "name": "Komi",
+    "autonym": "коми",
+    "title": "Индия",
+    "domain": "kv.wikipedia.org",
+    "article_url": "https://kv.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "kw",
+    "name": "Cornish",
+    "autonym": "kernowek",
+    "title": "Eynda",
+    "domain": "kw.wikipedia.org",
+    "article_url": "https://kw.wikipedia.org/wiki/Eynda"
+  },
+  {
+    "code": "ky",
+    "name": "Kyrgyz",
+    "autonym": "кыргызча",
+    "title": "Индия",
+    "domain": "ky.wikipedia.org",
+    "article_url": "https://ky.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "la",
+    "name": "Latin",
+    "autonym": "Latina",
+    "title": "India",
+    "domain": "la.wikipedia.org",
+    "article_url": "https://la.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "lad",
+    "name": "Ladino",
+    "autonym": "Ladino",
+    "title": "India",
+    "domain": "lad.wikipedia.org",
+    "article_url": "https://lad.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "lb",
+    "name": "Luxembourgish",
+    "autonym": "Lëtzebuergesch",
+    "title": "Indien",
+    "domain": "lb.wikipedia.org",
+    "article_url": "https://lb.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "lbe",
+    "name": "Lak",
+    "autonym": "лакку",
+    "title": "Гьиндусттан",
+    "domain": "lbe.wikipedia.org",
+    "article_url": "https://lbe.wikipedia.org/wiki/%D0%93%D1%8C%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D1%82%D0%B0%D0%BD"
+  },
+  {
+    "code": "lez",
+    "name": "Lezghian",
+    "autonym": "лезги",
+    "title": "Индия",
+    "domain": "lez.wikipedia.org",
+    "article_url": "https://lez.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "lfn",
+    "name": "Lingua Franca Nova",
+    "autonym": "Lingua Franca Nova",
+    "title": "Barat",
+    "domain": "lfn.wikipedia.org",
+    "article_url": "https://lfn.wikipedia.org/wiki/Barat"
+  },
+  {
+    "code": "lg",
+    "name": "Ganda",
+    "autonym": "Luganda",
+    "title": "India",
+    "domain": "lg.wikipedia.org",
+    "article_url": "https://lg.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "li",
+    "name": "Limburgish",
+    "autonym": "Limburgs",
+    "title": "India",
+    "domain": "li.wikipedia.org",
+    "article_url": "https://li.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "lij",
+    "name": "Ligurian",
+    "autonym": "Ligure",
+    "title": "India",
+    "domain": "lij.wikipedia.org",
+    "article_url": "https://lij.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "lld",
+    "name": "Ladin",
+    "autonym": "Ladin",
+    "title": "India",
+    "domain": "lld.wikipedia.org",
+    "article_url": "https://lld.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "lmo",
+    "name": "Lombard",
+    "autonym": "lombard",
+    "title": "India",
+    "domain": "lmo.wikipedia.org",
+    "article_url": "https://lmo.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ln",
+    "name": "Lingala",
+    "autonym": "lingála",
+    "title": "India",
+    "domain": "ln.wikipedia.org",
+    "article_url": "https://ln.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "lo",
+    "name": "Lao",
+    "autonym": "ລາວ",
+    "title": "ປະເທດອິນເດຍ",
+    "domain": "lo.wikipedia.org",
+    "article_url": "https://lo.wikipedia.org/wiki/%E0%BA%9B%E0%BA%B0%E0%BB%80%E0%BA%97%E0%BA%94%E0%BA%AD%E0%BA%B4%E0%BA%99%E0%BB%80%E0%BA%94%E0%BA%8D"
+  },
+  {
+    "code": "lt",
+    "name": "Lithuanian",
+    "autonym": "lietuvių",
+    "title": "Indija",
+    "domain": "lt.wikipedia.org",
+    "article_url": "https://lt.wikipedia.org/wiki/Indija"
+  },
+  {
+    "code": "ltg",
+    "name": "Latgalian",
+    "autonym": "latgaļu",
+    "title": "Iņdeja",
+    "domain": "ltg.wikipedia.org",
+    "article_url": "https://ltg.wikipedia.org/wiki/I%C5%86deja"
+  },
+  {
+    "code": "lv",
+    "name": "Latvian",
+    "autonym": "latviešu",
+    "title": "Indija",
+    "domain": "lv.wikipedia.org",
+    "article_url": "https://lv.wikipedia.org/wiki/Indija"
+  },
+  {
+    "code": "lzh",
+    "name": "Literary Chinese",
+    "autonym": "文言",
+    "title": "印度",
+    "domain": "zh-classical.wikipedia.org",
+    "article_url": "https://zh-classical.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6"
+  },
+  {
+    "code": "mad",
+    "name": "Madurese",
+    "autonym": "Madhurâ",
+    "title": "Inḍia",
+    "domain": "mad.wikipedia.org",
+    "article_url": "https://mad.wikipedia.org/wiki/In%E1%B8%8Dia"
+  },
+  {
+    "code": "mai",
+    "name": "Maithili",
+    "autonym": "मैथिली",
+    "title": "भारत",
+    "domain": "mai.wikipedia.org",
+    "article_url": "https://mai.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "map-bms",
+    "name": "Banyumasan",
+    "autonym": "Basa Banyumasan",
+    "title": "India",
+    "domain": "map-bms.wikipedia.org",
+    "article_url": "https://map-bms.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "mdf",
+    "name": "Moksha",
+    "autonym": "мокшень",
+    "title": "Индия",
+    "domain": "mdf.wikipedia.org",
+    "article_url": "https://mdf.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "mg",
+    "name": "Malagasy",
+    "autonym": "Malagasy",
+    "title": "India",
+    "domain": "mg.wikipedia.org",
+    "article_url": "https://mg.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "mhr",
+    "name": "Eastern Mari",
+    "autonym": "олык марий",
+    "title": "Индий",
+    "domain": "mhr.wikipedia.org",
+    "article_url": "https://mhr.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%B9"
+  },
+  {
+    "code": "mi",
+    "name": "Māori",
+    "autonym": "Māori",
+    "title": "Īnia",
+    "domain": "mi.wikipedia.org",
+    "article_url": "https://mi.wikipedia.org/wiki/%C4%AAnia"
+  },
+  {
+    "code": "min",
+    "name": "Minangkabau",
+    "autonym": "Minangkabau",
+    "title": "India",
+    "domain": "min.wikipedia.org",
+    "article_url": "https://min.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "mk",
+    "name": "Macedonian",
+    "autonym": "македонски",
+    "title": "Индија",
+    "domain": "mk.wikipedia.org",
+    "article_url": "https://mk.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%98%D0%B0"
+  },
+  {
+    "code": "ml",
+    "name": "Malayalam",
+    "autonym": "മലയാളം",
+    "title": "ഇന്ത്യ",
+    "domain": "ml.wikipedia.org",
+    "article_url": "https://ml.wikipedia.org/wiki/%E0%B4%87%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B5%8D%E0%B4%AF"
+  },
+  {
+    "code": "mn",
+    "name": "Mongolian",
+    "autonym": "монгол",
+    "title": "Энэтхэг",
+    "domain": "mn.wikipedia.org",
+    "article_url": "https://mn.wikipedia.org/wiki/%D0%AD%D0%BD%D1%8D%D1%82%D1%85%D1%8D%D0%B3"
+  },
+  {
+    "code": "mni",
+    "name": "Manipuri",
+    "autonym": "ꯃꯤꯇꯩ ꯂꯣꯟ",
+    "title": "ꯏꯟꯗꯤꯌꯥ",
+    "domain": "mni.wikipedia.org",
+    "article_url": "https://mni.wikipedia.org/wiki/%EA%AF%8F%EA%AF%9F%EA%AF%97%EA%AF%A4%EA%AF%8C%EA%AF%A5"
+  },
+  {
+    "code": "mr",
+    "name": "Marathi",
+    "autonym": "मराठी",
+    "title": "भारत",
+    "domain": "mr.wikipedia.org",
+    "article_url": "https://mr.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "ms",
+    "name": "Malay",
+    "autonym": "Bahasa Melayu",
+    "title": "India",
+    "domain": "ms.wikipedia.org",
+    "article_url": "https://ms.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "mt",
+    "name": "Maltese",
+    "autonym": "Malti",
+    "title": "Indja",
+    "domain": "mt.wikipedia.org",
+    "article_url": "https://mt.wikipedia.org/wiki/Indja"
+  },
+  {
+    "code": "mwl",
+    "name": "Mirandese",
+    "autonym": "Mirandés",
+    "title": "Índia",
+    "domain": "mwl.wikipedia.org",
+    "article_url": "https://mwl.wikipedia.org/wiki/%C3%8Dndia"
+  },
+  {
+    "code": "my",
+    "name": "Burmese",
+    "autonym": "မြန်မာဘာသာ",
+    "title": "အိန္ဒိယနိုင်ငံ",
+    "domain": "my.wikipedia.org",
+    "article_url": "https://my.wikipedia.org/wiki/%E1%80%A1%E1%80%AD%E1%80%94%E1%80%B9%E1%80%92%E1%80%AD%E1%80%9A%E1%80%94%E1%80%AD%E1%80%AF%E1%80%84%E1%80%BA%E1%80%84%E1%80%B6"
+  },
+  {
+    "code": "myv",
+    "name": "Erzya",
+    "autonym": "эрзянь",
+    "title": "Индия Мастор",
+    "domain": "myv.wikipedia.org",
+    "article_url": "https://myv.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F_%D0%9C%D0%B0%D1%81%D1%82%D0%BE%D1%80"
+  },
+  {
+    "code": "mzn",
+    "name": "Mazanderani",
+    "autonym": "مازِرونی",
+    "title": "هند",
+    "domain": "mzn.wikipedia.org",
+    "article_url": "https://mzn.wikipedia.org/wiki/%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "nan",
+    "name": "Minnan",
+    "autonym": "閩南語 / Bân-lâm-gí",
+    "title": "Ìn-tō͘",
+    "domain": "zh-min-nan.wikipedia.org",
+    "article_url": "https://zh-min-nan.wikipedia.org/wiki/%C3%8Cn-t%C5%8D%CD%98"
+  },
+  {
+    "code": "nap",
+    "name": "Neapolitan",
+    "autonym": "Napulitano",
+    "title": "Innia",
+    "domain": "nap.wikipedia.org",
+    "article_url": "https://nap.wikipedia.org/wiki/Innia"
+  },
+  {
+    "code": "nb",
+    "name": "Norwegian Bokmål",
+    "autonym": "norsk bokmål",
+    "title": "India",
+    "domain": "no.wikipedia.org",
+    "article_url": "https://no.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "nds",
+    "name": "Low German",
+    "autonym": "Plattdüütsch",
+    "title": "Indien",
+    "domain": "nds.wikipedia.org",
+    "article_url": "https://nds.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "nds-nl",
+    "name": "Low Saxon",
+    "autonym": "Nedersaksies",
+    "title": "India",
+    "domain": "nds-nl.wikipedia.org",
+    "article_url": "https://nds-nl.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ne",
+    "name": "Nepali",
+    "autonym": "नेपाली",
+    "title": "भारत",
+    "domain": "ne.wikipedia.org",
+    "article_url": "https://ne.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "new",
+    "name": "Newari",
+    "autonym": "नेपाल भाषा",
+    "title": "भारत",
+    "domain": "new.wikipedia.org",
+    "article_url": "https://new.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+  },
+  {
+    "code": "nl",
+    "name": "Dutch",
+    "autonym": "Nederlands",
+    "title": "India",
+    "domain": "nl.wikipedia.org",
+    "article_url": "https://nl.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "nn",
+    "name": "Norwegian Nynorsk",
+    "autonym": "norsk nynorsk",
+    "title": "India",
+    "domain": "nn.wikipedia.org",
+    "article_url": "https://nn.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "nov",
+    "name": "Novial",
+    "autonym": "Novial",
+    "title": "India",
+    "domain": "nov.wikipedia.org",
+    "article_url": "https://nov.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "nrm",
+    "name": "Norman",
+    "autonym": "Nouormand",
+    "title": "Înde",
+    "domain": "nrm.wikipedia.org",
+    "article_url": "https://nrm.wikipedia.org/wiki/%C3%8Ende"
+  },
+  {
+    "code": "nso",
+    "name": "Northern Sotho",
+    "autonym": "Sesotho sa Leboa",
+    "title": "India",
+    "domain": "nso.wikipedia.org",
+    "article_url": "https://nso.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "nup",
+    "name": "Nupe",
+    "autonym": "Nupe",
+    "title": "India",
+    "domain": "nup.wikipedia.org",
+    "article_url": "https://nup.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "nv",
+    "name": "Navajo",
+    "autonym": "Diné bizaad",
+    "title": "Tó Wónaanídę́ę́ʼ Bitsįʼ Yishtłizhii Bikéyah",
+    "domain": "nv.wikipedia.org",
+    "article_url": "https://nv.wikipedia.org/wiki/T%C3%B3_W%C3%B3naan%C3%ADd%C4%99%CC%81%C4%99%CC%81%CA%BC_Bits%C4%AF%CA%BC_Yisht%C5%82izhii_Bik%C3%A9yah"
+  },
+  {
+    "code": "ny",
+    "name": "Nyanja",
+    "autonym": "Chi-Chewa",
+    "title": "India",
+    "domain": "ny.wikipedia.org",
+    "article_url": "https://ny.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "oc",
+    "name": "Occitan",
+    "autonym": "occitan",
+    "title": "Índia",
+    "domain": "oc.wikipedia.org",
+    "article_url": "https://oc.wikipedia.org/wiki/%C3%8Dndia"
+  },
+  {
+    "code": "olo",
+    "name": "Livvi-Karelian",
+    "autonym": "livvinkarjala",
+    "title": "Indii",
+    "domain": "olo.wikipedia.org",
+    "article_url": "https://olo.wikipedia.org/wiki/Indii"
+  },
+  {
+    "code": "om",
+    "name": "Oromo",
+    "autonym": "Oromoo",
+    "title": "Indiyaa",
+    "domain": "om.wikipedia.org",
+    "article_url": "https://om.wikipedia.org/wiki/Indiyaa"
+  },
+  {
+    "code": "or",
+    "name": "Odia",
+    "autonym": "ଓଡ଼ିଆ",
+    "title": "ଭାରତ",
+    "domain": "or.wikipedia.org",
+    "article_url": "https://or.wikipedia.org/wiki/%E0%AC%AD%E0%AC%BE%E0%AC%B0%E0%AC%A4"
+  },
+  {
+    "code": "os",
+    "name": "Ossetic",
+    "autonym": "ирон",
+    "title": "Инди",
+    "domain": "os.wikipedia.org",
+    "article_url": "https://os.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8"
+  },
+  {
+    "code": "pa",
+    "name": "Punjabi",
+    "autonym": "ਪੰਜਾਬੀ",
+    "title": "ਭਾਰਤ",
+    "domain": "pa.wikipedia.org",
+    "article_url": "https://pa.wikipedia.org/wiki/%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4"
+  },
+  {
+    "code": "pam",
+    "name": "Pampanga",
+    "autonym": "Kapampangan",
+    "title": "India",
+    "domain": "pam.wikipedia.org",
+    "article_url": "https://pam.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "pap",
+    "name": "Papiamento",
+    "autonym": "Papiamentu",
+    "title": "India",
+    "domain": "pap.wikipedia.org",
+    "article_url": "https://pap.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "pcd",
+    "name": "Picard",
+    "autonym": "Picard",
+    "title": "Inde",
+    "domain": "pcd.wikipedia.org",
+    "article_url": "https://pcd.wikipedia.org/wiki/Inde"
+  },
+  {
+    "code": "pdc",
+    "name": "Pennsylvania German",
+    "autonym": "Deitsch",
+    "title": "India",
+    "domain": "pdc.wikipedia.org",
+    "article_url": "https://pdc.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "pl",
+    "name": "Polish",
+    "autonym": "polski",
+    "title": "Indie",
+    "domain": "pl.wikipedia.org",
+    "article_url": "https://pl.wikipedia.org/wiki/Indie"
+  },
+  {
+    "code": "pms",
+    "name": "Piedmontese",
+    "autonym": "Piemontèis",
+    "title": "India",
+    "domain": "pms.wikipedia.org",
+    "article_url": "https://pms.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "pnb",
+    "name": "Western Punjabi",
+    "autonym": "پنجابی",
+    "title": "بھارت",
+    "domain": "pnb.wikipedia.org",
+    "article_url": "https://pnb.wikipedia.org/wiki/%D8%A8%DA%BE%D8%A7%D8%B1%D8%AA"
+  },
+  {
+    "code": "ps",
+    "name": "Pashto",
+    "autonym": "پښتو",
+    "title": "هند",
+    "domain": "ps.wikipedia.org",
+    "article_url": "https://ps.wikipedia.org/wiki/%D9%87%D9%86%D8%AF"
+  },
+  {
+    "code": "pt",
+    "name": "Portuguese",
+    "autonym": "português",
+    "title": "Índia",
+    "domain": "pt.wikipedia.org",
+    "article_url": "https://pt.wikipedia.org/wiki/%C3%8Dndia"
+  },
+  {
+    "code": "qu",
+    "name": "Quechua",
+    "autonym": "Runa Simi",
+    "title": "Intia",
+    "domain": "qu.wikipedia.org",
+    "article_url": "https://qu.wikipedia.org/wiki/Intia"
+  },
+  {
+    "code": "rm",
+    "name": "Romansh",
+    "autonym": "rumantsch",
+    "title": "India",
+    "domain": "rm.wikipedia.org",
+    "article_url": "https://rm.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "rmy",
+    "name": "Vlax Romani",
+    "autonym": "romani čhib",
+    "title": "Bharat",
+    "domain": "rmy.wikipedia.org",
+    "article_url": "https://rmy.wikipedia.org/wiki/Bharat"
+  },
+  {
+    "code": "rn",
+    "name": "Rundi",
+    "autonym": "ikirundi",
+    "title": "Ubuhindi",
+    "domain": "rn.wikipedia.org",
+    "article_url": "https://rn.wikipedia.org/wiki/Ubuhindi"
+  },
+  {
+    "code": "ro",
+    "name": "Romanian",
+    "autonym": "română",
+    "title": "India",
+    "domain": "ro.wikipedia.org",
+    "article_url": "https://ro.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "roa-tara",
+    "name": "Tarantino",
+    "autonym": "tarandíne",
+    "title": "Indie",
+    "domain": "roa-tara.wikipedia.org",
+    "article_url": "https://roa-tara.wikipedia.org/wiki/Indie"
+  },
+  {
+    "code": "ru",
+    "name": "Russian",
+    "autonym": "русский",
+    "title": "Индия",
+    "domain": "ru.wikipedia.org",
+    "article_url": "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "rue",
+    "name": "Rusyn",
+    "autonym": "русиньскый",
+    "title": "Індія",
+    "domain": "rue.wikipedia.org",
+    "article_url": "https://rue.wikipedia.org/wiki/%D0%86%D0%BD%D0%B4%D1%96%D1%8F"
+  },
+  {
+    "code": "rup",
+    "name": "Aromanian",
+    "autonym": "armãneashti",
+    "title": "India",
+    "domain": "roa-rup.wikipedia.org",
+    "article_url": "https://roa-rup.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "rw",
+    "name": "Kinyarwanda",
+    "autonym": "Ikinyarwanda",
+    "title": "Ubuhinde",
+    "domain": "rw.wikipedia.org",
+    "article_url": "https://rw.wikipedia.org/wiki/Ubuhinde"
+  },
+  {
+    "code": "sa",
+    "name": "Sanskrit",
+    "autonym": "संस्कृतम्",
+    "title": "भारतम्",
+    "domain": "sa.wikipedia.org",
+    "article_url": "https://sa.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A4%AE%E0%A5%8D"
+  },
+  {
+    "code": "sah",
+    "name": "Yakut",
+    "autonym": "саха тыла",
+    "title": "Ииндийэ",
+    "domain": "sah.wikipedia.org",
+    "article_url": "https://sah.wikipedia.org/wiki/%D0%98%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%8D"
+  },
+  {
+    "code": "sat",
+    "name": "Santali",
+    "autonym": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "title": "ᱥᱤᱧᱚᱛ",
+    "domain": "sat.wikipedia.org",
+    "article_url": "https://sat.wikipedia.org/wiki/%E1%B1%A5%E1%B1%A4%E1%B1%A7%E1%B1%9A%E1%B1%9B"
+  },
+  {
+    "code": "sc",
+    "name": "Sardinian",
+    "autonym": "sardu",
+    "title": "Ìndia",
+    "domain": "sc.wikipedia.org",
+    "article_url": "https://sc.wikipedia.org/wiki/%C3%8Cndia"
+  },
+  {
+    "code": "scn",
+    "name": "Sicilian",
+    "autonym": "sicilianu",
+    "title": "Innia",
+    "domain": "scn.wikipedia.org",
+    "article_url": "https://scn.wikipedia.org/wiki/Innia"
+  },
+  {
+    "code": "sco",
+    "name": "Scots",
+    "autonym": "Scots",
+    "title": "Indie",
+    "domain": "sco.wikipedia.org",
+    "article_url": "https://sco.wikipedia.org/wiki/Indie"
+  },
+  {
+    "code": "sd",
+    "name": "Sindhi",
+    "autonym": "سنڌي",
+    "title": "ڀارت",
+    "domain": "sd.wikipedia.org",
+    "article_url": "https://sd.wikipedia.org/wiki/%DA%80%D8%A7%D8%B1%D8%AA"
+  },
+  {
+    "code": "se",
+    "name": "Northern Sami",
+    "autonym": "davvisámegiella",
+    "title": "India",
+    "domain": "se.wikipedia.org",
+    "article_url": "https://se.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "sg",
+    "name": "Sango",
+    "autonym": "Sängö",
+    "title": "Indïi",
+    "domain": "sg.wikipedia.org",
+    "article_url": "https://sg.wikipedia.org/wiki/Ind%C3%AFi"
+  },
+  {
+    "code": "sgs",
+    "name": "Samogitian",
+    "autonym": "žemaitėška",
+    "title": "Indėjė",
+    "domain": "bat-smg.wikipedia.org",
+    "article_url": "https://bat-smg.wikipedia.org/wiki/Ind%C4%97j%C4%97"
+  },
+  {
+    "code": "sh",
+    "name": "Serbo-Croatian",
+    "autonym": "srpskohrvatski / српскохрватски",
+    "title": "Indija",
+    "domain": "sh.wikipedia.org",
+    "article_url": "https://sh.wikipedia.org/wiki/Indija"
+  },
+  {
+    "code": "shn",
+    "name": "Shan",
+    "autonym": "တႆး",
+    "title": "မိူင်းဢိၼ်းတီးယႃး",
+    "domain": "shn.wikipedia.org",
+    "article_url": "https://shn.wikipedia.org/wiki/%E1%80%99%E1%80%AD%E1%80%B0%E1%80%84%E1%80%BA%E1%80%B8%E1%80%A2%E1%80%AD%E1%81%BC%E1%80%BA%E1%80%B8%E1%80%90%E1%80%AE%E1%80%B8%E1%80%9A%E1%82%83%E1%80%B8"
+  },
+  {
+    "code": "si",
+    "name": "Sinhala",
+    "autonym": "සිංහල",
+    "title": "ඉන්දියාව",
+    "domain": "si.wikipedia.org",
+    "article_url": "https://si.wikipedia.org/wiki/%E0%B6%89%E0%B6%B1%E0%B7%8A%E0%B6%AF%E0%B7%92%E0%B6%BA%E0%B7%8F%E0%B7%80"
+  },
+  {
+    "code": "simple",
+    "name": "Simple English",
+    "autonym": "Simple English",
+    "title": "India",
+    "domain": "simple.wikipedia.org",
+    "article_url": "https://simple.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "sk",
+    "name": "Slovak",
+    "autonym": "slovenčina",
+    "title": "India",
+    "domain": "sk.wikipedia.org",
+    "article_url": "https://sk.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "skr",
+    "name": "Saraiki",
+    "autonym": "سرائیکی",
+    "title": "بھارت",
+    "domain": "skr.wikipedia.org",
+    "article_url": "https://skr.wikipedia.org/wiki/%D8%A8%DA%BE%D8%A7%D8%B1%D8%AA"
+  },
+  {
+    "code": "sl",
+    "name": "Slovenian",
+    "autonym": "slovenščina",
+    "title": "Indija",
+    "domain": "sl.wikipedia.org",
+    "article_url": "https://sl.wikipedia.org/wiki/Indija"
+  },
+  {
+    "code": "sm",
+    "name": "Samoan",
+    "autonym": "Gagana Samoa",
+    "title": "Igitia",
+    "domain": "sm.wikipedia.org",
+    "article_url": "https://sm.wikipedia.org/wiki/Igitia"
+  },
+  {
+    "code": "smn",
+    "name": "Inari Sami",
+    "autonym": "anarâškielâ",
+    "title": "India",
+    "domain": "smn.wikipedia.org",
+    "article_url": "https://smn.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "sn",
+    "name": "Shona",
+    "autonym": "chiShona",
+    "title": "India",
+    "domain": "sn.wikipedia.org",
+    "article_url": "https://sn.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "so",
+    "name": "Somali",
+    "autonym": "Soomaaliga",
+    "title": "Hindiya",
+    "domain": "so.wikipedia.org",
+    "article_url": "https://so.wikipedia.org/wiki/Hindiya"
+  },
+  {
+    "code": "sq",
+    "name": "Albanian",
+    "autonym": "shqip",
+    "title": "India",
+    "domain": "sq.wikipedia.org",
+    "article_url": "https://sq.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "sr",
+    "name": "Serbian",
+    "autonym": "српски / srpski",
+    "title": "Индија",
+    "domain": "sr.wikipedia.org",
+    "article_url": "https://sr.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%98%D0%B0"
+  },
+  {
+    "code": "srn",
+    "name": "Sranan Tongo",
+    "autonym": "Sranantongo",
+    "title": "Indiakondre",
+    "domain": "srn.wikipedia.org",
+    "article_url": "https://srn.wikipedia.org/wiki/Indiakondre"
+  },
+  {
+    "code": "ss",
+    "name": "Swati",
+    "autonym": "SiSwati",
+    "title": "INdiya",
+    "domain": "ss.wikipedia.org",
+    "article_url": "https://ss.wikipedia.org/wiki/INdiya"
+  },
+  {
+    "code": "st",
+    "name": "Southern Sotho",
+    "autonym": "Sesotho",
+    "title": "India",
+    "domain": "st.wikipedia.org",
+    "article_url": "https://st.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "stq",
+    "name": "Saterland Frisian",
+    "autonym": "Seeltersk",
+    "title": "Indien",
+    "domain": "stq.wikipedia.org",
+    "article_url": "https://stq.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "su",
+    "name": "Sundanese",
+    "autonym": "Sunda",
+    "title": "India",
+    "domain": "su.wikipedia.org",
+    "article_url": "https://su.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "sv",
+    "name": "Swedish",
+    "autonym": "svenska",
+    "title": "Indien",
+    "domain": "sv.wikipedia.org",
+    "article_url": "https://sv.wikipedia.org/wiki/Indien"
+  },
+  {
+    "code": "sw",
+    "name": "Swahili",
+    "autonym": "Kiswahili",
+    "title": "Uhindi",
+    "domain": "sw.wikipedia.org",
+    "article_url": "https://sw.wikipedia.org/wiki/Uhindi"
+  },
+  {
+    "code": "syl",
+    "name": "Sylheti",
+    "autonym": "ꠍꠤꠟꠐꠤ",
+    "title": "ꠄꠘ꠆ꠒꠤꠀ",
+    "domain": "syl.wikipedia.org",
+    "article_url": "https://syl.wikipedia.org/wiki/%EA%A0%84%EA%A0%98%EA%A0%86%EA%A0%92%EA%A0%A4%EA%A0%80"
+  },
+  {
+    "code": "szl",
+    "name": "Silesian",
+    "autonym": "ślůnski",
+    "title": "Indyje",
+    "domain": "szl.wikipedia.org",
+    "article_url": "https://szl.wikipedia.org/wiki/Indyje"
+  },
+  {
+    "code": "szy",
+    "name": "Sakizaya",
+    "autonym": "Sakizaya",
+    "title": "India",
+    "domain": "szy.wikipedia.org",
+    "article_url": "https://szy.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ta",
+    "name": "Tamil",
+    "autonym": "தமிழ்",
+    "title": "இந்தியா",
+    "domain": "ta.wikipedia.org",
+    "article_url": "https://ta.wikipedia.org/wiki/%E0%AE%87%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%AF%E0%AE%BE"
+  },
+  {
+    "code": "tay",
+    "name": "Atayal",
+    "autonym": "Tayal",
+    "title": "India",
+    "domain": "tay.wikipedia.org",
+    "article_url": "https://tay.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "tcy",
+    "name": "Tulu",
+    "autonym": "ತುಳು",
+    "title": "ಭಾರತ",
+    "domain": "tcy.wikipedia.org",
+    "article_url": "https://tcy.wikipedia.org/wiki/%E0%B2%AD%E0%B2%BE%E0%B2%B0%E0%B2%A4"
+  },
+  {
+    "code": "tdd",
+    "name": "Tai Nuea",
+    "autonym": "ᥖᥭᥰ ᥖᥬᥲ ᥑᥨᥒᥰ",
+    "title": "ᥛᥫᥒᥰ ᥟᥤᥢᥰ ᥖᥤᥰ ᥕᥣᥰ",
+    "domain": "tdd.wikipedia.org",
+    "article_url": "https://tdd.wikipedia.org/wiki/%E1%A5%9B%E1%A5%AB%E1%A5%92%E1%A5%B0_%E1%A5%9F%E1%A5%A4%E1%A5%A2%E1%A5%B0_%E1%A5%96%E1%A5%A4%E1%A5%B0_%E1%A5%95%E1%A5%A3%E1%A5%B0"
+  },
+  {
+    "code": "te",
+    "name": "Telugu",
+    "autonym": "తెలుగు",
+    "title": "భారతదేశం",
+    "domain": "te.wikipedia.org",
+    "article_url": "https://te.wikipedia.org/wiki/%E0%B0%AD%E0%B0%BE%E0%B0%B0%E0%B0%A4%E0%B0%A6%E0%B1%87%E0%B0%B6%E0%B0%82"
+  },
+  {
+    "code": "tet",
+    "name": "Tetum",
+    "autonym": "tetun",
+    "title": "Índia",
+    "domain": "tet.wikipedia.org",
+    "article_url": "https://tet.wikipedia.org/wiki/%C3%8Dndia"
+  },
+  {
+    "code": "tg",
+    "name": "Tajik",
+    "autonym": "тоҷикӣ",
+    "title": "Ҳиндустон",
+    "domain": "tg.wikipedia.org",
+    "article_url": "https://tg.wikipedia.org/wiki/%D2%B2%D0%B8%D0%BD%D0%B4%D1%83%D1%81%D1%82%D0%BE%D0%BD"
+  },
+  {
+    "code": "th",
+    "name": "Thai",
+    "autonym": "ไทย",
+    "title": "ประเทศอินเดีย",
+    "domain": "th.wikipedia.org",
+    "article_url": "https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2"
+  },
+  {
+    "code": "ti",
+    "name": "Tigrinya",
+    "autonym": "ትግርኛ",
+    "title": "ህንዲ",
+    "domain": "ti.wikipedia.org",
+    "article_url": "https://ti.wikipedia.org/wiki/%E1%88%85%E1%8A%95%E1%8B%B2"
+  },
+  {
+    "code": "tk",
+    "name": "Turkmen",
+    "autonym": "Türkmençe",
+    "title": "Hindistan",
+    "domain": "tk.wikipedia.org",
+    "article_url": "https://tk.wikipedia.org/wiki/Hindistan"
+  },
+  {
+    "code": "tl",
+    "name": "Tagalog",
+    "autonym": "Tagalog",
+    "title": "Indiya",
+    "domain": "tl.wikipedia.org",
+    "article_url": "https://tl.wikipedia.org/wiki/Indiya"
+  },
+  {
+    "code": "tly",
+    "name": "Talysh",
+    "autonym": "tolışi",
+    "title": "Hindyston",
+    "domain": "tly.wikipedia.org",
+    "article_url": "https://tly.wikipedia.org/wiki/Hindyston"
+  },
+  {
+    "code": "to",
+    "name": "Tongan",
+    "autonym": "lea faka-Tonga",
+    "title": "ʻInitia",
+    "domain": "to.wikipedia.org",
+    "article_url": "https://to.wikipedia.org/wiki/%CA%BBInitia"
+  },
+  {
+    "code": "tok",
+    "name": "Toki Pona",
+    "autonym": "toki pona",
+    "title": "ma Palata",
+    "domain": "tok.wikipedia.org",
+    "article_url": "https://tok.wikipedia.org/wiki/ma_Palata"
+  },
+  {
+    "code": "tpi",
+    "name": "Tok Pisin",
+    "autonym": "Tok Pisin",
+    "title": "India",
+    "domain": "tpi.wikipedia.org",
+    "article_url": "https://tpi.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "tr",
+    "name": "Turkish",
+    "autonym": "Türkçe",
+    "title": "Hindistan",
+    "domain": "tr.wikipedia.org",
+    "article_url": "https://tr.wikipedia.org/wiki/Hindistan"
+  },
+  {
+    "code": "trv",
+    "name": "Taroko",
+    "autonym": "Seediq",
+    "title": "India",
+    "domain": "trv.wikipedia.org",
+    "article_url": "https://trv.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ts",
+    "name": "Tsonga",
+    "autonym": "Xitsonga",
+    "title": "Indiya",
+    "domain": "ts.wikipedia.org",
+    "article_url": "https://ts.wikipedia.org/wiki/Indiya"
+  },
+  {
+    "code": "tt",
+    "name": "Tatar",
+    "autonym": "татарча / tatarça",
+    "title": "Һиндстан",
+    "domain": "tt.wikipedia.org",
+    "article_url": "https://tt.wikipedia.org/wiki/%D2%BA%D0%B8%D0%BD%D0%B4%D1%81%D1%82%D0%B0%D0%BD"
+  },
+  {
+    "code": "tum",
+    "name": "Tumbuka",
+    "autonym": "chiTumbuka",
+    "title": "India",
+    "domain": "tum.wikipedia.org",
+    "article_url": "https://tum.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "tw",
+    "name": "Twi",
+    "autonym": "Twi",
+    "title": "India",
+    "domain": "tw.wikipedia.org",
+    "article_url": "https://tw.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "ty",
+    "name": "Tahitian",
+    "autonym": "reo tahiti",
+    "title": "’Inītia",
+    "domain": "ty.wikipedia.org",
+    "article_url": "https://ty.wikipedia.org/wiki/%E2%80%99In%C4%ABtia"
+  },
+  {
+    "code": "udm",
+    "name": "Udmurt",
+    "autonym": "удмурт",
+    "title": "Индия",
+    "domain": "udm.wikipedia.org",
+    "article_url": "https://udm.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "ug",
+    "name": "Uyghur",
+    "autonym": "ئۇيغۇرچە / Uyghurche",
+    "title": "ھىندىستان",
+    "domain": "ug.wikipedia.org",
+    "article_url": "https://ug.wikipedia.org/wiki/%DA%BE%D9%89%D9%86%D8%AF%D9%89%D8%B3%D8%AA%D8%A7%D9%86"
+  },
+  {
+    "code": "uk",
+    "name": "Ukrainian",
+    "autonym": "українська",
+    "title": "Індія",
+    "domain": "uk.wikipedia.org",
+    "article_url": "https://uk.wikipedia.org/wiki/%D0%86%D0%BD%D0%B4%D1%96%D1%8F"
+  },
+  {
+    "code": "ur",
+    "name": "Urdu",
+    "autonym": "اردو",
+    "title": "بھارت",
+    "domain": "ur.wikipedia.org",
+    "article_url": "https://ur.wikipedia.org/wiki/%D8%A8%DA%BE%D8%A7%D8%B1%D8%AA"
+  },
+  {
+    "code": "uz",
+    "name": "Uzbek",
+    "autonym": "oʻzbekcha / ўзбекча",
+    "title": "Hindiston",
+    "domain": "uz.wikipedia.org",
+    "article_url": "https://uz.wikipedia.org/wiki/Hindiston"
+  },
+  {
+    "code": "vec",
+    "name": "Venetian",
+    "autonym": "vèneto",
+    "title": "Ìndia",
+    "domain": "vec.wikipedia.org",
+    "article_url": "https://vec.wikipedia.org/wiki/%C3%8Cndia"
+  },
+  {
+    "code": "vep",
+    "name": "Veps",
+    "autonym": "vepsän kel’",
+    "title": "Indii",
+    "domain": "vep.wikipedia.org",
+    "article_url": "https://vep.wikipedia.org/wiki/Indii"
+  },
+  {
+    "code": "vi",
+    "name": "Vietnamese",
+    "autonym": "Tiếng Việt",
+    "title": "Ấn Độ",
+    "domain": "vi.wikipedia.org",
+    "article_url": "https://vi.wikipedia.org/wiki/%E1%BA%A4n_%C4%90%E1%BB%99"
+  },
+  {
+    "code": "vls",
+    "name": "West Flemish",
+    "autonym": "West-Vlams",
+    "title": "Indië",
+    "domain": "vls.wikipedia.org",
+    "article_url": "https://vls.wikipedia.org/wiki/Indi%C3%AB"
+  },
+  {
+    "code": "vo",
+    "name": "Volapük",
+    "autonym": "Volapük",
+    "title": "Lindän",
+    "domain": "vo.wikipedia.org",
+    "article_url": "https://vo.wikipedia.org/wiki/Lind%C3%A4n"
+  },
+  {
+    "code": "vro",
+    "name": "Võro",
+    "autonym": "võro",
+    "title": "India",
+    "domain": "fiu-vro.wikipedia.org",
+    "article_url": "https://fiu-vro.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "wa",
+    "name": "Walloon",
+    "autonym": "walon",
+    "title": "Inde",
+    "domain": "wa.wikipedia.org",
+    "article_url": "https://wa.wikipedia.org/wiki/Inde"
+  },
+  {
+    "code": "war",
+    "name": "Waray",
+    "autonym": "Winaray",
+    "title": "India",
+    "domain": "war.wikipedia.org",
+    "article_url": "https://war.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "wo",
+    "name": "Wolof",
+    "autonym": "Wolof",
+    "title": "End",
+    "domain": "wo.wikipedia.org",
+    "article_url": "https://wo.wikipedia.org/wiki/End"
+  },
+  {
+    "code": "wuu",
+    "name": "Wu",
+    "autonym": "吴语",
+    "title": "印度",
+    "domain": "wuu.wikipedia.org",
+    "article_url": "https://wuu.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6"
+  },
+  {
+    "code": "xal",
+    "name": "Kalmyk",
+    "autonym": "хальмг",
+    "title": "Индия",
+    "domain": "xal.wikipedia.org",
+    "article_url": "https://xal.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D1%8F"
+  },
+  {
+    "code": "xh",
+    "name": "Xhosa",
+    "autonym": "isiXhosa",
+    "title": "IIndia",
+    "domain": "xh.wikipedia.org",
+    "article_url": "https://xh.wikipedia.org/wiki/IIndia"
+  },
+  {
+    "code": "xmf",
+    "name": "Mingrelian",
+    "autonym": "მარგალური",
+    "title": "ინდოეთი",
+    "domain": "xmf.wikipedia.org",
+    "article_url": "https://xmf.wikipedia.org/wiki/%E1%83%98%E1%83%9C%E1%83%93%E1%83%9D%E1%83%94%E1%83%97%E1%83%98"
+  },
+  {
+    "code": "yi",
+    "name": "Yiddish",
+    "autonym": "ייִדיש",
+    "title": "אינדיע",
+    "domain": "yi.wikipedia.org",
+    "article_url": "https://yi.wikipedia.org/wiki/%D7%90%D7%99%D7%A0%D7%93%D7%99%D7%A2"
+  },
+  {
+    "code": "yo",
+    "name": "Yoruba",
+    "autonym": "Yorùbá",
+    "title": "Índíà",
+    "domain": "yo.wikipedia.org",
+    "article_url": "https://yo.wikipedia.org/wiki/%C3%8Dnd%C3%AD%C3%A0"
+  },
+  {
+    "code": "yue",
+    "name": "Cantonese",
+    "autonym": "粵語",
+    "title": "印度",
+    "domain": "zh-yue.wikipedia.org",
+    "article_url": "https://zh-yue.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6"
+  },
+  {
+    "code": "za",
+    "name": "Zhuang",
+    "autonym": "Vahcuengh",
+    "title": "Yindu",
+    "domain": "za.wikipedia.org",
+    "article_url": "https://za.wikipedia.org/wiki/Yindu"
+  },
+  {
+    "code": "zea",
+    "name": "Zeelandic",
+    "autonym": "Zeêuws",
+    "title": "India",
+    "domain": "zea.wikipedia.org",
+    "article_url": "https://zea.wikipedia.org/wiki/India"
+  },
+  {
+    "code": "zgh",
+    "name": "Standard Moroccan Tamazight",
+    "autonym": "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ",
+    "title": "ⵀⵉⵏⴷⵓⵙⵜⴰⵏ",
+    "domain": "zgh.wikipedia.org",
+    "article_url": "https://zgh.wikipedia.org/wiki/%E2%B5%80%E2%B5%89%E2%B5%8F%E2%B4%B7%E2%B5%93%E2%B5%99%E2%B5%9C%E2%B4%B0%E2%B5%8F"
+  },
+  {
+    "code": "zh",
+    "name": "Chinese",
+    "autonym": "中文",
+    "title": "印度",
+    "domain": "zh.wikipedia.org",
+    "article_url": "https://zh.wikipedia.org/wiki/%E5%8D%B0%E5%BA%A6"
+  },
+  {
+    "code": "zu",
+    "name": "Zulu",
+    "autonym": "isiZulu",
+    "title": "India",
+    "domain": "zu.wikipedia.org",
+    "article_url": "https://zu.wikipedia.org/wiki/India"
+  }
+]

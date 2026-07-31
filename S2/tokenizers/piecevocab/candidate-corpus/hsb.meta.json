@@ -1,0 +1,13 @@
+{
+  "code": "hsb",
+  "name": "Upper Sorbian",
+  "autonym": "hornjoserbsce",
+  "title": "Indiska",
+  "domain": "hsb.wikipedia.org",
+  "article_url": "https://hsb.wikipedia.org/wiki/Indiska",
+  "source_url": "https://hsb.wikipedia.org/w/rest.php/v1/page/Indiska/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:17:02Z",
+  "characters": 16261,
+  "faithful_units": 5225
+}

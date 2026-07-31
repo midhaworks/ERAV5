@@ -1,0 +1,13 @@
+{
+  "code": "ext",
+  "name": "Extremaduran",
+  "autonym": "estremeñu",
+  "title": "La Índia",
+  "domain": "ext.wikipedia.org",
+  "article_url": "https://ext.wikipedia.org/wiki/La_%C3%8Dndia",
+  "source_url": "https://ext.wikipedia.org/w/rest.php/v1/page/La%20%C3%8Dndia/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:13:16Z",
+  "characters": 14759,
+  "faithful_units": 4319
+}

@@ -1,0 +1,13 @@
+{
+  "code": "wo",
+  "name": "Wolof",
+  "autonym": "Wolof",
+  "title": "End",
+  "domain": "wo.wikipedia.org",
+  "article_url": "https://wo.wikipedia.org/wiki/End",
+  "source_url": "https://wo.wikipedia.org/w/rest.php/v1/page/End/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:35:13Z",
+  "characters": 2068,
+  "faithful_units": 767
+}

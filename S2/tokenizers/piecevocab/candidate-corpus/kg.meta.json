@@ -1,0 +1,13 @@
+{
+  "code": "kg",
+  "name": "Kongo",
+  "autonym": "Kongo",
+  "title": "India",
+  "domain": "kg.wikipedia.org",
+  "article_url": "https://kg.wikipedia.org/wiki/India",
+  "source_url": "https://kg.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:19:13Z",
+  "characters": 4382,
+  "faithful_units": 1554
+}

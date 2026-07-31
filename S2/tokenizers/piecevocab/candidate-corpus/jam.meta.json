@@ -1,0 +1,13 @@
+{
+  "code": "jam",
+  "name": "Jamaican Creole English",
+  "autonym": "Patois",
+  "title": "India",
+  "domain": "jam.wikipedia.org",
+  "article_url": "https://jam.wikipedia.org/wiki/India",
+  "source_url": "https://jam.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:18:15Z",
+  "characters": 4485,
+  "faithful_units": 1573
+}

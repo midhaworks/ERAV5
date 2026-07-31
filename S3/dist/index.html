@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Avnish Midha">
+  <meta name="copyright" content="Copyright 2026 Avnish Midha. All rights reserved.">
+  <meta name="description" content="ERA V5 assignment submission for The School of AI: a concise data strategy for training a 40B India-first coding and agentic language model with Indic language coverage.">
+  <meta name="keywords" content="ERA V5, The School of AI, 40B language model, India-first AI, coding LLM, agentic AI, Indic languages, tokenizer fertility, data cleaning, model evaluation">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="40B India-First Coding Model Data Plan">
+  <meta property="og:description" content="A concise ERA V5 assignment submission for The School of AI on data, cleaning, evaluation, tokenizer fertility and Indic language coverage for a 40B coding-first LLM.">
+  <meta property="og:site_name" content="ERA V5 Assignment Submission">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="40B India-First Coding Model Data Plan">
+  <meta name="twitter:description" content="Data strategy for a 40B India-first coding and agentic LLM, prepared as an ERA V5 assignment submission for The School of AI.">
+  <link rel="icon" href="./s3-indic-favicon-v4.png" type="image/png">
+  <link rel="shortcut icon" href="./s3-indic-favicon-v4.png" type="image/png">
+  <link rel="apple-touch-icon" href="./s3-indic-favicon-v4.png">
+  <title>40B India-First Coding Model Data Plan | ERA V5 Assignment | The School of AI</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "40B India-First Coding Model Data Plan",
+    "description": "A concise data strategy for training a 40B India-first coding and agentic language model with Indic language coverage, prepared as an ERA V5 assignment submission.",
+    "author": {
+      "@type": "Person",
+      "name": "Avnish Midha",
+      "url": "https://www.linkedin.com/in/avnishbm/"
+    },
+    "isPartOf": {
+      "@type": "EducationalOccupationalProgram",
+      "name": "ERA V5",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "The School of AI",
+        "url": "https://theschoolof.ai"
+      }
+    },
+    "copyrightYear": "2026",
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": "Avnish Midha"
+    },
+    "keywords": ["ERA V5", "The School of AI", "India-first AI", "coding LLM", "agentic AI", "Indic languages", "tokenizer fertility"]
+  }
+  </script>
+  <style>
+    /*
+     * Copyright 2026 Avnish Midha. All rights reserved.
+     * Author: Avnish Midha
+     * LinkedIn: https://www.linkedin.com/in/avnishbm/
+     */
+    :root {
+      color-scheme: light;
+      --fg:#0f172a; --muted:#475569; --line:#dbe3ef; --bg:#ffffff;
+      --accent:#334155; --code:#2563eb; --agent:#7c3aed; --indic:#ea580c; --india:#16a34a; --neutral:#64748b;
+      --code-bg:#dbeafe; --agent-bg:#ede9fe; --indic-bg:#ffedd5; --india-bg:#dcfce7; --neutral-bg:#f1f5f9;
+      --code-soft:#f4f8ff; --agent-soft:#faf7ff; --indic-soft:#fff8f1; --india-soft:#f3fff7; --neutral-soft:#f8fafc;
+      --shadow:0 18px 45px rgba(15,23,42,.08);
+    }
+    body { margin:0; background:radial-gradient(circle at 16% 0%,#dbeafe 0,#f8fafc 34%,#ffffff 72%); color:var(--fg); font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+    body::before { content:""; display:block; height:6px; background:linear-gradient(90deg,var(--code),var(--agent),var(--indic),var(--india)); }
+    main { max-width: 980px; margin: 0 auto; padding: 36px 22px 56px; }
+    .hero { background:linear-gradient(135deg,#ffffff 0%,#eff6ff 45%,#fff7ed 100%); border:1px solid rgba(219,227,239,.9); border-radius:24px; box-shadow:var(--shadow); padding:30px 32px; margin-bottom:22px; }
+    h1 { font-size: 38px; line-height: 1.08; margin: 0 0 10px; letter-spacing: -0.035em; }
+    h2 { font-size: 20px; margin: 30px 0 12px; border-top:1px solid var(--line); padding-top:22px; letter-spacing:-.01em; }
+    h2::before { content:""; display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--accent); margin-right:8px; vertical-align:1px; }
+    h2.code-section::before { background:var(--code); }
+    h2.agent-section::before { background:var(--agent); }
+    h2.indic-section::before { background:var(--indic); }
+    h2.india-section::before { background:var(--india); }
+    h2.neutral-section::before { background:var(--neutral); }
+    h3 { font-size: 16px; margin: 18px 0 6px; }
+    p { margin: 8px 0; }
+    .lede { font-size: 18px; color: var(--muted); max-width: 850px; }
+    .pill { display:inline-block; margin: 4px 6px 4px 0; padding: 5px 10px; border:1px solid var(--line); border-radius:999px; font-size:13px; color:var(--muted); background:rgba(255,255,255,.8); }
+    table { width:100%; border-collapse: separate; border-spacing:0; margin: 12px 0; font-size: 14px; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 8px 24px rgba(15,23,42,.04); }
+    th, td { border-bottom:1px solid var(--line); padding:10px 12px; vertical-align: top; }
+    tr:last-child td { border-bottom:0; }
+    th { background:#f8fafc; text-align:left; color:#334155; font-size:13px; text-transform:uppercase; letter-spacing:.035em; }
+    tr.code-row { background:linear-gradient(90deg,var(--code-soft),#fff 28%); }
+    tr.agent-row { background:linear-gradient(90deg,var(--agent-soft),#fff 28%); }
+    tr.indic-row { background:linear-gradient(90deg,var(--indic-soft),#fff 28%); }
+    tr.india-row { background:linear-gradient(90deg,var(--india-soft),#fff 28%); }
+    tr.neutral-row { background:linear-gradient(90deg,var(--neutral-soft),#fff 28%); }
+    tr.code-row td:first-child { border-left:5px solid var(--code); }
+    tr.agent-row td:first-child { border-left:5px solid var(--agent); }
+    tr.indic-row td:first-child { border-left:5px solid var(--indic); }
+    tr.india-row td:first-child { border-left:5px solid var(--india); }
+    tr.neutral-row td:first-child { border-left:5px solid var(--neutral); }
+    ul { margin: 7px 0 7px 21px; padding:0; }
+    li { margin: 4px 0; }
+    .callout { border:1px solid #bfdbfe; border-left:6px solid var(--code); border-radius:16px; background:linear-gradient(90deg,#eff6ff,#ffffff); padding:14px 16px; margin:18px 0 8px; box-shadow:0 8px 22px rgba(37,99,235,.08); }
+    .small { color:var(--muted); font-size:13px; }
+    .author-line { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+    .author-line a { color: var(--india); font-weight: 750; text-underline-offset: 3px; }
+    footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; margin-top:28px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    footer a { color:var(--india); font-weight:700; text-underline-offset:3px; }
+    .tag { display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:750; margin-right:5px; border:1px solid transparent; }
+    .code { color:#1d4ed8; background:var(--code-bg); border-color:#bfdbfe; }
+    .agent { color:#6d28d9; background:var(--agent-bg); border-color:#ddd6fe; }
+    .indic { color:#c2410c; background:var(--indic-bg); border-color:#fed7aa; }
+    .india { color:#15803d; background:var(--india-bg); border-color:#bbf7d0; }
+    .neutral { color:#475569; background:var(--neutral-bg); border-color:#e2e8f0; }
+    .p0 { color:#c2410c; background:var(--indic-bg); border-color:#fed7aa; }
+    .p1 { color:#475569; background:var(--neutral-bg); border-color:#e2e8f0; }
+    .tier-line { font-size:17px; }
+    .tier-line .tag { font-size:14px; padding:3px 9px; }
+    .key { font-weight:700; }
+    .key.code-text { color:var(--code); }
+    .key.agent-text { color:var(--agent); }
+    .key.indic-text { color:var(--indic); }
+    .key.india-text { color:var(--india); }
+    a { color:#0f766e; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <h1>40B India-First Coding Model: Data Plan</h1>
+    <p class="author-line">By <a href="https://www.linkedin.com/in/avnishbm/" target="_blank" rel="noopener noreferrer">Avnish Midha</a></p>
+    <p class="lede">Goal: a Gemma-4-class 40B model, optimized in this order: coding, agentic work, then Indic languages, while defaulting to Indian context for law, governance, commerce, education, culture and daily life.</p>
+    <p>
+      <span class="pill">40B dense</span>
+      <span class="pill">128K-256K context</span>
+      <span class="tag code">coding-first</span>
+      <span class="tag agent">agentic</span>
+      <span class="tag india">India-first</span>
+    </p>
+
+    <div class="callout">
+      <strong>Core decision:</strong> train on ~20T high-quality tokens. Allocate more budget to code than a general model, but keep enough Indian and Indic data to change the model’s defaults, not just its translation ability.
+    </div>
+  </div>
+
+  <h2 class="code-section">Pre-training data</h2>
+  <table>
+    <thead><tr><th>Bucket</th><th>Target share</th><th>Collect</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr class="code-row"><td><span class="tag code">Code</span></td><td>30%</td><td>Permissively licensed repos, issues, PRs, tests, docs, notebooks, package metadata, API docs; Python, TS/JS, Java, C++, Go, Rust, SQL, Bash, Kotlin</td><td>Coding quality comes from repo-level context and tests, not snippets. Include Indian API ecosystems: UPI, GST, ONDC, DigiLocker, Aadhaar sandbox docs where permitted.</td></tr>
+      <tr class="agent-row"><td><span class="tag agent">Agentic</span></td><td>8%</td><td>Function schemas, tool traces, browser/retrieval tasks, repo-edit traces, API workflows, error recovery</td><td>Teaches planning, tool selection, JSON/function calling, observation-grounded answers and recovery from failed calls.</td></tr>
+      <tr class="neutral-row"><td><span class="tag neutral">Global</span></td><td>22%</td><td>High-quality web, books, reference, technical docs, professional writing</td><td>Keeps the model globally competitive and fluent in professional English.</td></tr>
+      <tr class="neutral-row"><td><span class="tag neutral">STEM</span></td><td>12%</td><td>Textbooks, papers, proofs, problem sets, worked solutions, symbolic data</td><td>Supports coding, reasoning and engineering tasks.</td></tr>
+      <tr class="indic-row"><td><span class="tag indic">Indic</span></td><td>18%</td><td>IndicCorp/Sangraha-like corpora, news, literature, forums, code-mixed text, Indian English</td><td>Builds native fluency across scripts and realistic Hinglish/Tanglish/Tenglish usage.</td></tr>
+      <tr class="india-row"><td><span class="tag india">India</span></td><td>10%</td><td>India Code, Gazette, court judgments, RBI/SEBI/TRAI/UGC/AICTE docs, schemes, NCERT, state portals, agriculture/health advisories</td><td>Makes India the default frame for policy, money, education, addresses, exams, institutions and culture.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="india-section">Open / reliable data sources</h2>
+  <table>
+    <thead><tr><th>Bucket</th><th>Sources to start with</th><th>Use carefully</th></tr></thead>
+    <tbody>
+      <tr class="code-row"><td><span class="tag code">Code</span></td><td><a href="https://huggingface.co/blog/starcoder2">The Stack v2 / Software Heritage</a>, permissive GitHub/GitLab repos, package registries, public API docs, benchmark-free competitive programming data</td><td>Repo-level license checks, fork dedup, secret scanning, test extraction.</td></tr>
+      <tr class="indic-row"><td><span class="tag indic">Indic</span></td><td><a href="https://huggingface.co/datasets/ai4bharat/IndicCorpV2">IndicCorpV2</a>, AI4Bharat/Sangraha-style corpora, Samanantar/BPCC, FLORES/IN22 training splits, licensed Indian news/literature</td><td>Per-language quality thresholds; preserve native scripts and romanized code-mix.</td></tr>
+      <tr class="indic-row"><td><span class="tag indic">Bhashini</span></td><td><a href="https://bhashini.gov.in/bhashadaan/en/home">BhashaDaan/Bhashini</a>: Bolo India, Suno India, Likho India, Dekho India for speech, transcription, translation and OCR-like validation</td><td>Treat as multiple raw contribution streams, not one clean corpus. Extract by task/language, validate consent/license, dedup speakers/prompts, normalize metadata.</td></tr>
+      <tr class="india-row"><td><span class="tag india">India</span></td><td><a href="https://www.indiacode.nic.in/">India Code</a>, Gazette, data.gov.in, PIB, MyGov, RBI/SEBI/TRAI/UGC/AICTE docs, Supreme Court / High Court public judgments, NCERT</td><td>Keep date, jurisdiction, version, ministry/court and source URL; separate current QA from historical text.</td></tr>
+      <tr class="neutral-row"><td><span class="tag neutral">STEM</span></td><td>Open textbooks, arXiv/PubMed Central where licensed, NPTEL/SWAYAM/NCERT, theorem/proof corpora, verifiable math datasets</td><td>Hold out benchmark problems; prefer worked solutions with checkable answers.</td></tr>
+      <tr class="agent-row"><td><span class="tag agent">Agentic</span></td><td>SWE-bench style repo tasks, public API sandboxes, tool-use traces generated from open docs, browser/retrieval tasks over licensed corpora</td><td>Only keep traces with real observations, valid schemas and reproducible success/failure signals.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="agent-section">Post-training and RL/alignment</h2>
+  <ul>
+    <li><span class="key neutral">SFT:</span> 20M-40M high-quality examples: coding tasks with tests, repo Q&A, tool-use conversations, long-context document QA, Indian legal/finance/government assistance, Indic and code-mixed chat.</li>
+    <li><span class="key code-text">Coding RL:</span> execution feedback from unit tests, compilers, linters and hidden tests. Reward passing tests, minimal patches, secure code and clear explanations.</li>
+    <li><span class="key agent-text">Agentic RL:</span> tool-use success, valid JSON, fewer unnecessary calls, correct clarification, state tracking, and final answers grounded in observations.</li>
+    <li><span class="key india-text">India-first preference data:</span> Indian raters and experts reward answers that know jurisdiction, date, state, rupees, Indian exams, Indian addresses, and local cultural assumptions.</li>
+    <li><span class="key indic-text">Safety:</span> multilingual red-teaming for caste, religion, gender, communal violence, self-harm, cyber abuse, financial fraud and legal/medical overclaiming.</li>
+  </ul>
+
+  <h2 class="neutral-section">Cleaning pipeline</h2>
+  <ul>
+    <li><span class="key neutral">All data:</span> license filter, PII/secrets removal, malware/CSAM filters, boilerplate removal, language ID, exact + near dedup, source metadata, benchmark decontamination.</li>
+    <li><span class="key code-text">Code:</span> remove forks/vendor/minified/generated files, scan secrets, keep repo structure, tests and docs, verify build/test signals when possible.</li>
+    <li><span class="key indic-text">Indic:</span> preserve native scripts; do not over-normalize nukta, virama, ZWJ/ZWNJ, matras or Urdu diacritics. Keep romanized Indic and code-mix as first-class data with tags.</li>
+    <li><span class="key india-text">Indian domain:</span> keep date, state, ministry, court, version and jurisdiction. Separate current factual QA from historical/legal pretraining text.</li>
+    <li><span class="key agent-text">Agent traces:</span> keep only valid tool schemas, real observations, successful or instructive failures, no fake tool results, no leaked credentials.</li>
+  </ul>
+  <p><span class="tag code">Code extraction</span> Extract at repository level: approved license → fork/mirror dedup → keep source, tests, docs, configs, notebooks, issues/PRs when allowed → drop minified, generated, vendored, binary and secret-bearing files. Convert repos into completion, fill-in-middle, bug-fix, test-repair, API-use and agentic edit traces, then decontaminate against HumanEval, MBPP, LiveCodeBench, SWE-bench and internal evals.</p>
+
+  <h2 class="agent-section">Evaluation</h2>
+  <table>
+    <thead><tr><th>Objective</th><th>Tests</th><th>Acceptance target</th></tr></thead>
+    <tbody>
+      <tr class="code-row"><td><span class="tag code">Coding</span></td><td>LiveCodeBench, HumanEval+, MBPP+, MultiPL-E, SWE-bench Verified, internal Indian API tasks</td><td>Gemma 4 31B-class or better on coding; strong repo-edit pass rate with tests.</td></tr>
+      <tr class="agent-row"><td><span class="tag agent">Agentic</span></td><td>τ-bench/τ², BFCL, API-bank, ToolACE-style heldouts, browser/retrieval workflows</td><td>Reliable multi-step tool use, valid schemas, low unnecessary-call rate.</td></tr>
+      <tr class="indic-row"><td><span class="tag indic">Indic</span></td><td>IndicGenBench, IndicGLUE/IndicXTREME, IN22/FLORES, code-mix evals</td><td>No major P0 language collapse; strong translation, QA, summarization and chat.</td></tr>
+      <tr class="india-row"><td><span class="tag india">India-first</span></td><td>IndQA, MILU, BhashaBench, custom India Code/court/scheme/UPI/GST evals</td><td>Correct Indian defaults, date/jurisdiction awareness, grounded citations where needed.</td></tr>
+      <tr class="neutral-row"><td><span class="tag neutral">Safety</span></td><td>Indic red-team suites, cyber/code safety, finance/legal/medical boundaries</td><td>Low unsafe compliance without over-refusing benign Indian queries.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="indic-section">Language selection</h2>
+  <p class="tier-line"><span class="tag p0">P0</span><strong>logic:</strong> guarantee state/UT-level anchor coverage, not just population ranking. Each state or major UT cluster gets at least one anchor language; sampling within P0 is weighted by speakers, digital volume, government/commerce use and product demand.</p>
+  <p class="tier-line"><span class="tag p0">P0</span><strong>anchors:</strong> Indian English, Hinglish, Hindi, Punjabi, Sanskrit, Bengali, Marathi, Gujarati, Odia, Assamese, Manipuri/Meitei, Khasi/Garo, Mizo, Nagamese + Ao/Angami, Telugu, Tamil, Kannada, Malayalam, Konkani, Kashmiri/Urdu, Ladakhi/Bhoti, Nepali, Santali, Maithili.</p>
+  <p class="tier-line"><span class="tag p1">P1/P2</span><strong>regional coverage:</strong> Awadhi, Bhojpuri, Braj, Bundeli, Magahi, Angika, Rajasthani/Marwari/Mewari, Haryanvi, Chhattisgarhi, Garhwali, Kumaoni, Dogri, Tulu, Kodava, Bodo, Kokborok, Gondi, Ho, Mundari, Kurukh, Bhili, Nicobarese and other consented tribal/border languages.</p>
+  <p class="small">Full state/UT language coverage table is included in <a href="#references">References</a>.</p>
+
+  <h2 class="indic-section">Fertility and tokenizer</h2>
+  <table>
+    <thead><tr><th>Area</th><th>Fertility target</th></tr></thead>
+    <tbody>
+      <tr class="neutral-row"><td><span class="tag neutral">English</span></td><td>≤1.35 tokens/word</td></tr>
+      <tr class="code-row"><td><span class="tag code">Code</span></td><td>≤1.15 tokens per lexical token; preserve whitespace/indentation efficiently</td></tr>
+      <tr class="neutral-row"><td><span class="tag neutral">Math/science</span></td><td>Stable digit splitting, LaTeX/operator coverage; no equation fragmentation pathologies</td></tr>
+      <tr class="indic-row"><td><span class="tag p0">P0 Indic</span></td><td>Average ≤1.8 tokens/word; no language &gt;2.2</td></tr>
+      <tr class="neutral-row"><td><span class="tag p1">P1 Indic</span></td><td>Average ≤2.2; no language &gt;2.8</td></tr>
+      <tr class="indic-row"><td><span class="tag indic">Code-mix</span></td><td>≤2.0-2.3</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Tokenizer decision:</strong> custom SentencePiece unigram/BPE with byte fallback, preserved whitespace, split digits and <strong>96k vocabulary</strong> plus 2k-4k reserved control/tool tokens. Gemma uses ~262k, but for this coding-first 40B model, 96k is the better tradeoff: lower embedding/inference cost, enough coverage for 22 scheduled languages, and explicit fertility targets for Indic scripts.</p>
+
+  <h2 class="india-section">Final position</h2>
+  <p>This is not a Hindi chatbot with code bolted on. It is a coding-first base model with agentic training and India-aware defaults. The differentiator is the combination of repo-level executable code, real tool traces, Indian institutional data with metadata, multilingual Indic coverage, and preference data judged by Indian users and experts.</p>
+
+  <h2 id="references" class="neutral-section">References</h2>
+  <p class="small">State/UT language anchors used for P0/P1 design. Public anchors used: Gemma 4 model card, Gemma 3 model card/tokenizer notes, StarCoder2/The Stack v2, SWE-bench Verified, FunctionGemma, τ-bench, AI4Bharat Indic resources, IndQA, MILU, IndicGenBench, Sarvam tokenizer notes.</p>
+  <table>
+    <thead><tr><th>State / UT</th><th>P0 anchor</th><th>P1/P2 regional coverage</th></tr></thead>
+    <tbody>
+      <tr class="indic-row"><td>Andhra Pradesh</td><td>Telugu</td><td>Urdu, Lambadi/Banjara</td></tr>
+      <tr class="indic-row"><td>Arunachal Pradesh</td><td>Hindi / Indian English bridge</td><td>Nyishi, Adi, Apatani, Monpa, Galo</td></tr>
+      <tr class="indic-row"><td>Assam</td><td>Assamese</td><td>Bodo, Bengali, Karbi, Dimasa, Mising</td></tr>
+      <tr class="indic-row"><td>Bihar</td><td>Hindi, Maithili</td><td>Bhojpuri, Magahi, Angika, Urdu</td></tr>
+      <tr class="indic-row"><td>Chhattisgarh</td><td>Hindi</td><td>Chhattisgarhi, Gondi, Halbi</td></tr>
+      <tr class="indic-row"><td>Goa</td><td>Konkani</td><td>Marathi, Portuguese-influenced Konkani variants</td></tr>
+      <tr class="indic-row"><td>Gujarat</td><td>Gujarati</td><td>Kutchi, Bhili, Sindhi</td></tr>
+      <tr class="indic-row"><td>Haryana</td><td>Hindi</td><td>Haryanvi, Punjabi, Urdu</td></tr>
+      <tr class="indic-row"><td>Himachal Pradesh</td><td>Hindi</td><td>Kangri, Mandyali, Kulluvi, Dogri/Pahari varieties</td></tr>
+      <tr class="indic-row"><td>Jharkhand</td><td>Hindi, Santali</td><td>Nagpuri/Sadri, Ho, Mundari, Kurukh, Khortha</td></tr>
+      <tr class="indic-row"><td>Karnataka</td><td>Kannada</td><td>Tulu, Konkani, Kodava, Urdu</td></tr>
+      <tr class="indic-row"><td>Kerala</td><td>Malayalam</td><td>Tulu, Tamil, tribal languages with consent</td></tr>
+      <tr class="indic-row"><td>Madhya Pradesh</td><td>Hindi</td><td>Bundeli, Bagheli, Malvi, Nimadi, Gondi</td></tr>
+      <tr class="indic-row"><td>Maharashtra</td><td>Marathi</td><td>Konkani, Varhadi, Ahirani, Urdu</td></tr>
+      <tr class="indic-row"><td>Manipur</td><td>Manipuri / Meitei</td><td>Tangkhul, Thadou-Kuki, Hmar, Paite</td></tr>
+      <tr class="indic-row"><td>Meghalaya</td><td>Khasi / Garo</td><td>Jaintia/Pnar, Hajong</td></tr>
+      <tr class="indic-row"><td>Mizoram</td><td>Mizo</td><td>Hmar, Lai, Mara, Chakma</td></tr>
+      <tr class="indic-row"><td>Nagaland</td><td>Nagamese + Ao/Angami</td><td>Sumi, Lotha, Konyak, Chakhesang</td></tr>
+      <tr class="indic-row"><td>Odisha</td><td>Odia</td><td>Sambalpuri/Kosli, Santali, Kui, Ho</td></tr>
+      <tr class="indic-row"><td>Punjab</td><td>Punjabi</td><td>Hindi, Urdu</td></tr>
+      <tr class="indic-row"><td>Rajasthan</td><td>Hindi</td><td>Marwari, Mewari, Dhundhari, Harauti, Mewati</td></tr>
+      <tr class="indic-row"><td>Sikkim</td><td>Nepali</td><td>Bhutia/Sikkimese, Lepcha, Limbu</td></tr>
+      <tr class="indic-row"><td>Tamil Nadu</td><td>Tamil</td><td>Telugu, Kannada, Malayalam, Urdu</td></tr>
+      <tr class="indic-row"><td>Telangana</td><td>Telugu</td><td>Urdu, Lambadi/Banjara</td></tr>
+      <tr class="indic-row"><td>Tripura</td><td>Bengali</td><td>Kokborok, Chakma</td></tr>
+      <tr class="indic-row"><td>Uttar Pradesh</td><td>Hindi</td><td>Awadhi, Bhojpuri, Braj, Bundeli, Urdu</td></tr>
+      <tr class="indic-row"><td>Uttarakhand</td><td>Hindi</td><td>Garhwali, Kumaoni, Jaunsari</td></tr>
+      <tr class="indic-row"><td>West Bengal</td><td>Bengali</td><td>Santali, Nepali, Urdu, Rajbanshi/Kamtapuri</td></tr>
+      <tr class="india-row"><td>Andaman & Nicobar Islands</td><td>Hindi / Indian English</td><td>Bengali, Tamil, Telugu, Nicobarese; tribal languages only with consent and safety review</td></tr>
+      <tr class="india-row"><td>Chandigarh</td><td>Hindi / Punjabi</td><td>Indian English</td></tr>
+      <tr class="india-row"><td>Dadra & Nagar Haveli and Daman & Diu</td><td>Gujarati</td><td>Hindi, Marathi, Konkani, Varli/Bhili varieties</td></tr>
+      <tr class="india-row"><td>Delhi</td><td>Hindi, Indian English, Hinglish</td><td>Urdu, Punjabi</td></tr>
+      <tr class="india-row"><td>Jammu & Kashmir</td><td>Kashmiri / Urdu</td><td>Dogri, Hindi, Gojri, Pahari, Punjabi</td></tr>
+      <tr class="india-row"><td>Ladakh</td><td>Ladakhi / Bhoti</td><td>Urdu, Balti, Purig, Shina, Hindi</td></tr>
+      <tr class="india-row"><td>Lakshadweep</td><td>Malayalam</td><td>Jeseri/Dweep Bhasha, Mahl</td></tr>
+      <tr class="india-row"><td>Puducherry</td><td>Tamil</td><td>Telugu, Malayalam, French-influenced administrative/cultural text</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <span>ERA V5 · <a href="https://theschoolof.ai" target="_blank" rel="noopener noreferrer">The School of AI</a></span>
+    <span>© 2026 Avnish Midha. All rights reserved.</span>
+  </footer>
+</main>
+</body>
+</html>

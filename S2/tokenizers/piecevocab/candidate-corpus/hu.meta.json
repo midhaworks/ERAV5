@@ -1,0 +1,13 @@
+{
+  "code": "hu",
+  "name": "Hungarian",
+  "autonym": "magyar",
+  "title": "India",
+  "domain": "hu.wikipedia.org",
+  "article_url": "https://hu.wikipedia.org/wiki/India",
+  "source_url": "https://hu.wikipedia.org/w/rest.php/v1/page/India/html",
+  "variant": "wiki_faithful_markdown",
+  "generated_at": "2026-07-16T19:17:06Z",
+  "characters": 190643,
+  "faithful_units": 59882
+}
