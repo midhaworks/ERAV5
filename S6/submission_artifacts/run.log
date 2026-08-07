@@ -1,0 +1,32 @@
+shards created | count=5
+manifests validated
+[PASS] tokenizer_hash_verified | 431ca92a6df4acc6e728d70082c431729ff33b8cbd4943bc06e70d5d3c299d46
+validation data blocked | validation-general-52c4a49e67bf4ce8
+eval data blocked | eval-general-dbf4f9569b6cdf62
+[PASS] eval_shard_blocked | blocked=2
+OPUS decisions recorded | accept=2 reject=1 defer=1 protected_floor_override=1
+mixture compiled | schedule_hash=dc6b01b09f904f5ac0a5449a4d0b9f6d0fd9c02951d8c2a1492c778ec7ad2d5c
+batches packed | id=batch-0000 hash=d5b3d06a38a7fdb1cdec7876707c5157fdd76fe741cf7da233f32ec738958d6a loss=5.510151
+batches packed | id=batch-0001 hash=48faccb5abaa498f056600fa0064ecf17d3fc84983e74b0de641cfa3b3c9a7d3 loss=5.425199
+batches packed | id=batch-0002 hash=5e910d5c8093f0adb9946457ddfdf3bb1d24395149315a42853d757598c62091 loss=5.363779
+checkpoint saved | main-0002.json ledger_offset=3
+[PASS] checkpoint_saved | main-0002.json
+batches packed | id=batch-0003 hash=1d00867f2495668de200079ed80ec35998f9013f8232325ec2c54c8cc8e68c26 loss=4.832992
+batches packed | id=batch-0004 hash=7951736d548301ffdadaf4230db75e1bc4e10df8104e843deef0e7fb1f48ce05 loss=4.801911
+batches packed | id=batch-0005 hash=8e54824b73bc3d9a25e5a165d7e0a8596754173bba120e56328af896f1aefdd1 loss=4.788168
+checkpoint saved | main-0005.json ledger_offset=6
+[PASS] checkpoint_saved | main-0005.json
+crash simulated | terminating worker process before batch-0006 consumption
+[PASS] crash_process_exit_observed | exit_code=86
+run resumed | checkpoint=main-0005.json next_batch=6 process=11977
+[PASS] resume_next_batch_matched | batch-0006 25baed5e8bc9c03fa23c8ff704d008420f64754ece5fbea922f93b474d07dfb2
+batches packed | id=batch-0006 hash=25baed5e8bc9c03fa23c8ff704d008420f64754ece5fbea922f93b474d07dfb2 loss=4.739755
+batches packed | id=batch-0007 hash=3e9080ce828297ab42fa5b67bfab582675e535f0b75596df8f6f146426d4e5c5 loss=4.248279
+batches packed | id=batch-0008 hash=71b85525cd2787f86443e26c953825a977a7469481b41500d180c58a76f784b4 loss=4.378441
+batches packed | id=batch-0009 hash=06c318302316f55ef867eb9bccb979ceca6146db3017713d8794c2cdd8b53363 loss=4.270825
+historical stream replayed | interval=[2,6)
+[PASS] replay_hash_matched | batch ids, token spans and hashes identical
+branch forked | parent=ece0031e41663fe4594ad76a03eb7c85464ad8b2f6651be926d502bf3d8340b9 child=189dfbb00f6e9691c5e7bc3609e4aa4012a320dde5bd99a3fcbf9ac322f40d63
+audit completed | ledger chains, manifests, firewalls and lineage verified
+performance measured | utilization=0.613 useful_tokens/s=3896.4
+[PASS] audit_completed | all requirements passed

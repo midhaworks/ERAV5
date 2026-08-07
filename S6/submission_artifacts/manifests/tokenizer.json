@@ -1,0 +1,14 @@
+{
+  "byte_offset": 5,
+  "name": "frozen-byte-v1",
+  "normalization": "none",
+  "special_tokens": {
+    "bos": 1,
+    "eos": 2,
+    "pad": 0,
+    "sep": 3,
+    "unk": 4
+  },
+  "version": 1,
+  "vocab_size": 261
+}

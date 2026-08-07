@@ -1,0 +1,34 @@
+{
+  "foundation": {
+    "actual": {
+      "code": 3,
+      "general": 6,
+      "protected": 3
+    },
+    "actual_protected_share": 0.25,
+    "floor_met": true,
+    "match": true,
+    "planned": {
+      "code": 3,
+      "general": 6,
+      "protected": 3
+    },
+    "protected_floor": 0.2
+  },
+  "specialize": {
+    "actual": {
+      "code": 4,
+      "general": 2,
+      "protected": 2
+    },
+    "actual_protected_share": 0.25,
+    "floor_met": true,
+    "match": true,
+    "planned": {
+      "code": 4,
+      "general": 2,
+      "protected": 2
+    },
+    "protected_floor": 0.2
+  }
+}

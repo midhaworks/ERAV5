@@ -1,0 +1,16 @@
+{
+  "invariants": {
+    "all_batches_rebuilt_from_sources": true,
+    "all_source_spans_complete": true,
+    "attention_causal_and_document_isolated": true,
+    "positions_reset_per_document": true,
+    "prompt_and_padding_loss_masked": true
+  },
+  "policies": [
+    "causal_document",
+    "prompt_response_masked"
+  ],
+  "sequence_length": 48,
+  "validated_batches": 10,
+  "validation_method": "rebuild_batch calls validate_sample for every reconstructed sample"
+}

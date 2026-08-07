@@ -1,0 +1,4 @@
+{"applied":{"code":0.5},"decision":"accept","id":"opus-accept-code","override":null,"proposal":{"code":0.5},"reason":"positive_validation_delta","score_delta":0.04,"uncertainty":0.01}
+{"applied":{"general":0.05},"decision":"reject","id":"opus-reject-regression","override":null,"proposal":{"general":0.05},"reason":"validation_regression","score_delta":-0.08,"uncertainty":0.01}
+{"applied":{"code":0.6},"decision":"defer","id":"opus-defer-uncertain","override":null,"proposal":{"code":0.6},"reason":"insufficient_confidence","score_delta":0.02,"uncertainty":0.09}
+{"applied":{"protected":0.2},"decision":"accept","id":"opus-floor-override","override":{"applied":0.2,"field":"protected","proposed":0.05,"reason":"protected_floor"},"proposal":{"protected":0.05},"reason":"positive_validation_delta","score_delta":0.03,"uncertainty":0.01}

@@ -1,0 +1,44 @@
+{
+  "bundle_hash": "d46b4a5f600d3d4cc17e4002a8a9ef051f59cb5464467a9d1412e9f3f7558156",
+  "generated_by": "S6.tdes.run_demo",
+  "overall_pass": true,
+  "requirements": {
+    "crash_recovery": {
+      "evidence": "reports/crash_expectation.json and ledgers/consumption.jsonl",
+      "passed": true
+    },
+    "evaluation_firewall": {
+      "evidence": "reports/firewall.json",
+      "passed": true
+    },
+    "learning_trace": {
+      "evidence": "ledgers/learning.jsonl",
+      "passed": true
+    },
+    "mixture_compliance": {
+      "evidence": "reports/mixture_compliance.json",
+      "passed": true
+    },
+    "opus_audit_trail": {
+      "evidence": "ledgers/opus.jsonl",
+      "passed": true
+    },
+    "packing_correctness": {
+      "evidence": "reports/packing.json and ledgers/consumption.jsonl",
+      "passed": true
+    },
+    "replay": {
+      "evidence": "reports/replay.json",
+      "passed": true
+    },
+    "throughput": {
+      "evidence": "performance.json and ledgers/consumption.jsonl",
+      "passed": true
+    },
+    "tokenizer_integrity": {
+      "evidence": "manifests/index.json and manifests/tokenizer.json",
+      "passed": true
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,155 @@
+{
+  "batch_size": 2,
+  "batches": [
+    {
+      "batch_index": 0,
+      "lanes": [
+        "general",
+        "protected"
+      ],
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 1,
+      "lanes": [
+        "code",
+        "general"
+      ],
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 2,
+      "lanes": [
+        "general",
+        "protected"
+      ],
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 3,
+      "lanes": [
+        "code",
+        "general"
+      ],
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 4,
+      "lanes": [
+        "general",
+        "protected"
+      ],
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 5,
+      "lanes": [
+        "code",
+        "general"
+      ],
+      "stage": "foundation"
+    },
+    {
+      "batch_index": 6,
+      "lanes": [
+        "code",
+        "protected"
+      ],
+      "stage": "specialize"
+    },
+    {
+      "batch_index": 7,
+      "lanes": [
+        "general",
+        "code"
+      ],
+      "stage": "specialize"
+    },
+    {
+      "batch_index": 8,
+      "lanes": [
+        "code",
+        "protected"
+      ],
+      "stage": "specialize"
+    },
+    {
+      "batch_index": 9,
+      "lanes": [
+        "general",
+        "code"
+      ],
+      "stage": "specialize"
+    }
+  ],
+  "derivation": "stage lane slots are largest-remainder allocations after protected floors",
+  "opus_decisions_applied": [
+    "opus-accept-code",
+    "opus-floor-override"
+  ],
+  "schedule_hash": "dc6b01b09f904f5ac0a5449a4d0b9f6d0fd9c02951d8c2a1492c778ec7ad2d5c",
+  "schema_version": 1,
+  "sequence_length": 48,
+  "stages": [
+    {
+      "batches": 6,
+      "floors": {
+        "protected": 0.2
+      },
+      "lane_sequence": [
+        "general",
+        "protected",
+        "code",
+        "general",
+        "general",
+        "protected",
+        "code",
+        "general",
+        "general",
+        "protected",
+        "code",
+        "general"
+      ],
+      "name": "foundation",
+      "planned_slots": {
+        "code": 3,
+        "general": 6,
+        "protected": 3
+      },
+      "start": 0,
+      "weights": {
+        "code": 0.25,
+        "general": 0.5,
+        "protected": 0.25
+      }
+    },
+    {
+      "batches": 4,
+      "floors": {
+        "protected": 0.2
+      },
+      "lane_sequence": [
+        "code",
+        "protected",
+        "general",
+        "code",
+        "code",
+        "protected",
+        "general",
+        "code"
+      ],
+      "name": "specialize",
+      "planned_slots": {
+        "code": 4,
+        "general": 2,
+        "protected": 2
+      },
+      "start": 6,
+      "weights": {
+        "code": 0.5,
+        "general": 0.25,
+        "protected": 0.2
+      }
+    }
+  ]
+}

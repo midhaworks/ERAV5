@@ -1,0 +1,41 @@
+{
+  "interval": [
+    2,
+    6
+  ],
+  "passed": true,
+  "records": [
+    {
+      "batch_index": 2,
+      "matches": {
+        "batch_hash": true,
+        "batch_id": true,
+        "token_spans": true
+      }
+    },
+    {
+      "batch_index": 3,
+      "matches": {
+        "batch_hash": true,
+        "batch_id": true,
+        "token_spans": true
+      }
+    },
+    {
+      "batch_index": 4,
+      "matches": {
+        "batch_hash": true,
+        "batch_id": true,
+        "token_spans": true
+      }
+    },
+    {
+      "batch_index": 5,
+      "matches": {
+        "batch_hash": true,
+        "batch_id": true,
+        "token_spans": true
+      }
+    }
+  ]
+}

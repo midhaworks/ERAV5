@@ -1,0 +1,12 @@
+{
+  "content_hash": "08256ec4b39f6cde270938faaaeb3a3674152164a19cff893fd55651fb5d68d2",
+  "immutable": true,
+  "lane": "general",
+  "path": "shards/train-general-08256ec4b39f6cde.jsonl",
+  "record_count": 3,
+  "schema_version": 1,
+  "shard_id": "train-general-08256ec4b39f6cde",
+  "split": "train",
+  "token_count": 97,
+  "tokenizer_hash": "431ca92a6df4acc6e728d70082c431729ff33b8cbd4943bc06e70d5d3c299d46"
+}

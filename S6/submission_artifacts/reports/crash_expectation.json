@@ -1,0 +1,8 @@
+{
+  "crashing_worker_pid": 11976,
+  "expected_batch_hash": "25baed5e8bc9c03fa23c8ff704d008420f64754ece5fbea922f93b474d07dfb2",
+  "expected_batch_id": "batch-0006",
+  "last_durable_consumption_offset": 6,
+  "observed_exit_code": 86,
+  "planned_exit_code": 86
+}
