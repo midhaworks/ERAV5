@@ -4,6 +4,16 @@ This is a dependency-free, deterministic miniature of the full V5 training-data 
 
 `documents → tokenized shards → manifests → mixture → packing → batches → training → ledgers → checkpoint → crash → resume → replay → audit`
 
+## Demonstration data
+
+The system uses a real but intentionally tiny synthetic corpus defined in `source_documents()` in `tdes.py`:
+
+- 9 training documents: 3 general-text, 3 Python/code, and 3 protected-language instruction/response records;
+- 1 validation document; and
+- 1 evaluation document.
+
+The protected records contain simple Hindi, Telugu, and Sindhi prompts with romanized responses. The validation and evaluation records are deliberately present so the firewall can prove that they never enter a loss-bearing batch. On every run, all 11 source documents are encoded into actual token arrays and written as content-addressed JSONL shards under `submission_artifacts/shards/`. The training worker consumes only the three training shards; the tiny bigram model computes token-level losses and updates its learned transition counts from those tokens.
+
 ## Run it
 
 From the repository root:
