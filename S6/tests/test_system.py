@@ -66,6 +66,24 @@ class ExecutionSystemTests(unittest.TestCase):
                             self.assertLessEqual(j, i)
                             self.assertEqual(sample["segment_ids"][i], sample["segment_ids"][j])
 
+    def test_agentic_policy_trains_actions_and_answers_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tokenizer = FrozenByteTokenizer(TOKENIZER_SPEC)
+            _, records = build_shards(Path(tmp), tokenizer)
+            agentic = next(x for x in records["code"] if x["kind"] == "agentic")
+            self.assertEqual("agentic_action_and_answer", agentic["packing_policy"])
+            self.assertEqual(2, len(agentic["supervised_regions"]))
+            expected = [0] * len(agentic["tokens"])
+            for start, end in agentic["supervised_regions"]:
+                expected[start:end] = [1] * (end - start)
+            self.assertEqual(expected, agentic["loss_mask"])
+            # The tool result is context, not a model-generated training target.
+            result_token = tokenizer.encode("5")[0]
+            masked_fives = [i for i, token in enumerate(agentic["tokens"]) if token == result_token and not agentic["loss_mask"][i]]
+            supervised_fives = [i for i, token in enumerate(agentic["tokens"]) if token == result_token and agentic["loss_mask"][i]]
+            self.assertTrue(masked_fives)
+            self.assertTrue(supervised_fives)
+
     def test_batch_reconstruction_is_exact(self):
         with tempfile.TemporaryDirectory() as tmp:
             _, records = build_shards(Path(tmp), FrozenByteTokenizer(TOKENIZER_SPEC))

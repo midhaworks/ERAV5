@@ -7,6 +7,7 @@
     "prompt_and_padding_loss_masked": true
   },
   "policies": [
+    "agentic_action_and_answer",
     "causal_document",
     "prompt_response_masked"
   ],

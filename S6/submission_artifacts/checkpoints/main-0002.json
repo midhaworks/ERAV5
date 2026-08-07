@@ -1,9 +1,9 @@
 {
-  "checkpoint_hash": "ece0031e41663fe4594ad76a03eb7c85464ad8b2f6651be926d502bf3d8340b9",
+  "checkpoint_hash": "0f4f777c896121db9c1995c6efa8b40c3d0497a4265445f7873b61e9a53f9c1f",
   "state": {
     "ledger_heads": {
-      "consumption": "5c6e453492c322a7e5fd921e93524e972788264493a6d219d5d54b885f340960",
-      "learning": "d8cec1ae9115130f821631228d3173414ece793c73d1525b92519188bfa6d731"
+      "consumption": "468fc5074ae374c05e250126e7e6f22e4e85bfc71272d298f12b76e7593a7fe1",
+      "learning": "a321066e5bf96a0f7b3a0fe8931c118f88f1ae52f258c5127dfc2c1c2323233b"
     },
     "ledger_offsets": {
       "consumption": 3,

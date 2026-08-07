@@ -8,10 +8,10 @@
     "packing_utilization": "non_padding_tokens / capacity_tokens",
     "useful_loss_tokens_per_second": "loss_bearing_tokens / elapsed_seconds"
   },
-  "elapsed_seconds": 0.118314,
-  "loss_bearing_tokens": 461,
+  "elapsed_seconds": 0.115057,
+  "loss_bearing_tokens": 429,
   "measurement": "wall_clock_across_crash_and_resume_workers",
-  "non_padding_tokens": 588,
-  "packing_utilization": 0.6125,
-  "useful_loss_tokens_per_second": 3896.411
+  "non_padding_tokens": 582,
+  "packing_utilization": 0.60625,
+  "useful_loss_tokens_per_second": 3728.587
 }

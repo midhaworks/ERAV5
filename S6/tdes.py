@@ -126,7 +126,7 @@ def source_documents() -> list[dict[str, str]]:
         {"id": "g2", "split": "train", "lane": "general", "kind": "causal", "text": "Small proofs make systems clear."},
         {"id": "c0", "split": "train", "lane": "code", "kind": "causal", "text": "def add(a,b): return a+b"},
         {"id": "c1", "split": "train", "lane": "code", "kind": "causal", "text": "items = sorted(set(items))"},
-        {"id": "c2", "split": "train", "lane": "code", "kind": "causal", "text": "assert hash(x) == hash(x)"},
+        {"id": "a0", "split": "train", "lane": "code", "kind": "agentic", "system": "tool", "user": "2+3?", "tool_call": "add(2,3)", "tool_result": "5", "response": "5"},
         {"id": "p0", "split": "train", "lane": "protected", "kind": "instruction", "prompt": "Translate sun to Hindi:", "response": "surya"},
         {"id": "p1", "split": "train", "lane": "protected", "kind": "instruction", "prompt": "Say water in Telugu:", "response": "neeru"},
         {"id": "p2", "split": "train", "lane": "protected", "kind": "instruction", "prompt": "Sindhi greeting:", "response": "salaam"},
@@ -136,22 +136,41 @@ def source_documents() -> list[dict[str, str]]:
 
 
 def encode_document(doc: dict[str, str], tokenizer: FrozenByteTokenizer) -> dict[str, Any]:
-    if doc["kind"] == "instruction":
+    supervised_regions: list[list[int]]
+    if doc["kind"] == "agentic":
+        system = tokenizer.encode(doc["system"])
+        user = tokenizer.encode(doc["user"])
+        tool_call = tokenizer.encode(doc["tool_call"])
+        tool_result = tokenizer.encode(doc["tool_result"])
+        response = tokenizer.encode(doc["response"])
+        prefix = [SPECIAL["bos"], *system, SPECIAL["sep"], *user, SPECIAL["sep"]]
+        middle = [SPECIAL["sep"], *tool_result, SPECIAL["sep"]]
+        tokens = [*prefix, *tool_call, *middle, *response, SPECIAL["eos"]]
+        call_start = len(prefix)
+        response_start = len(prefix) + len(tool_call) + len(middle)
+        supervised_regions = [[call_start, call_start + len(tool_call)], [response_start, len(tokens)]]
+        loss = [0] * len(tokens)
+        for start, end in supervised_regions:
+            loss[start:end] = [1] * (end - start)
+        policy = "agentic_action_and_answer"
+    elif doc["kind"] == "instruction":
         prompt = tokenizer.encode(doc["prompt"])
         response = tokenizer.encode(doc["response"])
         tokens = [SPECIAL["bos"], *prompt, SPECIAL["sep"], *response, SPECIAL["eos"]]
         # Response and EOS bear loss; prompt and separator do not.
         loss = [0] * (len(prompt) + 2) + [1] * (len(response) + 1)
+        supervised_regions = [[len(prompt) + 2, len(tokens)]]
         policy = "prompt_response_masked"
     else:
         body = tokenizer.encode(doc["text"])
         tokens = [SPECIAL["bos"], *body, SPECIAL["eos"]]
         loss = [0] + [1] * (len(body) + 1)
+        supervised_regions = [[1, len(tokens)]]
         policy = "causal_document"
     return {
         "document_id": doc["id"], "split": doc["split"], "lane": doc["lane"],
         "kind": doc["kind"], "packing_policy": policy, "tokens": tokens,
-        "loss_mask": loss, "content_hash": digest(doc),
+        "loss_mask": loss, "supervised_regions": supervised_regions, "content_hash": digest(doc),
     }
 
 
@@ -720,7 +739,7 @@ def run_resume_phase(artifacts: Path) -> dict[str, Any]:
     checks = {
         "tokenizer_integrity": {"passed": all(x["tokenizer_hash"] == tokenizer.hash for x in manifests), "evidence": "manifests/index.json and manifests/tokenizer.json"},
         "evaluation_firewall": {"passed": firewall_ok, "evidence": "reports/firewall.json"},
-        "packing_correctness": {"passed": bool(entries) and len(packing_report["policies"]) == 2 and all(packing_report["invariants"].values()), "evidence": "reports/packing.json and ledgers/consumption.jsonl"},
+        "packing_correctness": {"passed": bool(entries) and len(packing_report["policies"]) >= 3 and all(packing_report["invariants"].values()), "evidence": "reports/packing.json and ledgers/consumption.jsonl"},
         "mixture_compliance": {"passed": all(x["match"] for x in mixture.values()), "evidence": "reports/mixture_compliance.json"},
         "opus_audit_trail": {"passed": opus_ok, "evidence": "ledgers/opus.jsonl"},
         "crash_recovery": {"passed": crash_process_ok and resume_match and [x["batch_index"] for x in entries] == list(range(10)), "evidence": "reports/crash_expectation.json and ledgers/consumption.jsonl"},

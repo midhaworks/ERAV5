@@ -1,9 +1,9 @@
 {
-  "checkpoint_hash": "189dfbb00f6e9691c5e7bc3609e4aa4012a320dde5bd99a3fcbf9ac322f40d63",
+  "checkpoint_hash": "3b1db0f00bf02817ef923be58df0e150c1c5e1ec99f9835eae6aa7125fa11610",
   "state": {
     "ledger_heads": {
-      "consumption": "d2c1bde0b3f33c8f18b32309682df47a61a3a4e7a4d15df1db448618a682de40",
-      "learning": "f7353b5811398e966d185ee1ecdb169f0240e652aecea57ce3eabf6ae946d60c"
+      "consumption": "32fbd35e4dd9cc8eb58d956eb901502aeba6881538e64bf5f0019da698807c4a",
+      "learning": "44e925c300426190e698324fe46ff8a51bc8be5ab36d292b171da584ac0be7b8"
     },
     "ledger_offsets": {
       "consumption": 4,
@@ -206,7 +206,7 @@
       "general": 4,
       "protected": 2
     },
-    "parent_checkpoint": "ece0031e41663fe4594ad76a03eb7c85464ad8b2f6651be926d502bf3d8340b9",
+    "parent_checkpoint": "0f4f777c896121db9c1995c6efa8b40c3d0497a4265445f7873b61e9a53f9c1f",
     "schedule_hash": "dc6b01b09f904f5ac0a5449a4d0b9f6d0fd9c02951d8c2a1492c778ec7ad2d5c",
     "schema_version": 1,
     "tokenizer_hash": "431ca92a6df4acc6e728d70082c431729ff33b8cbd4943bc06e70d5d3c299d46"

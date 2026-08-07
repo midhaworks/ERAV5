@@ -1,11 +1,11 @@
 {
-  "content_hash": "08256ec4b39f6cde270938faaaeb3a3674152164a19cff893fd55651fb5d68d2",
+  "content_hash": "e98b573530e90006b6610a147c86f3e3ecd9bda98964b00e68eb07e8b134f68a",
   "immutable": true,
   "lane": "general",
-  "path": "shards/train-general-08256ec4b39f6cde.jsonl",
+  "path": "shards/train-general-e98b573530e90006.jsonl",
   "record_count": 3,
   "schema_version": 1,
-  "shard_id": "train-general-08256ec4b39f6cde",
+  "shard_id": "train-general-e98b573530e90006",
   "split": "train",
   "token_count": 97,
   "tokenizer_hash": "431ca92a6df4acc6e728d70082c431729ff33b8cbd4943bc06e70d5d3c299d46"

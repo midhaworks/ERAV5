@@ -1,26 +1,26 @@
 {
   "all_consumed_shards_are_train": true,
   "allowed_train_shards": [
-    "train-code-56a5616372e83082",
-    "train-general-08256ec4b39f6cde",
-    "train-protected-1d7834403cf9f0ad"
+    "train-code-ce64cd48516712be",
+    "train-general-e98b573530e90006",
+    "train-protected-110269d03e28852a"
   ],
   "blocked_attempts": [
     {
-      "reason": "validation shard blocked: validation-general-52c4a49e67bf4ce8",
-      "shard_id": "validation-general-52c4a49e67bf4ce8",
+      "reason": "validation shard blocked: validation-general-e0c8e5a41b020da7",
+      "shard_id": "validation-general-e0c8e5a41b020da7",
       "split": "validation"
     },
     {
-      "reason": "eval shard blocked: eval-general-dbf4f9569b6cdf62",
-      "shard_id": "eval-general-dbf4f9569b6cdf62",
+      "reason": "eval shard blocked: eval-general-89daf215a2cd105e",
+      "shard_id": "eval-general-89daf215a2cd105e",
       "split": "eval"
     }
   ],
   "consumed_shards": [
-    "train-code-56a5616372e83082",
-    "train-general-08256ec4b39f6cde",
-    "train-protected-1d7834403cf9f0ad"
+    "train-code-ce64cd48516712be",
+    "train-general-e98b573530e90006",
+    "train-protected-110269d03e28852a"
   ],
   "enforcement": "pack_sample rejects every record whose split is not train",
   "non_training_shards_consumed": []

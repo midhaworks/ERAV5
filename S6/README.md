@@ -8,11 +8,11 @@ This is a dependency-free, deterministic miniature of the full V5 training-data 
 
 The system uses a real but intentionally tiny synthetic corpus defined in `source_documents()` in `tdes.py`:
 
-- 9 training documents: 3 general-text, 3 Python/code, and 3 protected-language instruction/response records;
+- 9 training documents: 3 general-text, 2 Python/code, 1 agentic tool-use trajectory, and 3 protected-language instruction/response records;
 - 1 validation document; and
 - 1 evaluation document.
 
-The protected records contain simple Hindi, Telugu, and Sindhi prompts with romanized responses. The validation and evaluation records are deliberately present so the firewall can prove that they never enter a loss-bearing batch. On every run, all 11 source documents are encoded into actual token arrays and written as content-addressed JSONL shards under `submission_artifacts/shards/`. The training worker consumes only the three training shards; the tiny bigram model computes token-level losses and updates its learned transition counts from those tokens.
+The agentic record contains system and user context, a model-generated tool call, an observed tool result, and a final model answer. Its loss mask supervises the tool call and final answer while masking the system prompt, user request, and tool result. The protected records contain simple Hindi, Telugu, and Sindhi prompts with romanized responses. The validation and evaluation records are deliberately present so the firewall can prove that they never enter a loss-bearing batch. On every run, all 11 source documents are encoded into actual token arrays and written as content-addressed JSONL shards under `submission_artifacts/shards/`. The training worker consumes only the three training shards; the tiny bigram model computes token-level losses and updates its learned transition counts from those tokens.
 
 ## Run it
 
@@ -35,7 +35,7 @@ python3 -m unittest discover -s S6/tests -v
 - **Immutable input:** documents are encoded with a frozen byte tokenizer. Every JSONL shard has its SHA-256 in its filename; manifests bind content, tokenizer, split, lane and token counts.
 - **Firewalls:** the packer itself rejects any record not marked `train`. The audit also scans every consumed shard, while the demo separately records rejected validation and evaluation requests.
 - **Deterministic planning:** curriculum stages compile weighted lanes into exact slot allocations. Protected data has a hard 20% floor.
-- **Packing:** causal and prompt/response records use distinct loss policies. Two documents may share a sequence, but causal attention cannot cross document segments, position IDs reset, and padding is invisible and lossless.
+- **Packing:** causal, prompt/response, and agentic tool-use records use distinct loss policies. For agentic data, model actions and final answers bear loss while environment observations do not. Two documents may share a sequence, but causal attention cannot cross document segments, position IDs reset, and padding is invisible and lossless.
 - **OPUS:** candidate decisions include acceptance, validation-regression rejection, uncertainty deferral, and an accepted proposal whose protected share is overridden to its floor.
 - **Training trace:** a real online Laplace-smoothed bigram model computes token losses and updates counts. The learning ledger links each token-level trace to sample hashes, source spans and the corresponding consumption entry, and records model-state hashes before and after each update.
 - **Durability:** consumption and learning ledgers are append-only SHA-256 chains. Checkpoints bind model/packer state to exact ledger offsets and heads, plus tokenizer and schedule hashes.

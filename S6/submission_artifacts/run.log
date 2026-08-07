@@ -1,32 +1,32 @@
 shards created | count=5
 manifests validated
 [PASS] tokenizer_hash_verified | 431ca92a6df4acc6e728d70082c431729ff33b8cbd4943bc06e70d5d3c299d46
-validation data blocked | validation-general-52c4a49e67bf4ce8
-eval data blocked | eval-general-dbf4f9569b6cdf62
+validation data blocked | validation-general-e0c8e5a41b020da7
+eval data blocked | eval-general-89daf215a2cd105e
 [PASS] eval_shard_blocked | blocked=2
 OPUS decisions recorded | accept=2 reject=1 defer=1 protected_floor_override=1
 mixture compiled | schedule_hash=dc6b01b09f904f5ac0a5449a4d0b9f6d0fd9c02951d8c2a1492c778ec7ad2d5c
-batches packed | id=batch-0000 hash=d5b3d06a38a7fdb1cdec7876707c5157fdd76fe741cf7da233f32ec738958d6a loss=5.510151
-batches packed | id=batch-0001 hash=48faccb5abaa498f056600fa0064ecf17d3fc84983e74b0de641cfa3b3c9a7d3 loss=5.425199
-batches packed | id=batch-0002 hash=5e910d5c8093f0adb9946457ddfdf3bb1d24395149315a42853d757598c62091 loss=5.363779
+batches packed | id=batch-0000 hash=b1ce5b52ab4f43c290ca905cdbb5d522435302bf211b6728c481d7a8fe679f95 loss=5.510151
+batches packed | id=batch-0001 hash=95836043dc873384298374c894d5a646d31bb758cec9ac8d21e7d041ab9c4cbb loss=5.425199
+batches packed | id=batch-0002 hash=52064f402c01b9571527243feba4245865809efebebafb214630e2f1826ea580 loss=5.363779
 checkpoint saved | main-0002.json ledger_offset=3
 [PASS] checkpoint_saved | main-0002.json
-batches packed | id=batch-0003 hash=1d00867f2495668de200079ed80ec35998f9013f8232325ec2c54c8cc8e68c26 loss=4.832992
-batches packed | id=batch-0004 hash=7951736d548301ffdadaf4230db75e1bc4e10df8104e843deef0e7fb1f48ce05 loss=4.801911
-batches packed | id=batch-0005 hash=8e54824b73bc3d9a25e5a165d7e0a8596754173bba120e56328af896f1aefdd1 loss=4.788168
+batches packed | id=batch-0003 hash=c5e3a1ac95cf0f5aa7af152a2bab9cc286fb0a4bdb786c28f9f7f4bd48e30510 loss=4.832992
+batches packed | id=batch-0004 hash=7f23092ce311c00ebfdc6f41dc5613cac9d2dd24e27cb20138a33e2ec72738a9 loss=4.801911
+batches packed | id=batch-0005 hash=899212a3dc4d15fb0751eb03c0f9215bd930bda330a59d84f06a758aac2d3366 loss=4.762328
 checkpoint saved | main-0005.json ledger_offset=6
 [PASS] checkpoint_saved | main-0005.json
 crash simulated | terminating worker process before batch-0006 consumption
 [PASS] crash_process_exit_observed | exit_code=86
-run resumed | checkpoint=main-0005.json next_batch=6 process=11977
-[PASS] resume_next_batch_matched | batch-0006 25baed5e8bc9c03fa23c8ff704d008420f64754ece5fbea922f93b474d07dfb2
-batches packed | id=batch-0006 hash=25baed5e8bc9c03fa23c8ff704d008420f64754ece5fbea922f93b474d07dfb2 loss=4.739755
-batches packed | id=batch-0007 hash=3e9080ce828297ab42fa5b67bfab582675e535f0b75596df8f6f146426d4e5c5 loss=4.248279
-batches packed | id=batch-0008 hash=71b85525cd2787f86443e26c953825a977a7469481b41500d180c58a76f784b4 loss=4.378441
-batches packed | id=batch-0009 hash=06c318302316f55ef867eb9bccb979ceca6146db3017713d8794c2cdd8b53363 loss=4.270825
+run resumed | checkpoint=main-0005.json next_batch=6 process=12182
+[PASS] resume_next_batch_matched | batch-0006 756300c0b147bcbcd1388ae63afb008867dfbfeff8aa13956b553620326a42e9
+batches packed | id=batch-0006 hash=756300c0b147bcbcd1388ae63afb008867dfbfeff8aa13956b553620326a42e9 loss=4.701867
+batches packed | id=batch-0007 hash=bc4c686358cb9b7fe03e60be534ff6382254c484fc29b88d72faca8f4850973e loss=4.276586
+batches packed | id=batch-0008 hash=15c535c8fed2c85550b83c0abc2e75e984aea0fa648b05187af8c5d00612838c loss=4.650013
+batches packed | id=batch-0009 hash=c8da32b02a23d135754415363011a2f60e266cdb17dce66655889b17a46f391c loss=4.274922
 historical stream replayed | interval=[2,6)
 [PASS] replay_hash_matched | batch ids, token spans and hashes identical
-branch forked | parent=ece0031e41663fe4594ad76a03eb7c85464ad8b2f6651be926d502bf3d8340b9 child=189dfbb00f6e9691c5e7bc3609e4aa4012a320dde5bd99a3fcbf9ac322f40d63
+branch forked | parent=0f4f777c896121db9c1995c6efa8b40c3d0497a4265445f7873b61e9a53f9c1f child=3b1db0f00bf02817ef923be58df0e150c1c5e1ec99f9835eae6aa7125fa11610
 audit completed | ledger chains, manifests, firewalls and lineage verified
-performance measured | utilization=0.613 useful_tokens/s=3896.4
+performance measured | utilization=0.606 useful_tokens/s=3728.6
 [PASS] audit_completed | all requirements passed
