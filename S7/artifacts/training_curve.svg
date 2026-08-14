@@ -1,0 +1,12 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='420' viewBox='0 0 1100 420'>
+<rect width='1100' height='420' rx='18' fill='#091526'/><g font-family='system-ui' fill='#dce8f7'>
+<text x='60' y='42' font-size='20' font-weight='700'>Structured-head training loss</text>
+<text x='600' y='42' font-size='20' font-weight='700'>Exact token reconstruction</text>
+<g stroke='#29405c' stroke-width='1'><path d='M60 70V350H500'/><path d='M600 70V350H1040'/>
+<path d='M60 210H500M600 210H1040' stroke-dasharray='4 6'/></g>
+<polyline points='60.0,70.0 84.4,272.4 108.9,348.9 133.3,349.8 157.8,349.9 182.2,349.9 206.7,349.9 231.1,350.0 255.6,350.0 280.0,350.0 304.4,350.0 328.9,350.0 353.3,350.0 377.8,350.0 402.2,350.0 426.7,350.0 451.1,350.0 475.6,350.0 500.0,350.0' fill='none' stroke='#7dd3fc' stroke-width='4'/>
+<polyline points='600.0,70.0 624.4,210.0 648.9,70.0 673.3,70.0 697.8,70.0 722.2,70.0 746.7,70.0 771.1,70.0 795.6,70.0 820.0,70.0 844.4,70.0 868.9,70.0 893.3,70.0 917.8,70.0 942.2,70.0 966.7,70.0 991.1,70.0 1015.6,70.0 1040.0,70.0' fill='none' stroke='#fbbf24' stroke-width='4'/>
+<polyline points='600.0,70.0 624.4,217.0 648.9,71.4 673.3,70.0 697.8,70.0 722.2,70.0 746.7,70.0 771.1,70.0 795.6,70.0 820.0,70.0 844.4,70.0 868.9,70.0 893.3,70.0 917.8,70.0 942.2,70.0 966.7,70.0 991.1,70.0 1015.6,70.0 1040.0,70.0' fill='none' stroke='#34d399' stroke-width='4'/>
+<g font-size='14' fill='#91a4bc'><text x='60' y='382'>optimizer step →</text><text x='600' y='382'>optimizer step →</text>
+<text x='610' y='94' fill='#fbbf24'>train</text><text x='670' y='94' fill='#34d399'>held-out OOV</text>
+<text x='570' y='76'>1.0</text><text x='578' y='354'>0</text></g></g></svg>

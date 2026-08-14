@@ -1,0 +1,207 @@
+{
+  "analytic_proof": {
+    "domain_size": 951,
+    "exact_rate": 1.0,
+    "exact_round_trips": 951,
+    "passed": true,
+    "unique_code_hashes": 951
+  },
+  "claims": {
+    "injective_on_bounded_domain": {
+      "evidence": "analytic_proof and full_byte_proof",
+      "passed": true
+    },
+    "neural_oov_generalization": {
+      "evidence": "neural_proof.held_out_oov",
+      "passed": true,
+      "threshold": 0.9
+    },
+    "truncation_collision_removed": {
+      "evidence": "truncation_counterexample",
+      "passed": true
+    },
+    "vocab_independent_head": {
+      "evidence": "parameter_scaling",
+      "passed": true
+    }
+  },
+  "configuration": {
+    "alphabet": "abcdef0123",
+    "held_out_tokens": 250,
+    "max_chars": 6,
+    "steps": 900,
+    "train_tokens": 700
+  },
+  "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
+  "elapsed_seconds": 1.8078,
+  "experiment": "Reversible Kronecker Head (RKE-Head)",
+  "fixed_vocab_baseline": {
+    "coverage": 0.0,
+    "held_out_oov_tokens": 250,
+    "reason": "all held-out target strings are absent from the training vocabulary by construction",
+    "representable_held_out_tokens": 0
+  },
+  "full_byte_proof": {
+    "distinct_prototypes_recovered": 258,
+    "exact_round_trips": 1257,
+    "includes_all_256_single_bytes": true,
+    "passed": true,
+    "payloads_tested": 1257
+  },
+  "limitations": [
+    "Empirical training uses a 10-character alphabet; the analytic codec implementation generalizes directly to 256 bytes.",
+    "The task is controlled token copying, not open-domain language modeling.",
+    "Output cost scales with maximum token length and byte alphabet, though not vocabulary size."
+  ],
+  "model_state_hash": "4522c63217a9ab295c845d957af71c2ba06ae5c16815a04bdd85ee9f7f47dd6b",
+  "neural_proof": {
+    "examples": [
+      {
+        "exact": true,
+        "prediction": "b2c",
+        "target": "b2c"
+      },
+      {
+        "exact": true,
+        "prediction": "a13",
+        "target": "a13"
+      },
+      {
+        "exact": true,
+        "prediction": "ae121",
+        "target": "ae121"
+      },
+      {
+        "exact": true,
+        "prediction": "ddfde",
+        "target": "ddfde"
+      },
+      {
+        "exact": true,
+        "prediction": "a1e",
+        "target": "a1e"
+      },
+      {
+        "exact": true,
+        "prediction": "0e",
+        "target": "0e"
+      },
+      {
+        "exact": true,
+        "prediction": "2d3de",
+        "target": "2d3de"
+      },
+      {
+        "exact": true,
+        "prediction": "d2c",
+        "target": "d2c"
+      },
+      {
+        "exact": true,
+        "prediction": "b0fe",
+        "target": "b0fe"
+      },
+      {
+        "exact": true,
+        "prediction": "02cc1c",
+        "target": "02cc1c"
+      },
+      {
+        "exact": true,
+        "prediction": "daf3",
+        "target": "daf3"
+      },
+      {
+        "exact": true,
+        "prediction": "33f",
+        "target": "33f"
+      },
+      {
+        "exact": true,
+        "prediction": "af3a",
+        "target": "af3a"
+      },
+      {
+        "exact": true,
+        "prediction": "3ecf",
+        "target": "3ecf"
+      },
+      {
+        "exact": true,
+        "prediction": "dca",
+        "target": "dca"
+      },
+      {
+        "exact": true,
+        "prediction": "00a1b",
+        "target": "00a1b"
+      },
+      {
+        "exact": true,
+        "prediction": "30e",
+        "target": "30e"
+      },
+      {
+        "exact": true,
+        "prediction": "c020",
+        "target": "c020"
+      },
+      {
+        "exact": true,
+        "prediction": "de1a2",
+        "target": "de1a2"
+      },
+      {
+        "exact": true,
+        "prediction": "cd0",
+        "target": "cd0"
+      }
+    ],
+    "held_out_oov": {
+      "character_accuracy": 1.0,
+      "exact_match": 1.0
+    },
+    "train": {
+      "character_accuracy": 1.0,
+      "exact_match": 1.0
+    }
+  },
+  "overall_pass": true,
+  "parameter_scaling": {
+    "d_model": 84,
+    "full_byte_states_including_pad_eos": 258,
+    "note": "The input byte codebook is transposed for output and shared across slots: no separate final-head parameters. Counts exclude bias.",
+    "one_million_ratio": 27131.782945736435,
+    "per_slot_width": 12,
+    "slots": 7,
+    "structured_head_parameters": 0,
+    "structured_input_output_pathway_parameters": 3096,
+    "tied_byte_codebook_parameters": 3096,
+    "vocab_head_parameters_at_one_million": 84000000,
+    "vocab_head_parameters_at_train_vocab": 58800
+  },
+  "problem": 5,
+  "seed": 20260814,
+  "truncation_counterexample": {
+    "left": "abcd00",
+    "original_collision": true,
+    "original_left_code": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "original_right_code": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "paper_max_positions": 4,
+    "passed": true,
+    "right": "abcd11",
+    "rke_distinct": true,
+    "rke_left_hash": "ba2274c6cdda2c81490bc9a186aefd720ecc2f48928ea088792debeaf4c5575f",
+    "rke_right_hash": "dec495cdfe8cfb1be44497451114b8ebcfd563292e2e86ece4facd66e2cbf5fe"
+  }
+}
