@@ -4,7 +4,35 @@
 
 This submission proposes **RKE-Head (Reversible Kronecker Embedding Head)**. It replaces a `d_model × |V|` token classifier with an ordered position × byte-symbol code. The same small byte codebook is used forward for input and transposed for output. There is no separately learned final head, and its parameter count does not depend on the number of token strings.
 
-The result is deliberately scoped. It proves exact reversibility for bounded byte strings and demonstrates learned OOV reconstruction in a controlled tiny-transformer task. It does **not** claim to have solved open-domain language modelling or unbounded token length.
+The submission has two layers of evidence: an exact reversibility proof and a stronger **V2 matched next-token experiment**. It does **not** claim to have solved open-domain language modelling or unbounded token length.
+
+## Headline result: V2 matched next-token experiment
+
+The strongest experiment compares three output mechanisms on the same controlled compositional language. Every stem, suffix and character occurs in training, but all 250 evaluated whole-token combinations are absent from the training vocabulary:
+
+```text
+context: [JOIN, suffix, stem] → next token: stem + suffix
+example: [JOIN, "3", "fa"] → "fa3"
+```
+
+All arms use the same structured inputs, hidden width, one-layer single-head causal transformer and batch size.
+
+| Output arm | Seen exact | Held-out OOV exact | Held-out NLL per byte/EOS | Total parameters |
+|---|---:|---:|---:|---:|
+| Vocabulary softmax | 100% | 0% | Undefined: target has no class | 75,168 |
+| Autoregressive byte fallback | 100% | 100% | 0.002269 | 21,888 |
+| **Parallel RKE-Head** | **100%** | **100%** | **0.000522** | **21,096** |
+
+For RKE, the current deterministic run also measures 10-bin ECE `0.002075`, Brier score `0.000025`, and zero separate output-head parameters. CPU decode throughput is recorded in `artifacts/lm_v2/results.json`; it is intentionally not treated as hardware-independent.
+
+What this establishes:
+
+- RKE performs genuine next-token composition rather than merely copying a complete payload.
+- It emits held-out bounded strings that have no vocabulary-softmax output row.
+- It predicts all positions and EOS in one parallel model call; fallback needs four autoregressive byte/EOS calls.
+- EOS is loss-bearing, post-EOS PAD is masked, and UTF-8 decoding rejects invalid transitions.
+
+The authoritative, generated evidence is in `artifacts/lm_v2/results.json`, with the exact split, predictions, models and hashes beside it.
 
 ## Run everything
 
@@ -118,34 +146,17 @@ After `python3 S7/run_experiment.py`:
 - `artifacts/split.json` — exact train and held-out OOV tokens;
 - `artifacts/training_curve.csv` and `training_curve.svg` — measured optimization history;
 - `artifacts/model.npz` — trained NumPy parameters;
-- `artifacts/report.html` — self-contained visual summary.
+- `artifacts/report.html` — self-contained visual summary;
 - `artifacts/lm_v2/results.json` — matched next-token NLL, calibration, parameters and decode speed;
 - `artifacts/lm_v2/comparison.svg` — next-token held-out comparison;
-- `artifacts/lm_v2/predictions.json` — every held-out target and reconstructed output.
+- `artifacts/lm_v2/predictions.json` — every held-out target and reconstructed output;
 - `artifacts/lm_v2/split.json` — the exact training, seen-control and held-out composition split.
 
 At the demo width, a one-million-token vocabulary head would have `d_model × 1,000,000` parameters. The RKE output adds **zero** separate head parameters; it reuses the fixed-size input byte codebook. `results.json` computes the exact comparison rather than hardcoding it.
 
-## V2 follow-up: matched next-token language modelling
+## V2 methodology and audit details
 
-The feedback on the first prototype correctly noted that copying proves reversibility but not next-token modelling. The one-command run now includes a second, separate controlled experiment.
-
-The micro-language defines a compositional next-token rule:
-
-```text
-context: [JOIN, suffix, stem] → next token: stem + suffix
-example: [JOIN, "3", "fa"] → "fa3"
-```
-
-There are 1,000 possible two-character-stem/one-character-suffix words. The experiment trains on 750 and evaluates on the other 250. Every character, stem and suffix is present during training, but no held-out whole target is present. Thus the evaluation asks whether an output mechanism can compose a new bounded token from known pieces.
-
-Three arms use the same structured input codec, `d_model`, one-layer single-head causal body and batch size:
-
-| Arm | Next-token output | Held-out representability |
-|---|---|---|
-| Vocabulary softmax | One class per training word plus UNK | 0/250 exact strings |
-| Byte fallback | One autoregressive character/EOS decision per model call | 250/250 |
-| RKE-Head | All character positions and EOS in one parallel call | 250/250 |
+There are 1,000 possible two-character-stem/one-character-suffix words. The experiment trains on 750 and evaluates on the other 250. All components are covered in training, while the whole-target overlap between train and held-out sets is exactly zero. `artifacts/lm_v2/split.json` records every example and `dataset_hash` binds that split into the results.
 
 RKE and the vocabulary arm receive 1,200 optimizer steps. Fallback receives 4,800 steps because every three-byte word requires four target decisions including EOS. EOS bears loss; every PAD slot after EOS is masked. A test verifies that changing masked targets cannot change either loss or gradients.
 
@@ -168,17 +179,19 @@ This remains a controlled compositional language, not a natural-corpus perplexit
 ## Files
 
 - `rke.py` — codecs, tiny transformer, manual backpropagation and Adam;
+- `lm_compare.py` — matched vocabulary, byte-fallback and RKE next-token arms;
 - `run_experiment.py` — deterministic experiment and evidence generator;
 - `tests/test_rke.py` — codec and split invariants;
+- `OTHER_IDEAS.md` — four separate Kronecker V2 research proposals;
 - `requirements.txt` — NumPy only.
 
 ## Honest limitations and next experiments
 
-1. The neural experiment uses a ten-character subset for speed, although the separate analytic proof executes all 256 bytes.
-2. Copying isolates output reversibility; it does not establish language-model quality, semantic calibration or generation fluency.
+1. The neural experiments use a ten-character subset for speed, although the separate analytic proof executes all 256 bytes.
+2. V2 establishes controlled next-token composition, not natural-language perplexity, semantics or generation fluency.
 3. Output compute is `O(P × 258)`. It is vocabulary-independent, not free.
 4. Length is bounded by `P`; RKE fixes information loss within that bound but does not solve truly unbounded words.
-5. UTF-8 validity is not automatic. Arbitrary bytes can be emitted, so production decoding should constrain or validate UTF-8 when text is required.
-6. A serious follow-up should compare vocabulary softmax, paper Hypothesis A, distributional Hypothesis B, and RKE-Head on matched-compute language modelling, including calibration and decoding speed.
+5. The raw byte codec can represent invalid UTF-8; the provided constrained decoder prevents it for text output, but production implementations must preserve that constraint.
+6. A serious follow-up should compare vocabulary softmax, paper Hypothesis A, distributional Hypothesis B, and RKE-Head on matched-compute natural-corpus language modelling.
 
 The strongest paper-worthy next step is a multilingual next-token experiment with held-out whole-word types: train both heads on identical transformer bodies, then measure NLL, exact generation, OOV composition, parameter count and wall-clock decode cost.
