@@ -14,6 +14,7 @@ from lm_compare import make_dataset  # noqa: E402
 from multilingual import dataset as multilingual_dataset  # noqa: E402
 from natural_corpus import _choose_rke_state, build_dataset, tokenize  # noqa: E402
 from torch_port import run_parity  # noqa: E402
+from continuation_neural import make_payloads, run_continuation_neural  # noqa: E402
 
 
 class ReversibleKroneckerTests(unittest.TestCase):
@@ -73,6 +74,9 @@ class ReversibleKroneckerTests(unittest.TestCase):
             codec.decode_ids(broken)
         with self.assertRaises(ValueError):
             codec.decode_ids([])
+        predicted = codec.ids(b"abc")[0]
+        predicted[4:] = 258  # arbitrary predictions in loss-masked suffix
+        self.assertEqual(b"abc", codec.decode_ids([predicted]))
 
     def test_manual_transformer_gradient_matches_finite_difference(self):
         codec = ReversibleCodec("abc", 2)
@@ -148,6 +152,20 @@ class ReversibleKroneckerTests(unittest.TestCase):
         self.assertTrue(result["passed"])
         self.assertTrue(all(result["checks"].values()))
         self.assertLessEqual(result["errors"]["gradient_max_abs"], result["tolerance"])
+
+    def test_continuation_payload_generator_terminates_and_is_disjoint(self):
+        train, test = make_payloads(train_size=30, test_size=10)
+        self.assertEqual((30, 10), (len(train), len(test)))
+        self.assertFalse(set(train) & set(test))
+        self.assertIn(0, {len(item) for item in train + test})
+        self.assertGreater(max(map(len, train + test)), 24)
+
+    def test_neural_continuation_integration_oracle(self):
+        with tempfile.TemporaryDirectory() as directory:
+            result = run_continuation_neural(Path(directory))
+        self.assertTrue(result["passed"])
+        self.assertEqual(1.0, result["test"]["exact_match"])
+        self.assertGreater(result["test"]["loss_bearing_cont_states"], 0)
 
     def test_utf8_decoder_masks_invalid_bytes_and_incomplete_eos(self):
         # Prefer illegal 0xFF everywhere, but leave the valid UTF-8 path for “é”.

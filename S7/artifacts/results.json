@@ -27,6 +27,10 @@
       "evidence": "natural_corpus/results.json",
       "passed": true
     },
+    "neural_continuation_mechanics": {
+      "evidence": "continuation_neural/results.json",
+      "passed": true
+    },
     "neural_oov_generalization": {
       "evidence": "neural_proof.held_out_oov",
       "passed": true,
@@ -114,8 +118,69 @@
     ],
     "states": 259
   },
+  "continuation_neural": {
+    "checks": {
+      "cont_is_loss_bearing": true,
+      "eos_is_loss_bearing": true,
+      "held_out_exact_at_least_95_percent": true,
+      "multi_block_tested": true,
+      "post_terminator_pad_masked": true,
+      "split_disjoint": true,
+      "valid_chain_rate_100_percent": true
+    },
+    "codec": {
+      "block_bytes": 24,
+      "states": 259,
+      "terminators": [
+        "EOS",
+        "CONT"
+      ]
+    },
+    "construction": {
+      "kind": "equal-norm circular tied prototypes",
+      "optimizer_steps": 0,
+      "purpose": "mechanical neural batching/decoding oracle"
+    },
+    "experiment": "neural continuation-block integration proof",
+    "limitations": [
+      "This is a constructed neural block-copy oracle, not learned long-word language modelling.",
+      "Blocks are independently reconstructed; learned cross-block conditioning is future work."
+    ],
+    "passed": true,
+    "seed": 4401,
+    "split": {
+      "hash": "264b8780b187677314cfeace0f898277870c67d70df9108ceaf8d775d7117368",
+      "overlap": 0,
+      "test_payloads": 150,
+      "train_payloads": 500
+    },
+    "test": {
+      "blocks": 336,
+      "bytes": 6850,
+      "exact_match": 1.0,
+      "loss_bearing_byte_states": 6850,
+      "loss_bearing_cont_states": 186,
+      "loss_bearing_eos_states": 150,
+      "max_payload_bytes": 96,
+      "nll_per_byte_or_terminator": 1.642470146581948,
+      "payloads": 150,
+      "valid_block_chain_rate": 1.0
+    },
+    "train": {
+      "blocks": 1161,
+      "bytes": 24464,
+      "exact_match": 1.0,
+      "loss_bearing_byte_states": 24464,
+      "loss_bearing_cont_states": 661,
+      "loss_bearing_eos_states": 500,
+      "max_payload_bytes": 96,
+      "nll_per_byte_or_terminator": 1.6424701465819473,
+      "payloads": 500,
+      "valid_block_chain_rate": 1.0
+    }
+  },
   "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
-  "elapsed_seconds": 225.5603,
+  "elapsed_seconds": 242.044,
   "experiment": "Reversible Kronecker Head (RKE-Head)",
   "fixed_vocab_baseline": {
     "coverage": 0.0,

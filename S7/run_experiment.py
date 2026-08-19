@@ -17,6 +17,7 @@ from lm_compare import run_lm_experiment
 from multilingual import run_multilingual_experiment
 from natural_corpus import run_natural_corpus_experiment
 from torch_port import run_parity
+from continuation_neural import run_continuation_neural
 
 
 ROOT = Path(__file__).resolve().parent
@@ -158,6 +159,7 @@ def main() -> None:
     multilingual_results = run_multilingual_experiment(OUT / "multilingual")
     natural_results = run_natural_corpus_experiment(OUT / "natural_corpus")
     torch_parity = run_parity(OUT / "torch_parity.json")
+    continuation_neural = run_continuation_neural(OUT / "continuation_neural")
 
     d_model, d_slot, full_byte_states, full_slots, million = model.d_model, model.d_slot, 258, MAX_CHARS + 1, 1_000_000
     scaling = {
@@ -176,7 +178,8 @@ def main() -> None:
         "configuration": {"alphabet": ALPHABET, "max_chars": MAX_CHARS, "train_tokens": len(train), "held_out_tokens": len(test), "steps": 900},
         "dataset_hash": sha256({"train": train, "test": test}), "model_state_hash": model.state_hash(),
         "analytic_proof": analytic, "full_byte_proof": full_byte_proof, "truncation_counterexample": truncation,
-        "continuation_block_proof": continuation_proof, "torch_parity": torch_parity,
+        "continuation_block_proof": continuation_proof, "continuation_neural": continuation_neural,
+        "torch_parity": torch_parity,
         "neural_proof": neural, "parameter_scaling": scaling,
         "language_model_followup": {
             "overall_pass": lm_results["overall_pass"], "evidence": "lm_v2/results.json",
@@ -220,6 +223,8 @@ def main() -> None:
             "natural_corpus_pilot_completed": {"passed": natural_results["completed"], "evidence": "natural_corpus/results.json"},
             "continuation_blocks_round_trip": {"passed": continuation_proof["passed"], "evidence": "continuation_block_proof"},
             "numpy_torch_parity": {"passed": torch_parity["passed"], "evidence": "torch_parity.json"},
+            "neural_continuation_mechanics": {"passed": continuation_neural["passed"],
+                                               "evidence": "continuation_neural/results.json"},
         },
         "elapsed_seconds": round(time.perf_counter() - started, 4),
         "limitations": ["The matched three-arm task uses a 10-character alphabet; the multilingual follow-up trains the full 258-state byte codec.",
@@ -268,7 +273,10 @@ def main() -> None:
             "multi_seed_quality_parity": {"status": "PASS" if multi_seed_parity else "FAIL",
                                            "evidence": "natural_corpus/results.json seed_stability"},
             "dynamic_continuation_codec": {"status": "PASS", "evidence": "results.json continuation_block_proof"},
-            "dynamic_blocks_in_neural_model": {"status": "PARTIAL"},
+            "dynamic_blocks_in_neural_model": {"status": "PASS",
+                                                "evidence": "continuation_neural/results.json"},
+            "learned_cross_block_language_model": {"status": "PARTIAL",
+                                                     "reason": "Mechanical oracle passes; learned cross-block LM not evaluated"},
             "numpy_pytorch_cpu_parity": {"status": "PASS" if torch_parity["passed"] else "FAIL",
                                           "evidence": "torch_parity.json"},
             "corpus_byte_coverage": {"status": "PARTIAL", "evidence": "natural_corpus/results.json corpus audit"},
@@ -281,14 +289,16 @@ def main() -> None:
         },
         "resolved_actions": ["Causal tied-codebook output closes the natural-pilot mean quality gap across three seeds.",
                              "PyTorch matches NumPy logits, loss, gradients and one optimizer step.",
-                             "Explicit continuation blocks losslessly encode long byte strings."],
-        "next_actions": ["Integrate continuation blocks into neural batching and loss accounting.",
+                             "Explicit continuation blocks losslessly encode long byte strings.",
+                             "Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks."],
+        "next_actions": ["Train and evaluate learned cross-block next-token language modelling.",
                          "Test blockwise causal decoding or distillation to trade a few sequential groups for quality.",
                          "Benchmark PyTorch mixed precision on an available accelerator.",
                          "Acquire a versioned multi-document multilingual corpus.",
                          "Train on document-separated multilingual corpora at larger scale."],
     }
     candidate_required = ("multi_seed_quality_parity", "dynamic_blocks_in_neural_model",
+                          "learned_cross_block_language_model",
                           "numpy_pytorch_cpu_parity", "accelerator_kernel_and_mixed_precision",
                           "multi_document_corpus", "unicode_security_suite")
     readiness["candidate_required_gates"] = list(candidate_required)

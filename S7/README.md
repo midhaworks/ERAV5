@@ -78,7 +78,7 @@ Passing this pilot quality gate does not make the system production-ready. Long-
 
 The PyTorch port loads the exact NumPy parameters and compares float64 logits, masked loss, every parameter gradient and one Adam update. Maximum errors are `3.5e-18` for logits, `2.6e-10` for loss, `1.1e-17` for gradients and `1.4e-17` for the optimizer step. CPU framework parity therefore passes. This environment exposes neither CUDA nor MPS, so accelerator and mixed-precision gates are not inferred from CPU behavior.
 
-The generated verdict is currently **not a candidate for costly production-scale testing**. The remaining required blockers are neural continuation-block integration, accelerator benchmarks, a versioned multi-document corpus and the full Unicode security suite. This verdict is computed from named gates in `artifacts/production_readiness.json`; it is not a README assertion.
+The generated verdict is currently **not a candidate for costly production-scale testing**. Neural continuation mechanics now pass: a constructed tied-prototype oracle reconstructs 150 disjoint held-out payloads, 336 blocks and lengths through 96 bytes with 100% exact block chains; CONT, EOS and bytes bear loss while post-terminator slots are masked. This is intentionally not called learned long-word modelling. The remaining required blockers are learned cross-block language modelling, accelerator benchmarks, a versioned multi-document corpus and the full Unicode security suite. The verdict is computed from named gates in `artifacts/production_readiness.json`; it is not a README assertion.
 
 ## Run everything
 
@@ -234,6 +234,7 @@ This remains a controlled compositional language, not a natural-corpus perplexit
 - `lm_compare.py` — matched vocabulary, byte-fallback and RKE next-token arms;
 - `multilingual.py` — full-byte Hindi, Telugu, Tamil and Arabic experiment;
 - `natural_corpus.py` — natural English, Hindi, Telugu and Sindhi matched-arm pilot;
+- `continuation_neural.py` — multi-block neural batching, mask and tied-decoding oracle;
 - `torch_port.py` — parameter-identical PyTorch port and NumPy parity oracle;
 - `run_experiment.py` — deterministic experiment and evidence generator;
 - `tests/test_rke.py` — codec and split invariants;
@@ -245,9 +246,9 @@ This remains a controlled compositional language, not a natural-corpus perplexit
 1. The controlled matched experiment uses a ten-character subset for speed; both multilingual experiments use the full 258-state byte codec.
 2. The natural pilot is small next-word prediction, not document-scale pretraining, semantic evaluation or generation-fluency evidence.
 3. Output compute is `O(P × 258)`. It is vocabulary-independent, not free.
-4. Continuation blocks remove codec truncation, but the neural trainer still accepts only one fixed block per token.
+4. Continuation blocks and neural mechanics are integrated, but learned cross-block next-token conditioning has not been evaluated.
 5. The raw byte codec can represent invalid UTF-8; the provided constrained decoder prevents it for text output, but production implementations must preserve that constraint.
 6. Both tested fixed-depth parallel refiners miss byte-fallback NLL parity; causal RKE passes the pilot parity gate but gives up parallel decoding.
 7. PyTorch CPU parity is proven; accelerator kernels, mixed precision, distributed checkpointing and Unicode security stress tests remain unverified.
 
-The next paper-worthy alternative is blockwise causal decoding: emit small groups of slots in parallel while conditioning each group on completed preceding groups. It offers a measurable speed/quality continuum instead of assuming that one or two fully parallel passes can match the byte chain rule. Before costly testing, continuation blocks must be integrated into neural loss/batching, PyTorch must be benchmarked on an accelerator, and substantially larger document-separated corpora must replace the four single-article sources.
+The next paper-worthy alternative is blockwise causal decoding: emit small groups of slots in parallel while conditioning each group on completed preceding groups. It offers a measurable speed/quality continuum instead of assuming that one or two fully parallel passes can match the byte chain rule. Before costly testing, learned continuation blocks must be evaluated in next-token modelling, PyTorch must be benchmarked on an accelerator, and substantially larger document-separated corpora must replace the four single-article sources.

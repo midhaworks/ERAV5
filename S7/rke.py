@@ -203,22 +203,20 @@ class ContinuationByteCodec:
             if states.shape != (self.slots,):
                 raise ValueError("invalid block shape")
             terminator_seen = False
-            for slot, state in enumerate(states.tolist()):
+            for state in states.tolist():
                 state = int(state)
                 if state >= 3:
-                    if terminator_seen:
-                        raise ValueError("byte after block terminator")
                     output.append(state - 3)
                 elif state in (1, 2):
-                    if terminator_seen:
-                        raise ValueError("multiple block terminators")
                     terminator_seen = True
                     expected = 1 if block_index == len(blocks) - 1 else 2
                     if state != expected:
                         raise ValueError("EOS/CONT does not match block position")
+                    # Post-terminator positions are PAD in canonical codes and
+                    # loss-masked in neural predictions, so they are ignored.
+                    break
                 elif state == 0:
-                    if not terminator_seen:
-                        raise ValueError("PAD before block terminator")
+                    raise ValueError("PAD before block terminator")
                 else:
                     raise ValueError("invalid state")
             if not terminator_seen:

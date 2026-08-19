@@ -2,6 +2,7 @@
   "candidate_required_gates": [
     "multi_seed_quality_parity",
     "dynamic_blocks_in_neural_model",
+    "learned_cross_block_language_model",
     "numpy_pytorch_cpu_parity",
     "accelerator_kernel_and_mixed_precision",
     "multi_document_corpus",
@@ -25,7 +26,8 @@
       "status": "NOT_RUN"
     },
     "dynamic_blocks_in_neural_model": {
-      "status": "PARTIAL"
+      "evidence": "continuation_neural/results.json",
+      "status": "PASS"
     },
     "dynamic_continuation_codec": {
       "evidence": "results.json continuation_block_proof",
@@ -33,6 +35,10 @@
     },
     "large_scale_pretraining": {
       "status": "NOT_RUN"
+    },
+    "learned_cross_block_language_model": {
+      "reason": "Mechanical oracle passes; learned cross-block LM not evaluated",
+      "status": "PARTIAL"
     },
     "multi_document_corpus": {
       "reason": "Only one source article per language is available",
@@ -82,7 +88,7 @@
     }
   },
   "next_actions": [
-    "Integrate continuation blocks into neural batching and loss accounting.",
+    "Train and evaluate learned cross-block next-token language modelling.",
     "Test blockwise causal decoding or distillation to trade a few sequential groups for quality.",
     "Benchmark PyTorch mixed precision on an available accelerator.",
     "Acquire a versioned multi-document multilingual corpus.",
@@ -92,6 +98,7 @@
   "resolved_actions": [
     "Causal tied-codebook output closes the natural-pilot mean quality gap across three seeds.",
     "PyTorch matches NumPy logits, loss, gradients and one optimizer step.",
-    "Explicit continuation blocks losslessly encode long byte strings."
+    "Explicit continuation blocks losslessly encode long byte strings.",
+    "Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks."
   ]
 }
