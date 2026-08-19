@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "all_gradients": true,
+    "forward_logits": true,
+    "masked_loss": true,
+    "numpy_optimizer_formula": true,
+    "one_optimizer_step": true
+  },
+  "device_smoke": {
+    "cuda_available": false,
+    "mps_available": false,
+    "mps_error": "device unavailable",
+    "mps_forward": null
+  },
+  "dtype": "float64",
+  "errors": {
+    "gradient_by_parameter": {
+      "Ein": 6.938893903907228e-18,
+      "Wk": 2.0679515313825692e-24,
+      "Wo": 1.0842021724855044e-19,
+      "Wq": 2.481541837659083e-24,
+      "Wv": 1.3552527156068805e-20,
+      "pos": 1.0408340855860843e-17
+    },
+    "gradient_max_abs": 1.0408340855860843e-17,
+    "logits_max_abs": 3.469446951953614e-18,
+    "loss_abs": 2.589493064419912e-10,
+    "numpy_optimizer_max_abs": 2.7755575615628914e-17,
+    "optimizer_step_by_parameter": {
+      "Ein": 1.3877787807814457e-17,
+      "Wk": 6.938893903907228e-18,
+      "Wo": 8.673617379884035e-19,
+      "Wq": 6.938893903907228e-18,
+      "Wv": 8.673617379884035e-19,
+      "pos": 1.734723475976807e-18
+    },
+    "optimizer_step_max_abs": 1.3877787807814457e-17
+  },
+  "experiment": "NumPy-PyTorch RKE parity",
+  "input_hash": "e726332da1eee7f76d5815e25825424ec4b80d9489b3809b8cf68d7538983ddc",
+  "passed": true,
+  "python": "3.14.0",
+  "tolerance": 1e-09,
+  "torch_version": "2.13.0"
+}

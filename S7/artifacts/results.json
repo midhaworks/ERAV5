@@ -7,6 +7,10 @@
     "unique_code_hashes": 951
   },
   "claims": {
+    "continuation_blocks_round_trip": {
+      "evidence": "continuation_block_proof",
+      "passed": true
+    },
     "injective_on_bounded_domain": {
       "evidence": "analytic_proof and full_byte_proof",
       "passed": true
@@ -15,10 +19,22 @@
       "evidence": "lm_v2/results.json",
       "passed": true
     },
+    "multilingual_full_byte_followup": {
+      "evidence": "multilingual/results.json",
+      "passed": true
+    },
+    "natural_corpus_pilot_completed": {
+      "evidence": "natural_corpus/results.json",
+      "passed": true
+    },
     "neural_oov_generalization": {
       "evidence": "neural_proof.held_out_oov",
       "passed": true,
       "threshold": 0.9
+    },
+    "numpy_torch_parity": {
+      "evidence": "torch_parity.json",
+      "passed": true
     },
     "truncation_collision_removed": {
       "evidence": "truncation_counterexample",
@@ -36,8 +52,70 @@
     "steps": 900,
     "train_tokens": 700
   },
+  "continuation_block_proof": {
+    "block_bytes": 24,
+    "max_tested_bytes": 10000,
+    "passed": true,
+    "records": [
+      {
+        "blocks": 1,
+        "bytes": 0,
+        "exact": true,
+        "payload_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "blocks": 1,
+        "bytes": 1,
+        "exact": true,
+        "payload_hash": "e3b98a4da31a127d4bde6e43033f66ba274cab0eb7eb1c70ec41402bf6273dd8"
+      },
+      {
+        "blocks": 1,
+        "bytes": 23,
+        "exact": true,
+        "payload_hash": "8e334781a7807ac863e22a6224ecea3d1e7b446ff6950cfcd1a07bfe3dd6b921"
+      },
+      {
+        "blocks": 1,
+        "bytes": 24,
+        "exact": true,
+        "payload_hash": "bc505a56db9498cf46fa0bf2d981ef325a8c6534c67f609f6b8887ec116e0510"
+      },
+      {
+        "blocks": 2,
+        "bytes": 25,
+        "exact": true,
+        "payload_hash": "96101800b29782d2ac7c954c62f2824613eeb4c94804c3b1b3e71055c10c96b6"
+      },
+      {
+        "blocks": 2,
+        "bytes": 48,
+        "exact": true,
+        "payload_hash": "563d12ec61de9d1ea4222cb0ded7e302ffcbb61cc4af6935f1b3abf8a8eda394"
+      },
+      {
+        "blocks": 3,
+        "bytes": 49,
+        "exact": true,
+        "payload_hash": "222b4930e0c62b2df0c3414fc2dfac5b910ae8afbc5b47a50328d93ef3f74579"
+      },
+      {
+        "blocks": 11,
+        "bytes": 257,
+        "exact": true,
+        "payload_hash": "4a1e45f93dcd572225ddabd7179d43329d7c40613420ebd96ad82ec07d6eabc0"
+      },
+      {
+        "blocks": 417,
+        "bytes": 10000,
+        "exact": true,
+        "payload_hash": "216e56975650694c0821f903cc5d903b25c37fcbda0259d40409582103da42eb"
+      }
+    ],
+    "states": 259
+  },
   "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
-  "elapsed_seconds": 14.0504,
+  "elapsed_seconds": 225.5603,
   "experiment": "Reversible Kronecker Head (RKE-Head)",
   "fixed_vocab_baseline": {
     "coverage": 0.0,
@@ -62,11 +140,43 @@
     "vocabulary_held_out_exact": 0.0
   },
   "limitations": [
-    "Empirical training uses a 10-character alphabet; the analytic codec implementation generalizes directly to 256 bytes.",
-    "The task is controlled token copying, not open-domain language modeling.",
+    "The matched three-arm task uses a 10-character alphabet; the multilingual follow-up trains the full 258-state byte codec.",
+    "The tasks are controlled composition and copying, not open-domain language modelling.",
     "Output cost scales with maximum token length and byte alphabet, though not vocabulary size."
   ],
   "model_state_hash": "f780bfe5aa62818a1d4ed973d4bb24fd3fc52622c7887a58673d71ceb8acd74d",
+  "multilingual_followup": {
+    "evidence": "multilingual/results.json",
+    "held_out_exact": 1.0,
+    "invalid_utf8_rate": 0.0,
+    "nll_per_byte_or_eos": 0.004449112625372698,
+    "overall_pass": true,
+    "scripts": [
+      "Hindi-Devanagari",
+      "Telugu",
+      "Tamil",
+      "Arabic"
+    ]
+  },
+  "natural_corpus_pilot": {
+    "causal_rke_test_exact": 0.17875,
+    "causal_rke_test_nll": 1.804237009311691,
+    "completed": true,
+    "evidence": "natural_corpus/results.json",
+    "fallback_test_exact": 0.17875,
+    "fallback_test_nll": 1.7960520878104467,
+    "masked_rke_test_exact": 0.18625,
+    "masked_rke_test_nll": 2.1395242440371347,
+    "parallel_quality_parity": false,
+    "quality_parity": true,
+    "refined_rke_test_exact": 0.1725,
+    "refined_rke_test_nll": 2.25534110526208,
+    "rke_test_exact": 0.1725,
+    "rke_test_nll": 2.248338398892251,
+    "two_pass_quality_parity": false,
+    "vocabulary_test_coverage": 0.66,
+    "vocabulary_test_exact": 0.41375
+  },
   "neural_proof": {
     "examples": [
       {
@@ -195,6 +305,51 @@
   },
   "problem": 5,
   "seed": 20260814,
+  "torch_parity": {
+    "checks": {
+      "all_gradients": true,
+      "forward_logits": true,
+      "masked_loss": true,
+      "numpy_optimizer_formula": true,
+      "one_optimizer_step": true
+    },
+    "device_smoke": {
+      "cuda_available": false,
+      "mps_available": false,
+      "mps_error": "device unavailable",
+      "mps_forward": null
+    },
+    "dtype": "float64",
+    "errors": {
+      "gradient_by_parameter": {
+        "Ein": 6.938893903907228e-18,
+        "Wk": 2.0679515313825692e-24,
+        "Wo": 1.0842021724855044e-19,
+        "Wq": 2.481541837659083e-24,
+        "Wv": 1.3552527156068805e-20,
+        "pos": 1.0408340855860843e-17
+      },
+      "gradient_max_abs": 1.0408340855860843e-17,
+      "logits_max_abs": 3.469446951953614e-18,
+      "loss_abs": 2.589493064419912e-10,
+      "numpy_optimizer_max_abs": 2.7755575615628914e-17,
+      "optimizer_step_by_parameter": {
+        "Ein": 1.3877787807814457e-17,
+        "Wk": 6.938893903907228e-18,
+        "Wo": 8.673617379884035e-19,
+        "Wq": 6.938893903907228e-18,
+        "Wv": 8.673617379884035e-19,
+        "pos": 1.734723475976807e-18
+      },
+      "optimizer_step_max_abs": 1.3877787807814457e-17
+    },
+    "experiment": "NumPy-PyTorch RKE parity",
+    "input_hash": "e726332da1eee7f76d5815e25825424ec4b80d9489b3809b8cf68d7538983ddc",
+    "passed": true,
+    "python": "3.14.0",
+    "tolerance": 1e-09,
+    "torch_version": "2.13.0"
+  },
   "truncation_counterexample": {
     "left": "abcd00",
     "original_collision": true,

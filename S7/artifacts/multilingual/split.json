@@ -1,0 +1,966 @@
+{
+  "held_out": [
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "क",
+      "suffix": "ा",
+      "target": "का"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "च",
+      "suffix": "ु",
+      "target": "चु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ज",
+      "suffix": "ी",
+      "target": "जी"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ट",
+      "suffix": "ि",
+      "target": "टि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ड",
+      "suffix": "ा",
+      "target": "डा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "न",
+      "suffix": "ु",
+      "target": "नु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "प",
+      "suffix": "ी",
+      "target": "पी"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "र",
+      "suffix": "ि",
+      "target": "रि"
+    },
+    {
+      "script": "Telugu",
+      "stem": "క",
+      "suffix": "ా",
+      "target": "కా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "చ",
+      "suffix": "ు",
+      "target": "చు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "జ",
+      "suffix": "ీ",
+      "target": "జీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ట",
+      "suffix": "ి",
+      "target": "టి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "డ",
+      "suffix": "ా",
+      "target": "డా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "న",
+      "suffix": "ు",
+      "target": "ను"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ప",
+      "suffix": "ీ",
+      "target": "పీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ర",
+      "suffix": "ి",
+      "target": "రి"
+    },
+    {
+      "script": "Tamil",
+      "stem": "க",
+      "suffix": "ா",
+      "target": "கா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ட",
+      "suffix": "ு",
+      "target": "டு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "த",
+      "suffix": "ீ",
+      "target": "தீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ப",
+      "suffix": "ி",
+      "target": "பி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ம",
+      "suffix": "ா",
+      "target": "மா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ர",
+      "suffix": "ு",
+      "target": "ரு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ல",
+      "suffix": "ீ",
+      "target": "லீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "வ",
+      "suffix": "ி",
+      "target": "வி"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ا",
+      "suffix": "َ",
+      "target": "اَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ت",
+      "suffix": "ْ",
+      "target": "تْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ث",
+      "suffix": "ِ",
+      "target": "ثِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ج",
+      "suffix": "ُ",
+      "target": "جُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ح",
+      "suffix": "َ",
+      "target": "حَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "د",
+      "suffix": "ْ",
+      "target": "دْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ذ",
+      "suffix": "ِ",
+      "target": "ذِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ر",
+      "suffix": "ُ",
+      "target": "رُ"
+    }
+  ],
+  "train": [
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "क",
+      "suffix": "ि",
+      "target": "कि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "क",
+      "suffix": "ी",
+      "target": "की"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "क",
+      "suffix": "ु",
+      "target": "कु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ग",
+      "suffix": "ा",
+      "target": "गा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ग",
+      "suffix": "ि",
+      "target": "गि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ग",
+      "suffix": "ी",
+      "target": "गी"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ग",
+      "suffix": "ु",
+      "target": "गु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "च",
+      "suffix": "ा",
+      "target": "चा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "च",
+      "suffix": "ि",
+      "target": "चि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "च",
+      "suffix": "ी",
+      "target": "ची"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ज",
+      "suffix": "ा",
+      "target": "जा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ज",
+      "suffix": "ि",
+      "target": "जि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ज",
+      "suffix": "ु",
+      "target": "जु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ट",
+      "suffix": "ा",
+      "target": "टा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ट",
+      "suffix": "ी",
+      "target": "टी"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ट",
+      "suffix": "ु",
+      "target": "टु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ड",
+      "suffix": "ि",
+      "target": "डि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ड",
+      "suffix": "ी",
+      "target": "डी"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "ड",
+      "suffix": "ु",
+      "target": "डु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "त",
+      "suffix": "ा",
+      "target": "ता"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "त",
+      "suffix": "ि",
+      "target": "ति"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "त",
+      "suffix": "ी",
+      "target": "ती"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "त",
+      "suffix": "ु",
+      "target": "तु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "न",
+      "suffix": "ा",
+      "target": "ना"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "न",
+      "suffix": "ि",
+      "target": "नि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "न",
+      "suffix": "ी",
+      "target": "नी"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "प",
+      "suffix": "ा",
+      "target": "पा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "प",
+      "suffix": "ि",
+      "target": "पि"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "प",
+      "suffix": "ु",
+      "target": "पु"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "र",
+      "suffix": "ा",
+      "target": "रा"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "र",
+      "suffix": "ी",
+      "target": "री"
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "stem": "र",
+      "suffix": "ु",
+      "target": "रु"
+    },
+    {
+      "script": "Telugu",
+      "stem": "క",
+      "suffix": "ి",
+      "target": "కి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "క",
+      "suffix": "ీ",
+      "target": "కీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "క",
+      "suffix": "ు",
+      "target": "కు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "గ",
+      "suffix": "ా",
+      "target": "గా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "గ",
+      "suffix": "ి",
+      "target": "గి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "గ",
+      "suffix": "ీ",
+      "target": "గీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "గ",
+      "suffix": "ు",
+      "target": "గు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "చ",
+      "suffix": "ా",
+      "target": "చా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "చ",
+      "suffix": "ి",
+      "target": "చి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "చ",
+      "suffix": "ీ",
+      "target": "చీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "జ",
+      "suffix": "ా",
+      "target": "జా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "జ",
+      "suffix": "ి",
+      "target": "జి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "జ",
+      "suffix": "ు",
+      "target": "జు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ట",
+      "suffix": "ా",
+      "target": "టా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ట",
+      "suffix": "ీ",
+      "target": "టీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ట",
+      "suffix": "ు",
+      "target": "టు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "డ",
+      "suffix": "ి",
+      "target": "డి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "డ",
+      "suffix": "ీ",
+      "target": "డీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "డ",
+      "suffix": "ు",
+      "target": "డు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "త",
+      "suffix": "ా",
+      "target": "తా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "త",
+      "suffix": "ి",
+      "target": "తి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "త",
+      "suffix": "ీ",
+      "target": "తీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "త",
+      "suffix": "ు",
+      "target": "తు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "న",
+      "suffix": "ా",
+      "target": "నా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "న",
+      "suffix": "ి",
+      "target": "ని"
+    },
+    {
+      "script": "Telugu",
+      "stem": "న",
+      "suffix": "ీ",
+      "target": "నీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ప",
+      "suffix": "ా",
+      "target": "పా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ప",
+      "suffix": "ి",
+      "target": "పి"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ప",
+      "suffix": "ు",
+      "target": "పు"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ర",
+      "suffix": "ా",
+      "target": "రా"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ర",
+      "suffix": "ీ",
+      "target": "రీ"
+    },
+    {
+      "script": "Telugu",
+      "stem": "ర",
+      "suffix": "ు",
+      "target": "రు"
+    },
+    {
+      "script": "Tamil",
+      "stem": "க",
+      "suffix": "ி",
+      "target": "கி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "க",
+      "suffix": "ீ",
+      "target": "கீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "க",
+      "suffix": "ு",
+      "target": "கு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ச",
+      "suffix": "ா",
+      "target": "சா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ச",
+      "suffix": "ி",
+      "target": "சி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ச",
+      "suffix": "ீ",
+      "target": "சீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ச",
+      "suffix": "ு",
+      "target": "சு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ட",
+      "suffix": "ா",
+      "target": "டா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ட",
+      "suffix": "ி",
+      "target": "டி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ட",
+      "suffix": "ீ",
+      "target": "டீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "த",
+      "suffix": "ா",
+      "target": "தா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "த",
+      "suffix": "ி",
+      "target": "தி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "த",
+      "suffix": "ு",
+      "target": "து"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ப",
+      "suffix": "ா",
+      "target": "பா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ப",
+      "suffix": "ீ",
+      "target": "பீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ப",
+      "suffix": "ு",
+      "target": "பு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ம",
+      "suffix": "ி",
+      "target": "மி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ம",
+      "suffix": "ீ",
+      "target": "மீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ம",
+      "suffix": "ு",
+      "target": "மு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ந",
+      "suffix": "ா",
+      "target": "நா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ந",
+      "suffix": "ி",
+      "target": "நி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ந",
+      "suffix": "ீ",
+      "target": "நீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ந",
+      "suffix": "ு",
+      "target": "நு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ர",
+      "suffix": "ா",
+      "target": "ரா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ர",
+      "suffix": "ி",
+      "target": "ரி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ர",
+      "suffix": "ீ",
+      "target": "ரீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ல",
+      "suffix": "ா",
+      "target": "லா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ல",
+      "suffix": "ி",
+      "target": "லி"
+    },
+    {
+      "script": "Tamil",
+      "stem": "ல",
+      "suffix": "ு",
+      "target": "லு"
+    },
+    {
+      "script": "Tamil",
+      "stem": "வ",
+      "suffix": "ா",
+      "target": "வா"
+    },
+    {
+      "script": "Tamil",
+      "stem": "வ",
+      "suffix": "ீ",
+      "target": "வீ"
+    },
+    {
+      "script": "Tamil",
+      "stem": "வ",
+      "suffix": "ு",
+      "target": "வு"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ا",
+      "suffix": "ُ",
+      "target": "اُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ا",
+      "suffix": "ِ",
+      "target": "اِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ا",
+      "suffix": "ْ",
+      "target": "اْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ب",
+      "suffix": "َ",
+      "target": "بَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ب",
+      "suffix": "ُ",
+      "target": "بُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ب",
+      "suffix": "ِ",
+      "target": "بِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ب",
+      "suffix": "ْ",
+      "target": "بْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ت",
+      "suffix": "َ",
+      "target": "تَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ت",
+      "suffix": "ُ",
+      "target": "تُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ت",
+      "suffix": "ِ",
+      "target": "تِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ث",
+      "suffix": "َ",
+      "target": "ثَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ث",
+      "suffix": "ُ",
+      "target": "ثُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ث",
+      "suffix": "ْ",
+      "target": "ثْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ج",
+      "suffix": "َ",
+      "target": "جَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ج",
+      "suffix": "ِ",
+      "target": "جِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ج",
+      "suffix": "ْ",
+      "target": "جْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ح",
+      "suffix": "ُ",
+      "target": "حُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ح",
+      "suffix": "ِ",
+      "target": "حِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ح",
+      "suffix": "ْ",
+      "target": "حْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "خ",
+      "suffix": "َ",
+      "target": "خَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "خ",
+      "suffix": "ُ",
+      "target": "خُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "خ",
+      "suffix": "ِ",
+      "target": "خِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "خ",
+      "suffix": "ْ",
+      "target": "خْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "د",
+      "suffix": "َ",
+      "target": "دَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "د",
+      "suffix": "ُ",
+      "target": "دُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "د",
+      "suffix": "ِ",
+      "target": "دِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ذ",
+      "suffix": "َ",
+      "target": "ذَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ذ",
+      "suffix": "ُ",
+      "target": "ذُ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ذ",
+      "suffix": "ْ",
+      "target": "ذْ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ر",
+      "suffix": "َ",
+      "target": "رَ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ر",
+      "suffix": "ِ",
+      "target": "رِ"
+    },
+    {
+      "script": "Arabic",
+      "stem": "ر",
+      "suffix": "ْ",
+      "target": "رْ"
+    }
+  ]
+}

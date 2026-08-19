@@ -34,6 +34,52 @@ What this establishes:
 
 The authoritative, generated evidence is in `artifacts/lm_v2/results.json`, with the exact split, predictions, models and hashes beside it.
 
+## Multilingual full-byte result
+
+The trained pathway is also exercised with the actual 258-state codec—PAD, EOS and all 256 byte values—on four UTF-8 scripts. It trains on 128 compositional forms and evaluates 32 unseen whole forms, eight per script. Every held-out stem and suffix occurs in that script's training split; only the complete combination is new.
+
+| Script | Held-out forms | Exact match | NLL per byte/EOS | Invalid UTF-8 after constraint |
+|---|---:|---:|---:|---:|
+| Hindi / Devanagari | 8 | 100% | 0.000156 | 0% |
+| Telugu | 8 | 100% | 0.000149 | 0% |
+| Tamil | 8 | 100% | 0.000733 | 0% |
+| Arabic | 8 | 100% | 0.021682 | 0% |
+
+Overall multilingual held-out NLL is `0.004449` per byte/EOS, with 100% exact match. Indic stems are consonants combined with dependent vowel marks; Arabic stems are letters combined with harakat. The saved predictions include the Unicode text and its UTF-8 bytes. This proves full-byte compositional decoding across these scripts in the controlled task; it does not prove multilingual semantics or natural-corpus perplexity.
+
+## V2.1 natural multilingual pilot
+
+The first production-readiness step replaces synthetic compositions with next-word prediction from the repository's Wikipedia-derived English, Hindi, Telugu and Sindhi corpora. Unicode text is NFC-normalized and case-folded. Entire paragraphs—not individual word windows—are assigned by a deterministic hash to 80/10/10 train, validation and test partitions, preventing context leakage. The run samples 4,000 training, 800 validation and 800 test transitions, balanced across languages.
+
+| Output arm | Test exact | Test NLL | Target coverage | Parameters |
+|---|---:|---:|---:|---:|
+| Vocabulary softmax (512 words) | 41.375% | 2.1965 per representable word | 66% | 92,632 |
+| Autoregressive byte fallback | **17.875%** | **1.7961 per byte/EOS** | 100% | 67,032 |
+| Parallel RKE-Head | 17.250% | 2.2483 per byte/EOS | 100% | **41,332** |
+| Masked parallel RKE | **18.625%** | 2.1395 per byte/EOS | 100% | 41,560 |
+| Two-pass refined RKE | 17.250% | 2.2553 per byte/EOS | 100% | 41,560 |
+| **Causal RKE-Head** | **17.875%** | **1.8042 per byte/EOS** | **100%** | **41,332** |
+
+The vocabulary NLL has a different unit and excludes OOV targets, so it must not be compared numerically with the byte-normalized rows. All RKE and fallback variants cover every selected target and produce 100% valid UTF-8. Parallel RKE is much faster in this small CPU decode benchmark, but its byte/EOS NLL is about 25.2% worse than fallback. The eight-lag masked slot convolution improves NLL to 2.1395 and exact match to 18.625% in one fixed-depth parallel pass, but still misses the 5% NLL gate. At the corrected 5,000-step convergence budget, causal RKE reaches 1.8042 NLL and 17.875% exact match, compared with fallback's 1.7961 and 17.875%. It retains the same 258-state tied codebook, zero separate output parameters and 41,332 total parameters, at the cost of autoregressive decoding.
+
+The three-seed result is the qualification metric, not the best single run. Causal RKE mean NLL is `1.8101 ± 0.0246` (95% CI half-width) and mean exact match is `17.625% ± 0.374%`; fallback is `1.7987 ± 0.0097` and `18.042% ± 0.726%`. The causal means remain within the predefined 5% thresholds, so the multi-seed gate passes. Every seed, model hash, duration and metric is generated in `seed_stability`.
+
+The fixed neural arm's 24-byte bound covers 99.75% of English, 96.17% of Hindi, 91.33% of Telugu and 99.95% of Sindhi words in these sources. `ContinuationByteCodec` now removes truncation at the representation layer with explicit `CONT` and `EOS` states; generated proofs round-trip payloads through 10,000 bytes. Neural batching across those blocks is not implemented yet, so that gate remains partial. See `artifacts/natural_corpus/results.json` for corpus hashes, splits, per-language and byte-length metrics, calibration, predictions, decode speed, model hashes and training curves; see `artifacts/production_readiness.md` for the gate assessment.
+
+The measured NLL gap was addressed with a causal tied-codebook arm. During training it teacher-forces the preceding byte slots; during decoding it feeds the valid UTF-8 prefix back into the same transformer and scores the next RKE slot through `Ein.T`. This adds no classifier matrix and demonstrates that the quality loss came mainly from conditional independence between parallel slots.
+
+`MaskedSlotRKE` tests the parallel alternative directly. A causal eight-lag convolution mixes only earlier latent slots into each later slot, but all positions are evaluated in vectorized fixed depth. Its finite-difference gradient and causal direction are tested. It improves the original parallel arm but does not observe actual previously chosen bytes, so it cannot reproduce the full autoregressive advantage. This negative result is retained in the evidence rather than labelled a fix.
+
+`RefinedSlotRKE` then tests a fixed two-pass alternative. Pass one proposes every slot; its temperature-sharpened distributions are mapped back through the same `Ein` codebook; pass two uses a masked eight-lag refiner and emits every corrected slot together. The refiner is zero-initialized, so its initial output is exactly the proposal rather than a random perturbation. End-to-end finite-difference checks cover `Wref`, the tied `Ein`, and the transformer body. It reaches 2.2553 test NLL and therefore fails to improve on the simpler masked arm. This rules out this small refiner, not proposal/refinement methods in general.
+
+Passing this pilot quality gate does not make the system production-ready. Long-token coverage, GPU execution, large-scale pretraining, distributed recovery and a broader Unicode security suite remain open gates in the generated readiness report.
+
+## Production-test qualification
+
+The PyTorch port loads the exact NumPy parameters and compares float64 logits, masked loss, every parameter gradient and one Adam update. Maximum errors are `3.5e-18` for logits, `2.6e-10` for loss, `1.1e-17` for gradients and `1.4e-17` for the optimizer step. CPU framework parity therefore passes. This environment exposes neither CUDA nor MPS, so accelerator and mixed-precision gates are not inferred from CPU behavior.
+
+The generated verdict is currently **not a candidate for costly production-scale testing**. The remaining required blockers are neural continuation-block integration, accelerator benchmarks, a versioned multi-document corpus and the full Unicode security suite. This verdict is computed from named gates in `artifacts/production_readiness.json`; it is not a README assertion.
+
 ## Run everything
 
 ```bash
@@ -151,6 +197,12 @@ After `python3 S7/run_experiment.py`:
 - `artifacts/lm_v2/comparison.svg` — next-token held-out comparison;
 - `artifacts/lm_v2/predictions.json` — every held-out target and reconstructed output;
 - `artifacts/lm_v2/split.json` — the exact training, seen-control and held-out composition split.
+- `artifacts/multilingual/results.json` — full-byte aggregate, per-script and byte-length metrics;
+- `artifacts/multilingual/predictions.json` — Unicode targets, UTF-8 bytes and decoded outputs;
+- `artifacts/multilingual/split.json` — exact multilingual train and whole-word holdout split.
+- `artifacts/natural_corpus/results.json` — real-corpus NLL, exact match, calibration, coverage, speed and hashes;
+- `artifacts/natural_corpus/split.json` and `predictions.json` — paragraph-isolated examples and decoded outputs;
+- `artifacts/production_readiness.json` and `.md` — generated quality and deployment gates.
 
 At the demo width, a one-million-token vocabulary head would have `d_model × 1,000,000` parameters. The RKE output adds **zero** separate head parameters; it reuses the fixed-size input byte codebook. `results.json` computes the exact comparison rather than hardcoding it.
 
@@ -174,24 +226,28 @@ Closed-vocabulary OOV NLL is reported as undefined, not replaced by UNK NLL: a s
 
 For text decoding, the full-byte path applies an incremental UTF-8 mask. Invalid continuation bytes are forbidden, and EOS is legal only at a complete code-point boundary. The generated evidence deliberately makes invalid byte `0xFF` the highest unconstrained logit and proves valid recovery of both `é` and `अ`.
 
-This remains a controlled compositional language, not a natural-corpus perplexity claim. The next serious experiment should freeze a real tokenizer and compare the three heads on identical natural-language contexts with seen/OOV and byte-length NLL buckets.
+This remains a controlled compositional language, not a natural-corpus perplexity claim. The V2.1 pilot above performs the corresponding frozen-split natural multilingual comparison and reports its weaker, more realistic metrics separately.
 
 ## Files
 
 - `rke.py` — codecs, tiny transformer, manual backpropagation and Adam;
 - `lm_compare.py` — matched vocabulary, byte-fallback and RKE next-token arms;
+- `multilingual.py` — full-byte Hindi, Telugu, Tamil and Arabic experiment;
+- `natural_corpus.py` — natural English, Hindi, Telugu and Sindhi matched-arm pilot;
+- `torch_port.py` — parameter-identical PyTorch port and NumPy parity oracle;
 - `run_experiment.py` — deterministic experiment and evidence generator;
 - `tests/test_rke.py` — codec and split invariants;
 - `OTHER_IDEAS.md` — four separate Kronecker V2 research proposals;
-- `requirements.txt` — NumPy only.
+- `requirements.txt` — NumPy and PyTorch.
 
 ## Honest limitations and next experiments
 
-1. The neural experiments use a ten-character subset for speed, although the separate analytic proof executes all 256 bytes.
-2. V2 establishes controlled next-token composition, not natural-language perplexity, semantics or generation fluency.
+1. The controlled matched experiment uses a ten-character subset for speed; both multilingual experiments use the full 258-state byte codec.
+2. The natural pilot is small next-word prediction, not document-scale pretraining, semantic evaluation or generation-fluency evidence.
 3. Output compute is `O(P × 258)`. It is vocabulary-independent, not free.
-4. Length is bounded by `P`; RKE fixes information loss within that bound but does not solve truly unbounded words.
+4. Continuation blocks remove codec truncation, but the neural trainer still accepts only one fixed block per token.
 5. The raw byte codec can represent invalid UTF-8; the provided constrained decoder prevents it for text output, but production implementations must preserve that constraint.
-6. A serious follow-up should compare vocabulary softmax, paper Hypothesis A, distributional Hypothesis B, and RKE-Head on matched-compute natural-corpus language modelling.
+6. Both tested fixed-depth parallel refiners miss byte-fallback NLL parity; causal RKE passes the pilot parity gate but gives up parallel decoding.
+7. PyTorch CPU parity is proven; accelerator kernels, mixed precision, distributed checkpointing and Unicode security stress tests remain unverified.
 
-The strongest paper-worthy next step is a multilingual next-token experiment with held-out whole-word types: train both heads on identical transformer bodies, then measure NLL, exact generation, OOV composition, parameter count and wall-clock decode cost.
+The next paper-worthy alternative is blockwise causal decoding: emit small groups of slots in parallel while conditioning each group on completed preceding groups. It offers a measurable speed/quality continuum instead of assuming that one or two fully parallel passes can match the byte chain rule. Before costly testing, continuation blocks must be integrated into neural loss/batching, PyTorch must be benchmarked on an accelerator, and substantially larger document-separated corpora must replace the four single-article sources.

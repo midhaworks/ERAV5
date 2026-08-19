@@ -1,0 +1,2966 @@
+{
+  "train": [
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "क"
+      ],
+      "target": "कि",
+      "utf8_bytes": [
+        224,
+        164,
+        149,
+        224,
+        164,
+        191
+      ],
+      "raw": "कि",
+      "constrained": "कि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "क"
+      ],
+      "target": "की",
+      "utf8_bytes": [
+        224,
+        164,
+        149,
+        224,
+        165,
+        128
+      ],
+      "raw": "की",
+      "constrained": "की",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "क"
+      ],
+      "target": "कु",
+      "utf8_bytes": [
+        224,
+        164,
+        149,
+        224,
+        165,
+        129
+      ],
+      "raw": "कु",
+      "constrained": "कु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "ग"
+      ],
+      "target": "गा",
+      "utf8_bytes": [
+        224,
+        164,
+        151,
+        224,
+        164,
+        190
+      ],
+      "raw": "गा",
+      "constrained": "गा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "ग"
+      ],
+      "target": "गि",
+      "utf8_bytes": [
+        224,
+        164,
+        151,
+        224,
+        164,
+        191
+      ],
+      "raw": "गि",
+      "constrained": "गि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "ग"
+      ],
+      "target": "गी",
+      "utf8_bytes": [
+        224,
+        164,
+        151,
+        224,
+        165,
+        128
+      ],
+      "raw": "गी",
+      "constrained": "गी",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "ग"
+      ],
+      "target": "गु",
+      "utf8_bytes": [
+        224,
+        164,
+        151,
+        224,
+        165,
+        129
+      ],
+      "raw": "गु",
+      "constrained": "गु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "च"
+      ],
+      "target": "चा",
+      "utf8_bytes": [
+        224,
+        164,
+        154,
+        224,
+        164,
+        190
+      ],
+      "raw": "चा",
+      "constrained": "चा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "च"
+      ],
+      "target": "चि",
+      "utf8_bytes": [
+        224,
+        164,
+        154,
+        224,
+        164,
+        191
+      ],
+      "raw": "चि",
+      "constrained": "चि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "च"
+      ],
+      "target": "ची",
+      "utf8_bytes": [
+        224,
+        164,
+        154,
+        224,
+        165,
+        128
+      ],
+      "raw": "ची",
+      "constrained": "ची",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "ज"
+      ],
+      "target": "जा",
+      "utf8_bytes": [
+        224,
+        164,
+        156,
+        224,
+        164,
+        190
+      ],
+      "raw": "जा",
+      "constrained": "जा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "ज"
+      ],
+      "target": "जि",
+      "utf8_bytes": [
+        224,
+        164,
+        156,
+        224,
+        164,
+        191
+      ],
+      "raw": "जि",
+      "constrained": "जि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "ज"
+      ],
+      "target": "जु",
+      "utf8_bytes": [
+        224,
+        164,
+        156,
+        224,
+        165,
+        129
+      ],
+      "raw": "जु",
+      "constrained": "जु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "ट"
+      ],
+      "target": "टा",
+      "utf8_bytes": [
+        224,
+        164,
+        159,
+        224,
+        164,
+        190
+      ],
+      "raw": "टा",
+      "constrained": "टा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "ट"
+      ],
+      "target": "टी",
+      "utf8_bytes": [
+        224,
+        164,
+        159,
+        224,
+        165,
+        128
+      ],
+      "raw": "टी",
+      "constrained": "टी",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "ट"
+      ],
+      "target": "टु",
+      "utf8_bytes": [
+        224,
+        164,
+        159,
+        224,
+        165,
+        129
+      ],
+      "raw": "टु",
+      "constrained": "टु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "ड"
+      ],
+      "target": "डि",
+      "utf8_bytes": [
+        224,
+        164,
+        161,
+        224,
+        164,
+        191
+      ],
+      "raw": "डि",
+      "constrained": "डि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "ड"
+      ],
+      "target": "डी",
+      "utf8_bytes": [
+        224,
+        164,
+        161,
+        224,
+        165,
+        128
+      ],
+      "raw": "डी",
+      "constrained": "डी",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "ड"
+      ],
+      "target": "डु",
+      "utf8_bytes": [
+        224,
+        164,
+        161,
+        224,
+        165,
+        129
+      ],
+      "raw": "डु",
+      "constrained": "डु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "त"
+      ],
+      "target": "ता",
+      "utf8_bytes": [
+        224,
+        164,
+        164,
+        224,
+        164,
+        190
+      ],
+      "raw": "ता",
+      "constrained": "ता",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "त"
+      ],
+      "target": "ति",
+      "utf8_bytes": [
+        224,
+        164,
+        164,
+        224,
+        164,
+        191
+      ],
+      "raw": "ति",
+      "constrained": "ति",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "त"
+      ],
+      "target": "ती",
+      "utf8_bytes": [
+        224,
+        164,
+        164,
+        224,
+        165,
+        128
+      ],
+      "raw": "ती",
+      "constrained": "ती",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "त"
+      ],
+      "target": "तु",
+      "utf8_bytes": [
+        224,
+        164,
+        164,
+        224,
+        165,
+        129
+      ],
+      "raw": "तु",
+      "constrained": "तु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "न"
+      ],
+      "target": "ना",
+      "utf8_bytes": [
+        224,
+        164,
+        168,
+        224,
+        164,
+        190
+      ],
+      "raw": "ना",
+      "constrained": "ना",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "न"
+      ],
+      "target": "नि",
+      "utf8_bytes": [
+        224,
+        164,
+        168,
+        224,
+        164,
+        191
+      ],
+      "raw": "नि",
+      "constrained": "नि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "न"
+      ],
+      "target": "नी",
+      "utf8_bytes": [
+        224,
+        164,
+        168,
+        224,
+        165,
+        128
+      ],
+      "raw": "नी",
+      "constrained": "नी",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "प"
+      ],
+      "target": "पा",
+      "utf8_bytes": [
+        224,
+        164,
+        170,
+        224,
+        164,
+        190
+      ],
+      "raw": "पा",
+      "constrained": "पा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "प"
+      ],
+      "target": "पि",
+      "utf8_bytes": [
+        224,
+        164,
+        170,
+        224,
+        164,
+        191
+      ],
+      "raw": "पि",
+      "constrained": "पि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "प"
+      ],
+      "target": "पु",
+      "utf8_bytes": [
+        224,
+        164,
+        170,
+        224,
+        165,
+        129
+      ],
+      "raw": "पु",
+      "constrained": "पु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "र"
+      ],
+      "target": "रा",
+      "utf8_bytes": [
+        224,
+        164,
+        176,
+        224,
+        164,
+        190
+      ],
+      "raw": "रा",
+      "constrained": "रा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "र"
+      ],
+      "target": "री",
+      "utf8_bytes": [
+        224,
+        164,
+        176,
+        224,
+        165,
+        128
+      ],
+      "raw": "री",
+      "constrained": "री",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "र"
+      ],
+      "target": "रु",
+      "utf8_bytes": [
+        224,
+        164,
+        176,
+        224,
+        165,
+        129
+      ],
+      "raw": "रु",
+      "constrained": "रु",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "క"
+      ],
+      "target": "కి",
+      "utf8_bytes": [
+        224,
+        176,
+        149,
+        224,
+        176,
+        191
+      ],
+      "raw": "కి",
+      "constrained": "కి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "క"
+      ],
+      "target": "కీ",
+      "utf8_bytes": [
+        224,
+        176,
+        149,
+        224,
+        177,
+        128
+      ],
+      "raw": "కీ",
+      "constrained": "కీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "క"
+      ],
+      "target": "కు",
+      "utf8_bytes": [
+        224,
+        176,
+        149,
+        224,
+        177,
+        129
+      ],
+      "raw": "కు",
+      "constrained": "కు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "గ"
+      ],
+      "target": "గా",
+      "utf8_bytes": [
+        224,
+        176,
+        151,
+        224,
+        176,
+        190
+      ],
+      "raw": "గా",
+      "constrained": "గా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "గ"
+      ],
+      "target": "గి",
+      "utf8_bytes": [
+        224,
+        176,
+        151,
+        224,
+        176,
+        191
+      ],
+      "raw": "గి",
+      "constrained": "గి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "గ"
+      ],
+      "target": "గీ",
+      "utf8_bytes": [
+        224,
+        176,
+        151,
+        224,
+        177,
+        128
+      ],
+      "raw": "గీ",
+      "constrained": "గీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "గ"
+      ],
+      "target": "గు",
+      "utf8_bytes": [
+        224,
+        176,
+        151,
+        224,
+        177,
+        129
+      ],
+      "raw": "గు",
+      "constrained": "గు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "చ"
+      ],
+      "target": "చా",
+      "utf8_bytes": [
+        224,
+        176,
+        154,
+        224,
+        176,
+        190
+      ],
+      "raw": "చా",
+      "constrained": "చా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "చ"
+      ],
+      "target": "చి",
+      "utf8_bytes": [
+        224,
+        176,
+        154,
+        224,
+        176,
+        191
+      ],
+      "raw": "చి",
+      "constrained": "చి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "చ"
+      ],
+      "target": "చీ",
+      "utf8_bytes": [
+        224,
+        176,
+        154,
+        224,
+        177,
+        128
+      ],
+      "raw": "చీ",
+      "constrained": "చీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "జ"
+      ],
+      "target": "జా",
+      "utf8_bytes": [
+        224,
+        176,
+        156,
+        224,
+        176,
+        190
+      ],
+      "raw": "జా",
+      "constrained": "జా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "జ"
+      ],
+      "target": "జి",
+      "utf8_bytes": [
+        224,
+        176,
+        156,
+        224,
+        176,
+        191
+      ],
+      "raw": "జి",
+      "constrained": "జి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "జ"
+      ],
+      "target": "జు",
+      "utf8_bytes": [
+        224,
+        176,
+        156,
+        224,
+        177,
+        129
+      ],
+      "raw": "జు",
+      "constrained": "జు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "ట"
+      ],
+      "target": "టా",
+      "utf8_bytes": [
+        224,
+        176,
+        159,
+        224,
+        176,
+        190
+      ],
+      "raw": "టా",
+      "constrained": "టా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "ట"
+      ],
+      "target": "టీ",
+      "utf8_bytes": [
+        224,
+        176,
+        159,
+        224,
+        177,
+        128
+      ],
+      "raw": "టీ",
+      "constrained": "టీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "ట"
+      ],
+      "target": "టు",
+      "utf8_bytes": [
+        224,
+        176,
+        159,
+        224,
+        177,
+        129
+      ],
+      "raw": "టు",
+      "constrained": "టు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "డ"
+      ],
+      "target": "డి",
+      "utf8_bytes": [
+        224,
+        176,
+        161,
+        224,
+        176,
+        191
+      ],
+      "raw": "డి",
+      "constrained": "డి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "డ"
+      ],
+      "target": "డీ",
+      "utf8_bytes": [
+        224,
+        176,
+        161,
+        224,
+        177,
+        128
+      ],
+      "raw": "డీ",
+      "constrained": "డీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "డ"
+      ],
+      "target": "డు",
+      "utf8_bytes": [
+        224,
+        176,
+        161,
+        224,
+        177,
+        129
+      ],
+      "raw": "డు",
+      "constrained": "డు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "త"
+      ],
+      "target": "తా",
+      "utf8_bytes": [
+        224,
+        176,
+        164,
+        224,
+        176,
+        190
+      ],
+      "raw": "తా",
+      "constrained": "తా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "త"
+      ],
+      "target": "తి",
+      "utf8_bytes": [
+        224,
+        176,
+        164,
+        224,
+        176,
+        191
+      ],
+      "raw": "తి",
+      "constrained": "తి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "త"
+      ],
+      "target": "తీ",
+      "utf8_bytes": [
+        224,
+        176,
+        164,
+        224,
+        177,
+        128
+      ],
+      "raw": "తీ",
+      "constrained": "తీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "త"
+      ],
+      "target": "తు",
+      "utf8_bytes": [
+        224,
+        176,
+        164,
+        224,
+        177,
+        129
+      ],
+      "raw": "తు",
+      "constrained": "తు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "న"
+      ],
+      "target": "నా",
+      "utf8_bytes": [
+        224,
+        176,
+        168,
+        224,
+        176,
+        190
+      ],
+      "raw": "నా",
+      "constrained": "నా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "న"
+      ],
+      "target": "ని",
+      "utf8_bytes": [
+        224,
+        176,
+        168,
+        224,
+        176,
+        191
+      ],
+      "raw": "ని",
+      "constrained": "ని",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "న"
+      ],
+      "target": "నీ",
+      "utf8_bytes": [
+        224,
+        176,
+        168,
+        224,
+        177,
+        128
+      ],
+      "raw": "నీ",
+      "constrained": "నీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "ప"
+      ],
+      "target": "పా",
+      "utf8_bytes": [
+        224,
+        176,
+        170,
+        224,
+        176,
+        190
+      ],
+      "raw": "పా",
+      "constrained": "పా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "ప"
+      ],
+      "target": "పి",
+      "utf8_bytes": [
+        224,
+        176,
+        170,
+        224,
+        176,
+        191
+      ],
+      "raw": "పి",
+      "constrained": "పి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "ప"
+      ],
+      "target": "పు",
+      "utf8_bytes": [
+        224,
+        176,
+        170,
+        224,
+        177,
+        129
+      ],
+      "raw": "పు",
+      "constrained": "పు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "ర"
+      ],
+      "target": "రా",
+      "utf8_bytes": [
+        224,
+        176,
+        176,
+        224,
+        176,
+        190
+      ],
+      "raw": "రా",
+      "constrained": "రా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "ర"
+      ],
+      "target": "రీ",
+      "utf8_bytes": [
+        224,
+        176,
+        176,
+        224,
+        177,
+        128
+      ],
+      "raw": "రీ",
+      "constrained": "రీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "ర"
+      ],
+      "target": "రు",
+      "utf8_bytes": [
+        224,
+        176,
+        176,
+        224,
+        177,
+        129
+      ],
+      "raw": "రు",
+      "constrained": "రు",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "க"
+      ],
+      "target": "கி",
+      "utf8_bytes": [
+        224,
+        174,
+        149,
+        224,
+        174,
+        191
+      ],
+      "raw": "கி",
+      "constrained": "கி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "க"
+      ],
+      "target": "கீ",
+      "utf8_bytes": [
+        224,
+        174,
+        149,
+        224,
+        175,
+        128
+      ],
+      "raw": "கீ",
+      "constrained": "கீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "க"
+      ],
+      "target": "கு",
+      "utf8_bytes": [
+        224,
+        174,
+        149,
+        224,
+        175,
+        129
+      ],
+      "raw": "கு",
+      "constrained": "கு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ச"
+      ],
+      "target": "சா",
+      "utf8_bytes": [
+        224,
+        174,
+        154,
+        224,
+        174,
+        190
+      ],
+      "raw": "சா",
+      "constrained": "சா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ச"
+      ],
+      "target": "சி",
+      "utf8_bytes": [
+        224,
+        174,
+        154,
+        224,
+        174,
+        191
+      ],
+      "raw": "சி",
+      "constrained": "சி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ச"
+      ],
+      "target": "சீ",
+      "utf8_bytes": [
+        224,
+        174,
+        154,
+        224,
+        175,
+        128
+      ],
+      "raw": "சீ",
+      "constrained": "சீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ச"
+      ],
+      "target": "சு",
+      "utf8_bytes": [
+        224,
+        174,
+        154,
+        224,
+        175,
+        129
+      ],
+      "raw": "சு",
+      "constrained": "சு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ட"
+      ],
+      "target": "டா",
+      "utf8_bytes": [
+        224,
+        174,
+        159,
+        224,
+        174,
+        190
+      ],
+      "raw": "டா",
+      "constrained": "டா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ட"
+      ],
+      "target": "டி",
+      "utf8_bytes": [
+        224,
+        174,
+        159,
+        224,
+        174,
+        191
+      ],
+      "raw": "டி",
+      "constrained": "டி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ட"
+      ],
+      "target": "டீ",
+      "utf8_bytes": [
+        224,
+        174,
+        159,
+        224,
+        175,
+        128
+      ],
+      "raw": "டீ",
+      "constrained": "டீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "த"
+      ],
+      "target": "தா",
+      "utf8_bytes": [
+        224,
+        174,
+        164,
+        224,
+        174,
+        190
+      ],
+      "raw": "தா",
+      "constrained": "தா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "த"
+      ],
+      "target": "தி",
+      "utf8_bytes": [
+        224,
+        174,
+        164,
+        224,
+        174,
+        191
+      ],
+      "raw": "தி",
+      "constrained": "தி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "த"
+      ],
+      "target": "து",
+      "utf8_bytes": [
+        224,
+        174,
+        164,
+        224,
+        175,
+        129
+      ],
+      "raw": "து",
+      "constrained": "து",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ப"
+      ],
+      "target": "பா",
+      "utf8_bytes": [
+        224,
+        174,
+        170,
+        224,
+        174,
+        190
+      ],
+      "raw": "பா",
+      "constrained": "பா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ப"
+      ],
+      "target": "பீ",
+      "utf8_bytes": [
+        224,
+        174,
+        170,
+        224,
+        175,
+        128
+      ],
+      "raw": "பீ",
+      "constrained": "பீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ப"
+      ],
+      "target": "பு",
+      "utf8_bytes": [
+        224,
+        174,
+        170,
+        224,
+        175,
+        129
+      ],
+      "raw": "பு",
+      "constrained": "பு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ம"
+      ],
+      "target": "மி",
+      "utf8_bytes": [
+        224,
+        174,
+        174,
+        224,
+        174,
+        191
+      ],
+      "raw": "மி",
+      "constrained": "மி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ம"
+      ],
+      "target": "மீ",
+      "utf8_bytes": [
+        224,
+        174,
+        174,
+        224,
+        175,
+        128
+      ],
+      "raw": "மீ",
+      "constrained": "மீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ம"
+      ],
+      "target": "மு",
+      "utf8_bytes": [
+        224,
+        174,
+        174,
+        224,
+        175,
+        129
+      ],
+      "raw": "மு",
+      "constrained": "மு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ந"
+      ],
+      "target": "நா",
+      "utf8_bytes": [
+        224,
+        174,
+        168,
+        224,
+        174,
+        190
+      ],
+      "raw": "நா",
+      "constrained": "நா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ந"
+      ],
+      "target": "நி",
+      "utf8_bytes": [
+        224,
+        174,
+        168,
+        224,
+        174,
+        191
+      ],
+      "raw": "நி",
+      "constrained": "நி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ந"
+      ],
+      "target": "நீ",
+      "utf8_bytes": [
+        224,
+        174,
+        168,
+        224,
+        175,
+        128
+      ],
+      "raw": "நீ",
+      "constrained": "நீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ந"
+      ],
+      "target": "நு",
+      "utf8_bytes": [
+        224,
+        174,
+        168,
+        224,
+        175,
+        129
+      ],
+      "raw": "நு",
+      "constrained": "நு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ர"
+      ],
+      "target": "ரா",
+      "utf8_bytes": [
+        224,
+        174,
+        176,
+        224,
+        174,
+        190
+      ],
+      "raw": "ரா",
+      "constrained": "ரா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ர"
+      ],
+      "target": "ரி",
+      "utf8_bytes": [
+        224,
+        174,
+        176,
+        224,
+        174,
+        191
+      ],
+      "raw": "ரி",
+      "constrained": "ரி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ர"
+      ],
+      "target": "ரீ",
+      "utf8_bytes": [
+        224,
+        174,
+        176,
+        224,
+        175,
+        128
+      ],
+      "raw": "ரீ",
+      "constrained": "ரீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ல"
+      ],
+      "target": "லா",
+      "utf8_bytes": [
+        224,
+        174,
+        178,
+        224,
+        174,
+        190
+      ],
+      "raw": "லா",
+      "constrained": "லா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ல"
+      ],
+      "target": "லி",
+      "utf8_bytes": [
+        224,
+        174,
+        178,
+        224,
+        174,
+        191
+      ],
+      "raw": "லி",
+      "constrained": "லி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ல"
+      ],
+      "target": "லு",
+      "utf8_bytes": [
+        224,
+        174,
+        178,
+        224,
+        175,
+        129
+      ],
+      "raw": "லு",
+      "constrained": "லு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "வ"
+      ],
+      "target": "வா",
+      "utf8_bytes": [
+        224,
+        174,
+        181,
+        224,
+        174,
+        190
+      ],
+      "raw": "வா",
+      "constrained": "வா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "வ"
+      ],
+      "target": "வீ",
+      "utf8_bytes": [
+        224,
+        174,
+        181,
+        224,
+        175,
+        128
+      ],
+      "raw": "வீ",
+      "constrained": "வீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "வ"
+      ],
+      "target": "வு",
+      "utf8_bytes": [
+        224,
+        174,
+        181,
+        224,
+        175,
+        129
+      ],
+      "raw": "வு",
+      "constrained": "வு",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ا"
+      ],
+      "target": "اُ",
+      "utf8_bytes": [
+        216,
+        167,
+        217,
+        143
+      ],
+      "raw": "اُ",
+      "constrained": "اُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ا"
+      ],
+      "target": "اِ",
+      "utf8_bytes": [
+        216,
+        167,
+        217,
+        144
+      ],
+      "raw": "اِ",
+      "constrained": "اِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ا"
+      ],
+      "target": "اْ",
+      "utf8_bytes": [
+        216,
+        167,
+        217,
+        146
+      ],
+      "raw": "اْ",
+      "constrained": "اْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ب"
+      ],
+      "target": "بَ",
+      "utf8_bytes": [
+        216,
+        168,
+        217,
+        142
+      ],
+      "raw": "بَ",
+      "constrained": "بَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ب"
+      ],
+      "target": "بُ",
+      "utf8_bytes": [
+        216,
+        168,
+        217,
+        143
+      ],
+      "raw": "بُ",
+      "constrained": "بُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ب"
+      ],
+      "target": "بِ",
+      "utf8_bytes": [
+        216,
+        168,
+        217,
+        144
+      ],
+      "raw": "بِ",
+      "constrained": "بِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ب"
+      ],
+      "target": "بْ",
+      "utf8_bytes": [
+        216,
+        168,
+        217,
+        146
+      ],
+      "raw": "بْ",
+      "constrained": "بْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ت"
+      ],
+      "target": "تَ",
+      "utf8_bytes": [
+        216,
+        170,
+        217,
+        142
+      ],
+      "raw": "تَ",
+      "constrained": "تَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ت"
+      ],
+      "target": "تُ",
+      "utf8_bytes": [
+        216,
+        170,
+        217,
+        143
+      ],
+      "raw": "تُ",
+      "constrained": "تُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ت"
+      ],
+      "target": "تِ",
+      "utf8_bytes": [
+        216,
+        170,
+        217,
+        144
+      ],
+      "raw": "تِ",
+      "constrained": "تِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ث"
+      ],
+      "target": "ثَ",
+      "utf8_bytes": [
+        216,
+        171,
+        217,
+        142
+      ],
+      "raw": "ثَ",
+      "constrained": "ثَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ث"
+      ],
+      "target": "ثُ",
+      "utf8_bytes": [
+        216,
+        171,
+        217,
+        143
+      ],
+      "raw": "ثُ",
+      "constrained": "ثُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ث"
+      ],
+      "target": "ثْ",
+      "utf8_bytes": [
+        216,
+        171,
+        217,
+        146
+      ],
+      "raw": "ثْ",
+      "constrained": "ثْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ج"
+      ],
+      "target": "جَ",
+      "utf8_bytes": [
+        216,
+        172,
+        217,
+        142
+      ],
+      "raw": "جَ",
+      "constrained": "جَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ج"
+      ],
+      "target": "جِ",
+      "utf8_bytes": [
+        216,
+        172,
+        217,
+        144
+      ],
+      "raw": "جِ",
+      "constrained": "جِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ج"
+      ],
+      "target": "جْ",
+      "utf8_bytes": [
+        216,
+        172,
+        217,
+        146
+      ],
+      "raw": "جْ",
+      "constrained": "جْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ح"
+      ],
+      "target": "حُ",
+      "utf8_bytes": [
+        216,
+        173,
+        217,
+        143
+      ],
+      "raw": "حُ",
+      "constrained": "حُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ح"
+      ],
+      "target": "حِ",
+      "utf8_bytes": [
+        216,
+        173,
+        217,
+        144
+      ],
+      "raw": "حِ",
+      "constrained": "حِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ح"
+      ],
+      "target": "حْ",
+      "utf8_bytes": [
+        216,
+        173,
+        217,
+        146
+      ],
+      "raw": "حْ",
+      "constrained": "حْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "خ"
+      ],
+      "target": "خَ",
+      "utf8_bytes": [
+        216,
+        174,
+        217,
+        142
+      ],
+      "raw": "خَ",
+      "constrained": "خَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "خ"
+      ],
+      "target": "خُ",
+      "utf8_bytes": [
+        216,
+        174,
+        217,
+        143
+      ],
+      "raw": "خُ",
+      "constrained": "خُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "خ"
+      ],
+      "target": "خِ",
+      "utf8_bytes": [
+        216,
+        174,
+        217,
+        144
+      ],
+      "raw": "خِ",
+      "constrained": "خِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "خ"
+      ],
+      "target": "خْ",
+      "utf8_bytes": [
+        216,
+        174,
+        217,
+        146
+      ],
+      "raw": "خْ",
+      "constrained": "خْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "د"
+      ],
+      "target": "دَ",
+      "utf8_bytes": [
+        216,
+        175,
+        217,
+        142
+      ],
+      "raw": "دَ",
+      "constrained": "دَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "د"
+      ],
+      "target": "دُ",
+      "utf8_bytes": [
+        216,
+        175,
+        217,
+        143
+      ],
+      "raw": "دُ",
+      "constrained": "دُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "د"
+      ],
+      "target": "دِ",
+      "utf8_bytes": [
+        216,
+        175,
+        217,
+        144
+      ],
+      "raw": "دِ",
+      "constrained": "دِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ذ"
+      ],
+      "target": "ذَ",
+      "utf8_bytes": [
+        216,
+        176,
+        217,
+        142
+      ],
+      "raw": "ذَ",
+      "constrained": "ذَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ذ"
+      ],
+      "target": "ذُ",
+      "utf8_bytes": [
+        216,
+        176,
+        217,
+        143
+      ],
+      "raw": "ذُ",
+      "constrained": "ذُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ذ"
+      ],
+      "target": "ذْ",
+      "utf8_bytes": [
+        216,
+        176,
+        217,
+        146
+      ],
+      "raw": "ذْ",
+      "constrained": "ذْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ر"
+      ],
+      "target": "رَ",
+      "utf8_bytes": [
+        216,
+        177,
+        217,
+        142
+      ],
+      "raw": "رَ",
+      "constrained": "رَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ر"
+      ],
+      "target": "رِ",
+      "utf8_bytes": [
+        216,
+        177,
+        217,
+        144
+      ],
+      "raw": "رِ",
+      "constrained": "رِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ر"
+      ],
+      "target": "رْ",
+      "utf8_bytes": [
+        216,
+        177,
+        217,
+        146
+      ],
+      "raw": "رْ",
+      "constrained": "رْ",
+      "exact": true
+    }
+  ],
+  "held_out": [
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "क"
+      ],
+      "target": "का",
+      "utf8_bytes": [
+        224,
+        164,
+        149,
+        224,
+        164,
+        190
+      ],
+      "raw": "का",
+      "constrained": "का",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "च"
+      ],
+      "target": "चु",
+      "utf8_bytes": [
+        224,
+        164,
+        154,
+        224,
+        165,
+        129
+      ],
+      "raw": "चु",
+      "constrained": "चु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "ज"
+      ],
+      "target": "जी",
+      "utf8_bytes": [
+        224,
+        164,
+        156,
+        224,
+        165,
+        128
+      ],
+      "raw": "जी",
+      "constrained": "जी",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "ट"
+      ],
+      "target": "टि",
+      "utf8_bytes": [
+        224,
+        164,
+        159,
+        224,
+        164,
+        191
+      ],
+      "raw": "टि",
+      "constrained": "टि",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ा",
+        "ड"
+      ],
+      "target": "डा",
+      "utf8_bytes": [
+        224,
+        164,
+        161,
+        224,
+        164,
+        190
+      ],
+      "raw": "डा",
+      "constrained": "डा",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ु",
+        "न"
+      ],
+      "target": "नु",
+      "utf8_bytes": [
+        224,
+        164,
+        168,
+        224,
+        165,
+        129
+      ],
+      "raw": "नु",
+      "constrained": "नु",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ी",
+        "प"
+      ],
+      "target": "पी",
+      "utf8_bytes": [
+        224,
+        164,
+        170,
+        224,
+        165,
+        128
+      ],
+      "raw": "पी",
+      "constrained": "पी",
+      "exact": true
+    },
+    {
+      "script": "Hindi-Devanagari",
+      "context": [
+        "ि",
+        "र"
+      ],
+      "target": "रि",
+      "utf8_bytes": [
+        224,
+        164,
+        176,
+        224,
+        164,
+        191
+      ],
+      "raw": "रि",
+      "constrained": "रि",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "క"
+      ],
+      "target": "కా",
+      "utf8_bytes": [
+        224,
+        176,
+        149,
+        224,
+        176,
+        190
+      ],
+      "raw": "కా",
+      "constrained": "కా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "చ"
+      ],
+      "target": "చు",
+      "utf8_bytes": [
+        224,
+        176,
+        154,
+        224,
+        177,
+        129
+      ],
+      "raw": "చు",
+      "constrained": "చు",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "జ"
+      ],
+      "target": "జీ",
+      "utf8_bytes": [
+        224,
+        176,
+        156,
+        224,
+        177,
+        128
+      ],
+      "raw": "జీ",
+      "constrained": "జీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "ట"
+      ],
+      "target": "టి",
+      "utf8_bytes": [
+        224,
+        176,
+        159,
+        224,
+        176,
+        191
+      ],
+      "raw": "టి",
+      "constrained": "టి",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ా",
+        "డ"
+      ],
+      "target": "డా",
+      "utf8_bytes": [
+        224,
+        176,
+        161,
+        224,
+        176,
+        190
+      ],
+      "raw": "డా",
+      "constrained": "డా",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ు",
+        "న"
+      ],
+      "target": "ను",
+      "utf8_bytes": [
+        224,
+        176,
+        168,
+        224,
+        177,
+        129
+      ],
+      "raw": "ను",
+      "constrained": "ను",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ీ",
+        "ప"
+      ],
+      "target": "పీ",
+      "utf8_bytes": [
+        224,
+        176,
+        170,
+        224,
+        177,
+        128
+      ],
+      "raw": "పీ",
+      "constrained": "పీ",
+      "exact": true
+    },
+    {
+      "script": "Telugu",
+      "context": [
+        "ి",
+        "ర"
+      ],
+      "target": "రి",
+      "utf8_bytes": [
+        224,
+        176,
+        176,
+        224,
+        176,
+        191
+      ],
+      "raw": "రి",
+      "constrained": "రి",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "க"
+      ],
+      "target": "கா",
+      "utf8_bytes": [
+        224,
+        174,
+        149,
+        224,
+        174,
+        190
+      ],
+      "raw": "கா",
+      "constrained": "கா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ட"
+      ],
+      "target": "டு",
+      "utf8_bytes": [
+        224,
+        174,
+        159,
+        224,
+        175,
+        129
+      ],
+      "raw": "டு",
+      "constrained": "டு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "த"
+      ],
+      "target": "தீ",
+      "utf8_bytes": [
+        224,
+        174,
+        164,
+        224,
+        175,
+        128
+      ],
+      "raw": "தீ",
+      "constrained": "தீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "ப"
+      ],
+      "target": "பி",
+      "utf8_bytes": [
+        224,
+        174,
+        170,
+        224,
+        174,
+        191
+      ],
+      "raw": "பி",
+      "constrained": "பி",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ா",
+        "ம"
+      ],
+      "target": "மா",
+      "utf8_bytes": [
+        224,
+        174,
+        174,
+        224,
+        174,
+        190
+      ],
+      "raw": "மா",
+      "constrained": "மா",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ு",
+        "ர"
+      ],
+      "target": "ரு",
+      "utf8_bytes": [
+        224,
+        174,
+        176,
+        224,
+        175,
+        129
+      ],
+      "raw": "ரு",
+      "constrained": "ரு",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ீ",
+        "ல"
+      ],
+      "target": "லீ",
+      "utf8_bytes": [
+        224,
+        174,
+        178,
+        224,
+        175,
+        128
+      ],
+      "raw": "லீ",
+      "constrained": "லீ",
+      "exact": true
+    },
+    {
+      "script": "Tamil",
+      "context": [
+        "ி",
+        "வ"
+      ],
+      "target": "வி",
+      "utf8_bytes": [
+        224,
+        174,
+        181,
+        224,
+        174,
+        191
+      ],
+      "raw": "வி",
+      "constrained": "வி",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ا"
+      ],
+      "target": "اَ",
+      "utf8_bytes": [
+        216,
+        167,
+        217,
+        142
+      ],
+      "raw": "اَ",
+      "constrained": "اَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "ت"
+      ],
+      "target": "تْ",
+      "utf8_bytes": [
+        216,
+        170,
+        217,
+        146
+      ],
+      "raw": "تْ",
+      "constrained": "تْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ث"
+      ],
+      "target": "ثِ",
+      "utf8_bytes": [
+        216,
+        171,
+        217,
+        144
+      ],
+      "raw": "ثِ",
+      "constrained": "ثِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ج"
+      ],
+      "target": "جُ",
+      "utf8_bytes": [
+        216,
+        172,
+        217,
+        143
+      ],
+      "raw": "جُ",
+      "constrained": "جُ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "َ",
+        "ح"
+      ],
+      "target": "حَ",
+      "utf8_bytes": [
+        216,
+        173,
+        217,
+        142
+      ],
+      "raw": "حَ",
+      "constrained": "حَ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ْ",
+        "د"
+      ],
+      "target": "دْ",
+      "utf8_bytes": [
+        216,
+        175,
+        217,
+        146
+      ],
+      "raw": "دْ",
+      "constrained": "دْ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ِ",
+        "ذ"
+      ],
+      "target": "ذِ",
+      "utf8_bytes": [
+        216,
+        176,
+        217,
+        144
+      ],
+      "raw": "ذِ",
+      "constrained": "ذِ",
+      "exact": true
+    },
+    {
+      "script": "Arabic",
+      "context": [
+        "ُ",
+        "ر"
+      ],
+      "target": "رُ",
+      "utf8_bytes": [
+        216,
+        177,
+        217,
+        143
+      ],
+      "raw": "رُ",
+      "constrained": "رُ",
+      "exact": true
+    }
+  ]
+}

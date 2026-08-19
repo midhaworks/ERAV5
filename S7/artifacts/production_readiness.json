@@ -1,0 +1,97 @@
+{
+  "candidate_required_gates": [
+    "multi_seed_quality_parity",
+    "dynamic_blocks_in_neural_model",
+    "numpy_pytorch_cpu_parity",
+    "accelerator_kernel_and_mixed_precision",
+    "multi_document_corpus",
+    "unicode_security_suite"
+  ],
+  "costly_production_scale_test_candidate": false,
+  "gates": {
+    "accelerator_kernel_and_mixed_precision": {
+      "reason": "No CUDA or MPS device exposed",
+      "status": "NOT_RUN"
+    },
+    "constrained_utf8": {
+      "evidence": "multilingual/results.json",
+      "status": "PASS"
+    },
+    "corpus_byte_coverage": {
+      "evidence": "natural_corpus/results.json corpus audit",
+      "status": "PARTIAL"
+    },
+    "distributed_checkpointing": {
+      "status": "NOT_RUN"
+    },
+    "dynamic_blocks_in_neural_model": {
+      "status": "PARTIAL"
+    },
+    "dynamic_continuation_codec": {
+      "evidence": "results.json continuation_block_proof",
+      "status": "PASS"
+    },
+    "large_scale_pretraining": {
+      "status": "NOT_RUN"
+    },
+    "multi_document_corpus": {
+      "reason": "Only one source article per language is available",
+      "status": "FAIL"
+    },
+    "multi_seed_quality_parity": {
+      "evidence": "natural_corpus/results.json seed_stability",
+      "status": "PASS"
+    },
+    "natural_corpus_evaluation": {
+      "evidence": "natural_corpus/results.json",
+      "status": "PASS"
+    },
+    "numpy_pytorch_cpu_parity": {
+      "evidence": "torch_parity.json",
+      "status": "PASS"
+    },
+    "parallel_quality_parity": {
+      "arm": "masked_rke",
+      "fallback_exact": 0.17875,
+      "fallback_nll": 1.7960520878104467,
+      "relative_tolerance": 0.05,
+      "rke_exact": 0.18625,
+      "rke_nll": 2.1395242440371347,
+      "status": "FAIL"
+    },
+    "quality_parity_with_byte_fallback": {
+      "arm": "causal_rke",
+      "fallback_exact": 0.17875,
+      "fallback_nll": 1.7960520878104467,
+      "relative_tolerance": 0.05,
+      "rke_exact": 0.17875,
+      "rke_nll": 1.804237009311691,
+      "status": "PASS"
+    },
+    "two_pass_quality_parity": {
+      "arm": "refined_rke",
+      "fallback_exact": 0.17875,
+      "fallback_nll": 1.7960520878104467,
+      "relative_tolerance": 0.05,
+      "rke_exact": 0.1725,
+      "rke_nll": 2.25534110526208,
+      "status": "FAIL"
+    },
+    "unicode_security_suite": {
+      "status": "PARTIAL"
+    }
+  },
+  "next_actions": [
+    "Integrate continuation blocks into neural batching and loss accounting.",
+    "Test blockwise causal decoding or distillation to trade a few sequential groups for quality.",
+    "Benchmark PyTorch mixed precision on an available accelerator.",
+    "Acquire a versioned multi-document multilingual corpus.",
+    "Train on document-separated multilingual corpora at larger scale."
+  ],
+  "production_ready": false,
+  "resolved_actions": [
+    "Causal tied-codebook output closes the natural-pilot mean quality gap across three seeds.",
+    "PyTorch matches NumPy logits, loss, gradients and one optimizer step.",
+    "Explicit continuation blocks losslessly encode long byte strings."
+  ]
+}

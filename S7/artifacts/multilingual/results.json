@@ -1,0 +1,149 @@
+{
+  "claims": {
+    "every_script_at_least_95_percent": true,
+    "held_out_exact_at_least_95_percent": true,
+    "whole_words_held_out": true,
+    "zero_constrained_invalid_utf8": true
+  },
+  "closed_vocabulary_baseline": {
+    "held_out_representable_fraction": 0.0,
+    "note": "all held-out whole strings are absent from the training vocabulary"
+  },
+  "codec": {
+    "eos": true,
+    "max_bytes": 6,
+    "pad_masked": true,
+    "states": 258
+  },
+  "dataset_hash": "0d069462f917dd256a55df198951a2ecbe9565241db7ae3cbdc2b860c7c846b7",
+  "experiment": "full-byte multilingual next-token composition",
+  "held_out": {
+    "calibration": {
+      "brier": 0.005834529296294858,
+      "ece_10_bin": 0.02529537651517914,
+      "mean_confidence": 0.9747046234848208
+    },
+    "constrained_exact_match": 1.0,
+    "constrained_invalid_utf8_rate": 0.0,
+    "examples": 32,
+    "nll_per_byte_or_eos": 0.004449112625372698,
+    "nll_per_word": 0.028919232064922536,
+    "per_script": {
+      "Arabic": {
+        "constrained_exact_match": 1.0,
+        "examples": 8,
+        "nll_per_byte_or_eos": 0.021682096875838927,
+        "raw_exact_match": 1.0
+      },
+      "Hindi-Devanagari": {
+        "constrained_exact_match": 1.0,
+        "examples": 8,
+        "nll_per_byte_or_eos": 0.0001562995950730651,
+        "raw_exact_match": 1.0
+      },
+      "Tamil": {
+        "constrained_exact_match": 1.0,
+        "examples": 8,
+        "nll_per_byte_or_eos": 0.0007328633272176184,
+        "raw_exact_match": 1.0
+      },
+      "Telugu": {
+        "constrained_exact_match": 1.0,
+        "examples": 8,
+        "nll_per_byte_or_eos": 0.00014890048920867437,
+        "raw_exact_match": 1.0
+      }
+    },
+    "per_utf8_byte_length": {
+      "4": {
+        "exact_match": 1.0,
+        "examples": 8,
+        "nll_per_byte_or_eos": 0.021682096875838927
+      },
+      "6": {
+        "exact_match": 1.0,
+        "examples": 24,
+        "nll_per_byte_or_eos": 0.0003460211371664526
+      }
+    },
+    "raw_exact_match": 1.0,
+    "raw_invalid_utf8_rate": 0.0
+  },
+  "limitations": [
+    "Four controlled scripts and 160 generated combinations, not a natural multilingual corpus.",
+    "The rule is compositional concatenation; this does not establish multilingual semantics or perplexity.",
+    "Maximum output is six UTF-8 bytes in this experiment."
+  ],
+  "model_hash": "0c16848104498a5e4f5df1847789b5c2da4b98838654cae15f5a92cd4f3d8360",
+  "overall_pass": true,
+  "scripts": [
+    "Hindi-Devanagari",
+    "Telugu",
+    "Tamil",
+    "Arabic"
+  ],
+  "seed": 33,
+  "split": {
+    "components_covered_in_train": true,
+    "held_out": 32,
+    "train": 128,
+    "whole_target_overlap": 0
+  },
+  "train": {
+    "calibration": {
+      "brier": 1.544914191736177e-06,
+      "ece_10_bin": 0.0008749584250813403,
+      "mean_confidence": 0.9991250415749187
+    },
+    "constrained_exact_match": 1.0,
+    "constrained_invalid_utf8_rate": 0.0,
+    "examples": 128,
+    "nll_per_byte_or_eos": 0.00013472804184475612,
+    "nll_per_word": 0.0008757322719909149,
+    "per_script": {
+      "Arabic": {
+        "constrained_exact_match": 1.0,
+        "examples": 32,
+        "nll_per_byte_or_eos": 0.0002496792270840147,
+        "raw_exact_match": 1.0
+      },
+      "Hindi-Devanagari": {
+        "constrained_exact_match": 1.0,
+        "examples": 32,
+        "nll_per_byte_or_eos": 8.08382641778781e-05,
+        "raw_exact_match": 1.0
+      },
+      "Tamil": {
+        "constrained_exact_match": 1.0,
+        "examples": 32,
+        "nll_per_byte_or_eos": 0.00015913307773912993,
+        "raw_exact_match": 1.0
+      },
+      "Telugu": {
+        "constrained_exact_match": 1.0,
+        "examples": 32,
+        "nll_per_byte_or_eos": 8.210479416064706e-05,
+        "raw_exact_match": 1.0
+      }
+    },
+    "per_utf8_byte_length": {
+      "4": {
+        "exact_match": 1.0,
+        "examples": 32,
+        "nll_per_byte_or_eos": 0.0002496792270840147
+      },
+      "6": {
+        "exact_match": 1.0,
+        "examples": 96,
+        "nll_per_byte_or_eos": 0.00010735871202588504
+      }
+    },
+    "raw_exact_match": 1.0,
+    "raw_invalid_utf8_rate": 0.0
+  },
+  "training": {
+    "batch_size": 64,
+    "seconds": 7.53273470899876,
+    "steps": 3000
+  }
+}
