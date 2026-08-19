@@ -1,0 +1,2502 @@
+[
+  {
+    "context": [
+      "fa",
+      "3"
+    ],
+    "target": "fa3",
+    "rke": "fa3",
+    "fallback": "fa3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a0",
+      "d"
+    ],
+    "target": "a0d",
+    "rke": "a0d",
+    "fallback": "a0d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "12",
+      "f"
+    ],
+    "target": "12f",
+    "rke": "12f",
+    "fallback": "12f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ce",
+      "e"
+    ],
+    "target": "cee",
+    "rke": "cee",
+    "fallback": "cee",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "13",
+      "a"
+    ],
+    "target": "13a",
+    "rke": "13a",
+    "fallback": "13a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "1"
+    ],
+    "target": "301",
+    "rke": "301",
+    "fallback": "301",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "db",
+      "1"
+    ],
+    "target": "db1",
+    "rke": "db1",
+    "fallback": "db1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f3",
+      "f"
+    ],
+    "target": "f3f",
+    "rke": "f3f",
+    "fallback": "f3f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "af",
+      "1"
+    ],
+    "target": "af1",
+    "rke": "af1",
+    "fallback": "af1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "c"
+    ],
+    "target": "30c",
+    "rke": "30c",
+    "fallback": "30c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "bb",
+      "f"
+    ],
+    "target": "bbf",
+    "rke": "bbf",
+    "fallback": "bbf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "01",
+      "c"
+    ],
+    "target": "01c",
+    "rke": "01c",
+    "fallback": "01c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "31",
+      "e"
+    ],
+    "target": "31e",
+    "rke": "31e",
+    "fallback": "31e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2a",
+      "d"
+    ],
+    "target": "2ad",
+    "rke": "2ad",
+    "fallback": "2ad",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1b",
+      "c"
+    ],
+    "target": "1bc",
+    "rke": "1bc",
+    "fallback": "1bc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2c",
+      "d"
+    ],
+    "target": "2cd",
+    "rke": "2cd",
+    "fallback": "2cd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dd",
+      "c"
+    ],
+    "target": "ddc",
+    "rke": "ddc",
+    "fallback": "ddc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e1",
+      "2"
+    ],
+    "target": "e12",
+    "rke": "e12",
+    "fallback": "e12",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b2",
+      "c"
+    ],
+    "target": "b2c",
+    "rke": "b2c",
+    "fallback": "b2c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a3",
+      "3"
+    ],
+    "target": "a33",
+    "rke": "a33",
+    "fallback": "a33",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "c"
+    ],
+    "target": "cdc",
+    "rke": "cdc",
+    "fallback": "cdc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ab",
+      "0"
+    ],
+    "target": "ab0",
+    "rke": "ab0",
+    "fallback": "ab0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d2",
+      "b"
+    ],
+    "target": "d2b",
+    "rke": "d2b",
+    "fallback": "d2b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ac",
+      "f"
+    ],
+    "target": "acf",
+    "rke": "acf",
+    "fallback": "acf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b2",
+      "e"
+    ],
+    "target": "b2e",
+    "rke": "b2e",
+    "fallback": "b2e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "af",
+      "d"
+    ],
+    "target": "afd",
+    "rke": "afd",
+    "fallback": "afd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b2",
+      "a"
+    ],
+    "target": "b2a",
+    "rke": "b2a",
+    "fallback": "b2a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0f",
+      "1"
+    ],
+    "target": "0f1",
+    "rke": "0f1",
+    "fallback": "0f1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fe",
+      "0"
+    ],
+    "target": "fe0",
+    "rke": "fe0",
+    "fallback": "fe0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a3",
+      "c"
+    ],
+    "target": "a3c",
+    "rke": "a3c",
+    "fallback": "a3c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ea",
+      "b"
+    ],
+    "target": "eab",
+    "rke": "eab",
+    "fallback": "eab",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "bd",
+      "b"
+    ],
+    "target": "bdb",
+    "rke": "bdb",
+    "fallback": "bdb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b0",
+      "1"
+    ],
+    "target": "b01",
+    "rke": "b01",
+    "fallback": "b01",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "af",
+      "f"
+    ],
+    "target": "aff",
+    "rke": "aff",
+    "fallback": "aff",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b2",
+      "d"
+    ],
+    "target": "b2d",
+    "rke": "b2d",
+    "fallback": "b2d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "be",
+      "f"
+    ],
+    "target": "bef",
+    "rke": "bef",
+    "fallback": "bef",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "da",
+      "1"
+    ],
+    "target": "da1",
+    "rke": "da1",
+    "fallback": "da1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ad",
+      "0"
+    ],
+    "target": "ad0",
+    "rke": "ad0",
+    "fallback": "ad0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3f",
+      "3"
+    ],
+    "target": "3f3",
+    "rke": "3f3",
+    "fallback": "3f3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f0",
+      "b"
+    ],
+    "target": "f0b",
+    "rke": "f0b",
+    "fallback": "f0b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ae",
+      "0"
+    ],
+    "target": "ae0",
+    "rke": "ae0",
+    "fallback": "ae0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dc",
+      "0"
+    ],
+    "target": "dc0",
+    "rke": "dc0",
+    "fallback": "dc0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ca",
+      "f"
+    ],
+    "target": "caf",
+    "rke": "caf",
+    "fallback": "caf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e3",
+      "e"
+    ],
+    "target": "e3e",
+    "rke": "e3e",
+    "fallback": "e3e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ea",
+      "1"
+    ],
+    "target": "ea1",
+    "rke": "ea1",
+    "fallback": "ea1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "df",
+      "2"
+    ],
+    "target": "df2",
+    "rke": "df2",
+    "fallback": "df2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a1",
+      "f"
+    ],
+    "target": "a1f",
+    "rke": "a1f",
+    "fallback": "a1f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d0",
+      "3"
+    ],
+    "target": "d03",
+    "rke": "d03",
+    "fallback": "d03",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "bb",
+      "d"
+    ],
+    "target": "bbd",
+    "rke": "bbd",
+    "fallback": "bbd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "31",
+      "a"
+    ],
+    "target": "31a",
+    "rke": "31a",
+    "fallback": "31a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3e",
+      "e"
+    ],
+    "target": "3ee",
+    "rke": "3ee",
+    "fallback": "3ee",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e2",
+      "f"
+    ],
+    "target": "e2f",
+    "rke": "e2f",
+    "fallback": "e2f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "df",
+      "a"
+    ],
+    "target": "dfa",
+    "rke": "dfa",
+    "fallback": "dfa",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "20",
+      "0"
+    ],
+    "target": "200",
+    "rke": "200",
+    "fallback": "200",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1a",
+      "a"
+    ],
+    "target": "1aa",
+    "rke": "1aa",
+    "fallback": "1aa",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b3",
+      "d"
+    ],
+    "target": "b3d",
+    "rke": "b3d",
+    "fallback": "b3d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "a"
+    ],
+    "target": "30a",
+    "rke": "30a",
+    "fallback": "30a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e3",
+      "2"
+    ],
+    "target": "e32",
+    "rke": "e32",
+    "fallback": "e32",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d1",
+      "0"
+    ],
+    "target": "d10",
+    "rke": "d10",
+    "fallback": "d10",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cf",
+      "d"
+    ],
+    "target": "cfd",
+    "rke": "cfd",
+    "fallback": "cfd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dc",
+      "2"
+    ],
+    "target": "dc2",
+    "rke": "dc2",
+    "fallback": "dc2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cc",
+      "a"
+    ],
+    "target": "cca",
+    "rke": "cca",
+    "fallback": "cca",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0b",
+      "c"
+    ],
+    "target": "0bc",
+    "rke": "0bc",
+    "fallback": "0bc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "bf",
+      "f"
+    ],
+    "target": "bff",
+    "rke": "bff",
+    "fallback": "bff",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0b",
+      "d"
+    ],
+    "target": "0bd",
+    "rke": "0bd",
+    "fallback": "0bd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ba",
+      "a"
+    ],
+    "target": "baa",
+    "rke": "baa",
+    "fallback": "baa",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "eb",
+      "e"
+    ],
+    "target": "ebe",
+    "rke": "ebe",
+    "fallback": "ebe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "a"
+    ],
+    "target": "cda",
+    "rke": "cda",
+    "fallback": "cda",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e3",
+      "a"
+    ],
+    "target": "e3a",
+    "rke": "e3a",
+    "fallback": "e3a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "da",
+      "b"
+    ],
+    "target": "dab",
+    "rke": "dab",
+    "fallback": "dab",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "01",
+      "3"
+    ],
+    "target": "013",
+    "rke": "013",
+    "fallback": "013",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cc",
+      "c"
+    ],
+    "target": "ccc",
+    "rke": "ccc",
+    "fallback": "ccc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "d"
+    ],
+    "target": "30d",
+    "rke": "30d",
+    "fallback": "30d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ea",
+      "c"
+    ],
+    "target": "eac",
+    "rke": "eac",
+    "fallback": "eac",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "de",
+      "3"
+    ],
+    "target": "de3",
+    "rke": "de3",
+    "fallback": "de3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "de",
+      "c"
+    ],
+    "target": "dec",
+    "rke": "dec",
+    "fallback": "dec",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f2",
+      "3"
+    ],
+    "target": "f23",
+    "rke": "f23",
+    "fallback": "f23",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fd",
+      "e"
+    ],
+    "target": "fde",
+    "rke": "fde",
+    "fallback": "fde",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ec",
+      "f"
+    ],
+    "target": "ecf",
+    "rke": "ecf",
+    "fallback": "ecf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ef",
+      "e"
+    ],
+    "target": "efe",
+    "rke": "efe",
+    "fallback": "efe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f0",
+      "c"
+    ],
+    "target": "f0c",
+    "rke": "f0c",
+    "fallback": "f0c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c1",
+      "1"
+    ],
+    "target": "c11",
+    "rke": "c11",
+    "fallback": "c11",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ac",
+      "a"
+    ],
+    "target": "aca",
+    "rke": "aca",
+    "fallback": "aca",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2c",
+      "b"
+    ],
+    "target": "2cb",
+    "rke": "2cb",
+    "fallback": "2cb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fd",
+      "a"
+    ],
+    "target": "fda",
+    "rke": "fda",
+    "fallback": "fda",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "12",
+      "b"
+    ],
+    "target": "12b",
+    "rke": "12b",
+    "fallback": "12b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ae",
+      "c"
+    ],
+    "target": "aec",
+    "rke": "aec",
+    "fallback": "aec",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1c",
+      "3"
+    ],
+    "target": "1c3",
+    "rke": "1c3",
+    "fallback": "1c3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1e",
+      "3"
+    ],
+    "target": "1e3",
+    "rke": "1e3",
+    "fallback": "1e3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c0",
+      "b"
+    ],
+    "target": "c0b",
+    "rke": "c0b",
+    "fallback": "c0b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dc",
+      "3"
+    ],
+    "target": "dc3",
+    "rke": "dc3",
+    "fallback": "dc3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f1",
+      "1"
+    ],
+    "target": "f11",
+    "rke": "f11",
+    "fallback": "f11",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "1"
+    ],
+    "target": "cd1",
+    "rke": "cd1",
+    "fallback": "cd1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "00",
+      "e"
+    ],
+    "target": "00e",
+    "rke": "00e",
+    "fallback": "00e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "00",
+      "a"
+    ],
+    "target": "00a",
+    "rke": "00a",
+    "fallback": "00a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e2",
+      "e"
+    ],
+    "target": "e2e",
+    "rke": "e2e",
+    "fallback": "e2e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "e"
+    ],
+    "target": "30e",
+    "rke": "30e",
+    "fallback": "30e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ca",
+      "2"
+    ],
+    "target": "ca2",
+    "rke": "ca2",
+    "fallback": "ca2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0f",
+      "f"
+    ],
+    "target": "0ff",
+    "rke": "0ff",
+    "fallback": "0ff",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "de",
+      "1"
+    ],
+    "target": "de1",
+    "rke": "de1",
+    "fallback": "de1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3f",
+      "e"
+    ],
+    "target": "3fe",
+    "rke": "3fe",
+    "fallback": "3fe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f2",
+      "e"
+    ],
+    "target": "f2e",
+    "rke": "f2e",
+    "fallback": "f2e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3a",
+      "b"
+    ],
+    "target": "3ab",
+    "rke": "3ab",
+    "fallback": "3ab",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e3",
+      "c"
+    ],
+    "target": "e3c",
+    "rke": "e3c",
+    "fallback": "e3c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "22",
+      "c"
+    ],
+    "target": "22c",
+    "rke": "22c",
+    "fallback": "22c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "3"
+    ],
+    "target": "303",
+    "rke": "303",
+    "fallback": "303",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f3",
+      "a"
+    ],
+    "target": "f3a",
+    "rke": "f3a",
+    "fallback": "f3a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c0",
+      "0"
+    ],
+    "target": "c00",
+    "rke": "c00",
+    "fallback": "c00",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ed",
+      "1"
+    ],
+    "target": "ed1",
+    "rke": "ed1",
+    "fallback": "ed1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0b",
+      "3"
+    ],
+    "target": "0b3",
+    "rke": "0b3",
+    "fallback": "0b3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "12",
+      "e"
+    ],
+    "target": "12e",
+    "rke": "12e",
+    "fallback": "12e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c2",
+      "2"
+    ],
+    "target": "c22",
+    "rke": "c22",
+    "fallback": "c22",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "02",
+      "c"
+    ],
+    "target": "02c",
+    "rke": "02c",
+    "fallback": "02c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "be",
+      "c"
+    ],
+    "target": "bec",
+    "rke": "bec",
+    "fallback": "bec",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f2",
+      "a"
+    ],
+    "target": "f2a",
+    "rke": "f2a",
+    "fallback": "f2a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c0",
+      "c"
+    ],
+    "target": "c0c",
+    "rke": "c0c",
+    "fallback": "c0c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0a",
+      "3"
+    ],
+    "target": "0a3",
+    "rke": "0a3",
+    "fallback": "0a3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3c",
+      "c"
+    ],
+    "target": "3cc",
+    "rke": "3cc",
+    "fallback": "3cc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "da",
+      "d"
+    ],
+    "target": "dad",
+    "rke": "dad",
+    "fallback": "dad",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "33",
+      "3"
+    ],
+    "target": "333",
+    "rke": "333",
+    "fallback": "333",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a3",
+      "b"
+    ],
+    "target": "a3b",
+    "rke": "a3b",
+    "fallback": "a3b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3b",
+      "f"
+    ],
+    "target": "3bf",
+    "rke": "3bf",
+    "fallback": "3bf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ff",
+      "f"
+    ],
+    "target": "fff",
+    "rke": "fff",
+    "fallback": "fff",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "f"
+    ],
+    "target": "cdf",
+    "rke": "cdf",
+    "fallback": "cdf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fb",
+      "c"
+    ],
+    "target": "fbc",
+    "rke": "fbc",
+    "fallback": "fbc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "13",
+      "3"
+    ],
+    "target": "133",
+    "rke": "133",
+    "fallback": "133",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f1",
+      "e"
+    ],
+    "target": "f1e",
+    "rke": "f1e",
+    "fallback": "f1e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "22",
+      "2"
+    ],
+    "target": "222",
+    "rke": "222",
+    "fallback": "222",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "21",
+      "b"
+    ],
+    "target": "21b",
+    "rke": "21b",
+    "fallback": "21b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c3",
+      "d"
+    ],
+    "target": "c3d",
+    "rke": "c3d",
+    "fallback": "c3d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d3",
+      "e"
+    ],
+    "target": "d3e",
+    "rke": "d3e",
+    "fallback": "d3e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "0"
+    ],
+    "target": "cd0",
+    "rke": "cd0",
+    "fallback": "cd0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "23",
+      "f"
+    ],
+    "target": "23f",
+    "rke": "23f",
+    "fallback": "23f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1e",
+      "e"
+    ],
+    "target": "1ee",
+    "rke": "1ee",
+    "fallback": "1ee",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "be",
+      "2"
+    ],
+    "target": "be2",
+    "rke": "be2",
+    "fallback": "be2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ad",
+      "1"
+    ],
+    "target": "ad1",
+    "rke": "ad1",
+    "fallback": "ad1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1e",
+      "c"
+    ],
+    "target": "1ec",
+    "rke": "1ec",
+    "fallback": "1ec",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ae",
+      "2"
+    ],
+    "target": "ae2",
+    "rke": "ae2",
+    "fallback": "ae2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1d",
+      "d"
+    ],
+    "target": "1dd",
+    "rke": "1dd",
+    "fallback": "1dd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0e",
+      "a"
+    ],
+    "target": "0ea",
+    "rke": "0ea",
+    "fallback": "0ea",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d1",
+      "c"
+    ],
+    "target": "d1c",
+    "rke": "d1c",
+    "fallback": "d1c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f0",
+      "3"
+    ],
+    "target": "f03",
+    "rke": "f03",
+    "fallback": "f03",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "af",
+      "a"
+    ],
+    "target": "afa",
+    "rke": "afa",
+    "fallback": "afa",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e1",
+      "3"
+    ],
+    "target": "e13",
+    "rke": "e13",
+    "fallback": "e13",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "01",
+      "1"
+    ],
+    "target": "011",
+    "rke": "011",
+    "fallback": "011",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d2",
+      "f"
+    ],
+    "target": "d2f",
+    "rke": "d2f",
+    "fallback": "d2f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ca",
+      "e"
+    ],
+    "target": "cae",
+    "rke": "cae",
+    "fallback": "cae",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1b",
+      "1"
+    ],
+    "target": "1b1",
+    "rke": "1b1",
+    "fallback": "1b1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "af",
+      "0"
+    ],
+    "target": "af0",
+    "rke": "af0",
+    "fallback": "af0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "10",
+      "f"
+    ],
+    "target": "10f",
+    "rke": "10f",
+    "fallback": "10f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f1",
+      "c"
+    ],
+    "target": "f1c",
+    "rke": "f1c",
+    "fallback": "f1c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "21",
+      "d"
+    ],
+    "target": "21d",
+    "rke": "21d",
+    "fallback": "21d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ab",
+      "3"
+    ],
+    "target": "ab3",
+    "rke": "ab3",
+    "fallback": "ab3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "00",
+      "1"
+    ],
+    "target": "001",
+    "rke": "001",
+    "fallback": "001",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d3",
+      "a"
+    ],
+    "target": "d3a",
+    "rke": "d3a",
+    "fallback": "d3a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "d"
+    ],
+    "target": "cdd",
+    "rke": "cdd",
+    "fallback": "cdd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "aa",
+      "3"
+    ],
+    "target": "aa3",
+    "rke": "aa3",
+    "fallback": "aa3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1f",
+      "2"
+    ],
+    "target": "1f2",
+    "rke": "1f2",
+    "fallback": "1f2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f1",
+      "f"
+    ],
+    "target": "f1f",
+    "rke": "f1f",
+    "fallback": "f1f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2d",
+      "1"
+    ],
+    "target": "2d1",
+    "rke": "2d1",
+    "fallback": "2d1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c3",
+      "1"
+    ],
+    "target": "c31",
+    "rke": "c31",
+    "fallback": "c31",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "32",
+      "e"
+    ],
+    "target": "32e",
+    "rke": "32e",
+    "fallback": "32e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "da",
+      "f"
+    ],
+    "target": "daf",
+    "rke": "daf",
+    "fallback": "daf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1c",
+      "e"
+    ],
+    "target": "1ce",
+    "rke": "1ce",
+    "fallback": "1ce",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "03",
+      "e"
+    ],
+    "target": "03e",
+    "rke": "03e",
+    "fallback": "03e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dc",
+      "c"
+    ],
+    "target": "dcc",
+    "rke": "dcc",
+    "fallback": "dcc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e1",
+      "f"
+    ],
+    "target": "e1f",
+    "rke": "e1f",
+    "fallback": "e1f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ed",
+      "3"
+    ],
+    "target": "ed3",
+    "rke": "ed3",
+    "fallback": "ed3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2b",
+      "f"
+    ],
+    "target": "2bf",
+    "rke": "2bf",
+    "fallback": "2bf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2e",
+      "c"
+    ],
+    "target": "2ec",
+    "rke": "2ec",
+    "fallback": "2ec",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ff",
+      "b"
+    ],
+    "target": "ffb",
+    "rke": "ffb",
+    "fallback": "ffb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0c",
+      "e"
+    ],
+    "target": "0ce",
+    "rke": "0ce",
+    "fallback": "0ce",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "21",
+      "f"
+    ],
+    "target": "21f",
+    "rke": "21f",
+    "fallback": "21f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c2",
+      "e"
+    ],
+    "target": "c2e",
+    "rke": "c2e",
+    "fallback": "c2e",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c1",
+      "f"
+    ],
+    "target": "c1f",
+    "rke": "c1f",
+    "fallback": "c1f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a3",
+      "d"
+    ],
+    "target": "a3d",
+    "rke": "a3d",
+    "fallback": "a3d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e0",
+      "c"
+    ],
+    "target": "e0c",
+    "rke": "e0c",
+    "fallback": "e0c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "bf",
+      "e"
+    ],
+    "target": "bfe",
+    "rke": "bfe",
+    "fallback": "bfe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ac",
+      "d"
+    ],
+    "target": "acd",
+    "rke": "acd",
+    "fallback": "acd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a1",
+      "c"
+    ],
+    "target": "a1c",
+    "rke": "a1c",
+    "fallback": "a1c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2e",
+      "e"
+    ],
+    "target": "2ee",
+    "rke": "2ee",
+    "fallback": "2ee",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3d",
+      "b"
+    ],
+    "target": "3db",
+    "rke": "3db",
+    "fallback": "3db",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cf",
+      "e"
+    ],
+    "target": "cfe",
+    "rke": "cfe",
+    "fallback": "cfe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f1",
+      "b"
+    ],
+    "target": "f1b",
+    "rke": "f1b",
+    "fallback": "f1b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cc",
+      "2"
+    ],
+    "target": "cc2",
+    "rke": "cc2",
+    "fallback": "cc2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d2",
+      "2"
+    ],
+    "target": "d22",
+    "rke": "d22",
+    "fallback": "d22",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3f",
+      "0"
+    ],
+    "target": "3f0",
+    "rke": "3f0",
+    "fallback": "3f0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0c",
+      "c"
+    ],
+    "target": "0cc",
+    "rke": "0cc",
+    "fallback": "0cc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ee",
+      "a"
+    ],
+    "target": "eea",
+    "rke": "eea",
+    "fallback": "eea",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "21",
+      "a"
+    ],
+    "target": "21a",
+    "rke": "21a",
+    "fallback": "21a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "13",
+      "d"
+    ],
+    "target": "13d",
+    "rke": "13d",
+    "fallback": "13d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "aa",
+      "1"
+    ],
+    "target": "aa1",
+    "rke": "aa1",
+    "fallback": "aa1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "be",
+      "1"
+    ],
+    "target": "be1",
+    "rke": "be1",
+    "fallback": "be1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "eb",
+      "b"
+    ],
+    "target": "ebb",
+    "rke": "ebb",
+    "fallback": "ebb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c1",
+      "2"
+    ],
+    "target": "c12",
+    "rke": "c12",
+    "fallback": "c12",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b3",
+      "b"
+    ],
+    "target": "b3b",
+    "rke": "b3b",
+    "fallback": "b3b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e3",
+      "3"
+    ],
+    "target": "e33",
+    "rke": "e33",
+    "fallback": "e33",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3a",
+      "2"
+    ],
+    "target": "3a2",
+    "rke": "3a2",
+    "fallback": "3a2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ab",
+      "1"
+    ],
+    "target": "ab1",
+    "rke": "ab1",
+    "fallback": "ab1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0d",
+      "1"
+    ],
+    "target": "0d1",
+    "rke": "0d1",
+    "fallback": "0d1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dc",
+      "a"
+    ],
+    "target": "dca",
+    "rke": "dca",
+    "fallback": "dca",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fd",
+      "f"
+    ],
+    "target": "fdf",
+    "rke": "fdf",
+    "fallback": "fdf",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1d",
+      "b"
+    ],
+    "target": "1db",
+    "rke": "1db",
+    "fallback": "1db",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b0",
+      "b"
+    ],
+    "target": "b0b",
+    "rke": "b0b",
+    "fallback": "b0b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "e"
+    ],
+    "target": "cde",
+    "rke": "cde",
+    "fallback": "cde",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "00",
+      "f"
+    ],
+    "target": "00f",
+    "rke": "00f",
+    "fallback": "00f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b3",
+      "1"
+    ],
+    "target": "b31",
+    "rke": "b31",
+    "fallback": "b31",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "a0",
+      "0"
+    ],
+    "target": "a00",
+    "rke": "a00",
+    "fallback": "a00",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "32",
+      "3"
+    ],
+    "target": "323",
+    "rke": "323",
+    "fallback": "323",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3d",
+      "d"
+    ],
+    "target": "3dd",
+    "rke": "3dd",
+    "fallback": "3dd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ef",
+      "1"
+    ],
+    "target": "ef1",
+    "rke": "ef1",
+    "fallback": "ef1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e0",
+      "3"
+    ],
+    "target": "e03",
+    "rke": "e03",
+    "fallback": "e03",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ee",
+      "e"
+    ],
+    "target": "eee",
+    "rke": "eee",
+    "fallback": "eee",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "be",
+      "a"
+    ],
+    "target": "bea",
+    "rke": "bea",
+    "fallback": "bea",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "31",
+      "d"
+    ],
+    "target": "31d",
+    "rke": "31d",
+    "fallback": "31d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b0",
+      "2"
+    ],
+    "target": "b02",
+    "rke": "b02",
+    "fallback": "b02",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "30",
+      "b"
+    ],
+    "target": "30b",
+    "rke": "30b",
+    "fallback": "30b",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c2",
+      "f"
+    ],
+    "target": "c2f",
+    "rke": "c2f",
+    "fallback": "c2f",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1d",
+      "e"
+    ],
+    "target": "1de",
+    "rke": "1de",
+    "fallback": "1de",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "10",
+      "c"
+    ],
+    "target": "10c",
+    "rke": "10c",
+    "fallback": "10c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d1",
+      "3"
+    ],
+    "target": "d13",
+    "rke": "d13",
+    "fallback": "d13",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "01",
+      "2"
+    ],
+    "target": "012",
+    "rke": "012",
+    "fallback": "012",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "b"
+    ],
+    "target": "cdb",
+    "rke": "cdb",
+    "fallback": "cdb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "c1",
+      "d"
+    ],
+    "target": "c1d",
+    "rke": "c1d",
+    "fallback": "c1d",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e2",
+      "3"
+    ],
+    "target": "e23",
+    "rke": "e23",
+    "fallback": "e23",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1c",
+      "a"
+    ],
+    "target": "1ca",
+    "rke": "1ca",
+    "fallback": "1ca",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "db",
+      "e"
+    ],
+    "target": "dbe",
+    "rke": "dbe",
+    "fallback": "dbe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "2a",
+      "2"
+    ],
+    "target": "2a2",
+    "rke": "2a2",
+    "fallback": "2a2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "31",
+      "1"
+    ],
+    "target": "311",
+    "rke": "311",
+    "fallback": "311",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f2",
+      "c"
+    ],
+    "target": "f2c",
+    "rke": "f2c",
+    "fallback": "f2c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fd",
+      "1"
+    ],
+    "target": "fd1",
+    "rke": "fd1",
+    "fallback": "fd1",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "b1",
+      "a"
+    ],
+    "target": "b1a",
+    "rke": "b1a",
+    "fallback": "b1a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "f1",
+      "a"
+    ],
+    "target": "f1a",
+    "rke": "f1a",
+    "fallback": "f1a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1a",
+      "f"
+    ],
+    "target": "1af",
+    "rke": "1af",
+    "fallback": "1af",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "33",
+      "a"
+    ],
+    "target": "33a",
+    "rke": "33a",
+    "fallback": "33a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d3",
+      "c"
+    ],
+    "target": "d3c",
+    "rke": "d3c",
+    "fallback": "d3c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fb",
+      "3"
+    ],
+    "target": "fb3",
+    "rke": "fb3",
+    "fallback": "fb3",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "dd",
+      "d"
+    ],
+    "target": "ddd",
+    "rke": "ddd",
+    "fallback": "ddd",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e0",
+      "1"
+    ],
+    "target": "e01",
+    "rke": "e01",
+    "fallback": "e01",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "ba",
+      "d"
+    ],
+    "target": "bad",
+    "rke": "bad",
+    "fallback": "bad",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "df",
+      "e"
+    ],
+    "target": "dfe",
+    "rke": "dfe",
+    "fallback": "dfe",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "fb",
+      "a"
+    ],
+    "target": "fba",
+    "rke": "fba",
+    "fallback": "fba",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "3e",
+      "b"
+    ],
+    "target": "3eb",
+    "rke": "3eb",
+    "fallback": "3eb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "0c",
+      "2"
+    ],
+    "target": "0c2",
+    "rke": "0c2",
+    "fallback": "0c2",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "eb",
+      "0"
+    ],
+    "target": "eb0",
+    "rke": "eb0",
+    "fallback": "eb0",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "e2",
+      "c"
+    ],
+    "target": "e2c",
+    "rke": "e2c",
+    "fallback": "e2c",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "1f",
+      "b"
+    ],
+    "target": "1fb",
+    "rke": "1fb",
+    "fallback": "1fb",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "db",
+      "c"
+    ],
+    "target": "dbc",
+    "rke": "dbc",
+    "fallback": "dbc",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "d0",
+      "a"
+    ],
+    "target": "d0a",
+    "rke": "d0a",
+    "fallback": "d0a",
+    "vocabulary_representable": false
+  },
+  {
+    "context": [
+      "cd",
+      "3"
+    ],
+    "target": "cd3",
+    "rke": "cd3",
+    "fallback": "cd3",
+    "vocabulary_representable": false
+  }
+]

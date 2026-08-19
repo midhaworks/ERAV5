@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import codecs
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -138,6 +139,52 @@ class FullByteCodec:
         raise ValueError("code has no EOS")
 
 
+def utf8_prefix_is_valid(payload: bytes) -> bool:
+    """True when payload is a valid complete or incomplete UTF-8 prefix."""
+    decoder = codecs.getincrementaldecoder("utf-8")("strict")
+    try:
+        decoder.decode(payload, final=False)
+        return True
+    except UnicodeDecodeError:
+        return False
+
+
+def utf8_is_complete(payload: bytes) -> bool:
+    try:
+        payload.decode("utf-8", errors="strict")
+        return True
+    except UnicodeDecodeError:
+        return False
+
+
+def constrained_utf8_decode(logits: np.ndarray, max_bytes: int) -> bytes:
+    """Decode FullByteCodec logits while masking invalid UTF-8 transitions.
+
+    State 0 is PAD, state 1 is EOS, and state byte+2 is a byte.  EOS is only
+    legal at a complete code-point boundary.  PAD is never generated directly.
+    """
+    rows = np.asarray(logits)
+    if rows.shape != (max_bytes + 1, 258):
+        raise ValueError(f"expected {(max_bytes + 1, 258)}, got {rows.shape}")
+    output = bytearray()
+    for row in rows:
+        for state in np.argsort(row)[::-1]:
+            state = int(state)
+            if state == 0:
+                continue
+            if state == 1:
+                if utf8_is_complete(bytes(output)):
+                    return bytes(output)
+                continue
+            candidate = bytes(output) + bytes([state - 2])
+            if len(candidate) <= max_bytes and utf8_prefix_is_valid(candidate):
+                output.append(state - 2)
+                break
+        else:
+            raise ValueError("no valid UTF-8 transition")
+    raise ValueError("no legal EOS before maximum length")
+
+
 def original_truncated_code(text: str, max_positions: int) -> tuple[int, ...]:
     """The information-bearing support of the paper's codec before projection."""
     return tuple(text.encode("utf-8")[:max_positions])
@@ -222,15 +269,18 @@ class TinyTransformer:
         return logits, {"features": features, "x": x, "q": q, "k": k, "v": v,
                         "attention": attention, "attended": attended, "hidden": hidden}
 
-    def loss_and_grads(self, features: np.ndarray, targets: np.ndarray) -> tuple[float, dict[str, np.ndarray]]:
+    def loss_and_grads(self, features: np.ndarray, targets: np.ndarray,
+                       loss_mask: np.ndarray | None = None) -> tuple[float, dict[str, np.ndarray]]:
         logits, cache = self.forward(features)
         probabilities = self._softmax(logits)
         batch = len(features)
         chosen = probabilities[np.arange(batch)[:, None], np.arange(self.codec.slots)[None, :], targets]
-        loss = float(-np.log(chosen + 1e-12).mean())
+        mask = np.ones_like(chosen) if loss_mask is None else np.asarray(loss_mask, dtype=np.float64)
+        denominator = max(float(mask.sum()), 1.0)
+        loss = float((-np.log(chosen + 1e-12) * mask).sum() / denominator)
         dlogits = probabilities
         dlogits[np.arange(batch)[:, None], np.arange(self.codec.slots)[None, :], targets] -= 1
-        dlogits /= batch * self.codec.slots
+        dlogits *= mask[:, :, None] / denominator
         p, c = self.params, cache
         grads: dict[str, np.ndarray] = {}
         last_slots = c["hidden"][:, -1, :].reshape(batch, self.codec.slots, self.d_slot)

@@ -11,6 +11,10 @@
       "evidence": "analytic_proof and full_byte_proof",
       "passed": true
     },
+    "matched_next_token_followup": {
+      "evidence": "lm_v2/results.json",
+      "passed": true
+    },
     "neural_oov_generalization": {
       "evidence": "neural_proof.held_out_oov",
       "passed": true,
@@ -33,7 +37,7 @@
     "train_tokens": 700
   },
   "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
-  "elapsed_seconds": 1.8078,
+  "elapsed_seconds": 14.0504,
   "experiment": "Reversible Kronecker Head (RKE-Head)",
   "fixed_vocab_baseline": {
     "coverage": 0.0,
@@ -48,12 +52,21 @@
     "passed": true,
     "payloads_tested": 1257
   },
+  "language_model_followup": {
+    "evidence": "lm_v2/results.json",
+    "fallback_held_out_exact": 1.0,
+    "overall_pass": true,
+    "rke_ece": 0.002074670830020997,
+    "rke_held_out_exact": 1.0,
+    "rke_nll_per_byte_or_eos": 0.0005218686545207359,
+    "vocabulary_held_out_exact": 0.0
+  },
   "limitations": [
     "Empirical training uses a 10-character alphabet; the analytic codec implementation generalizes directly to 256 bytes.",
     "The task is controlled token copying, not open-domain language modeling.",
     "Output cost scales with maximum token length and byte alphabet, though not vocabulary size."
   ],
-  "model_state_hash": "4522c63217a9ab295c845d957af71c2ba06ae5c16815a04bdd85ee9f7f47dd6b",
+  "model_state_hash": "f780bfe5aa62818a1d4ed973d4bb24fd3fc52622c7887a58673d71ceb8acd74d",
   "neural_proof": {
     "examples": [
       {

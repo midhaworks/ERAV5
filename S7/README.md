@@ -23,6 +23,8 @@ python3 -m unittest discover -s S7/tests -v
 
 Open `S7/artifacts/report.html` for the visual result.
 
+The four other assignment directions are developed as independent proposals in [`OTHER_IDEAS.md`](OTHER_IDEAS.md): algebra registers, multimodal tensor Kronecker, ragged dynamic blocks, and phase-shifted Fourier characters.
+
 ## Starting point: what the paper does
 
 The referenced [Kronecker Embeddings paper](https://arxiv.org/abs/2605.29459) represents a token byte sequence with a sum of byte-position basis vectors:
@@ -117,8 +119,51 @@ After `python3 S7/run_experiment.py`:
 - `artifacts/training_curve.csv` and `training_curve.svg` — measured optimization history;
 - `artifacts/model.npz` — trained NumPy parameters;
 - `artifacts/report.html` — self-contained visual summary.
+- `artifacts/lm_v2/results.json` — matched next-token NLL, calibration, parameters and decode speed;
+- `artifacts/lm_v2/comparison.svg` — next-token held-out comparison;
+- `artifacts/lm_v2/predictions.json` — every held-out target and reconstructed output.
+- `artifacts/lm_v2/split.json` — the exact training, seen-control and held-out composition split.
 
 At the demo width, a one-million-token vocabulary head would have `d_model × 1,000,000` parameters. The RKE output adds **zero** separate head parameters; it reuses the fixed-size input byte codebook. `results.json` computes the exact comparison rather than hardcoding it.
+
+## V2 follow-up: matched next-token language modelling
+
+The feedback on the first prototype correctly noted that copying proves reversibility but not next-token modelling. The one-command run now includes a second, separate controlled experiment.
+
+The micro-language defines a compositional next-token rule:
+
+```text
+context: [JOIN, suffix, stem] → next token: stem + suffix
+example: [JOIN, "3", "fa"] → "fa3"
+```
+
+There are 1,000 possible two-character-stem/one-character-suffix words. The experiment trains on 750 and evaluates on the other 250. Every character, stem and suffix is present during training, but no held-out whole target is present. Thus the evaluation asks whether an output mechanism can compose a new bounded token from known pieces.
+
+Three arms use the same structured input codec, `d_model`, one-layer single-head causal body and batch size:
+
+| Arm | Next-token output | Held-out representability |
+|---|---|---|
+| Vocabulary softmax | One class per training word plus UNK | 0/250 exact strings |
+| Byte fallback | One autoregressive character/EOS decision per model call | 250/250 |
+| RKE-Head | All character positions and EOS in one parallel call | 250/250 |
+
+RKE and the vocabulary arm receive 1,200 optimizer steps. Fallback receives 4,800 steps because every three-byte word requires four target decisions including EOS. EOS bears loss; every PAD slot after EOS is masked. A test verifies that changing masked targets cannot change either loss or gradients.
+
+Generated metrics include:
+
+- word and byte/EOS-normalized NLL;
+- exact next-token accuracy;
+- 10-bin expected calibration error and Brier score;
+- output and total parameter counts;
+- median and p95 CPU decode time;
+- completed words per second;
+- UTF-8-constrained decoding evidence.
+
+Closed-vocabulary OOV NLL is reported as undefined, not replaced by UNK NLL: a softmax with no row for the target assigns no probability to that string. Its confidence in a wrong known class is still included in calibration.
+
+For text decoding, the full-byte path applies an incremental UTF-8 mask. Invalid continuation bytes are forbidden, and EOS is legal only at a complete code-point boundary. The generated evidence deliberately makes invalid byte `0xFF` the highest unconstrained logit and proves valid recovery of both `é` and `अ`.
+
+This remains a controlled compositional language, not a natural-corpus perplexity claim. The next serious experiment should freeze a real tokenizer and compare the three heads on identical natural-language contexts with seen/OOV and byte-length NLL buckets.
 
 ## Files
 

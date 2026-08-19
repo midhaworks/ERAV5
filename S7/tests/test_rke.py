@@ -7,7 +7,9 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from rke import EOS, FullByteCodec, ReversibleCodec, TinyTransformer, make_split, original_truncated_code  # noqa: E402
+from rke import (EOS, FullByteCodec, ReversibleCodec, TinyTransformer,
+                 constrained_utf8_decode, make_split, original_truncated_code)  # noqa: E402
+from lm_compare import make_dataset  # noqa: E402
 
 
 class ReversibleKroneckerTests(unittest.TestCase):
@@ -64,6 +66,39 @@ class ReversibleKroneckerTests(unittest.TestCase):
             model.params[key][index] = original
             numerical = (plus - minus) / (2 * epsilon)
             self.assertAlmostEqual(float(grads[key][index]), float(numerical), places=5)
+
+    def test_utf8_decoder_masks_invalid_bytes_and_incomplete_eos(self):
+        # Prefer illegal 0xFF everywhere, but leave the valid UTF-8 path for “é”.
+        logits = np.full((3, 258), -10.0)
+        logits[:, 257] = 20.0  # byte 0xFF: always illegal
+        logits[0, 0xC3 + 2] = 19.0
+        logits[0, 1] = 18.0  # EOS is legal here but lower than valid C3
+        logits[1, 1] = 19.5  # illegal while C3 is incomplete
+        logits[1, 0xA9 + 2] = 19.0
+        logits[2, 1] = 19.0
+        self.assertEqual("é", constrained_utf8_decode(logits, 2).decode("utf-8"))
+
+    def test_eos_loss_masks_every_post_eos_pad_slot(self):
+        codec = ReversibleCodec("abc", 4)
+        model = TinyTransformer(codec, d_slot=2, seed=8)
+        features = model.features(["a"], ["b"])
+        targets = np.stack([codec.ids("a")])
+        mask = targets != codec.symbol_to_id["<PAD>"]
+        changed = targets.copy()
+        changed[~mask] = codec.symbol_to_id["c"]
+        loss_a, grads_a = model.loss_and_grads(features, targets, mask)
+        loss_b, grads_b = model.loss_and_grads(features, changed, mask)
+        self.assertAlmostEqual(loss_a, loss_b, places=12)
+        for key in grads_a:
+            np.testing.assert_allclose(grads_a[key], grads_b[key], atol=1e-12)
+
+    def test_lm_split_holds_out_whole_tokens_not_components(self):
+        data = make_dataset()
+        train_targets = {x["target"] for x in data["train"]}
+        oov_targets = {x["target"] for x in data["held_out_compositions"]}
+        self.assertFalse(train_targets & oov_targets)
+        self.assertLessEqual({x["stem"] for x in data["held_out_compositions"]}, {x["stem"] for x in data["train"]})
+        self.assertLessEqual({x["suffix"] for x in data["held_out_compositions"]}, {x["suffix"] for x in data["train"]})
 
 
 if __name__ == "__main__":
