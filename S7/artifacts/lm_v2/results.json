@@ -527,7 +527,7 @@
         "abc"
       ]
     },
-    "training_seconds": 7.28958429100021
+    "training_seconds": 7.319598083005985
   },
   "claims": {
     "byte_fallback_next_token_oov": true,
@@ -540,22 +540,22 @@
   "dataset_hash": "199bc14c8fe5f35a987afbd698e87c576befa99fb459bb6eb0503e5bb0a39a18",
   "decode_speed": {
     "byte_fallback_autoregressive": {
-      "completed_words_per_second": 16457.925313761873,
-      "median_seconds": 0.015190250000159722,
-      "p95_seconds": 0.01541670900041936,
+      "completed_words_per_second": 16491.082813424073,
+      "median_seconds": 0.015159707996645011,
+      "p95_seconds": 0.016037416993640363,
       "repeats": 15
     },
     "environment": "NumPy 2.4.4; single-process CPU wall clock; batch=250",
     "rke_parallel": {
-      "completed_words_per_second": 217257.54826505503,
-      "median_seconds": 0.001150708005297929,
-      "p95_seconds": 0.0011747919998015277,
+      "completed_words_per_second": 219002.01632536063,
+      "median_seconds": 0.0011415420012781397,
+      "p95_seconds": 0.0012457499979063869,
       "repeats": 15
     },
     "vocabulary_softmax": {
-      "completed_words_per_second": 159066.7740921843,
-      "median_seconds": 0.001571667002281174,
-      "p95_seconds": 0.0018025839963229373,
+      "completed_words_per_second": 159565.98079397963,
+      "median_seconds": 0.0015667499974370003,
+      "p95_seconds": 0.0016742919979151338,
       "repeats": 15
     }
   },
@@ -1619,7 +1619,7 @@
       ]
     },
     "separate_output_parameters": 0,
-    "training_seconds": 2.1411874589975923
+    "training_seconds": 1.9976919170003384
   },
   "seed": 1701,
   "split": {
@@ -1678,6 +1678,6 @@
       "true_oov_nll": 0.0014280915313931609,
       "true_oov_nll_note": "undefined: closed softmax assigns no probability to absent strings"
     },
-    "training_seconds": 2.3417002909991425
+    "training_seconds": 2.3495214579888852
   }
 }

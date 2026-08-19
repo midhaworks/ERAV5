@@ -49,7 +49,136 @@ Overall multilingual held-out NLL is `0.004449` per byte/EOS, with 100% exact ma
 
 ## V2.1 natural multilingual pilot
 
-The first production-readiness step replaces synthetic compositions with next-word prediction from the repository's Wikipedia-derived English, Hindi, Telugu and Sindhi corpora. Unicode text is NFC-normalized and case-folded. Entire paragraphs—not individual word windows—are assigned by a deterministic hash to 80/10/10 train, validation and test partitions, preventing context leakage. The run samples 4,000 training, 800 validation and 800 test transitions, balanced across languages.
+This section is newest-first. It replaces synthetic copying with natural next-word prediction from Wikipedia-derived English, Hindi, Telugu and Sindhi text. Text is NFC-normalized and case-folded. The earlier single-block pilot hash-splits whole paragraphs; the newer cross-block benchmark isolates complete source documents.
+
+| Version | Specific problem | Implemented solution | Current result |
+|---|---|---|---|
+| V2.1.7 | One article/language; no revision or document-isolation proof | Resumable, revision-pinned, hashed 40-document corpus | PASS; language balance remains open |
+| V2.1.6 | Relative wins could be confused with deployment readiness | Generated required-gate matrix with no silent aggregation | Candidate NO, honestly gated |
+| V2.1.5 | Continuation was an oracle, not learned language modelling | Generated-prefix cross-block RKE versus matched fallback | Functional PASS; exact generation FAIL |
+| V2.1.4 | Fixed 32 slots waste space and truncate long words | Ragged 24-byte CONT/EOS blocks plus neural mask oracle | Mechanics PASS |
+| V2.1.3 | Synthetic/single-seed evidence did not establish natural LM quality | Natural four-language next-word task and three-seed causal comparison | Mean parity PASS |
+| V2.1.2 | Independent parallel slots miss within-word dependencies | Masked causal and two-pass refinement alternatives | Negative result retained |
+| V2.1.1 | Hand-written NumPy could hide implementation defects | Parameter-identical PyTorch forward/backward/Adam parity | CPU parity PASS |
+
+### V2.1.7 Versioned multi-document corpus — PASS
+
+**Problem.** V2.1.5 originally used one article per language and paragraph-level splits. That was enough for a pilot, but it could not demonstrate multi-document generalization, document isolation, revision reproducibility, or a 500-example long-target test.
+
+**Solution.** `acquire_multidoc.py` builds a revision-pinned corpus of 40 Wikipedia documents: 10 each for English, Hindi, Telugu and Sindhi. It records the page/revision identity, revision timestamp, canonical URL, license, original/stored character counts, byte count and SHA-256 of every UTF-8 payload. It also hashes the canonical manifest. The current manifest hash is `64a7f158e1cb3b99a3086fe9b88b452ef82947fbdacd2a79d41d6c9d853d78a0`.
+
+**Example.** If acquisition stops after English and Hindi, the next invocation validates those 20 payload hashes, skips their network calls, and continues with Telugu. If one cached byte changes—or a manifest path is changed to `../outside.txt`—validation fails before the corpus can enter training.
+
+**Proof and result.** Automated tests exercise clean acquisition, interrupted resume, zero-network reuse, payload tampering and path traversal. The learned benchmark then assigns whole documents—not paragraphs—to splits and verifies zero overlap.
+
+| Corpus invariant | Result |
+|---|---:|
+| Languages | 4 |
+| Documents per language | 10 |
+| Total manifested documents | 40 |
+| Document-level train/validation/test overlap | 0 |
+| Selected long targets | 4,000 / 800 / 500 |
+| Test decisions checked by future-byte firewall | 17,308 |
+| Payload and manifest hashes verified | PASS |
+| Interrupted acquisition resume tested | PASS |
+| Tampered payload/path traversal rejected | PASS |
+
+The acquisition is resumable: a completed language is reused only after its files and hashes validate, and the final manifest is published atomically. A valid final corpus is a zero-network cache boundary. The benchmark reads only manifest-listed files; stale or unlisted files cannot enter training.
+
+This resolves the *multi-document corpus* and *≥500 long test targets* gates, but not language balance. The current long-target test pool contains Hindi and Telugu targets; English and Sindhi contribute no test words longer than 24 UTF-8 bytes. The new `long_target_language_coverage` gate therefore fails explicitly.
+
+### V2.1.6 Production-scale qualification — current verdict
+
+**Problem.** A collection of passing unit tests or a relative NLL win can be mistaken for production readiness even when absolute generation, data coverage, hardware, or recovery evidence is missing.
+
+**Solution.** `run_experiment.py` compiles a machine-readable gate matrix in `artifacts/production_readiness.json`. A costly-test candidate is `YES` only when every named required gate is `PASS`; `NOT_RUN`, `PARTIAL`, and relative-quality successes cannot hide a failed absolute requirement.
+
+**Example.** V2.1.5 passes NLL parity and produces valid continuation chains, while both arms still have 0% exact long-word generation. V2.1.6 therefore reports the learned mechanism as `PASS` and absolute generation quality as `FAIL` instead of collapsing both into a flattering aggregate.
+
+**Proof and result.** The table below is regenerated from measured artifacts by the one-command run. Its present answer is intentionally `NO`.
+
+**Candidate for costly production-scale testing: NO.** The verdict is generated from `artifacts/production_readiness.json`, not manually asserted here.
+
+| Qualification level | Result | Evidence |
+|---|---|---|
+| Reversible EOS codec | PASS | Exhaustive/random round trips |
+| Full 256-byte UTF-8 pathway | PASS | Controlled four-script experiment |
+| Natural single-block next-token LM | PASS | Matched causal RKE/fallback evaluation |
+| Three-seed quality parity | PASS | Means, sample SD and 95% confidence intervals |
+| Dynamic continuation codec | PASS | Exact payloads through 10,000 bytes |
+| Neural multi-block mechanics | PASS | CONT/EOS loss, PAD mask and 100% oracle reconstruction |
+| Learned cross-block next-token mechanics/parity | PASS | Generated-prefix RKE beats matched fallback NLL |
+| Absolute long-word generation quality | **FAIL** | Both arms have zero whole-word exact |
+| Cross-block three-seed stability | NOT RUN | Current learned continuation pilot uses one seed |
+| NumPy ↔ PyTorch CPU parity | PASS | Logits, loss, gradients and Adam update |
+| Accelerator and mixed precision | NOT RUN | No CUDA or MPS device is exposed |
+| Multi-document multilingual corpus | PASS | 40 revision-pinned documents; manifest and payload hashes verified |
+| Long-target coverage in every language | **FAIL** | English and Sindhi have no document-held-out >24-byte targets |
+| Unicode security suite | PARTIAL | Valid UTF-8 constraints pass; broader attacks remain |
+| Distributed recovery | NOT RUN | Required before production training |
+
+Parameters required before the costly-test label may become `YES`:
+
+| Area | Minimum production-test parameter |
+|---|---|
+| Corpus | Versioned, licensed, content-hashed, at least 10 documents per language |
+| Languages | Current four plus representative Latin, Indic, Arabic-derived and CJK coverage |
+| Long-target test | At least 500 natural targets longer than one block |
+| Split | Document-level isolation with zero content-hash overlap |
+| Context | At least 128 preceding tokens; current two-word context is insufficient |
+| Blocks | 24 bytes per block, configurable maximum, explicit CONT/EOS |
+| Seeds | At least 3 per arm with confidence intervals |
+| Controls | Identical body, data order, optimizer budget and hardware for RKE and fallback |
+| Quality | RKE NLL ≤ 1.05× fallback and generated byte/exact accuracy ≥ 0.95× fallback |
+| Generation | 100% valid chains, zero missing EOS, zero premature EOS and zero truncation |
+| Runtime | Mixed-precision throughput, latency, memory and utilization on the target accelerator |
+| Reliability | Deterministic checkpoint/resume and distributed failure recovery |
+
+### V2.1.5 Learned cross-block natural LM — functional PASS, production quality FAIL
+
+**Problem.** V2.1.4 proved that continuation blocks can be represented and decoded, but its neural model was an oracle: it did not prove that a language model could *learn* the next bytes of a natural word after crossing a block boundary without seeing future target bytes.
+
+**Solution.** Train matched RKE and byte-softmax models on 4,000 train, 800 validation and 500 document-isolated test targets of 25–96 UTF-8 bytes. For block zero the model sees two preceding context words and the within-block prefix. For later blocks it sees the generated previous block and current generated prefix. Teacher-forced training exposes only the ground-truth prefix up to the current decision—never the unseen suffix or complete target block.
+
+**Example.** The actual held-out 39-byte Telugu target `చంద్రవంశజులని` becomes a 24-byte block ending in `CONT`, followed by the remaining 15 bytes and `EOS`. At test time the second block is conditioned on the model's first block, not the correct hidden target. A mistake in block zero therefore propagates exactly as it would in deployment.
+
+```text
+context → generate block 0 + CONT → feed generated block 0
+        → generate block 1 + EOS  → reconstruct complete word
+```
+
+**Proof and result.** A future-byte firewall checks all 17,308 test decisions, and saved predictions expose every target/predicted byte span and terminator. RKE passes the functional and matched-quality gates, but not the absolute-quality gate:
+
+| Arm | Parameters | Separate output | Teacher-forced NLL | Generated byte accuracy | Whole-word exact | Premature EOS |
+|---|---:|---:|---:|---:|---:|---:|
+| Continuation RKE | **162,672** | **0** | **1.0083** | **51.41%** | 0% | 0% structural |
+| Byte fallback | 214,272 | 51,600 | 1.1744 | 45.33% | 0% | 0% structural |
+
+Both matched arms use `d_slot=8`, `d_model=200`, 4,000 optimizer steps and the same 13/5/46 block-start/terminator/interior sampling mix. RKE passes document isolation, its 17,308-decision future-byte firewall, generated-prefix evaluation, 100% valid chains, no missing EOS, zero structurally premature block-zero EOS, NLL parity and generated-byte parity. This is enough to pass the learned cross-block functionality gate. It does **not** pass absolute production quality: both arms have zero whole-word exact and the experiment has one seed. Predicting a valid word shorter than the reference is reported separately as a language error; it is not mislabeled as malformed EOS.
+
+The long-target pool remains imbalanced: the available training split has 331 Hindi, 3,782 Telugu, 13 Sindhi and no English examples under the >24-byte filter. Accordingly, `production_quality_passed` remains false even though the relative RKE experiment and multi-document gate pass.
+
+Artifacts: `artifacts/cross_block_lm/results.json`, `predictions.json`, `split.json` and both saved models.
+
+### V2.1.4 Neural continuation mechanics — PASS
+
+**Problem.** The original Kronecker layout reserves 32 positions for every token, wastes most positions on short words, and truncates anything longer than the fixed limit. A codec-only dynamic-block proposal would still leave batching, loss masks and neural decoding unproved.
+
+**Solution.** `ContinuationByteCodec` uses 24-byte ragged blocks and 259 states: PAD, EOS, CONT and 256 byte values. A short payload allocates one block; a longer payload adds blocks only as needed. `CONT` says another block follows, `EOS` closes the final block, and only slots after either terminator are PAD/loss-masked.
+
+**Example.** `apple` is encoded as five byte states plus `EOS` in one active block. The 51-byte `దక్షిణాఫ్రికాలోని` uses three blocks: 24 bytes + `CONT`, 24 bytes + `CONT`, then 3 bytes + `EOS`. No byte is cropped, and unused future blocks are never allocated.
+
+**Proof and result.** The discrete codec round-trips payloads through 10,000 bytes. A tied-prototype neural oracle reconstructs 150 disjoint held-out payloads, 336 blocks and 6,850 bytes through 96-byte payloads with 100% exact chains. Tests verify that CONT, EOS and all bytes bear loss while post-terminator PAD does not. This proves neural batching and decoding mechanics, not learned language quality; V2.1.5 addresses that next.
+
+### V2.1.3 Natural single-block and multi-seed quality — PASS
+
+**Problem.** The earlier copy/composition tasks proved reversibility and unseen-string emission, but they did not establish next-token quality on natural multilingual text. A single lucky seed could also make a small experiment look stronger than it is.
+
+**Solution.** Run matched next-word models on natural English, Hindi, Telugu and Sindhi paragraphs. The single-block benchmark samples 4,000 training, 800 validation and 800 test transitions, balanced across languages and isolated by paragraph. It compares vocabulary softmax, autoregressive byte fallback, fully parallel RKE, two parallel refinements, and causal RKE under recorded parameter/training budgets. The causal RKE/fallback comparison is repeated for three seeds with sample standard deviations and 95% confidence intervals.
+
+**Example.** Given only preceding natural words, every byte arm must emit the next word byte-by-byte or slot-by-slot and terminate with EOS. A held-out Hindi or Sindhi word remains representable even when it has no vocabulary row; the vocabulary arm reports its coverage rather than pretending an unknown-token loss is the word's NLL.
+
+**Proof and result.** Whole paragraphs are assigned to exactly one split, UTF-8 decoding is constrained, PAD after EOS is loss-masked, and matched arms report exact match plus byte/EOS NLL:
 
 | Output arm | Test exact | Test NLL | Target coverage | Parameters |
 |---|---:|---:|---:|---:|
@@ -60,34 +189,45 @@ The first production-readiness step replaces synthetic compositions with next-wo
 | Two-pass refined RKE | 17.250% | 2.2553 per byte/EOS | 100% | 41,560 |
 | **Causal RKE-Head** | **17.875%** | **1.8042 per byte/EOS** | **100%** | **41,332** |
 
-The vocabulary NLL has a different unit and excludes OOV targets, so it must not be compared numerically with the byte-normalized rows. All RKE and fallback variants cover every selected target and produce 100% valid UTF-8. Parallel RKE is much faster in this small CPU decode benchmark, but its byte/EOS NLL is about 25.2% worse than fallback. The eight-lag masked slot convolution improves NLL to 2.1395 and exact match to 18.625% in one fixed-depth parallel pass, but still misses the 5% NLL gate. At the corrected 5,000-step convergence budget, causal RKE reaches 1.8042 NLL and 17.875% exact match, compared with fallback's 1.7961 and 17.875%. It retains the same 258-state tied codebook, zero separate output parameters and 41,332 total parameters, at the cost of autoregressive decoding.
+The vocabulary NLL uses a different unit and excludes OOV targets, so it is not numerically comparable to byte-normalized NLL. At 5,000 steps, causal RKE mean NLL across three seeds is `1.8101 ± 0.0246` (95% CI half-width) and mean exact match is `17.625% ± 0.374%`; fallback is `1.7987 ± 0.0097` and `18.042% ± 0.726%`. Both predefined 5% mean-parity thresholds pass. Causal RKE keeps zero separate output parameters but gives up parallel decoding.
 
-The three-seed result is the qualification metric, not the best single run. Causal RKE mean NLL is `1.8101 ± 0.0246` (95% CI half-width) and mean exact match is `17.625% ± 0.374%`; fallback is `1.7987 ± 0.0097` and `18.042% ± 0.726%`. The causal means remain within the predefined 5% thresholds, so the multi-seed gate passes. Every seed, model hash, duration and metric is generated in `seed_stability`.
+### V2.1.2 Parallel alternatives — informative negative results
 
-The fixed neural arm's 24-byte bound covers 99.75% of English, 96.17% of Hindi, 91.33% of Telugu and 99.95% of Sindhi words in these sources. `ContinuationByteCodec` now removes truncation at the representation layer with explicit `CONT` and `EOS` states; generated proofs round-trip payloads through 10,000 bytes. Neural batching across those blocks is not implemented yet, so that gate remains partial. See `artifacts/natural_corpus/results.json` for corpus hashes, splits, per-language and byte-length metrics, calibration, predictions, decode speed, model hashes and training curves; see `artifacts/production_readiness.md` for the gate assessment.
+**Problem.** The original parallel RKE predicts every byte slot independently from the same hidden token state. Natural spelling has strong left-to-right dependencies, so parallel speed may be purchased with worse NLL than an autoregressive byte fallback.
 
-The measured NLL gap was addressed with a causal tied-codebook arm. During training it teacher-forces the preceding byte slots; during decoding it feeds the valid UTF-8 prefix back into the same transformer and scores the next RKE slot through `Ein.T`. This adds no classifier matrix and demonstrates that the quality loss came mainly from conditional independence between parallel slots.
+**Solution.** Test two bounded-compute alternatives. `MaskedSlotRKE` adds an eight-lag causal slot convolution in one fixed-depth pass. `RefinedSlotRKE` first proposes every slot, then performs one temperature-sharpened refinement pass conditioned on those proposals.
 
-`MaskedSlotRKE` tests the parallel alternative directly. A causal eight-lag convolution mixes only earlier latent slots into each later slot, but all positions are evaluated in vectorized fixed depth. Its finite-difference gradient and causal direction are tested. It improves the original parallel arm but does not observe actual previously chosen bytes, so it cannot reproduce the full autoregressive advantage. This negative result is retained in the evidence rather than labelled a fix.
+**Example.** After proposing the UTF-8 prefix bytes of a word, a causal/refinement path can alter a later byte using earlier-slot evidence; slot 7 can depend on slots 0–6, while slot 0 cannot leak information from slot 7. Both alternatives retain a fixed one- or two-pass decode rather than one model call per byte.
 
-`RefinedSlotRKE` then tests a fixed two-pass alternative. Pass one proposes every slot; its temperature-sharpened distributions are mapped back through the same `Ein` codebook; pass two uses a masked eight-lag refiner and emits every corrected slot together. The refiner is zero-initialized, so its initial output is exactly the proposal rather than a random perturbation. End-to-end finite-difference checks cover `Wref`, the tied `Ein`, and the transformer body. It reaches 2.2553 test NLL and therefore fails to improve on the simpler masked arm. This rules out this small refiner, not proposal/refinement methods in general.
+**Proof and result.** Finite-difference tests cover refinement weights, the tied codebook and transformer body, and a causality test perturbs a later source slot to prove it cannot affect an earlier output. Both variants improve or illuminate the baseline but miss the predefined byte-fallback NLL parity gate. This section is a recorded negative result, not a claimed fix; V2.1.3 shows that causal RKE closes the gap by accepting sequential decoding.
 
-Passing this pilot quality gate does not make the system production-ready. Long-token coverage, GPU execution, large-scale pretraining, distributed recovery and a broader Unicode security suite remain open gates in the generated readiness report.
+### V2.1.1 Framework correctness — PASS
 
-## Production-test qualification
+**Problem.** The initial research model used hand-written NumPy forward/backpropagation. Strong toy results are not worth scaling if a gradient, mask or optimizer defect is responsible, and NumPy alone is not the intended production training framework.
 
-The PyTorch port loads the exact NumPy parameters and compares float64 logits, masked loss, every parameter gradient and one Adam update. Maximum errors are `3.5e-18` for logits, `2.6e-10` for loss, `1.1e-17` for gradients and `1.4e-17` for the optimizer step. CPU framework parity therefore passes. This environment exposes neither CUDA nor MPS, so accelerator and mixed-precision gates are not inferred from CPU behavior.
+**Solution.** Port the same RKE computation to PyTorch without changing architecture or parameters, then load an identical state and compare both implementations on the same masked minibatch.
 
-The generated verdict is currently **not a candidate for costly production-scale testing**. Neural continuation mechanics now pass: a constructed tied-prototype oracle reconstructs 150 disjoint held-out payloads, 336 blocks and lengths through 96 bytes with 100% exact block chains; CONT, EOS and bytes bear loss while post-terminator slots are masked. This is intentionally not called learned long-word modelling. The remaining required blockers are learned cross-block language modelling, accelerator benchmarks, a versioned multi-document corpus and the full Unicode security suite. The verdict is computed from named gates in `artifacts/production_readiness.json`; it is not a README assertion.
+**Example.** One test computes logits, EOS/PAD-masked loss, every parameter gradient and one Adam update in NumPy and PyTorch. It compares corresponding tensors directly rather than merely checking that both losses decrease.
+
+**Proof and result.** Maximum observed differences are `3.5e-18` for logits, `2.6e-10` for masked loss, `1.1e-17` for gradients and `1.4e-17` for one Adam update. CPU framework parity passes. Accelerator kernels and mixed precision remain untested because this environment exposes neither CUDA nor MPS.
 
 ## Run everything
 
+Install dependencies once:
+
 ```bash
 python3 -m pip install -r S7/requirements.txt
+```
+
+Then the complete deterministic demonstration is one command:
+
+```bash
 python3 S7/run_experiment.py
 ```
 
-The second command deterministically regenerates `S7/artifacts/`, trains the model, evaluates the held-out vocabulary, creates a plot and visual report, and exits non-zero if any claim fails.
+It validates the checked-in corpus hashes, regenerates `S7/artifacts/`, trains every model, evaluates the held-out sets, creates the reports, records dataset/model hashes and exits non-zero if any functional claim fails. The generated production-readiness verdict may still be `NO`; unresolved research gates are evidence, not demo-process failures.
+
+To deliberately refresh the revision-pinned source corpus (network required), run `python3 S7/acquire_multidoc.py`. With the current valid manifest it performs a zero-network validation/reuse path.
 
 Tests:
 
@@ -202,6 +342,9 @@ After `python3 S7/run_experiment.py`:
 - `artifacts/multilingual/split.json` — exact multilingual train and whole-word holdout split.
 - `artifacts/natural_corpus/results.json` — real-corpus NLL, exact match, calibration, coverage, speed and hashes;
 - `artifacts/natural_corpus/split.json` and `predictions.json` — paragraph-isolated examples and decoded outputs;
+- `data/multidoc/manifest.json` — revision, license, path, byte count and SHA-256 for all 40 source documents;
+- `artifacts/cross_block_lm/results.json` — document-isolated cross-block metrics, firewall and quality gates;
+- `artifacts/cross_block_lm/split.json` and `predictions.json` — exact long-target stream and generated byte chains;
 - `artifacts/production_readiness.json` and `.md` — generated quality and deployment gates.
 
 At the demo width, a one-million-token vocabulary head would have `d_model × 1,000,000` parameters. The RKE output adds **zero** separate head parameters; it reuses the fixed-size input byte codebook. `results.json` computes the exact comparison rather than hardcoding it.
@@ -235,9 +378,12 @@ This remains a controlled compositional language, not a natural-corpus perplexit
 - `multilingual.py` — full-byte Hindi, Telugu, Tamil and Arabic experiment;
 - `natural_corpus.py` — natural English, Hindi, Telugu and Sindhi matched-arm pilot;
 - `continuation_neural.py` — multi-block neural batching, mask and tied-decoding oracle;
+- `cross_block_lm.py` — learned natural continuation RKE versus matched fallback;
+- `acquire_multidoc.py` — resumable revision-pinned acquisition and strict corpus validation;
 - `torch_port.py` — parameter-identical PyTorch port and NumPy parity oracle;
 - `run_experiment.py` — deterministic experiment and evidence generator;
-- `tests/test_rke.py` — codec and split invariants;
+- `tests/test_rke.py` — codec, gradients, causality, UTF-8 and split invariants;
+- `tests/test_multidoc.py` — corpus resume, reuse, tamper and path-safety invariants;
 - `OTHER_IDEAS.md` — four separate Kronecker V2 research proposals;
 - `requirements.txt` — NumPy and PyTorch.
 
@@ -246,9 +392,9 @@ This remains a controlled compositional language, not a natural-corpus perplexit
 1. The controlled matched experiment uses a ten-character subset for speed; both multilingual experiments use the full 258-state byte codec.
 2. The natural pilot is small next-word prediction, not document-scale pretraining, semantic evaluation or generation-fluency evidence.
 3. Output compute is `O(P × 258)`. It is vocabulary-independent, not free.
-4. Continuation blocks and neural mechanics are integrated, but learned cross-block next-token conditioning has not been evaluated.
+4. Learned cross-block next-token conditioning is evaluated and has valid termination, but still has 0% whole-word exact and only one trained seed.
 5. The raw byte codec can represent invalid UTF-8; the provided constrained decoder prevents it for text output, but production implementations must preserve that constraint.
 6. Both tested fixed-depth parallel refiners miss byte-fallback NLL parity; causal RKE passes the pilot parity gate but gives up parallel decoding.
 7. PyTorch CPU parity is proven; accelerator kernels, mixed precision, distributed checkpointing and Unicode security stress tests remain unverified.
 
-The next paper-worthy alternative is blockwise causal decoding: emit small groups of slots in parallel while conditioning each group on completed preceding groups. It offers a measurable speed/quality continuum instead of assuming that one or two fully parallel passes can match the byte chain rule. Before costly testing, learned continuation blocks must be evaluated in next-token modelling, PyTorch must be benchmarked on an accelerator, and substantially larger document-separated corpora must replace the four single-article sources.
+The next paper-worthy alternative is blockwise causal decoding: emit small groups of slots in parallel while conditioning each group on completed preceding groups. It offers a measurable speed/quality continuum instead of assuming that one or two fully parallel passes can match the byte chain rule. Before costly testing, cross-block training needs non-zero exact generation over at least three seeds, context must grow from two to at least 128 tokens, English/Sindhi long-target coverage must be added, and PyTorch must be benchmarked on an accelerator.

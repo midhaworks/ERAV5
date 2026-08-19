@@ -179,8 +179,16 @@
       "valid_block_chain_rate": 1.0
     }
   },
+  "cross_block_language_model": {
+    "evidence": "cross_block_lm/results.json",
+    "fallback_byte_accuracy": 0.4532822703392743,
+    "fallback_nll": 1.1743681985781402,
+    "passed": true,
+    "rke_byte_accuracy": 0.5141108466507991,
+    "rke_nll": 1.0082843923265634
+  },
   "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
-  "elapsed_seconds": 242.044,
+  "elapsed_seconds": 316.384,
   "experiment": "Reversible Kronecker Head (RKE-Head)",
   "fixed_vocab_baseline": {
     "coverage": 0.0,

@@ -3,9 +3,12 @@
     "multi_seed_quality_parity",
     "dynamic_blocks_in_neural_model",
     "learned_cross_block_language_model",
+    "long_word_generation_quality",
+    "cross_block_multi_seed_stability",
     "numpy_pytorch_cpu_parity",
     "accelerator_kernel_and_mixed_precision",
     "multi_document_corpus",
+    "long_target_language_coverage",
     "unicode_security_suite"
   ],
   "costly_production_scale_test_candidate": false,
@@ -22,6 +25,9 @@
       "evidence": "natural_corpus/results.json corpus audit",
       "status": "PARTIAL"
     },
+    "cross_block_multi_seed_stability": {
+      "status": "NOT_RUN"
+    },
     "distributed_checkpointing": {
       "status": "NOT_RUN"
     },
@@ -37,12 +43,22 @@
       "status": "NOT_RUN"
     },
     "learned_cross_block_language_model": {
-      "reason": "Mechanical oracle passes; learned cross-block LM not evaluated",
-      "status": "PARTIAL"
+      "evidence": "cross_block_lm/results.json",
+      "status": "PASS"
+    },
+    "long_target_language_coverage": {
+      "evidence": "cross_block_lm/results.json available_by_language_split",
+      "status": "FAIL"
+    },
+    "long_word_generation_quality": {
+      "evidence": "cross_block_lm/results.json production_quality_checks",
+      "status": "FAIL"
     },
     "multi_document_corpus": {
-      "reason": "Only one source article per language is available",
-      "status": "FAIL"
+      "documents": 40,
+      "evidence": "../data/multidoc/manifest.json and cross_block_lm/results.json",
+      "manifest_hash": "64a7f158e1cb3b99a3086fe9b88b452ef82947fbdacd2a79d41d6c9d853d78a0",
+      "status": "PASS"
     },
     "multi_seed_quality_parity": {
       "evidence": "natural_corpus/results.json seed_stability",
@@ -88,17 +104,19 @@
     }
   },
   "next_actions": [
-    "Train and evaluate learned cross-block next-token language modelling.",
+    "Achieve non-zero long-word exact match on at least 500 held-out natural targets.",
+    "Run the learned cross-block comparison across at least three seeds.",
     "Test blockwise causal decoding or distillation to trade a few sequential groups for quality.",
     "Benchmark PyTorch mixed precision on an available accelerator.",
-    "Acquire a versioned multi-document multilingual corpus.",
-    "Train on document-separated multilingual corpora at larger scale."
+    "Expand English and Sindhi sources until every language contributes held-out long targets.",
+    "Increase causal context from two words to at least 128 preceding tokens."
   ],
   "production_ready": false,
   "resolved_actions": [
     "Causal tied-codebook output closes the natural-pilot mean quality gap across three seeds.",
     "PyTorch matches NumPy logits, loss, gradients and one optimizer step.",
     "Explicit continuation blocks losslessly encode long byte strings.",
-    "Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks."
+    "Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks.",
+    "A revision-pinned, hashed 40-document corpus now provides document-isolated splits and 500 held-out long targets."
   ]
 }

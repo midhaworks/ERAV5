@@ -15,6 +15,7 @@ from multilingual import dataset as multilingual_dataset  # noqa: E402
 from natural_corpus import _choose_rke_state, build_dataset, tokenize  # noqa: E402
 from torch_port import run_parity  # noqa: E402
 from continuation_neural import make_payloads, run_continuation_neural  # noqa: E402
+from cross_block_lm import build_long_dataset, choose_state  # noqa: E402
 
 
 class ReversibleKroneckerTests(unittest.TestCase):
@@ -166,6 +167,21 @@ class ReversibleKroneckerTests(unittest.TestCase):
         self.assertTrue(result["passed"])
         self.assertEqual(1.0, result["test"]["exact_match"])
         self.assertGreater(result["test"]["loss_bearing_cont_states"], 0)
+
+    def test_cross_block_dataset_is_natural_and_paragraph_disjoint(self):
+        data, audit = build_long_dataset()
+        self.assertFalse(audit["paragraph_leakage"])
+        self.assertFalse(audit["document_leakage"])
+        self.assertEqual("document", audit["split_unit"])
+        self.assertEqual(40, audit["corpus_documents"])
+        self.assertEqual({"train": 4000, "validation": 800, "test": 500},
+                         {name: len(rows) for name, rows in data.items()})
+        self.assertTrue(all(len(row["target"].encode("utf-8")) > 24 for rows in data.values() for row in rows))
+
+    def test_cross_block_decoder_forbids_first_block_eos(self):
+        scores = np.full(259, -10.0); scores[1] = 20.0; scores[ord("a") + 3] = 19.0
+        self.assertEqual(ord("a") + 3, choose_state(scores, b"", b"", 0, 0, True))
+        self.assertEqual(1, choose_state(scores, b"x" * 24, b"", 0, 1, True))
 
     def test_utf8_decoder_masks_invalid_bytes_and_incomplete_eos(self):
         # Prefer illegal 0xFF everywhere, but leave the valid UTF-8 path for “é”.

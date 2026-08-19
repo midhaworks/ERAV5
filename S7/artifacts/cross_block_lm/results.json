@@ -1,0 +1,146 @@
+{
+  "checks": {
+    "byte_accuracy_at_least_95_percent_of_fallback": true,
+    "current_target_future_bytes_blocked": true,
+    "generated_byte_accuracy_nontrivial": true,
+    "generated_prefix_evaluation": true,
+    "nll_within_5_percent": true,
+    "paragraph_leakage_zero": true,
+    "rke_no_missing_eos": true,
+    "rke_valid_chains_100_percent": true,
+    "structural_premature_eos_zero": true,
+    "test_examples_at_least_200": true
+  },
+  "codec": {
+    "block_bytes": 24,
+    "states": 259
+  },
+  "dataset": {
+    "available_by_language_split": {
+      "English": {
+        "test": 0,
+        "train": 0,
+        "validation": 1
+      },
+      "Hindi": {
+        "test": 311,
+        "train": 331,
+        "validation": 23
+      },
+      "Sindhi": {
+        "test": 0,
+        "train": 13,
+        "validation": 0
+      },
+      "Telugu": {
+        "test": 320,
+        "train": 3782,
+        "validation": 1577
+      }
+    },
+    "corpus_documents": 40,
+    "corpus_manifest_hash": "64a7f158e1cb3b99a3086fe9b88b452ef82947fbdacd2a79d41d6c9d853d78a0",
+    "document_leakage": false,
+    "max_blocks": 4,
+    "paragraph_leakage": false,
+    "selected": {
+      "test": 500,
+      "train": 4000,
+      "validation": 800
+    },
+    "source_documents": {
+      "test": 2,
+      "train": 19,
+      "validation": 2
+    },
+    "split_unit": "document",
+    "target_byte_range": [
+      25,
+      96
+    ]
+  },
+  "dataset_hash": "1f3e629602e0249e614e52baf042aab9e189589457ef13b008e3c23a29825e1a",
+  "experiment": "learned natural cross-block next-token LM",
+  "fallback": {
+    "generated": {
+      "exact_match": 0.0,
+      "examples": 500,
+      "examples_per_second": 286.9488215314537,
+      "missing_eos_rate": 0.024,
+      "per_target_blocks": {
+        "2": {
+          "exact_match": 0.0,
+          "examples": 491
+        },
+        "3": {
+          "exact_match": 0.0,
+          "examples": 9
+        }
+      },
+      "position_aligned_byte_accuracy": 0.4532822703392743,
+      "shorter_than_reference_rate": 0.334,
+      "structural_premature_eos_rate": 0.0,
+      "valid_block_chain_rate": 0.976
+    },
+    "teacher_forced_nll_per_decision": 1.1743681985781402
+  },
+  "input_firewall": {
+    "decisions_checked": 17308,
+    "future_target_bytes_in_input": 0,
+    "prefix_length_equals_decision_position": true
+  },
+  "limitations": [
+    "Two-word context remains below the planned 128-token production test.",
+    "Single seed pilot; production gate requires three seeds."
+  ],
+  "parameters": {
+    "fallback": 214272,
+    "fallback_output": 51600,
+    "rke": 162672,
+    "rke_separate_output": 0
+  },
+  "passed": true,
+  "production_quality_checks": {
+    "at_least_500_long_test_targets": true,
+    "at_least_three_seeds": false,
+    "document_level_multisource_corpus": true,
+    "whole_word_exact_nonzero": false
+  },
+  "production_quality_passed": false,
+  "rke": {
+    "generated": {
+      "exact_match": 0.0,
+      "examples": 500,
+      "examples_per_second": 353.4672294395149,
+      "missing_eos_rate": 0.0,
+      "per_target_blocks": {
+        "2": {
+          "exact_match": 0.0,
+          "examples": 491
+        },
+        "3": {
+          "exact_match": 0.0,
+          "examples": 9
+        }
+      },
+      "position_aligned_byte_accuracy": 0.5141108466507991,
+      "shorter_than_reference_rate": 0.404,
+      "structural_premature_eos_rate": 0.0,
+      "valid_block_chain_rate": 1.0
+    },
+    "teacher_forced_nll_per_decision": 1.0082843923265634
+  },
+  "training": {
+    "batch_size": 64,
+    "d_model": 200,
+    "d_slot": 8,
+    "fallback_seconds": 27.246264000001247,
+    "rke_seconds": 35.983278250001604,
+    "sampling": {
+      "block_start": 13,
+      "interior_byte": 46,
+      "terminator": 5
+    },
+    "steps_per_arm": 4000
+  }
+}

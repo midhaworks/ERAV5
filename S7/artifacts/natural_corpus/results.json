@@ -85,34 +85,34 @@
   "dataset_hash": "d9702985d739ac930675abb7ccfff649fdaa9eeb25f8aa7b2535d6f004772cab",
   "decode_speed": {
     "byte_fallback": {
-      "examples_per_second": 1071.6972736829864,
-      "median_seconds": 0.7464794580009766,
+      "examples_per_second": 1034.2699424226796,
+      "median_seconds": 0.7734924579999642,
       "repeats": 5
     },
     "causal_rke": {
-      "examples_per_second": 1334.1101745838482,
-      "median_seconds": 0.5996506249939557,
+      "examples_per_second": 1350.3088718389108,
+      "median_seconds": 0.592457042002934,
       "repeats": 5
     },
     "environment": "NumPy 2.4.4; CPU; batch=800",
     "masked_rke": {
-      "examples_per_second": 33408.15367323216,
-      "median_seconds": 0.02394625000306405,
+      "examples_per_second": 35574.26445631368,
+      "median_seconds": 0.022488167000119574,
       "repeats": 5
     },
     "refined_rke": {
-      "examples_per_second": 9670.902219383579,
-      "median_seconds": 0.08272237500204938,
+      "examples_per_second": 11827.291912201752,
+      "median_seconds": 0.06764016699162312,
       "repeats": 5
     },
     "rke": {
-      "examples_per_second": 37800.26106340995,
-      "median_seconds": 0.021163874997000676,
+      "examples_per_second": 38159.29118854541,
+      "median_seconds": 0.020964750001439825,
       "repeats": 5
     },
     "vocabulary": {
-      "examples_per_second": 41754.01737929118,
-      "median_seconds": 0.01915983299841173,
+      "examples_per_second": 43646.3824660616,
+      "median_seconds": 0.018329124999581836,
       "repeats": 5
     }
   },
@@ -852,21 +852,21 @@
           "model_hash": "e7ed10aec51ff70eafee2440ed8d0338f5890d5abd04565eadbe2de93df8ef61",
           "nll_per_byte_or_eos": 1.7960520878104467,
           "seed": 701,
-          "training_seconds": 10.92547941700468
+          "training_seconds": 11.57465012499597
         },
         {
           "exact_match": 0.1875,
           "model_hash": "a7451d559a9f9e3378b6a61f03664e4edc7b3ff840f5cf2581765326f07f53d8",
           "nll_per_byte_or_eos": 1.8082859716491233,
           "seed": 702,
-          "training_seconds": 15.056031499996607
+          "training_seconds": 11.895346416989923
         },
         {
           "exact_match": 0.175,
           "model_hash": "6ebb900487432dca9821fcd3f80fcdf80f210304a0a79f019440cea5176d20ca",
           "nll_per_byte_or_eos": 1.791780925584213,
           "seed": 703,
-          "training_seconds": 11.738516792000155
+          "training_seconds": 12.501774999996996
         }
       ]
     },
@@ -891,21 +891,21 @@
           "model_hash": "a1bf8592b62d14c6b0929469deabfc8988a65cd4ebba9fc609c134cbf9270b45",
           "nll_per_byte_or_eos": 1.804237009311691,
           "seed": 551,
-          "training_seconds": 31.87675720900006
+          "training_seconds": 32.42074324999703
         },
         {
           "exact_match": 0.1725,
           "model_hash": "fd9f4c8fe5872e82bc8858512d2c128da3b42ed038b0bde78912f50ed368055f",
           "nll_per_byte_or_eos": 1.7918947902644158,
           "seed": 552,
-          "training_seconds": 32.04546462500002
+          "training_seconds": 34.23238366599253
         },
         {
           "exact_match": 0.1775,
           "model_hash": "07276a7e56676029de36b4f62fd2cb81bf6dce90d37a5cbc348489098b5db4e9",
           "nll_per_byte_or_eos": 1.8342241106682744,
           "seed": 553,
-          "training_seconds": 33.224770875000104
+          "training_seconds": 34.8356000000058
         }
       ]
     },
@@ -921,16 +921,16 @@
   "training": {
     "batch_size": 64,
     "byte_fallback": {
-      "seconds": 10.92547941700468,
+      "seconds": 11.57465012499597,
       "steps": 2500
     },
     "causal_rke": {
-      "seconds": 31.87675720900006,
+      "seconds": 32.42074324999703,
       "steps": 5000
     },
     "masked_rke": {
       "kernel_size": 8,
-      "seconds": 17.71909625000262,
+      "seconds": 18.6838045839977,
       "steps": 2500
     },
     "refined_rke": {
@@ -938,15 +938,15 @@
       "kernel_size": 8,
       "passes": 2,
       "proposal_temperature": 0.25,
-      "seconds": 31.471929541999998,
+      "seconds": 32.69853824999882,
       "steps": 2500
     },
     "rke": {
-      "seconds": 5.013737582994509,
+      "seconds": 5.2416152079968015,
       "steps": 800
     },
     "vocabulary": {
-      "seconds": 3.7021361669976613,
+      "seconds": 3.8407870000082767,
       "steps": 800
     }
   },

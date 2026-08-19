@@ -18,6 +18,7 @@ from multilingual import run_multilingual_experiment
 from natural_corpus import run_natural_corpus_experiment
 from torch_port import run_parity
 from continuation_neural import run_continuation_neural
+from cross_block_lm import run_cross_block_lm
 
 
 ROOT = Path(__file__).resolve().parent
@@ -160,6 +161,7 @@ def main() -> None:
     natural_results = run_natural_corpus_experiment(OUT / "natural_corpus")
     torch_parity = run_parity(OUT / "torch_parity.json")
     continuation_neural = run_continuation_neural(OUT / "continuation_neural")
+    cross_block = run_cross_block_lm(OUT / "cross_block_lm")
 
     d_model, d_slot, full_byte_states, full_slots, million = model.d_model, model.d_slot, 258, MAX_CHARS + 1, 1_000_000
     scaling = {
@@ -179,6 +181,11 @@ def main() -> None:
         "dataset_hash": sha256({"train": train, "test": test}), "model_state_hash": model.state_hash(),
         "analytic_proof": analytic, "full_byte_proof": full_byte_proof, "truncation_counterexample": truncation,
         "continuation_block_proof": continuation_proof, "continuation_neural": continuation_neural,
+        "cross_block_language_model": {"passed": cross_block["passed"], "evidence": "cross_block_lm/results.json",
+                                        "rke_nll": cross_block["rke"]["teacher_forced_nll_per_decision"],
+                                        "fallback_nll": cross_block["fallback"]["teacher_forced_nll_per_decision"],
+                                        "rke_byte_accuracy": cross_block["rke"]["generated"]["position_aligned_byte_accuracy"],
+                                        "fallback_byte_accuracy": cross_block["fallback"]["generated"]["position_aligned_byte_accuracy"]},
         "torch_parity": torch_parity,
         "neural_proof": neural, "parameter_scaling": scaling,
         "language_model_followup": {
@@ -275,14 +282,28 @@ def main() -> None:
             "dynamic_continuation_codec": {"status": "PASS", "evidence": "results.json continuation_block_proof"},
             "dynamic_blocks_in_neural_model": {"status": "PASS",
                                                 "evidence": "continuation_neural/results.json"},
-            "learned_cross_block_language_model": {"status": "PARTIAL",
-                                                     "reason": "Mechanical oracle passes; learned cross-block LM not evaluated"},
+            "learned_cross_block_language_model": {"status": "PASS" if cross_block["passed"] else "FAIL",
+                                                     "evidence": "cross_block_lm/results.json"},
+            "long_word_generation_quality": {"status": "PASS" if
+                                              cross_block["production_quality_checks"]["whole_word_exact_nonzero"]
+                                              and cross_block["production_quality_checks"]["at_least_500_long_test_targets"]
+                                              else "FAIL",
+                                              "evidence": "cross_block_lm/results.json production_quality_checks"},
+            "cross_block_multi_seed_stability": {"status": "NOT_RUN"},
             "numpy_pytorch_cpu_parity": {"status": "PASS" if torch_parity["passed"] else "FAIL",
                                           "evidence": "torch_parity.json"},
             "corpus_byte_coverage": {"status": "PARTIAL", "evidence": "natural_corpus/results.json corpus audit"},
             "accelerator_kernel_and_mixed_precision": {"status": "NOT_RUN",
                                                         "reason": "No CUDA or MPS device exposed"},
-            "multi_document_corpus": {"status": "FAIL", "reason": "Only one source article per language is available"},
+            "multi_document_corpus": {"status": "PASS" if
+                                      cross_block["production_quality_checks"]["document_level_multisource_corpus"]
+                                      else "FAIL", "documents": cross_block["dataset"]["corpus_documents"],
+                                      "manifest_hash": cross_block["dataset"]["corpus_manifest_hash"],
+                                      "evidence": "../data/multidoc/manifest.json and cross_block_lm/results.json"},
+            "long_target_language_coverage": {"status": "PASS" if all(
+                cross_block["dataset"]["available_by_language_split"][language]["test"] > 0
+                for language in cross_block["dataset"]["available_by_language_split"]) else "FAIL",
+                "evidence": "cross_block_lm/results.json available_by_language_split"},
             "large_scale_pretraining": {"status": "NOT_RUN"},
             "unicode_security_suite": {"status": "PARTIAL"},
             "distributed_checkpointing": {"status": "NOT_RUN"},
@@ -290,17 +311,20 @@ def main() -> None:
         "resolved_actions": ["Causal tied-codebook output closes the natural-pilot mean quality gap across three seeds.",
                              "PyTorch matches NumPy logits, loss, gradients and one optimizer step.",
                              "Explicit continuation blocks losslessly encode long byte strings.",
-                             "Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks."],
-        "next_actions": ["Train and evaluate learned cross-block next-token language modelling.",
+                             "Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks.",
+                             "A revision-pinned, hashed 40-document corpus now provides document-isolated splits and 500 held-out long targets."],
+        "next_actions": ["Achieve non-zero long-word exact match on at least 500 held-out natural targets.",
+                         "Run the learned cross-block comparison across at least three seeds.",
                          "Test blockwise causal decoding or distillation to trade a few sequential groups for quality.",
                          "Benchmark PyTorch mixed precision on an available accelerator.",
-                         "Acquire a versioned multi-document multilingual corpus.",
-                         "Train on document-separated multilingual corpora at larger scale."],
+                         "Expand English and Sindhi sources until every language contributes held-out long targets.",
+                         "Increase causal context from two words to at least 128 preceding tokens."],
     }
     candidate_required = ("multi_seed_quality_parity", "dynamic_blocks_in_neural_model",
                           "learned_cross_block_language_model",
+                          "long_word_generation_quality", "cross_block_multi_seed_stability",
                           "numpy_pytorch_cpu_parity", "accelerator_kernel_and_mixed_precision",
-                          "multi_document_corpus", "unicode_security_suite")
+                          "multi_document_corpus", "long_target_language_coverage", "unicode_security_suite")
     readiness["candidate_required_gates"] = list(candidate_required)
     readiness["costly_production_scale_test_candidate"] = all(
         readiness["gates"][name]["status"] == "PASS" for name in candidate_required)

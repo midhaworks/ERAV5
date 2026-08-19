@@ -143,7 +143,7 @@
   },
   "training": {
     "batch_size": 64,
-    "seconds": 7.593678541998088,
+    "seconds": 7.69153374999587,
     "steps": 3000
   }
 }

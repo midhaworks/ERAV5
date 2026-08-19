@@ -1,0 +1,67 @@
+The Andamanese languages are the various languages spoken by the indigenous peoples of the Andaman Islands in the Indian Ocean. There are two known Andamanese language families, Great Andamanese and Ongan, as well as two presumed but unattested languages, Sentinelese and Jangil. 
+Although the languages in the Andaman Islands were once assumed to be in the same language family, it is now widely accepted that Great Andamanese and Ongan have no genealogical relationship. Thus, the term "Andamanese languages" is now a geographic label.
+
+
+== Classification ==
+The attested Andamanese languages fall into two genetically unrelated families:
+
+Great Andamanese: A moribund language family once spoken by Great Andamanese people. Today, the first language of most Great Andamanese people is Hindi.
+Ongan: Two languages, Jarawa and Onge, spoken by roughly 670 people in 2020.
+In addition, there are two unattested languages: 
+
+Sentinelese: Because the Sentinelese people refuse contact with outsiders, their exact population is unknown and essentially nothing is known of their language. There are likely at least 50 speakers, and perhaps upwards of 250. Anvita Abbi (2020) believes that Sentinelese is most likely Ongan.
+Jangil: Extinct by 1920s. No ethnically Jangil people survive today. Maurice Vidal Portman observed that Jangil shared similarities with Jarawa, and believed that they were at one point the same language.
+The languages of the Andaman Islands have frequently been assumed to be from the same single Andamanese language family. However, the similarities between Great Andamanese and Ongan are so far mainly of a typological morphological nature, with little common vocabulary. Abbi (2009) demonstrated that the Andaman Islands have two unrelated language families: Great Andamanese and Ongan. 
+Blevins (2007) summarizes,
+
+a relationship between Jarawa and Onge and languages of the Great Andaman group is not widely accepted. Radcliffe-Brown (1914:40) found only seven potential cognates between Onge and Bea/Jeru, and noted that the difference between Onge and the Great Andaman languages "is such that it would not be possible from consideration of the vocabulary alone to prove that they belonged to the same language stock." [...] Abbi (2006:93) is agnostic, stating that "current linguistic analysis does not, with any certainty, indicate any genetic relationship between Great Andamanese and the other two languages." The only positive evidence offered in support of this relationship is a listing of 17 word pairs as proposed cognates in Manoharan (1989:16667). There are several problems with Manoharan's proposal [such as semantic mismatches and failing to identify loans. ...] Given evidence that shows these languages have been in contact, and the scarcity of data available at present on Great Andaman languages, there remains no persuasive evidence of a family relationship between Jarawa-Onge and the Great Andaman languages. [...] Greenberg (1971:810) is unconvinced of the relation between Great Andaman and Onge-Jarawa, agreeing with Radcliffe-Brown (1914) that "there are very few vocabulary resemblances between this language [Onge] and those of Great Andaman and the only real point of contact is typological.  A few citations from Onge have been included in the general Indo-Pacific vocabulary, but both its special relationship to the languages of the rest of the Andamans and its assignment to Indo-Pacific must be considered highly provisional."
+
+
+=== Controversial classifications ===
+Joseph Greenberg proposed that the Great Andamanese languages are related to western Papuan languages as members of a phylum he called Indo-Pacific, but this is not generally accepted by other linguists. Stephen Wurm states that the lexical similarities between Great Andamanese and the West Papuan and certain languages of Timor "are quite striking and amount to virtual formal identity […] in a number of instances", but considers this to be due to a linguistic substratum rather than a direct relationship. 
+Blevins (2007) proposes that the Ongan languages are related to Austronesian in an Austronesian–Ongan family, for which she has attempted to establish regular sound correspondences. The proposed connection between Austronesian and Ongan has not been supported by Austronesianists, and Robert Blust (2014) finds that Blevins' conclusions are not supported by her data: Of her first 25 reconstructions, none are reproducible using the comparative method, and Blust concludes that the grammatical comparison does not hold up. Blust, in addition, cites non-linguistic (such as cultural, archaeological, and biological) evidence against Blevins' hypothesis.
+
+
+== History ==
+
+The indigenous peoples of the Andaman Islands have lived there for thousands of years. Although the existence of the islands and their inhabitants was long known to maritime powers and traders of the South– and Southeast–Asia region, contact with these peoples was highly sporadic and very often hostile. As a result, almost nothing is recorded of them or their languages until the mid-18th century. 
+By the late 18th century, when the British first established a colonial presence on the Andaman Islands, there were an estimated 5,000 Great Andamanese living on Great Andaman and surrounding islands, comprising 10 distinct tribes with distinct but closely related languages. 
+From the 1860s onwards, the British established a penal colony on the islands, which led to the subsequent arrival of mainland settlers and indentured labourers, mainly from the Indian subcontinent. This coincided with the massive population reduction of the Andamanese due to outside diseases. 
+One of the first accounts in English of the languages was by the early phonetician Alexander John Ellis, who presented to the Philological Society on the South Andamanese languages on his retirement. This presentation was later adapted into a Report of Researches into the Language of the South Andaman Island.
+By the beginning of the 20th century most of these populations were greatly reduced in numbers, and the various linguistic and tribal divisions among the Great Andamanese effectively ceased to exist, despite a census of the time still classifying the groups as separate. Their linguistic diversity also suffered as the surviving populations intermingled with one another, and some also intermarried with Karen (Burmese) and Indian settlers.
+
+By the latter part of the 20th century, the majority of Great Andamanese languages had become extinct.
+At the start of the 21st century only about 50 or so individuals of Great Andamanese descent remained, resettled to a single small island (Strait I.). About half of these individuals speak what may be considered a modified version (or creole) of Great Andamanese, based mainly on Aka-Jeru. This modified version has been called "Present Great Andamanese" by some scholars, but also may be referred to simply as "Jero" or "Great Andamanese". Hindi increasingly serves as their primary language, and is the only language for around half of them.
+The Ongan languages survive mainly because of the greater isolation of the peoples who speak them. This isolation has been reinforced by an outright hostility towards outsiders and extreme reluctance to engage in contact with them by South Andamanese tribes, particularly the Sentinelese and Jarawa. The Sentinelese have been so resistant that their language remains entirely unknown to outsiders.
+
+
+== Lexicon ==
+Abbi (2009) lists the following lexical items for Onge, Jarawa, and Great Andamanese, showing that Ongan and Great Andamanese are distinct language families sharing few lexical similarities. 
+
+
+== See also ==
+Nicobarese languages
+
+
+== References ==
+
+
+== Bibliography ==
+Abbi, Anvita. 2006. Endangered Languages of the Andaman Islands. LINCOM Studies in Asian Linguistics, 64. München: Lincom Europa. ISBN 3-89586-866-3
+Burenhult, Niclas. 1996. Deep linguistic prehistory with particular reference to Andamanese.  Working Papers 45, 5–24. Lund University: Department of Linguistics.
+Man, E.H.
+Dictionary of the South Andaman Language, British India Press: Bombay 1923.
+On the Aboriginal Inhabitants of the Andaman Islands. The Journal of the Anthropological Institute of Great Britain and Ireland, Vol. 12, 1883.
+Manoharan, S. 1997. "Pronominal Prefixes and Formative Affixes in Andamanese Language." Anvita Abbi (ed.). The Languages of Tribal and Indigenous Peoples of India. The Ethnic Space. Delhi: Motilal Benarsidass.
+Portman, M.V. 1887. A Manual of the Andamanese Languages. London: W.H. Allen & Co.
+Temple, Richard C. A Grammar of the Andamanese Languages, being Chapter IV of Part I of the Census Report on the Andaman and Nicobar Islands, Superintendent's Printing Press: Port Blair 1902.
+Zide, Norman Herbert & V. Pandya. 1989. "A Bibliographical Introduction to Andamanese Linguistics." Journal of the American Oriental Society 109: 639–51.
+
+
+== External links ==
+South Asia Bibliography – Andamanese
+Andaman Association
+Vanishing Voices of the Great Andamanese Anvita Abbi, Jawaharlal Nehru University
+The Andamanese Language Family (I) & (II)
+Burenhult's Paper on Andamanese
+Another link to Burenhult on Andamanese

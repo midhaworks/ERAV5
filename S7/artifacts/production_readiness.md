@@ -14,11 +14,14 @@
 | Multi Seed Quality Parity | PASS |
 | Dynamic Continuation Codec | PASS |
 | Dynamic Blocks In Neural Model | PASS |
-| Learned Cross Block Language Model | PARTIAL |
+| Learned Cross Block Language Model | PASS |
+| Long Word Generation Quality | FAIL |
+| Cross Block Multi Seed Stability | NOT_RUN |
 | Numpy Pytorch Cpu Parity | PASS |
 | Corpus Byte Coverage | PARTIAL |
 | Accelerator Kernel And Mixed Precision | NOT_RUN |
-| Multi Document Corpus | FAIL |
+| Multi Document Corpus | PASS |
+| Long Target Language Coverage | FAIL |
 | Large Scale Pretraining | NOT_RUN |
 | Unicode Security Suite | PARTIAL |
 | Distributed Checkpointing | NOT_RUN |
@@ -29,11 +32,13 @@
 - PyTorch matches NumPy logits, loss, gradients and one optimizer step.
 - Explicit continuation blocks losslessly encode long byte strings.
 - Neural batching, tied decoding, CONT/EOS loss and PAD masking pass across multiple blocks.
+- A revision-pinned, hashed 40-document corpus now provides document-isolated splits and 500 held-out long targets.
 
 ## Next actions
 
-- Train and evaluate learned cross-block next-token language modelling.
+- Achieve non-zero long-word exact match on at least 500 held-out natural targets.
+- Run the learned cross-block comparison across at least three seeds.
 - Test blockwise causal decoding or distillation to trade a few sequential groups for quality.
 - Benchmark PyTorch mixed precision on an available accelerator.
-- Acquire a versioned multi-document multilingual corpus.
-- Train on document-separated multilingual corpora at larger scale.
+- Expand English and Sindhi sources until every language contributes held-out long targets.
+- Increase causal context from two words to at least 128 preceding tokens.
