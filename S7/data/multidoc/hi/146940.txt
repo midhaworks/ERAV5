@@ -1,0 +1,70 @@
+यहाँ पर सभी प्रकार के स्वयंसिद्धों (axioms) की सूची दी गयी है। 
+
+
+== जर्मेलो-फ्रंकेल स्वयंसिद्ध (Zermelo-Frankel axioms) ==
+ये समसामयिक गणित एवं सम्मुच्चय सिद्धान्त के लिये 'मानक' स्वयंसिद्ध हैं। 
+
+Axiom of extensionality
+Axiom of empty set
+Axiom of pairing
+Axiom of union
+Axiom of infinity
+Axiom schema of replacement
+Axiom of power set
+Axiom of regularity
+Axiom of separation
+Axiom schema of specification
+जर्मेलो का समुच्चय सिद्धान्त भी देखें।
+
+
+== विकल्प के स्वयंसिद्ध (Axiom of choice / AC) ==
+
+
+=== AC के तुल्य ===
+Hausdorff maximality theorem
+Well-ordering principle
+Zorn's lemma
+
+
+=== AC से कमजोर ===
+Axiom of countable choice
+Axiom of dependent choice
+Boolean prime ideal theorem
+Axiom of uniformization
+
+
+=== Alternates incompatible with AC ===
+Axiom of real determinacy
+
+
+== गणितीय तर्क (mathematical logic) के अन्य स्वयंसिद्ध ==
+Von Neumann-Bernays-Gödel axioms
+Continuum hypothesis and its generalization
+Freiling's axiom of symmetry
+Axiom of determinacy
+Axiom of projective determinacy
+Martin's axiom
+Axiom of constructibility
+Rank-into-rank
+Kripke-Platek axioms
+
+
+== ज्यामिति ==
+Parallel postulate
+Birkhoff's axioms
+Hilbert's axioms
+Tarski's axioms
+
+
+== विविध ==
+Axiom of Archimedes (real number)
+Axiom of countability (topology)
+Fundamental axiom of analysis (real analysis)
+Gluing axiom (sheaf theory)
+Haag-Kastler axioms (quantum field theory)
+Huzita's axioms (origami)
+Kuratowski closure axioms (topology)
+Peano's axioms (natural numbers)
+Probability axioms
+Separation axiom (topology)
+Wightman axioms (quantum field theory)

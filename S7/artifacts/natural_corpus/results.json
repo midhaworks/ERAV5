@@ -85,34 +85,34 @@
   "dataset_hash": "d9702985d739ac930675abb7ccfff649fdaa9eeb25f8aa7b2535d6f004772cab",
   "decode_speed": {
     "byte_fallback": {
-      "examples_per_second": 1034.2699424226796,
-      "median_seconds": 0.7734924579999642,
+      "examples_per_second": 1046.309550857852,
+      "median_seconds": 0.7645920840004692,
       "repeats": 5
     },
     "causal_rke": {
-      "examples_per_second": 1350.3088718389108,
-      "median_seconds": 0.592457042002934,
+      "examples_per_second": 1355.535784997341,
+      "median_seconds": 0.5901725419971626,
       "repeats": 5
     },
     "environment": "NumPy 2.4.4; CPU; batch=800",
     "masked_rke": {
-      "examples_per_second": 35574.26445631368,
-      "median_seconds": 0.022488167000119574,
+      "examples_per_second": 36275.21552895102,
+      "median_seconds": 0.022053624998079613,
       "repeats": 5
     },
     "refined_rke": {
-      "examples_per_second": 11827.291912201752,
-      "median_seconds": 0.06764016699162312,
+      "examples_per_second": 11988.296424771579,
+      "median_seconds": 0.066731750004692,
       "repeats": 5
     },
     "rke": {
-      "examples_per_second": 38159.29118854541,
-      "median_seconds": 0.020964750001439825,
+      "examples_per_second": 38380.80960099018,
+      "median_seconds": 0.020843749996856786,
       "repeats": 5
     },
     "vocabulary": {
-      "examples_per_second": 43646.3824660616,
-      "median_seconds": 0.018329124999581836,
+      "examples_per_second": 45597.57675035244,
+      "median_seconds": 0.017544792004628107,
       "repeats": 5
     }
   },
@@ -120,59 +120,59 @@
     "test": {
       "byte_fallback": {
         "calibration": {
-          "brier": 0.10246823744883489,
-          "ece_10_bin": 0.12965748824466822,
-          "mean_confidence": 0.04909251175533182
+          "brier": 0.07176271511215453,
+          "ece_10_bin": 0.1103657510800679,
+          "mean_confidence": 0.07963424891993211
         },
-        "exact_match": 0.17875,
+        "exact_match": 0.19,
         "examples": 800,
-        "nll_per_byte_or_eos": 1.7960520878104467,
-        "nll_per_word": 15.131738839803013,
+        "nll_per_byte_or_eos": 1.7640372664055795,
+        "nll_per_word": 14.862013969467007,
         "per_byte_length": {
           "1-6": {
-            "exact_match": 0.2012448132780083,
+            "exact_match": 0.21991701244813278,
             "examples": 482,
-            "nll_per_byte_or_eos": 1.8837394594053616
+            "nll_per_byte_or_eos": 1.8710505292072952
           },
           "13-18": {
             "exact_match": 0.0,
             "examples": 62,
-            "nll_per_byte_or_eos": 1.5861703926843662
+            "nll_per_byte_or_eos": 1.504769861290445
           },
           "19-24": {
             "exact_match": 0.0,
             "examples": 47,
-            "nll_per_byte_or_eos": 1.9993576184955766
+            "nll_per_byte_or_eos": 1.9388596880810167
           },
           "7-12": {
             "exact_match": 0.22009569377990432,
             "examples": 209,
-            "nll_per_byte_or_eos": 1.7089505107965488
+            "nll_per_byte_or_eos": 1.6943718947604856
           }
         },
         "per_language": {
           "English": {
-            "exact_match": 0.14,
+            "exact_match": 0.19,
             "examples": 200,
-            "nll_per_byte_or_eos": 2.7780782682743053,
+            "nll_per_byte_or_eos": 2.8311590086927523,
             "valid_utf8_rate": 1.0
           },
           "Hindi": {
             "exact_match": 0.115,
             "examples": 200,
-            "nll_per_byte_or_eos": 1.2386123111519984,
+            "nll_per_byte_or_eos": 1.214041736259928,
             "valid_utf8_rate": 1.0
           },
           "Sindhi": {
             "exact_match": 0.005,
             "examples": 200,
-            "nll_per_byte_or_eos": 2.239306358149901,
+            "nll_per_byte_or_eos": 2.0634608655966717,
             "valid_utf8_rate": 1.0
           },
           "Telugu": {
-            "exact_match": 0.455,
+            "exact_match": 0.45,
             "examples": 200,
-            "nll_per_byte_or_eos": 1.4923277699003468,
+            "nll_per_byte_or_eos": 1.4792605238912382,
             "valid_utf8_rate": 1.0
           }
         },
@@ -420,38 +420,38 @@
       },
       "vocabulary": {
         "calibration": {
-          "brier": 0.2018998449511545,
-          "ece_10_bin": 0.28065651671141834,
-          "mean_confidence": 0.6944065167114184
+          "brier": 0.20847181282537192,
+          "ece_10_bin": 0.2874760426957351,
+          "mean_confidence": 0.7062260426957352
         },
-        "exact_match": 0.41375,
+        "exact_match": 0.41875,
         "examples": 800,
-        "nll_per_word_on_representable": 2.1965065367047667,
+        "nll_per_word_on_representable": 2.335894547447757,
         "oov_note": "undefined because absent words have no output row",
         "oov_true_nll": null,
         "per_language": {
           "English": {
-            "exact_match": 0.2,
+            "exact_match": 0.225,
             "examples": 200,
-            "nll_per_word_on_representable": 3.856450967951313,
+            "nll_per_word_on_representable": 3.726531813187811,
             "representable_fraction": 0.535
           },
           "Hindi": {
             "exact_match": 0.18,
             "examples": 200,
-            "nll_per_word_on_representable": 3.682043008818231,
+            "nll_per_word_on_representable": 4.073327977801545,
             "representable_fraction": 0.545
           },
           "Sindhi": {
-            "exact_match": 0.815,
+            "exact_match": 0.81,
             "examples": 200,
-            "nll_per_word_on_representable": 0.5361590796952667,
+            "nll_per_word_on_representable": 0.4438899253695364,
             "representable_fraction": 0.865
           },
           "Telugu": {
             "exact_match": 0.46,
             "examples": 200,
-            "nll_per_word_on_representable": 1.8202661083514953,
+            "nll_per_word_on_representable": 2.2577533120289295,
             "representable_fraction": 0.695
           }
         },
@@ -461,59 +461,59 @@
     "validation": {
       "byte_fallback": {
         "calibration": {
-          "brier": 0.10343357646077173,
-          "ece_10_bin": 0.14299047778931806,
-          "mean_confidence": 0.06325952221068194
+          "brier": 0.0632919495712583,
+          "ece_10_bin": 0.10944677482257144,
+          "mean_confidence": 0.09805322517742855
         },
-        "exact_match": 0.20625,
+        "exact_match": 0.2075,
         "examples": 800,
-        "nll_per_byte_or_eos": 1.9859569382796496,
-        "nll_per_word": 15.75608585907617,
+        "nll_per_byte_or_eos": 2.0793029168250996,
+        "nll_per_word": 16.496669516361134,
         "per_byte_length": {
           "1-6": {
-            "exact_match": 0.3044315992292871,
+            "exact_match": 0.3063583815028902,
             "examples": 519,
-            "nll_per_byte_or_eos": 1.9113667920435289
+            "nll_per_byte_or_eos": 1.959510344153887
           },
           "13-18": {
             "exact_match": 0.0,
             "examples": 75,
-            "nll_per_byte_or_eos": 1.617659180860593
+            "nll_per_byte_or_eos": 1.7374437096071744
           },
           "19-24": {
             "exact_match": 0.0,
             "examples": 34,
-            "nll_per_byte_or_eos": 1.849837776874544
+            "nll_per_byte_or_eos": 2.043410201332879
           },
           "7-12": {
             "exact_match": 0.040697674418604654,
             "examples": 172,
-            "nll_per_byte_or_eos": 2.417377069264666
+            "nll_per_byte_or_eos": 2.5101911473125784
           }
         },
         "per_language": {
           "English": {
-            "exact_match": 0.075,
+            "exact_match": 0.095,
             "examples": 200,
-            "nll_per_byte_or_eos": 2.938679468886765,
+            "nll_per_byte_or_eos": 3.2206726371046295,
             "valid_utf8_rate": 1.0
           },
           "Hindi": {
             "exact_match": 0.05,
             "examples": 200,
-            "nll_per_byte_or_eos": 1.3943500708923662,
+            "nll_per_byte_or_eos": 1.4723563636339765,
             "valid_utf8_rate": 1.0
           },
           "Sindhi": {
             "exact_match": 0.6,
             "examples": 200,
-            "nll_per_byte_or_eos": 1.4625412597044942,
+            "nll_per_byte_or_eos": 1.3020568535485513,
             "valid_utf8_rate": 1.0
           },
           "Telugu": {
-            "exact_match": 0.1,
+            "exact_match": 0.085,
             "examples": 200,
-            "nll_per_byte_or_eos": 2.5223568520007498,
+            "nll_per_byte_or_eos": 2.672064906794479,
             "valid_utf8_rate": 1.0
           }
         },
@@ -761,38 +761,38 @@
       },
       "vocabulary": {
         "calibration": {
-          "brier": 0.2452804087367505,
-          "ece_10_bin": 0.3817110883940998,
-          "mean_confidence": 0.6192110883940997
+          "brier": 0.2622376437094185,
+          "ece_10_bin": 0.38500459799218323,
+          "mean_confidence": 0.6362545979921832
         },
-        "exact_match": 0.2375,
+        "exact_match": 0.25125,
         "examples": 800,
-        "nll_per_word_on_representable": 3.6829442253952815,
+        "nll_per_word_on_representable": 3.7145950281209634,
         "oov_note": "undefined because absent words have no output row",
         "oov_true_nll": null,
         "per_language": {
           "English": {
-            "exact_match": 0.055,
+            "exact_match": 0.085,
             "examples": 200,
-            "nll_per_word_on_representable": 5.302983654501274,
+            "nll_per_word_on_representable": 5.08420080452908,
             "representable_fraction": 0.47
           },
           "Hindi": {
-            "exact_match": 0.095,
+            "exact_match": 0.105,
             "examples": 200,
-            "nll_per_word_on_representable": 5.248165052522096,
+            "nll_per_word_on_representable": 4.9156318662825695,
             "representable_fraction": 0.42
           },
           "Sindhi": {
-            "exact_match": 0.66,
+            "exact_match": 0.655,
             "examples": 200,
-            "nll_per_word_on_representable": 0.6953253570252627,
+            "nll_per_word_on_representable": 0.7030818341221583,
             "representable_fraction": 0.735
           },
           "Telugu": {
-            "exact_match": 0.14,
+            "exact_match": 0.16,
             "examples": 200,
-            "nll_per_word_on_representable": 5.390831234579647,
+            "nll_per_word_on_representable": 6.055940106471365,
             "representable_fraction": 0.455
           }
         },
@@ -809,77 +809,79 @@
     "CPU NumPy throughput is not production GPU throughput."
   ],
   "model_hashes": {
-    "byte_fallback": "e7ed10aec51ff70eafee2440ed8d0338f5890d5abd04565eadbe2de93df8ef61",
+    "byte_fallback": "91ec387e49eb72bb2df916d627cd811d9ebc4eb01727fbec3f8f670ef186517f",
     "causal_rke": "a1bf8592b62d14c6b0929469deabfc8988a65cd4ebba9fc609c134cbf9270b45",
     "masked_rke": "0a836a0bd37f8d5867c6e6c911a4ff659f0d3529b9f2da6ea415b8b9463d6992",
     "refined_rke": "2f58199128b49bfbc429318d68651a9340b7bc1066f22cf242de129ce467262e",
     "rke": "c40fd4442dc36459a72b0adbdd158155ee50268537bc49b5f796b816cf3ae3e8",
-    "vocabulary": "87bd29107c0700eec3bb0c2d0940704c6097d239780786f2083212ad325bfd02"
+    "vocabulary": "060e97dc2d127cc98218073f0d4c801fc3cb598aacce8ba883069a8c05913d21"
   },
   "parameters": {
     "byte_fallback": 67032,
     "byte_fallback_output": 25700,
     "causal_rke": 41332,
-    "causal_rke_separate_output": 0,
+    "causal_rke_separate_vocab_classifier": 0,
     "masked_rke": 41560,
-    "masked_rke_separate_output": 0,
+    "masked_rke_separate_vocab_classifier": 0,
     "refined_rke": 41560,
-    "refined_rke_separate_output": 0,
+    "refined_rke_separate_vocab_classifier": 0,
     "rke": 41332,
-    "rke_separate_output": 0,
+    "rke_separate_vocab_classifier": 0,
     "vocabulary": 92632,
     "vocabulary_output": 51300
   },
   "seed_stability": {
     "byte_fallback": {
+      "ci95_method": "two-sided Student t, df=2",
       "exact_match": {
-        "ci95_half_width": 0.007258692107474405,
-        "max": 0.1875,
-        "mean": 0.18041666666666667,
-        "min": 0.175,
-        "sample_std": 0.006414501799308611
+        "ci95_half_width": 0.044059901599083726,
+        "max": 0.19,
+        "mean": 0.17416666666666666,
+        "min": 0.155,
+        "sample_std": 0.01773649721149397
       },
       "nll_per_byte_or_eos": {
-        "ci95_half_width": 0.009694102739002087,
-        "max": 1.8082859716491233,
-        "mean": 1.7987063283479277,
-        "min": 1.791780925584213,
-        "sample_std": 0.008566672692726648
+        "ci95_half_width": 0.17499225835374524,
+        "max": 1.7951143760023376,
+        "mean": 1.7399068104357667,
+        "min": 1.660568788899383,
+        "sample_std": 0.0704438636873574
       },
       "runs": [
         {
-          "exact_match": 0.17875,
-          "model_hash": "e7ed10aec51ff70eafee2440ed8d0338f5890d5abd04565eadbe2de93df8ef61",
-          "nll_per_byte_or_eos": 1.7960520878104467,
-          "seed": 701,
-          "training_seconds": 11.57465012499597
+          "exact_match": 0.19,
+          "model_hash": "91ec387e49eb72bb2df916d627cd811d9ebc4eb01727fbec3f8f670ef186517f",
+          "nll_per_byte_or_eos": 1.7640372664055795,
+          "seed": 551,
+          "training_seconds": 22.18602258298779
         },
         {
-          "exact_match": 0.1875,
-          "model_hash": "a7451d559a9f9e3378b6a61f03664e4edc7b3ff840f5cf2581765326f07f53d8",
-          "nll_per_byte_or_eos": 1.8082859716491233,
-          "seed": 702,
-          "training_seconds": 11.895346416989923
+          "exact_match": 0.155,
+          "model_hash": "1a74b72e0693066daa184b4da3f2a0db72842bdbaedf7e5c7965a2621516f11b",
+          "nll_per_byte_or_eos": 1.660568788899383,
+          "seed": 552,
+          "training_seconds": 22.173053000005893
         },
         {
-          "exact_match": 0.175,
-          "model_hash": "6ebb900487432dca9821fcd3f80fcdf80f210304a0a79f019440cea5176d20ca",
-          "nll_per_byte_or_eos": 1.791780925584213,
-          "seed": 703,
-          "training_seconds": 12.501774999996996
+          "exact_match": 0.1775,
+          "model_hash": "db568bd55ebbe9fd6c79653b719236c212591618b82335e457b218eb72373306",
+          "nll_per_byte_or_eos": 1.7951143760023376,
+          "seed": 553,
+          "training_seconds": 22.510258708993206
         }
       ]
     },
     "causal_rke": {
+      "ci95_method": "two-sided Student t, df=2",
       "exact_match": {
-        "ci95_half_width": 0.003742436817547273,
+        "ci95_half_width": 0.008215513259969508,
         "max": 0.17875,
         "mean": 0.17625,
         "min": 0.1725,
         "sample_std": 0.0033071891388307415
       },
       "nll_per_byte_or_eos": {
-        "ci95_half_width": 0.024633907058911768,
+        "ci95_half_width": 0.054077116048677216,
         "max": 1.8342241106682744,
         "mean": 1.8101186367481272,
         "min": 1.7918947902644158,
@@ -891,23 +893,57 @@
           "model_hash": "a1bf8592b62d14c6b0929469deabfc8988a65cd4ebba9fc609c134cbf9270b45",
           "nll_per_byte_or_eos": 1.804237009311691,
           "seed": 551,
-          "training_seconds": 32.42074324999703
+          "training_seconds": 31.110461249991204
         },
         {
           "exact_match": 0.1725,
           "model_hash": "fd9f4c8fe5872e82bc8858512d2c128da3b42ed038b0bde78912f50ed368055f",
           "nll_per_byte_or_eos": 1.7918947902644158,
           "seed": 552,
-          "training_seconds": 34.23238366599253
+          "training_seconds": 31.13387675001286
         },
         {
           "exact_match": 0.1775,
           "model_hash": "07276a7e56676029de36b4f62fd2cb81bf6dce90d37a5cbc348489098b5db4e9",
           "nll_per_byte_or_eos": 1.8342241106682744,
           "seed": 553,
-          "training_seconds": 34.8356000000058
+          "training_seconds": 32.895253916009096
         }
       ]
+    },
+    "matched_controls": {
+      "batch_stream_hash_by_seed_and_arm": {
+        "551": {
+          "byte_fallback": "87aaa9be4a36221027ebba7c5f36dace951f3cee278e10391dc0704e3202eaf4",
+          "causal_rke": "87aaa9be4a36221027ebba7c5f36dace951f3cee278e10391dc0704e3202eaf4"
+        },
+        "552": {
+          "byte_fallback": "44d5d9d552891b2839fabaf0d1813c6bc539418d84c939959f0140d4e97d58a2",
+          "causal_rke": "44d5d9d552891b2839fabaf0d1813c6bc539418d84c939959f0140d4e97d58a2"
+        },
+        "553": {
+          "byte_fallback": "ec61072799c748e8aacd7c6c59def965b157af7bc931f3702e5cf0deaf41d114",
+          "causal_rke": "ec61072799c748e8aacd7c6c59def965b157af7bc931f3702e5cf0deaf41d114"
+        }
+      },
+      "fallback_initial_shared_hash": "0935919a4f3b85f2aa899c328332a7a2fe65d31c516e84680f934c7c90e124ed",
+      "identical_batch_stream_per_seed": true,
+      "identical_initial_shared_body": true,
+      "initial_shared_parameter_names": [
+        "Ein",
+        "Wk",
+        "Wo",
+        "Wq",
+        "Wv",
+        "pos"
+      ],
+      "optimizer_steps_per_arm": 5000,
+      "paired_seeds": [
+        551,
+        552,
+        553
+      ],
+      "rke_initial_shared_hash": "0935919a4f3b85f2aa899c328332a7a2fe65d31c516e84680f934c7c90e124ed"
     },
     "seeds_per_arm": 3,
     "within_5_percent_mean_parity": true
@@ -921,16 +957,16 @@
   "training": {
     "batch_size": 64,
     "byte_fallback": {
-      "seconds": 11.57465012499597,
-      "steps": 2500
+      "seconds": 22.18602258298779,
+      "steps": 5000
     },
     "causal_rke": {
-      "seconds": 32.42074324999703,
+      "seconds": 31.110461249991204,
       "steps": 5000
     },
     "masked_rke": {
       "kernel_size": 8,
-      "seconds": 18.6838045839977,
+      "seconds": 17.566500125001767,
       "steps": 2500
     },
     "refined_rke": {
@@ -938,15 +974,15 @@
       "kernel_size": 8,
       "passes": 2,
       "proposal_temperature": 0.25,
-      "seconds": 32.69853824999882,
+      "seconds": 31.660620750000817,
       "steps": 2500
     },
     "rke": {
-      "seconds": 5.2416152079968015,
+      "seconds": 5.046398833001149,
       "steps": 800
     },
     "vocabulary": {
-      "seconds": 3.8407870000082767,
+      "seconds": 3.675028083001962,
       "steps": 800
     }
   },

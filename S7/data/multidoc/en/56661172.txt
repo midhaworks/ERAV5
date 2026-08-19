@@ -1,0 +1,131 @@
+The 19th century in science saw the birth of science as a profession; the term scientist was coined in 1833 by William Whewell, which soon replaced the older term of (natural) philosopher.
+Among the most influential ideas of the 19th century were those of Charles Darwin (alongside the independent research of Alfred Russel Wallace), who in 1859 published the book On the Origin of Species, which introduced the idea of evolution by natural selection. Another important landmark in medicine and biology were the successful efforts to prove the germ theory of disease. Following this, Louis Pasteur made the first vaccine against rabies, and also made many discoveries in the field of chemistry, including the asymmetry of crystals. In chemistry, Dmitri Mendeleev, following the atomic theory of John Dalton, created the first periodic table of elements. In physics, the experiments, theories and discoveries of Michael Faraday, Andre-Marie Ampere, James Clerk Maxwell, and their contemporaries led to the creation of electromagnetism as a new branch of science. Thermodynamics led to an understanding of heat and the notion of energy was defined.
+The discovery of new types of radiation and the simultaneous revelation of the nature of atomic structure and matter are two additional highlights. In astronomy, the planet Neptune was discovered. In mathematics, the notion of complex numbers finally matured and led to a subsequent analytical theory; they also began the use of hypercomplex numbers. Karl Weierstrass and others carried out the arithmetization of analysis for functions of real and complex variables. It also saw rise to new progress in geometry beyond those classical theories of Euclid, after a period of nearly two thousand years. The mathematical science of logic likewise had revolutionary breakthroughs after a similarly long period of stagnation. But the most important step in science at this time were the ideas formulated by the creators of electrical science. Their work changed the face of physics and made possible for new technology to come about such as electric power, electrical telegraphy, the telephone, and radio.
+
+
+== Mathematics ==
+Throughout the 19th century mathematics became increasingly abstract. Carl Friedrich Gauss (1777–1855) epitomizes this trend. He did revolutionary work on functions of complex variables, in geometry, and on the convergence of series, leaving aside his many contributions to science. He also gave the first satisfactory proofs of the fundamental theorem of algebra and of the quadratic reciprocity law. His 1801 volume Disquisitiones Arithmeticae laid the foundations of modern number theory.
+
+This century saw the development of the two forms of non-Euclidean geometry, where the parallel postulate of Euclidean geometry no longer holds.
+The Russian mathematician Nikolai Ivanovich Lobachevsky and his rival, the Hungarian mathematician János Bolyai, independently defined and studied hyperbolic geometry, where uniqueness of parallels no longer holds. In this geometry the sum of angles in a triangle add up to less than 180°. Elliptic geometry was developed later in the 19th century by the German mathematician Bernhard Riemann; here no parallel can be found and the angles in a triangle add up to more than 180°. Riemann also developed Riemannian geometry, which unifies and vastly generalizes the three types of geometry.
+The 19th century saw the beginning of a great deal of abstract algebra. Hermann Grassmann in Germany gave a first version of vector spaces, William Rowan Hamilton in Ireland developed noncommutative algebra. The British mathematician George Boole devised an algebra that soon evolved into what is now called Boolean algebra, in which the only numbers were 0 and 1. Boolean algebra is the starting point of mathematical logic and has important applications in computer science.
+Augustin-Louis Cauchy, Bernhard Riemann, and Karl Weierstrass reformulated the calculus in a more rigorous fashion.
+Also, for the first time, the limits of mathematics were explored. Niels Henrik Abel, a Norwegian, and Évariste Galois, a Frenchman, proved that there is no general algebraic method for solving polynomial equations of degree greater than four (Abel–Ruffini theorem). Other 19th-century mathematicians utilized this in their proofs that straightedge and compass alone are not sufficient to trisect an arbitrary angle, to construct the side of a cube twice the volume of a given cube, nor to construct a square equal in area to a given circle. Mathematicians had vainly attempted to solve all of these problems since the time of the ancient Greeks. On the other hand, the limitation of three dimensions in geometry was surpassed in the 19th century through considerations of parameter space and hypercomplex numbers.
+In the later 19th century, Georg Cantor established the first foundations of set theory, which enabled the rigorous treatment of the notion of infinity and has become the common language of nearly all mathematics. Cantor's set theory, and the rise of mathematical logic in the hands of Peano, L. E. J. Brouwer, David Hilbert, Bertrand Russell, and A.N. Whitehead, initiated a long running debate on the foundations of mathematics.
+The 19th century saw the founding of a number of national mathematical societies: the London Mathematical Society in 1865, the Société Mathématique de France in 1872, the Edinburgh Mathematical Society in 1883, the Circolo Matematico di Palermo in 1884, and the American Mathematical Society in 1888. The first international, special-interest society, the Quaternion Society, was formed in 1899, in the context of a vector controversy.
+
+
+== Physics ==
+
+In 1800, Alessandro Volta invented the electric battery (known as the voltaic pile) and thus improved the way electric currents could also be studied. A year later, Thomas Young demonstrated the wave nature of light—which received strong experimental support from the work of Augustin-Jean Fresnel—and the principle of interference. In 1813, Peter Ewart supported the idea of the conservation of energy in his paper On the measure of moving force. In 1820, Hans Christian Ørsted found that a current-carrying conductor gives rise to a magnetic force surrounding it, and within a week after Ørsted's discovery reached France, André-Marie Ampère discovered that two parallel electric currents will exert forces on each other. In 1821, William Hamilton began his analysis of Hamilton's characteristic function. In 1821, Michael Faraday built an electricity-powered motor, while Georg Ohm stated his law of electrical resistance in 1826, expressing the relationship between voltage, current, and resistance in an electric circuit. A year later, botanist Robert Brown discovered Brownian motion: pollen grains in water undergoing movement resulting from their bombardment by the fast-moving atoms or molecules in the liquid. In 1829, Gaspard Coriolis introduced the terms of work (force times distance) and kinetic energy with the meanings they have today.
+In 1831, Faraday (and independently Joseph Henry) discovered the reverse effect, the production of an electric potential or current through magnetism – known as electromagnetic induction; these two discoveries are the basis of the electric motor and the electric generator, respectively. In 1834, Carl Jacobi discovered his uniformly rotating self-gravitating ellipsoids (the Jacobi ellipsoid). In 1834, John Russell observed a nondecaying solitary water wave (soliton) in the Union Canal near Edinburgh and used a water tank to study the dependence of solitary water wave velocities on wave amplitude and water depth. In 1835, William Hamilton stated Hamilton's canonical equations of motion. In the same year, Gaspard Coriolis examined theoretically the mechanical efficiency of waterwheels, and deduced the Coriolis effect. In 1841, Julius Robert von Mayer, an amateur scientist, wrote a paper on the conservation of energy but his lack of academic training led to its rejection. In 1842, Christian Doppler proposed the Doppler effect. In 1847, Hermann von Helmholtz formally stated the law of conservation of energy. In 1851, Léon Foucault showed the Earth's rotation with a huge pendulum (Foucault pendulum).
+There were important advances in continuum mechanics in the first half of the century, namely formulation of laws of elasticity for solids and discovery of Navier–Stokes equations for fluids.
+
+
+=== Laws of thermodynamics ===
+
+In the 19th century, the connection between heat and mechanical energy was established quantitatively by Julius Robert von Mayer and James Prescott Joule, who measured the mechanical equivalent of heat in the 1840s. In 1849, Joule published results from his series of experiments (including the paddlewheel experiment) which show that heat is a form of energy, a fact that was accepted in the 1850s. The relation between heat and energy was important for the development of steam engines, and in 1824 the experimental and theoretical work of Sadi Carnot was published. Carnot captured some of the ideas of thermodynamics in his discussion of the efficiency of an idealized engine. Sadi Carnot's work provided a basis for the formulation of the first law of thermodynamics—a restatement of the law of conservation of energy—which was stated around 1850 by William Thomson, later known as Lord Kelvin, and Rudolf Clausius. Lord Kelvin, who had extended the concept of absolute zero from gases to all substances in 1848, drew upon the engineering theory of Lazare Carnot, Sadi Carnot, and Émile Clapeyron–as well as the experimentation of James Prescott Joule on the interchangeability of mechanical, chemical, thermal, and electrical forms of work—to formulate the first law.
+Kelvin and Clausius also stated the second law of thermodynamics, which was originally formulated in terms of the fact that heat does not spontaneously flow from a colder body to a hotter. Other formulations followed quickly (for example, the second law was expounded in Thomson and Peter Guthrie Tait's influential work Treatise on Natural Philosophy) and Kelvin in particular understood some of the law's general implications. The second Law was the idea that gases consist of molecules in motion had been discussed in some detail by Daniel Bernoulli in 1738, but had fallen out of favor, and was revived by Clausius in 1857. In 1850, Hippolyte Fizeau and Léon Foucault measured the speed of light in water and find that it is slower than in air, in support of the wave model of light. In 1852, Joule and Thomson demonstrated that a rapidly expanding gas cools, later named the Joule–Thomson effect or Joule–Kelvin effect. Hermann von Helmholtz puts forward the idea of the heat death of the universe in 1854, the same year that Clausius established the importance of dQ/T (Clausius's theorem) (though he did not yet name the quantity).
+
+
+=== James Clerk Maxwell ===
+
+In 1859, James Clerk Maxwell discovered the distribution law of molecular velocities. Maxwell showed that electric and magnetic fields are propagated outward from their source at a speed equal to that of light and that light is one of several kinds of electromagnetic radiation, differing only in frequency and wavelength from the others. In 1859, Maxwell worked out the mathematics of the distribution of velocities of the molecules of a gas. The wave theory of light was widely accepted by the time of Maxwell's work on the electromagnetic field, and afterward the study of light and that of electricity and magnetism were closely related. In 1864 James Maxwell published his papers on a dynamical theory of the electromagnetic field, and stated that light is an electromagnetic phenomenon in the 1873 publication of Maxwell's Treatise on Electricity and Magnetism. This work drew upon theoretical work by German theoreticians such as Carl Friedrich Gauss and Wilhelm Weber. The encapsulation of heat in particulate motion, and the addition of electromagnetic forces to Newtonian dynamics established an enormously robust theoretical underpinning to physical observations.
+The prediction that light represented a transmission of energy in wave form through a "luminiferous ether", and the seeming confirmation of that prediction with Helmholtz student Heinrich Hertz's 1888 detection of electromagnetic radiation, was a major triumph for physical theory and raised the possibility that even more fundamental theories based on the field could soon be developed. Experimental confirmation of Maxwell's theory was provided by Hertz, who generated and detected electric waves in 1886 and verified their properties, at the same time foreshadowing their application in radio, television, and other devices. In 1887, Heinrich Hertz discovered the photoelectric effect. Research on the electromagnetic waves began soon after, with many scientists and inventors conducting experiments on their properties. In the mid to late 1890s Guglielmo Marconi developed a radio wave based wireless telegraphy system (see invention of radio).
+The atomic theory of matter had been proposed again in the early 19th century by the chemist John Dalton and became one of the hypotheses of the kinetic-molecular theory of gases developed by Clausius and James Clerk Maxwell to explain the laws of thermodynamics. The kinetic theory in turn led to the statistical mechanics of Ludwig Boltzmann (1844–1906) and Josiah Willard Gibbs (1839–1903), which held that energy (including heat) was a measure of the speed of particles. Interrelating the statistical likelihood of certain states of organization of these particles with the energy of those states, Clausius reinterpreted the dissipation of energy to be the statistical tendency of molecular configurations to pass toward increasingly likely, increasingly disorganized states (coining the term "entropy" to describe the disorganization of a state). The statistical versus absolute interpretations of the second law of thermodynamics set up a dispute that would last for several decades (producing arguments such as "Maxwell's demon"), and that would not be held to be definitively resolved until the behavior of atoms was firmly established in the early 20th century. In 1902, James Jeans found the length scale required for gravitational perturbations to grow in a static nearly homogeneous medium.
+
+
+== Chemistry ==
+
+
+=== First synthesis of an organic compound ===
+see more about this in Wöhler synthesis
+In 1828, Friedrich Wöhler synthesized urea from certain inorganic compounds. He synthesized urea by slowly evaporating a water solution of ammonium cyanate, which he had prepared by adding silver cyanate to ammonium chloride. It has been previously believed that the substances produced by plants and animals (by generally all living beings or organisms) can not be produced in lab and can only be produced by "life force". This synthesis of urea changed that concept, which led to many discoveries later.
+
+
+=== Dalton's Atomic theory ===
+In 19th century, John Dalton proposed the idea of atoms as small indivisible particles which together can form compounds. Although the concept of the atom dates back to the ideas of Democritus, John Dalton formulated the first modern description of it as the fundamental building block of chemical structures. Dalton developed the law of multiple proportions (first presented in 1803) by studying and expanding upon the works of Antoine Lavoisier and Joseph Proust.
+The main points of Dalton's atomic theory, as it eventually developed, are:
+
+Elements are made of extremely small particles called atoms.
+Atoms of a given element are identical in size, mass and other properties; atoms of different elements differ in size, mass and other properties.
+Atoms cannot be subdivided, created or destroyed.
+Atoms of different elements combine in simple whole-number ratios to form chemical compounds.
+In chemical reactions, atoms are combined, separated or rearranged.
+
+
+=== Periodic Table ===
+see more about this in detail in History of the periodic table,
+
+In 1869, Russian chemist Dmitri Mendeleev created the framework that became the modern periodic table, leaving gaps for elements that were yet to be discovered. While arranging the elements according to their atomic weight, if he found that they did not fit into the group he would rearrange them. Mendeleev predicted the properties of some undiscovered elements and gave them names such as "eka-aluminium" for an element with properties similar to aluminium. Later eka-aluminium was discovered as gallium. Some discrepancies remained; the position of certain elements, such as iodine and tellurium, could not be explained.
+
+
+== Engineering and technology ==
+
+1804: First steam locomotive begins operation.
+1825: Erie Canal opened connecting the Great Lakes to the Atlantic Ocean.
+1825: First isolation of aluminium.
+1825: The Stockton and Darlington Railway, the first public railway in the world, is opened.
+1826: Samuel Morey patents the internal combustion engine.
+1829: First electric motor built.
+1837: Telegraphy patented.
+1841: The word "dinosaur" is coined by Richard Owen
+1844: First publicly funded telegraph line in the world—between Baltimore and Washington—sends demonstration message on 24 May, ushering in the age of the telegraph. This message read "What hath God wrought?" (Bible, Numbers 23:23)
+1849: The safety pin and the gas mask are invented.
+1855: Bessemer process enables steel to be mass-produced.
+1856: World's first oil refinery in Romania
+1858: Invention of the phonautograph, the first true device for recording sound.
+1863: First section of the London Underground opens.
+1866: Successful transatlantic telegraph cable follows an earlier attempt in 1858.
+1867: Alfred Nobel invents dynamite.
+1869: First transcontinental railroad completed in United States on 10 May.
+1870: Rasmus Malling-Hansen's invention the Hansen Writing Ball becomes the first commercially sold typewriter.
+1873: Blue jeans and barbed wire are invented.
+1877: Thomas Edison invents the phonograph
+1878: First commercial telephone exchange in New Haven, Connecticut.
+1879: Thomas Edison tests his first light bulb.
+1881: First electrical power plant and grid in Godalming, Britain.
+1884: Sir Hiram Maxim invents the first self-powered Machine gun.
+1885: Singer begins production of the 'Vibrating Shuttle'. which would become the most popular model of sewing machine.
+1886: Karl Benz sells the first commercial automobile.
+1888: Galileo Ferraris and Nikola Tesla both introduce the idea of a rotating magnetic field induction motor.
+1890: The cardboard box is invented.
+1892: John Froelich develops and constructs the first gasoline/petrol-powered tractor.
+1894: Karl Elsener invents the Swiss Army knife.
+1894: First gramophone record.
+1895: Wilhelm Röntgen identifies x-rays.
+1896: Guglielmo Marconi applies for patent for the first radio wave base communication system.
+
+
+== Biology and medicine ==
+
+In 1859, Charles Darwin published the book The Origin of Species, which introduced the idea of evolution by natural selection.
+Oscar Hertwig publishes his findings in reproductive and developmental biology. In 1875 he published his first work, being the first to correctly describe animal conception. In his later work in 1885, he described that the nucleus contained nuclein (now called nucleic acid) and that these nuclein were responsible for the transmission of hereditary characteristics.
+
+
+=== Medicine ===
+1804: Morphine first isolated.
+1842: Anaesthesia used for the first time.
+1855: Cocaine is isolated by Friedrich Gaedcke.
+1885: Louis Pasteur creates the first successful vaccine against rabies for a young boy who had been bitten 14 times by a rabid dog.
+1889: Aspirin patented.
+
+
+== Social sciences ==
+In 1871, William Stanley Jevons and Carl Menger, working independently, solved Adam Smith's paradox of value with the insight that people valued each additional unit of a good less than the previous unit. In 1874, Léon Walras independently came to a similar insight. Menger's student Friedrich von Wieser coined the term "marginal utility" to describe the new theory. Modern microeconomics is built on the insights of the Marginal Revolution.
+
+
+=== Economics ===
+1871: Marginalism introduced in economic theory.
+1821: Comparative advantage in business was introduced by David Ricardo.
+1824: The patronage of infant industries was explained by Friedrich List.
+1828: The economic cooperative theory was stated by Charles Fourier.
+1874: The law of general equilibrium was stated by Leon Walras from the Lausanne school.
+
+
+== People ==
+
+The list of important 19th-century scientists includes:
+
+
+== References ==

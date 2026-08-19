@@ -1,0 +1,39 @@
+Archaeomagnetic dating is the study and interpretation of the signatures of the Earth's magnetic field at past times recorded in archaeological materials. These paleomagnetic signatures are fixed when ferromagnetic materials such as magnetite cool below the Curie point, freezing the magnetic moment of the material in the direction of the local magnetic field at that time. The direction and magnitude of the magnetic field of the Earth at a particular location varies with time, and can be used to constrain the age of materials. In conjunction with techniques such as radiometric dating, the technique can be used to construct and calibrate the geomagnetic polarity time scale.  This is one of the dating methodologies used for sites within the last 10,000 years. The method was conceived by Émile Thellier in the 1930s and the increased sensitivity of SQUID magnetometers has greatly promoted its use.
+
+
+== Instances of use ==
+The Earth's magnetic field has two main components.  The stronger component known as the Earth's poles, reverses direction at irregular intervals.  The weaker variations are the Earth's magnetic map.  Within these weaker areas the local directions and intensities change gradually (secular variation).   A compass does not point to the true North Pole but to a direction that is a function of the North Magnetic Pole and the local secular variation to yield a magnetic declination.
+The magnetic declination at any given time can be frozen into a clay formation that contains magnetite and is heated above the Curie point.  In general, many cultures used long-term fire hearths made of clay bricks, or a space lined with clay, that were baked into place by use.  These artifacts of occupation can yield the magnetic declination from the last time they were fired or used.
+Archaeomagnetic dating was described in the 1992 publication “Paleomagnetism: Magnetic Domains to Geologic Terranes.” By Robert F. Butler.
+
+
+== Methodology ==
+
+Archaeomagnetic dating requires an undisturbed feature that has a high likelihood of containing a remnant magnetic moment from the last time it had passed through the Curie point.  This involves sufficient mass to take samples from, and a suitable material with adequate magnetite to hold the remnant magnetism.  In addition, the feature needs to be in an area for which a secular variation curve (SVC) exists. Once the paleodirections of enough independently dated archaeological features are determined, they can be used to compile a secular variation record for a particular region, known as an SVC.  The Archaeomagnetic Laboratory at the Illinois State Museum has secular variation curves for the southwest, mid-continent and southeast United States.  Additional data points from archaeomagnetic samples with corresponding dating techniques such as tree ring dating or carbon-14 dates, help refine the regional curves.
+
+
+== Technique ==
+
+A number of samples are removed from the feature by encasement in non-magnetic plaster within non-magnetic moulds.  These samples are marked for true north at the time of collection.  The samples are sent to an Archaeomagnetic Laboratory for processing.   Each of the samples is measured in a spinner magnetometer to determine the thermal remanent magnetism of each sample.  The results are statistically processed and an eigenvector is generated that shows the three-dimensional magnetic declination that will yield a location for the North Pole at the time of the last thermal event of the feature.  Data from this feature is compared to the regional secular variation curve in order to determine the best-fit date range for the feature's last firing event.
+
+
+== See also ==
+Magnetism
+Paleomagnetism
+Magnetic flux
+
+
+== References ==
+
+
+== Further reading ==
+"Archaeomagnetic Dating". Historic England. 6 February 2015 [24 March 2006]. Archived from the original on 4 November 2016. a popular introduction with illustrations and references
+Ben-Yosef, Erez; Millman, Michael; Shaar, Ron; Tauxe, Lisa; Lipschits, Oded (13 February 2017). "Six centuries of geomagnetic intensity variations recorded by royal Judean stamped jar handles". Proceedings of the National Academy of Sciences. 114 (9). Proceedings of the National Academy of Sciences: 2160–2165. doi:10.1073/pnas.1615797114. ISSN 0027-8424. PMC 5338537.
+Herries, A.I.R.; Kovacheva, M.; Kostadinova, M.; Shaw, J. (2007). "Archaeo-directional and -intensity data from burnt structures at the Thracian site of Halka Bunar (Bulgaria): The effect of magnetic mineralogy, temperature and atmosphere of heating in antiquity". Physics of the Earth and Planetary Interiors. 162 (3–4): 199–216. doi:10.1016/j.pepi.2007.04.006.
+
+
+== External links ==
+Archaeomagnetic Laboratory at the Illinois State Museum
+The U. S. National Geophysical Data Center (NGDC) data of paleopole positions and paleomagnetic directions.
+Yale University Archaeomagnetism Laboratory
+"Archaeomagnetism". University of Bradford. Retrieved 12 December 2024.

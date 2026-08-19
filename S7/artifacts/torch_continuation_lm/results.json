@@ -1,0 +1,1779 @@
+{
+  "checks": {
+    "at_least_500_test_examples": true,
+    "identical_batch_stream": true,
+    "identical_shared_initialization": true,
+    "parameter_reduction_at_least_10_percent": true,
+    "rke_beats_retrieval": true,
+    "rke_calibrated_nll_within_1_percent_of_fallback": false,
+    "rke_exact_at_least_20_percent": false,
+    "rke_exact_at_least_99_percent_of_fallback": true,
+    "rke_macro_calibrated_nll_within_1_percent_of_fallback": false,
+    "rke_macro_raw_nll_within_1_percent_of_fallback": false,
+    "rke_no_separate_vocab_classifier": true,
+    "rke_raw_nll_within_1_percent_of_fallback": false,
+    "rke_valid_chains_100_percent": true,
+    "throughput_at_least_90_percent_of_fallback": true
+  },
+  "configuration": {
+    "block_bytes": 24,
+    "calibration_scales": [
+      0.25,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "d_code": 64,
+    "d_hidden": 192,
+    "exact_noninferiority_ratio": 0.99,
+    "minimum_parameter_reduction": 0.1,
+    "minimum_throughput_ratio": 0.9,
+    "nll_noninferiority_ratio": 1.01,
+    "production_exact_threshold": 0.2,
+    "states": 259,
+    "steps": 3000,
+    "throughput_order": "alternating arms; median ratio",
+    "throughput_repeats": 5
+  },
+  "dataset": {
+    "available_by_language_split": {
+      "English": {
+        "test": 23915,
+        "train": 315834,
+        "validation": 30072
+      },
+      "Hindi": {
+        "test": 15125,
+        "train": 150613,
+        "validation": 14389
+      },
+      "Sindhi": {
+        "test": 20325,
+        "train": 141763,
+        "validation": 7122
+      },
+      "Telugu": {
+        "test": 7701,
+        "train": 124524,
+        "validation": 8792
+      }
+    },
+    "available_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 1018,
+          "train": 43685,
+          "validation": 343
+        },
+        "country": {
+          "test": 8335,
+          "train": 28874,
+          "validation": 8583
+        },
+        "geography": {
+          "test": 598,
+          "train": 26330,
+          "validation": 382
+        },
+        "history": {
+          "test": 2370,
+          "train": 19722,
+          "validation": 3661
+        },
+        "literature": {
+          "test": 1270,
+          "train": 37878,
+          "validation": 610
+        },
+        "mathematics": {
+          "test": 1009,
+          "train": 36474,
+          "validation": 2583
+        },
+        "music": {
+          "test": 3185,
+          "train": 20282,
+          "validation": 4860
+        },
+        "science": {
+          "test": 1148,
+          "train": 28551,
+          "validation": 5192
+        },
+        "sports": {
+          "test": 920,
+          "train": 35967,
+          "validation": 2058
+        },
+        "technology": {
+          "test": 4062,
+          "train": 38071,
+          "validation": 1800
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 599,
+          "train": 6376,
+          "validation": 662
+        },
+        "country": {
+          "test": 995,
+          "train": 10766,
+          "validation": 355
+        },
+        "geography": {
+          "test": 824,
+          "train": 27003,
+          "validation": 509
+        },
+        "history": {
+          "test": 2598,
+          "train": 13456,
+          "validation": 3002
+        },
+        "literature": {
+          "test": 980,
+          "train": 9090,
+          "validation": 3080
+        },
+        "mathematics": {
+          "test": 4510,
+          "train": 13207,
+          "validation": 213
+        },
+        "music": {
+          "test": 1479,
+          "train": 18174,
+          "validation": 1162
+        },
+        "science": {
+          "test": 1332,
+          "train": 23237,
+          "validation": 642
+        },
+        "sports": {
+          "test": 1397,
+          "train": 10078,
+          "validation": 4235
+        },
+        "technology": {
+          "test": 411,
+          "train": 19226,
+          "validation": 529
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 5556,
+          "train": 13559,
+          "validation": 538
+        },
+        "country": {
+          "test": 326,
+          "train": 22990,
+          "validation": 364
+        },
+        "geography": {
+          "test": 377,
+          "train": 24998,
+          "validation": 463
+        },
+        "history": {
+          "test": 745,
+          "train": 14845,
+          "validation": 671
+        },
+        "literature": {
+          "test": 335,
+          "train": 8041,
+          "validation": 2478
+        },
+        "mathematics": {
+          "test": 431,
+          "train": 16597,
+          "validation": 380
+        },
+        "music": {
+          "test": 352,
+          "train": 2836,
+          "validation": 265
+        },
+        "science": {
+          "test": 11289,
+          "train": 17395,
+          "validation": 255
+        },
+        "sports": {
+          "test": 366,
+          "train": 3980,
+          "validation": 438
+        },
+        "technology": {
+          "test": 548,
+          "train": 16522,
+          "validation": 1270
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 357,
+          "train": 9273,
+          "validation": 536
+        },
+        "country": {
+          "test": 1410,
+          "train": 12022,
+          "validation": 165
+        },
+        "geography": {
+          "test": 246,
+          "train": 7297,
+          "validation": 717
+        },
+        "history": {
+          "test": 604,
+          "train": 12418,
+          "validation": 520
+        },
+        "literature": {
+          "test": 163,
+          "train": 8601,
+          "validation": 772
+        },
+        "mathematics": {
+          "test": 164,
+          "train": 16220,
+          "validation": 1292
+        },
+        "music": {
+          "test": 525,
+          "train": 6724,
+          "validation": 321
+        },
+        "science": {
+          "test": 2456,
+          "train": 15940,
+          "validation": 325
+        },
+        "sports": {
+          "test": 813,
+          "train": 17387,
+          "validation": 385
+        },
+        "technology": {
+          "test": 963,
+          "train": 18642,
+          "validation": 3759
+        }
+      }
+    },
+    "corpus_documents": 400,
+    "corpus_manifest_hash": "3ac6ab20cd47f8993aa923fc2c34f503ebb1d860dc2bfc3d5189226947063b20",
+    "corpus_topics": [
+      "country",
+      "science",
+      "history",
+      "geography",
+      "literature",
+      "mathematics",
+      "technology",
+      "biology",
+      "music",
+      "sports"
+    ],
+    "discarded_cross_split_target_records": {
+      "test": 397,
+      "train": 0,
+      "validation": 393
+    },
+    "discarded_cross_split_target_records_by_language": {
+      "English": {
+        "test": 4,
+        "train": 0,
+        "validation": 6
+      },
+      "Hindi": {
+        "test": 258,
+        "train": 0,
+        "validation": 254
+      },
+      "Sindhi": {
+        "test": 15,
+        "train": 0,
+        "validation": 20
+      },
+      "Telugu": {
+        "test": 120,
+        "train": 0,
+        "validation": 113
+      }
+    },
+    "document_content_hash_leakage": false,
+    "document_inventory_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      }
+    },
+    "document_leakage": false,
+    "eligible_after_cross_split_filter": {
+      "English": {
+        "test": 23911,
+        "train": 315834,
+        "validation": 30066
+      },
+      "Hindi": {
+        "test": 14867,
+        "train": 150613,
+        "validation": 14135
+      },
+      "Sindhi": {
+        "test": 20310,
+        "train": 141763,
+        "validation": 7102
+      },
+      "Telugu": {
+        "test": 7581,
+        "train": 124524,
+        "validation": 8679
+      }
+    },
+    "eligible_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 1018,
+          "train": 43685,
+          "validation": 343
+        },
+        "country": {
+          "test": 8335,
+          "train": 28874,
+          "validation": 8583
+        },
+        "geography": {
+          "test": 598,
+          "train": 26330,
+          "validation": 382
+        },
+        "history": {
+          "test": 2370,
+          "train": 19722,
+          "validation": 3655
+        },
+        "literature": {
+          "test": 1269,
+          "train": 37878,
+          "validation": 610
+        },
+        "mathematics": {
+          "test": 1007,
+          "train": 36474,
+          "validation": 2583
+        },
+        "music": {
+          "test": 3185,
+          "train": 20282,
+          "validation": 4860
+        },
+        "science": {
+          "test": 1147,
+          "train": 28551,
+          "validation": 5192
+        },
+        "sports": {
+          "test": 920,
+          "train": 35967,
+          "validation": 2058
+        },
+        "technology": {
+          "test": 4062,
+          "train": 38071,
+          "validation": 1800
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 590,
+          "train": 6376,
+          "validation": 647
+        },
+        "country": {
+          "test": 982,
+          "train": 10766,
+          "validation": 341
+        },
+        "geography": {
+          "test": 816,
+          "train": 27003,
+          "validation": 490
+        },
+        "history": {
+          "test": 2556,
+          "train": 13456,
+          "validation": 2937
+        },
+        "literature": {
+          "test": 966,
+          "train": 9090,
+          "validation": 3062
+        },
+        "mathematics": {
+          "test": 4434,
+          "train": 13207,
+          "validation": 213
+        },
+        "music": {
+          "test": 1441,
+          "train": 18174,
+          "validation": 1152
+        },
+        "science": {
+          "test": 1302,
+          "train": 23237,
+          "validation": 634
+        },
+        "sports": {
+          "test": 1378,
+          "train": 10078,
+          "validation": 4137
+        },
+        "technology": {
+          "test": 402,
+          "train": 19226,
+          "validation": 522
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 5553,
+          "train": 13559,
+          "validation": 524
+        },
+        "country": {
+          "test": 326,
+          "train": 22990,
+          "validation": 364
+        },
+        "geography": {
+          "test": 376,
+          "train": 24998,
+          "validation": 463
+        },
+        "history": {
+          "test": 739,
+          "train": 14845,
+          "validation": 669
+        },
+        "literature": {
+          "test": 335,
+          "train": 8041,
+          "validation": 2476
+        },
+        "mathematics": {
+          "test": 431,
+          "train": 16597,
+          "validation": 380
+        },
+        "music": {
+          "test": 352,
+          "train": 2836,
+          "validation": 264
+        },
+        "science": {
+          "test": 11285,
+          "train": 17395,
+          "validation": 255
+        },
+        "sports": {
+          "test": 366,
+          "train": 3980,
+          "validation": 438
+        },
+        "technology": {
+          "test": 547,
+          "train": 16522,
+          "validation": 1269
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 355,
+          "train": 9273,
+          "validation": 530
+        },
+        "country": {
+          "test": 1399,
+          "train": 12022,
+          "validation": 161
+        },
+        "geography": {
+          "test": 244,
+          "train": 7297,
+          "validation": 709
+        },
+        "history": {
+          "test": 588,
+          "train": 12418,
+          "validation": 513
+        },
+        "literature": {
+          "test": 163,
+          "train": 8601,
+          "validation": 767
+        },
+        "mathematics": {
+          "test": 159,
+          "train": 16220,
+          "validation": 1282
+        },
+        "music": {
+          "test": 512,
+          "train": 6724,
+          "validation": 299
+        },
+        "science": {
+          "test": 2440,
+          "train": 15940,
+          "validation": 318
+        },
+        "sports": {
+          "test": 789,
+          "train": 17387,
+          "validation": 384
+        },
+        "technology": {
+          "test": 932,
+          "train": 18642,
+          "validation": 3716
+        }
+      }
+    },
+    "exact_sample_leakage": false,
+    "max_blocks": 4,
+    "paragraph_leakage": false,
+    "quality_gates": {
+      "document_content_hash_overlap_zero": true,
+      "equal_per_language_quotas": true,
+      "every_language_present_in_test": true,
+      "exact_sample_overlap_zero": true,
+      "manifest_and_payload_hashes_valid": true,
+      "target_string_overlap_zero": true,
+      "topic_strata_quotas_satisfied": true,
+      "unicode_safe_target_boundaries": true
+    },
+    "quotas_per_language": {
+      "test": 125,
+      "train": 1000,
+      "validation": 200
+    },
+    "sampling_policy": "equal language/topic strata with deterministic within-stratum hash order",
+    "selected": {
+      "test": 500,
+      "train": 4000,
+      "validation": 800
+    },
+    "selected_by_language_split": {
+      "English": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      },
+      "Hindi": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      },
+      "Sindhi": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      },
+      "Telugu": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      }
+    },
+    "selected_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      }
+    },
+    "source_documents": {
+      "test": 40,
+      "train": 310,
+      "validation": 40
+    },
+    "split_unit": "document",
+    "target_byte_range": [
+      25,
+      96
+    ],
+    "target_construction": {
+      "maximum_bytes": 96,
+      "minimum_bytes": 25,
+      "selection": "shortest span reaching minimum bytes",
+      "separator": "single ASCII space",
+      "unicode_safe_boundaries": true,
+      "unit": "NFC-normalized complete-token continuation span"
+    },
+    "target_statistics_by_language_split": {
+      "English": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 38,
+          "maximum_words": 7,
+          "mean_bytes": 28.528,
+          "mean_words": 4.704,
+          "minimum_bytes": 25,
+          "minimum_words": 2
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 39,
+          "maximum_words": 8,
+          "mean_bytes": 28.242,
+          "mean_words": 4.681,
+          "minimum_bytes": 25,
+          "minimum_words": 2
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 37,
+          "maximum_words": 7,
+          "mean_bytes": 28.44,
+          "mean_words": 4.65,
+          "minimum_bytes": 25,
+          "minimum_words": 3
+        }
+      },
+      "Hindi": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 53,
+          "maximum_words": 6,
+          "mean_bytes": 32.296,
+          "mean_words": 2.496,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 62,
+          "maximum_words": 5,
+          "mean_bytes": 32.296,
+          "mean_words": 2.438,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 53,
+          "maximum_words": 6,
+          "mean_bytes": 32.545,
+          "mean_words": 2.435,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        }
+      },
+      "Sindhi": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 43,
+          "maximum_words": 5,
+          "mean_bytes": 29.832,
+          "mean_words": 3.352,
+          "minimum_bytes": 25,
+          "minimum_words": 2
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 46,
+          "maximum_words": 8,
+          "mean_bytes": 29.727,
+          "mean_words": 3.538,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 41,
+          "maximum_words": 6,
+          "mean_bytes": 29.705,
+          "mean_words": 3.545,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        }
+      },
+      "Telugu": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 58,
+          "maximum_words": 5,
+          "mean_bytes": 37.0,
+          "mean_words": 1.848,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 70,
+          "maximum_words": 7,
+          "mean_bytes": 38.114,
+          "mean_words": 1.9,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 79,
+          "maximum_words": 7,
+          "mean_bytes": 37.36,
+          "mean_words": 2.035,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        }
+      }
+    },
+    "target_string_leakage": false,
+    "topic_quotas_per_language": {
+      "test": {
+        "biology": 12,
+        "country": 13,
+        "geography": 13,
+        "history": 13,
+        "literature": 13,
+        "mathematics": 12,
+        "music": 12,
+        "science": 13,
+        "sports": 12,
+        "technology": 12
+      },
+      "train": {
+        "biology": 100,
+        "country": 100,
+        "geography": 100,
+        "history": 100,
+        "literature": 100,
+        "mathematics": 100,
+        "music": 100,
+        "science": 100,
+        "sports": 100,
+        "technology": 100
+      },
+      "validation": {
+        "biology": 20,
+        "country": 20,
+        "geography": 20,
+        "history": 20,
+        "literature": 20,
+        "mathematics": 20,
+        "music": 20,
+        "science": 20,
+        "sports": 20,
+        "technology": 20
+      }
+    }
+  },
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "decode_benchmark": {
+    "fallback": {
+      "maximum_examples_per_second": 1052.5616843982489,
+      "median_examples_per_second": 1049.0100099001525,
+      "minimum_examples_per_second": 1045.3952430369202,
+      "repeats": 5,
+      "samples_examples_per_second": [
+        1050.9581592765778,
+        1052.5616843982489,
+        1049.0100099001525,
+        1046.4629552260717,
+        1045.3952430369202
+      ]
+    },
+    "rke": {
+      "maximum_examples_per_second": 999.8126191102032,
+      "median_examples_per_second": 993.2969007427903,
+      "minimum_examples_per_second": 987.8958066393274,
+      "repeats": 5,
+      "samples_examples_per_second": [
+        987.8958066393274,
+        999.8126191102032,
+        993.2969007427903,
+        991.2869996657428,
+        996.2100860961059
+      ]
+    }
+  },
+  "efficiency": {
+    "parameter_reduction": 0.10299295774647887,
+    "throughput_ratio": 0.9468898212299566
+  },
+  "experiment": "causal full-sequence learned continuation",
+  "fallback": {
+    "calibration": {
+      "argmax_invariant": true,
+      "selected_on": "validation",
+      "temperature_scale": 0.4,
+      "validation_sweep": {
+        "0.25": 2.171726612858428,
+        "0.4": 1.6650384304916168,
+        "0.5": 1.683646497419653,
+        "0.6": 1.7971303398135485,
+        "0.7": 1.9528816767725088,
+        "0.8": 2.1308129013168964,
+        "1.0": 2.5218969416457053,
+        "1.2": 2.938107671846956
+      }
+    },
+    "generated": {
+      "exact_count": 18,
+      "exact_match": 0.036,
+      "examples": 500,
+      "examples_per_second": 1045.8270057352572,
+      "macro_average": {
+        "exact_match": 0.036000000000000004,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.1889570711999373,
+        "valid_chain_rate": 1.0
+      },
+      "micro_average": {
+        "exact_match": 0.036,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.22375638358237185,
+        "valid_chain_rate": 1.0
+      },
+      "missing_eos_rate": 0.0,
+      "per_language": {
+        "English": {
+          "exact_count": 7,
+          "exact_match": 0.056,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.0763888888888889,
+          "valid_chain_rate": 1.0
+        },
+        "Hindi": {
+          "exact_count": 3,
+          "exact_match": 0.024,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.2475795297372061,
+          "valid_chain_rate": 1.0
+        },
+        "Sindhi": {
+          "exact_count": 5,
+          "exact_match": 0.04,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.14512471655328799,
+          "valid_chain_rate": 1.0
+        },
+        "Telugu": {
+          "exact_count": 3,
+          "exact_match": 0.024,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.2867351496203662,
+          "valid_chain_rate": 1.0
+        }
+      },
+      "suffix_byte_accuracy": 0.22375638358237185,
+      "valid_chain_rate": 1.0
+    },
+    "nll_reports": {
+      "calibrated_test": {
+        "macro_average": 1.8652877296217534,
+        "micro_average": 1.6949039270112216,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 2.6773937793958034,
+          "Hindi": 1.4413937703031034,
+          "Sindhi": 2.022647902334602,
+          "Telugu": 1.319715466453505
+        }
+      },
+      "calibrated_validation": {
+        "macro_average": 1.8562766635368184,
+        "micro_average": 1.6650384304916168,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 2.678406322703642,
+          "Hindi": 1.4730612260785578,
+          "Sindhi": 2.0314267789313014,
+          "Telugu": 1.2422123264337728
+        }
+      },
+      "raw_test": {
+        "macro_average": 2.9172883362091935,
+        "micro_average": 2.613729022879215,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 4.397410413463278,
+          "Hindi": 2.139491759624678,
+          "Sindhi": 3.1733907302034545,
+          "Telugu": 1.9588604415453645
+        }
+      },
+      "raw_validation": {
+        "macro_average": 2.864461602980574,
+        "micro_average": 2.5218969416457053,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 4.339404947617474,
+          "Hindi": 2.2018801125318546,
+          "Sindhi": 3.1604584673284863,
+          "Telugu": 1.7561028844444804
+        }
+      }
+    },
+    "parameters": {
+      "output_specific_parameters": 49728,
+      "separate_vocab_classifier": 49728,
+      "shared_codebook": 16576,
+      "structured_output_adapter": 0,
+      "total": 363520
+    },
+    "raw_test_nll": 2.613729022879215,
+    "raw_validation_nll": 2.5218969416457053,
+    "test_nll": 1.6949039270112216,
+    "training": {
+      "batch_size": 64,
+      "batch_stream_hash": "f3867edd81e65fd89d4c4244068775004a39cefbda1d659bb17aa5b5caf80dc1",
+      "curve": [
+        {
+          "loss": 5.572981357574463,
+          "step": 1
+        },
+        {
+          "loss": 1.404839277267456,
+          "step": 250
+        },
+        {
+          "loss": 1.1980737447738647,
+          "step": 500
+        },
+        {
+          "loss": 0.9071497917175293,
+          "step": 750
+        },
+        {
+          "loss": 0.7754988074302673,
+          "step": 1000
+        },
+        {
+          "loss": 0.5854282975196838,
+          "step": 1250
+        },
+        {
+          "loss": 0.44704172015190125,
+          "step": 1500
+        },
+        {
+          "loss": 0.35854390263557434,
+          "step": 1750
+        },
+        {
+          "loss": 0.24120646715164185,
+          "step": 2000
+        },
+        {
+          "loss": 0.23805439472198486,
+          "step": 2250
+        },
+        {
+          "loss": 0.1231226995587349,
+          "step": 2500
+        },
+        {
+          "loss": 0.11480762809515,
+          "step": 2750
+        },
+        {
+          "loss": 0.08059067279100418,
+          "step": 3000
+        }
+      ],
+      "initial_shared_state_hash": "a40f9c3e8b1715e3e8d3534a43809c4cedc5eb4903cfe94171883b3a4ab25068",
+      "learning_rate": 0.002,
+      "seconds": 78.01970779099793,
+      "steps": 3000
+    },
+    "validation_generated": {
+      "exact_count": 40,
+      "exact_match": 0.05,
+      "examples": 800,
+      "examples_per_second": 1039.0167572483765,
+      "macro_average": {
+        "exact_match": 0.05,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.18387812053188185,
+        "valid_chain_rate": 1.0
+      },
+      "micro_average": {
+        "exact_match": 0.05,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.21714016267829778,
+        "valid_chain_rate": 1.0
+      },
+      "missing_eos_rate": 0.0,
+      "per_language": {
+        "English": {
+          "exact_count": 8,
+          "exact_match": 0.04,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.06016949152542373,
+          "valid_chain_rate": 1.0
+        },
+        "Hindi": {
+          "exact_count": 14,
+          "exact_match": 0.07,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.25426774483378256,
+          "valid_chain_rate": 1.0
+        },
+        "Sindhi": {
+          "exact_count": 8,
+          "exact_match": 0.04,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.14936886395511922,
+          "valid_chain_rate": 1.0
+        },
+        "Telugu": {
+          "exact_count": 10,
+          "exact_match": 0.05,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.27170638181320184,
+          "valid_chain_rate": 1.0
+        }
+      },
+      "suffix_byte_accuracy": 0.21714016267829778,
+      "valid_chain_rate": 1.0
+    },
+    "validation_nll": 1.6650384304916168
+  },
+  "functional_check_names": [
+    "at_least_500_test_examples",
+    "rke_beats_retrieval",
+    "rke_valid_chains_100_percent",
+    "rke_no_separate_vocab_classifier",
+    "identical_shared_initialization",
+    "identical_batch_stream"
+  ],
+  "functional_passed": true,
+  "passed": false,
+  "retrieval": {
+    "coverage": 0.034,
+    "covered": 17,
+    "exact_count": 0,
+    "exact_match": 0.0,
+    "examples": 500,
+    "macro_average": {
+      "coverage": 0.034,
+      "exact_match": 0.0
+    },
+    "micro_average": {
+      "coverage": 0.034,
+      "exact_match": 0.0
+    },
+    "per_language": {
+      "English": {
+        "coverage": 0.0,
+        "covered": 0,
+        "exact_count": 0,
+        "exact_match": 0.0,
+        "examples": 125,
+        "protocol": "most frequent training target with identical first block"
+      },
+      "Hindi": {
+        "coverage": 0.048,
+        "covered": 6,
+        "exact_count": 0,
+        "exact_match": 0.0,
+        "examples": 125,
+        "protocol": "most frequent training target with identical first block"
+      },
+      "Sindhi": {
+        "coverage": 0.0,
+        "covered": 0,
+        "exact_count": 0,
+        "exact_match": 0.0,
+        "examples": 125,
+        "protocol": "most frequent training target with identical first block"
+      },
+      "Telugu": {
+        "coverage": 0.088,
+        "covered": 11,
+        "exact_count": 0,
+        "exact_match": 0.0,
+        "examples": 125,
+        "protocol": "most frequent training target with identical first block"
+      }
+    },
+    "protocol": "most frequent training target with identical first block"
+  },
+  "rke": {
+    "calibration": {
+      "argmax_invariant": true,
+      "selected_on": "validation",
+      "temperature_scale": 0.4,
+      "validation_sweep": {
+        "0.25": 1.8884665818236142,
+        "0.4": 1.7337481993659827,
+        "0.5": 1.8635191042482828,
+        "0.6": 2.054053966370008,
+        "0.7": 2.274622052245487,
+        "0.8": 2.512329506047865,
+        "1.0": 3.0165472771932813,
+        "1.2": 3.5419674717588316
+      }
+    },
+    "generated": {
+      "exact_count": 22,
+      "exact_match": 0.044,
+      "examples": 500,
+      "examples_per_second": 951.5207323296239,
+      "macro_average": {
+        "exact_match": 0.044,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.19102083435028788,
+        "valid_chain_rate": 1.0
+      },
+      "micro_average": {
+        "exact_match": 0.044,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.22750915045270662,
+        "valid_chain_rate": 1.0
+      },
+      "missing_eos_rate": 0.0,
+      "per_language": {
+        "English": {
+          "exact_count": 6,
+          "exact_match": 0.048,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.06293706293706294,
+          "valid_chain_rate": 1.0
+        },
+        "Hindi": {
+          "exact_count": 8,
+          "exact_match": 0.064,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.2520029133284778,
+          "valid_chain_rate": 1.0
+        },
+        "Sindhi": {
+          "exact_count": 6,
+          "exact_match": 0.048,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.15010799136069114,
+          "valid_chain_rate": 1.0
+        },
+        "Telugu": {
+          "exact_count": 2,
+          "exact_match": 0.016,
+          "examples": 125,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.2990353697749196,
+          "valid_chain_rate": 1.0
+        }
+      },
+      "suffix_byte_accuracy": 0.22750915045270662,
+      "valid_chain_rate": 1.0
+    },
+    "nll_reports": {
+      "calibrated_test": {
+        "macro_average": 1.9291992591652223,
+        "micro_average": 1.7411011069307587,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 2.918620086095785,
+          "Hindi": 1.4053540836085159,
+          "Sindhi": 2.0304389614132026,
+          "Telugu": 1.3623839055433862
+        }
+      },
+      "calibrated_validation": {
+        "macro_average": 1.948282918499532,
+        "micro_average": 1.7337481993659827,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 2.944996889899759,
+          "Hindi": 1.4793614389007776,
+          "Sindhi": 2.0829802761319676,
+          "Telugu": 1.2857930690656239
+        }
+      },
+      "raw_test": {
+        "macro_average": 3.4080344129122464,
+        "micro_average": 3.0492094925015354,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 5.352843266665159,
+          "Hindi": 2.3487817298915377,
+          "Sindhi": 3.5732378993157203,
+          "Telugu": 2.3572747557765688
+        }
+      },
+      "raw_validation": {
+        "macro_average": 3.438502028680079,
+        "micro_average": 3.0165472771932813,
+        "normalization": "loss-bearing suffix byte/CONT/EOS state",
+        "per_language": {
+          "English": 5.431168948902803,
+          "Hindi": 2.518290318809625,
+          "Sindhi": 3.6645802747483223,
+          "Telugu": 2.1399685722595656
+        }
+      }
+    },
+    "parameters": {
+      "output_specific_parameters": 12288,
+      "separate_vocab_classifier": 0,
+      "shared_codebook": 16576,
+      "structured_output_adapter": 12288,
+      "total": 326080
+    },
+    "raw_test_nll": 3.0492094925015354,
+    "raw_validation_nll": 3.0165472771932813,
+    "test_nll": 1.7411011069307587,
+    "training": {
+      "batch_size": 64,
+      "batch_stream_hash": "f3867edd81e65fd89d4c4244068775004a39cefbda1d659bb17aa5b5caf80dc1",
+      "curve": [
+        {
+          "loss": 5.547954082489014,
+          "step": 1
+        },
+        {
+          "loss": 1.428227424621582,
+          "step": 250
+        },
+        {
+          "loss": 1.2716883420944214,
+          "step": 500
+        },
+        {
+          "loss": 0.9705038070678711,
+          "step": 750
+        },
+        {
+          "loss": 0.8858181238174438,
+          "step": 1000
+        },
+        {
+          "loss": 0.6435025334358215,
+          "step": 1250
+        },
+        {
+          "loss": 0.4755074083805084,
+          "step": 1500
+        },
+        {
+          "loss": 0.37986570596694946,
+          "step": 1750
+        },
+        {
+          "loss": 0.27269095182418823,
+          "step": 2000
+        },
+        {
+          "loss": 0.2606807351112366,
+          "step": 2250
+        },
+        {
+          "loss": 0.12052776664495468,
+          "step": 2500
+        },
+        {
+          "loss": 0.11371676623821259,
+          "step": 2750
+        },
+        {
+          "loss": 0.09300127625465393,
+          "step": 3000
+        }
+      ],
+      "initial_shared_state_hash": "a40f9c3e8b1715e3e8d3534a43809c4cedc5eb4903cfe94171883b3a4ab25068",
+      "learning_rate": 0.002,
+      "seconds": 77.36323366699798,
+      "steps": 3000
+    },
+    "validation_generated": {
+      "exact_count": 40,
+      "exact_match": 0.05,
+      "examples": 800,
+      "examples_per_second": 961.0803023106641,
+      "macro_average": {
+        "exact_match": 0.05,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.18529132332468554,
+        "valid_chain_rate": 1.0
+      },
+      "micro_average": {
+        "exact_match": 0.05,
+        "missing_eos_rate": 0.0,
+        "suffix_byte_accuracy": 0.22076124567474048,
+        "valid_chain_rate": 1.0
+      },
+      "missing_eos_rate": 0.0,
+      "per_language": {
+        "English": {
+          "exact_count": 7,
+          "exact_match": 0.035,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.07685589519650655,
+          "valid_chain_rate": 1.0
+        },
+        "Hindi": {
+          "exact_count": 14,
+          "exact_match": 0.07,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.2447434819175778,
+          "valid_chain_rate": 1.0
+        },
+        "Sindhi": {
+          "exact_count": 8,
+          "exact_match": 0.04,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.13950177935943062,
+          "valid_chain_rate": 1.0
+        },
+        "Telugu": {
+          "exact_count": 11,
+          "exact_match": 0.055,
+          "examples": 200,
+          "missing_eos_rate": 0.0,
+          "suffix_byte_accuracy": 0.28006413682522713,
+          "valid_chain_rate": 1.0
+        }
+      },
+      "suffix_byte_accuracy": 0.22076124567474048,
+      "valid_chain_rate": 1.0
+    },
+    "validation_nll": 1.7337481993659827
+  },
+  "seed": 1810
+}

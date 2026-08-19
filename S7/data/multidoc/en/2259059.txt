@@ -1,0 +1,95 @@
+Chronometry, or horology, is the science studying the measurement of time and timekeeping. Chronometry enables the establishment of standard  measurements of time, which have applications in a broad range of social and scientific areas. Horology usually refers specifically to the study of mechanical timekeeping devices, while chronometry is broader in scope, also including biological behaviours with respect to time (biochronometry) as well as the dating of geological material (geochronometry).
+Horology is commonly used specifically in reference to the mechanical instruments created to keep time: clocks, watches, clockwork, sundials, hourglasses, clepsydras, timers, time recorders, marine chronometers, and atomic clocks are all examples of instruments used to measure time. People interested in horology are called horologists. That term is used both by people who deal professionally with timekeeping apparatuses, as well as enthusiasts and scholars of horology. Horology and horologists have numerous organizations, both professional associations and more scholarly societies. The largest horological membership organisation globally is the NAWCC, the National Association of Watch and Clock Collectors, which is US based, but also has local chapters elsewhere.
+Records of timekeeping are attested during the Paleolithic, in the form of inscriptions made to mark the passing of lunar cycles and measure years. Written calendars were then invented, followed by mechanical devices. The highest levels of precision are presently achieved by atomic clocks, which are used to track the international standard second.
+
+
+== Etymology ==
+Chronometry is derived from two root words, Ancient Greek chronos (χρόνος) and metron (μέτρον), with rough meanings of "time" and "measure". The combination of the two is taken to mean measurement of time.
+In the Ancient Greek lexicon, meanings and translations differ depending on the source. Chronos, used in relation to time when in definite periods, and linked to dates in time, chronological accuracy, and sometimes in rare cases, refers to a delay. The length of the time it refers ranges from seconds to seasons of the year to lifetimes, it can also concern periods of time wherein some specific event takes place, or persists, or is delayed.
+
+The root word is correlated with the god Chronos in Ancient Greek mythology, who embodied the image of time, originated from out of the primordial chaos. Known as the one who spins the Zodiac Wheel, further evidence of his connection to the progression of time. However, Ancient Greek makes a distinction between two types of time, chronos, the static and continuing progress of present to future, time in a sequential and chronological sense, and kairos, a concept based in a more abstract sense, representing the opportune moment for action or change to occur.
+Kairos (καιρός) carries little emphasis on precise chronology, instead being used as a time specifically fit for something, or also a period of time characterised by some aspect of crisis, also relating to the endtime. It can as well be seen in the light of an advantage, profit, or fruit of a thing, but has also been represented in apocalyptic feeling, and likewise shown as variable between misfortune and success, being likened to a body part vulnerable due to a gap in armor for Homer, benefit or calamity depending on the perspective. It is also referenced in Christian theology, being used as implication of God's action and judgement in circumstances.
+Because of the inherent relation between chronos and kairos, their function the Ancient Greek's portrayal and concept of time, understanding one means understanding the other in part. The implication of chronos, an indifferent disposition and eternal essence lies at the core of the science of chronometry, bias is avoided, and definite measurement is favoured.
+
+
+== Subfields ==
+
+
+=== Biochronometry ===
+Biochronometry (also chronobiology or biological chronometry) is the study of biological behaviours and patterns seen in animals with factors based in time. It can be categorised into circadian rhythms and circannual cycles. Examples of these behaviours can be: the relation of daily and seasonal tidal cues to the activity of marine plants and animals, the photosynthetic capacity and phototactic responsiveness in algae, or metabolic temperature compensation in bacteria.
+
+Circadian rhythms of various species can be observed through their gross motor function throughout the course of a day. These patterns are more apparent with the day further categorised into activity and rest times. Investigation into a species is conducted through comparisons of free-running and entrained rhythms, where the former is attained from within the species' natural environment and the latter from a subject that has been taught certain behaviours. Circannual rhythms are alike but pertain to patterns within the scale of a year, patterns like migration, moulting, reproduction, and body weight are common examples, research and investigation are achieved with similar methods to circadian patterns.
+Circadian and circannual rhythms can be seen in all organisms, both single and multi-celled. A sub-branch of biochronometry is microbiochronometry (also chronomicrobiology or microbiological chronometry), the examination of behavioural sequences and cycles within micro-organisms. Adapting to circadian and circannual rhythms is an essential evolution for living organisms. These studies, as well as educating on the adaptations of organisms also bring to light certain factors affecting many of species’ and organisms’ responses, and can also be applied to further understand the overall physiology, this can be for humans as well. Examples include: factors of human performance, sleep, metabolism, and disease development, which are all connected to cycles related to biochronometry.
+
+
+=== Mental chronometry ===
+Mental chronometry (also called cognitive chronometry) studies human information processing mechanisms, namely reaction time and perception. As well as a field of chronometry, it also forms a part of cognitive psychology and its contemporary human information processing approach. Research comprises applications of the chronometric paradigms – many of which are related to classical reaction time paradigms from psychophysiology – through measuring reaction times of subjects with varied methods, and contribute to studies in cognition and action. Reaction time models and the process of expressing the temporostructural organisation of human processing mechanisms have an innate computational essence to them. It has been argued that because of this, conceptual frameworks of cognitive psychology cannot be integrated in their typical fashions.
+One common method is the use of event-related potentials (ERPs) in stimulus-response experiments. These are fluctuations of generated transient voltages in neural tissues that occur in response to a stimulus event either immediately before or after. This testing emphasises the mental events' time-course and nature and assists in determining the structural functions in human information processing.
+
+
+=== Geochronometry ===
+The dating of geological materials makes up the field of geochronometry, and falls within areas of geochronology and stratigraphy, while differing itself from chronostratigraphy. The geochronometric scale is periodic, its units working in powers of 1000, and is based in units of duration, contrasting with the chronostratigraphic scale. The distinctions between the two scales have caused some confusion – even among academic communities.
+Geochronometry deals with calculating a precise date of rock sediments and other geological events, giving an idea as to what the history of various areas is, for example, volcanic and magmatic movements and occurrences can be easily recognised, as well as marine deposits, which can be indicators for marine events and even global environmental changes. This dating can be done in a number of ways. All dependable methods – barring the exceptions of thermoluminescence, radioluminescence and ESR (electron spin resonance) dating – are based in radioactive decay, focusing on the degradation of the radioactive parent nuclide and the corresponding daughter product's growth.
+
+By measuring the daughter isotopes in a specific sample its age can be calculated. The preserved conformity of parent and daughter nuclides provides the basis for the radioactive dating of geochronometry, applying the Rutherford Soddy Law of Radioactivity, specifically using the concept of radioactive transformation in the growth of the daughter nuclide.
+Thermoluminescence is an extremely useful concept to apply, being used in a diverse amount of areas in science, dating using thermoluminescence is a cheap and convenient method for geochronometry. Thermoluminescence is the production of light from a heated insulator and semi-conductor, it is occasionally confused with incandescent light emissions of a material, a different process despite the many similarities. However, this only occurs if the material has had previous exposure to and absorption of energy from radiation. Importantly, the light emissions of thermoluminescence cannot be repeated. The entire process, from the material's exposure to radiation would have to be repeated to generate another thermoluminescence emission. The age of a material can be determined by measuring the amount of light given off during the heating process, by means of a phototube, as the emission is proportional to the dose of radiation the material absorbed.
+
+
+== Time metrology ==
+Time metrology or time and frequency metrology is the application of metrology for timekeeping, including frequency stability.
+Its main tasks are the realization of the second as the SI unit of measurement for time and the establishment of time standards and frequency standards as well as their dissemination.
+
+
+== History ==
+
+Early humans would have used their basic senses to perceive the time of day, and relied on their biological sense of time to discern the seasons in order to act accordingly. Their physiological and behavioural seasonal cycles mainly being influenced by a melatonin based photoperiod time measurement biological system – which measures the change in daylight within the annual cycle, giving a sense of the time in the year – and their circannual rhythms, providing an anticipation of environmental events months beforehand to increase chances of survival.
+There is debate over when the earliest use of lunar calendars was, and over whether some findings constituted as a lunar calendar. Most related findings and materials from the palaeolithic era are fashioned from bones and stone, with various markings from tools. These markings are thought to not have been the result of marks to represent the lunar cycles but non-notational and irregular engravings, a pattern of latter subsidiary marks that disregard the previous design is indicative of the markings being the use of motifs and ritual marking instead.
+However, as humans' focus turned to farming the importance and reliance on understanding the rhythms and cycle of the seasons grew, and the unreliability of lunar phases became problematic. An early human accustomed to the phases of the moon would use them as a rule of thumb, and the potential for weather to interfere with reading the cycle further degraded the reliability. The length of a moon is on average less than our current month, not acting as a dependable alternate, so as years progress the room of error between would grow until some other indicator would give indication.
+
+The Ancient Egyptian calendars were among the first calendars made, and the civil calendar even endured for a long period afterwards, surviving past even its culture's collapse and through the early Christian era. It has been assumed to have been invented near 4231 BC by some, but accurate and exact dating is difficult in its era and the invention has been attributed to 3200 BC, when the first historical king of Egypt, Menes, united Upper and Lower Egypt. It was originally based on cycles and phases of the moon, however, Egyptians later realised the calendar was flawed upon noticing the star Sirius rose before sunrise every 365 days, a year as we know it now, and was remade to consist of twelve months of thirty days, with five epagomenal days. The former is referred to as the Ancient Egyptians' lunar calendar, and the latter the civil calendar.
+Early calendars often hold an element of their respective culture's traditions and values, for example, the five day intercalary month of the Ancient Egyptian's civil calendar representing the birthdays of the gods Horus, Isis, Set, Osiris and Nephthys. Maya use of a zero date as well as the Tzolkʼin's connection to their thirteen layers of heaven (the product of it and all the human digits, twenty, making the 260-day year of the year) and the length of time between conception and birth in pregnancy.
+
+
+== Organizations ==
+Notable scholarly horological organizations include:
+
+American Watchmakers-Clockmakers Institute – AWCI (United States of America)
+Antiquarian Horological Society – AHS (United Kingdom)
+British Horological Institute – BHI (United Kingdom)
+Chronometrophilia (Switzerland)
+Deutsche Gesellschaft für Chronometrie – DGC (Germany)
+Horological Society of New York – HSNY (United States of America)
+National Association of Watch and Clock Collectors – NAWCC (United States of America)
+
+
+== Glossary ==
+
+
+== See also ==
+
+Complication (horology)
+List of clock manufacturers
+List of watch manufacturers
+Winthrop Kellogg Edey
+Allan variance
+Clock drift
+International Earth Rotation and Reference Systems Service
+Time and Frequency Standards Laboratory
+Time deviation
+
+
+== Notes ==
+
+
+== References ==
+
+
+== Further reading ==
+
+Perman, Stacy (2013). A grand complication: the race to build the world's most legendary watch. New York: Atria. ISBN 978-1-439-19008-1.
+Berner, G.A., Illustrated Professional Dictionary of Horology, Federation of the Swiss Watch Industry FH 1961 - 2012
+Daniels, George, Watchmaking, London: Philip Wilson Publishers, 1981 (reprinted June 15, 2011)
+Beckett, Edmund, A Rudimentary Treatise on Clocks, Watches and Bells, 1903, from Project Gutenberg
+Grafton, Edward, Horology, a popular sketch of clock and watch making, London: Aylett and Jones, 1849
+IEEE Guide for Measurement of Environmental Sensitivities of Standard Frequency Generators (Revision of IEEE Std 1193 - 1994), Piscataway, NJ: IEEE, doi:10.1109/ieeestd.2004.94440, ISBN 0-738-13711-1
+IEEE Standard Definitions of Physical Quantities for Fundamental Frequency and Time Metrology—Random Instabilities, Piscataway, NJ: IEEE, doi:10.1109/ieeestd.2008.4797525, ISBN 978-0-738-16855-5

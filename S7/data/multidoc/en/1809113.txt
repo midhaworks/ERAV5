@@ -1,0 +1,39 @@
+Comparative biology is the study of patterns and natural variation in life at all levels, from genes to communities. Comparative biologists take a cross-lineage approach in examining areas such as anatomy. physiology, genomics, developmental biology, bioinformatics, systematics, and biogeography. Comparative evidence from various discplines may be used to interpret the biological relationships between organisms, as represented by pedigree charts, phylogenetic trees, or cladograms, which in turn helps differentiate features with single origins (homology) from those with multiple origins (homoplasy). On a molecular level, comparative studies often focus on identifying conserved sequences which characterise the functional elements of genes or proteins, though differences may be examined to develop models of evolutionary history or characterise species-specific adaptations. The comparative approach has shaped understandings of the evolution and natural history of populations, species, and higher taxa, and has contributed to the development of evolutionary biology, neontology, paleontology, anthropology, ethology, ecology and many other areas of the biological sciences. Comparative biology also has numerous applications in human health, genetics, biomedicine, and conservation biology.
+
+
+== History ==
+Though now associated with evolutionary biology, comparative approaches have been employed throughout the history of biology and are evident in many of the earliest works of natural history. Among them, Aristotle's biology examined animal anatomies through the lens of the four causes, interpreting structural and functional variation in terms of their formal and teleological causes respectively. Aristotle's works were highly influential to medieval and renaissance natural history, informing interpretive approaches to comparative observations.
+Evidence of serial homology was observed as early as the 16th century, as illustrated in Pierre Belon’s L’histoire de la nature des oyseaux (1555), however, the modern study of analogous and homologous structures was first expressed by Richard Owen in his Lectures on the Comparative Anatomy and Physiology of the Invertebrate Animals (1843), while Charles Darwin's theories of descent with modification and evolution by natural selection provided a testable scientific theory of relatedness for interpreting comparative analyses. Darwin made extensive use of comparative evidence throughout The Origin of Species (1859) and The Descent of Man (1871).
+
+
+== Subdisciplines ==
+
+
+=== Comparative anatomy ===
+
+
+=== Comparative physiology ===
+
+
+=== Comparative genomics ===
+
+
+=== Comparative embryology ===
+
+
+=== Comparative medicine ===
+
+
+==== Comparative oncology ====
+
+
+== See also ==
+Comparative psychology
+Comparative neuropsychology
+Cladistics
+Phylogenetic comparative methods
+Comparative Biochemistry and Physiology
+Integrative and Comparative Biology
+
+
+== References ==

@@ -62,7 +62,7 @@ def evaluate(model: TinyTransformer, codec: FullByteCodec,
     mask = targets != 0
     selected = probabilities[np.arange(len(records))[:, None], np.arange(codec.slots)[None], targets]
     word_nll = (-np.log(selected + 1e-12) * mask).sum(axis=1)
-    raw_predictions, constrained_predictions, raw_valid = [], [], []
+    raw_predictions, constrained_predictions, raw_valid, constrained_valid = [], [], [], []
     for item in logits:
         try:
             payload = codec.decode_logits(item)
@@ -71,8 +71,10 @@ def evaluate(model: TinyTransformer, codec: FullByteCodec,
             raw_predictions.append("<INVALID_UTF8>"); raw_valid.append(False)
         try:
             constrained_predictions.append(constrained_utf8_decode(item, codec.max_bytes).decode("utf-8"))
+            constrained_valid.append(True)
         except (ValueError, UnicodeDecodeError):
             constrained_predictions.append("<NO_VALID_PATH>")
+            constrained_valid.append(False)
     truth = [x["target"] for x in records]
     raw_correct = np.array([a == b for a, b in zip(truth, raw_predictions)])
     constrained_correct = np.array([a == b for a, b in zip(truth, constrained_predictions)])
@@ -99,7 +101,8 @@ def evaluate(model: TinyTransformer, codec: FullByteCodec,
     return {
         "examples": len(records), "raw_exact_match": float(raw_correct.mean()),
         "constrained_exact_match": float(constrained_correct.mean()),
-        "raw_invalid_utf8_rate": 1 - float(np.mean(raw_valid)), "constrained_invalid_utf8_rate": 0.0,
+        "raw_invalid_utf8_rate": 1 - float(np.mean(raw_valid)),
+        "constrained_invalid_utf8_rate": 1 - float(np.mean(constrained_valid)),
         "nll_per_word": float(word_nll.mean()), "nll_per_byte_or_eos": float(word_nll.sum() / mask.sum()),
         "calibration": calibration(confidence, constrained_correct), "per_script": per_script,
         "per_utf8_byte_length": by_length, "predictions": predictions,
@@ -160,7 +163,8 @@ def run_multilingual_experiment(output: Path, seed: int = 33) -> dict[str, Any]:
     (output / "split.json").write_text(json.dumps(data, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     (output / "results.json").write_text(json.dumps(results, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     with (output / "training_curve.csv").open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=curve[0]); writer.writeheader(); writer.writerows(curve)
+        writer = csv.DictWriter(handle, fieldnames=curve[0], lineterminator="\n")
+        writer.writeheader(); writer.writerows(curve)
     np.savez_compressed(output / "model.npz", **model.params)
     comparison_svg(output / "comparison.svg", held_metrics)
     return results

@@ -1,0 +1,45 @@
+Big science is a term used by scientists and historians of science to describe a series of changes in science which occurred in industrial nations during and after World War II, as scientific progress increasingly came to rely on large-scale projects usually funded by national governments or groups of governments. Individual or small group efforts, or small science, are still relevant today as theoretical results by individual authors may have a significant impact, but very often the empirical verification requires experiments using constructions, such as the Large Hadron Collider, costing between $5 and $10 billion.
+
+
+== Development ==
+
+While science and technology have always been important to and driven by warfare, the increase in military funding of science following the second World War was on a scale wholly unprecedented.  James Conant, in a 1941 letter to Chemical Engineering News, said that World War II "is a physicist's war rather than a chemist's," a phrase that was cemented in the vernacular in post-war discussion of the role that those scientists played in the development of new weapons and tools, notably the proximity fuse, radar, and the atomic bomb.  The bulk of these last two activities took place in a new form of research facility: the government-sponsored laboratory, employing thousands of technicians and scientists, managed by universities (in this case, the University of California and the Massachusetts Institute of Technology).
+The need of a strong scientific research establishment was obvious in the shadow of the first atomic weapons to any country seeking to play a prominent role in world affairs. After the success of the Manhattan Project, governments became the chief patron of science, and the character of the scientific establishment underwent several key changes. This was especially marked in the United States and the Soviet Union during the Cold War, but also to a lesser extent in many other countries.
+
+
+== Definitions ==
+"Big science" usually implies one or more of these specific characteristics:
+
+Big budgets: No longer required to rely on philanthropy or industry, scientists were able to use budgets on an unprecedented scale for basic research.
+Big staffs: Similarly, the number of practitioners of science on any one project grew as well, creating difficulty, and often controversy, in the assignment of credit for scientific discoveries (the Nobel Prize system, for example, allows awarding only three individuals in any one topic per year, based on a 19th-century model of the scientific enterprise).
+Big machines: Ernest Lawrence's cyclotron at his Radiation Laboratory in particular ushered in an era of massive machines (requiring massive staffs and budgets) as the tools of basic scientific research. The use of many machines, such as the many sequencers used during the Human Genome Project, might also fall under this definition.
+
+Big laboratories: Because of the increase in cost to do basic science (with the increase of large machines), centralization of scientific research in large laboratories (such as Lawrence Berkeley National Laboratory or CERN) has become a cost-effective strategy, though questions over facility access have become prevalent.
+Towards the end of the 20th century, not only projects in basic physics and astronomy, but also in life sciences became big sciences, such as the massive Human Genome Project. The heavy investment of government and industrial interests into academic science has also blurred the line between public and private research, where entire academic departments, even at public universities, are often financed by private companies.  Not all Big Science is related to the military concerns which were at its origins.
+
+
+== Criticism ==
+The era of Big Science has provoked criticism that it undermines the basic principles of the scientific method.  Increased government funding has often meant increased military funding, which some claim subverts the Enlightenment-era ideal of science as a pure quest for knowledge.  For example, historian Paul Forman has argued that during World War II and the Cold War, the massive scale of defense-related funding prompted a shift in physics from basic to applied research.
+Many scientists also complain that the requirement for increased funding makes a large part of the scientific activity filling out grant requests and other budgetary bureaucratic activity, and the intense connections between academic, governmental, and industrial interests have raised the question of whether scientists can be completely objective when their research contradicts the interests and intentions of their benefactors.
+In addition, widespread sharing of scientific knowledge is necessary for rapid progress for both basic and applied sciences. However the sharing of data can be impeded for a number of reasons. For example, scientific findings can be classified by military interests or patented by corporate ones. Grant competitions, while they stimulate interest in a topic, can also increase secretiveness among scientists because application evaluators may value uniqueness more than incremental, collaborative inquiry.
+
+
+== Historiography of Big Science ==
+
+The popularization of the term "Big Science" is usually attributed to an article by Alvin M. Weinberg, then director of Oak Ridge National Laboratory, published in Science in 1961. This was a response to Dwight D. Eisenhower's farewell address, in which the departing U.S. president warned against the dangers of what he called the "military–industrial complex" and the potential "domination of the nation's scholars by Federal employment, project allocations, and the power of money".  Weinberg compared the large-scale enterprise of science in the 20th century to the wonders of earlier civilization (the pyramids, the palace of Versailles):
+
+When history looks at the 20th century, she will see science and technology as its theme; she will find in the monuments of Big Science—the huge rockets, the high-energy accelerators, the high-flux research reactors—symbols of our time just as surely as she finds in Notre Dame a symbol of the Middle Ages. ... We build our monuments in the name of scientific truth, they built theirs in the name of religious truth; we use our Big Science to add to our country's prestige, they used their churches for their cities' prestige; we build to placate what ex-President Eisenhower suggested could become a dominant scientific caste, they built to please the priests of Isis and Osiris.
+Weinberg's article addressed criticisms of the way in which the era of Big Science could negatively affect science — such as astronomer Fred Hoyle's contention that excessive money for science would only make science fat and lazy — and encouraged, in the end, limiting Big Science only to the national laboratory system and preventing its incursion into the university system.
+Since Weinberg's article there have been many historical and sociological studies on the effects of Big Science both in and out of the laboratory.  Soon after that article, Derek J. de Solla Price gave a series of lectures that were published in 1963 as Little Science, Big Science.  The book describes the historical and sociological transition from "small science" to "big science" and the qualitative differences between the two; it inspired the field of scientometrics as well as new perspectives on large-scale science in other fields.
+The Harvard historian Peter Galison has written several books addressing the formation of big science. Major themes include the evolution of experimental design, from table-top experiments to today's large-scale collider projects; accompanying changes in standards of evidence; and discourse patterns across researchers whose expertise only partially overlaps. Galison introduced the notion of "trading zones," borrowed from the sociolinguistic study of pidgins, to characterize how such groups learn to interact.
+Other historians have postulated many "precursors" to Big Science in earlier times: the Uraniborg of Tycho Brahe (in which massive astronomical instruments were made, often with little practical purpose) and the large cryogenics laboratory established by Heike Kamerlingh Onnes in 1904 have been cited as early examples of Big Science.
+
+
+== References ==
+
+
+== Further reading ==
+Galison, Peter; Hevly, Bruce William, eds. (1994). Big Science: The Growth of Large Scale Research. Stanford University Press. ISBN 978-0-8047-1879-0.
+Galison, Peter (1997). Image and Logic: A Material Culture of Microphysics. University of Chicago Press. ISBN 0-226-27917-0.
+Kevles, Daniel (1971). The Physicists: the History of a Scientific Community in Modern America. Harvard University Press. ISBN 978-0-674-66656-6.
+Wiener, Norbert (1988). The Human Use of Human Beings. Da Capo Press. ISBN 0-306-80320-8.

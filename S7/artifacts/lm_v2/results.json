@@ -3,13 +3,13 @@
     "decode_steps_per_word": 4,
     "held_out": {
       "calibration": {
-        "brier": 0.00019030103518975395,
-        "ece_10_bin": 0.008978876551428261,
-        "mean_confidence": 0.9910211234485717
+        "brier": 0.005628864284945543,
+        "ece_10_bin": 0.021546830932997814,
+        "mean_confidence": 0.950643802747765
       },
-      "exact_match": 1.0,
-      "nll_per_byte_or_eos": 0.0022690479594512686,
-      "nll_per_word": 0.009076191837805074,
+      "exact_match": 0.944,
+      "nll_per_byte_or_eos": 0.03474316405598813,
+      "nll_per_word": 0.13897265622395255,
       "predictions": [
         "fa3",
         "a0d",
@@ -31,7 +31,7 @@
         "e12",
         "b2c",
         "a33",
-        "cdc",
+        "ccc",
         "ab0",
         "d2b",
         "acf",
@@ -52,7 +52,7 @@
         "3f3",
         "f0b",
         "ae0",
-        "dc0",
+        "cd0",
         "caf",
         "e3e",
         "ea1",
@@ -71,14 +71,14 @@
         "e32",
         "d10",
         "cfd",
-        "dc2",
+        "cd2",
         "cca",
         "0bc",
         "bff",
         "0bd",
         "baa",
         "ebe",
-        "cda",
+        "cca",
         "e3a",
         "dab",
         "013",
@@ -101,9 +101,9 @@
         "1c3",
         "1e3",
         "c0b",
-        "dc3",
+        "cd3",
         "f11",
-        "cd1",
+        "cc1",
         "00e",
         "00a",
         "e2e",
@@ -134,7 +134,7 @@
         "a3b",
         "3bf",
         "fff",
-        "cdf",
+        "ccf",
         "fbc",
         "133",
         "f1e",
@@ -142,7 +142,7 @@
         "21b",
         "c3d",
         "d3e",
-        "cd0",
+        "cc0",
         "23f",
         "1ee",
         "be2",
@@ -166,7 +166,7 @@
         "ab3",
         "001",
         "d3a",
-        "cdd",
+        "ccd",
         "aa3",
         "1f2",
         "f1f",
@@ -176,7 +176,7 @@
         "daf",
         "1ce",
         "03e",
-        "dcc",
+        "cdc",
         "e1f",
         "ed3",
         "2bf",
@@ -211,11 +211,11 @@
         "3a2",
         "ab1",
         "0d1",
-        "dca",
+        "cda",
         "fdf",
         "1db",
         "b0b",
-        "cde",
+        "cce",
         "00f",
         "b31",
         "a00",
@@ -233,7 +233,7 @@
         "10c",
         "d13",
         "012",
-        "cdb",
+        "ccb",
         "c1d",
         "e23",
         "1ca",
@@ -260,20 +260,20 @@
         "1fb",
         "dbc",
         "d0a",
-        "cd3"
+        "cc3"
       ]
     },
     "output_parameters": 792,
     "parameters": 21888,
     "seen": {
       "calibration": {
-        "brier": 7.549378978389951e-05,
-        "ece_10_bin": 0.005953994455010214,
-        "mean_confidence": 0.9940460055449898
+        "brier": 0.0008631738951811415,
+        "ece_10_bin": 0.008940017845129154,
+        "mean_confidence": 0.986219745196153
       },
-      "exact_match": 1.0,
-      "nll_per_byte_or_eos": 0.001498063749133979,
-      "nll_per_word": 0.005992254996535916,
+      "exact_match": 0.992,
+      "nll_per_byte_or_eos": 0.007687127939365824,
+      "nll_per_word": 0.030748511757463296,
       "predictions": [
         "0ab",
         "ada",
@@ -312,7 +312,7 @@
         "332",
         "1fa",
         "bde",
-        "cd2",
+        "cc2",
         "2b3",
         "3ca",
         "23e",
@@ -367,7 +367,7 @@
         "c33",
         "0fc",
         "01b",
-        "dce",
+        "cde",
         "bb1",
         "ccf",
         "de0",
@@ -527,7 +527,7 @@
         "abc"
       ]
     },
-    "training_seconds": 7.319598083005985
+    "training_seconds": 7.303907583002001
   },
   "claims": {
     "byte_fallback_next_token_oov": true,
@@ -540,22 +540,22 @@
   "dataset_hash": "199bc14c8fe5f35a987afbd698e87c576befa99fb459bb6eb0503e5bb0a39a18",
   "decode_speed": {
     "byte_fallback_autoregressive": {
-      "completed_words_per_second": 16491.082813424073,
-      "median_seconds": 0.015159707996645011,
-      "p95_seconds": 0.016037416993640363,
+      "completed_words_per_second": 16412.635178640467,
+      "median_seconds": 0.015232167002977803,
+      "p95_seconds": 0.015333082992583513,
       "repeats": 15
     },
     "environment": "NumPy 2.4.4; single-process CPU wall clock; batch=250",
     "rke_parallel": {
-      "completed_words_per_second": 219002.01632536063,
-      "median_seconds": 0.0011415420012781397,
-      "p95_seconds": 0.0012457499979063869,
+      "completed_words_per_second": 218627.02131955468,
+      "median_seconds": 0.001143500005127862,
+      "p95_seconds": 0.0011911250039702281,
       "repeats": 15
     },
     "vocabulary_softmax": {
-      "completed_words_per_second": 159565.98079397963,
-      "median_seconds": 0.0015667499974370003,
-      "p95_seconds": 0.0016742919979151338,
+      "completed_words_per_second": 159638.11922302254,
+      "median_seconds": 0.0015660420031053945,
+      "p95_seconds": 0.0016113750025397167,
       "repeats": 15
     }
   },
@@ -583,9 +583,9 @@
     "rke_and_vocab_optimizer_steps": 1200
   },
   "model_hashes": {
-    "byte_fallback": "f020ee31ebc518cc38d05b3fa99e5526016eb3b4bf0501da39a1e78581a67e36",
+    "byte_fallback": "24f3f48327028dd5f02c5321f2cbffb36d4a5a1a2fb9d74d46e0b2d90c0480a2",
     "rke": "49f3bc311a26c2896f007af8a51ebcee28dbce5e17953a8732133270166fda7a",
-    "vocabulary": "1dd808254ebd6f62ff441faf252f4f5427d11e94af68ef651f71f03cc319f092"
+    "vocabulary": "03c3477a33ac7d0eeab06dffeb8f5515920304665dbcca84ae6f29f08bfdff36"
   },
   "overall_pass": true,
   "rke": {
@@ -1618,8 +1618,8 @@
         "abc"
       ]
     },
-    "separate_output_parameters": 0,
-    "training_seconds": 1.9976919170003384
+    "separate_vocab_classifier_parameters": 0,
+    "training_seconds": 2.006885084003443
   },
   "seed": 1701,
   "split": {
@@ -1652,9 +1652,9 @@
   "vocabulary": {
     "held_out": {
       "calibration": {
-        "brier": 0.5769669625752155,
-        "ece_10_bin": 0.7278759482298494,
-        "mean_confidence": 0.7278759482298495
+        "brier": 0.44917597148300314,
+        "ece_10_bin": 0.6370910912474828,
+        "mean_confidence": 0.6370910912474829
       },
       "exact_match": 0.0,
       "nll_per_byte_or_eos_on_representable": null,
@@ -1667,17 +1667,17 @@
     "parameters": 75168,
     "seen": {
       "calibration": {
-        "brier": 3.3815491145020625e-06,
-        "ece_10_bin": 0.0014263967141772138,
-        "mean_confidence": 0.9985736032858228
+        "brier": 0.014738964926303019,
+        "ece_10_bin": 0.036263548236032686,
+        "mean_confidence": 0.9518682298890063
       },
-      "exact_match": 1.0,
-      "nll_per_byte_or_eos_on_representable": 0.0003570228828482902,
-      "nll_per_word_on_representable": 0.0014280915313931609,
+      "exact_match": 0.98,
+      "nll_per_byte_or_eos_on_representable": 0.01896694974639415,
+      "nll_per_word_on_representable": 0.0758677989855766,
       "representable_fraction": 1.0,
-      "true_oov_nll": 0.0014280915313931609,
+      "true_oov_nll": 0.0758677989855766,
       "true_oov_nll_note": "undefined: closed softmax assigns no probability to absent strings"
     },
-    "training_seconds": 2.3495214579888852
+    "training_seconds": 2.350828750000801
   }
 }

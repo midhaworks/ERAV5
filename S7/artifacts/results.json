@@ -6,7 +6,21 @@
     "passed": true,
     "unique_code_hashes": 951
   },
+  "causal_sequence_continuation": {
+    "evidence": "torch_continuation_lm/results.json",
+    "fallback_exact": 0.036,
+    "fallback_macro_exact": 0.036000000000000004,
+    "passed": true,
+    "quality_passed": false,
+    "retrieval_exact": 0.0,
+    "rke_exact": 0.044,
+    "rke_macro_exact": 0.044
+  },
   "claims": {
+    "causal_sequence_continuation_mechanics": {
+      "evidence": "torch_continuation_lm/results.json",
+      "passed": true
+    },
     "continuation_blocks_round_trip": {
       "evidence": "continuation_block_proof",
       "passed": true
@@ -181,14 +195,17 @@
   },
   "cross_block_language_model": {
     "evidence": "cross_block_lm/results.json",
-    "fallback_byte_accuracy": 0.4532822703392743,
-    "fallback_nll": 1.1743681985781402,
-    "passed": true,
-    "rke_byte_accuracy": 0.5141108466507991,
-    "rke_nll": 1.0082843923265634
+    "fallback_byte_accuracy": 0.18527840558865832,
+    "fallback_macro_nll": 2.0364352086243764,
+    "fallback_nll": 1.9922732430677035,
+    "gold_first_block_continuation_exact": 0.01,
+    "passed": false,
+    "rke_byte_accuracy": 0.20159816159189428,
+    "rke_macro_nll": 1.8840407884951054,
+    "rke_nll": 1.83340324116031
   },
   "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
-  "elapsed_seconds": 316.384,
+  "elapsed_seconds": 533.5544,
   "experiment": "Reversible Kronecker Head (RKE-Head)",
   "fixed_vocab_baseline": {
     "coverage": 0.0,
@@ -205,7 +222,7 @@
   },
   "language_model_followup": {
     "evidence": "lm_v2/results.json",
-    "fallback_held_out_exact": 1.0,
+    "fallback_held_out_exact": 0.944,
     "overall_pass": true,
     "rke_ece": 0.002074670830020997,
     "rke_held_out_exact": 1.0,
@@ -236,19 +253,19 @@
     "causal_rke_test_nll": 1.804237009311691,
     "completed": true,
     "evidence": "natural_corpus/results.json",
-    "fallback_test_exact": 0.17875,
-    "fallback_test_nll": 1.7960520878104467,
+    "fallback_test_exact": 0.19,
+    "fallback_test_nll": 1.7640372664055795,
     "masked_rke_test_exact": 0.18625,
     "masked_rke_test_nll": 2.1395242440371347,
     "parallel_quality_parity": false,
-    "quality_parity": true,
+    "quality_parity": false,
     "refined_rke_test_exact": 0.1725,
     "refined_rke_test_nll": 2.25534110526208,
     "rke_test_exact": 0.1725,
     "rke_test_nll": 2.248338398892251,
     "two_pass_quality_parity": false,
     "vocabulary_test_coverage": 0.66,
-    "vocabulary_test_exact": 0.41375
+    "vocabulary_test_exact": 0.41875
   },
   "neural_proof": {
     "examples": [

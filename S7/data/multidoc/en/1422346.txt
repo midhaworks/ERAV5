@@ -1,0 +1,36 @@
+A fermata (Italian: [ferˈmaːta]; "from fermare, to stay, or stop"; also known as a hold, pause, colloquially a birdseye or cyclops eye, or as a grand pause when placed on a note or a rest) is a symbol of musical notation indicating that the note should be prolonged beyond the normal duration its note value would indicate. Exactly how much longer it is held is up to the discretion of the performer or conductor, but twice as long is common. It is usually printed above but can be occasionally below (when it is upside down) the note to be extended.
+When a fermata is placed over a bar or double-bar, it is used to indicate the end of a phrase or section of a work. In a concerto, it indicates the point at which the soloist is to play a cadenza.
+A fermata can occur at the end of a piece (or movement) or 
+in the middle of a piece. It can be followed by either a brief rest or more notes.
+
+Fermata is the Italian name for the sign (𝄐), which in English is commonly called a Pause, and signifies that the note over which it is placed should be held on beyond its natural duration. It is sometimes put over a bar or double  bar, in which case it intimates a short interval of silence.
+Other names for a fermata are corona (Italian), point d'orgue (French), Fermate (German), calderón (Spanish), suspensão (Portuguese).
+
+
+== History and use ==
+
+This symbol appears as early as the 15th century. It is quite common in the works of Guillaume Du Fay and Josquin des Prez.
+In chorales by Johann Sebastian Bach and other composers of the Baroque, the fermata often signifies only the end of a phrase, and a breath is to be taken. In a few organ compositions, the fermatas occur in different measures for the right and left hands and for the feet, which would make holding them impractical. "In the older music the sign for the fermata is used, as frequently by Bach, merely as indicating the end of the piece, after a Da Capo, when modern composers usually write the word 'fine.' It does not then imply any pause in the music between the first and second part of the number."
+In the classical and baroque eras, fermatas were usually points at which performers were expected to improvise cadenzas commensurate with its place in the score: in the middle of a movement required short cadenzas, over a I64 and it implied the kind of cadenzas that are associated with the ending of concerto movements.
+The word lunga (shortened form of the Italian lunga pausa, meaning "long pause") is sometimes added above a fermata to indicate a longer duration, the length of which is at the discretion of the performer rather than note values.
+
+Some modern composers (including Francis Poulenc, Krzysztof Penderecki, György Kurtág, and Luigi Nono) have expanded the symbol's usage to indicate approximate duration, incorporating fermatas of different sizes, square- and triangle-shaped fermatas, and so on to indicate holds of different lengths. However, that is not standard usage. In the music notation program Sibelius: "By default, a regular fermata is set to 1.5 times written duration, a long (square) fermata is set to 1.75 times written duration, and a short (triangular) fermata is set to 1.25 written duration." Thus, a whole note (semibreve) with fermata would last 4+2=6 quarter notes (crochets), 4+3=7 quarter notes (crochets), or 4+1=5 quarter notes (crochets), respectively.
+The fermata sign is encoded in Unicode in the Musical Symbols block as U+1D110 MUSICAL SYMBOL FERMATA (𝄐) and U+1D111 MUSICAL SYMBOL FERMATA BELOW (𝄑).
+
+
+== See also ==
+Caesura
+Da capo
+
+
+== Footnotes ==
+
+
+== References ==
+Kennedy, Michael (1994). The Oxford Dictionary of Music (Second ed.). Oxford: Oxford University Press. ISBN 0-19-869162-9.
+McElheran, Brock (1989). Conducting Technique. Oxford: Oxford University Press.
+Randel, Don Michael, ed. (2003). The Harvard Dictionary of Music (Fourth ed.). Cambridge, Massachusetts: Belknap Press of Harvard University Press. ISBN 0-674-01163-5.
+
+
+== External links ==
+ The dictionary definition of fermata at Wiktionary

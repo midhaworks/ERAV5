@@ -206,8 +206,8 @@ def fallback_training_examples(records: list[dict[str, Any]]) -> list[tuple[dict
     return values
 
 
-def train_fallback(codec: FullByteCodec, records: list[dict[str, Any]], seed: int = 701,
-                   steps: int = 2500) -> tuple[VocabTransformer, list[dict[str, float]], float]:
+def train_fallback(codec: FullByteCodec, records: list[dict[str, Any]], seed: int = 551,
+                   steps: int = 5000) -> tuple[VocabTransformer, list[dict[str, float]], float]:
     examples, rng = fallback_training_examples(records), np.random.default_rng(seed + 1)
     model = VocabTransformer(codec, 257, d_slot=4, seed=seed)
     optimizer, curve, started = Adam(model.params, lr=.004), [], time.perf_counter()
@@ -400,14 +400,37 @@ def parameter_hash(params: dict[str, np.ndarray]) -> str:
     return sha256(b"".join(key.encode() + params[key].tobytes() for key in sorted(params)))
 
 
+def sample_stream_hash(example_count: int, seed: int, steps: int, batch_size: int = 64) -> str:
+    rng, digest = np.random.default_rng(seed + 1), hashlib.sha256()
+    for _ in range(steps):
+        digest.update(rng.integers(0, example_count, size=batch_size).tobytes())
+    return digest.hexdigest()
+
+
+def all_finite_where_defined(value: Any) -> bool:
+    """Recursively reject NaN/Inf while allowing strings, booleans and None."""
+    if isinstance(value, dict):
+        return all(all_finite_where_defined(item) for item in value.values())
+    if isinstance(value, (list, tuple)):
+        return all(all_finite_where_defined(item) for item in value)
+    if isinstance(value, (float, np.floating)):
+        return bool(np.isfinite(value))
+    return True
+
+
 def summarize_seed_runs(runs: list[dict[str, Any]]) -> dict[str, Any]:
     summary: dict[str, Any] = {"runs": runs}
+    # Student's t is required when the variance is estimated from only three
+    # runs. A normal 1.96 multiplier materially understates uncertainty here.
+    t95 = 4.302652729911275 if len(runs) == 3 else 1.96
     for metric in ("nll_per_byte_or_eos", "exact_match"):
         values = np.array([run[metric] for run in runs], dtype=np.float64)
         std = float(values.std(ddof=1))
         summary[metric] = {"mean": float(values.mean()), "sample_std": std,
-                           "ci95_half_width": float(1.96 * std / np.sqrt(len(values))),
+                           "ci95_half_width": float(t95 * std / np.sqrt(len(values))),
                            "min": float(values.min()), "max": float(values.max())}
+    summary["ci95_method"] = ("two-sided Student t, df=2" if len(runs) == 3
+                              else "normal approximation")
     return summary
 
 
@@ -422,7 +445,7 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
     refined_rke, refined_curve, refined_seconds = train_refined_rke(codec, data["train"])
     causal_rke, causal_curve, causal_seconds = train_causal_rke(codec, data["train"])
     vocab, vocab_curve, vocab_seconds = train_vocab(codec, data["train"], vocabulary)
-    fallback, fallback_curve, fallback_seconds = train_fallback(codec, data["train"])
+    fallback, fallback_curve, fallback_seconds = train_fallback(codec, data["train"], seed=551)
     evaluations = {}
     for split in ("validation", "test"):
         evaluations[split] = {
@@ -434,13 +457,13 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
             "byte_fallback": evaluate_fallback(fallback, codec, data[split]),
         }
     # Production-test preflight uses three fixed seeds at a convergence budget.
-    causal_seed_models, fallback_seed_models = {551: causal_rke}, {701: fallback}
+    causal_seed_models, fallback_seed_models = {551: causal_rke}, {551: fallback}
     seed_training_seconds = {"causal_rke": {551: causal_seconds},
-                             "byte_fallback": {701: fallback_seconds}}
+                             "byte_fallback": {551: fallback_seconds}}
     for seed in (552, 553):
         model, _, seconds = train_causal_rke(codec, data["train"], seed=seed)
         causal_seed_models[seed] = model; seed_training_seconds["causal_rke"][seed] = seconds
-    for seed in (702, 703):
+    for seed in (552, 553):
         model, _, seconds = train_fallback(codec, data["train"], seed=seed)
         fallback_seed_models[seed] = model; seed_training_seconds["byte_fallback"][seed] = seconds
     causal_runs = []
@@ -457,6 +480,27 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
                               "exact_match": metric["exact_match"], "model_hash": parameter_hash(model.params)})
     seed_stability = {"causal_rke": summarize_seed_runs(causal_runs),
                       "byte_fallback": summarize_seed_runs(fallback_runs), "seeds_per_arm": 3}
+    initial_rke = TinyTransformer(codec, d_slot=4, seed=551)
+    initial_fallback = VocabTransformer(codec, 257, d_slot=4, seed=551)
+    shared_names = sorted(set(initial_rke.params) & set(initial_fallback.params))
+    shared_rke_hash = parameter_hash({name: initial_rke.params[name] for name in shared_names})
+    shared_fallback_hash = parameter_hash({name: initial_fallback.params[name] for name in shared_names})
+    decision_count = len(fallback_training_examples(data["train"]))
+    stream_hashes = {
+        str(seed): {arm: sample_stream_hash(decision_count, seed, 5000)
+                    for arm in ("causal_rke", "byte_fallback")}
+        for seed in (551, 552, 553)
+    }
+    seed_stability["matched_controls"] = {
+        "paired_seeds": [551, 552, 553], "optimizer_steps_per_arm": 5000,
+        "initial_shared_parameter_names": shared_names,
+        "rke_initial_shared_hash": shared_rke_hash,
+        "fallback_initial_shared_hash": shared_fallback_hash,
+        "identical_initial_shared_body": shared_rke_hash == shared_fallback_hash,
+        "batch_stream_hash_by_seed_and_arm": stream_hashes,
+        "identical_batch_stream_per_seed": all(
+            value["causal_rke"] == value["byte_fallback"] for value in stream_hashes.values()),
+    }
     causal_mean, fallback_mean = seed_stability["causal_rke"], seed_stability["byte_fallback"]
     seed_stability["within_5_percent_mean_parity"] = bool(
         causal_mean["nll_per_byte_or_eos"]["mean"] <= fallback_mean["nll_per_byte_or_eos"]["mean"] * 1.05
@@ -484,7 +528,7 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
                                      "proposal_temperature": .25},
                      "causal_rke": {"steps": 5000, "seconds": causal_seconds},
                      "vocabulary": {"steps": 800, "seconds": vocab_seconds},
-                     "byte_fallback": {"steps": 2500, "seconds": fallback_seconds}, "batch_size": 64},
+                     "byte_fallback": {"steps": 5000, "seconds": fallback_seconds}, "batch_size": 64},
         "model_hashes": {"rke": parameter_hash(rke.params), "masked_rke": parameter_hash(masked_rke.params),
                          "refined_rke": parameter_hash(refined_rke.params),
                          "causal_rke": parameter_hash(causal_rke.params),
@@ -495,23 +539,26 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
                        "refined_rke": sum(x.size for x in refined_rke.params.values()),
                        "causal_rke": sum(x.size for x in causal_rke.params.values()),
                        "vocabulary": vocab.parameter_count(), "byte_fallback": fallback.parameter_count(),
-                       "rke_separate_output": 0, "masked_rke_separate_output": 0,
-                       "refined_rke_separate_output": 0,
-                       "causal_rke_separate_output": 0,
+                       "rke_separate_vocab_classifier": 0,
+                       "masked_rke_separate_vocab_classifier": 0,
+                       "refined_rke_separate_vocab_classifier": 0,
+                       "causal_rke_separate_vocab_classifier": 0,
                        "vocabulary_output": vocab.params["Wclass"].size,
                        "byte_fallback_output": fallback.params["Wclass"].size},
         "evaluation": evaluations, "seed_stability": seed_stability, "decode_speed": speeds,
         "status": "research pilot; results are descriptive and not a production gate",
         "completion_checks": {"paragraph_split_no_leakage": not corpus_audit["split_policy"]["paragraph_leakage"],
-                              "all_metrics_finite_where_defined": True,
-                              "all_models_saved": True, "natural_corpora_used": True},
+                              "all_metrics_finite_where_defined": all_finite_where_defined(
+                                  {"evaluation": evaluations, "seed_stability": seed_stability,
+                                   "decode_speed": speeds}),
+                              "all_models_saved": False,
+                              "natural_corpora_used": all(path.is_file() for path in SOURCES.values())},
         "limitations": ["Small Wikipedia-derived samples from four files, not web-scale pretraining.",
                         "Paragraph hashing reduces but cannot eliminate semantic overlap within one article per language.",
                         "The 24-byte cap excludes a measured fraction of long words, especially Indic text.",
                         "Training budgets are documented but not FLOP-matched across parallel and autoregressive targets.",
                         "CPU NumPy throughput is not production GPU throughput."],
     }
-    results["completed"] = all(results["completion_checks"].values())
     predictions = {}
     for split in ("validation", "test"):
         predictions[split] = [{"language": record["language"], "context": record["context"], "target": record["target"],
@@ -524,7 +571,6 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
                                "byte_fallback": evaluations[split]["byte_fallback"]["predictions"][i]}
                               for i, record in enumerate(data[split])]
         for arm in evaluations[split].values(): arm.pop("predictions", None)
-    (output / "results.json").write_text(json.dumps(results, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     (output / "split.json").write_text(json.dumps(data, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     (output / "predictions.json").write_text(json.dumps(predictions, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (output / "vocabulary.json").write_text(json.dumps(vocabulary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -532,7 +578,8 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
                         ("refined_rke", refined_curve), ("causal_rke", causal_curve),
                         ("vocabulary", vocab_curve), ("byte_fallback", fallback_curve)):
         with (output / f"{name}_curve.csv").open("w", newline="", encoding="utf-8") as handle:
-            writer = csv.DictWriter(handle, fieldnames=curve[0]); writer.writeheader(); writer.writerows(curve)
+            writer = csv.DictWriter(handle, fieldnames=curve[0], lineterminator="\n")
+            writer.writeheader(); writer.writerows(curve)
     np.savez_compressed(output / "rke_model.npz", **rke.params)
     np.savez_compressed(output / "masked_rke_model.npz", **masked_rke.params)
     np.savez_compressed(output / "refined_rke_model.npz", **refined_rke.params)
@@ -543,4 +590,12 @@ def run_natural_corpus_experiment(output: Path) -> dict[str, Any]:
         np.savez_compressed(output / f"causal_rke_seed_{seed}_model.npz", **model.params)
     for seed, model in fallback_seed_models.items():
         np.savez_compressed(output / f"byte_fallback_seed_{seed}_model.npz", **model.params)
+    expected_models = [output / f"{name}_model.npz" for name in
+                       ("rke", "masked_rke", "refined_rke", "causal_rke", "vocabulary", "byte_fallback")]
+    expected_models += [output / f"causal_rke_seed_{seed}_model.npz" for seed in causal_seed_models]
+    expected_models += [output / f"byte_fallback_seed_{seed}_model.npz" for seed in fallback_seed_models]
+    results["completion_checks"]["all_models_saved"] = all(path.is_file() for path in expected_models)
+    results["completed"] = all(results["completion_checks"].values())
+    (output / "results.json").write_text(
+        json.dumps(results, indent=2, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
     return results

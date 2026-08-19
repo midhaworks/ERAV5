@@ -1,0 +1,98 @@
+A detergent is a product for cleaning that contains surfactants plus other components. Detergents include surfactants as main functional components to remove hydrophobic grease or dirt by dispersing them in water. They often further include water (to facilitate application), builders (to soften water), enzymes (for breaking down proteins, fats, or starches), and dyes or fragrances (to improve the user's sensory experience).
+Common surfactants used in detergents are alkylbenzene sulfonates, which are soap-like compounds that are more soluble than soap in hard water, because the polar sulfonate is less likely than the polar carboxylate of soap to bind to calcium and other ions found in hard water.
+
+
+== Definitions ==
+The word detergent is derived from the Latin adjective detergens, from the verb detergere, meaning to wipe or polish off. Detergent can be defined as a surfactant or a mixture of surfactants with cleansing properties when in dilute solutions. However, conventionally, detergent is used to mean synthetic cleaning compounds as opposed to soap (a salt of the natural fatty acid), even though soap is also a detergent in the true sense. In domestic contexts, the term detergent refers to household cleaning products such as laundry detergent or dish detergent, which are in fact complex mixtures of different compounds, not all of which are by themselves detergents. Detergency is the ability to remove unwanted substances termed 'soils' from a substrate (e.g., clothing).
+
+
+== Components ==
+Detergents are formulated products used for cleaning, i.e. mixtures of various chemical components that are selected and mixed to achieve a good cleaning performance and user's satisfaction. Detergents contain of one or more surfactants as their main functional component, usually with water and auxiliary materials (builders, enzymes, etc.).
+
+
+=== Surfactants ===
+
+Surfactants are a group of compounds with an amphiphilic structure, where each molecule has a hydrophilic (polar) head and a long hydrophobic (non-polar) tail. The hydrophobic portion of these molecules may be straight- or branched-chain hydrocarbons, or it may have a steroid structure. The hydrophilic portion is more varied, they may be ionic or non-ionic, and can range from a simple to a relatively elaborate structure. Surfactants are called so since they can decrease the surface tension of water. Their dual nature facilitates the mixture of hydrophobic compounds (like oil and grease) with water. Because air is not hydrophilic, surfactants are also foaming agents to varying degrees.
+
+Surfactant molecules aggregate to form micelles, which makes them soluble in water. The hydrophobic group of the surfactant is the main driving force of micelle formation, its aggregation forms the hydrophobic core of the micelles. The micelle can remove grease, protein or soiling particles. The concentration at which micelles start to form is the critical micelle concentration (CMC), and the temperature at which the micelles further aggregate to separate the solution into two phases is the cloud point when the solution becomes cloudy and detergency is optimal.
+Many detergents work better in an alkaline pH. The properties of detergents are dependent on the molecular structure of the monomer. The ability to foam may be determined by the head group, for example anionic surfactants are high-foaming, while nonionic surfactants may be non-foaming or low-foaming.
+
+
+==== Chemical classifications of surfactants ====
+Surfactants are classified into four broad groupings, depending on the electrical charge of the surfactants.
+
+
+===== Anionic surfactants =====
+Typical anionic surfactants are alkylbenzene sulfonates. The alkylbenzene portion of these anions is lipophilic and the sulfonate is hydrophilic. Two varieties have been popularized, those with branched alkyl groups and those with linear alkyl groups. The former were largely phased out in economically advanced societies because they are poorly biodegradable. Anionic surfactants are the most common form of surfactants, and an estimated 6 billion kilograms of anionic surfactants are produced annually for the domestic markets.
+Bile acids, such as deoxycholic acid (DOC), are anionic surfactants produced by the liver to aid in digestion and absorption of fats and oils.
+
+
+===== Cationic surfactants =====
+Cationic surfactants are similar to anionic ones, but quaternary ammonium replaces the hydrophilic anionic sulfonate group. The ammonium sulfate center is positively charged. Cationic surfactants generally have poor detergency.
+
+
+===== Non-ionic surfactants =====
+Non-ionic surfactants are characterized by their uncharged, hydrophilic headgroups. Typical non-ionic surfactants are based on polyoxyethylene or a glycoside. Common examples of the former include Tween, Triton, and the Brij series. These materials are also known as ethoxylates or PEGylates and their metabolites, nonylphenol. Glycosides have a sugar as their uncharged hydrophilic headgroup. Examples include octyl thioglucoside and maltosides. HEGA and MEGA series surfactants are similar, possessing a sugar alcohol as headgroup.
+
+
+===== Amphoteric surfactants =====
+
+Amphoteric or zwitterionic surfactants have zwitterions within a particular pH range, and possess a net zero charge arising from the presence of equal numbers of +1 and −1 charged chemical groups. Examples include CHAPS.
+
+
+== History ==
+
+Soap is known to have been used as a surfactant for washing clothes since the Sumerian time in 2,500 B.C. In ancient Egypt, soda was used as a wash additive. 
+In the 19th century, synthetic surfactants began to be created, for example from olive oil. Sodium silicate (water glass) was used in soap-making in the United States in the 1860s, and in 1876, Henkel sold a sodium silicate-based product that can be used with soap and marketed as a "universal detergent" (Universalwaschmittel) in Germany. Soda was then mixed with sodium silicate to produce Germany's first brand name detergent Bleichsoda. In 1907, Henkel also added a bleaching agent sodium perborate to launch the first 'self-acting' laundry detergent Persil to eliminate the laborious rubbing of laundry by hand.
+During the First World War, there was a shortage of oils and fats needed to make soap. In order to find alternatives for soap, synthetic detergents were made in Germany by chemists using raw material derived from coal tar. These early products, however, did not provide sufficient detergency. 
+In 1928, effective detergent was made through the sulfation of fatty alcohol, but large-scale production was not feasible until low-cost fatty alcohols become available in the early 1930s. The synthetic detergent created was more effective and less likely to form scum than soap in hard water, and can also eliminate acid and alkaline reactions and decompose dirt. Commercial detergent products with fatty alcohol sulphates began to be sold, initially in 1932 in Germany by Henkel. 
+In the United States, detergents were sold in 1933 by Procter & Gamble (Dreft) primarily in areas with hard water. However, sales in the US grew slowly until the introduction of 'built' detergents with the addition of effective phosphate builder developed in the early 1940s. The builder improves the performance of the surfactants by softening the water through the chelation of calcium and magnesium ions, helping to maintain an alkaline pH, as well as dispersing and keeping the soiling particles in solution. The development of the petrochemical industry after the Second World War also yielded material for the production of a range of synthetic surfactants, and alkylbenzene sulfonates became the most important detergent surfactants used. By the 1950s, laundry detergents had become widespread, and largely replaced soap for cleaning clothes in developed countries.
+Over the years, many types of detergents have been developed for a variety of purposes, for example, low-sudsing detergents for use in front-loading washing machines, heavy-duty detergents effective in removing grease and dirt, all-purpose detergents and specialty detergents. They become incorporated in various products outside of laundry use, for example in dishwasher detergents, shampoo, toothpaste, industrial cleaners, and in lubricants and fuels to reduce or prevent the formation of sludge or deposits. The formulation of detergent products may include bleach, fragrances, dyes and other additives. The use of phosphates in detergent, however, led to concerns over nutrient pollution and demand for changes to the formulation of the detergents. 
+Concerns were also raised over the use of surfactants such as branched alkylbenzene sulfonate (tetrapropylenebenzene sulfonate) that lingers in the environment, which led to their replacement by surfactants that are more biodegradable, such as linear alkylbenzene sulfonate. Developments over the years have included the use of enzymes, substitutes for phosphates such as zeolite A and NTA, TAED as bleach activator, sugar-based surfactants which are biodegradable and milder to skin, and other green friendly products, as well as changes to the form of delivery such as tablets, gels and pods.
+
+
+== Major applications of detergents ==
+
+
+=== Household cleaning ===
+
+One of the largest applications of detergents is for household and shop cleaning including dish washing and washing laundry. These detergents are commonly available as powders or concentrated solutions, and the formulations of these detergents are often complex mixtures of a variety of chemicals aside from surfactants, reflecting the diverse demands of the application and the highly competitive consumer market. 
+These detergents may contain the following components:
+
+surfactants
+foam regulators
+builders
+bleach
+bleach activators
+enzymes
+dyes
+fragrances
+other additives
+
+
+=== Fuel additives ===
+Both carburetors and fuel injector components of internal combustion engines benefit from detergents in the fuels to prevent fouling. Concentrations are about 300 ppm. Typical detergents are long-chain amines and amides such as polyisobuteneamine and polyisobuteneamide/succinimide.
+
+
+=== Biological reagent ===
+Reagent grade detergents are employed for the isolation and purification of integral membrane proteins found in biological cells. Solubilization of cell membrane bilayers requires a detergent that can enter the inner membrane monolayer. Advancements in the purity and sophistication of detergents have facilitated structural and biophysical characterization of important membrane proteins such as ion channels also the disrupt membrane by binding lipopolysaccharide, transporters, signaling receptors, and photosystem II.
+
+
+== See also ==
+Cleavable detergent
+Dishwashing liquid
+Dispersant
+Green cleaning
+Hard-surface cleaner
+Laundry detergent
+List of cleaning products
+Triton X-100
+
+
+== References ==
+
+
+== External links ==
+
+Campbell tips for detergents chemistry, surfactants, and history related to laundry washing, destaining methods and soil.
+Formulation of Detergent

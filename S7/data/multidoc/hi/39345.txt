@@ -1,0 +1,42 @@
+गणितीय समस्याओं का कम्प्यूटर की सहायता से हल निकालने से सम्बन्धित सैद्धान्तिक एवं संगणनात्मक अध्ययन संख्यात्मक विश्लेषण या आंकिक विश्लेषण (अंग्रेज़ी: Numerical analysis) कहलाता है। 
+सैद्धान्तिक तथा संगणनात्मक पक्षों पर जोर वस्तुतः कलन विधियों (अल्गोरिद्म) की समीक्षा की ओर ले जाती है। इस बात की जाँच-परख की जाती है कि विचाराधीन कलन विधि द्वारा दी गयी गणितीय समस्या का हल निकालने में -
+
+कितना समय लगेगा;
+कितनी स्मृति (मेमोरी) की आवश्यकता होगी;
+हल में कितनी अशुद्धि (error) आयेगी;
+अल्गोरिद्म किस स्थिति मे कन्वर्ज (converge) करेगा एवं कन्वर्जेन्स की गति क्या होगी;
+
+
+== उपयोग एवं लाभ ==
+कुछ ही गणितीय समस्याओं का हल विश्लेषणात्मक विधि से प्राप्त किया जा सकता है। किन्तु सभी समस्याओं को आंकिक विधि द्वारा हल किया जा सकता है।
+संगणकों की सर्वसुलभता एवं उनकी तेज गति के कारण आंकिक विधियों का अधिकाधिक प्रयोग व्यावहारिक रूप से सम्भव हुआ है।
+आंकिक विधि से प्राप्त हल में कुछ न कुछ अशुद्धि रहती है, किन्तु व्यावहारिक जगत कीं किसी समस्या के पूर्णतः शुद्ध (exact) हल की आवश्यकता ही नहीं होती। क्योंकि गणितीय समस्याएं ही स्वयं पूर्ण्तः शुद्ध रूप से परिभाषित न होकर एक approximate रूप में ही पारिभाषित होती हैं।
+
+
+== आंकिक विश्लेषण के प्रमुख क्षेत्र ==
+कुछ प्रमुख समस्याएं, जो आंकिक विधि से हल की जाती हैं, नीचे दी गयी हैं:
+
+फलनों का मान निकालना
+इन्टरपोलेशन, इक्स्ट्रापोलेशन एवं रिग्रेशन करना
+एक समीकरण का हल अथवा युगपत समीकरणों को हल करना
+आइगेन वैल्यू या सिंगुलर वैल्यू समस्याओं का हल
+इष्टतमीकरण (optimization)
+अवकलज समीकरण का हल (solution of differential equations)
+समाकल का परिकलन (evaluation of integrals)
+
+
+== इन्हें भी देखें ==
+परिमित अन्तर विधि
+साधारण अवकल समीकरण के हल की संख्यात्मक विधियाँ
+
+
+== बाहरी कड़ियाँ ==
+Numerische Mathematik, volumes 1-66, Springer, 1959-1994 (searchable; pages are images).
+Scientific computing FAQ
+Numerical analysis DMOZ category
+Lists of free software for scientific computing and numerical analysis (अंग्रेज़ी में) (फ़्रांसीसी में)
+Numerical Computing Resources on the Internet - a list maintained by Indiana University Stat/Math Center
+Numerical Recipes Homepage - with free, complete downloadable books
+Java Number Cruncher features free, downloadable code samples that graphically illustrate common numerical algorithms
+Numerical Analysis Project by John H. Mathews
+Alternatives to Numerical Recipes

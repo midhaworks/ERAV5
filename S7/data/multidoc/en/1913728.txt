@@ -1,0 +1,38 @@
+Geographic information science (GIScience, GISc) or geoinformation science is a scientific discipline at the crossroads of computational science, social science, and natural science that studies geographic information, including how it represents phenomena in the real world, how it represents the way humans understand the world, and how it can be captured, organized, and analyzed. It is a sub-field of geography, specifically part of technical geography. It has applications to both physical geography and human geography, although its techniques can be applied to many other fields of study as well as many different industries. 
+As a field of study or profession, it can be contrasted with geographic information systems (GIS), which are the actual repositories of geospatial data, the software tools for carrying out relevant tasks, and the profession of GIS users. That said, one of the major goals of GIScience is to find practical ways to improve GIS data, software, and professional practice; it is more focused on how GIS is applied in real life as opposed to being a geographic information system tool in and of itself. The field is also sometimes called geographical information science.
+British geographer Michael Goodchild defined this area in the 1990s and summarized its core interests, including spatial analysis, visualization, and the representation of uncertainty.  GIScience is conceptually related to geomatics, information science, computer science, and data science, but it claims the status of an independent scientific discipline. Recent developments in the field have expanded its focus to include studies on human dynamics in hybrid physical-virtual worlds, quantum GIScience, the development of smart cities, and the social and environmental impacts of technological innovations. These advancements indicate a growing intersection of GIScience with contemporary societal and technological issues. Overlapping disciplines are: geocomputation, geoinformatics, geomatics and geovisualization.  Other related terms are geographic data science (after data science)
+and geographic information science and technology (GISci&T), with job titles geospatial information scientists and technologists.
+
+
+== Definitions ==
+
+Since its inception in the 1990s, the boundaries between GIScience and cognate disciplines are contested, and different communities might disagree on what GIScience is and what it studies. In particular, Goodchild stated that "information science can be defined as the systematic study according to scientific principles of the nature and properties of information. Geographic information science is the subset of/or information science that is about geographic information." Another influential definition is that by geographic information scientist (GIScientist) David Mark, which states:Geographic Information Science (GIScience) is the basic research field that seeks to redefine geographic concepts and their use in the context of geographic information systems. GIScience also examines the impacts of GIS on individuals and society, and the influences of society on GIS. GIScience re-examines some of the most fundamental themes in traditional spatially oriented fields such as geography, cartography, and geodesy, while incorporating more recent developments in cognitive and information science. It also overlaps with and draws from more specialized research fields such as computer science, statistics, mathematics, and psychology, and contributes to progress in those fields. It supports research in political science and anthropology, and draws on those fields in studies of geographic information and society.
+In 2009, Goodchild summarized the history of GIScience and its achievements and open challenges.
+
+
+== See also ==
+Category:Geographic information scientists
+Geographic Information Science and Technology Body of Knowledge
+Geostatistics
+Organizations
+
+Association of Geographic Information Laboratories for Europe
+National Center for Geographic Information and Analysis
+UCSB Center for Spatial Studies
+University Consortium for Geographic Information Science
+United States Geospatial Intelligence Foundation
+Journals
+
+GIScience & Remote Sensing
+International Journal of Applied Earth Observation and Geoinformation
+International Journal of Geographical Information Science
+Journal of Spatial Information Science
+
+
+== References ==
+
+
+== External links ==
+Official website of GIScience
+List of GIScience Conferences Archived 2023-05-30 at the Wayback Machine
+Conference on Spatial Information Theory (COSIT)

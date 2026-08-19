@@ -1,0 +1,52 @@
+किसी संकाय (सिस्टम) की कार्य करने की क्षमता को उर्जा कहते हैं। किसी संकाय पर काम करके या उसके द्वारा काम कराकर ही उसकी उर्जा को बदला जा सकता है क्योंकि उर्जा वह राशि है जो संरक्षित (कंजर्व्ड) होती है। 
+उर्जा तरह-तरह के रूपों में पायी जाती है और भिन्न-भिन्न प्रकार की उर्जा का परस्पर परिवर्तन किया जा सकता है। किसी प्रकार की उर्जा कहीं उपयोगी है तो किसी प्रकार की कहीं और। उदाहरण के लिये कोयले में संचित रासायनिक उर्जा को जलाकर उससे उष्मीय उर्जा प्राप्त की जा सकती है। इस ऊष्मा से पानी को उबालकर वाष्प बनाकर उससे वाष्प टरबाइन चलाकर इसे यांत्रिक उर्जा में बदला जा सकता है। इस टरबाइन से कोई विद्युत जनित्र चलाकर इस यांत्रिक उर्जा को विद्युत उर्जा में बदला जा सकता है। इस विद्युत उर्जा से प्रकाश बल्ब जलाकर प्रकाश उर्जा प्राप्त की जा सकती है।
+
+
+== उदाहरण ==
+
+
+=== मशीनों में ऊर्जा रूपान्तरण के उदाहरण ===
+उदाहरण के लिये, कोयला पर आधारित ऊर्जा संयंत्र में निम्नलिखित प्रकार के ऊर्जा रूपान्तरण होते हैं-
+
+कोयले की रासायनिक ऊर्जा, निर्वातक गैसों की ऊष्मीय ऊर्जा में बदल जाती है।
+निर्वातक गैसों की ऊष्मीय ऊर्जा, हीट एक्सचेनजर में भाप की ऊष्मीय ऊर्जा में बदलती है।
+भाप की ऊष्मीय ऊर्जा, टरबाइन में जाकर यांत्रिक ऊर्जा में बदल जाती है।
+Mechanical energy of the turbine converted to electrical energy by the generator, which is the ultimate output
+In such a system, the first and fourth step are highly efficient, but the second and third steps are less efficient. The most efficient gas-fired electrical power stations can achieve 50% conversion efficiency. Oil- and coal-fired stations achieve less.
+In a conventional automobile, these energy transformations are involved:
+
+Chemical energy in the fuel converted to kinetic energy of expanding gas via combustion
+Kinetic energy of expanding gas converted to linear piston movement
+Linear piston movement converted to rotary crankshaft movement
+Rotary crankshaft movement passed into transmission assembly
+Rotary movement passed out of transmission assembly
+Rotary movement passed through differential
+Rotary movement passed out of differential to drive wheels
+Rotary movement of drive wheels converted to linear motion of the vehicle.
+
+
+=== अन्य प्रकार के ऊर्जा रूपान्तरण ===
+There are many different machines and transducers that convert one energy form into another. A short list of examples follows:
+
+Thermoelectric (Heat → Electric energy)
+Geothermal power (Heat→ Electric energy)
+Heat engines, such as the internal combustion engine used in cars, or the steam engine (Heat → Mechanical energy)
+Ocean thermal power (Heat → Electric energy)
+Hydroelectric dams (Gravitational potential energy → Electric energy)
+Electric generator (Kinetic energy or Mechanical work → Electric energy)
+ईंधन सेल (रासायनिक ऊर्जा → विद्युत ऊर्जा)
+बैटरी (रासायनिक ऊर्जा → विद्युत ऊर्जा)
+ट्यूबलाइट (विद्युत ऊर्जा
+  प्रकाशीय ऊर्जा)
+
+Fire (Chemical energy → Heat and Light)
+Electric lamp (Electric energy → Heat and Light)
+Microphone (Sound → Electric energy)
+तरंग शक्ति (यांत्रिक ऊर्जा → विद्युत ऊर्जा)
+Windmills (Wind energy → Electric energy or Mechanical energy)
+Piezoelectrics (Strain → Electric energy)
+Friction (Kinetic energy → Heat)
+विद्युत ऊष्मक (विद्युत ऊर्जा → ऊष्मा)
+
+
+== इन्हें भी देखें ==

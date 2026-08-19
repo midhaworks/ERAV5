@@ -206,7 +206,7 @@
     ],
     "target": "cdc",
     "rke": "cdc",
-    "fallback": "cdc",
+    "fallback": "ccc",
     "vocabulary_representable": false
   },
   {
@@ -416,7 +416,7 @@
     ],
     "target": "dc0",
     "rke": "dc0",
-    "fallback": "dc0",
+    "fallback": "cd0",
     "vocabulary_representable": false
   },
   {
@@ -606,7 +606,7 @@
     ],
     "target": "dc2",
     "rke": "dc2",
-    "fallback": "dc2",
+    "fallback": "cd2",
     "vocabulary_representable": false
   },
   {
@@ -676,7 +676,7 @@
     ],
     "target": "cda",
     "rke": "cda",
-    "fallback": "cda",
+    "fallback": "cca",
     "vocabulary_representable": false
   },
   {
@@ -906,7 +906,7 @@
     ],
     "target": "dc3",
     "rke": "dc3",
-    "fallback": "dc3",
+    "fallback": "cd3",
     "vocabulary_representable": false
   },
   {
@@ -926,7 +926,7 @@
     ],
     "target": "cd1",
     "rke": "cd1",
-    "fallback": "cd1",
+    "fallback": "cc1",
     "vocabulary_representable": false
   },
   {
@@ -1236,7 +1236,7 @@
     ],
     "target": "cdf",
     "rke": "cdf",
-    "fallback": "cdf",
+    "fallback": "ccf",
     "vocabulary_representable": false
   },
   {
@@ -1316,7 +1316,7 @@
     ],
     "target": "cd0",
     "rke": "cd0",
-    "fallback": "cd0",
+    "fallback": "cc0",
     "vocabulary_representable": false
   },
   {
@@ -1556,7 +1556,7 @@
     ],
     "target": "cdd",
     "rke": "cdd",
-    "fallback": "cdd",
+    "fallback": "ccd",
     "vocabulary_representable": false
   },
   {
@@ -1656,7 +1656,7 @@
     ],
     "target": "dcc",
     "rke": "dcc",
-    "fallback": "dcc",
+    "fallback": "cdc",
     "vocabulary_representable": false
   },
   {
@@ -2006,7 +2006,7 @@
     ],
     "target": "dca",
     "rke": "dca",
-    "fallback": "dca",
+    "fallback": "cda",
     "vocabulary_representable": false
   },
   {
@@ -2046,7 +2046,7 @@
     ],
     "target": "cde",
     "rke": "cde",
-    "fallback": "cde",
+    "fallback": "cce",
     "vocabulary_representable": false
   },
   {
@@ -2226,7 +2226,7 @@
     ],
     "target": "cdb",
     "rke": "cdb",
-    "fallback": "cdb",
+    "fallback": "ccb",
     "vocabulary_representable": false
   },
   {
@@ -2496,7 +2496,7 @@
     ],
     "target": "cd3",
     "rke": "cd3",
-    "fallback": "cd3",
+    "fallback": "cc3",
     "vocabulary_representable": false
   }
 ]

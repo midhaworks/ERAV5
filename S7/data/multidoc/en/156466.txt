@@ -1,0 +1,53 @@
+An analog synthesizer (British English: analogue synthesiser) is a synthesizer that uses analog circuits and analog signals to generate sound electronically.
+The earliest analog synthesizers in the 1920s and 1930s, such as the Trautonium, were built with a variety of vacuum-tube (thermionic valve) and electro-mechanical technologies. After the 1960s, analog synthesizers were built using operational amplifier (op-amp) integrated circuits, and used potentiometers (pots, or variable resistors) to adjust the sound parameters. Analog synthesizers also use low-pass filters and high-pass filters to modify the sound. While 1960s-era analog synthesizers such as the Moog used a number of independent electronic modules connected by patch cables, later analog synthesizers such as the Minimoog integrated them into single units, eliminating patch cords in favour of integrated signal routing systems.
+
+
+== History ==
+
+
+=== 1900–1920 ===
+The earliest mention of a "synthetic harmoniser" using electricity appears to be in 1906, created by the Scottish physicist James Robert Milne.
+
+
+=== 1920s–1950s ===
+
+The earliest synthesizers used a variety of thermionic-valve (vacuum tube) and electro-mechanical technologies. While some electric instruments were produced in bulk, such as Georges Jenny's Ondioline, the Hammond organ, and the Trautonium, many of these would not be considered synthesizers by the standards of later instruments. However, some of these synthesizers achieved a high level of sophistication, such as the Trautonium of Oskar Sala, the Electronium of Raymond Scott, and the ANS synthesizer of Evgeny Murzin.  Another notable early instrument is the Hammond Novachord, first produced in 1938.
+
+
+=== 1960s–1970s ===
+Early analog synthesizers used technology from electronic analog computers and laboratory test equipment.  They were generally "modular" synthesizers, consisting of a number of independent electronic modules connected by patch cables into a patchbay that resembled the jackfields used by 1940s-era telephone operators. Synthesizer modules in early analog synthesizers included voltage-controlled oscillators (VCOs), voltage-controlled filters (VCFs), and voltage-controlled amplifiers (VCAs). The control voltage varied frequency in VCOs and VCFs, and attenuation (gain) in VCAs. Additionally, they used envelope generators, low-frequency oscillators, and ring modulators. Some synthesizers also had effects devices, such as reverb units, or tools such as sequencers or sound mixers. Because many of these modules took input sound signals and processed them, an analog synthesizer could be used both as a sound-generating and sound-processing system.
+Famous modular synthesizer manufacturers included  Moog Music, ARP Instruments, Inc., Serge Modular Music Systems, and Electronic Music Studios. Moog established standards recognized worldwide for control interfacing on analog synthesizers, using an exponential 1-volt-per-octave pitch control and a separate pulse triggering signal. These control signals were routed using the same types of connectors and cables that were used for routing the synthesized sound signals. A specialized form of analog synthesizer is the analog vocoder, based on equipment developed for speech synthesis. Vocoders are often used to make a sound that resembles a musical instrument talking or singing.
+
+Patch cords could be damaged by use (creating hard-to-find intermittent faults) and made complex patches difficult and time-consuming to recreate. Thus, later analog synthesizers used the same building blocks, but integrated them into single units, eliminating patch cords in favour of integrated signal routing systems. The most popular of these was the Minimoog. In 1970, Moog designed an innovative synthesizer with a built-in keyboard and without modular design—the analog circuits were retained, but made interconnectable with switches in a simplified arrangement called "normalization". Though less flexible than a modular design, normalization made the instrument more portable and easier to use. This first pre-patched synthesizer, the Minimoog, became highly popular, with over 12,000 units sold.  The Minimoog also influenced the design of nearly all subsequent synthesizers, with integrated keyboard, pitch wheel and modulation wheel, and a VCO->VCF->VCA signal flow. In the 1970s, miniaturized solid-state components let manufacturers produce self-contained, portable instruments, which musicians soon began to use in live performances. Electronic synthesizers quickly become a standard part of the popular-music repertoire. The first movie to use music made with a (Moog) synthesizer was the James Bond film On Her Majesty's Secret Service in 1969. After the release of the film, composers produced a large number of movie soundtracks that featured synthesizers.
+Notable makers of all-in-one analog synthesizers included Moog, ARP, Roland, Korg and Yamaha. Because of the complexity of generating even a single note using analog synthesis, most synthesizers remained monophonic. Polyphonic analog synthesizers featured limited polyphony, typically supporting four voices. Oberheim was a notable manufacturer of analog polyphonic synthesizers. The Polymoog was an attempt to create a truly polyphonic analog synthesizer, with sound generation circuitry for every key on the keyboard. However, its architecture resembled an electronic organ more than a traditional analog synthesizer, and the Polymoog was not widely imitated.
+
+In 1978, the first microprocessor-controlled analog synthesizers were created by Sequential Circuits. These used microprocessors for system control and control voltage generation, including envelope trigger generation, but the main sound generating path remained analog. The MIDI interface standard was developed for these systems. This generation of synthesizers often featured six or eight voice polyphony. Also during this period, a number of analog/digital hybrid synthesizers were introduced, which replaced certain sound-producing functions with digital equivalents, for example the digital oscillators in synthesizers like the Korg DW-8000 (which played back PCM samples of various waveforms) and the Kawai K5 (waveforms constructed via additive synthesis). With the falling cost of microprocessors, this architecture became the standard architecture for high-end analog synthesizers.
+
+
+=== 1980s–present ===
+During the middle to late 1980s, digital synthesizers and samplers largely replaced analog synthesizers. By the early 1990s, however, musicians from the techno, rave and DJ scenes who wanted to produce electronic music but lacked the budget for large digital systems created a market for the then cheap second hand analog equipment. This increased demand for analog synthesizers towards the mid-1990s, as larger numbers of musicians gradually rediscovered the analog qualities. As a result, sounds associated with analog synths became popular again.
+Over time, this increased demand for used units (such as the 1980 Roland TR-808 drum machine and Roland TB-303 bass synthesizer). Late 1970s-era drum machines used tuned resonance voice circuits for pitched drum sounds and shaped white noise for others. The TR-808 improves on these designs, by using detuned square wave oscillators (for the cow bell and cymbal sounds) and analogue reverberation (for the handclap sound). The demand for the analog synth sound led to development of a variety of analog modeling synthesizers—which emulate analog VCOs and VCFs using samples, software, or specialized digital circuitry, and the construction of new analog keyboard synths such as the Alesis Andromeda, Prophet '08, and Moog's Little Phatty, as well as semi-modular and  modular units.
+More recently, the resurgence has been supported by analog modeling synthesizers, new analog hardware from companies like Moog, Korg, and Behringer, and the booming Eurorack modular format, which reintroduced the appeal of customizable modular synthesis to a new generation of users.
+
+
+== Use in modern music ==
+The lapse of patents in recent years, such as for the Moog synthesizer transistor ladder filter, has spurred a return of DIY and kit synthesizer modules, as well as an increase in the number of commercial companies selling analog modules. Reverse engineering has also revealed the secrets of some synthesizer components, such as those from ARP Instruments, Inc. In addition, despite the widespread availability during the 2000s of relatively inexpensive digital synthesizers that offered complex synthesis algorithms and envelopes, some musicians are attracted to the sounds of monophonic and polyphonic analog synths. While some musicians embrace analog synthesizers as preferable, others counter that analog and digital synthesis simply represent different sonic generation processes that both reproduce characteristics the other misses.
+Another factor contributing to the resurgence of analog synthesizers is a renewed appreciation for the hands-on, tactile experience they provide. Unlike digital software synthesizers, which rely on screen-based interfaces, analog synths allow musicians to physically manipulate knobs, faders, and patch cables, enabling real-time interaction and creative experimentation. This direct control over sound-shaping has led many producers and performers to integrate analog synthesizers into their workflow.
+The revival of analog technology has also been fueled by a wave of reissues and recreations of classic synthesizers by major manufacturers. Companies such as Moog, Roland, and Korg have reintroduced vintage models, while new analog synths continue to be developed, bringing analog synthesis to a new generation of musicians. Some of the most iconic synthesizers of past decades have been digitally recorded and made available as sample packs for use in computer-based music production, further highlighting their enduring influence.
+Hybrid approaches to music production have also gained popularity, with artists combining analog hardware with digital audio workstations (DAWs) to achieve the warmth and depth of analog sound while maintaining the flexibility of modern digital tools. The distinct sonic character of analog synthesizers remains a defining feature of many electronic and pop music productions, as well as film scores and experimental compositions.
+
+
+== See also ==
+
+List of synthesizer manufacturers
+List of synthesizers
+Live electronic music
+
+
+== References ==
+
+
+== External links ==
+
+ARP synthesizer patents
+Modular Analog Synthesizers Return! – a discussion of modern modular equipment with links to major manufacturers

@@ -1,0 +1,28 @@
+اطلاع (Information) هڪ تجريدي تصور آهي، ڪنهن اهڙي شيءِ ڏانهن اشارو ڪري ٿي جنهن ۾ ڄاڻ (Knowledge) ڏيڻ جي طاقت هجي. بنيادي طور تي، اها هن عنصرن جي تشريح سان لاڳاپيل آهي، جنهن کي محسوس ڪري سگهجي ٿو يا انهن جي تجريد آهي. ڪو به قدرتي عمل جيڪو مڪمل طور تي بي ترتيب نه آهي ۽ ڪنهن به وچولي ۾ ڪو به مشاهدي جي نموني کي اطلاع چئي سگهجي ٿو. جڏهن ته ڊجيٽل سگنل ۽ ٻيا ڊيٽا اطلاع پهچائڻ لاءِ ڌار ڌار نشانيون استعمال ڪندا آهن، ٻيا واقعا ۽ نمونا جهڙوڪ اينالاگ سگنل، بيت، تصوير، موسيقي يا ٻيا آواز ۽ وهڪرا اطلاع کي وڌيڪ مسلسل شڪل ۾ پهچائيندا آهن.  اطلاع پاڻ ڄاڻ نه آهي، پر اهو ذريعو آهي، جن جي تصديق ۽ تشريح ذريعي ڄاڻ حاصل ڪئي ويندي آهي.  
+اطلاع جو تصور لاڳاپيل يا مختلف تصورن سان ڳنڍيل آهي،  جنهن ۾ رابطو، ڪنٽرول، ڊيٽا، شڪلون، تعليم، علم، معنيٰ، سڃاڻپ، دماغي محرڪ، نمونا، تصور، تجويز، نمائندگي ۽ اينٽراپي شامل آهن.
+اطلاع اڪثر ڪري ترتيب وار پروسس ڪئي ويندي آهي؛ هڪ قدم تي موجود ڊيٽا کي اهڙي اطلاع ۾ پروسس ڪيو ويندو آهي، جيئن ته ايندڙ قدم تي، مزيد تشريح ۽ پروسيس ڪئي وڃي. مثال طور، لکت ۾ هر علامت يا اکر ان لفظ سان لاڳاپيل اطلاع پهچائي ٿي جنهن جي اها حصو آهي، هر لفظ ان جملي سان لاڳاپيل اطلاع پهچائي ٿو جنهن جو اهو حصو آهي، هر جملو ان جملي سان لاڳاپيل اطلاع پهچائي ٿو، جنهن جو اهو حصو آهي ۽ ائين اها سلسلو هلندو رهي ٿو جيستائين آخري مرحلي تي هن اطلاع جي تشريح نه ڪئي وڃي ۽ هڪ ڏنل ڊومين ۾ ڄاڻ (Knowledge) نه بڻجي وڃي. انگي سگنل (digital signal) ۾، بٽس (بنيادي اڪائي) کي علامتن، اکرن، انگن يا بناوتن ۾ تشريح ڪري سگهجي ٿو، جيڪي اطلاع کي ايندڙ سطح تي پهچائين ٿيون. اطلاع جي اهم خصوصيت اها آهي ته اها تشريح ۽ پروسيسنگ جي تابع هوندي آهي. يا هن کي وڌيڪ اڳتي وڌڻ لاء تشريح يا پروسيسنگ جي ضرورت هوندي آهي.
+سگنل يا پيغام مان موجود اطلاع جي حاصلات کي، سگنل يا پيغام اندر نمونن جي تشريح دوران پيدا ٿيندڙ ابهام يا غير يقيني صورتحال جي حل طور سمجهيو ويندو آهي. 
+اطلاع کي ڊيٽا جي طور تي ترتيب ڏئي سگهجي ٿو. خام ڊيٽا (redundant data) کي هڪ مناسب سائز، جيڪا دٻائڻ جي نظرياتي حد آهي، تائين دٻايو (compress) ڪرو ويندو آهي.
+ڊيٽا جي مجموعي ۾ موجود اطلاع کي، هن ڊيٽا جي تجزيي ذريعي حاصل ڪري سگهجو ٿا. مثال طور، هڪ ريسٽورنٽ پنهنجي هر گراهڪ جي آرڊر مان ڊيٽا گڏ ڪري ٿو. اهو ڊيٽا مفيد اطلاع حاصل ڪرڻ لاء تجزيو ڪيو ويندو آهي، جيڪي هن وقت استعمال ۾ ايندي آهي، جڏهن اها ڪاروبار پوء سڀ کان وڌيڪ مشهور يا گهٽ ۾ گهٽ مشهور ڊش جي سڃاڻپ ڪرڻ چاهي ٿو.  
+اطلاع کي وقت (Space-Time) ۾ ڊيٽا اسٽوريج ذريعي ۽ جگهه (Space) ۾ مواصلات ۽ دور-رابطي (Telecommunication) جي ذريعي يا سڌي يا اڻ سڌي طرح مشاهدي ذريعي منتقل ڪري سگهجون ٿا. اطلاع کي پيغام جي مواد جي طور تي ظاهر ڪيو ويندو آهي. جن جي تشريح ۽ تجزيو، پنھنجي حق ۾،    هڪ پيغام جي طور تي سمجهي سگهجون ٿا ۽ انهي لحاظ کان، سڀني اطلاعون هميشه پيغام جي مواد جي طور تي پهچائي وينديون آهن. 
+اطلاع کي رابطي (Communication) يا دور جي رابطن(Tele communication) لاء پيغام جي منتقلي يا تجزيي لاء محفوظ رکڻ لاء،  نشانين جي تسلسل يا سگنل طور پڻ انڪوڊ ڪري سگهجون ٿا.  
+The uncertainty of an event is measured by its probability of occurrence. Uncertainty is proportional to the negative logarithm of the probability of occurrence. Information theory takes advantage of this by concluding that more uncertain events require more information to resolve their uncertainty. The bit is a typical unit of information. It is 'that which reduces uncertainty by half'. Other units such as the nat may be used. For example, the information encoded in one "fair" coin flip is log2(2/1) = 1 bit, and in two fair coin flips is log2(4/1) = 2 bits. A 2011 Science article estimates that 97% of technologically stored information was already in digital bits in 2007 and that the year 2002 was the beginning of the digital age for information storage (with digital storage capacity bypassing analogue for the first time).
+
+
+== اصطلاح ==
+اشتقاق: معلوماتي نظريو: حسي ان پٽ جي طور تي: نمائندگي ۽ پيچيدگي جي طور تي: هڪ اثر جي طور تي جيڪو تبديلي ڏانهن وٺي ٿو: ٽيڪنالاجي طور تي وچولي معلومات: رڪارڊ جي طور تي: سيميٽڪس: فزڪس ۽ عزم: معلوماتي مطالعي جو اطلاق: پڻ ڏسو:
+
+
+== ٻاهريان ڳنڍڻا ==
+
+
+== ٻاهريان ڳنڍڻا ==
+
+Semantic Conceptions of Information Review by Luciano Floridi for the Stanford Encyclopedia of Philosophy
+Principia Cybernetica entry on negentropy آرڪائيو ڪيا ويا 2010-07-22 حوالو موجود آهي وي بيڪ مشين.
+Fisher Information, a New Paradigm for Science: Introduction, Uncertainty principles, Wave equations, Ideas of Escher, Kant, Plato and Wheeler. This essay is continually revised in the light of ongoing research.
+How Much Information? 2003 آرڪائيو ڪيا ويا 7 April 2010 حوالو موجود آهي وي بيڪ مشين. an attempt to estimate how much new information is created each year (study was produced by faculty and students at the School of Information Management and Systems at the University of California at Berkeley)
+(in Danish) Informationsordbogen.dk The Danish Dictionary of Information Terms / Informationsordbogen
+
+
+== حوالا ==

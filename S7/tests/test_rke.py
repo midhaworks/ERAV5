@@ -12,10 +12,13 @@ from rke import (EOS, ContinuationByteCodec, FullByteCodec, MaskedSlotRKE, Refin
                  constrained_utf8_decode, make_split, original_truncated_code)  # noqa: E402
 from lm_compare import make_dataset  # noqa: E402
 from multilingual import dataset as multilingual_dataset  # noqa: E402
-from natural_corpus import _choose_rke_state, build_dataset, tokenize  # noqa: E402
+from natural_corpus import (_choose_rke_state, build_dataset, summarize_seed_runs,
+                            tokenize)  # noqa: E402
 from torch_port import run_parity  # noqa: E402
 from continuation_neural import make_payloads, run_continuation_neural  # noqa: E402
-from cross_block_lm import build_long_dataset, choose_state  # noqa: E402
+from cross_block_lm import (build_continuation_span, build_long_dataset, choose_state,
+                            evaluate_gold_first_block_continuation)  # noqa: E402
+from torch_continuation_lm import CausalContinuationModel  # noqa: E402
 
 
 class ReversibleKroneckerTests(unittest.TestCase):
@@ -172,16 +175,102 @@ class ReversibleKroneckerTests(unittest.TestCase):
         data, audit = build_long_dataset()
         self.assertFalse(audit["paragraph_leakage"])
         self.assertFalse(audit["document_leakage"])
+        self.assertFalse(audit["document_content_hash_leakage"])
+        self.assertFalse(audit["target_string_leakage"])
+        self.assertFalse(audit["exact_sample_leakage"])
         self.assertEqual("document", audit["split_unit"])
-        self.assertEqual(40, audit["corpus_documents"])
+        self.assertEqual(400, audit["corpus_documents"])
+        self.assertEqual(10, len(audit["corpus_topics"]))
         self.assertEqual({"train": 4000, "validation": 800, "test": 500},
                          {name: len(rows) for name, rows in data.items()})
-        self.assertTrue(all(len(row["target"].encode("utf-8")) > 24 for rows in data.values() for row in rows))
+        self.assertTrue(audit["quality_gates"]["unicode_safe_target_boundaries"])
+        self.assertTrue(audit["quality_gates"]["every_language_present_in_test"])
+        self.assertTrue(audit["quality_gates"]["equal_per_language_quotas"])
+        self.assertTrue(audit["quality_gates"]["topic_strata_quotas_satisfied"])
+        self.assertEqual({"train": 1000, "validation": 200, "test": 125},
+                         audit["quotas_per_language"])
+        self.assertTrue(all(
+            audit["selected_by_language_split"][language] == audit["quotas_per_language"]
+            for language in ("English", "Hindi", "Telugu", "Sindhi")))
+        self.assertTrue(all(
+            audit["document_inventory_by_language_topic_split"][language][topic] ==
+            {"train": 8, "validation": 1, "test": 1}
+            for language in ("English", "Hindi", "Telugu", "Sindhi")
+            for topic in audit["corpus_topics"]))
+        self.assertTrue(all(
+            audit["selected_by_language_topic_split"][language][topic][split] ==
+            audit["topic_quotas_per_language"][split][topic]
+            for language in ("English", "Hindi", "Telugu", "Sindhi")
+            for topic in audit["corpus_topics"]
+            for split in ("train", "validation", "test")))
+        self.assertTrue(all(
+            audit["topic_quotas_per_language"]["train"][topic] == 100
+            and audit["topic_quotas_per_language"]["validation"][topic] == 20
+            and audit["topic_quotas_per_language"]["test"][topic] in (12, 13)
+            for topic in audit["corpus_topics"]))
+        self.assertTrue(all(25 <= len(row["target"].encode("utf-8")) <= 96
+                            for rows in data.values() for row in rows))
+        self.assertTrue(all(row["target"] == " ".join(row["target"].split(" "))
+                            for rows in data.values() for row in rows))
+        self.assertTrue(all(row["target_words"] == row["target_end_word"] - row["target_start_word"]
+                            for rows in data.values() for row in rows))
+        self.assertGreater(max(row["target_words"] for row in data["test"]
+                               if row["language"] == "English"), 1)
+        self.assertEqual({"English", "Hindi", "Telugu", "Sindhi"},
+                         {row["language"] for row in data["test"]})
+        target_sets = {split: {row["target"] for row in rows} for split, rows in data.items()}
+        self.assertFalse(target_sets["train"] & target_sets["validation"])
+        self.assertFalse(target_sets["train"] & target_sets["test"])
+        self.assertFalse(target_sets["validation"] & target_sets["test"])
+
+    def test_continuation_span_uses_complete_tokens_not_byte_slices(self):
+        words = ["left", "right", "alpha", "beta", "gamma", "delta", "epsilon"]
+        span = build_continuation_span(words, 2)
+        self.assertEqual(("alpha beta gamma delta epsilon", 5), span)
+        self.assertGreaterEqual(len(span[0].encode("utf-8")), 25)
+        self.assertIsNone(build_continuation_span(["left", "right", "x" * 97], 2))
+
+    def test_three_seed_interval_uses_student_t(self):
+        runs = [{"nll_per_byte_or_eos": value, "exact_match": value / 10}
+                for value in (1.0, 2.0, 3.0)]
+        summary = summarize_seed_runs(runs)
+        expected = 4.302652729911275 / np.sqrt(3)
+        self.assertAlmostEqual(expected, summary["nll_per_byte_or_eos"]["ci95_half_width"])
+        self.assertEqual("two-sided Student t, df=2", summary["ci95_method"])
 
     def test_cross_block_decoder_forbids_first_block_eos(self):
         scores = np.full(259, -10.0); scores[1] = 20.0; scores[ord("a") + 3] = 19.0
         self.assertEqual(ord("a") + 3, choose_state(scores, b"", b"", 0, 0, True))
         self.assertEqual(1, choose_state(scores, b"x" * 24, b"", 0, 1, True))
+
+    def test_gold_first_block_protocol_generates_suffix_not_hidden_target(self):
+        codec = ContinuationByteCodec(24)
+
+        class ScriptedContinuation:
+            def forward(self, features):
+                logits = np.full((len(features), codec.slots, codec.width), -10.0)
+                logits[:, 0, ord("a") + 3] = 10.0
+                logits[:, 1, 1] = 10.0
+                return logits, {}
+
+        target = "a" * 25
+        record = {"language": "test", "context": ["left", "right"], "target": target,
+                  "target_bytes": 25, "document": "test:1", "paragraph": 0,
+                  "blocks": len(codec.ids(target.encode()))}
+        result = evaluate_gold_first_block_continuation(ScriptedContinuation(), codec, [record], True)
+        self.assertEqual(1, result["exact_count"])
+        self.assertEqual(1.0, result["exact_match"])
+        self.assertEqual(1.0, result["micro_average"]["exact_match"])
+        self.assertEqual(1.0, result["macro_average"]["exact_match"])
+        self.assertEqual("61", result["predictions"][0]["prediction_suffix_hex"])
+
+    def test_causal_continuation_arms_share_initial_body_not_output_head(self):
+        rke = CausalContinuationModel(259, True, 1810)
+        fallback = CausalContinuationModel(259, False, 1810)
+        self.assertEqual(rke.shared_state_hash(), fallback.shared_state_hash())
+        self.assertEqual(0, rke.parameter_report()["separate_vocab_classifier"])
+        self.assertEqual(64 * 192, rke.parameter_report()["structured_output_adapter"])
+        self.assertEqual(259 * 192, fallback.parameter_report()["separate_vocab_classifier"])
 
     def test_utf8_decoder_masks_invalid_bytes_and_incomplete_eos(self):
         # Prefer illegal 0xFF everywhere, but leave the valid UTF-8 path for “é”.

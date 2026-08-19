@@ -1,0 +1,158 @@
+In music, a canon is a contrapuntal (counterpoint-based) compositional technique that employs a melody with one or more imitations of the melody played after a given duration (e.g., quarter rest, one measure, etc.). The initial melody is called the leader (or dux), while the imitative melody, which is played in a different voice, is called the follower (or comes). The follower must imitate the leader, either as an exact replication of its rhythms and intervals or some transformation thereof. Repeating canons in which all voices are musically identical are called rounds—familiar singalong versions of "Row, Row, Row Your Boat" and "Frère Jacques" that call for each successive group of voices to begin the same song a bar or two after the previous group began are popular examples.
+An accompanied canon is a canon accompanied by one or more additional independent parts that do not imitate the melody.
+
+
+== History ==
+
+
+=== Medieval and Renaissance ===
+During the Middle Ages, Renaissance, and Baroque—that is, through the early 18th century—any kind of imitative musical counterpoints were called fugues, with the strict imitation now known as canon qualified as fuga ligata, meaning "fettered fugue". Only in the 16th century did the word "canon" begin to be used to describe the strict, imitative texture created by such a procedure. The word is derived from the Greek "κανών", Latinised as canon, which means "law" or "norm". In contrapuntal usage, the word refers to the "rule" explaining the number of parts, places of entry, transposition, and so on, according to which one or more additional parts may be derived from a single written melodic line. This rule was usually given verbally, but could also be supplemented by special signs in the score, sometimes themselves called canoni. The earliest known non-religious canons are English rounds, a form first given the name rondellus by Walter Odington at the beginning of the 14th century; the best known is "Sumer is icumen in" (composed around 1250), called a rota ("wheel") in the manuscript source. The term "round" was first used in English sources in the 16th century.
+Canons featured in the music of the Italian Trecento and the 14th-century ars nova in France. An Italian example is "Tosto che l'alba" by Gherardello da Firenze. In both France and Italy, canons were often featured in hunting songs. The medieval and modern Italian word for hunting is "caccia", while the medieval French word is spelled "chace" (modern spelling: "chasse"). A well-known French chace is the anonymous "Se je chant mains". Richard Taruskin describes "Se je chant mains" as evoking the atmosphere of a falcon hunt: "The middle section is truly a tour de force, but of a wholly new and off-beat type: a riot of hockets set to 'words' mixing French, bird-language, and hound-language in an onomatopoetical mélange." Guillaume de Machaut also used the 3-voice "chace" form in movements from his masterpiece Le Lai de la Fontaine (1361). Referring to the setting of the fourth stanza of this work, Taruskin says "a well-wrought chace can be far more than the sum of its parts; and this particular chace is possibly Machaut's greatest feat of subtilitas."
+An example of late 14th century canon which featured some of the rhythmic complexity of the late 14th century ars subtilior school of composers is La harpe de melodie by Jacob de Senleches. According to Richard Hoppin, "This virelai has two canonic voices over a free and textless tenor."
+
+In many pieces in three contrapuntal parts, only two of the voices are in canon, while the remaining voice is a free melodic line. In Dufay's song "Resvelons nous, amoureux", the lower two voices are in canon, but the upper part is what David Fallows describes as a "florid top line":
+
+
+=== Baroque ===
+Both J. S. Bach and Handel featured canons in their works. The final variation of Handel's keyboard Chaconne in G major (HWV 442) is a canon in which the player's right hand is imitated at the distance of one beat, creating rhythmic ambiguity within the prevailing triple time:
+
+
+=== Classical ===
+An example of a classical strict canon is the Minuet of Haydn's String Quartet in D Minor, Op. 76, No. 2. "Throughout its sinewy length, between upper and lower strings. Here is the superbly logical fulfilment of the two-part octave doubling of Haydn's earliest divertimento minuets":
+
+
+=== Beethoven ===
+Beethoven's works feature a number of passages in canon. The following comes from his Symphony No. 4:
+
+Antony Hopkins describes the above as "a delightfully naïve canon". More sophisticated and varied in its treatment of intervals and harmonic implications is the canonic passage from the second movement of his Piano Sonata 28 in A major, Op. 101:
+
+Beethoven's most spectacular and dramatically effective use of canon occurs in the first act of his opera Fidelio. Here, four of the characters sing a quartet in canon, "a sublime musical wonder", accompanied by orchestration of the utmost delicacy and refinement. "Each of the four participants delivers his or her quatrain", "The use of canon to embody the differing perspectives of the participants a first glance seems odd, but the rigid form allows for some character differentiation and does in fact make a dramatic point". "Everyone sings the same music to very different words, sinking their private thoughts into musical or at least linear anonymity". "The softly padding gait, the dove-tailed perfection of the counterpoint, induce a trance that, carrying the protagonists outside Time, hints that there are realms of truth beyond the masks they pathetically or comically present to the world."
+
+
+=== Romantic era ===
+In the Romantic era, the use of devices such as canon was even more often subtly hidden, as for example in Schumann's piano piece "Vogel als Prophet" (1851).
+
+According to Nicholas Cook, "the canon is, as it were, absorbed into the texture of the music—it is there, but one doesn't easily hear it." Peter Latham describes Brahms' Intermezzo in F minor, Op. 118, No. 4 as a piece "rich in canons". In the following passage, the left hand shadows the right at the time distance of one beat and at the pitch interval of an octave lower:
+
+Michael Musgrave writes that as a result of the strict canon at the octave, the piece is "of an anxious, suppressed nature, ... in the central section this tension is temporarily eased through a very contained passage which employs the canon in chordal terms between the hands." According to Denis Matthews, "[what] looks on paper like another purely intellectual exercise... in practice it produces a warmly melodic effect."
+
+
+=== 20th century to present ===
+Stravinsky composed canons, including a Canon on a Russian Popular Tune and the Double Canon. Conlon Nancarrow composed a number of canons for player piano. (See Mensuration and tempo canons below.) Anton Webern employed canonic textures in his work; his Op. 16 work is a collection of five canons for soprano, clarinet, and bass clarinet.
+
+
+== Types ==
+Considering the many types of canon "in the tonal repertoire", it may be ironic that "canon—the strictest type of imitation—has such a wide variety of possibilities". The most rigid and ingenious forms of canon are not strictly concerned with pattern but also with content. Canons are classified by various traits including the number of voices, the interval at which each successive voice is transposed in relation to the preceding voice, whether voices are inverse, retrograde, or retrograde-inverse; the temporal distance between each voice, whether the intervals of the second voice are exactly those of the original or if they are adjusted to fit the diatonic scale, and the tempo of successive voices. However, canons may use more than one of the above methods.
+Contour Canon
+A Contour Canon can be recognized in the traditional sense, similar to a strict canon or to a canon by inversion, where an original theme or design is presented, and is then followed by a response of the same theme, as well as in an untraditional fashion, where Subcontouric Cells are positioned in such a way that they assemble a canon. In this untraditional fashion, a contour’s cells are presented and altered in a rotational motion, until the entire image or contour can be seen in its Prime form. Each cell in a pairing of Subcontouric Cells cycles through their rotational variations, until they have established themselves in their intended contour position, or Prime Form, such as (1-1)(1-2), referred to as a contour’s Cell Cycle.
+
+
+== Terminology ==
+Although, for clarity, this article uses leader and follower(s) to denote the leading voice in a canon and those that imitate it, musicological literature also uses the traditional Latin terms dux and comes for "leader" and "follower", respectively.
+
+
+=== Number of voices ===
+A canon of two voices may be called a canon in two, similarly a canon of x voices would be called a canon in x. This terminology may be used in combination with a similar terminology for the interval between each voice, different from the terminology in the following paragraph.
+Another standard designation is "Canon: Two in One", which means two voices in one canon. "Canon: Four in Two" means four voices with two simultaneous canons. While "Canon: Six in Three" means six voices with three simultaneous canons, and so on.
+
+
+=== Simple ===
+A simple canon (also known as a round) imitates the leader perfectly at the octave or unison. Well-known canons of this type include the famous children's songs Row, Row, Row Your Boat and Frère Jacques.
+
+
+=== Interval ===
+
+If the follower imitates the precise interval quality of the leader, then it is called a strict canon; if the follower imitates the interval number (but not the quality—e.g., a major third may become a minor third), it is called a free canon.
+
+
+=== Contrapuntal derivations ===
+The follower is by definition a contrapuntal derivation of the leader.
+
+
+=== Canon by inversion ===
+An inversion canon (also called an al rovescio canon) has the follower moving in contrary motion to the leader. Where the leader would go down by a particular interval, the follower goes up by that same interval.
+
+
+=== Retrograde or crab canon ===
+
+In a retrograde canon, also known as a canon cancrizans (Latin for crab canon, derived from the Latin cancer = crab), the follower accompanies the leader backward (in retrograde). Alternative names for this type are canon per recte et retro or canon per rectus et inversus.
+
+
+=== Mensuration and tempo canons ===
+
+In a mensuration canon (also known as a prolation canon, or a proportional canon), the follower imitates the leader by some rhythmic proportion. The follower may double the rhythmic values of the leader (augmentation or sloth canon) or it may cut the rhythmic proportions in half (diminution canon). Phasing involves the application of modulating rhythmic proportions according to a sliding scale. The cancrizans, and often the mensuration canon, take exception to the rule that the follower must start later than the leader; that is, in a typical canon, a follower cannot come before the leader (for then the labels 'leader' and 'follower' should be reversed) or at the same time as the leader (for then two lines together would constantly be in unison, or parallel thirds, etc., and there would be no counterpoint), whereas in a crab canon or mensuration canon the two lines can start at the same time and still respect good counterpoint.
+Many such canons were composed during the Renaissance, particularly in the late fifteenth and early sixteenth centuries; Johannes Ockeghem wrote an entire mass (the Missa prolationum) in which each section is a mensuration canon, and all at different speeds and entry intervals. In the 20th century, Conlon Nancarrow composed complex tempo or mensural canons, mostly for the player piano as they are extremely difficult to play. Larry Polansky has an album of mensuration canons, Four-Voice Canons. Arvo Pärt has written several mensuration canons, including Cantus in Memoriam Benjamin Britten, Arbos and Festina Lente. Per Nørgård's infinity series has a sloth canon structure. This self-similarity of sloth canons makes it "fractal like".
+
+
+== Other types ==
+The most familiar of the canons is the perpetual/infinite canon (in Latin: canon perpetuus) or round. As each voice of the canon arrives at its end it can begin again, in a perpetuum mobile fashion; e.g., "Three Blind Mice". Such a canon is also called a round or, in medieval Latin terminology, a rota. Sumer is icumen in is one example of a piece designated rota.
+Additional types include the spiral canon, accompanied canon, and double or triple canon. A double canon is a canon with two simultaneous themes; a triple canon has three.
+
+
+=== Double canon ===
+A double canon is a composition that unfolds two different canons simultaneously. A duet aria, "Herr, du siehst statt guter Werke" from J. S. Bach's Cantata BWV 9, Es ist das Heil uns kommen her features a double canon "between flute and oboe on the one hand and the soprano and alto voices on the other. But what is most interesting in this movement is that the very attractive melodic surface of the canon belies its dogmatic message by offering a moving simplicity of tone to indicate the comfort that particular doctrine provides for the believer. Canonic devices often bear the association of strictness and the law in Bach's work."
+
+
+=== Mirror canon ===
+
+In a mirror canon (or canon by contrary motion), the subsequent voice imitates the initial voice in inversion. They are not very common, though examples of mirror canons can be found in the works of Bach, Mozart (e.g., the trio from Serenade for Wind Octet in C minor, K. 388/384a), Anton Webern, and other composers.
+
+
+=== Table canon ===
+
+A table canon is a retrograde and inverse canon meant to be placed on a table in between two musicians, who both read the same line of music in opposite directions. As both parts are included in each single line, a second line is not needed. Bach wrote a few table canons.
+
+
+=== Rhythmic canon ===
+Olivier Messiaen employed a technique which he called "rhythmic canon", a polyphony of independent strands in which the pitch material differs. An example is found in the piano part of the first of the Trois petites liturgies de la présence divine, where the left hand (doubled by strings and maracas), and the right hand (doubled by vibraphone) play the same rhythmic sequence in a 3:2 ratio, but the right hand adapts a sequence of 13 chords in the sixth mode (B–C–D–E–F–F–G–A–B) onto the 18 duration values, while the left hand twice states nine chords in the third mode. Peter Maxwell Davies was another post-tonal composer who favoured rhythmic canons, where the pitch materials are not obliged to correspond.
+The notion of rhythmic canon transfers Messiaen's idea of mode of limited transposition from the domain of pitch to the domain of time:
+
+ Messiaen considered a set of disjoint pitch classes with the same interval content which covers the twelve-tone tempered scale. For instance, four pitch classes {C, E♭, F#, A} and two transpositions, by one and by two semitones, cover the twelve-tone scale and, consequently, meet this requirement. This is similar to what is called in mathematics tiling, that is, covering an area, e.g., a square, by disjoint equal figures.
+...By analogy with covering the scale by a few pitch classes and their transpositions, the pulse train was covered by a certain rhythmic pattern with different delays. The disjointedness of pitch classes implied no common beats in different instances of the rhythmic pattern.
+...A rhythmic canon is one whose tone onsets result in a regular pulse train with no simultaneous tone onsets at a time. In that sense, a rhythmic canon tiles time, covering a regular pulse train by disjoint equal rhythms from different voices. Note that the established term "rhythmic canon" is somewhat misleading, and "disjoint rhythm canon" might be more exact.
+...It turned out, however, that solutions to the time-tiling problem are mainly trivial and musically not interesting. A typical solution is a metronome rhythm entering with equal delays, e.g., a sequence of every fourth beat, entering at the first, at the second, and at the third beat, which is a rhythm analogy of the transpositions of pitch class classes {C, E♭, F♯, A}. Non-trivial solutions have been found by Dan Tudor Vuza for a circular time with periods 72, 108, 120,...
+
+Computational methods for finding rhythmic canons, both infinite and finite, with arbitrary generative rhythmic patterns were developed in the 2000s with further generalization to so-called "rhythmic fugues" with a few generative rhythmic patterns.
+
+
+=== Puzzle canon ===
+
+A puzzle canon, riddle canon, or enigma canon is a canon in which only one voice is notated and the rules for determining the remaining parts and the time intervals of their entrances must be guessed. "The enigmatical character of a [puzzle] canon does not consist of any special way of composing it, but only of the method of writing it down, of which a solution is required." Clues hinting at the solution may be provided by the composer, in which case the term "riddle canon" can be used. J. S. Bach presented many of his canons in this form, for example in The Musical Offering. Mozart, after solving Father Martini's puzzles, composed his own riddles, K. 73r, using Latin epigrams such as Sit trium series una and Ter ternis canite vocibus ("Let there be one series of three parts" and "sing three times with three voices").
+Other notable contributors to the genre include Ciconia, Ockeghem, Byrd, Beethoven, Brumel, Busnois, Haydn, Josquin des Prez, Mendelssohn, Pierre de la Rue, Brahms, Schoenberg, Nono and Maxwell Davies. According to Oliver B. Ellsworth, the earliest known enigma canon appears to be an anonymous ballade, "En la maison Dedalus", found at the end of a collection of five theory treatises from the third quarter of the fourteenth century collected in the Berkeley Manuscript.
+Thomas Morley complained that sometimes a solution, "which being founde (it might bee) was scant worth the hearing", J. G. Albrechtsberger admits that, "when we have traced the secret, we have gained but little; as the proverb says, 'Parturiunt montes, etc.'" but adds that, "these speculative passages ... serve to sharpen acumen".
+
+
+== Elaborate use of canon technique ==
+
+Josquin des Prez, Missa L'homme armé super voces musicales, Agnus Dei 2: One voice with the words 'ex una voce tres' (three voice parts out of one), a mensuration canon in three voices.
+Josquin des Prez, Missa L'homme armé sexti toni, Agnus Dei 2: two simultaneous canons in the four upper voices, and at the same time a crab canon in the two lower voices.
+Johann Sebastian Bach's Goldberg Variations contains nine canons of increasing interval size, ranging from unison to ninth. Each canon additionally obeys the overall structure and harmonic sequence common to all variations in the composition.
+
+
+== Contemporary canons ==
+A famous piano piece, "River Flows in You" in the key of F# minor by South Korean Pianist Lee Ru-ma or Yiruma, features a repetitive canon using the same key progression (F#, D, A, E x2). Since its recognition online, there have been multiple covers of the song, including a mashup of it with Johann Pachelbel's Canon and Gigue in D Major.
+In his early work, such as Piano Phase (1967) and Clapping Music (1972), Steve Reich used a process he calls phasing which is a "continually adjusting" canon with variable distance between the voices, in which melodic and harmonic elements are not important, but rely simply on the time intervals of imitation.
+The Prophet's Song, a 1975 song by British rock band Queen features a prominent vocal canon bridge section sung by Freddie Mercury from 3:25, where the vocal canon begins, to 4:49, where the vocal canon transitions into a vocal harmony section. The vocal canon was produced by early tape delay devices,  and has been cited as one of Queen's finest studio achievements.
+
+
+== See also ==
+Canon, a 1964 animated representation of a musical canon
+Pachelbel's Canon
+
+
+== References ==
+
+
+=== Sources ===
+
+
+== Further reading ==
+
+
+== External links ==
+Anatomy of a Canon Archived 2012-06-18 at the Wayback Machine
+The Musical Offering – A Musical Pedagogical Workshop by J. S. Bach, or, The Musical Geometry of Bach's Puzzle Canons, schillerinstitut.dk (in English)
+Visualization of J. S. Bach's crab canon (requires Adobe Flash)
+Software SonneLematine to produce canons
+Electro-Acoustic Music Dartmouth.edu: Larry Polansky's Four Voice Canons
+Video canon on YouTube, on "My Favorite Things"

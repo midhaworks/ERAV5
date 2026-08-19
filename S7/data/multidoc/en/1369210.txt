@@ -1,0 +1,86 @@
+Bioenergetics is a field in biochemistry and cell biology that concerns energy flow through living systems. This is an active area of biological research that includes the study of the transformation of energy in living organisms and the study of thousands of different cellular processes such as cellular respiration and the many other metabolic and enzymatic processes that lead to production and utilization of energy in forms such as adenosine triphosphate (ATP) molecules. That is, the goal of bioenergetics is to describe how living organisms acquire and transform energy in order to perform biological work. The study of metabolic pathways is thus essential to bioenergetics. Bioenergetics bridges physics, chemistry, and biology, providing an integrated framework for understanding how life captures, stores, and channels energy to sustain itself. Insights into energy transformation and regulation in cells continue to influence advances in science and technology
+
+
+== Overview ==
+Bioenergetics is the part of biochemistry concerned with the energy involved in making and breaking of chemical bonds in the molecules found in biological organisms. It can also be defined as the study of energy relationships and energy transformations and transductions in living organisms. The ability to harness energy from a variety of metabolic pathways is a property of all living organisms. Growth, development, anabolism and catabolism are some of the central processes in the study of biological organisms, because the role of energy is fundamental to such biological processes. Life is dependent on energy transformations; living organisms survive because of exchange of energy between living tissues/cells and the outside environment. Some organisms, such as autotrophs, can acquire energy from sunlight (through photosynthesis) without needing to consume nutrients and break them down. Other organisms, like heterotrophs, must intake nutrients from food to be able to sustain energy by breaking down chemical bonds in nutrients during metabolic processes such as glycolysis and the citric acid cycle. Importantly, as a direct consequence of the first law of thermodynamics, autotrophs and heterotrophs participate in a universal metabolic network—by eating autotrophs (plants), heterotrophs harness energy that was initially transformed by the plants during photosynthesis.
+In a living organism, chemical bonds are broken and made as part of the exchange and transformation of energy. Energy is available for work (such as mechanical work) or for other processes (such as chemical synthesis and anabolic processes in growth), when weak bonds are broken and stronger bonds are made. The production of stronger bonds allows release of usable energy.
+Adenosine triphosphate (ATP) is the main "energy currency" for organisms; the goal of metabolic and catabolic processes are to synthesize ATP from available starting materials (from the environment), and to break- down ATP (into adenosine diphosphate (ADP) and inorganic phosphate) by utilizing it in biological processes. In a cell, the ratio of ATP to ADP concentrations is known as the "energy charge" of the cell.  A cell can use this energy charge to relay information about cellular needs; if there is more ATP than ADP available, the cell can use ATP to do work, but if there is more ADP than ATP available, the cell must synthesize ATP via oxidative phosphorylation.
+Living organisms produce ATP from energy sources via oxidative phosphorylation. The terminal phosphate bonds of ATP are relatively weak compared with the stronger bonds formed when ATP is hydrolyzed (broken down by water) to adenosine diphosphate and inorganic phosphate. Here it is the thermodynamically favorable free energy of hydrolysis that results in energy release; the phosphoanhydride bond between the terminal phosphate group and the rest of the ATP molecule does not itself contain this energy. An organism's stockpile of ATP is used as a battery to store energy in cells. Utilization of chemical energy from such molecular bond rearrangement powers biological processes in every biological organism.
+Living organisms obtain energy from organic and inorganic materials; i.e. ATP can be synthesized from a variety of biochemical precursors. For example, lithotrophs can oxidize minerals such as nitrates or forms of sulfur, such as elemental sulfur, sulfites, and hydrogen sulfide to produce ATP. In photosynthesis, autotrophs produce ATP using light energy, whereas heterotrophs must consume organic compounds, mostly including carbohydrates, fats, and proteins. The amount of energy actually obtained by the organism is lower than the amount present in the food; there are losses in digestion, metabolism, and thermogenesis.
+Environmental materials that an organism intakes are generally combined with oxygen to release energy, although some nutrients can also be oxidized anaerobically by various organisms. The utilization of these materials is a form of slow combustion because the nutrients are reacted with oxygen (the materials are oxidized slowly enough that the organisms do not produce fire). The oxidation releases energy, which may evolve as heat or be used by the organism for other purposes, such as breaking chemical bonds.
+
+
+== Types of reactions ==
+An exergonic reaction is a spontaneous chemical reaction that releases energy. It is thermodynamically favored, indexed by a negative value of ΔG (Gibbs free energy). Over the course of a reaction, energy needs to be put in, and this activation energy drives the reactants from a stable state to a highly energetically unstable transition state to a more stable state that is lower in energy (see: reaction coordinate). The reactants are usually complex molecules that are broken into simpler products. The entire reaction is usually catabolic. The release of energy (called Gibbs free energy) is negative (i.e. −ΔG) because energy is released from the reactants to the products.
+An endergonic reaction is an anabolic chemical reaction that consumes energy. It is the opposite of an exergonic reaction. It has a positive ΔG because it takes more energy to break the bonds of the reactant than the energy of the products offer, i.e. the products have weaker bonds than the reactants. Thus, endergonic reactions are thermodynamically unfavorable. Additionally, endergonic reactions are usually anabolic.
+The free energy (ΔG) gained or lost in a reaction can be calculated as follows: ΔG = ΔH − TΔS
+where ∆G = Gibbs free energy, ∆H = enthalpy, T = temperature (in kelvins), and ∆S = entropy.
+
+
+== Examples of major bioenergetic processes ==
+Glycolysis is the process of breaking down glucose into pyruvate, producing two molecules of ATP (per 1 molecule of glucose) in the process. When a cell has a higher concentration of ATP than ADP (i.e. has a high energy charge), the cell cannot undergo glycolysis, releasing energy from available glucose to perform biological work. Pyruvate is one product of glycolysis, and can be shuttled into other metabolic pathways (gluconeogenesis, etc.) as needed by the cell. Additionally, glycolysis produces reducing equivalents in the form of NADH (nicotinamide adenine dinucleotide), which will ultimately be used to donate electrons to the electron transport chain.
+Gluconeogenesis is the opposite of glycolysis; when the cell's energy charge is low (the concentration of ADP is higher than that of ATP), the cell must synthesize glucose from carbon- containing biomolecules such as proteins, amino acids, fats, pyruvate, etc. For example, proteins can be broken down into amino acids, and these simpler carbon skeletons are used to build/ synthesize glucose.
+The citric acid cycle is a process of cellular respiration in which acetyl coenzyme A, synthesized from pyruvate dehydrogenase, is first reacted with oxaloacetate to yield citrate. The remaining eight reactions produce other carbon-containing metabolites. These metabolites are successively oxidized, and the free energy of oxidation is conserved in the form of the reduced coenzymes FADH2 and NADH. These reduced electron carriers can then be re-oxidized when they transfer electrons to the electron transport chain.
+Ketosis is a metabolic process where the body prioritizes ketone bodies, produced from fat, as its primary fuel source instead of glucose. This shift often occurs when glucose levels are low: during prolonged fasting, strenuous exercise, or specialized diets like ketogenic plans, the body may also adopt ketosis as an efficient alternative for energy production. This metabolic adaptation allows the body to conserve precious glucose for organs that depend on it, like the brain, while utilizing readily available fat stores for fuel.
+Oxidative phosphorylation and the electron transport chain is the process where reducing equivalents such as NADPH, FADH2 and NADH can be used to donate electrons to a series of redox reactions that take place in electron transport chain complexes. These redox reactions take place in enzyme complexes situated within the mitochondrial membrane. These redox reactions transfer electrons "down" the electron transport chain, which is coupled to the proton motive force. This difference in proton concentration between the mitochondrial matrix and inner membrane space is used to drive ATP synthesis via ATP synthase.
+Photosynthesis, another major bioenergetic process, is the metabolic pathway used by plants in which solar energy is used to synthesize glucose from carbon dioxide and water. This reaction takes place in the chloroplast. After glucose is synthesized, the plant cell can undergo photophosphorylation to produce ATP.
+
+
+== Additional information ==
+During energy transformations in living systems, order and organization must be compensated by releasing energy which will increase entropy of the surrounding.
+Organisms are open systems that exchange materials and energy with the environment. They are never at equilibrium with the surrounding.
+Energy is spent to create and maintain order in the cells, and surplus energy and other simpler by-products are released to create disorder such that there is an increase in entropy of the surrounding.
+In a reversible process, entropy remains constant where as in an irreversible process (more common to real-world scenarios), entropy tends to increase.
+During phase changes (from solid to liquid, or to gas), entropy increases because the number of possible arrangements of particles increases.
+If ∆G<0, the chemical reaction is spontaneous and favourable in that direction.
+If ∆G=0, the reactants and products of chemical reaction are at equilibrium.
+If ∆G>0, the chemical reaction is non-spontaneous and unfavorable in that direction.
+∆G is not an indicator for velocity or rate of chemical reaction at which equilibrium is reached. It depends on amount of enzyme and energy activation.
+
+
+== Reaction coupling ==
+Is the linkage of chemical reactions in a way that the product of one reaction becomes the substrate of another reaction.
+
+This allows organisms to utilize energy and resources efficiently. For example, in cellular respiration, energy released by the breakdown of glucose is coupled in the synthesis of ATP.
+
+
+== Cotransport ==
+In August 1960, Robert K. Crane presented for the first time his discovery of the sodium-glucose cotransport as the mechanism for intestinal glucose absorption. Crane's discovery of cotransport was the first ever proposal of flux coupling in biology and was the most important event concerning carbohydrate absorption in the 20th century.
+
+
+== Chemiosmotic theory ==
+One of the major triumphs of bioenergetics is Peter D. Mitchell's chemiosmotic theory of how protons in aqueous solution function in the production of ATP in cell organelles such as mitochondria. This work earned Mitchell the 1978 Nobel Prize for Chemistry. Other cellular sources of ATP such as glycolysis were understood first, but such processes for direct coupling of enzyme activity to ATP production are not the major source of useful chemical energy in most cells. Chemiosmotic coupling is the major energy producing process in most cells, being utilized in chloroplasts and several single celled organisms in addition to mitochondria.
+
+
+== Binding change mechanism ==
+The binding change mechanism, proposed by Paul Boyer and John E. Walker, who were awarded the Nobel Prize in Chemistry in 1997, suggests that ATP synthesis is linked to a conformational change in ATP synthase. This change is triggered by the rotation of the gamma subunit. ATP synthesis can be achieved through several mechanisms. The first mechanism postulates that the free energy of the proton gradient is utilized to alter the conformation of polypeptide molecules in the ATP synthesis active centers. The second mechanism suggests that the change in the conformational state is also produced by the transformation of mechanical energy into chemical energy using biological mechanoemission, a process in which energy or particles (e.g., photons or ions) are emitted from a mitochondrion when it is mechanically stimulated.
+
+
+== Energy balance ==
+Energy homeostasis is the homeostatic control of energy balance – the difference between energy obtained through food consumption and energy expenditure – in living systems.
+
+
+== See also ==
+Bioenergetic systems
+Cellular respiration
+Photosynthesis
+ATP synthase
+Active transport
+Myosin
+Exercise physiology
+Table of standard Gibbs free energies
+
+
+== References ==
+
+
+== Further reading ==
+Juretic, D., 2021. Bioenergetics: a bridge across life and universe. CRC Press.
+Lehninger, Albert L (1971). Bioenergetics: The Molecular Basis of Biological Energy Transformations (2nd ed.). Addison-Wesley. ISBN 0-8053-6103-0.
+Nicholls, David G.; Ferguson, Stuart J. (2002). Bioenergetics (3rd ed.). Academic Press. ISBN 0-12-518124-8.
+Green DE, Zande HD (September 1981). "Universal energy principle of biological systems and the unity of bioenergetics". Proc. Natl. Acad. Sci. U.S.A. 78 (9): 5344–7. Bibcode:1981PNAS...78.5344G. doi:10.1073/pnas.78.9.5344. PMC 348741. PMID 6946475.
+
+
+== External links ==
+The Molecular & Cellular Bioenergetics Gordon Research Conference (see).
+American Society of Exercise Physiologists

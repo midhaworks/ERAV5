@@ -56,7 +56,10 @@ class VocabTransformer:
             "Ein": rng.normal(0, .08, (codec.width, d_slot)),
             "Wq": rng.normal(0, .06, (d, d)), "Wk": rng.normal(0, .06, (d, d)),
             "Wv": rng.normal(0, .06, (d, d)), "Wo": rng.normal(0, .02, (d, d)),
-            "Wclass": rng.normal(0, .04, (d, classes)), "pos": rng.normal(0, .02, (3, d)),
+            # Draw every shared-body tensor before the arm-specific classifier.
+            # With the same seed this makes the body bit-identical to RKE.
+            "pos": rng.normal(0, .02, (3, d)),
+            "Wclass": rng.normal(0, .04, (d, classes)),
         }
 
     def forward(self, features: np.ndarray) -> tuple[np.ndarray, dict[str, np.ndarray]]:
@@ -298,7 +301,8 @@ def utf8_evidence() -> dict[str, Any]:
 
 def save_curve(path: Path, curve: list[dict[str, float]]) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=curve[0].keys()); writer.writeheader(); writer.writerows(curve)
+        writer = csv.DictWriter(handle, fieldnames=curve[0].keys(), lineterminator="\n")
+        writer.writeheader(); writer.writerows(curve)
 
 
 def parameter_hash(params: dict[str, np.ndarray]) -> str:
@@ -365,7 +369,7 @@ def run_lm_experiment(output: Path, seed: int = 1701) -> dict[str, Any]:
         "loss_policy": {"target_bytes": 3, "eos_is_loss_bearing": True, "loss_bearing_slots_per_word": 4,
                         "configured_slots": codec.slots, "pad_slots_after_eos_are_masked": True},
         "rke": {"seen": rke_seen, "held_out": rke_oov, "parameters": sum(x.size for x in rke.params.values()),
-                "separate_output_parameters": 0, "training_seconds": rke_time},
+                "separate_vocab_classifier_parameters": 0, "training_seconds": rke_time},
         "vocabulary": {"seen": vocab_seen, "held_out": vocab_oov, "parameters": vocab.parameter_count(),
                        "output_parameters": vocab.params["Wclass"].size, "training_seconds": vocab_time},
         "byte_fallback": {"seen": fallback_seen, "held_out": fallback_oov, "parameters": fallback.parameter_count(),

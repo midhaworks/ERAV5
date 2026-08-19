@@ -1,0 +1,3700 @@
+In mathematics, an ellipse is a plane curve surrounding two focal points, such that for all points on the curve, the sum of both distances to the two focal points is a constant. It generalizes a circle, which is the special type of ellipse in which the two focal points are the same. The elongation of an ellipse is measured by its eccentricity 
+  
+    
+      
+        e
+      
+    
+    {\displaystyle e}
+  
+, a number ranging from 
+  
+    
+      
+        e
+        =
+        0
+      
+    
+    {\displaystyle e=0}
+  
+ (the limiting case of a circle) to 
+  
+    
+      
+        e
+        =
+        1
+      
+    
+    {\displaystyle e=1}
+  
+ (the limiting case of infinite elongation, no longer an ellipse but a parabola).
+An ellipse has a simple algebraic formula for its area, but for its perimeter (also known as circumference), integration is required to obtain the exact solution.
+The largest and smallest diameters of an ellipse, also known as its width and height, are typically denoted 2a and 2b. An ellipse has four extreme points: two vertices at the endpoints of the major axis and two co-vertices at the endpoints of the minor axis.
+
+Analytically, the equation of a standard ellipse centered at the origin is:
+
+  
+    
+      
+        
+          
+            
+              x
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              y
+              
+                2
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        1.
+      
+    
+    {\displaystyle {\frac {x^{2}}{a^{2}}}+{\frac {y^{2}}{b^{2}}}=1.}
+  
+
+Assuming 
+  
+    
+      
+        a
+        ≥
+        b
+      
+    
+    {\displaystyle a\geq b}
+  
+, the foci are 
+  
+    
+      
+        (
+        ±
+        c
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (\pm c,0)}
+  
+, where 
+  
+    
+      
+        c
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            −
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\textstyle c={\sqrt {a^{2}-b^{2}}}}
+  
+ (the linear eccentricity) is the distance from the center to a focus. The standard parametrization is:
+
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+        =
+        (
+        a
+        cos
+        ⁡
+        (
+        t
+        )
+        ,
+        b
+        sin
+        ⁡
+        (
+        t
+        )
+        )
+        
+        
+          for
+        
+        
+        0
+        ≤
+        t
+        ≤
+        2
+        π
+        .
+      
+    
+    {\displaystyle (x,y)=(a\cos(t),b\sin(t))\quad {\text{for}}\quad 0\leq t\leq 2\pi .}
+  
+
+Ellipses are the closed type of conic section: a plane curve tracing the intersection of a cone with a plane (see figure). Ellipses have many similarities with the other two forms of conic sections, parabolas and hyperbolas, both of which are open and unbounded. An angled cross section of a right circular cylinder is also an ellipse.
+An ellipse may also be defined in terms of one focal point and a line outside the ellipse called the directrix: for all points on the ellipse, the ratio between the distance to the focus and the distance to the directrix is a constant, called the eccentricity:
+
+  
+    
+      
+        e
+        =
+        
+          
+            c
+            a
+          
+        
+        =
+        
+          
+            1
+            −
+            
+              
+                
+                  b
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+          
+        
+        .
+      
+    
+    {\displaystyle e={\frac {c}{a}}={\sqrt {1-{\frac {b^{2}}{a^{2}}}}}.}
+  
+
+Ellipses are common in physics, astronomy and engineering. For example, the orbit of each planet in the Solar System is approximately an ellipse with the Sun at one focus point (more precisely, the focus is the barycenter of the Sun–planet pair). The same is true for moons orbiting planets and all other systems of two astronomical bodies. The shapes of planets and stars are often well described by ellipsoids. A circle viewed from a side angle looks like an ellipse: that is, the ellipse is the image of a circle under parallel or perspective projection. The ellipse is also the simplest Lissajous figure formed when the horizontal and vertical motions are sinusoids with the same frequency: a similar effect leads to elliptical polarization of light in optics.
+The name, ἔλλειψις (élleipsis, "omission"), was given by Apollonius of Perga in his Conics.
+
+
+== Definition as locus of points ==
+
+An ellipse can be defined geometrically as a set or locus of points in the Euclidean plane:
+
+The midpoint 
+  
+    
+      
+        C
+      
+    
+    {\displaystyle C}
+  
+ of the line segment joining the foci is called the center of the ellipse. The line through the foci is called the major axis, and the line perpendicular to it through the center is the minor axis. The major axis intersects the ellipse at two vertices 
+  
+    
+      
+        
+          V
+          
+            1
+          
+        
+        ,
+        
+          V
+          
+            2
+          
+        
+      
+    
+    {\displaystyle V_{1},V_{2}}
+  
+, which have distance 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ to the center. The distance 
+  
+    
+      
+        c
+      
+    
+    {\displaystyle c}
+  
+ of the foci to the center is called the focal distance or linear eccentricity. The quotient 
+  
+    
+      
+        e
+        =
+        
+          
+            
+              c
+              a
+            
+          
+        
+      
+    
+    {\displaystyle e={\tfrac {c}{a}}}
+  
+ is defined as the eccentricity.
+The case 
+  
+    
+      
+        
+          F
+          
+            1
+          
+        
+        =
+        
+          F
+          
+            2
+          
+        
+      
+    
+    {\displaystyle F_{1}=F_{2}}
+  
+ yields a circle and is included as a special type of ellipse.
+The equation 
+  
+    
+      
+        
+          |
+          
+            P
+            
+              F
+              
+                2
+              
+            
+          
+          |
+        
+        +
+        
+          |
+          
+            P
+            
+              F
+              
+                1
+              
+            
+          
+          |
+        
+        =
+        2
+        a
+      
+    
+    {\displaystyle \left|PF_{2}\right|+\left|PF_{1}\right|=2a}
+  
+ can be viewed in a different way (see figure):
+
+  
+    
+      
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle c_{2}}
+  
+ is called the circular directrix (related to focus 
+  
+    
+      
+        
+          F
+          
+            2
+          
+        
+      
+    
+    {\displaystyle F_{2}}
+  
+) of the ellipse. This property should not be confused with the definition of an ellipse using a directrix line below.
+Using Dandelin spheres, one can prove that any section of a cone with a plane is an ellipse, assuming the plane does not contain the apex and has slope less than that of the lines on the cone.
+
+
+== In Cartesian coordinates ==
+
+
+=== Standard equation ===
+The standard form of an ellipse in Cartesian coordinates assumes that the origin is the center of the ellipse, the x-axis is the major axis, and:
+
+For an arbitrary point 
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  
+ the distance to the focus 
+  
+    
+      
+        (
+        c
+        ,
+        0
+        )
+      
+    
+    {\displaystyle (c,0)}
+  
+ is 
+  
+    
+      
+        
+          
+            (
+            x
+            −
+            c
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\textstyle {\sqrt {(x-c)^{2}+y^{2}}}}
+  
+ and to the other focus 
+  
+    
+      
+        
+          
+            (
+            x
+            +
+            c
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\textstyle {\sqrt {(x+c)^{2}+y^{2}}}}
+  
+. Hence the point 
+  
+    
+      
+        (
+        x
+        ,
+        
+        y
+        )
+      
+    
+    {\displaystyle (x,\,y)}
+  
+ is on the ellipse whenever:
+
+  
+    
+      
+        
+          
+            (
+            x
+            −
+            c
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            (
+            x
+            +
+            c
+            
+              )
+              
+                2
+              
+            
+            +
+            
+              y
+              
+                2
+              
+            
+          
+        
+        =
+        2
+        a
+         
+        .
+      
+    
+    {\displaystyle {\sqrt {(x-c)^{2}+y^{2}}}+{\sqrt {(x+c)^{2}+y^{2}}}=2a\ .}
+  
+
+Removing the radicals by suitable squarings and using 
+  
+    
+      
+        
+          b
+          
+            2
+          
+        
+        =
+        
+          a
+          
+            2
+          
+        
+        −
+        
+          c
+          
+            2
+          
+        
+      
+    
+    {\displaystyle b^{2}=a^{2}-c^{2}}
+  
+ (see diagram) produces the standard equation of the ellipse:
+
+  
+    
+      
+        
+          
+            
+              x
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              y
+              
+                2
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        1
+        ,
+      
+    
+    {\displaystyle {\frac {x^{2}}{a^{2}}}+{\frac {y^{2}}{b^{2}}}=1,}
+  
+
+or, solved for y:
+
+  
+    
+      
+        y
+        =
+        ±
+        
+          
+            b
+            a
+          
+        
+        
+          
+            
+              
+                
+                  
+                    
+                      (
+                      
+                        
+                          a
+                          
+                            2
+                          
+                        
+                        −
+                        
+                          x
+                          
+                            2
+                          
+                        
+                      
+                      )
+                    
+                  
+                
+              
+            
+            
+              a
+              
+                2
+              
+            
+            −
+            
+              x
+              
+                2
+              
+            
+          
+        
+        =
+        ±
+        
+          
+            
+              (
+              
+                
+                  a
+                  
+                    2
+                  
+                
+                −
+                
+                  x
+                  
+                    2
+                  
+                
+              
+              )
+            
+            
+              (
+              
+                1
+                −
+                
+                  e
+                  
+                    2
+                  
+                
+              
+              )
+            
+          
+        
+        .
+      
+    
+    {\displaystyle y=\pm {\frac {b}{a}}{\sqrt {{\vphantom {\left(a^{2}-x^{2}\right)}}a^{2}-x^{2}}}=\pm {\sqrt {\left(a^{2}-x^{2}\right)\left(1-e^{2}\right)}}.}
+  
+
+The width and height parameters 
+  
+    
+      
+        a
+        ,
+        
+        b
+      
+    
+    {\displaystyle a,\;b}
+  
+ are called the semi-major and semi-minor axes. The top and bottom points 
+  
+    
+      
+        
+          V
+          
+            3
+          
+        
+        =
+        (
+        0
+        ,
+        
+        b
+        )
+        ,
+        
+        
+          V
+          
+            4
+          
+        
+        =
+        (
+        0
+        ,
+        
+        −
+        b
+        )
+      
+    
+    {\displaystyle V_{3}=(0,\,b),\;V_{4}=(0,\,-b)}
+  
+ are the co-vertices. The distances from a point 
+  
+    
+      
+        (
+        x
+        ,
+        
+        y
+        )
+      
+    
+    {\displaystyle (x,\,y)}
+  
+ on the ellipse to the left and right foci are 
+  
+    
+      
+        a
+        +
+        e
+        x
+      
+    
+    {\displaystyle a+ex}
+  
+ and 
+  
+    
+      
+        a
+        −
+        e
+        x
+      
+    
+    {\displaystyle a-ex}
+  
+.
+It follows from the equation that the ellipse is symmetric with respect to the coordinate axes and hence with respect to the origin.
+
+
+=== Parameters ===
+
+
+==== Principal axes ====
+Throughout this article, the semi-major and semi-minor axes are denoted 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ and 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+, respectively, i.e. 
+  
+    
+      
+        a
+        ≥
+        b
+        >
+        0
+         
+        .
+      
+    
+    {\displaystyle a\geq b>0\ .}
+  
+
+In principle, the canonical ellipse equation 
+  
+    
+      
+        
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              
+                a
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                y
+                
+                  2
+                
+              
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\tfrac {x^{2}}{a^{2}}}+{\tfrac {y^{2}}{b^{2}}}=1}
+  
+ may have 
+  
+    
+      
+        a
+        <
+        b
+      
+    
+    {\displaystyle a<b}
+  
+ (and hence the ellipse would be taller than it is wide). This form can be converted to the standard form by transposing the variable names 
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  
+ and 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+ and the parameter names 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+ and 
+  
+    
+      
+        b
+        .
+      
+    
+    {\displaystyle b.}
+  
+
+
+==== Linear eccentricity ====
+This is the distance from the center to a focus: 
+  
+    
+      
+        c
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            −
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle c={\sqrt {a^{2}-b^{2}}}}
+  
+.
+
+
+==== Eccentricity ====
+
+The eccentricity can be expressed as:
+
+  
+    
+      
+        e
+        =
+        
+          
+            c
+            a
+          
+        
+        =
+        
+          
+            1
+            −
+            
+              
+                (
+                
+                  
+                    b
+                    a
+                  
+                
+                )
+              
+              
+                2
+              
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle e={\frac {c}{a}}={\sqrt {1-\left({\frac {b}{a}}\right)^{2}}},}
+  
+
+assuming 
+  
+    
+      
+        a
+        >
+        b
+        .
+      
+    
+    {\displaystyle a>b.}
+  
+ An ellipse with equal axes (
+  
+    
+      
+        a
+        =
+        b
+      
+    
+    {\displaystyle a=b}
+  
+) has zero eccentricity, and is a circle.
+
+
+==== Semi-latus rectum ====
+The length of the chord through one focus, perpendicular to the major axis, is called the latus rectum. One half of it is the semi-latus rectum 
+  
+    
+      
+        ℓ
+      
+    
+    {\displaystyle \ell }
+  
+. A calculation shows:
+
+  
+    
+      
+        ℓ
+        =
+        
+          
+            
+              b
+              
+                2
+              
+            
+            a
+          
+        
+        =
+        a
+        
+          (
+          
+            1
+            −
+            
+              e
+              
+                2
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \ell ={\frac {b^{2}}{a}}=a\left(1-e^{2}\right).}
+  
+
+The semi-latus rectum 
+  
+    
+      
+        ℓ
+      
+    
+    {\displaystyle \ell }
+  
+ is equal to the radius of curvature at the vertices (see section curvature).
+
+
+=== Tangent ===
+An arbitrary line 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ intersects an ellipse at 0, 1, or 2 points, respectively called an exterior line, tangent and secant. Through any point of an ellipse there is a unique tangent. The tangent at a point 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},\,y_{1})}
+  
+ of the ellipse 
+  
+    
+      
+        
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              
+                a
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                y
+                
+                  2
+                
+              
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\tfrac {x^{2}}{a^{2}}}+{\tfrac {y^{2}}{b^{2}}}=1}
+  
+ has the coordinate equation:
+
+  
+    
+      
+        
+          
+            
+              x
+              
+                1
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        x
+        +
+        
+          
+            
+              y
+              
+                1
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        y
+        =
+        1.
+      
+    
+    {\displaystyle {\frac {x_{1}}{a^{2}}}x+{\frac {y_{1}}{b^{2}}}y=1.}
+  
+
+A vector parametric equation of the tangent is:
+
+  
+    
+      
+        
+          
+            
+              x
+              →
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                
+              
+            
+            )
+          
+        
+        +
+        s
+        
+          (
+          
+            
+              
+                
+                  −
+                  
+                    y
+                    
+                      1
+                    
+                  
+                  
+                    a
+                    
+                      2
+                    
+                  
+                
+              
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        ,
+        
+        s
+        ∈
+        
+          R
+        
+        .
+      
+    
+    {\displaystyle {\vec {x}}={\begin{pmatrix}x_{1}\\y_{1}\end{pmatrix}}+s\left({\begin{array}{r}-y_{1}a^{2}\\x_{1}b^{2}\end{array}}\right),\quad s\in \mathbb {R} .}
+  
+
+Proof:
+Let 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},\,y_{1})}
+  
+ be a point on an ellipse and 
+  
+    
+      
+        
+          
+            
+              x
+              →
+            
+          
+        
+        =
+        
+          
+            (
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                
+              
+              
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                
+              
+            
+            )
+          
+        
+        +
+        s
+        
+          
+            (
+            
+              
+                
+                  u
+                
+              
+              
+                
+                  v
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\textstyle {\vec {x}}={\begin{pmatrix}x_{1}\\y_{1}\end{pmatrix}}+s{\begin{pmatrix}u\\v\end{pmatrix}}}
+  
+ be the equation of any line 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ containing 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},\,y_{1})}
+  
+. Inserting the line's equation into the ellipse equation and respecting 
+  
+    
+      
+        
+          
+            
+              x
+              
+                1
+              
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              y
+              
+                1
+              
+              
+                2
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        1
+      
+    
+    {\textstyle {\frac {x_{1}^{2}}{a^{2}}}+{\frac {y_{1}^{2}}{b^{2}}}=1}
+  
+ yields:
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  +
+                  s
+                  u
+                
+                )
+              
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                (
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                  +
+                  s
+                  v
+                
+                )
+              
+              
+                2
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        1
+         
+        
+        ⟹
+        
+        2
+        s
+        
+          (
+          
+            
+              
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  u
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            +
+            
+              
+                
+                  
+                    y
+                    
+                      1
+                    
+                  
+                  v
+                
+                
+                  b
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        +
+        
+          s
+          
+            2
+          
+        
+        
+          (
+          
+            
+              
+                
+                  u
+                  
+                    2
+                  
+                
+                
+                  a
+                  
+                    2
+                  
+                
+              
+            
+            +
+            
+              
+                
+                  v
+                  
+                    2
+                  
+                
+                
+                  b
+                  
+                    2
+                  
+                
+              
+            
+          
+          )
+        
+        =
+        0
+         
+        .
+      
+    
+    {\displaystyle {\frac {\left(x_{1}+su\right)^{2}}{a^{2}}}+{\frac {\left(y_{1}+sv\right)^{2}}{b^{2}}}=1\ \quad \Longrightarrow \quad 2s\left({\frac {x_{1}u}{a^{2}}}+{\frac {y_{1}v}{b^{2}}}\right)+s^{2}\left({\frac {u^{2}}{a^{2}}}+{\frac {v^{2}}{b^{2}}}\right)=0\ .}
+  
+
+There are then cases:
+
+  
+    
+      
+        
+          
+            
+              x
+              
+                1
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        u
+        +
+        
+          
+            
+              y
+              
+                1
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        v
+        =
+        0.
+      
+    
+    {\displaystyle {\frac {x_{1}}{a^{2}}}u+{\frac {y_{1}}{b^{2}}}v=0.}
+  
+ Then line 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ and the ellipse have only point 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},\,y_{1})}
+  
+ in common, and 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ is a tangent. The tangent direction has perpendicular vector 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  
+                    
+                      
+                        x
+                        
+                          1
+                        
+                      
+                      
+                        a
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        y
+                        
+                          1
+                        
+                      
+                      
+                        b
+                        
+                          2
+                        
+                      
+                    
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}{\frac {x_{1}}{a^{2}}}&{\frac {y_{1}}{b^{2}}}\end{pmatrix}}}
+  
+, so the tangent line has equation 
+  
+    
+      
+        
+          
+            
+              x
+              
+                1
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        x
+        +
+        
+          
+            
+              
+                y
+                
+                  1
+                
+              
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        y
+        =
+        k
+      
+    
+    {\textstyle {\frac {x_{1}}{a^{2}}}x+{\tfrac {y_{1}}{b^{2}}}y=k}
+  
+ for some 
+  
+    
+      
+        k
+      
+    
+    {\displaystyle k}
+  
+. Because 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},\,y_{1})}
+  
+ is on the tangent and the ellipse, one obtains 
+  
+    
+      
+        k
+        =
+        1
+      
+    
+    {\displaystyle k=1}
+  
+.
+
+  
+    
+      
+        
+          
+            
+              x
+              
+                1
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        u
+        +
+        
+          
+            
+              y
+              
+                1
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        v
+        ≠
+        0.
+      
+    
+    {\displaystyle {\frac {x_{1}}{a^{2}}}u+{\frac {y_{1}}{b^{2}}}v\neq 0.}
+  
+ Then line 
+  
+    
+      
+        g
+      
+    
+    {\displaystyle g}
+  
+ has a second point in common with the ellipse, and is a secant.
+Using (1) one finds that 
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  −
+                  
+                    y
+                    
+                      1
+                    
+                  
+                  
+                    a
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    x
+                    
+                      1
+                    
+                  
+                  
+                    b
+                    
+                      2
+                    
+                  
+                
+              
+            
+            )
+          
+        
+      
+    
+    {\displaystyle {\begin{pmatrix}-y_{1}a^{2}&x_{1}b^{2}\end{pmatrix}}}
+  
+ is a tangent vector at point 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},\,y_{1})}
+  
+, which proves the vector equation.
+If 
+  
+    
+      
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+      
+    
+    {\displaystyle (x_{1},y_{1})}
+  
+ and 
+  
+    
+      
+        (
+        u
+        ,
+        v
+        )
+      
+    
+    {\displaystyle (u,v)}
+  
+ are two points of the ellipse such that 
+  
+    
+      
+        
+          
+            
+              
+                x
+                
+                  1
+                
+              
+              u
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                
+                  y
+                  
+                    1
+                  
+                
+                v
+              
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        0
+      
+    
+    {\textstyle {\frac {x_{1}u}{a^{2}}}+{\tfrac {y_{1}v}{b^{2}}}=0}
+  
+, then the points lie on two conjugate diameters (see below). (If 
+  
+    
+      
+        a
+        =
+        b
+      
+    
+    {\displaystyle a=b}
+  
+, the ellipse is a circle and "conjugate" means "orthogonal".)
+
+
+=== Shifted ellipse ===
+If the standard ellipse is shifted to have center 
+  
+    
+      
+        
+          (
+          
+            
+              x
+              
+                ∘
+              
+            
+            ,
+            
+            
+              y
+              
+                ∘
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left(x_{\circ },\,y_{\circ }\right)}
+  
+, its equation is
+
+  
+    
+      
+        
+          
+            
+              
+                (
+                
+                  x
+                  −
+                  
+                    x
+                    
+                      ∘
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                (
+                
+                  y
+                  −
+                  
+                    y
+                    
+                      ∘
+                    
+                  
+                
+                )
+              
+              
+                2
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        1
+         
+        .
+      
+    
+    {\displaystyle {\frac {\left(x-x_{\circ }\right)^{2}}{a^{2}}}+{\frac {\left(y-y_{\circ }\right)^{2}}{b^{2}}}=1\ .}
+  
+
+The axes are still parallel to the x- and y-axes.
+
+
+=== General ellipse ===
+
+In analytic geometry, the ellipse is defined as a quadric: the set of points 
+  
+    
+      
+        (
+        x
+        ,
+        
+        y
+        )
+      
+    
+    {\displaystyle (x,\,y)}
+  
+ of the Cartesian plane that, in non-degenerate cases, satisfy the implicit equation
+
+  
+    
+      
+        A
+        
+          x
+          
+            2
+          
+        
+        +
+        B
+        x
+        y
+        +
+        C
+        
+          y
+          
+            2
+          
+        
+        +
+        D
+        x
+        +
+        E
+        y
+        +
+        F
+        =
+        0
+      
+    
+    {\displaystyle Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0}
+  
+
+provided 
+  
+    
+      
+        
+          B
+          
+            2
+          
+        
+        −
+        4
+        A
+        C
+        <
+        0.
+      
+    
+    {\displaystyle B^{2}-4AC<0.}
+  
+
+To distinguish the degenerate cases from the non-degenerate case, let ∆ be the determinant
+
+  
+    
+      
+        Δ
+        =
+        
+          
+            |
+            
+              
+                
+                  A
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  B
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  D
+                
+              
+              
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  B
+                
+                
+                  C
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  E
+                
+              
+              
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  D
+                
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                  E
+                
+                
+                  F
+                
+              
+            
+            |
+          
+        
+        =
+        A
+        C
+        F
+        +
+        
+          
+            
+              1
+              4
+            
+          
+        
+        B
+        D
+        E
+        −
+        
+          
+            
+              1
+              4
+            
+          
+        
+        (
+        A
+        
+          E
+          
+            2
+          
+        
+        +
+        C
+        
+          D
+          
+            2
+          
+        
+        +
+        F
+        
+          B
+          
+            2
+          
+        
+        )
+        .
+      
+    
+    {\displaystyle \Delta ={\begin{vmatrix}A&{\frac {1}{2}}B&{\frac {1}{2}}D\\{\frac {1}{2}}B&C&{\frac {1}{2}}E\\{\frac {1}{2}}D&{\frac {1}{2}}E&F\end{vmatrix}}=ACF+{\tfrac {1}{4}}BDE-{\tfrac {1}{4}}(AE^{2}+CD^{2}+FB^{2}).}
+  
+
+Then the ellipse is a non-degenerate real ellipse if and only if C∆ < 0. If C∆ > 0, we have an imaginary ellipse, and if ∆ = 0, we have a point ellipse.
+The general equation's coefficients can be obtained from known semi-major axis 
+  
+    
+      
+        a
+      
+    
+    {\displaystyle a}
+  
+, semi-minor axis 
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  
+, center coordinates 
+  
+    
+      
+        
+          (
+          
+            
+              x
+              
+                ∘
+              
+            
+            ,
+            
+            
+              y
+              
+                ∘
+              
+            
+          
+          )
+        
+      
+    
+    {\displaystyle \left(x_{\circ },\,y_{\circ }\right)}
+  
+, and rotation angle 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+ (the angle from the positive horizontal axis to the ellipse's major axis) using the formulae:
+
+  
+    
+      
+        
+          
+            
+              
+                A
+              
+              
+                
+                =
+                
+                  a
+                  
+                    2
+                  
+                
+                
+                  sin
+                  
+                    2
+                  
+                
+                ⁡
+                θ
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+                
+                  cos
+                  
+                    2
+                  
+                
+                ⁡
+                θ
+              
+              
+                B
+              
+              
+                
+                =
+                2
+                
+                  (
+                  
+                    
+                      b
+                      
+                        2
+                      
+                    
+                    −
+                    
+                      a
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                θ
+                cos
+                ⁡
+                θ
+              
+            
+            
+              
+                C
+              
+              
+                
+                =
+                
+                  a
+                  
+                    2
+                  
+                
+                
+                  cos
+                  
+                    2
+                  
+                
+                ⁡
+                θ
+                +
+                
+                  b
+                  
+                    2
+                  
+                
+                
+                  sin
+                  
+                    2
+                  
+                
+                ⁡
+                θ
+              
+              
+                D
+              
+              
+                
+                =
+                −
+                2
+                A
+                
+                  x
+                  
+                    ∘
+                  
+                
+                −
+                B
+                
+                  y
+                  
+                    ∘
+                  
+                
+              
+            
+            
+              
+                E
+              
+              
+                
+                =
+                −
+                B
+                
+                  x
+                  
+                    ∘
+                  
+                
+                −
+                2
+                C
+                
+                  y
+                  
+                    ∘
+                  
+                
+              
+              
+                F
+              
+              
+                
+                =
+                A
+                
+                  x
+                  
+                    ∘
+                  
+                  
+                    2
+                  
+                
+                +
+                B
+                
+                  x
+                  
+                    ∘
+                  
+                
+                
+                  y
+                  
+                    ∘
+                  
+                
+                +
+                C
+                
+                  y
+                  
+                    ∘
+                  
+                  
+                    2
+                  
+                
+                −
+                
+                  a
+                  
+                    2
+                  
+                
+                
+                  b
+                  
+                    2
+                  
+                
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}A&=a^{2}\sin ^{2}\theta +b^{2}\cos ^{2}\theta &B&=2\left(b^{2}-a^{2}\right)\sin \theta \cos \theta \\[1ex]C&=a^{2}\cos ^{2}\theta +b^{2}\sin ^{2}\theta &D&=-2Ax_{\circ }-By_{\circ }\\[1ex]E&=-Bx_{\circ }-2Cy_{\circ }&F&=Ax_{\circ }^{2}+Bx_{\circ }y_{\circ }+Cy_{\circ }^{2}-a^{2}b^{2}.\end{aligned}}}
+  
+
+These expressions can be derived from the canonical equation
+
+  
+    
+      
+        
+          
+            
+              X
+              
+                2
+              
+            
+            
+              a
+              
+                2
+              
+            
+          
+        
+        +
+        
+          
+            
+              Y
+              
+                2
+              
+            
+            
+              b
+              
+                2
+              
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\frac {X^{2}}{a^{2}}}+{\frac {Y^{2}}{b^{2}}}=1}
+  
+
+by a Euclidean transformation of the coordinates 
+  
+    
+      
+        (
+        X
+        ,
+        
+        Y
+        )
+      
+    
+    {\displaystyle (X,\,Y)}
+  
+:
+
+  
+    
+      
+        
+          
+            
+              
+                X
+              
+              
+                
+                =
+                
+                  (
+                  
+                    x
+                    −
+                    
+                      x
+                      
+                        ∘
+                      
+                    
+                  
+                  )
+                
+                cos
+                ⁡
+                θ
+                +
+                
+                  (
+                  
+                    y
+                    −
+                    
+                      y
+                      
+                        ∘
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                θ
+                ,
+              
+            
+            
+              
+                Y
+              
+              
+                
+                =
+                −
+                
+                  (
+                  
+                    x
+                    −
+                    
+                      x
+                      
+                        ∘
+                      
+                    
+                  
+                  )
+                
+                sin
+                ⁡
+                θ
+                +
+                
+                  (
+                  
+                    y
+                    −
+                    
+                      y
+                      
+                        ∘
+                      
+                    
+                  
+                  )
+                
+                cos
+                ⁡
+                θ
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}X&=\left(x-x_{\circ }\right)\cos \theta +\left(y-y_{\circ }\right)\sin \theta ,\\Y&=-\left(x-x_{\circ }\right)\sin \theta +\left(y-y_{\circ }\right)\cos \theta .\end{aligned}}}
+  
+
+Conversely, the canonical form parameters can be obtained from the general-form coefficients by the equations:
+
+  
+    
+      
+        
+          
+            
+              
+                a
+                ,
+                b
+              
+              
+                
+                =
+                
+                  
+                    
+                      −
+                      
+                        
+                          2
+                          
+                            
+                              (
+                            
+                          
+                          A
+                          
+                            E
+                            
+                              2
+                            
+                          
+                          +
+                          C
+                          
+                            D
+                            
+                              2
+                            
+                          
+                          −
+                          B
+                          D
+                          E
+                          +
+                          (
+                          
+                            B
+                            
+                              2
+                            
+                          
+                          −
+                          4
+                          A
+                          C
+                          )
+                          F
+                          
+                            
+                              )
+                            
+                          
+                          
+                            
+                              (
+                            
+                          
+                          (
+                          A
+                          +
+                          C
+                          )
+                          ±
+                          
+                            
+                              (
+                              A
+                              −
+                              C
+                              
+                                )
+                                
+                                  2
+                                
+                              
+                              +
+                              
+                                B
+                                
+                                  2
+                                
+                              
+                            
+                          
+                          
+                            
+                              )
+                            
+                          
+                        
+                      
+                    
+                    
+                      
+                        B
+                        
+                          2
+                        
+                      
+                      −
+                      4
+                      A
+                      C
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  x
+                  
+                    ∘
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      2
+                      C
+                      D
+                      −
+                      B
+                      E
+                    
+                    
+                      
+                        B
+                        
+                          2
+                        
+                      
+                      −
+                      4
+                      A
+                      C
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                
+                  y
+                  
+                    ∘
+                  
+                
+              
+              
+                
+                =
+                
+                  
+                    
+                      2
+                      A
+                      E
+                      −
+                      B
+                      D
+                    
+                    
+                      
+                        B
+                        
+                          2
+                        
+                      
+                      −
+                      4
+                      A
+                      C
+                    
+                  
+                
+                ,
+              
+            
+            
+              
+                θ
+              
+              
+                
+                =
+                
+                  
+                    
+                      1
+                      2
+                    
+                  
+                
+                atan2
+                ⁡
+                (
+                −
+                B
+                ,
+                
+                C
+                −
+                A
+                )
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}a,b&={\frac {-{\sqrt {2{\big (}AE^{2}+CD^{2}-BDE+(B^{2}-4AC)F{\big )}{\big (}(A+C)\pm {\sqrt {(A-C)^{2}+B^{2}}}{\big )}}}}{B^{2}-4AC}},\\x_{\circ }&={\frac {2CD-BE}{B^{2}-4AC}},\\[5mu]y_{\circ }&={\frac {2AE-BD}{B^{2}-4AC}},\\[5mu]\theta &={\tfrac {1}{2}}\operatorname {atan2} (-B,\,C-A),\end{aligned}}}
+  
+
+where atan2 is the 2-argument arctangent function.
+
+
+== Parametric representation ==
+
+
+=== Standard parametric representation ===
+Using trigonometric functions, a parametric representation of the standard ellipse 
+  
+    
+      
+        
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              
+                a
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                y
+                
+                  2
+                
+              
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\tfrac {x^{2}}{a^{2}}}+{\tfrac {y^{2}}{b^{2}}}=1}
+  
+ is:
+
+  
+    
+      
+        (
+        x
+        ,
+        
+        y
+        )
+        =
+        (
+        a
+        cos
+        ⁡
+        t
+        ,
+        
+        b
+        sin
+        ⁡
+        t
+        )
+        ,
+         
+        0
+        ≤
+        t
+        <
+        2
+        π
+        
+        .
+      
+    
+    {\displaystyle (x,\,y)=(a\cos t,\,b\sin t),\ 0\leq t<2\pi \,.}
+  
+
+The parameter t (called the eccentric anomaly in astronomy) is not the angle of 
+  
+    
+      
+        (
+        x
+        (
+        t
+        )
+        ,
+        y
+        (
+        t
+        )
+        )
+      
+    
+    {\displaystyle (x(t),y(t))}
+  
+ with the x-axis, but has a geometric meaning due to Philippe de La Hire (see § Drawing ellipses below).
+
+
+=== Rational representation ===
+With the substitution 
+  
+    
+      
+        u
+        =
+        tan
+        ⁡
+        
+          (
+          
+            
+              t
+              2
+            
+          
+          )
+        
+      
+    
+    {\textstyle u=\tan \left({\frac {t}{2}}\right)}
+  
+ and trigonometric formulae one obtains
+
+  
+    
+      
+        cos
+        ⁡
+        t
+        =
+        
+          
+            
+              1
+              −
+              
+                u
+                
+                  2
+                
+              
+            
+            
+              1
+              +
+              
+                u
+                
+                  2
+                
+              
+            
+          
+        
+         
+        ,
+        
+        sin
+        ⁡
+        t
+        =
+        
+          
+            
+              2
+              u
+            
+            
+              1
+              +
+              
+                u
+                
+                  2
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \cos t={\frac {1-u^{2}}{1+u^{2}}}\ ,\quad \sin t={\frac {2u}{1+u^{2}}}}
+  
+
+and the rational parametric equation of an ellipse
+
+  
+    
+      
+        
+          
+            {
+            
+              
+                
+                  x
+                  (
+                  u
+                  )
+                  =
+                  a
+                  
+                  
+                    
+                      
+                        
+                          1
+                          −
+                          
+                            u
+                            
+                              2
+                            
+                          
+                        
+                        
+                          1
+                          +
+                          
+                            u
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                  y
+                  (
+                  u
+                  )
+                  =
+                  b
+                  
+                  
+                    
+                      
+                        
+                          2
+                          u
+                        
+                        
+                          1
+                          +
+                          
+                            u
+                            
+                              2
+                            
+                          
+                        
+                      
+                    
+                  
+                
+              
+              
+                
+                  −
+                  ∞
+                  <
+                  u
+                  <
+                  ∞
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{cases}x(u)=a\,{\dfrac {1-u^{2}}{1+u^{2}}}\\[10mu]y(u)=b\,{\dfrac {2u}{1+u^{2}}}\\[10mu]-\infty <u<\infty \end{cases}}}
+  
+
+which covers any point of the ellipse 
+  
+    
+      
+        
+          
+            
+              
+                x
+                
+                  2
+                
+              
+              
+                a
+                
+                  2
+                
+              
+            
+          
+        
+        +
+        
+          
+            
+              
+                y
+                
+                  2
+                
+              
+              
+                b
+                
+                  2
+                
+              
+            
+          
+        
+        =
+        1
+      
+    
+    {\displaystyle {\tfrac {x^{2}}{a^{2}}}+{\tfrac {y^{2}}{b^{2}}}=1}
+  
+ except the left vertex 
+  
+    
+      
+        (
+        −
+        a
+        ,
+        
+        0
+        )
+      
+    
+    {\displaystyle (-a,\,0)}
+  
+.
+For 
+  
+    
+      
+        u
+        ∈
+        [
+        0
+        ,
+        
+        1
+        ]
+        ,
+      
+    
+    {\displaystyle u\in [0,\,1],}
+  
+ this formula represents the right upper quarter of the ellipse moving counter-clockwise with increasing 
+  
+    
+      
+        u
+        .
+      
+    
+    {\displaystyle u.}
+  
+ The left vertex is the limit 
+  
+    
+      
+        
+          lim
+          
+            u
+            →
+            ±
+            ∞
+          
+        
+        (
+        x
+        (
+        u
+        )
+        ,
+        
+        y
+        (
+        u
+        )
+        )
+        =
+        (
+        −
+        a
+        ,
+        
+        0
+        )
+        
+        .
+      
+    
+    {\textstyle \lim _{u\to \pm \infty }(x(u),\,y(u))=(-a,\,0)\;.}
+  
+
+Alternately, if the parameter 
+  
+    
+      
+        [
+        u
+        :
+        v
+        ]
+      
+    
+    {\displaystyle [u:v]}
+  
+ is considered to be a point on the real projective line 
+  
+    
+      
+        
+          P
+        
+        (
+        
+          R
+        
+        )
+      
+    
+    {\textstyle \mathbf {P} (\mathbf {R} )}
+  
+, then the corresponding rational parametrization is
+
+  
+    
+      
+        [
+        u
+        :
+        v
+        ]
+        ↦
+        
+          (
+          
+            a
+            
+              
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                  −
+                  
+                    u
+                    
+                      2
+                    
+                  
+                
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    u
+                    
+                      2
+                    
+                  
+                
+              
+            
+            ,
+            b
+            
+              
+                
+                  2
+                  u
+                  v
+                
+                
+                  
+                    v
+                    
+                      2
+                    
+                  
+                  +
+                  
+                    u
+                    
+                      2
+                    
+                  
+                
+              
+            
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle [u:v]\mapsto \left(a{\frac {v^{2}-u^{2}}{v^{2}+u^{2}}},b{\frac {2uv}{v^{2}+u^{2}}}\right).}
+  
+
+Then 
+  
+    
+      
+        [
+
