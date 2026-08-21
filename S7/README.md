@@ -4,100 +4,6 @@
 
 This submission proposes **RKE-Head (Reversible Kronecker Embedding Head)**. It replaces a `d_model × |V|` token classifier with an ordered position × byte-symbol code. The same small byte codebook is used forward for input and transposed for output. There is no vocabulary-sized classifier, and its parameter count does not depend on the number of token strings. The strongest causal model does contain a `d_hidden × d_code` structured output adapter; it is counted explicitly and must not be described as “zero output-head parameters.”
 
-## V2.1.12 — Qwen input-path and embedding-performance gate
-
-This is a bounded V2.1 experiment for the selected reverse-Kronecker
-direction. A major-version label would be premature because this run replaces only Qwen's
-input embedding; Qwen's original vocabulary output head remains in place. It therefore
-tests input parameterization and adaptation, not the complete dual-sided reversible head.
-
-### Method
-
-`qwen_kcode_input.py` maps each token id to its UTF-8 bytes, places each byte in one of 32
-fixed positions, and sums the corresponding position×byte rows through a learned
-`(256 × 32) × d_hidden` projection. Empty positions are masked and the sum is normalized
-by the square root of the number of valid bytes. The byte table is deterministic and has
-no trainable parameters. The model is `Qwen/Qwen2.5-0.5B` (`d_hidden=896`, tokenizer
-vocabulary 151,643), with the projection initialized by regression to Qwen's original
-embedding vectors and then adapted on the 4,000-record multilingual corpus
-(`artifacts/qwen_data_manifest/results.json`, dataset hash
-`b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5`).
-
-The paper-style arm is kept separate from `qwen_exact_kcode_input.py`, which adds an
-explicit EOS state and reserves one position for it so prefix lengths are injective for
-the eventual output-side codec.
-
-### Measured result
-
-The 500-step MPS run uses all 4,000 training records and evaluates the first 32 held-out
-records. The untouched Qwen reference is evaluated on the same held-out examples.
-
-| Arm | Trainable input parameters | Validation mean loss | Result |
-|---|---:|---:|---|
-| Untouched Qwen reference | 0 | 3.8113 | Reference only |
-| Qwen + Kronecker input adaptation | 7,340,032 | **3.3866** | 11.1% lower loss than untouched reference |
-| Qwen + exact EOS-bearing K-code input | 7,658,112 | 3.5195 | 7.7% lower loss than untouched reference; 3.9% worse than Kronecker arm |
-
-The paper-style result is generated in `artifacts/qwen_kcode_adaptation/results.json`; the
-exact K-code result is generated in `artifacts/qwen_exact_kcode_adaptation/results.json`.
-Both are real held-out loss comparisons, not claims of parity with a retrained conventional
-embedding.
-A matched 500-step conventional embedding control was attempted but stopped after it
-became impractically slow and produced no result; it must not be reported as completed.
-
-## V2.1.13 — shared exact K-code input/output head
-
-This follow-up uses the EOS-bearing codec on both sides of the same Qwen transformer. A
-single `8547 × 896` projection (`33` positions × `259` states) is used as the input
-projection and transposed for structured output logits. The original vocabulary `lm_head`
-is not used in the loss path. Training predicts the next token's UTF-8 byte states and its
-EOS state directly; PAD states are excluded from the loss.
-
-The 500-step MPS run uses the same 4,000-record training corpus and 32-example validation
-slice as V2.1.12. It has **7,658,112** trainable shared projection parameters and reaches
-structured byte/EOS validation loss **1.0977** (`artifacts/qwen_exact_kcode_dual_sided/results.json`).
-This is a valid output-head experiment and confirms that the reversible code can be used in
-the output path. A matched token-level evaluator converts the structured probabilities to
-token code probabilities: byte/state loss is `1.0828`, token-level code NLL is `5.9699`,
-and exact next-token accuracy is `20.0%` over 415 validation targets. This is worse than
-untouched Qwen (`3.8113`) and the paper-style input-only Kronecker arm (`3.3866`), so the
-output quality gate currently fails. Full constrained UTF-8 generation and decode speed
-remain required before a production claim. Evidence is in
-`artifacts/qwen_exact_kcode_dual_sided/token_eval.json`.
-
-The first targeted improvement was also tested: a separate trainable output projection
-while freezing the exact K-code input projection. It was worse, reaching token-code NLL
-`6.2224` and exact accuracy `17.8%` (`artifacts/qwen_exact_kcode_decoupled_output/token_eval_decoupled.json`)
-versus the shared projection's `5.9699` and `20.0%`. Thus simply untying the maps does not
-solve the output-quality failure; the next intervention must address the frozen transformer
-and independent per-position output factorization.
-
-Unfreezing only Qwen's final transformer block was tested next (`22,570,496` trainable
-parameters, learning rate `1e-5`). Its structured validation loss was `2.3809`, worse than
-the frozen shared-head result `1.0977`; the generated record is
-`artifacts/qwen_exact_kcode_unfreeze_last/results.json`. This bounded intervention is
-rejected, and no broader fine-tuning claim is made.
-
-A causal 33-position decoder was then tested to remove the independent-slot assumption. It
-uses teacher-forced prior byte/EOS states and a `0.77M`-parameter GRU head while keeping the
-Qwen body and exact input projection frozen. Structured validation loss was `1.1738`, also
-worse than the shared projection's `1.0977`; evidence is in
-`artifacts/qwen_exact_kcode_causal_decoder/results.json`. This bounded causal-head pilot
-is rejected pending a larger trained body and token-level decoding evaluation.
-
-Teacher distillation was tested as a stronger alternative: untouched Qwen vocabulary
-probabilities were aggregated into byte-position/EOS targets and used to train a structured
-output projection. After 100 MPS updates, token-code NLL was `8.9678` and exact accuracy
-`15.7%` (`artifacts/qwen_kcode_distill/token_eval_distill.json`), worse than the shared
-hard-target baseline. The frozen exact-K-code input path could not absorb the teacher
-distribution, so further retrofit variants are not treated as progress; a meaningful next
-study requires joint training of the body and structured head from a matched initialization.
-
-A two-rate joint run (projection `1e-4`, final transformer block `1e-5`) was also measured;
-its structured validation loss was `1.1104`, narrowly worse than the shared baseline
-`1.0977`. It is recorded in `artifacts/qwen_exact_kcode_joint_last/results.json` and is
-not counted as an improvement.
-
 ## V2.1.14 — from-scratch exact K-code transformer pilot
 
 Because Qwen's pretrained body is coupled to a vocabulary output geometry, a clean
@@ -138,7 +44,8 @@ That is `+0.55` percentage points over constrained decoding alone and `+2.57` po
 the original unconstrained baseline. The exact-objective run took `253.8s` for 1,000 MPS
 updates; its accepted decoder measured `224.9` targets/s. Evidence is in
 `artifacts/tiny_kcode_exact_token_finetune/` and
-`artifacts/tiny_kcode_vocab_decode/results_test_alpha_0.0.json`. This result is not a
+`artifacts/tiny_kcode_vocab_decode/results_test_alpha_0.0_exact_token_accepted.json` (the
+untuned baseline is retained as `results_test_alpha_0.0.json`). This result is not a
 vocabulary softmax: candidate codes are immutable codec outputs and add no learned rows.
 It does, however, scan the fixed vocabulary at inference, so unknown-string generation
 still uses the unconstrained reversible byte path and production speed requires exact
@@ -277,6 +184,103 @@ The trained pathway is also exercised with the actual 258-state codec—PAD, EOS
 | Arabic | 8 | 100% | 0.021682 | 0% |
 
 Overall multilingual held-out NLL is `0.004449` per byte/EOS, with 100% exact match. Indic stems are consonants combined with dependent vowel marks; Arabic stems are letters combined with harakat. The saved predictions include the Unicode text and its UTF-8 bytes. This proves full-byte compositional decoding across these scripts in the controlled task; it does not prove multilingual semantics or natural-corpus perplexity.
+
+
+## V2.1.13 — shared exact K-code input/output head
+
+This follow-up uses the EOS-bearing codec on both sides of the same Qwen transformer. A
+single `8547 × 896` projection (`33` positions × `259` states) is used as the input
+projection and transposed for structured output logits. The original vocabulary `lm_head`
+is not used in the loss path. Training predicts the next token's UTF-8 byte states and its
+EOS state directly; PAD states are excluded from the loss.
+
+The 500-step MPS run uses the same 4,000-record training corpus and 32-example validation
+slice as V2.1.12. It has **7,658,112** trainable shared projection parameters and reaches
+structured byte/EOS validation loss **1.0977** (`artifacts/qwen_exact_kcode_dual_sided/results.json`).
+This is a valid output-head experiment and confirms that the reversible code can be used in
+the output path. A matched token-level evaluator converts the structured probabilities to
+token code probabilities: byte/state loss is `1.0828`, token-level code NLL is `5.9699`,
+and exact next-token accuracy is `20.0%` over 415 validation targets. This is worse than
+untouched Qwen (`3.8113`) and the paper-style input-only Kronecker arm (`3.3866`), so the
+output quality gate currently fails. Full constrained UTF-8 generation and decode speed
+remain required before a production claim. Evidence is in
+`artifacts/qwen_exact_kcode_dual_sided/token_eval.json`.
+
+The first targeted improvement was also tested: a separate trainable output projection
+while freezing the exact K-code input projection. It was worse, reaching token-code NLL
+`6.2224` and exact accuracy `17.8%` (`artifacts/qwen_exact_kcode_decoupled_output/token_eval_decoupled.json`)
+versus the shared projection's `5.9699` and `20.0%`. Thus simply untying the maps does not
+solve the output-quality failure; the next intervention must address the frozen transformer
+and independent per-position output factorization.
+
+Unfreezing only Qwen's final transformer block was tested next (`22,570,496` trainable
+parameters, learning rate `1e-5`). Its structured validation loss was `2.3809`, worse than
+the frozen shared-head result `1.0977`; the generated record is
+`artifacts/qwen_exact_kcode_unfreeze_last/results.json`. This bounded intervention is
+rejected, and no broader fine-tuning claim is made.
+
+A causal 33-position decoder was then tested to remove the independent-slot assumption. It
+uses teacher-forced prior byte/EOS states and a `0.77M`-parameter GRU head while keeping the
+Qwen body and exact input projection frozen. Structured validation loss was `1.1738`, also
+worse than the shared projection's `1.0977`; evidence is in
+`artifacts/qwen_exact_kcode_causal_decoder/results.json`. This bounded causal-head pilot
+is rejected pending a larger trained body and token-level decoding evaluation.
+
+Teacher distillation was tested as a stronger alternative: untouched Qwen vocabulary
+probabilities were aggregated into byte-position/EOS targets and used to train a structured
+output projection. After 100 MPS updates, token-code NLL was `8.9678` and exact accuracy
+`15.7%` (`artifacts/qwen_kcode_distill/token_eval_distill.json`), worse than the shared
+hard-target baseline. The frozen exact-K-code input path could not absorb the teacher
+distribution, so further retrofit variants are not treated as progress; a meaningful next
+study requires joint training of the body and structured head from a matched initialization.
+
+A two-rate joint run (projection `1e-4`, final transformer block `1e-5`) was also measured;
+its structured validation loss was `1.1104`, narrowly worse than the shared baseline
+`1.0977`. It is recorded in `artifacts/qwen_exact_kcode_joint_last/results.json` and is
+not counted as an improvement.
+
+
+## V2.1.12 — Qwen input-path and embedding-performance gate
+
+This is a bounded V2.1 experiment for the selected reverse-Kronecker
+direction. A major-version label would be premature because this run replaces only Qwen's
+input embedding; Qwen's original vocabulary output head remains in place. It therefore
+tests input parameterization and adaptation, not the complete dual-sided reversible head.
+
+### Method
+
+`qwen_kcode_input.py` maps each token id to its UTF-8 bytes, places each byte in one of 32
+fixed positions, and sums the corresponding position×byte rows through a learned
+`(256 × 32) × d_hidden` projection. Empty positions are masked and the sum is normalized
+by the square root of the number of valid bytes. The byte table is deterministic and has
+no trainable parameters. The model is `Qwen/Qwen2.5-0.5B` (`d_hidden=896`, tokenizer
+vocabulary 151,643), with the projection initialized by regression to Qwen's original
+embedding vectors and then adapted on the 4,000-record multilingual corpus
+(`artifacts/qwen_data_manifest/results.json`, dataset hash
+`b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5`).
+
+The paper-style arm is kept separate from `qwen_exact_kcode_input.py`, which adds an
+explicit EOS state and reserves one position for it so prefix lengths are injective for
+the eventual output-side codec.
+
+### Measured result
+
+The 500-step MPS run uses all 4,000 training records and evaluates the first 32 held-out
+records. The untouched Qwen reference is evaluated on the same held-out examples.
+
+| Arm | Trainable input parameters | Validation mean loss | Result |
+|---|---:|---:|---|
+| Untouched Qwen reference | 0 | 3.8113 | Reference only |
+| Qwen + Kronecker input adaptation | 7,340,032 | **3.3866** | 11.1% lower loss than untouched reference |
+| Qwen + exact EOS-bearing K-code input | 7,658,112 | 3.5195 | 7.7% lower loss than untouched reference; 3.9% worse than Kronecker arm |
+
+The paper-style result is generated in `artifacts/qwen_kcode_adaptation/results.json`; the
+exact K-code result is generated in `artifacts/qwen_exact_kcode_adaptation/results.json`.
+Both are real held-out loss comparisons, not claims of parity with a retrained conventional
+embedding.
+A matched 500-step conventional embedding control was attempted but stopped after it
+became impractically slow and produced no result; it must not be reported as completed.
+
 
 ## V2.1 natural multilingual pilot
 
