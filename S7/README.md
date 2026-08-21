@@ -1,5 +1,7 @@
 # RKE-Head: a reversible, vocabulary-independent Kronecker output
 
+[ERA V5 at The School of AI](https://theschoolof.ai) · By [Avnish Midha](https://www.linkedin.com/in/avnishbm/)
+
 **Session 7 · selected problem 5:** “How do I make a reverse of this, so the same embedding gives the same Kronecker? Can we remove the final vocabulary head?”
 
 This submission proposes **RKE-Head (Reversible Kronecker Embedding Head)**. It replaces a `d_model × |V|` token classifier with an ordered position × byte-symbol code. The same small byte codebook is used forward for input and transposed for output. There is no vocabulary-sized classifier, and its parameter count does not depend on the number of token strings. The strongest causal model does contain a `d_hidden × d_code` structured output adapter; it is counted explicitly and must not be described as “zero output-head parameters.”

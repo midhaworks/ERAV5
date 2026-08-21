@@ -1,5 +1,7 @@
 # Session 6 — Assignment 16: Training Data Execution System
 
+[ERA V5 at The School of AI](https://theschoolof.ai) · By [Avnish Midha](https://www.linkedin.com/in/avnishbm/)
+
 This is a dependency-free, deterministic miniature of the full V5 training-data path:
 
 `documents → tokenized shards → manifests → mixture → packing → batches → training → ledgers → checkpoint → crash → resume → replay → audit`

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="An interactive, sourced chronology of modern attention mechanisms—from scaled dot-product attention to DroPE.">
   <meta name="theme-color" content="#f3f0e8">
-  <title>The Attention Atlas — Session 8</title>
+  <title>Does Intelligence Converge on Efficiency? — Attention Atlas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -15,20 +15,22 @@
   <a class="skip-link" href="#foundation">Skip to the explainer</a>
   <div class="noise" aria-hidden="true"></div>
   <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-  <header class="nav shell">
-    <a class="brand" href="#top" aria-label="Attention Atlas home"><span class="brand-mark">A²</span><span>Attention Atlas</span></a>
-    <nav aria-label="Primary navigation">
-      <a href="#foundation">How it works</a><a href="#memory">Memory lab</a><a href="#timeline">Timeline</a><a href="#reading">Pattern</a><a href="#compare">Choose</a>
-    </nav>
-    <a class="edition" href="https://theschoolof.ai" target="_blank" rel="noreferrer" aria-label="ERA V5 at The School of AI">ERA V5 · S8</a>
+  <header class="site-header">
+    <div class="nav shell">
+      <a class="brand" href="#top" aria-label="Attention Atlas home"><span class="brand-mark">A²</span><span>Attention Atlas</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#foundation">How it works</a><a href="#memory">Memory lab</a><a href="#timeline">Timeline</a><a href="#reading">Pattern</a><a href="#compare">Choose</a>
+      </nav>
+      <a class="edition" href="https://theschoolof.ai" target="_blank" rel="noreferrer" aria-label="ERA V5 at The School of AI">ERA V5 · S8</a>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy reveal">
         <p class="eyebrow">A visual field guide · 2017—2025</p>
-        <h1>Attention has always been a <em>budget</em> problem.</h1>
-        <p class="lede">The original mechanism could look everywhere, exactly. Then the bill arrived. Follow the field as it trades exactness for memory, buys back length, and learns what not to keep.</p>
+        <h1>Does intelligence converge on <em>efficiency?</em></h1>
+        <p class="lede">Perhaps intelligence advances not only by growing larger, but by learning to spend its resources better. Attention makes that pursuit visible. It began by looking everywhere, exactly; then the compute and memory bill arrived. Follow the field as it reaches farther with less, compresses what it remembers, and reserves expensive exactness for where it matters.</p>
         <div class="hero-actions"><a class="button primary" href="#foundation">Start with the equation <span>↓</span></a><a class="button text" href="#timeline">Jump to the timeline</a></div>
       </div>
       <div class="hero-orbit reveal" role="img" aria-label="Attention design space: exact, sparse, linear, and compressed approaches orbit query-key lookup">
@@ -139,6 +141,22 @@
 
     <section class="closing">
       <div class="shell closing-inner reveal"><p class="eyebrow">THE PATTERN</p><h2>Exact → selective → compressed → stateful.</h2><p>The next attention mechanism will probably not “solve” attention. It will decide which information deserves expensive exactness—and make the rest cheap.</p><a href="#top" class="button light">Run it back ↑</a></div>
+    </section>
+
+    <section class="shell key-learning-section" aria-labelledby="key-learning-title">
+      <aside class="personal-learning reveal">
+        <div class="learning-mark" aria-hidden="true">↳</div>
+        <div>
+          <h2 class="key-learning-title" id="key-learning-title">Key Learning</h2>
+          <div class="learning-copy">
+            <p>The human brain is remarkably small compared with the amount of information it can store, connect, process, and recollect. It can recover rich, multimodal memories from the smallest context—a sound, an image, a word, or a feeling.</p>
+            <p>Looking at this timeline, I see attention mechanisms moving in a similar direction. The models themselves are not necessarily becoming smaller, but attention is becoming increasingly economical: fewer KV heads, compressed memory, sparse selection, bounded state, and exact computation used only where it matters.</p>
+            <p>It makes me wonder whether LLMs are gradually progressing toward the brain’s kind of efficiency—not by reproducing how the brain works, but by learning to remember more, retrieve better, and reason with less memory, context, computation, and energy.</p>
+          </div>
+          <p class="learning-close">Perhaps smaller size with higher efficiency is the ultimate sophistication—not merely fewer parameters, but <em>more intelligence from every parameter, every byte of memory, and every unit of energy.</em></p>
+          <p class="brain-statement">Just Like the Brain.</p>
+        </div>
+      </aside>
     </section>
   </main>
   <footer class="shell site-footer">

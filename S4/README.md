@@ -1,5 +1,7 @@
 # S4 — Data cleaning and deduplication
 
+[ERA V5 at The School of AI](https://theschoolof.ai) · By [Avnish Midha](https://www.linkedin.com/in/avnishbm/)
+
 Interactive assignment report for an eight-stage audit of
 `SupraLabs/reasoning-summaries-61k`.
 

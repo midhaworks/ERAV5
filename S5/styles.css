@@ -159,6 +159,8 @@ h2,h3,p { margin-top:0; }
 
 footer { display:flex; justify-content:space-between; gap:20px; padding:30px 7vw; color:white; background:#0d0d1c; font-size:.7rem; }
 footer a { color:var(--accent); text-decoration:none; }
+footer span a { color:inherit; text-decoration:underline; text-decoration-color:rgba(255,255,255,.22); text-underline-offset:3px; }
+footer span a:hover { text-decoration-color:currentColor; }
 
 @media (max-width:1000px) {
   .site-header { grid-template-columns:1fr auto; }

@@ -1,5 +1,7 @@
 # ERA V5 Model — Data Mixture & Curriculum
 
+[ERA V5 at The School of AI](https://theschoolof.ai) · By [Avnish Midha](https://www.linkedin.com/in/avnishbm/)
+
 **Status:** proposal, not a result. Every number below is a hypothesis until the
 1B and 3B proxy runs in [§9](#9-proxy-experiments) pass their gates.
 
