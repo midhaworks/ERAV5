@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive, sourced chronology of modern attention mechanisms—from scaled dot-product attention to DroPE.">
+  <meta name="theme-color" content="#f3f0e8">
+  <title>The Attention Atlas — Session 8</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#foundation">Skip to the explainer</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Attention Atlas home"><span class="brand-mark">A²</span><span>Attention Atlas</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#foundation">How it works</a><a href="#memory">Memory lab</a><a href="#timeline">Timeline</a><a href="#reading">Pattern</a><a href="#compare">Choose</a>
+    </nav>
+    <a class="edition" href="https://theschoolof.ai" target="_blank" rel="noreferrer" aria-label="ERA V5 at The School of AI">ERA V5 · S8</a>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A visual field guide · 2017—2025</p>
+        <h1>Attention has always been a <em>budget</em> problem.</h1>
+        <p class="lede">The original mechanism could look everywhere, exactly. Then the bill arrived. Follow the field as it trades exactness for memory, buys back length, and learns what not to keep.</p>
+        <div class="hero-actions"><a class="button primary" href="#foundation">Start with the equation <span>↓</span></a><a class="button text" href="#timeline">Jump to the timeline</a></div>
+      </div>
+      <div class="hero-orbit reveal" role="img" aria-label="Attention design space: exact, sparse, linear, and compressed approaches orbit query-key lookup">
+        <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
+        <div class="core"><span>QKᵀ</span><small>look up</small></div>
+        <div class="orbit-node n1"><b>Exact</b><small>quality</small></div>
+        <div class="orbit-node n2"><b>Sparse</b><small>length</small></div>
+        <div class="orbit-node n3"><b>Linear</b><small>state</small></div>
+        <div class="orbit-node n4"><b>Compressed</b><small>memory</small></div>
+      </div>
+    </section>
+
+    <section class="thesis-band">
+      <div class="shell thesis-grid">
+        <p class="quote">“Every mechanism is a receipt: what did it buy, and what did it give up?”</p>
+        <div class="pulse-line" aria-label="Field priorities over time"><span>exactness</span><i></i><span>memory</span><i></i><span>length</span><i></i><span>memory, again</span></div>
+      </div>
+    </section>
+
+    <section id="foundation" class="foundation shell section-space">
+      <div class="section-head reveal"><p class="eyebrow">01 · The foundation</p><h2>First, let every token look at every token.</h2><p>Scaled dot-product attention turns “what am I looking for?” (Q) and “what do I contain?” (K) into a relevance score, then uses those weights to blend V.</p></div>
+      <div class="lab reveal">
+        <div class="lab-top">
+          <div><span class="lab-label">LIVE EXPLAINER</span><h3>Softmax makes a decision</h3></div>
+          <div class="control"><label for="temperature">Softmax temperature <output id="tempValue">1.0</output></label><input id="temperature" type="range" min="0.35" max="2" step="0.05" value="1"></div>
+        </div>
+        <div class="token-row" id="tokenRow" aria-label="Choose a query token"></div>
+        <div class="equation"><span>Attention(Q,K,V)</span><b>=</b><span>softmax</span><div class="fraction"><span>QKᵀ</span><span>√d<sub>k</sub></span></div><b>V</b></div>
+        <div class="heatmap-wrap"><div class="query-readout"><small>QUERY</small><strong id="queryWord"></strong><p id="queryNote"></p></div><div id="attentionBars" class="attention-bars"></div></div>
+        <div class="lab-foot"><p><b>Why divide by √d<sub>k</sub>?</b> Dot products grow with dimension. Scaling keeps logits out of softmax’s flat, near-zero-gradient extremes.</p><label class="switch"><input id="causalToggle" type="checkbox" checked><span></span>Causal mask</label></div>
+      </div>
+      <div class="cost-strip reveal">
+        <div><small>FULL ATTENTION COMPUTE</small><strong>O(n²d)</strong><p>Every query scores every key.</p></div>
+        <div><small>ATTENTION MATRIX</small><strong>O(n²)</strong><p>Quadratic training memory—unless tiled.</p></div>
+        <div><small>AUTOREGRESSIVE KV CACHE</small><strong>O(nd)</strong><p>Linear growth, but paid at every layer.</p></div>
+        <div class="cost-punch"><span>The baseline is excellent.</span><strong>It just gets expensive.</strong></div>
+      </div>
+    </section>
+
+    <section id="memory" class="memory-section section-space">
+      <div class="shell">
+        <div class="section-head split reveal"><div><p class="eyebrow">02 · The serving bill</p><h2>Same queries. Fewer keys to carry.</h2></div><p>MHA, MQA, GQA, and MLA do not primarily change where attention looks. They change how much K/V state must travel with every generated token.</p></div>
+        <div class="memory-lab reveal">
+          <div class="memory-controls">
+            <span class="lab-label">KV CACHE SIMULATOR</span>
+            <div class="method-tabs" id="memoryMethods" role="group" aria-label="Choose KV cache mechanism"></div>
+            <div class="memory-slider"><label for="memoryContext">Context <output id="memoryContextOut">128K tokens</output></label><input id="memoryContext" type="range" min="0" max="5" value="3" step="1"></div>
+            <p class="assumption">Illustrative 32-layer, 32-head model · 128 dimensions/head · BF16 · batch size 1.</p>
+          </div>
+          <div class="memory-stage">
+            <div class="memory-stat"><small>KV CACHE</small><strong id="memorySize">64.0 GiB</strong><span id="memorySaving">baseline</span></div>
+            <div id="headDiagram" class="head-diagram" aria-label="Query and key-value head sharing diagram"></div>
+            <p id="memoryExplanation" class="memory-explanation"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="timeline-section section-space">
+      <div class="shell">
+        <div class="section-head split reveal"><div><p class="eyebrow">03 · The chronology</p><h2>The field changes its mind.</h2></div><p>Ordered by first public appearance. Same-day Transformer components follow the conceptual dependency: attention, then position.</p></div>
+        <div class="timeline-tools reveal"><div class="filters" id="filters" role="group" aria-label="Filter mechanisms"></div><label class="search"><span>⌕</span><input id="timelineSearch" type="search" placeholder="Search RoPE, cache, streaming…" aria-label="Search attention mechanisms"></label></div>
+        <div class="result-count" id="resultCount" aria-live="polite"></div>
+        <div class="timeline" id="timelineList"></div>
+      </div>
+    </section>
+
+    <section id="reading" class="reading-section section-space">
+      <div class="shell">
+        <div class="section-head split reveal"><div><p class="eyebrow">04 · What the order reveals</p><h2>It was never one bill.</h2></div><p>A list makes these look like competing tricks. Dates reveal two alternating crises—and a field repeatedly changing which compromise it can tolerate.</p></div>
+        <div class="revelation-lead reveal">
+          <p>The quadratic <b>attention bill</b> hurts training and long-prompt prefill. The linear <b>KV-cache bill</b> hurts autoregressive serving. The timeline zigzags because solving one does not solve the other.</p>
+          <div class="bill-key"><span><i class="compute-dot"></i>Compute / length</span><span><i class="memory-dot"></i>Serving memory</span><span><i class="quality-dot"></i>Recover quality</span></div>
+        </div>
+        <div class="mind-changes reveal" aria-label="How attention research priorities changed over time">
+          <article class="change-card compute"><time>2017</time><span class="change-number">01</span><h3>Exactness first</h3><p>The Transformer removes recurrence and makes global lookup parallel. Position is the immediate missing piece. Nobody is trying to approximate attention yet; the win is that it works.</p></article>
+          <article class="change-card compute"><time>2019—20</time><span class="change-number">02</span><h3>Length forces structure</h3><p>Sparse patterns, routing, windows, and linear state all attack n². At the same moment MQA attacks a different bottleneck: reading cached keys and values one token at a time.</p></article>
+          <article class="change-card quality"><time>2021—22</time><span class="change-number">03</span><h3>Approximation was not the only answer</h3><p>RoPE and ALiBi improve position; the delta rule repairs lossy linear memory. Then FlashAttention keeps exact attention and changes the IO schedule. The field buys exactness back by respecting hardware.</p></article>
+          <article class="change-card memory"><time>2023</time><span class="change-number">04</span><h3>Context becomes a product feature</h3><p>GQA shrinks serving state. NTK-aware scaling and YaRN stretch existing RoPE models. Attention sinks make bounded windows stream. The priority is no longer merely “train long”—it is “serve long now.”</p></article>
+          <article class="change-card memory"><time>2024</time><span class="change-number">05</span><h3>Memory comes back—compressed</h3><p>MLA compresses the KV cache while DeltaNet and Gated DeltaNet improve fixed-size recurrent memory. Both are asking the same question: what is the smallest state that still retrieves?</p></article>
+          <article class="change-card quality"><time>2025</time><span class="change-number">06</span><h3>Selection becomes learned</h3><p>NSA mixes overview, chosen detail, and locality; DSA learns a top-k indexer. DroPE makes the strangest move: use position to learn, then remove it to extrapolate. Scaffolding becomes disposable.</p></article>
+        </div>
+        <blockquote class="timeline-conclusion reveal"><span>THE THING A LIST HIDES</span><p>The field did not march from “bad attention” to “better attention.” It oscillated between <em>keeping every interaction exact</em> and <em>keeping only enough memory to survive</em>. The likely next step is hybrid routing: cheap state for everything, learned selection for candidates, and exact attention only where uncertainty justifies the bill.</p></blockquote>
+
+        <div class="bonus-head reveal"><div><p class="eyebrow">BONUS LEDGER</p><h2>Four mechanisms beyond the minimum list.</h2></div><p>Each date is the first public paper or official release—not a conference year.</p></div>
+        <div class="bonus-grid reveal">
+          <a href="https://arxiv.org/abs/2003.05997" target="_blank" rel="noreferrer"><time>12 Mar 2020</time><h3>Routing Transformer</h3><p>Content-based sparse routing: distant tokens are selected by similarity rather than a fixed pattern.</p><span>Primary paper ↗</span></a>
+          <a href="https://arxiv.org/abs/2205.14135" target="_blank" rel="noreferrer"><time>27 May 2022</time><h3>FlashAttention</h3><p>The plot twist: preserve exact attention and reduce memory traffic with an IO-aware algorithm.</p><span>Primary paper ↗</span></a>
+          <a href="https://arxiv.org/abs/2406.06484" target="_blank" rel="noreferrer"><time>10 Jun 2024</time><h3>Parallel DeltaNet</h3><p>The algorithm that made delta-rule linear attention parallel and practical at language-model scale.</p><span>Primary paper ↗</span></a>
+          <a href="https://api-docs.deepseek.com/news/news250929/" target="_blank" rel="noreferrer"><time>29 Sep 2025</time><h3>DeepSeek Sparse Attention</h3><p>A learned lightning indexer plus token-level top-k—distinct from February’s three-branch NSA.</p><span>Official release ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare" class="compare shell section-space">
+      <div class="section-head split reveal"><div><p class="eyebrow">05 · Pick the trade</p><h2>There is no winner. There is a workload.</h2></div><p>Move the context dial. These are directional architectural costs—not benchmark claims or hardware promises.</p></div>
+      <div class="compare-panel reveal">
+        <div class="context-control"><label for="contextSlider">Context length <output id="contextOutput">8K</output></label><input id="contextSlider" type="range" min="0" max="5" value="1" step="1"><div class="ticks"><span>2K</span><span>8K</span><span>32K</span><span>128K</span><span>512K</span><span>1M</span></div></div>
+        <div class="chart" id="costChart"></div>
+        <div class="recommendation"><span class="lab-label">SHORTLIST</span><p id="recommendationText"></p></div>
+      </div>
+      <div class="decision-grid">
+        <article><span>01</span><h3>Need exact retrieval?</h3><p>Start dense. Use FlashAttention to make the exact algorithm IO-efficient; add GQA or MLA if serving memory is the bottleneck.</p></article>
+        <article><span>02</span><h3>Need bounded streaming?</h3><p>Sliding windows plus attention sinks give stable, fixed memory—but dropped history is truly gone unless an external memory restores it.</p></article>
+        <article><span>03</span><h3>Need extreme length?</h3><p>Sparse selection or recurrent linear state changes the asymptotics. Budget extra evaluation for missed evidence and finite-state collisions.</p></article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="shell closing-inner reveal"><p class="eyebrow">THE PATTERN</p><h2>Exact → selective → compressed → stateful.</h2><p>The next attention mechanism will probably not “solve” attention. It will decide which information deserves expensive exactness—and make the rest cheap.</p><a href="#top" class="button light">Run it back ↑</a></div>
+    </section>
+  </main>
+  <footer class="shell site-footer">
+    <p><span class="footer-note">Dates use the first public paper or release. Every card links its source.</span><br>Session 8 · <a href="https://theschoolof.ai" target="_blank" rel="noreferrer">ERA V5 at The School of AI</a></p>
+    <p class="footer-credit"><a href="https://github.com/midhaworks/ERAV5/tree/main/S8" target="_blank" rel="noreferrer">View source on GitHub ↗</a><br><span>By <a href="https://www.linkedin.com/in/avnishbm/" target="_blank" rel="noreferrer">Avnish Midha</a></span></p>
+  </footer>
+
+  <aside class="compare-tray" id="compareTray" aria-live="polite"><div><small>COMPARE TWO</small><div id="comparePicks"></div></div><button id="runComparison" disabled>Compare →</button></aside>
+  <dialog id="detailDialog"><button class="dialog-close" aria-label="Close details">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
