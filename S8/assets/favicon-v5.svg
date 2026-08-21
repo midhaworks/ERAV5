@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Q K transpose attention orbit mark">
+  <ellipse cx="32" cy="32" rx="29" ry="12" fill="none" stroke="#5577ff" stroke-width="2.6" transform="rotate(24 32 32)"/>
+  <ellipse cx="32" cy="32" rx="27" ry="16" fill="none" stroke="#ff6948" stroke-width="2.2" transform="rotate(-32 32 32)"/>
+  <ellipse cx="32" cy="32" rx="25" ry="19" fill="none" stroke="#456f58" stroke-width="1.4" stroke-dasharray="3 3" opacity=".72" transform="rotate(48 32 32)"/>
+  <circle cx="32" cy="32" r="16" fill="#f3f0e8" stroke="#1d2522" stroke-width="2"/>
+  <text x="29" y="38" fill="#1d2522" font-family="Arial,sans-serif" font-size="17" font-weight="800" text-anchor="middle">QK</text>
+  <text x="44" y="27" fill="#1d2522" font-family="Arial,sans-serif" font-size="7" font-weight="800" text-anchor="middle">T</text>
+  <circle cx="54" cy="45" r="4" fill="#ff6948" stroke="#f3f0e8" stroke-width="1.5"/>
+</svg>

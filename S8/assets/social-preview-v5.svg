@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" role="img" aria-label="Does Intelligence Converge on Efficiency? Attention Atlas social card">
+  <rect width="1200" height="627" fill="#f3f0e8"/>
+  <rect x="0" y="0" width="12" height="627" fill="#5577ff"/>
+
+  <g fill="#1d2522" font-family="Arial,Helvetica,sans-serif" font-weight="800" letter-spacing="-2">
+    <text x="68" y="142" font-size="72">DOES</text>
+    <text x="68" y="224" font-size="72">INTELLIGENCE</text>
+    <text x="68" y="306" font-size="72">CONVERGE ON</text>
+    <text x="68" y="388" font-size="72">EFFICIENCY?</text>
+  </g>
+  <line x1="68" y1="425" x2="540" y2="425" stroke="#5577ff" stroke-width="5"/>
+  <circle cx="68" cy="425" r="7" fill="#5577ff"/>
+  <text x="68" y="472" fill="#5577ff" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="1.5">ATTENTION ATLAS</text>
+  <text x="273" y="472" fill="#1d2522" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">·</text>
+  <text x="294" y="472" fill="#bd531c" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="1.3">ERA V5</text>
+  <text x="388" y="472" fill="#1d2522" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700">·</text>
+  <text x="410" y="472" fill="#456f58" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" letter-spacing="1.3">SESSION 8</text>
+
+  <g transform="translate(885 308)">
+    <ellipse rx="274" ry="92" fill="none" stroke="#5577ff" stroke-width="4" transform="rotate(15)"/>
+    <ellipse rx="250" ry="118" fill="none" stroke="#bd531c" stroke-width="3" transform="rotate(-34)"/>
+    <ellipse rx="236" ry="145" fill="none" stroke="#1d2522" stroke-width="2" stroke-dasharray="12 11" opacity=".62" transform="rotate(39)"/>
+    <circle r="108" fill="#1d2522"/>
+    <text x="-10" y="24" fill="#f3f0e8" font-family="Georgia,serif" font-size="78" font-weight="700" text-anchor="middle">QK</text>
+    <text x="62" y="-36" fill="#f3f0e8" font-family="Georgia,serif" font-size="31" font-weight="700" text-anchor="middle">T</text>
+    <circle cx="258" cy="69" r="11" fill="#ff6948"/>
+    <circle cx="-254" cy="-41" r="10" fill="#5577ff"/>
+  </g>
+
+  <g fill="#f3f0e8" stroke-width="4">
+    <circle cx="752" cy="104" r="52" stroke="#5577ff"/>
+    <path d="M727 104h50M752 79v50" stroke="#5577ff" stroke-width="5"/>
+    <circle cx="1048" cy="112" r="52" stroke="#bd531c"/>
+    <g fill="#bd531c" stroke="none">
+      <circle cx="1030" cy="94" r="6"/><circle cx="1048" cy="94" r="6"/><circle cx="1066" cy="94" r="6"/>
+      <circle cx="1030" cy="112" r="6"/><circle cx="1048" cy="112" r="6"/><circle cx="1066" cy="112" r="6"/>
+      <circle cx="1030" cy="130" r="6"/><circle cx="1048" cy="130" r="6"/><circle cx="1066" cy="130" r="6"/>
+    </g>
+    <circle cx="1035" cy="510" r="52" stroke="#5577ff"/>
+    <path d="M1010 528h13v-14h13v-15h13v-15h13v44Z" fill="#5577ff" stroke="none"/>
+    <circle cx="741" cy="512" r="52" stroke="#456f58"/>
+    <path d="M714 497c17-9 37 9 54 0M714 512c17-9 37 9 54 0M714 527c17-9 37 9 54 0" fill="none" stroke="#456f58" stroke-width="5"/>
+  </g>
+</svg>
