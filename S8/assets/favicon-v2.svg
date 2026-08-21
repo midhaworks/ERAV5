@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Q K transpose attention mark">
+  <rect width="64" height="64" rx="14" fill="#5577ff"/>
+  <circle cx="51" cy="13" r="6" fill="#ff6948"/>
+  <path d="M9 49c11-8 35-8 46 0" fill="none" stroke="#f3f0e8" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <text x="29" y="41" fill="#ffffff" font-family="Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle">QK</text>
+  <text x="49" y="27" fill="#ffffff" font-family="Arial,sans-serif" font-size="11" font-weight="700" text-anchor="middle">T</text>
+</svg>
