@@ -1,0 +1,18 @@
+{
+  "d_model": 256,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "heads": 4,
+  "layers": 2,
+  "loss_first_last": [
+    162.1781463623047,
+    7.685822010040283
+  ],
+  "model": "2-layer causal transformer",
+  "seconds": 400.61565366599825,
+  "status": "tiny_from_scratch_normal_gate",
+  "steps": 2000,
+  "token_accuracy": 0.25783132530120484,
+  "trainable_parameters": 40417280,
+  "validation_token_nll": 4.425746262073517
+}

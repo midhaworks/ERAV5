@@ -55,14 +55,16 @@ def continuation_examples(codec: ContinuationByteCodec, records: list[dict[str, 
 class CausalContinuationModel(nn.Module):
     """Encode block zero, then causally emit all remaining block states."""
 
-    def __init__(self, states: int, tied_rke: bool, seed: int):
+    def __init__(self, states: int, tied_rke: bool, seed: int, residual_rank: int = 0):
         super().__init__()
         torch.manual_seed(seed)
-        self.states, self.tied_rke = states, tied_rke
+        self.states, self.tied_rke, self.residual_rank = states, tied_rke, residual_rank
         self.codebook = nn.Embedding(states, D_CODE)
         self.encoder = nn.GRU(D_CODE, D_HIDDEN, batch_first=True)
         self.decoder = nn.GRU(D_CODE, D_HIDDEN, batch_first=True)
         self.to_code = nn.Linear(D_HIDDEN, D_CODE, bias=False) if tied_rke else None
+        self.residual_down = nn.Linear(D_HIDDEN, residual_rank, bias=False) if tied_rke and residual_rank else None
+        self.residual_up = nn.Linear(residual_rank, states, bias=False) if tied_rke and residual_rank else None
         self.classifier = None if tied_rke else nn.Linear(D_HIDDEN, states, bias=False)
 
     def encode(self, source: torch.Tensor) -> torch.Tensor:
@@ -72,7 +74,10 @@ class CausalContinuationModel(nn.Module):
     def output_logits(self, hidden: torch.Tensor) -> torch.Tensor:
         if self.tied_rke:
             assert self.to_code is not None
-            return self.to_code(hidden) @ self.codebook.weight.T / math.sqrt(D_CODE)
+            logits = self.to_code(hidden) @ self.codebook.weight.T / math.sqrt(D_CODE)
+            if self.residual_down is not None and self.residual_up is not None:
+                logits = logits + self.residual_up(self.residual_down(hidden))
+            return logits
         assert self.classifier is not None
         return self.classifier(hidden)
 
@@ -85,8 +90,9 @@ class CausalContinuationModel(nn.Module):
         total = sum(parameter.numel() for parameter in self.parameters())
         classifier = 0 if self.classifier is None else self.classifier.weight.numel()
         structured_adapter = 0 if self.to_code is None else self.to_code.weight.numel()
+        residual = 0 if self.residual_down is None else self.residual_down.weight.numel() + self.residual_up.weight.numel()
         return {"total": total, "shared_codebook": self.codebook.weight.numel(),
-                "structured_output_adapter": structured_adapter,
+                "structured_output_adapter": structured_adapter, "low_rank_residual": residual,
                 "separate_vocab_classifier": classifier,
                 "output_specific_parameters": structured_adapter + classifier}
 
@@ -100,10 +106,10 @@ class CausalContinuationModel(nn.Module):
 
 
 def train_model(source: torch.Tensor, target: torch.Tensor, tied_rke: bool, seed: int,
-                steps: int = TRAIN_STEPS) -> tuple[CausalContinuationModel, dict[str, Any]]:
+                steps: int = TRAIN_STEPS, residual_rank: int = 0) -> tuple[CausalContinuationModel, dict[str, Any]]:
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
-    model = CausalContinuationModel(259, tied_rke, seed).to(DEVICE)
+    model = CausalContinuationModel(259, tied_rke, seed, residual_rank=residual_rank).to(DEVICE)
     initial_shared_state_hash = model.shared_state_hash()
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-3, weight_decay=1e-4)
     generator = torch.Generator().manual_seed(seed + 1)

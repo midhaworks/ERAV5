@@ -1,0 +1,22 @@
+{
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "embedding_mse_first_last": [
+    0.00015905845793895423,
+    0.003867443883791566
+  ],
+  "examples": 4,
+  "input_parameter_reduction": 0.8744860197368421,
+  "kcode_input_parameters": 17504256,
+  "model": "sarvamai/sarvam-1",
+  "original_input_parameters": 139460608,
+  "parameters": 2403131392,
+  "regression_steps": 100,
+  "seconds": 218.27511866600253,
+  "status": "sarvam1_exact_kcode_input_smoke",
+  "validation_losses": [
+    12.143706321716309,
+    14.95642375946045
+  ],
+  "validation_mean": 13.550065040588379
+}

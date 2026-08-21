@@ -1,0 +1,59 @@
+{
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "examples": 500,
+  "metrics": [
+    {
+      "alpha": -1.0,
+      "correct": 965,
+      "token_accuracy": 0.18597032183465023
+    },
+    {
+      "alpha": -0.5,
+      "correct": 972,
+      "token_accuracy": 0.18731932935054924
+    },
+    {
+      "alpha": 0.0,
+      "correct": 992,
+      "token_accuracy": 0.19117363653883215
+    },
+    {
+      "alpha": 0.25,
+      "correct": 995,
+      "token_accuracy": 0.19175178261707457
+    },
+    {
+      "alpha": 0.5,
+      "correct": 983,
+      "token_accuracy": 0.18943919830410483
+    },
+    {
+      "alpha": 0.75,
+      "correct": 988,
+      "token_accuracy": 0.19040277510117556
+    },
+    {
+      "alpha": 1.0,
+      "correct": 985,
+      "token_accuracy": 0.18982462902293312
+    },
+    {
+      "alpha": 1.25,
+      "correct": 972,
+      "token_accuracy": 0.18731932935054924
+    },
+    {
+      "alpha": 1.5,
+      "correct": 959,
+      "token_accuracy": 0.18481402967816535
+    }
+  ],
+  "seconds": 29.274688709003385,
+  "selected_alpha": 0.25,
+  "selected_token_accuracy": 0.19175178261707457,
+  "split": "validation",
+  "status": "validation_only_length_calibration",
+  "tokens": 5189,
+  "trainable_parameters_added": 0
+}

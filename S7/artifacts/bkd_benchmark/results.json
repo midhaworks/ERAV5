@@ -1,0 +1,34 @@
+{
+  "protocol": "conditional blockwise Kronecker decoder pilot",
+  "steps": 80,
+  "results": {
+    "1": {
+      "group_size": 1,
+      "exact_match": 0.0,
+      "valid_eos": 0.0,
+      "utf8_valid": 0.0,
+      "per_state_nll": 3.6457939742599774,
+      "decode_examples_per_second": 1443.7940898818172,
+      "parameters": 48000
+    },
+    "2": {
+      "group_size": 2,
+      "exact_match": 0.0,
+      "valid_eos": 1.0,
+      "utf8_valid": 1.0,
+      "per_state_nll": 3.881558158009616,
+      "decode_examples_per_second": 2066.2789803979167,
+      "parameters": 48032
+    },
+    "4": {
+      "group_size": 4,
+      "exact_match": 0.0,
+      "valid_eos": 1.0,
+      "utf8_valid": 1.0,
+      "per_state_nll": 4.1008598854726035,
+      "decode_examples_per_second": 2468.8567875082886,
+      "parameters": 48096
+    }
+  },
+  "interpretation": "simpler alternative to full K-CRF"
+}

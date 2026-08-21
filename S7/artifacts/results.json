@@ -205,7 +205,7 @@
     "rke_nll": 1.83340324116031
   },
   "dataset_hash": "48f6c7cd6a38da95ac06e32b67290826f55be2aae2cd9317e2dab04ab7589423",
-  "elapsed_seconds": 533.5544,
+  "elapsed_seconds": 519.3258,
   "experiment": "Reversible Kronecker Head (RKE-Head)",
   "fixed_vocab_baseline": {
     "coverage": 0.0,

@@ -1,0 +1,13 @@
+{
+  "byte_state_nll": 1.128625843074772,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "exact_token_accuracy": 0.1783132530120482,
+  "examples": 32,
+  "mode": "decoupled",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "status": "dual_sided_token_level_eval",
+  "token_count": 415,
+  "token_nll": 6.222399828807418,
+  "valid_decodes": 415
+}

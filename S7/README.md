@@ -4,6 +4,218 @@
 
 This submission proposes **RKE-Head (Reversible Kronecker Embedding Head)**. It replaces a `d_model × |V|` token classifier with an ordered position × byte-symbol code. The same small byte codebook is used forward for input and transposed for output. There is no vocabulary-sized classifier, and its parameter count does not depend on the number of token strings. The strongest causal model does contain a `d_hidden × d_code` structured output adapter; it is counted explicitly and must not be described as “zero output-head parameters.”
 
+## V2.1.12 — Qwen input-path and embedding-performance gate
+
+This is a bounded V2.1 experiment for the selected reverse-Kronecker
+direction. A major-version label would be premature because this run replaces only Qwen's
+input embedding; Qwen's original vocabulary output head remains in place. It therefore
+tests input parameterization and adaptation, not the complete dual-sided reversible head.
+
+### Method
+
+`qwen_kcode_input.py` maps each token id to its UTF-8 bytes, places each byte in one of 32
+fixed positions, and sums the corresponding position×byte rows through a learned
+`(256 × 32) × d_hidden` projection. Empty positions are masked and the sum is normalized
+by the square root of the number of valid bytes. The byte table is deterministic and has
+no trainable parameters. The model is `Qwen/Qwen2.5-0.5B` (`d_hidden=896`, tokenizer
+vocabulary 151,643), with the projection initialized by regression to Qwen's original
+embedding vectors and then adapted on the 4,000-record multilingual corpus
+(`artifacts/qwen_data_manifest/results.json`, dataset hash
+`b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5`).
+
+The paper-style arm is kept separate from `qwen_exact_kcode_input.py`, which adds an
+explicit EOS state and reserves one position for it so prefix lengths are injective for
+the eventual output-side codec.
+
+### Measured result
+
+The 500-step MPS run uses all 4,000 training records and evaluates the first 32 held-out
+records. The untouched Qwen reference is evaluated on the same held-out examples.
+
+| Arm | Trainable input parameters | Validation mean loss | Result |
+|---|---:|---:|---|
+| Untouched Qwen reference | 0 | 3.8113 | Reference only |
+| Qwen + Kronecker input adaptation | 7,340,032 | **3.3866** | 11.1% lower loss than untouched reference |
+| Qwen + exact EOS-bearing K-code input | 7,658,112 | 3.5195 | 7.7% lower loss than untouched reference; 3.9% worse than Kronecker arm |
+
+The paper-style result is generated in `artifacts/qwen_kcode_adaptation/results.json`; the
+exact K-code result is generated in `artifacts/qwen_exact_kcode_adaptation/results.json`.
+Both are real held-out loss comparisons, not claims of parity with a retrained conventional
+embedding.
+A matched 500-step conventional embedding control was attempted but stopped after it
+became impractically slow and produced no result; it must not be reported as completed.
+
+## V2.1.13 — shared exact K-code input/output head
+
+This follow-up uses the EOS-bearing codec on both sides of the same Qwen transformer. A
+single `8547 × 896` projection (`33` positions × `259` states) is used as the input
+projection and transposed for structured output logits. The original vocabulary `lm_head`
+is not used in the loss path. Training predicts the next token's UTF-8 byte states and its
+EOS state directly; PAD states are excluded from the loss.
+
+The 500-step MPS run uses the same 4,000-record training corpus and 32-example validation
+slice as V2.1.12. It has **7,658,112** trainable shared projection parameters and reaches
+structured byte/EOS validation loss **1.0977** (`artifacts/qwen_exact_kcode_dual_sided/results.json`).
+This is a valid output-head experiment and confirms that the reversible code can be used in
+the output path. A matched token-level evaluator converts the structured probabilities to
+token code probabilities: byte/state loss is `1.0828`, token-level code NLL is `5.9699`,
+and exact next-token accuracy is `20.0%` over 415 validation targets. This is worse than
+untouched Qwen (`3.8113`) and the paper-style input-only Kronecker arm (`3.3866`), so the
+output quality gate currently fails. Full constrained UTF-8 generation and decode speed
+remain required before a production claim. Evidence is in
+`artifacts/qwen_exact_kcode_dual_sided/token_eval.json`.
+
+The first targeted improvement was also tested: a separate trainable output projection
+while freezing the exact K-code input projection. It was worse, reaching token-code NLL
+`6.2224` and exact accuracy `17.8%` (`artifacts/qwen_exact_kcode_decoupled_output/token_eval_decoupled.json`)
+versus the shared projection's `5.9699` and `20.0%`. Thus simply untying the maps does not
+solve the output-quality failure; the next intervention must address the frozen transformer
+and independent per-position output factorization.
+
+Unfreezing only Qwen's final transformer block was tested next (`22,570,496` trainable
+parameters, learning rate `1e-5`). Its structured validation loss was `2.3809`, worse than
+the frozen shared-head result `1.0977`; the generated record is
+`artifacts/qwen_exact_kcode_unfreeze_last/results.json`. This bounded intervention is
+rejected, and no broader fine-tuning claim is made.
+
+A causal 33-position decoder was then tested to remove the independent-slot assumption. It
+uses teacher-forced prior byte/EOS states and a `0.77M`-parameter GRU head while keeping the
+Qwen body and exact input projection frozen. Structured validation loss was `1.1738`, also
+worse than the shared projection's `1.0977`; evidence is in
+`artifacts/qwen_exact_kcode_causal_decoder/results.json`. This bounded causal-head pilot
+is rejected pending a larger trained body and token-level decoding evaluation.
+
+Teacher distillation was tested as a stronger alternative: untouched Qwen vocabulary
+probabilities were aggregated into byte-position/EOS targets and used to train a structured
+output projection. After 100 MPS updates, token-code NLL was `8.9678` and exact accuracy
+`15.7%` (`artifacts/qwen_kcode_distill/token_eval_distill.json`), worse than the shared
+hard-target baseline. The frozen exact-K-code input path could not absorb the teacher
+distribution, so further retrofit variants are not treated as progress; a meaningful next
+study requires joint training of the body and structured head from a matched initialization.
+
+A two-rate joint run (projection `1e-4`, final transformer block `1e-5`) was also measured;
+its structured validation loss was `1.1104`, narrowly worse than the shared baseline
+`1.0977`. It is recorded in `artifacts/qwen_exact_kcode_joint_last/results.json` and is
+not counted as an improvement.
+
+## V2.1.14 — from-scratch exact K-code transformer pilot
+
+Because Qwen's pretrained body is coupled to a vocabulary output geometry, a clean
+from-scratch control was added. A two-layer, four-head causal transformer (`d_model=256`)
+uses the exact EOS-bearing K-code for both input and output and trains all `3,784,448`
+parameters on the same multilingual corpus. After 2,000 MPS updates it reached structured
+validation loss `1.2623` and decoded-token accuracy `11.8%` over 415 targets. The codec
+itself remains exact; learned quality is still below a production gate. Evidence is in
+`artifacts/tiny_exact_kcode_model/results.json`.
+
+The matched conventional control uses the same tokenizer, data, transformer body, seed,
+batch size and 2,000 updates, with a tied vocabulary embedding/output matrix. It reaches
+token NLL `4.4257` and token accuracy `25.8%` with `40,417,280` parameters. K-code uses
+`3,784,448` parameters (a `90.6%` reduction) but decoded-token accuracy is `11.8%`; the
+structured loss is not numerically interchangeable with token NLL. The control evidence is
+in `artifacts/tiny_normal_model/results.json`.
+
+Training the same K-code model for `10,000` updates reduced structured validation loss to
+`0.9260` and raised decoded-token accuracy to `21.0%` (`artifacts/tiny_exact_kcode_model/results.json`),
+versus `11.8%` after 2,000 updates. This closes most of the initial quality gap to the
+normal control's `25.8%` accuracy and shows that the earlier result was under-trained; the
+remaining gap will be addressed by reallocating saved parameters into a larger body.
+
+The parallel slot argmax can assemble byte combinations that are not Qwen tokenizer tokens.
+A parameter-free constrained decoder now scores all `151,643` fixed tokenizer codes from
+the same byte/EOS probabilities and selects the most likely valid token. On the complete
+500-example held-out test split (5,322 targets), unconstrained exact-code accuracy is
+`18.13%` and constrained accuracy is `20.16%`: a measured `+2.03` percentage-point, `11.2%`
+relative improvement with zero trainable decoder parameters.
+
+The accepted follow-up aligns training with that inference rule. For one causal position
+per sequence and update, it computes exact cross-entropy over all `151,643` candidate codes
+in memory-bounded chunks; each candidate logit is composed from immutable byte/EOS scores,
+so there is still no learned vocabulary row. Validation improved from `992/5,189` (`19.12%`)
+to `1,021/5,189` (`19.68%`) before the test set was opened. The single held-out evaluation
+then improved the previous best from `1,073/5,322` (`20.16%`) to `1,102/5,322` (`20.71%`).
+That is `+0.55` percentage points over constrained decoding alone and `+2.57` points over
+the original unconstrained baseline. The exact-objective run took `253.8s` for 1,000 MPS
+updates; its accepted decoder measured `224.9` targets/s. Evidence is in
+`artifacts/tiny_kcode_exact_token_finetune/` and
+`artifacts/tiny_kcode_vocab_decode/results_test_alpha_0.0.json`. This result is not a
+vocabulary softmax: candidate codes are immutable codec outputs and add no learned rows.
+It does, however, scan the fixed vocabulary at inference, so unknown-string generation
+still uses the unconstrained reversible byte path and production speed requires exact
+candidate-search acceleration.
+
+A parameter-budget-matched scaled body (`d_model=768`, 4 layers, 12 heads; `34,966,272`
+parameters) was trained for 10,000 updates. It reached only `10.6%` decoded-token accuracy
+and structured loss `1.2812`, below the smaller model's `21.0%`; evidence is in
+`artifacts/tiny_exact_kcode_scaled/results.json`. Capacity scaling without a tuned schedule
+is therefore not accepted as a quality improvement.
+
+A sampled whole-code ranking fine-tune was also gated rather than promoted from its
+training loss. Although sampled rank loss fell from `5.59` to `3.58`, fixed-code accuracy
+on the same 500 validation examples fell from `19.12%` to `18.25%`. Its separate checkpoint
+and evidence remain in `artifacts/tiny_kcode_candidate_finetune/`; it is rejected and never
+evaluated on the test split.
+
+A validation-only length-normalization sweep selected exponent `0.25` by 995 versus 992
+correct tokens, but its single pre-committed test evaluation produced 1,069 correct versus
+1,073 for exponent `0`. The calibrated setting is rejected as validation overfit; evidence
+is in `artifacts/tiny_kcode_vocab_decode/alpha_sweep_validation.json` and the tagged test
+result. The reported held-out result therefore remains the untuned exponent-0 decoder.
+
+Sarvam-1 is retained as an external Indic baseline. Its four-example smoke loss was `7.4783`
+with 2.525B parameters; a finite but unstable 100-step K-code input smoke reached `13.5501`,
+so no Sarvam K-code quality win is claimed. Artifacts are in
+`artifacts/sarvam1_baseline/results.json` and `artifacts/sarvam1_kcode_smoke/results.json`.
+
+### Qwen comparison summary
+
+| Model path | Metric | Value |
+|---|---|---:|
+| Qwen reference | Token vocabulary NLL | 3.8113 |
+| Qwen + Kronecker input | Token vocabulary NLL | **3.3866** |
+| Qwen + exact K-code input | Token vocabulary NLL | 3.5195 |
+| Qwen + exact K-code input/output | Token-code NLL; exact token accuracy | 5.9699; 20.0% |
+
+The final row uses a structured byte/EOS output distribution, so its token-code NLL is
+reported separately and is not treated as numerically interchangeable with the vocabulary
+NLL rows.
+
+### Embedding-only speed and memory gate
+
+On the same M2/MPS host with a 64×32 token batch, the direct dynamic implementation and
+an inference-time materialized cache were measured against a normal `nn.Embedding`:
+
+| Path | Tokens/s | Parameter/table memory | Interpretation |
+|---|---:|---:|---|
+| Normal embedding lookup | 21.31M | 272.3 MB | Speed reference |
+| Dynamic K-code gather | 50.3K | 14.7 MB projection | **Speed gate FAIL**; 0.24× normal |
+| Materialized K-code table | 8.38M | 271.7 MB cache | Partial speed recovery; memory saving is lost |
+
+These measurements are generated by `artifacts/embedding_perf/results.json` and
+`artifacts/embedding_perf/cached_results.json`. They identify the current bottleneck: the
+structured projection is parameter-efficient but its per-token byte gathers are expensive
+on MPS. Materializing the vocabulary restores ordinary lookup semantics but consumes
+nearly the same memory as the normal table. Accordingly, V2.1.12 is **research evidence,
+not production-test-ready evidence**, and it does not validate the output-side reversible
+head.
+
+## K-CRF prototype (next structured-output experiment)
+
+`kcrf.py` implements the proposed structured extension: tied Kronecker unary scores,
+low-rank transitions (the benchmark uses signed factors), and an exact UTF-8/EOS/CONT automaton. `KCRFHead.nll()` is
+differentiable and computes an exact constrained sequence normalizer; `viterbi()` returns
+only valid byte chains. The 259 states are `PAD`, `EOS`, `CONT`, and 256 byte values.
+
+This is an experimental reference implementation, not yet a production benchmark result.
+The low-rank factors reduce transition parameters (`2 × 259 × rank`), but exact CRF
+normalization remains quadratic in the state count in this implementation. The Unicode
+path now uses an exact tensorized eight-state UTF-8 DFA; ASCII uses a further fast path.
+Five focused
+tests cover invalid early EOS, UTF-8 validity, CONT placement, parameter accounting and
+gradient flow. The next benchmark must compare ranks 4/8/16/32 with independent RKE,
+tied vocabulary softmax and autoregressive byte fallback on raw NLL, exact match,
+calibration, validity and decode speed.
+
 The submission contains analytic, controlled-composition, natural-language and learned-continuation evidence. It does **not** claim to be production ready.
 
 The evidence-driven improvement plan and primary-source literature map are in
@@ -70,8 +282,15 @@ Overall multilingual held-out NLL is `0.004449` per byte/EOS, with 100% exact ma
 
 This section is newest-first. It replaces synthetic copying with natural next-word and cross-block continuation prediction from Wikipedia-derived English, Hindi, Telugu and Sindhi text. Text is NFC-normalized and case-folded. The earlier single-block pilot hash-splits whole paragraphs; the newer cross-block benchmark isolates complete source documents.
 
+### Normal-embedding comparison protocol
+
+The causal benchmark includes a conventional learned-byte baseline: `nn.Embedding(259, 64)` followed by an independent 259-way classifier. It is the normal **untied** embedding/control path, not a Kronecker representation. The matched run records its parameter count, NLL, exact generation and decode throughput beside the tied K-code model. A future tied-normal control must use the same hidden width and share the embedding matrix with its 259-way output; it must not be confused with the untied baseline. This distinction is required before claiming that K-code improves efficiency over ordinary embeddings.
+
 | Version | Specific problem | Implemented solution | Current result |
 |---|---|---|---|
+| V2.1.14 | Pretrained-body retrofit experiments could not establish a fair end-to-end structured model | From-scratch exact K-code input/output transformer, matched normal control, fixed-code constrained decoding, and exact token-distribution fine-tuning without learned vocabulary rows | 90.6% fewer parameters in the small comparison; held-out accuracy improves 18.13% → 20.16% → 20.71%; quality gate remains open |
+| V2.1.13 | Input-only reversibility did not establish that the same code can replace Qwen's output head | Shared EOS-bearing projection for input vectors and structured byte/EOS logits; original vocabulary head excluded | Token NLL 5.9699, exact 20.0%; output quality gate FAIL |
+| V2.1.12 | Input-side Kronecker/K-code gains could be reported without measuring a real Qwen path or embedding runtime | Separate paper-style and EOS-bearing K-code projections adapted in Qwen, with matched held-out evaluation and normal/cache lookup benchmarks | Paper arm 3.3866; exact K-code 3.5195; dynamic speed gate FAIL |
 | V2.1.11 | One topical neighborhood per language could make apparent language gains a subject-matter artifact | 400 revision-pinned documents across 4 languages × 10 topic strata, with balanced document and target splits | Construction and quota gates PASS |
 | V2.1.10 | Global sampling let high-volume languages dominate | Equal source-language quotas plus per-language, macro and micro metrics | PASS; content-language validation remains open |
 | V2.1.9 | A >24-byte *word* filter selected scripts by UTF-8 width | Shortest 25–96-byte complete-token continuation spans | Script exclusion fixed; balance completed in V2.1.10 |
@@ -518,3 +737,90 @@ This remains a controlled compositional language, not a natural-corpus perplexit
 7. PyTorch CPU parity is proven; accelerator kernels, mixed precision, distributed checkpointing and Unicode security stress tests remain unverified.
 
 The next paper-worthy alternative is blockwise causal decoding: emit small groups of slots in parallel while conditioning each group on completed preceding groups. It offers a measurable speed/quality continuum instead of assuming that one or two fully parallel passes can match the byte chain rule. Before costly testing, cross-block training needs non-zero exact generation over at least three seeds, context must grow from two to at least 128 tokens, source labels must be upgraded to target-level language/script validation, and PyTorch must be benchmarked on an accelerator.
+A controlled structural pilot is now generated by `python3 S7/kcrf_benchmark.py`. On
+alternating `A/B` UTF-8 byte sequences, the independent slot baseline reached per-state
+NLL `0.5954` and exact match `50.98%`; signed rank-4 K-CRF reached normalized per-state
+NLL `0.1008` and exact match `42.19%` in the 500-step run. K-CRF captures the dependency
+distribution, while exact match is limited by the deliberately ambiguous random starting
+phase. The result is saved in
+`artifacts/kcrf_benchmark/results.json`; natural-language quality claims remain pending.
+
+The follow-up natural-text structural pilot is generated by
+`python3 S7/kcrf_natural_benchmark.py`. It uses paragraph-disjoint six-byte ASCII words
+from the multilingual corpus (59 train, 24 validation and 14 test examples). Independent
+slots reached per-state NLL `3.0926`; signed rank-8 K-CRF reached `2.2976`, a `25.7%`
+relative NLL improvement. Both exact-match rates are zero because this unconditional pilot
+does not receive word context and the test words are held out. This is evidence that the
+transition mechanism models real byte dependencies, not evidence of end-to-end LM quality.
+The complete audit and data hash are in
+`artifacts/kcrf_natural_benchmark/results.json`.
+
+The first conditional multilingual pilot is generated by
+`python3 S7/kcrf_conditional_benchmark.py`. It trains a shared GRU context body and
+compares matched independent and K-CRF output heads on 324 train / 93 validation / 61
+test six-byte targets across all four languages. Independent per-state NLL was `2.5553`;
+K-CRF was `2.2969` (`10.1%` lower), with `100%` valid EOS chains. Exact match was zero for
+both arms because this deliberately small pilot holds out complete target words. Runtime
+was 34 seconds on CPU after the tensorized DFA optimization, so this is research evidence,
+not production-scale readiness. Results and the complete corpus audit are in
+`artifacts/kcrf_conditional_benchmark/results.json`.
+
+The three-seed follow-up is generated by `python3 S7/kcrf_multiseed.py` and is saved in
+`artifacts/kcrf_multiseed/results.json`. Aggregate NLL improvement was positive on all
+seeds: mean `6.38%`, standard deviation `4.45%`, range `1.46%`–`10.11%`. However, exact
+K-CRF Viterbi decoded about `10.8` examples/second versus `2,965` independent argmax
+examples/second (ratio `0.36%`). Therefore the quality-stability gate passes provisionally,
+but the production throughput gate fails decisively. This is reproducible evidence of the
+current tradeoff, not a production-readiness claim.
+
+As a simpler alternative, `python3 S7/bkd_benchmark.py` implements the Blockwise Kronecker
+Decoder (BKD): a tied Kronecker output head with a small causal boundary state and groups
+of 1, 2 or 4 output bytes. The existing 24-byte continuation block is only a batching
+choice inherited from the dynamic codec; BKD's group size is independent and is now
+measured separately. In the 80-step conditional pilot, group-4 decoded about 2,588
+examples/s versus 16 examples/s for exact K-CRF Viterbi, with 100% valid UTF-8/EOS chains
+for groups 2 and 4. Exact match remained zero and group-4 NLL was higher than the
+independent baseline in this deliberately small run, so BKD is currently a throughput
+candidate, not a quality result.
+
+Before selecting an architecture, `python3 S7/reversibility_options.py` tests the simpler
+exact designs directly. It checks all 256 byte values, every Unicode scalar value, every
+byte string through length two exhaustively, 10,000 random longer strings, and an
+invertible orthogonal projection. All checks pass. A deliberately compressed sum
+projection produces a collision, confirming that compression alone cannot prove
+reversibility. The generated evidence is in `artifacts/reversibility_options/results.json`.
+The exact path is implemented in `reversible_projection.py`; the automated suite now has
+45 passing tests, including exhaustive two-byte coverage and 10,000-byte continuation
+round trips.
+
+The end-to-end integration audit is generated by `python3 S7/end_to_end_reversible.py`.
+It reads the trained multilingual run, routes every held-out target through the exact
+K-code, and checks every constrained model prediction. All 160 targets round-trip across
+Hindi, Telugu, Tamil and Arabic, and all 160 model predictions have a constrained path.
+Evidence is in `artifacts/end_to_end_reversible/results.json`.
+
+The Unicode security gate is generated by `python3 S7/unicode_security_audit.py`.
+Overlong encodings, truncated sequences, surrogate encodings, bad continuation bytes and
+`0xFF` are rejected by strict UTF-8 handling; valid null, Indic, CJK, emoji and supplementary
+characters round-trip; arbitrary malformed bytes remain lossless at the byte layer; and a
+decoder forced toward invalid bytes still returns valid UTF-8. The generated report is in
+`artifacts/unicode_security/results.json`.
+
+The deployment reproducibility gate is generated by `python3 S7/reproducibility_audit.py`.
+It verifies deterministic code hashes, exact serialized-code reloads, versioned codec
+configuration hashes and tamper detection. The report is in
+`artifacts/reproducibility/results.json`.
+
+The codec-only CPU stress report is generated by `python3 S7/performance_stress.py`.
+It measures real encode/decode calls for payloads from 1 to 10,000 bytes, records CONT
+block counts and encoded memory, and checks every recovered payload byte-for-byte. All
+rows passed exactness; the report intentionally excludes transformer and accelerator
+performance and is stored in `artifacts/performance_stress/results.json`.
+
+Dual-sided parameter accounting is generated by `python3 S7/dual_sided_accounting.py` and
+stored in `artifacts/dual_sided_accounting/results.json`. At `V=131,072` and `d=4,096`,
+each conventional input or output matrix has 536,870,912 parameters. The vocabulary-free
+Kronecker side uses 8,256 codebook parameters plus a 131,072-parameter adapter. Thus an
+untied baseline removes about 1.07 billion vocabulary-dependent parameters across both
+sides; a tied baseline removes one shared matrix, not two. Weight tying is parameter
+sharing, not an inverse operation.

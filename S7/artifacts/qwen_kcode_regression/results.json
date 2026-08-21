@@ -1,0 +1,25 @@
+{
+  "batch": 512,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "embedding_mse": 0.00023295845312532037,
+  "losses_first_last": [
+    0.000373160612070933,
+    0.00023295845312532037
+  ],
+  "model": "Qwen/Qwen2.5-0.5B",
+  "seconds": 8.170262665982591,
+  "status": "embedding_regression_initialization",
+  "steps": 200,
+  "validation_losses": [
+    8.609929084777832,
+    10.55052375793457,
+    6.8326921463012695,
+    8.548723220825195,
+    10.599593162536621,
+    6.860208034515381,
+    7.79841423034668,
+    6.567375659942627
+  ],
+  "validation_mean": 8.295932412147522
+}

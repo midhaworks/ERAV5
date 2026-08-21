@@ -1,0 +1,39 @@
+{
+  "artifact_hash": "b0454f389b60ffb772cffb8a84e7e7d7b3a49c1f30decb506217abb8c0678c4e",
+  "by_script": {
+    "Arabic": {
+      "roundtrip": 40,
+      "total": 40
+    },
+    "Hindi-Devanagari": {
+      "roundtrip": 40,
+      "total": 40
+    },
+    "Tamil": {
+      "roundtrip": 40,
+      "total": 40
+    },
+    "Telugu": {
+      "roundtrip": 40,
+      "total": 40
+    }
+  },
+  "claims": {
+    "all_model_predictions_have_constrained_path": true,
+    "all_targets_roundtrip": true
+  },
+  "codec": {
+    "eos": true,
+    "max_bytes": 6,
+    "projection": "identity exact K-code",
+    "states": 258
+  },
+  "overall_pass": true,
+  "predicted_constrained_valid_rate": 1.0,
+  "predicted_examples": 160,
+  "protocol": "trained multilingual model plus exact K-code output audit",
+  "source_dataset_hash": "0d069462f917dd256a55df198951a2ecbe9565241db7ae3cbdc2b860c7c846b7",
+  "source_model_results": "artifacts/multilingual/results.json",
+  "target_examples": 160,
+  "target_roundtrip_rate": 1.0
+}

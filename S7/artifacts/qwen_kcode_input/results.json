@@ -1,0 +1,12 @@
+{
+  "hidden_size": 896,
+  "input_parameter_reduction": 0.9460825610783488,
+  "kcode_projection_parameters": 7340032,
+  "loss": 13.513505935668945,
+  "max_bytes": 32,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "original_input_parameters": 136134656,
+  "status": "input_path_smoke",
+  "tokens": 28,
+  "vocab_size": 151643
+}

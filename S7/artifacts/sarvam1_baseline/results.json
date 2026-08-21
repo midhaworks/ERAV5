@@ -1,0 +1,18 @@
+{
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "examples": 4,
+  "hidden_size": 2048,
+  "layers": 28,
+  "load_seconds": 97.92100962498807,
+  "model": "sarvamai/sarvam-1",
+  "parameters": 2525087744,
+  "seconds": 254.02781729199341,
+  "status": "sarvam1_multilingual_smoke",
+  "validation_losses": [
+    7.5863423347473145,
+    7.3701982498168945
+  ],
+  "validation_mean": 7.4782702922821045,
+  "vocab_size": 68096
+}

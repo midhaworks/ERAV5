@@ -411,6 +411,17 @@ def main() -> None:
     readiness_lines += ["", "## Resolved in this iteration", ""] + [f"- {item}" for item in readiness["resolved_actions"]]
     readiness_lines += ["", "## Next actions", ""] + [f"- {item}" for item in readiness["next_actions"]] + [""]
     (OUT / "production_readiness.md").write_text("\n".join(readiness_lines), encoding="utf-8")
+    # Regenerate the exact-codec evidence in the same one-command run. These
+    # audits are independent of the toy model metrics above and deliberately
+    # write their own machine-readable reports.
+    from reversibility_options import main as reversibility_main
+    from unicode_security_audit import main as unicode_security_main
+    from reproducibility_audit import main as reproducibility_main
+    from performance_stress import main as performance_main
+    from end_to_end_reversible import main as end_to_end_main
+    from bkd_benchmark import run as bkd_run
+    reversibility_main(); unicode_security_main(); reproducibility_main(); performance_main()
+    end_to_end_main(); bkd_run()
     write_json(OUT / "proof_records.json", proof_records)
     write_json(OUT / "split.json", {"train": train, "held_out_oov": test})
     write_report(results)

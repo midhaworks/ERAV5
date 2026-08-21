@@ -1,0 +1,22 @@
+{
+  "d_model": 256,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "decoded_token_accuracy": 0.20963855421686747,
+  "device": "mps",
+  "exact_code_token_accuracy": 0.0,
+  "heads": 4,
+  "layers": 2,
+  "learning_rate": 0.0001,
+  "loss_first_last": [
+    1.193003535270691,
+    1.2748336791992188
+  ],
+  "model": "2-layer causal transformer",
+  "resumed": true,
+  "seconds": 243.1585277080012,
+  "status": "tiny_from_scratch_exact_kcode_gate",
+  "steps": 10000,
+  "trainable_parameters": 3784448,
+  "valid_tokens": 415,
+  "validation_structured_loss": 0.9098606705665588
+}

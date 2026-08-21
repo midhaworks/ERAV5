@@ -1,0 +1,20 @@
+{
+  "absolute_accuracy_gain": 0.033339757178647136,
+  "checkpoint": "S7/artifacts/tiny_kcode_candidate_finetune/model.pt",
+  "constrained_correct": 947,
+  "constrained_token_accuracy": 0.1825014453651956,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "examples": 500,
+  "length_normalization_alpha": 0.0,
+  "seconds": 21.372030290978728,
+  "split": "validation",
+  "status": "fixed_vocab_constrained_kcode_decode",
+  "token_accuracy": 0.1825014453651956,
+  "tokens": 5189,
+  "tokens_per_second": 242.78674736702175,
+  "trainable_decoder_parameters": 0,
+  "unconstrained_correct": 774,
+  "unconstrained_exact_code_accuracy": 0.14916168818654846,
+  "vocabulary_candidates": 151643
+}

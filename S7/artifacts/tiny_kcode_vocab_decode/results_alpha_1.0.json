@@ -1,0 +1,14 @@
+{
+  "correct": 97,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "examples": 32,
+  "length_normalization_alpha": 1.0,
+  "seconds": 6.117809916991973,
+  "status": "fixed_vocab_constrained_kcode_decode",
+  "token_accuracy": 0.23373493975903614,
+  "tokens": 415,
+  "tokens_per_second": 67.83471045396077,
+  "trainable_decoder_parameters": 0,
+  "vocabulary_candidates": 151643
+}

@@ -1,0 +1,58 @@
+{
+  "all_exact": true,
+  "block_bytes": 24,
+  "full_byte_code_feature_dim_at_256": 66306,
+  "interpretation": "codec-only CPU stress; excludes transformer compute and accelerator kernels",
+  "maximum_tested_payload": 10000,
+  "protocol": "exact K-code CPU performance stress",
+  "rows": [
+    {
+      "blocks": 1,
+      "decode_bytes_per_second": 0.0,
+      "encode_bytes_per_second": 0.0,
+      "encoded_bytes": 6475,
+      "exact": true,
+      "payload_bytes": 0
+    },
+    {
+      "blocks": 1,
+      "decode_bytes_per_second": 599881.9495962638,
+      "encode_bytes_per_second": 85106.36734228823,
+      "encoded_bytes": 6475,
+      "exact": true,
+      "payload_bytes": 1
+    },
+    {
+      "blocks": 2,
+      "decode_bytes_per_second": 8258063.658715376,
+      "encode_bytes_per_second": 3267974.420534373,
+      "encoded_bytes": 12950,
+      "exact": true,
+      "payload_bytes": 32
+    },
+    {
+      "blocks": 11,
+      "decode_bytes_per_second": 13562904.741042387,
+      "encode_bytes_per_second": 4781381.847252882,
+      "encoded_bytes": 71225,
+      "exact": true,
+      "payload_bytes": 256
+    },
+    {
+      "blocks": 43,
+      "decode_bytes_per_second": 13706512.974704146,
+      "encode_bytes_per_second": 5952035.077258913,
+      "encoded_bytes": 278425,
+      "exact": true,
+      "payload_bytes": 1024
+    },
+    {
+      "blocks": 417,
+      "decode_bytes_per_second": 13862415.39459579,
+      "encode_bytes_per_second": 6189716.055782736,
+      "encoded_bytes": 2700075,
+      "exact": true,
+      "payload_bytes": 10000
+    }
+  ]
+}

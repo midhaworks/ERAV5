@@ -1,0 +1,20 @@
+{
+  "absolute_accuracy_gain": 0.01850067450375795,
+  "checkpoint": "/Users/ai/ERAV5/S7/artifacts/tiny_exact_kcode_model/model.pt",
+  "constrained_correct": 992,
+  "constrained_token_accuracy": 0.19117363653883215,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "examples": 500,
+  "length_normalization_alpha": 0.0,
+  "seconds": 32.92146420798963,
+  "split": "validation",
+  "status": "fixed_vocab_constrained_kcode_decode",
+  "token_accuracy": 0.19117363653883215,
+  "tokens": 5189,
+  "tokens_per_second": 157.61309222679284,
+  "trainable_decoder_parameters": 0,
+  "unconstrained_correct": 896,
+  "unconstrained_exact_code_accuracy": 0.1726729620350742,
+  "vocabulary_candidates": 151643
+}

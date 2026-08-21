@@ -1,0 +1,14 @@
+{
+  "batch": 512,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "embedding_mse": 0.00023263788898475468,
+  "losses_first_last": [
+    0.0003655731852632016,
+    0.00023263788898475468
+  ],
+  "model": "Qwen/Qwen2.5-0.5B",
+  "seconds": 6.685602250014199,
+  "status": "exact_kcode_embedding_regression",
+  "steps": 200
+}

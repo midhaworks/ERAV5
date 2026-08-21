@@ -1,0 +1,21 @@
+{
+  "d_model": 256,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "decoded_token_accuracy": 0.0,
+  "device": "mps",
+  "heads": 4,
+  "layers": 2,
+  "loss_first_last": [
+    5.5130295753479,
+    1.2596591711044312
+  ],
+  "scheduled_sampling_max": 0.5,
+  "seconds": 198.7410138330015,
+  "shared_projection": true,
+  "status": "causal_shared_exact_kcode_gate",
+  "steps": 2000,
+  "trainable_parameters": 4187904,
+  "valid_tokens": 415,
+  "valid_utf8_rate": 0.0,
+  "validation_structured_loss": 0.6867195814847946
+}

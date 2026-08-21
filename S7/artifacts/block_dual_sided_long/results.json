@@ -1,0 +1,1178 @@
+{
+  "config": {
+    "dimension": 6475,
+    "hidden": 128,
+    "positions": 25,
+    "states": 259,
+    "steps": 3000
+  },
+  "dataset_audit": {
+    "available_by_language_split": {
+      "English": {
+        "test": 23915,
+        "train": 315834,
+        "validation": 30072
+      },
+      "Hindi": {
+        "test": 15125,
+        "train": 150613,
+        "validation": 14389
+      },
+      "Sindhi": {
+        "test": 20325,
+        "train": 141763,
+        "validation": 7122
+      },
+      "Telugu": {
+        "test": 7701,
+        "train": 124524,
+        "validation": 8792
+      }
+    },
+    "available_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 1018,
+          "train": 43685,
+          "validation": 343
+        },
+        "country": {
+          "test": 8335,
+          "train": 28874,
+          "validation": 8583
+        },
+        "geography": {
+          "test": 598,
+          "train": 26330,
+          "validation": 382
+        },
+        "history": {
+          "test": 2370,
+          "train": 19722,
+          "validation": 3661
+        },
+        "literature": {
+          "test": 1270,
+          "train": 37878,
+          "validation": 610
+        },
+        "mathematics": {
+          "test": 1009,
+          "train": 36474,
+          "validation": 2583
+        },
+        "music": {
+          "test": 3185,
+          "train": 20282,
+          "validation": 4860
+        },
+        "science": {
+          "test": 1148,
+          "train": 28551,
+          "validation": 5192
+        },
+        "sports": {
+          "test": 920,
+          "train": 35967,
+          "validation": 2058
+        },
+        "technology": {
+          "test": 4062,
+          "train": 38071,
+          "validation": 1800
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 599,
+          "train": 6376,
+          "validation": 662
+        },
+        "country": {
+          "test": 995,
+          "train": 10766,
+          "validation": 355
+        },
+        "geography": {
+          "test": 824,
+          "train": 27003,
+          "validation": 509
+        },
+        "history": {
+          "test": 2598,
+          "train": 13456,
+          "validation": 3002
+        },
+        "literature": {
+          "test": 980,
+          "train": 9090,
+          "validation": 3080
+        },
+        "mathematics": {
+          "test": 4510,
+          "train": 13207,
+          "validation": 213
+        },
+        "music": {
+          "test": 1479,
+          "train": 18174,
+          "validation": 1162
+        },
+        "science": {
+          "test": 1332,
+          "train": 23237,
+          "validation": 642
+        },
+        "sports": {
+          "test": 1397,
+          "train": 10078,
+          "validation": 4235
+        },
+        "technology": {
+          "test": 411,
+          "train": 19226,
+          "validation": 529
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 5556,
+          "train": 13559,
+          "validation": 538
+        },
+        "country": {
+          "test": 326,
+          "train": 22990,
+          "validation": 364
+        },
+        "geography": {
+          "test": 377,
+          "train": 24998,
+          "validation": 463
+        },
+        "history": {
+          "test": 745,
+          "train": 14845,
+          "validation": 671
+        },
+        "literature": {
+          "test": 335,
+          "train": 8041,
+          "validation": 2478
+        },
+        "mathematics": {
+          "test": 431,
+          "train": 16597,
+          "validation": 380
+        },
+        "music": {
+          "test": 352,
+          "train": 2836,
+          "validation": 265
+        },
+        "science": {
+          "test": 11289,
+          "train": 17395,
+          "validation": 255
+        },
+        "sports": {
+          "test": 366,
+          "train": 3980,
+          "validation": 438
+        },
+        "technology": {
+          "test": 548,
+          "train": 16522,
+          "validation": 1270
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 357,
+          "train": 9273,
+          "validation": 536
+        },
+        "country": {
+          "test": 1410,
+          "train": 12022,
+          "validation": 165
+        },
+        "geography": {
+          "test": 246,
+          "train": 7297,
+          "validation": 717
+        },
+        "history": {
+          "test": 604,
+          "train": 12418,
+          "validation": 520
+        },
+        "literature": {
+          "test": 163,
+          "train": 8601,
+          "validation": 772
+        },
+        "mathematics": {
+          "test": 164,
+          "train": 16220,
+          "validation": 1292
+        },
+        "music": {
+          "test": 525,
+          "train": 6724,
+          "validation": 321
+        },
+        "science": {
+          "test": 2456,
+          "train": 15940,
+          "validation": 325
+        },
+        "sports": {
+          "test": 813,
+          "train": 17387,
+          "validation": 385
+        },
+        "technology": {
+          "test": 963,
+          "train": 18642,
+          "validation": 3759
+        }
+      }
+    },
+    "corpus_documents": 400,
+    "corpus_manifest_hash": "3ac6ab20cd47f8993aa923fc2c34f503ebb1d860dc2bfc3d5189226947063b20",
+    "corpus_topics": [
+      "country",
+      "science",
+      "history",
+      "geography",
+      "literature",
+      "mathematics",
+      "technology",
+      "biology",
+      "music",
+      "sports"
+    ],
+    "discarded_cross_split_target_records": {
+      "test": 397,
+      "train": 0,
+      "validation": 393
+    },
+    "discarded_cross_split_target_records_by_language": {
+      "English": {
+        "test": 4,
+        "train": 0,
+        "validation": 6
+      },
+      "Hindi": {
+        "test": 258,
+        "train": 0,
+        "validation": 254
+      },
+      "Sindhi": {
+        "test": 15,
+        "train": 0,
+        "validation": 20
+      },
+      "Telugu": {
+        "test": 120,
+        "train": 0,
+        "validation": 113
+      }
+    },
+    "document_content_hash_leakage": false,
+    "document_inventory_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "country": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "geography": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "history": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "literature": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "mathematics": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "music": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "science": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "sports": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        },
+        "technology": {
+          "test": 1,
+          "train": 8,
+          "validation": 1
+        }
+      }
+    },
+    "document_leakage": false,
+    "eligible_after_cross_split_filter": {
+      "English": {
+        "test": 23911,
+        "train": 315834,
+        "validation": 30066
+      },
+      "Hindi": {
+        "test": 14867,
+        "train": 150613,
+        "validation": 14135
+      },
+      "Sindhi": {
+        "test": 20310,
+        "train": 141763,
+        "validation": 7102
+      },
+      "Telugu": {
+        "test": 7581,
+        "train": 124524,
+        "validation": 8679
+      }
+    },
+    "eligible_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 1018,
+          "train": 43685,
+          "validation": 343
+        },
+        "country": {
+          "test": 8335,
+          "train": 28874,
+          "validation": 8583
+        },
+        "geography": {
+          "test": 598,
+          "train": 26330,
+          "validation": 382
+        },
+        "history": {
+          "test": 2370,
+          "train": 19722,
+          "validation": 3655
+        },
+        "literature": {
+          "test": 1269,
+          "train": 37878,
+          "validation": 610
+        },
+        "mathematics": {
+          "test": 1007,
+          "train": 36474,
+          "validation": 2583
+        },
+        "music": {
+          "test": 3185,
+          "train": 20282,
+          "validation": 4860
+        },
+        "science": {
+          "test": 1147,
+          "train": 28551,
+          "validation": 5192
+        },
+        "sports": {
+          "test": 920,
+          "train": 35967,
+          "validation": 2058
+        },
+        "technology": {
+          "test": 4062,
+          "train": 38071,
+          "validation": 1800
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 590,
+          "train": 6376,
+          "validation": 647
+        },
+        "country": {
+          "test": 982,
+          "train": 10766,
+          "validation": 341
+        },
+        "geography": {
+          "test": 816,
+          "train": 27003,
+          "validation": 490
+        },
+        "history": {
+          "test": 2556,
+          "train": 13456,
+          "validation": 2937
+        },
+        "literature": {
+          "test": 966,
+          "train": 9090,
+          "validation": 3062
+        },
+        "mathematics": {
+          "test": 4434,
+          "train": 13207,
+          "validation": 213
+        },
+        "music": {
+          "test": 1441,
+          "train": 18174,
+          "validation": 1152
+        },
+        "science": {
+          "test": 1302,
+          "train": 23237,
+          "validation": 634
+        },
+        "sports": {
+          "test": 1378,
+          "train": 10078,
+          "validation": 4137
+        },
+        "technology": {
+          "test": 402,
+          "train": 19226,
+          "validation": 522
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 5553,
+          "train": 13559,
+          "validation": 524
+        },
+        "country": {
+          "test": 326,
+          "train": 22990,
+          "validation": 364
+        },
+        "geography": {
+          "test": 376,
+          "train": 24998,
+          "validation": 463
+        },
+        "history": {
+          "test": 739,
+          "train": 14845,
+          "validation": 669
+        },
+        "literature": {
+          "test": 335,
+          "train": 8041,
+          "validation": 2476
+        },
+        "mathematics": {
+          "test": 431,
+          "train": 16597,
+          "validation": 380
+        },
+        "music": {
+          "test": 352,
+          "train": 2836,
+          "validation": 264
+        },
+        "science": {
+          "test": 11285,
+          "train": 17395,
+          "validation": 255
+        },
+        "sports": {
+          "test": 366,
+          "train": 3980,
+          "validation": 438
+        },
+        "technology": {
+          "test": 547,
+          "train": 16522,
+          "validation": 1269
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 355,
+          "train": 9273,
+          "validation": 530
+        },
+        "country": {
+          "test": 1399,
+          "train": 12022,
+          "validation": 161
+        },
+        "geography": {
+          "test": 244,
+          "train": 7297,
+          "validation": 709
+        },
+        "history": {
+          "test": 588,
+          "train": 12418,
+          "validation": 513
+        },
+        "literature": {
+          "test": 163,
+          "train": 8601,
+          "validation": 767
+        },
+        "mathematics": {
+          "test": 159,
+          "train": 16220,
+          "validation": 1282
+        },
+        "music": {
+          "test": 512,
+          "train": 6724,
+          "validation": 299
+        },
+        "science": {
+          "test": 2440,
+          "train": 15940,
+          "validation": 318
+        },
+        "sports": {
+          "test": 789,
+          "train": 17387,
+          "validation": 384
+        },
+        "technology": {
+          "test": 932,
+          "train": 18642,
+          "validation": 3716
+        }
+      }
+    },
+    "exact_sample_leakage": false,
+    "max_blocks": 4,
+    "paragraph_leakage": false,
+    "quality_gates": {
+      "document_content_hash_overlap_zero": true,
+      "equal_per_language_quotas": true,
+      "every_language_present_in_test": true,
+      "exact_sample_overlap_zero": true,
+      "manifest_and_payload_hashes_valid": true,
+      "target_string_overlap_zero": true,
+      "topic_strata_quotas_satisfied": true,
+      "unicode_safe_target_boundaries": true
+    },
+    "quotas_per_language": {
+      "test": 125,
+      "train": 1000,
+      "validation": 200
+    },
+    "sampling_policy": "equal language/topic strata with deterministic within-stratum hash order",
+    "selected": {
+      "test": 500,
+      "train": 4000,
+      "validation": 800
+    },
+    "selected_by_language_split": {
+      "English": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      },
+      "Hindi": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      },
+      "Sindhi": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      },
+      "Telugu": {
+        "test": 125,
+        "train": 1000,
+        "validation": 200
+      }
+    },
+    "selected_by_language_topic_split": {
+      "English": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      },
+      "Hindi": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      },
+      "Sindhi": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      },
+      "Telugu": {
+        "biology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "country": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "geography": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "history": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "literature": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "mathematics": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "music": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "science": {
+          "test": 13,
+          "train": 100,
+          "validation": 20
+        },
+        "sports": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        },
+        "technology": {
+          "test": 12,
+          "train": 100,
+          "validation": 20
+        }
+      }
+    },
+    "source_documents": {
+      "test": 40,
+      "train": 310,
+      "validation": 40
+    },
+    "split_unit": "document",
+    "target_byte_range": [
+      25,
+      96
+    ],
+    "target_construction": {
+      "maximum_bytes": 96,
+      "minimum_bytes": 25,
+      "selection": "shortest span reaching minimum bytes",
+      "separator": "single ASCII space",
+      "unicode_safe_boundaries": true,
+      "unit": "NFC-normalized complete-token continuation span"
+    },
+    "target_statistics_by_language_split": {
+      "English": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 38,
+          "maximum_words": 7,
+          "mean_bytes": 28.528,
+          "mean_words": 4.704,
+          "minimum_bytes": 25,
+          "minimum_words": 2
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 39,
+          "maximum_words": 8,
+          "mean_bytes": 28.242,
+          "mean_words": 4.681,
+          "minimum_bytes": 25,
+          "minimum_words": 2
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 37,
+          "maximum_words": 7,
+          "mean_bytes": 28.44,
+          "mean_words": 4.65,
+          "minimum_bytes": 25,
+          "minimum_words": 3
+        }
+      },
+      "Hindi": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 53,
+          "maximum_words": 6,
+          "mean_bytes": 32.296,
+          "mean_words": 2.496,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 62,
+          "maximum_words": 5,
+          "mean_bytes": 32.296,
+          "mean_words": 2.438,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 53,
+          "maximum_words": 6,
+          "mean_bytes": 32.545,
+          "mean_words": 2.435,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        }
+      },
+      "Sindhi": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 43,
+          "maximum_words": 5,
+          "mean_bytes": 29.832,
+          "mean_words": 3.352,
+          "minimum_bytes": 25,
+          "minimum_words": 2
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 46,
+          "maximum_words": 8,
+          "mean_bytes": 29.727,
+          "mean_words": 3.538,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 41,
+          "maximum_words": 6,
+          "mean_bytes": 29.705,
+          "mean_words": 3.545,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        }
+      },
+      "Telugu": {
+        "test": {
+          "examples": 125,
+          "maximum_bytes": 58,
+          "maximum_words": 5,
+          "mean_bytes": 37.0,
+          "mean_words": 1.848,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "train": {
+          "examples": 1000,
+          "maximum_bytes": 70,
+          "maximum_words": 7,
+          "mean_bytes": 38.114,
+          "mean_words": 1.9,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        },
+        "validation": {
+          "examples": 200,
+          "maximum_bytes": 79,
+          "maximum_words": 7,
+          "mean_bytes": 37.36,
+          "mean_words": 2.035,
+          "minimum_bytes": 25,
+          "minimum_words": 1
+        }
+      }
+    },
+    "target_string_leakage": false,
+    "topic_quotas_per_language": {
+      "test": {
+        "biology": 12,
+        "country": 13,
+        "geography": 13,
+        "history": 13,
+        "literature": 13,
+        "mathematics": 12,
+        "music": 12,
+        "science": 13,
+        "sports": 12,
+        "technology": 12
+      },
+      "train": {
+        "biology": 100,
+        "country": 100,
+        "geography": 100,
+        "history": 100,
+        "literature": 100,
+        "mathematics": 100,
+        "music": 100,
+        "science": 100,
+        "sports": 100,
+        "technology": 100
+      },
+      "validation": {
+        "biology": 20,
+        "country": 20,
+        "geography": 20,
+        "history": 20,
+        "literature": 20,
+        "mathematics": 20,
+        "music": 20,
+        "science": 20,
+        "sports": 20,
+        "technology": 20
+      }
+    }
+  },
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "experiment": "matched multi-block fixed dual-sided K-code pilot",
+  "note": "Block-level pilot; not yet a full SOTA language-model claim.",
+  "results": {
+    "fixed": {
+      "blocks": 521,
+      "loss_bearing_block_exact": 0.0,
+      "parameters": 927872,
+      "test_nll": 3.296161413192749,
+      "training_seconds": 15.666472833996522
+    },
+    "normal": {
+      "blocks": 521,
+      "loss_bearing_block_exact": 0.0,
+      "parameters": 961024,
+      "test_nll": 2.29533052444458,
+      "training_seconds": 11.696532874993864
+    }
+  }
+}

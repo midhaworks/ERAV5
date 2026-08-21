@@ -1177,7 +1177,7 @@
     "generated": {
       "exact_match": 0.0,
       "examples": 500,
-      "examples_per_second": 309.1561143313498,
+      "examples_per_second": 313.2354345128976,
       "macro_average": {
         "exact_match": 0.0,
         "missing_eos_rate": 0.038000000000000006,
@@ -1348,7 +1348,7 @@
       "exact_count": 0,
       "exact_match": 0.0,
       "examples": 500,
-      "examples_per_second": 629.3495266282597,
+      "examples_per_second": 627.3791062725305,
       "macro_average": {
         "exact_match": 0.0,
         "missing_eos_rate": 0.038,
@@ -1409,7 +1409,7 @@
       "exact_count": 5,
       "exact_match": 0.01,
       "examples": 500,
-      "examples_per_second": 924.4342758970504,
+      "examples_per_second": 928.1324611630928,
       "macro_average": {
         "exact_match": 0.01,
         "missing_eos_rate": 0.022,
@@ -1496,7 +1496,7 @@
     "generated": {
       "exact_match": 0.0,
       "examples": 500,
-      "examples_per_second": 323.22163202636557,
+      "examples_per_second": 325.9601686476942,
       "macro_average": {
         "exact_match": 0.0,
         "missing_eos_rate": 0.064,
@@ -1616,8 +1616,8 @@
     "batch_size": 64,
     "d_model": 200,
     "d_slot": 8,
-    "fallback_seconds": 23.796519499999704,
-    "rke_seconds": 30.87706816699938,
+    "fallback_seconds": 23.72157774999505,
+    "rke_seconds": 30.171552917003282,
     "sampling": {
       "block_start": 13,
       "interior_byte": 46,

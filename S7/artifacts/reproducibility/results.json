@@ -1,0 +1,17 @@
+{
+  "config": {
+    "codec": "FullByteCodec",
+    "eos_id": 1,
+    "format_version": 1,
+    "max_bytes": 256,
+    "pad_id": 0,
+    "states": 258
+  },
+  "manifest_hash": "27e61ed7ccbe66028ab9d61a5f1fb149cd6a61dfc367bf872c162083ff4967d6",
+  "overall_pass": true,
+  "payload_count": 6,
+  "protocol": "codec determinism/serialization audit",
+  "repeat_hashes_match": true,
+  "serialized_codes_reload_exactly": true,
+  "tamper_changes_manifest_hash": true
+}

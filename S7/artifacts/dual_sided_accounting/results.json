@@ -1,0 +1,57 @@
+{
+  "baseline": {
+    "tied_shared_parameters": 536870912,
+    "untied_input_parameters": 536870912,
+    "untied_output_parameters": 536870912
+  },
+  "inputs": {
+    "code_dim": 32,
+    "code_states": 258,
+    "model_dim": 4096,
+    "vocab_size": 131072
+  },
+  "interpretation": "Dual-sided savings approximately double only against an untied baseline; tied baselines have one shared Vxd matrix.",
+  "kronecker": {
+    "fixed_codebook_parameters": 0,
+    "kronecker_dimension": 8256,
+    "shared_projection_parameters": 33816576,
+    "tied_parameters_for_two_sides": 33816576,
+    "untied_parameters_for_two_sides": 67633152,
+    "vocab_dependent_parameters": 0
+  },
+  "savings": {
+    "tied_parameters_removed": 503054336,
+    "tied_reduction_fraction": 0.93701171875,
+    "untied_input_plus_output_parameters_removed": 1006108672,
+    "untied_reduction_fraction": 0.93701171875
+  },
+  "vocabulary_sweep": [
+    {
+      "shared_k_projection_parameters": 33816576,
+      "standard_matrix_parameters": 131072000,
+      "tied_parameters_removed": 97255424,
+      "tied_reduction_fraction": 0.742,
+      "untied_input_plus_output_parameters_removed": 194510848,
+      "untied_reduction_fraction": 0.742,
+      "vocab_size": 32000
+    },
+    {
+      "shared_k_projection_parameters": 33816576,
+      "standard_matrix_parameters": 536870912,
+      "tied_parameters_removed": 503054336,
+      "tied_reduction_fraction": 0.93701171875,
+      "untied_input_plus_output_parameters_removed": 1006108672,
+      "untied_reduction_fraction": 0.93701171875,
+      "vocab_size": 131072
+    },
+    {
+      "shared_k_projection_parameters": 33816576,
+      "standard_matrix_parameters": 4096000000,
+      "tied_parameters_removed": 4062183424,
+      "tied_reduction_fraction": 0.991744,
+      "untied_input_plus_output_parameters_removed": 8124366848,
+      "untied_reduction_fraction": 0.991744,
+      "vocab_size": 1000000
+    }
+  ]
+}

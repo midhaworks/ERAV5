@@ -1,0 +1,27 @@
+{
+  "added_vocabulary_parameters": 0,
+  "batch_size": 8,
+  "checkpoint": "artifacts/tiny_kcode_candidate_finetune/model.pt",
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "learning_rate": 0.0001,
+  "loss_first_last": [
+    2.461538314819336,
+    2.296513557434082
+  ],
+  "random_candidates": 128,
+  "rank_loss_first_last": [
+    5.589590549468994,
+    3.575089693069458
+  ],
+  "rank_weight": 0.25,
+  "seconds": 121.4772976670065,
+  "source_checkpoint": "artifacts/tiny_exact_kcode_model/model.pt",
+  "status": "candidate_aware_kcode_finetune",
+  "steps": 2000,
+  "structured_loss_first_last": [
+    1.0641406774520874,
+    1.4027410745620728
+  ],
+  "trainable_parameters": 3784448
+}

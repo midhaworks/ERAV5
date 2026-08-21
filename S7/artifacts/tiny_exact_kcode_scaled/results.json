@@ -1,0 +1,18 @@
+{
+  "d_model": 768,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "decoded_token_accuracy": 0.10602409638554217,
+  "device": "mps",
+  "heads": 12,
+  "layers": 4,
+  "loss_first_last": [
+    5.609617233276367,
+    1.7027795314788818
+  ],
+  "seconds": 806.9628094999935,
+  "status": "scaled_from_scratch_exact_kcode_gate",
+  "steps": 10000,
+  "trainable_parameters": 34966272,
+  "valid_tokens": 415,
+  "validation_structured_loss": 1.2812050580978394
+}

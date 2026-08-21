@@ -1,0 +1,18 @@
+{
+  "absolute_accuracy_gain": 0.020293122886133032,
+  "constrained_correct": 1073,
+  "constrained_token_accuracy": 0.20161593385945134,
+  "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
+  "device": "mps",
+  "examples": 500,
+  "length_normalization_alpha": 0.0,
+  "seconds": 25.61061541698291,
+  "split": "test",
+  "status": "fixed_vocab_constrained_kcode_decode",
+  "tokens": 5322,
+  "tokens_per_second": 207.80444094918974,
+  "trainable_decoder_parameters": 0,
+  "unconstrained_correct": 965,
+  "unconstrained_exact_code_accuracy": 0.1813228109733183,
+  "vocabulary_candidates": 151643
+}

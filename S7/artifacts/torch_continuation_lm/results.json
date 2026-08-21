@@ -1192,35 +1192,35 @@
   "dataset_hash": "b6143b49346698a354c3f466d5393bc2fc8d99cfb3fdd754df29f807bca89cc5",
   "decode_benchmark": {
     "fallback": {
-      "maximum_examples_per_second": 1052.5616843982489,
-      "median_examples_per_second": 1049.0100099001525,
-      "minimum_examples_per_second": 1045.3952430369202,
+      "maximum_examples_per_second": 1026.8922543760955,
+      "median_examples_per_second": 1021.1858608853352,
+      "minimum_examples_per_second": 1017.3293592223494,
       "repeats": 5,
       "samples_examples_per_second": [
-        1050.9581592765778,
-        1052.5616843982489,
-        1049.0100099001525,
-        1046.4629552260717,
-        1045.3952430369202
+        1021.7197177532502,
+        1021.1858608853352,
+        1019.1009229948169,
+        1017.3293592223494,
+        1026.8922543760955
       ]
     },
     "rke": {
-      "maximum_examples_per_second": 999.8126191102032,
-      "median_examples_per_second": 993.2969007427903,
-      "minimum_examples_per_second": 987.8958066393274,
+      "maximum_examples_per_second": 979.4750993082891,
+      "median_examples_per_second": 974.7994039129225,
+      "minimum_examples_per_second": 967.6319843764662,
       "repeats": 5,
       "samples_examples_per_second": [
-        987.8958066393274,
-        999.8126191102032,
-        993.2969007427903,
-        991.2869996657428,
-        996.2100860961059
+        967.6319843764662,
+        979.4750993082891,
+        973.3496060183126,
+        978.265627956122,
+        974.7994039129225
       ]
     }
   },
   "efficiency": {
     "parameter_reduction": 0.10299295774647887,
-    "throughput_ratio": 0.9468898212299566
+    "throughput_ratio": 0.9545758918634095
   },
   "experiment": "causal full-sequence learned continuation",
   "fallback": {
@@ -1243,7 +1243,7 @@
       "exact_count": 18,
       "exact_match": 0.036,
       "examples": 500,
-      "examples_per_second": 1045.8270057352572,
+      "examples_per_second": 1014.627289085464,
       "macro_average": {
         "exact_match": 0.036000000000000004,
         "missing_eos_rate": 0.0,
@@ -1409,14 +1409,14 @@
       ],
       "initial_shared_state_hash": "a40f9c3e8b1715e3e8d3534a43809c4cedc5eb4903cfe94171883b3a4ab25068",
       "learning_rate": 0.002,
-      "seconds": 78.01970779099793,
+      "seconds": 76.4558116249973,
       "steps": 3000
     },
     "validation_generated": {
       "exact_count": 40,
       "exact_match": 0.05,
       "examples": 800,
-      "examples_per_second": 1039.0167572483765,
+      "examples_per_second": 1017.0428838334889,
       "macro_average": {
         "exact_match": 0.05,
         "missing_eos_rate": 0.0,
@@ -1549,7 +1549,7 @@
       "exact_count": 22,
       "exact_match": 0.044,
       "examples": 500,
-      "examples_per_second": 951.5207323296239,
+      "examples_per_second": 983.4498509264989,
       "macro_average": {
         "exact_match": 0.044,
         "missing_eos_rate": 0.0,
@@ -1715,14 +1715,14 @@
       ],
       "initial_shared_state_hash": "a40f9c3e8b1715e3e8d3534a43809c4cedc5eb4903cfe94171883b3a4ab25068",
       "learning_rate": 0.002,
-      "seconds": 77.36323366699798,
+      "seconds": 76.1487229589984,
       "steps": 3000
     },
     "validation_generated": {
       "exact_count": 40,
       "exact_match": 0.05,
       "examples": 800,
-      "examples_per_second": 961.0803023106641,
+      "examples_per_second": 958.2249358366536,
       "macro_average": {
         "exact_match": 0.05,
         "missing_eos_rate": 0.0,

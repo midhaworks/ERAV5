@@ -1,0 +1,30 @@
+{
+  "artifact_hash": "d2e9c8197514727e7ed48bce7d6b72ed92620202afb8fb28c49cc413700e0d95",
+  "checks": {
+    "all_byte_values": true,
+    "exhaustive_length_2": true,
+    "random_byte_strings": true,
+    "unicode_scalar_values": true
+  },
+  "codec": {
+    "all_256_bytes": true,
+    "eos": true,
+    "feature_dim": 1290,
+    "slots": 5,
+    "states": 258
+  },
+  "compressed_projection_collision": {
+    "collision_found": true,
+    "projection": "sum of coordinates",
+    "warning": "compressed projection is not a completeness proof"
+  },
+  "elapsed_seconds": 0.8086736670084065,
+  "orthogonal_projection": {
+    "all_passed": true,
+    "deterministic": true,
+    "inverse": "transpose",
+    "matrix": "reversal permutation"
+  },
+  "proof_scope": "all byte strings up to length 4 are covered structurally by EOS plus disjoint position coordinates; exhaustive length <=2 and 10,000 random longer checks are materialized",
+  "protocol": "reversibility design checks"
+}

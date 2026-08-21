@@ -1,0 +1,12 @@
+{
+  "batch": 64,
+  "cached_table_bytes": 271746048,
+  "cached_table_parameters": 135873024,
+  "device": "mps",
+  "iterations": 100,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "ms_per_batch": 0.24438958993414417,
+  "sequence": 32,
+  "status": "materialized_kcode_inference_benchmark",
+  "tokens_per_second": 8380062.344520795
+}

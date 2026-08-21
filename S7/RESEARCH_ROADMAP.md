@@ -66,11 +66,15 @@ score(y | h) = Σᵢ unary(yᵢ, h, i) + Σᵢ transition(yᵢ₋₁, yᵢ, h, i
 ```
 
 Hard transition masks encode the UTF-8 finite-state machine, legal EOS placement and CONT
-rules. Learned transitions use a positive low-rank factorization, so sum-product training
-can be implemented in roughly `O(block_length × states × rank)` rather than enumerating a
-vocabulary. Exact normalization yields a real sequence NLL. Viterbi or a small exact/beam
-decoder returns the best valid byte string. Parameters depend on 259 states and the chosen
-rank—not on one million possible token strings.
+rules. Learned transitions use a low-rank factorization (signed factors are the primary
+variant; positive factors remain an ablation), reducing learned
+transition parameters from `states²` to `2 × states × rank`. The exact reference
+implementation still performs log-sum-exp over valid state transitions (`O(block_length ×
+states²)` in the worst case); low-rank logits alone do **not** make CRF normalization
+`O(states × rank)`. A future structured-kernel approximation may reduce this cost, but it
+must be measured against exact NLL. Exact normalization yields a real sequence NLL. Viterbi
+or a small exact/beam decoder returns the best valid byte string. Parameters depend on 259
+states and the chosen rank—not on one million possible token strings.
 
 Example: if a unary draft assigns high scores to the leading byte of a three-byte Telugu
 character, the UTF-8 automaton removes EOS and ASCII from the next transition; learned

@@ -1,0 +1,31 @@
+{
+  "all_malformed_rejected_by_strict_decoder": true,
+  "all_valid_roundtrips": true,
+  "arbitrary_invalid_bytes_remain_lossless_at_byte_layer": true,
+  "constrained_decoder_output": [
+    62
+  ],
+  "constrained_decoder_valid_utf8": true,
+  "malformed_cases": [
+    "overlong_slash",
+    "overlong_nul",
+    "truncated_2",
+    "truncated_3",
+    "truncated_4",
+    "surrogate",
+    "bad_continuation",
+    "invalid_ff"
+  ],
+  "overall_pass": true,
+  "protocol": "UTF-8 adversarial/security audit",
+  "valid_unicode_roundtrips": {
+    "": true,
+    "\u0000": true,
+    "é": true,
+    "अ": true,
+    "తెలుగు": true,
+    "한글": true,
+    "𐀀": true,
+    "🦄": true
+  }
+}

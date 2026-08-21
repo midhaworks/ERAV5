@@ -1,0 +1,24 @@
+{
+  "batch": 64,
+  "device": "mps",
+  "iterations": 100,
+  "kcode": {
+    "ms_per_batch": 40.70790666999528,
+    "seconds": 4.070790666999528,
+    "tokens_per_second": 50309.63681336939
+  },
+  "kcode_parameter_bytes": 14680064,
+  "kcode_parameters": 7340032,
+  "kcode_speed_ratio": 0.002360516121920572,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "normal": {
+    "ms_per_batch": 0.09609166998416185,
+    "seconds": 0.009609166998416185,
+    "tokens_per_second": 21312981.65946703
+  },
+  "normal_parameter_bytes": 272269312,
+  "normal_parameters": 136134656,
+  "parameter_reduction": 0.9460825610783488,
+  "sequence": 32,
+  "status": "embedding_lookup_benchmark"
+}
