@@ -59,6 +59,27 @@ valid-token masks.
 human-readable shift strings, mask counts, boundary losses, perplexity, parameter counts,
 memory ratio and two-head training losses. No result is hard-coded in the evidence files.
 
+## Representative execution log
+
+The complete generated log is [`S9/artifacts/run.log`](artifacts/run.log). Its important
+sequence is:
+
+```text
+[PASS] corpus_loaded documents=4
+tokens.shape=(4, 6)  # batch, sequence; integer token ids
+shift strings: INPUT  cats | chase | small | mice
+shift strings: TARGET chase | small | mice | <eos>
+padding contribution count: unmasked=20 masked=18
+packed loss before_boundary_mask=3.047885 after_boundary_mask=3.142696 contributing=8
+untrained perplexity=27.3055 vocabulary_size=21 contributing_tokens=18
+memory ordinary_peak_logits_bytes=21504 chunked_peak_logits_bytes=2688 ratio=8.00x
+part2 losses first_head=0.000127 second_head=0.000079 sum=0.000206
+[PASS] artifacts_written
+```
+
+This excerpt is for quick human inspection; the generated log and JSON evidence bundle are
+the authoritative run record.
+
 The expected sanity checks are that untrained perplexity is close to the vocabulary size,
 masked padding contributes fewer tokens than the unmasked calculation, the packed boundary
 removes exactly one loss term, and both trained losses decrease. A failure raises an
