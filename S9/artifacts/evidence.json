@@ -1,0 +1,86 @@
+{
+  "device": "cpu",
+  "evidence": {
+    "head_parameters": {
+      "result": "PASS",
+      "tied": 0,
+      "untied": 1008
+    },
+    "memory": {
+      "chunked_peak_logits_bytes": 2688,
+      "ordinary_peak_logits_bytes": 21504,
+      "ratio": 8.0,
+      "result": "PASS"
+    },
+    "packed_boundary": {
+      "boundary_target_index": 4,
+      "loss_after": 3.1426961421966553,
+      "loss_before": 3.047884702682495,
+      "masked_boundary_count": 1,
+      "result": "PASS"
+    },
+    "padding_mask": {
+      "loss_masked": 3.307088613510132,
+      "loss_unmasked": 3.335986614227295,
+      "masked_count": 18,
+      "result": "PASS",
+      "unmasked_count": 20
+    },
+    "perplexity": {
+      "result": "PASS",
+      "value": 27.305513381958008,
+      "vocabulary_size": 21
+    },
+    "shift_correct": {
+      "evidence": {
+        "inputs": [
+          "cats",
+          "chase",
+          "small",
+          "mice"
+        ],
+        "targets": [
+          "chase",
+          "small",
+          "mice",
+          "<eos>"
+        ]
+      },
+      "result": "PASS"
+    },
+    "two_heads": {
+      "first_loss_final": 0.00012738147052004933,
+      "first_loss_initial": 3.3194189071655273,
+      "result": "PASS",
+      "second_horizon": "t+2",
+      "second_loss_final": 7.89700643508695e-05,
+      "second_loss_initial": 3.126112222671509,
+      "sum_final": 0.00020635153487091884
+    }
+  },
+  "model_parameters": 34464,
+  "seed": 9042,
+  "vocabulary": [
+    "<pad>",
+    "<unk>",
+    "<eos>",
+    "birds",
+    "bright",
+    "cats",
+    "chase",
+    "clean",
+    "data",
+    "from",
+    "learn",
+    "mice",
+    "models",
+    "next",
+    "observe",
+    "predict",
+    "robots",
+    "skies",
+    "small",
+    "the",
+    "token"
+  ]
+}

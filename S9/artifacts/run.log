@@ -1,0 +1,23 @@
+[PASS] corpus_loaded documents=4
+tokens.shape=(4, 6)  # batch, sequence; integer token ids
+attention_mask.shape=(4, 6)  # batch, sequence; true for non-padding
+shift strings: INPUT  cats | chase | small | mice
+shift strings: TARGET chase | small | mice | <eos>
+hidden.shape=(4, 6, 48)  # batch, sequence, d_model
+logits_head1.shape=(4, 6, 21)  # batch, sequence, vocabulary
+logits_head2.shape=(4, 6, 21)  # batch, sequence, vocabulary
+tokens[:, 1:].shape=(4, 5)  # next-token targets
+padding contribution count: unmasked=20 masked=18
+packed_ids.shape=(1, 12)  # one packed sequence containing document 1 and document 2
+packed_hidden.shape=(1, 12, 48)  # packed batch, sequence, d_model
+packed_logits.shape=(1, 12, 21)  # packed batch, sequence, vocabulary
+packed_targets.shape=(1, 11)  # shifted packed next-token targets
+packed boundary target string=birds
+packed loss before_boundary_mask=3.047885 after_boundary_mask=3.142696 contributing=8
+untrained perplexity=27.3055 vocabulary_size=21 contributing_tokens=18
+head params tied=0 untied=1008
+memory ordinary_peak_logits_bytes=21504 chunked_peak_logits_bytes=2688 ratio=8.00x
+head1_targets_t_plus_1.shape=(4, 5)  # batch, sequence-1; target t+1
+head2_targets_t_plus_2.shape=(4, 4)  # batch, sequence-2; target t+2
+part2 losses first_head=0.000127 second_head=0.000079 sum=0.000206
+[PASS] artifacts_written
