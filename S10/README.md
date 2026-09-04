@@ -70,3 +70,20 @@ to `0.051076`. The second horizon starts slightly lower but finishes slightly hi
 this tiny corpus, an observed result rather than a universal claim. The latest diagnostic
 MFU is recorded in `evidence.json` under the stated one-core `1e9 FLOP/s` assumption;
 timing can vary by host, and it should not be compared directly with accelerator MFU.
+
+## Assignment coverage checklist
+
+| Requirement | Evidence |
+|---|---|
+| Tensor shapes and dimension meanings | Shape lines in `artifacts/run.log` |
+| String-level `t` → `t+1` verification | INPUT/TARGET strings in `run.log`; `test_string_shift_is_forward` |
+| Hand gradient verification | Finite difference versus `backward()` for `embedding.weight[2,0]` |
+| Deliberately broken accumulation | Unequal unpadded micro-batches with 4 and 7 targets |
+| Curves shown together | `artifacts/accumulation_curves.png` |
+| Per-step gradient norms and movement event | `artifacts/grad_trace.json` and `grad_norm_before_loss_step` |
+| MFU with honest assumptions and 40% interpretation | `evidence.json::mfu` and README explanation |
+| FP32/BF16/FP8 E4M3 bits for 0.1 | Bit table and `evidence.json::float_bits` |
+| Training-format choice and rationale | BF16 activations plus FP32 master weights recommendation |
+| `t+2` second head and separate losses | `head2`, `two_horizon` evidence, and `run.log` |
+| Runnable implementation and notebook | `run_demo.py` and `S10_demo.ipynb` |
+| Write-up and generated review records | This README, `run.log`, and `evidence.json` |
