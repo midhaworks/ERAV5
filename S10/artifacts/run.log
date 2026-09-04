@@ -1,0 +1,22 @@
+[PASS] run_started
+tokens.shape=(4, 9)  # batch, sequence length; integer token ids
+hidden.shape=(4, 9, 32)  # batch, sequence length, d_model; model states
+logits.shape=(4, 9, 26)  # batch, sequence length, vocabulary classes
+targets.shape=(4, 8)  # batch, sequence length minus one; next token
+loss_input.shape=(32, 26)  # flattened causal positions, vocabulary
+strings INPUT: the quick brown fox jumps over the dog
+strings TARGET: quick brown fox jumps over the dog <eos>
+untrained nll=3.458631 perplexity=31.773436 vocabulary_size=26 contributing_tokens=26
+gradient check backward=-0.00305506 finite_difference=-0.00309944 error=0.00004438
+accumulation micro_counts=[4, 7] first_broken=3.326144 first_correct=3.331689
+train tokens.shape=(4, 9)  # batch, sequence length; integer token ids
+train hidden.shape=(4, 9, 32)  # batch, sequence length, d_model; model states
+train logits.shape=(4, 9, 26)  # batch, sequence length, vocabulary classes
+train targets.shape=(4, 8)  # batch, sequence length minus one; next token
+train loss_input.shape=(32, 26)  # flattened causal positions, vocabulary
+grad_norm_before_loss step=24 prior=23 norm_delta=-0.007590 loss_delta=-0.000271
+head1_targets_t_plus_1.shape=(4, 8)  # batch, sequence length minus one
+head2_targets_t_plus_2.shape=(4, 7)  # batch, sequence length minus two
+head2_logits.shape=(4, 9, 26)  # batch, sequence length, vocabulary classes
+part2 losses first_head_initial=3.387107 first_head_final=0.054537 second_head_initial=3.284280 second_head_final=0.064108 sum_final=0.118645
+MFU estimated=45.914412% assumed_peak=1.0e+09 FLOP/s

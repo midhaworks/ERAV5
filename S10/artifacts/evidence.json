@@ -1,0 +1,328 @@
+{
+  "accumulation": {
+    "plot": "accumulation_curves.png",
+    "rows": [
+      {
+        "broken_average_of_averages": 3.3261436223983765,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 3.3316893577575684,
+        "micro_losses": [
+          3.305809259414673,
+          3.34647798538208
+        ],
+        "step": 0
+      },
+      {
+        "broken_average_of_averages": 3.2278518676757812,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 3.24140680919994,
+        "micro_losses": [
+          3.177791118621826,
+          3.2779126167297363
+        ],
+        "step": 1
+      },
+      {
+        "broken_average_of_averages": 3.1309388875961304,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 3.1522405364296655,
+        "micro_losses": [
+          3.0517680644989014,
+          3.2101097106933594
+        ],
+        "step": 2
+      },
+      {
+        "broken_average_of_averages": 3.0355582237243652,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 3.0643188519911333,
+        "micro_losses": [
+          2.9279677867889404,
+          3.14314866065979
+        ],
+        "step": 3
+      },
+      {
+        "broken_average_of_averages": 2.9418632984161377,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 2.977766838940707,
+        "micro_losses": [
+          2.806617021560669,
+          3.0771095752716064
+        ],
+        "step": 4
+      },
+      {
+        "broken_average_of_averages": 2.849998116493225,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 2.892696337266402,
+        "micro_losses": [
+          2.6879324913024902,
+          3.01206374168396
+        ],
+        "step": 5
+      },
+      {
+        "broken_average_of_averages": 2.7600901126861572,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 2.8091973174702036,
+        "micro_losses": [
+          2.5721096992492676,
+          2.948070526123047
+        ],
+        "step": 6
+      },
+      {
+        "broken_average_of_averages": 2.6722477674484253,
+        "contributing_tokens": [
+          4,
+          7
+        ],
+        "correct_token_weighted": 2.727335821498524,
+        "micro_losses": [
+          2.4593214988708496,
+          2.885174036026001
+        ],
+        "step": 7
+      }
+    ]
+  },
+  "float_bits": {
+    "0.1": {
+      "bf16": {
+        "bits": "0 01111011 1001101",
+        "hex": "0x3dcd",
+        "value": 0.10009765625
+      },
+      "fp32": {
+        "bits": "0 01111011 10011001100110011001101",
+        "hex": "0x3dcccccd",
+        "value": 0.10000000149011612
+      },
+      "fp8_e4m3": {
+        "assumption": "E4M3FN, bias 7",
+        "bits": "0 0011 101",
+        "hex": "0x1d",
+        "value": 0.1015625
+      }
+    },
+    "training_choice": "bf16 for suitable accelerator training; fp32 master weights/accumulation for stability; fp8 only with calibrated kernels and loss scaling"
+  },
+  "grad_norm_before_loss_step": 24,
+  "gradient_check": {
+    "absolute_error": 4.438287578523159e-05,
+    "backward": -0.003055058652535081,
+    "epsilon": 0.001,
+    "finite_difference": -0.0030994415283203125,
+    "parameter": "embedding.weight[2,0]",
+    "result": "PASS"
+  },
+  "gradient_trace": [
+    {
+      "grad_norm": 0.8866835832595825,
+      "loss": 3.2179207801818848,
+      "step": 0
+    },
+    {
+      "grad_norm": 0.7306427359580994,
+      "loss": 2.3825557231903076,
+      "step": 1
+    },
+    {
+      "grad_norm": 0.6513636112213135,
+      "loss": 1.7664809226989746,
+      "step": 2
+    },
+    {
+      "grad_norm": 0.5979505777359009,
+      "loss": 1.277099609375,
+      "step": 3
+    },
+    {
+      "grad_norm": 0.5278806686401367,
+      "loss": 0.8752796649932861,
+      "step": 4
+    },
+    {
+      "grad_norm": 0.40983226895332336,
+      "loss": 0.5602448582649231,
+      "step": 5
+    },
+    {
+      "grad_norm": 0.26556968688964844,
+      "loss": 0.3482881188392639,
+      "step": 6
+    },
+    {
+      "grad_norm": 0.16143345832824707,
+      "loss": 0.22355985641479492,
+      "step": 7
+    },
+    {
+      "grad_norm": 0.1006588563323021,
+      "loss": 0.15391701459884644,
+      "step": 8
+    },
+    {
+      "grad_norm": 0.06696128100156784,
+      "loss": 0.11497153341770172,
+      "step": 9
+    },
+    {
+      "grad_norm": 0.043133173137903214,
+      "loss": 0.09253280609846115,
+      "step": 10
+    },
+    {
+      "grad_norm": 0.027757719159126282,
+      "loss": 0.07940852642059326,
+      "step": 11
+    },
+    {
+      "grad_norm": 0.027814660221338272,
+      "loss": 0.07165856659412384,
+      "step": 12
+    },
+    {
+      "grad_norm": 0.02527501806616783,
+      "loss": 0.06664954870939255,
+      "step": 13
+    },
+    {
+      "grad_norm": 0.013304468244314194,
+      "loss": 0.06316636502742767,
+      "step": 14
+    },
+    {
+      "grad_norm": 0.01434793509542942,
+      "loss": 0.060931701213121414,
+      "step": 15
+    },
+    {
+      "grad_norm": 0.021073825657367706,
+      "loss": 0.059445712715387344,
+      "step": 16
+    },
+    {
+      "grad_norm": 0.014564565382897854,
+      "loss": 0.0581916943192482,
+      "step": 17
+    },
+    {
+      "grad_norm": 0.005736328661441803,
+      "loss": 0.05725812539458275,
+      "step": 18
+    },
+    {
+      "grad_norm": 0.015721037983894348,
+      "loss": 0.056699488312006,
+      "step": 19
+    },
+    {
+      "grad_norm": 0.015387486666440964,
+      "loss": 0.0561935156583786,
+      "step": 20
+    },
+    {
+      "grad_norm": 0.004519377835094929,
+      "loss": 0.05570939928293228,
+      "step": 21
+    },
+    {
+      "grad_norm": 0.010535935871303082,
+      "loss": 0.05543568357825279,
+      "step": 22
+    },
+    {
+      "grad_norm": 0.01444079726934433,
+      "loss": 0.055226169526576996,
+      "step": 23
+    },
+    {
+      "grad_norm": 0.006850651931017637,
+      "loss": 0.05495534464716911,
+      "step": 24
+    }
+  ],
+  "mfu": {
+    "assumed_peak_flops": 1000000000.0,
+    "elapsed_seconds": 0.03202262497507036,
+    "estimated_training_flops": 14703000,
+    "honest_note": "6*parameter*tokens is a rough dense-transformer estimate; the one-core CPU peak is an assumption, so this is a diagnostic lower-bound estimate, not a vendor benchmark.",
+    "mfu": 0.45914412111581415,
+    "mfu_percent": 45.91441211158141,
+    "parameters": 3770,
+    "steps": 25,
+    "tokens_per_step": 26
+  },
+  "seed": 1010,
+  "shapes": [
+    "tokens.shape=(4, 9)  # batch, sequence length; integer token ids",
+    "hidden.shape=(4, 9, 32)  # batch, sequence length, d_model; model states",
+    "logits.shape=(4, 9, 26)  # batch, sequence length, vocabulary classes",
+    "targets.shape=(4, 8)  # batch, sequence length minus one; next token",
+    "loss_input.shape=(32, 26)  # flattened causal positions, vocabulary"
+  ],
+  "two_horizon": {
+    "first_loss_final": 0.05453719198703766,
+    "first_loss_initial": 3.3871073722839355,
+    "second_loss_final": 0.06410825252532959,
+    "second_loss_initial": 3.284280300140381,
+    "sum_final": 0.11864544451236725
+  },
+  "untrained_perplexity": {
+    "contributing_tokens": 26,
+    "nll": 3.4586305618286133,
+    "value": 31.773435592651367,
+    "vocabulary_size": 26
+  },
+  "vocabulary": [
+    "<pad>",
+    "<eos>",
+    "brown",
+    "bugs",
+    "careful",
+    "data",
+    "dog",
+    "fox",
+    "from",
+    "happened",
+    "hidden",
+    "jumps",
+    "learns",
+    "loops",
+    "measurements",
+    "model",
+    "over",
+    "quick",
+    "real",
+    "report",
+    "reveal",
+    "should",
+    "small",
+    "the",
+    "training",
+    "what"
+  ]
+}
