@@ -1,0 +1,6 @@
+[PASS] run_started
+adam hand/PyTorch max errors {"m": 3.0654072787072995e-09, "m_hat": 7.485549263774871e-09, "step_size": 3.7936842469527e-11, "v": 1.060136182941436e-11, "v_hat": 2.5379353271737237e-09}
+bias correction difference stops mattering after step=3927
+update/weight ratios logged layers=['net.0.weight.update_to_weight', 'net.0.bias.update_to_weight', 'net.2.weight.update_to_weight', 'net.2.bias.update_to_weight'] warmup_stops_changing_at_step=20
+schedule step=200 cosine_loss=0.03296839 wsd_loss=0.02065998 keep=WSD
+lr minima={"1024": {"final_loss": 0.03434286266565323, "learning_rate": 0.003, "steps": 60, "width": 1024}, "256": {"final_loss": 0.05584237724542618, "learning_rate": 0.003, "steps": 60, "width": 256}, "512": {"final_loss": 0.04584221541881561, "learning_rate": 0.003, "steps": 60, "width": 512}} width4096_choice=0.003 confidence=low
