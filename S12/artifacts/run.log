@@ -1,0 +1,7 @@
+[PASS] virtual_ranks_created count=32
+[PASS] real_model_run parameters=263296 steps=3 final_loss=0.971931
+ZeRO-0 memory_mib_per_rank=4.0176 communication_mib=0.0000 compute_flops=50552832
+ZeRO-1 memory_mib_per_rank=2.0716 communication_mib=1.9460 compute_flops=50552832
+ZeRO-2 memory_mib_per_rank=1.0986 communication_mib=1.9460 compute_flops=50552832
+ZeRO-3 memory_mib_per_rank=0.1255 communication_mib=2.9190 compute_flops=50552832
+[PASS] comparison_plot_written
