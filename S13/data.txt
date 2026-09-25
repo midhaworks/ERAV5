@@ -1,0 +1,7 @@
+The reversible language model experiment measures memory, throughput, and loss honestly.
+Training data should be reproducible, token counts should be explicit, and checkpoints should
+record the batch size, sequence length, optimizer, device, and peak memory. A baseline and a
+reversible Euler model can share the same byte stream while changing only the block structure.
+Large language model training is an engineering measurement as much as a modeling exercise.
+The experiment repeats this compact licensed-style text only when a larger corpus is not
+available; replace this file with a properly licensed corpus for a meaningful quality study.
