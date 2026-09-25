@@ -55,6 +55,14 @@ fabricate a 50M-token loss, throughput, or memory claim. Run the notebooks on Co
 machine with PyTorch; the generated JSON values are then the authoritative report. A true
 production result should commit those generated artifacts with the README update.
 
+The currently downloaded JSON files are marked `bounded_smoke_or_partial` and contain
+`49,806,600` or `49,808,640` loss-bearing tokens. They are not a completed 50M-token
+submission. This exposed and fixed an accounting bug: the old step calculation used 256
+input positions, while causal cross-entropy contributes only 255 targets. The corrected
+script uses `batch_size × (sequence_length - 1)` when calculating the required steps. The
+three experiments must be rerun after pulling this fix; only artifacts with
+`status: completed_target` should be reported as final.
+
 ## Notebooks
 
 - [`S13_baseline.ipynb`](S13_baseline.ipynb): fixed-batch baseline.

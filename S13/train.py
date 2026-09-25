@@ -57,7 +57,9 @@ def train(args,batch_size=None,steps_override=None):
     if device.type=="cuda": torch.cuda.reset_peak_memory_stats(device)
     optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr); generator=torch.Generator(device="cpu").manual_seed(args.seed); stream=None
     if args.corpus: stream=torch.tensor(list(Path(args.corpus).read_bytes()),dtype=torch.long)
-    steps=steps_override or math.ceil(TARGET_TOKENS/(batch_size*SEQ)); steps=min(steps,args.max_steps) if args.max_steps else steps; losses=[]; seen=0; started=time.perf_counter(); model.train()
+    # The causal loss consumes SEQ-1 targets, not all SEQ input positions.
+    tokens_per_step = batch_size * (SEQ - 1)
+    steps=steps_override or math.ceil(TARGET_TOKENS/tokens_per_step); steps=min(steps,args.max_steps) if args.max_steps else steps; losses=[]; seen=0; started=time.perf_counter(); model.train()
     for step in range(1, steps + 1):
         batch=make_batch(batch_size,device,generator,stream); logits=model(batch); loss=F.cross_entropy(logits[:,:-1].reshape(-1,VOCAB),batch[:,1:].reshape(-1)); optimizer.zero_grad(set_to_none=True); loss.backward(); optimizer.step(); seen+=batch.numel()-batch.shape[0]; losses.append(float(loss.detach()))
         if step == 1 or step % args.log_every == 0 or step == steps:
