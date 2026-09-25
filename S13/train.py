@@ -45,8 +45,8 @@ class EulerReversibleLM(nn.Module):
 
 def make_batch(batch_size,device,generator,stream=None):
     if stream is None: return torch.randint(0,VOCAB,(batch_size,SEQ),generator=generator,device=device)
-    starts=torch.randint(0,stream.numel()-SEQ-1,(batch_size,),generator=generator)
-    return torch.stack([stream[int(start):int(start)+SEQ+1] for start in starts]).to(device)
+    starts=torch.randint(0,stream.numel()-SEQ,(batch_size,),generator=generator)
+    return torch.stack([stream[int(start):int(start)+SEQ] for start in starts]).to(device)
 def memory_peak(device):
     if device.type=="cuda": return torch.cuda.max_memory_allocated(device)/2**20
     return resource.getrusage(resource.RUSAGE_SELF).ru_maxrss/(2**20 if os.uname().sysname=="Darwin" else 1024)
