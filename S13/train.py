@@ -58,8 +58,11 @@ def train(args,batch_size=None,steps_override=None):
     optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr); generator=torch.Generator(device="cpu").manual_seed(args.seed); stream=None
     if args.corpus: stream=torch.tensor(list(Path(args.corpus).read_bytes()),dtype=torch.long)
     steps=steps_override or math.ceil(TARGET_TOKENS/(batch_size*SEQ)); steps=min(steps,args.max_steps) if args.max_steps else steps; losses=[]; seen=0; started=time.perf_counter(); model.train()
-    for _ in range(steps):
+    for step in range(1, steps + 1):
         batch=make_batch(batch_size,device,generator,stream); logits=model(batch); loss=F.cross_entropy(logits[:,:-1].reshape(-1,VOCAB),batch[:,1:].reshape(-1)); optimizer.zero_grad(set_to_none=True); loss.backward(); optimizer.step(); seen+=batch.numel()-batch.shape[0]; losses.append(float(loss.detach()))
+        if step == 1 or step % args.log_every == 0 or step == steps:
+            elapsed_now = time.perf_counter() - started
+            print(f"[{args.variant}] step {step}/{steps} tokens {seen:,}/{TARGET_TOKENS:,} loss {losses[-1]:.6f} tok/s {seen/max(elapsed_now,1e-9):.1f} peak_mib {memory_peak(device):.1f}", flush=True)
     elapsed=time.perf_counter()-started
     return {"variant":args.variant,"device":str(device),"batch_size":batch_size,"steps":steps,"tokens_seen":seen,"target_tokens":TARGET_TOKENS,"final_loss":losses[-1],"initial_loss":losses[0],"tokens_per_second":seen/elapsed,"elapsed_seconds":elapsed,"peak_memory_mib":memory_peak(device),"parameters":params,"loss_trace":losses,"sequence_length":SEQ}
 
@@ -67,13 +70,14 @@ def find_max_batch(args):
     candidate=1; good=1; trials=[]
     while candidate<=args.max_probe_batch:
         try:
-            result=train(args,batch_size=candidate,steps_override=1); trials.append({"batch_size":candidate,"status":"pass","peak_memory_mib":result["peak_memory_mib"]}); good=candidate; candidate*=2
+            print(f"[euler] probing batch_size={candidate}", flush=True); result=train(args,batch_size=candidate,steps_override=1); trials.append({"batch_size":candidate,"status":"pass","peak_memory_mib":result["peak_memory_mib"]}); good=candidate; candidate*=2
         except RuntimeError as exc:
+            print(f"[euler] probing batch_size={candidate} failed: {str(exc)[:160]}", flush=True)
             trials.append({"batch_size":candidate,"status":"fail","error":str(exc)[:300]}); break
     return good,trials
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument("--variant",choices=["baseline","euler"],default="baseline"); p.add_argument("--batch-size",type=int,default=8); p.add_argument("--max-probe-batch",type=int,default=64); p.add_argument("--auto-max-batch",action="store_true"); p.add_argument("--max-steps",type=int,default=0); p.add_argument("--lr",type=float,default=3e-4); p.add_argument("--device",default=None); p.add_argument("--seed",type=int,default=SEED); p.add_argument("--corpus",default=None); args=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument("--variant",choices=["baseline","euler"],default="baseline"); p.add_argument("--batch-size",type=int,default=8); p.add_argument("--max-probe-batch",type=int,default=64); p.add_argument("--auto-max-batch",action="store_true"); p.add_argument("--max-steps",type=int,default=0); p.add_argument("--log-every",type=int,default=100); p.add_argument("--lr",type=float,default=3e-4); p.add_argument("--device",default=None); p.add_argument("--seed",type=int,default=SEED); p.add_argument("--corpus",default=None); args=p.parse_args()
     ARTIFACTS.mkdir(exist_ok=True); selected=args.batch_size; trials=None
     if args.auto_max_batch: selected,trials=find_max_batch(args)
     result=train(args,batch_size=selected); result["auto_max_batch_trials"]=trials; result["status"]="completed_target" if result["tokens_seen"]>=TARGET_TOKENS else "bounded_smoke_or_partial"; (ARTIFACTS/f"{args.variant}_batch_{selected}.json").write_text(json.dumps(result,indent=2)+"\n")

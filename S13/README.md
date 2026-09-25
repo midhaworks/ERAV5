@@ -40,6 +40,10 @@ whether 50M was reached, elapsed time, tokens/second, peak memory, parameter cou
 sequence length, and loss trace. CUDA peak memory uses `torch.cuda.max_memory_allocated`; CPU
 uses the process high-water mark.
 
+Training prints live progress at step 1, every 100 steps, and the final step. Each progress
+line includes step/total, tokens seen/target, current loss, tokens/second, and peak memory.
+Use `--log-every 10` for more frequent updates or a larger value for quieter output.
+
 `--auto-max-batch` probes powers of two until allocation fails, records every pass/fail, and
 then trains at the largest passing batch. This is a hardware-dependent capacity result,
 not a guessed GPU number.
