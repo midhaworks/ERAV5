@@ -48,20 +48,25 @@ Use `--log-every 10` for more frequent updates or a larger value for quieter out
 then trains at the largest passing batch. This is a hardware-dependent capacity result,
 not a guessed GPU number.
 
-## Important limitation
+## Recorded 50M-token runs
 
-The current environment does not have PyTorch installed, so this repository does not
-fabricate a 50M-token loss, throughput, or memory claim. Run the notebooks on Colab or a
-machine with PyTorch; the generated JSON values are then the authoritative report. A true
-production result should commit those generated artifacts with the README update.
+The canonical `artifacts/` directory contains three generated results, all with
+`status: completed_target` and at least 50,000,000 loss-bearing tokens:
 
-The currently downloaded JSON files are marked `bounded_smoke_or_partial` and contain
-`49,806,600` or `49,808,640` loss-bearing tokens. They are not a completed 50M-token
-submission. This exposed and fixed an accounting bug: the old step calculation used 256
-input positions, while causal cross-entropy contributes only 255 targets. The corrected
-script uses `batch_size × (sequence_length - 1)` when calculating the required steps. The
-three experiments must be rerun after pulling this fix; only artifacts with
-`status: completed_target` should be reported as final.
+| Run | Device | Batch | Tokens seen | Final loss | Tokens/s | Peak memory | Artifact |
+|---|---|---:|---:|---:|---:|---:|---|
+| Baseline | CUDA | 8 | 50,000,400 | 0.01135 | 19,932 | 748 MiB | `baseline_batch_8.json` |
+| Euler reversible | MPS | 8 | 50,000,400 | 0.01111 | 8,361 | 441 MiB | `euler_batch_8.json` |
+| Euler reversible (maximum batch) | CUDA | 64 | 50,004,480 | 0.01304 | 21,251 | 5,974 MiB | `euler_batch_64.json` |
+
+These values are read from the generated JSON files, not hardcoded into the training
+script. Older smoke or partial outputs are retained under `artifacts/archive/` and are not
+used for the final comparison. The corrected step calculation uses
+`batch_size × (sequence_length - 1)`, because causal cross-entropy contributes only 255
+targets from each 256-token sequence. The CUDA and MPS numbers are hardware-specific;
+the different batch sizes also mean the loss values should not be interpreted as a
+strict apples-to-apples quality ranking. The fixed-batch baseline/Euler pair is the
+controlled comparison, while the batch-64 run measures capacity and throughput.
 
 ## Notebooks
 

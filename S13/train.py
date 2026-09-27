@@ -53,7 +53,8 @@ def memory_peak(device):
 def build(variant): return BaselineLM() if variant=="baseline" else EulerReversibleLM()
 
 def train(args,batch_size=None,steps_override=None):
-    device=torch.device(args.device if args.device else ("cuda" if torch.cuda.is_available() else "cpu")); batch_size=batch_size or args.batch_size; model=build(args.variant).to(device); params=sum(p.numel() for p in model.parameters())
+    automatic_device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
+    device=torch.device(args.device if args.device else automatic_device); batch_size=batch_size or args.batch_size; model=build(args.variant).to(device); params=sum(p.numel() for p in model.parameters())
     if device.type=="cuda": torch.cuda.reset_peak_memory_stats(device)
     optimizer=torch.optim.AdamW(model.parameters(),lr=args.lr); generator=torch.Generator(device="cpu").manual_seed(args.seed); stream=None
     if args.corpus: stream=torch.tensor(list(Path(args.corpus).read_bytes()),dtype=torch.long)
