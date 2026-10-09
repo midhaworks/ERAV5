@@ -1,0 +1,21 @@
+{
+  "protocol": {
+    "version": 1,
+    "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+    "max_calls": 16,
+    "max_tokens": 512,
+    "temperature": 0,
+    "enable_thinking": false,
+    "full_run_tasks": 3,
+    "primary_metric": "finished with fresh visible pass and all hidden integration tests passing",
+    "stop_rule": "one full run; no selective retries or edits to suite after inference",
+    "scope": "authored multi-file miniature repositories, not public benchmark or production qualification",
+    "tool_policy": "up to eight read_file calls per turn; other tools single",
+    "prefix_cache": false
+  },
+  "manifest": {
+    "tasks_sha256": "d28c99e88a92df152835a60354763466103cb1da678328fe6cbba2f2d4e571bc",
+    "protocol_sha256": "2cab3b09e23671de145004bef5de1fd9d9f834688edfca02792c3c257973d3cd",
+    "scope": "authored repository qualification frozen before inference"
+  }
+}

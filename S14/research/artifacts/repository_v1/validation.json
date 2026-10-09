@@ -1,0 +1,26 @@
+{
+  "status": "validated_not_model_evaluated",
+  "tasks": [
+    {
+      "task": "shipping",
+      "reference_passed": true,
+      "individual_bugs_rejected": 2,
+      "visible_tests": 3,
+      "hidden_tests": 5
+    },
+    {
+      "task": "pagination",
+      "reference_passed": true,
+      "individual_bugs_rejected": 2,
+      "visible_tests": 3,
+      "hidden_tests": 5
+    },
+    {
+      "task": "ledger",
+      "reference_passed": true,
+      "individual_bugs_rejected": 2,
+      "visible_tests": 3,
+      "hidden_tests": 5
+    }
+  ]
+}

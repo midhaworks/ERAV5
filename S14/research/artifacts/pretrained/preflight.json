@@ -1,0 +1,49 @@
+{
+  "model": "mlx-community/Qwen3.5-4B-4bit",
+  "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "download_bytes": 3061129077,
+  "free_disk_bytes": 11489583104,
+  "reserve_bytes": 3221225472,
+  "files": [
+    {
+      "path": "chat_template.jinja",
+      "bytes": 7756
+    },
+    {
+      "path": "config.json",
+      "bytes": 3366
+    },
+    {
+      "path": "model.safetensors",
+      "bytes": 3034300695
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "bytes": 101944
+    },
+    {
+      "path": "preprocessor_config.json",
+      "bytes": 390
+    },
+    {
+      "path": "processor_config.json",
+      "bytes": 1300
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 19989343
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 1139
+    },
+    {
+      "path": "video_preprocessor_config.json",
+      "bytes": 385
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 6722759
+    }
+  ]
+}

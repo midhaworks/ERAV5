@@ -1,0 +1,61 @@
+{
+  "status": "validated_not_model_evaluated",
+  "local_exact_overlap": false,
+  "exact_overlap_checked_fields": [
+    "id",
+    "instruction",
+    "reference",
+    "faulty"
+  ],
+  "semantic_family_separation": "manually authored different task families",
+  "tasks": [
+    {
+      "task": "merge_intervals",
+      "visible_tests": 3,
+      "hidden_tests": 5,
+      "reference_passed": true,
+      "mutants_rejected": 3,
+      "mutants_total": 3
+    },
+    {
+      "task": "transpose",
+      "visible_tests": 3,
+      "hidden_tests": 4,
+      "reference_passed": true,
+      "mutants_rejected": 3,
+      "mutants_total": 3
+    },
+    {
+      "task": "pair_sum",
+      "visible_tests": 3,
+      "hidden_tests": 5,
+      "reference_passed": true,
+      "mutants_rejected": 3,
+      "mutants_total": 3
+    },
+    {
+      "task": "overlap_matches",
+      "visible_tests": 3,
+      "hidden_tests": 5,
+      "reference_passed": true,
+      "mutants_rejected": 3,
+      "mutants_total": 3
+    },
+    {
+      "task": "group_records",
+      "visible_tests": 3,
+      "hidden_tests": 4,
+      "reference_passed": true,
+      "mutants_rejected": 3,
+      "mutants_total": 3
+    },
+    {
+      "task": "grid_neighbors",
+      "visible_tests": 3,
+      "hidden_tests": 4,
+      "reference_passed": true,
+      "mutants_rejected": 3,
+      "mutants_total": 3
+    }
+  ]
+}

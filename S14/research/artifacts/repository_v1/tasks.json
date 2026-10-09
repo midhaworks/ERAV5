@@ -1,0 +1,365 @@
+[
+  {
+    "id": "shipping",
+    "instruction": "Repair the shipping quotation library. Units and rates are nonnegative integers. Each shipment costs ceil(units/1000)*rate; zero units cost zero. A quote sums independent shipment costs. There is no base fee. Preserve inputs and function signatures.",
+    "files": {
+      "weights.py": "def billable(units): return units // 1000\n",
+      "tariffs.py": "from weights import billable\ndef charge(units, rate): return billable(units)*rate + rate\n",
+      "api.py": "from tariffs import charge\ndef solve(items, rate): return sum(charge(n, rate) for n in items)\n",
+      "README.md": "Repair the shipping quotation library. Units and rates are nonnegative integers. Each shipment costs ceil(units/1000)*rate; zero units cost zero. A quote sums independent shipment costs. There is no base fee. Preserve inputs and function signatures.\n",
+      "visible_tests.json": "[\n  {\n    \"entry\": \"weights.billable\",\n    \"args\": [\n      1\n    ],\n    \"expected\": 1\n  },\n  {\n    \"entry\": \"api.solve\",\n    \"args\": [\n      [\n        1000\n      ],\n      5\n    ],\n    \"expected\": 5\n  },\n  {\n    \"entry\": \"api.solve\",\n    \"args\": [\n      [],\n      5\n    ],\n    \"expected\": 0\n  }\n]\n"
+    },
+    "reference": {
+      "weights.py": "def billable(units): return (units+999)//1000\n",
+      "tariffs.py": "from weights import billable\ndef charge(units, rate): return billable(units)*rate\n"
+    },
+    "visible": [
+      {
+        "entry": "weights.billable",
+        "args": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            1000
+          ],
+          5
+        ],
+        "expected": 5
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [],
+          5
+        ],
+        "expected": 0
+      }
+    ],
+    "hidden": [
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            0
+          ],
+          7
+        ],
+        "expected": 0
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            1,
+            1000,
+            1001,
+            2000
+          ],
+          3
+        ],
+        "expected": 18
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            999,
+            2001
+          ],
+          2
+        ],
+        "expected": 8
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            123456
+          ],
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "entry": "tariffs.charge",
+        "args": [
+          0,
+          9
+        ],
+        "expected": 0
+      }
+    ],
+    "source": "original authored miniature repository",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "pagination",
+    "instruction": "Repair the pagination library. Page numbers start at 1, page size is a positive integer. window(page,size) returns [inclusive_start,exclusive_end]. solve(rows,page,size) returns that list slice, naturally truncated at the end. Beyond the last row returns []. Preserve inputs and function signatures.",
+    "files": {
+      "bounds.py": "def window(page, size): return [page*size, (page+1)*size]\n",
+      "pages.py": "from bounds import window\ndef page_items(rows, page, size):\n start,end=window(page,size)\n return rows[start:end-1]\n",
+      "api.py": "from pages import page_items\ndef solve(rows, page, size): return page_items(rows,page,size)\n",
+      "README.md": "Repair the pagination library. Page numbers start at 1, page size is a positive integer. window(page,size) returns [inclusive_start,exclusive_end]. solve(rows,page,size) returns that list slice, naturally truncated at the end. Beyond the last row returns []. Preserve inputs and function signatures.\n",
+      "visible_tests.json": "[\n  {\n    \"entry\": \"bounds.window\",\n    \"args\": [\n      1,\n      2\n    ],\n    \"expected\": [\n      0,\n      2\n    ]\n  },\n  {\n    \"entry\": \"api.solve\",\n    \"args\": [\n      [\n        0,\n        1,\n        2\n      ],\n      1,\n      2\n    ],\n    \"expected\": [\n      0,\n      1\n    ]\n  },\n  {\n    \"entry\": \"api.solve\",\n    \"args\": [\n      [\n        0,\n        1,\n        2\n      ],\n      2,\n      2\n    ],\n    \"expected\": [\n      2\n    ]\n  }\n]\n"
+    },
+    "reference": {
+      "bounds.py": "def window(page, size): return [(page-1)*size, page*size]\n",
+      "pages.py": "from bounds import window\ndef page_items(rows, page, size):\n start,end=window(page,size)\n return rows[start:end]\n"
+    },
+    "visible": [
+      {
+        "entry": "bounds.window",
+        "args": [
+          1,
+          2
+        ],
+        "expected": [
+          0,
+          2
+        ]
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            0,
+            1,
+            2
+          ],
+          1,
+          2
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            0,
+            1,
+            2
+          ],
+          2,
+          2
+        ],
+        "expected": [
+          2
+        ]
+      }
+    ],
+    "hidden": [
+      {
+        "entry": "api.solve",
+        "args": [
+          [],
+          1,
+          4
+        ],
+        "expected": []
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            1,
+            2
+          ],
+          5,
+          2
+        ],
+        "expected": []
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          2,
+          2
+        ],
+        "expected": [
+          3,
+          4
+        ]
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            8,
+            9,
+            10
+          ],
+          2,
+          1
+        ],
+        "expected": [
+          9
+        ]
+      },
+      {
+        "entry": "pages.page_items",
+        "args": [
+          [
+            1,
+            2,
+            3
+          ],
+          1,
+          9
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "source": "original authored miniature repository",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "ledger",
+    "instruction": "Repair the settlement library. Each row has status (string), amount (integer) and fee (nonnegative integer). Only status exactly 'paid' with amount>=0 is accepted. Each accepted row contributes amount-fee; others contribute zero. Fees may exceed amount. solve(rows) sums contributions. Preserve inputs and function signatures.",
+    "files": {
+      "validation.py": "def accepted(row): return row['status']=='paid'\n",
+      "totals.py": "from validation import accepted\ndef net_total(rows): return sum(r['amount'] for r in rows if accepted(r))\n",
+      "api.py": "from totals import net_total\ndef solve(rows): return net_total(rows)\n",
+      "README.md": "Repair the settlement library. Each row has status (string), amount (integer) and fee (nonnegative integer). Only status exactly 'paid' with amount>=0 is accepted. Each accepted row contributes amount-fee; others contribute zero. Fees may exceed amount. solve(rows) sums contributions. Preserve inputs and function signatures.\n",
+      "visible_tests.json": "[\n  {\n    \"entry\": \"validation.accepted\",\n    \"args\": [\n      {\n        \"status\": \"paid\",\n        \"amount\": -2,\n        \"fee\": 0\n      }\n    ],\n    \"expected\": false\n  },\n  {\n    \"entry\": \"api.solve\",\n    \"args\": [\n      [\n        {\n          \"status\": \"paid\",\n          \"amount\": 10,\n          \"fee\": 2\n        }\n      ]\n    ],\n    \"expected\": 8\n  },\n  {\n    \"entry\": \"api.solve\",\n    \"args\": [\n      [\n        {\n          \"status\": \"cancelled\",\n          \"amount\": 5,\n          \"fee\": 0\n        }\n      ]\n    ],\n    \"expected\": 0\n  }\n]\n"
+    },
+    "reference": {
+      "validation.py": "def accepted(row): return row['status']=='paid' and row['amount']>=0\n",
+      "totals.py": "from validation import accepted\ndef net_total(rows): return sum(r['amount']-r['fee'] for r in rows if accepted(r))\n"
+    },
+    "visible": [
+      {
+        "entry": "validation.accepted",
+        "args": [
+          {
+            "status": "paid",
+            "amount": -2,
+            "fee": 0
+          }
+        ],
+        "expected": false
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            {
+              "status": "paid",
+              "amount": 10,
+              "fee": 2
+            }
+          ]
+        ],
+        "expected": 8
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            {
+              "status": "cancelled",
+              "amount": 5,
+              "fee": 0
+            }
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "hidden": [
+      {
+        "entry": "api.solve",
+        "args": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            {
+              "status": "paid",
+              "amount": 0,
+              "fee": 1
+            }
+          ]
+        ],
+        "expected": -1
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            {
+              "status": "paid",
+              "amount": 8,
+              "fee": 2
+            },
+            {
+              "status": "paid",
+              "amount": -2,
+              "fee": 1
+            },
+            {
+              "status": "pending",
+              "amount": 20,
+              "fee": 0
+            },
+            {
+              "status": "paid",
+              "amount": 2,
+              "fee": 0
+            }
+          ]
+        ],
+        "expected": 8
+      },
+      {
+        "entry": "api.solve",
+        "args": [
+          [
+            {
+              "status": "Paid",
+              "amount": 10,
+              "fee": 1
+            }
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "entry": "totals.net_total",
+        "args": [
+          [
+            {
+              "status": "paid",
+              "amount": 4,
+              "fee": 9
+            }
+          ]
+        ],
+        "expected": -5
+      }
+    ],
+    "source": "original authored miniature repository",
+    "license": "CC0-1.0"
+  }
+]

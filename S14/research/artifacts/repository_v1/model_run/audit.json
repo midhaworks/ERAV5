@@ -1,0 +1,68 @@
+{
+  "results_sha256": "d493eefb889ef8686993c9e6d323bb3e909b16073041a997638c93eeff4880bf",
+  "score": {
+    "passed": 3,
+    "total": 3
+  },
+  "episodes": [
+    {
+      "task": "shipping",
+      "replay_matched": true,
+      "edited_files": [
+        "tariffs.py",
+        "weights.py"
+      ],
+      "failed_visible_test_calls": 2,
+      "malformed_calls": 3,
+      "completed": true,
+      "visible_pass": true,
+      "hidden_outcome": {
+        "passed": true,
+        "error": null,
+        "tests_run": 5
+      },
+      "passed": true
+    },
+    {
+      "task": "pagination",
+      "replay_matched": true,
+      "edited_files": [
+        "bounds.py",
+        "pages.py"
+      ],
+      "failed_visible_test_calls": 2,
+      "malformed_calls": 1,
+      "completed": true,
+      "visible_pass": true,
+      "hidden_outcome": {
+        "passed": true,
+        "error": null,
+        "tests_run": 5
+      },
+      "passed": true
+    },
+    {
+      "task": "ledger",
+      "replay_matched": true,
+      "edited_files": [
+        "totals.py",
+        "validation.py"
+      ],
+      "failed_visible_test_calls": 1,
+      "malformed_calls": 1,
+      "completed": true,
+      "visible_pass": true,
+      "hidden_outcome": {
+        "passed": true,
+        "error": null,
+        "tests_run": 5
+      },
+      "passed": true
+    }
+  ],
+  "generated_tokens": 1646,
+  "generation_seconds": 378.9809187509818,
+  "tokens_per_second": 4.343226580970802,
+  "episode_seconds": 381.5542187910178,
+  "peak_mlx_bytes": 3809312328
+}

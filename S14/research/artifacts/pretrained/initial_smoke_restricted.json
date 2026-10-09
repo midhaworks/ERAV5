@@ -1,0 +1,96 @@
+{
+  "status": "completed_bounded_validation",
+  "model": "mlx-community/Qwen3.5-4B-4bit",
+  "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "quantization": "community 4-bit checkpoint",
+  "max_tokens": 192,
+  "temperature": 0,
+  "enable_thinking": false,
+  "data_source": "original authored development validation tasks",
+  "data_sha256": "31725b3667bf6dd90e98d0df108e45978fdfdfaabff737b20c4872857d05e0e6",
+  "packages": {
+    "mlx": "0.32.3",
+    "mlx-lm": "0.32.0",
+    "transformers": "5.19.0"
+  },
+  "traces": [
+    {
+      "task": "stable_unique",
+      "role": "coding",
+      "style": "direct",
+      "prompt": "Implement Python solve. Requirement: Remove duplicates from a list of integers, keeping first-occurrence order.\nReturn only the complete Python function. No imports, explanations, or examples.",
+      "raw_response": "def solve(nums):\n    seen = set()\n    result = []\n    for num in nums:\n        if num not in seen:\n            seen.add(num)\n            result.append(num)\n    return result",
+      "extracted_code": "def solve(nums):\n    seen = set()\n    result = []\n    for num in nums:\n        if num not in seen:\n            seen.add(num)\n            result.append(num)\n    return result",
+      "generated_tokens": 47,
+      "elapsed_seconds": 4.4767690830049105,
+      "tokens_per_second": 10.498642911564364,
+      "reached_token_cap": false,
+      "peak_mlx_bytes": 2566912808,
+      "passed": false,
+      "error": "ValueError: Unsupported attribute"
+    },
+    {
+      "task": "stable_unique",
+      "role": "coding",
+      "style": "reworded",
+      "prompt": "Please provide a correct solve function for this behavior: Remove duplicates from a list of integers, keeping first-occurrence order.\nReturn only the complete Python function. No imports, explanations, or examples.",
+      "raw_response": "def remove_duplicates(nums):\n    seen = set()\n    result = []\n    for num in nums:\n        if num not in seen:\n            seen.add(num)\n            result.append(num)\n    return result",
+      "extracted_code": "def remove_duplicates(nums):\n    seen = set()\n    result = []\n    for num in nums:\n        if num not in seen:\n            seen.add(num)\n            result.append(num)\n    return result",
+      "generated_tokens": 48,
+      "elapsed_seconds": 1.9905464579933323,
+      "tokens_per_second": 24.11398126742982,
+      "reached_token_cap": false,
+      "peak_mlx_bytes": 2578748568,
+      "passed": false,
+      "error": "ValueError: Only plain solve function allowed"
+    },
+    {
+      "task": "stable_unique",
+      "role": "repair",
+      "style": "direct",
+      "prompt": "Repair Python solve. Requirement: Remove duplicates from a list of integers, keeping first-occurrence order.\nFaulty implementation:\ndef solve(xs): return sorted(set(xs))\nReturn only the complete Python function. No imports, explanations, or examples.",
+      "raw_response": "def solve(xs):\n    seen = set()\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.add(x)\n            result.append(x)\n    return result",
+      "extracted_code": "def solve(xs):\n    seen = set()\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.add(x)\n            result.append(x)\n    return result",
+      "generated_tokens": 47,
+      "elapsed_seconds": 1.857654209015891,
+      "tokens_per_second": 25.30072592191346,
+      "reached_token_cap": false,
+      "peak_mlx_bytes": 2606077388,
+      "passed": false,
+      "error": "ValueError: Unsupported attribute"
+    },
+    {
+      "task": "stable_unique",
+      "role": "repair",
+      "style": "reworded",
+      "prompt": "Please provide a correct solve function for this behavior: Remove duplicates from a list of integers, keeping first-occurrence order.\nFaulty implementation:\ndef solve(xs): return sorted(set(xs))\nReturn only the complete Python function. No imports, explanations, or examples.",
+      "raw_response": "def solve(xs):\n    seen = set()\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.add(x)\n            result.append(x)\n    return result",
+      "extracted_code": "def solve(xs):\n    seen = set()\n    result = []\n    for x in xs:\n        if x not in seen:\n            seen.add(x)\n            result.append(x)\n    return result",
+      "generated_tokens": 47,
+      "elapsed_seconds": 2.018356667016633,
+      "tokens_per_second": 23.2862708400649,
+      "reached_token_cap": false,
+      "peak_mlx_bytes": 2606477900,
+      "passed": false,
+      "error": "ValueError: Unsupported attribute"
+    }
+  ],
+  "scores": {
+    "coding_direct": {
+      "passed": 0,
+      "total": 1
+    },
+    "coding_reworded": {
+      "passed": 0,
+      "total": 1
+    },
+    "repair_direct": {
+      "passed": 0,
+      "total": 1
+    },
+    "repair_reworded": {
+      "passed": 0,
+      "total": 1
+    }
+  }
+}

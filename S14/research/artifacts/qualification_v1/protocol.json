@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "model_revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "max_calls": 10,
+  "max_tokens": 384,
+  "temperature": 0,
+  "enable_thinking": false,
+  "primary_metric": "tasks finished after fresh visible pass AND all hidden tests pass",
+  "secondary_metrics": [
+    "tool_calls",
+    "failed_test_recoveries",
+    "malformed_calls",
+    "wall_seconds",
+    "peak_mlx_bytes"
+  ],
+  "comparison": "unchanged checkpoint; no training; no claim of matched-compute improvement",
+  "advancement": "inspect all failures and repeat on new repository-level tasks before any scale-up",
+  "stop_rule": "one full six-task run; no selective reruns or prompt changes for published score",
+  "contamination": "disjoint from six local development families; pretraining contamination unknown",
+  "scope": "single-file qualification, NOT locked final production evaluation"
+}

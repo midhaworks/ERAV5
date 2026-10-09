@@ -1,0 +1,24 @@
+{
+  "source": "https://github.com/openai/human-eval",
+  "source_revision": "6d43fb980f9fee3c892a914eda09951f772ad10d",
+  "license": "MIT",
+  "license_file": "upstream/LICENSE",
+  "upstream_files": [
+    {
+      "path": "HumanEval.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/openai/human-eval/6d43fb980f9fee3c892a914eda09951f772ad10d/data/HumanEval.jsonl.gz",
+      "bytes": 44877,
+      "sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/human-eval/6d43fb980f9fee3c892a914eda09951f772ad10d/LICENSE",
+      "bytes": 1083,
+      "sha256": "bcba3de214851cce46ed5af42d6698044616eeace887c3231bc7a20474ab639e"
+    }
+  ],
+  "source_task_count": 164,
+  "selected_task_count": 8,
+  "tasks_sha256": "d1f4d0e5241f937621f9fc28851b4c4467bbe30f6799fb29eccea0771d42164b",
+  "protocol_sha256": "a3a68e73fa3e3de4ba895b6d23b29fe291d48dc33b043b92981b418592fbd3ec"
+}

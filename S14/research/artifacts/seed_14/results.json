@@ -1,0 +1,1142 @@
+{
+  "status": "synthetic_pilot",
+  "seed": 14,
+  "steps_per_phase": 300,
+  "data_sha256": "ff72f295f962ca86352b129f786b9f237133166b70a50f434c418f9a51859106",
+  "torch": "2.14.0",
+  "device": "cpu",
+  "comparisons": "token-matched, not compute-matched",
+  "routing": "explicit oracle role mask, no learned group selector",
+  "runs": {
+    "dense_continuation": {
+      "parameters": 58080,
+      "before_train_nll": 0.03419392128459743,
+      "training": {
+        "trace": [
+          {
+            "step": 1,
+            "loss": 0.036052774637937546
+          },
+          {
+            "step": 100,
+            "loss": 0.05234189331531525
+          },
+          {
+            "step": 200,
+            "loss": 0.0011135307140648365
+          },
+          {
+            "step": 300,
+            "loss": 0.00016609072918072343
+          }
+        ],
+        "elapsed_seconds": 2.1418262920051347,
+        "target_tokens": 97615,
+        "target_tokens_per_second": 45575.59143071999
+      },
+      "after_train_nll": 0.00017449298308643162,
+      "test": {
+        "response_nll": 0.023431856124127497,
+        "success_by_role": {
+          "agentic": 0.5,
+          "coding": 0.6666666666666666
+        },
+        "elapsed_seconds": 0.5572983339952771,
+        "traces": [
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 0,
+            "prompt": "Write Python solve(x) returning x+0.\n",
+            "answer": "def solve(x):\n return x+0\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+0\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 3,
+            "prompt": "Write Python solve(x) returning x+3.\n",
+            "answer": "def solve(x):\n return x+3\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+8\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 6,
+            "prompt": "Write Python solve(x) returning x+6.\n",
+            "answer": "def solve(x):\n return x+6\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+6\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 9,
+            "prompt": "Write Python solve(x) returning x+9.\n",
+            "answer": "def solve(x):\n return x+9\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+9\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 1,
+            "prompt": "Write Python solve(x) returning x-1.\n",
+            "answer": "def solve(x):\n return x-1\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-9\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 4,
+            "prompt": "Write Python solve(x) returning x-4.\n",
+            "answer": "def solve(x):\n return x-4\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-3\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 7,
+            "prompt": "Write Python solve(x) returning x-7.\n",
+            "answer": "def solve(x):\n return x-7\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-7\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 10,
+            "prompt": "Write Python solve(x) returning x-10.\n",
+            "answer": "def solve(x):\n return x-10\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-11\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 2,
+            "prompt": "Write Python solve(x) returning x*2.\n",
+            "answer": "def solve(x):\n return x*2\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*2\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 5,
+            "prompt": "Write Python solve(x) returning x*5.\n",
+            "answer": "def solve(x):\n return x*5\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*5\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 8,
+            "prompt": "Write Python solve(x) returning x*8.\n",
+            "answer": "def solve(x):\n return x*8\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*8\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 11,
+            "prompt": "Write Python solve(x) returning x*11.\n",
+            "answer": "def solve(x):\n return x*11\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*11\n",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 0,
+            "prompt": "File solve.py returns x. Test requires x+0.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+1\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 3,
+            "prompt": "File solve.py returns x. Test requires x+3.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+3\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+8\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 6,
+            "prompt": "File solve.py returns x. Test requires x+6.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+4\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 9,
+            "prompt": "File solve.py returns x. Test requires x+9.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 1,
+            "prompt": "File solve.py returns x. Test requires x-1.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-9\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 4,
+            "prompt": "File solve.py returns x. Test requires x-4.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-4\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-3\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 7,
+            "prompt": "File solve.py returns x. Test requires x-7.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 10,
+            "prompt": "File solve.py returns x. Test requires x-10.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 2,
+            "prompt": "File solve.py returns x. Test requires x*2.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 5,
+            "prompt": "File solve.py returns x. Test requires x*5.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 8,
+            "prompt": "File solve.py returns x. Test requires x*8.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*8\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*3\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 11,
+            "prompt": "File solve.py returns x. Test requires x*11.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+            "passed": true
+          }
+        ]
+      }
+    },
+    "unrestricted_moe": {
+      "parameters": 114632,
+      "before_train_nll": 0.034193925193098725,
+      "training": {
+        "trace": [
+          {
+            "step": 1,
+            "loss": 0.03605278581380844
+          },
+          {
+            "step": 100,
+            "loss": 0.05108461529016495
+          },
+          {
+            "step": 200,
+            "loss": 0.001359037822112441
+          },
+          {
+            "step": 300,
+            "loss": 0.00014385882241185755
+          }
+        ],
+        "elapsed_seconds": 3.315367208997486,
+        "target_tokens": 97615,
+        "target_tokens_per_second": 29443.194025411503
+      },
+      "after_train_nll": 0.00010051674087394456,
+      "test": {
+        "response_nll": 0.019571794838201803,
+        "success_by_role": {
+          "agentic": 0.6666666666666666,
+          "coding": 0.8333333333333334
+        },
+        "elapsed_seconds": 1.3705312079982832,
+        "traces": [
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 0,
+            "prompt": "Write Python solve(x) returning x+0.\n",
+            "answer": "def solve(x):\n return x+0\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+0\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 3,
+            "prompt": "Write Python solve(x) returning x+3.\n",
+            "answer": "def solve(x):\n return x+3\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+3\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 6,
+            "prompt": "Write Python solve(x) returning x+6.\n",
+            "answer": "def solve(x):\n return x+6\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+6\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 9,
+            "prompt": "Write Python solve(x) returning x+9.\n",
+            "answer": "def solve(x):\n return x+9\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+9\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 1,
+            "prompt": "Write Python solve(x) returning x-1.\n",
+            "answer": "def solve(x):\n return x-1\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-9\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 4,
+            "prompt": "Write Python solve(x) returning x-4.\n",
+            "answer": "def solve(x):\n return x-4\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-3\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 7,
+            "prompt": "Write Python solve(x) returning x-7.\n",
+            "answer": "def solve(x):\n return x-7\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-7\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 10,
+            "prompt": "Write Python solve(x) returning x-10.\n",
+            "answer": "def solve(x):\n return x-10\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-10\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 2,
+            "prompt": "Write Python solve(x) returning x*2.\n",
+            "answer": "def solve(x):\n return x*2\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*2\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 5,
+            "prompt": "Write Python solve(x) returning x*5.\n",
+            "answer": "def solve(x):\n return x*5\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*5\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 8,
+            "prompt": "Write Python solve(x) returning x*8.\n",
+            "answer": "def solve(x):\n return x*8\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*8\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 11,
+            "prompt": "Write Python solve(x) returning x*11.\n",
+            "answer": "def solve(x):\n return x*11\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*11\n",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 0,
+            "prompt": "File solve.py returns x. Test requires x+0.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 3,
+            "prompt": "File solve.py returns x. Test requires x+3.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+3\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+8\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 6,
+            "prompt": "File solve.py returns x. Test requires x+6.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 9,
+            "prompt": "File solve.py returns x. Test requires x+9.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 1,
+            "prompt": "File solve.py returns x. Test requires x-1.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-9\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 4,
+            "prompt": "File solve.py returns x. Test requires x-4.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-4\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-3\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 7,
+            "prompt": "File solve.py returns x. Test requires x-7.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 10,
+            "prompt": "File solve.py returns x. Test requires x-10.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 2,
+            "prompt": "File solve.py returns x. Test requires x*2.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 5,
+            "prompt": "File solve.py returns x. Test requires x*5.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*3\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 8,
+            "prompt": "File solve.py returns x. Test requires x*8.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*8\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*8\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 11,
+            "prompt": "File solve.py returns x. Test requires x*11.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+            "passed": true
+          }
+        ]
+      }
+    },
+    "grouped_moe": {
+      "parameters": 114632,
+      "before_train_nll": 0.034193925193098725,
+      "training": {
+        "trace": [
+          {
+            "step": 1,
+            "loss": 0.03605275973677635
+          },
+          {
+            "step": 100,
+            "loss": 0.026639938354492188
+          },
+          {
+            "step": 200,
+            "loss": 0.000679392775055021
+          },
+          {
+            "step": 300,
+            "loss": 9.708822472020984e-05
+          }
+        ],
+        "elapsed_seconds": 2.887251083011506,
+        "target_tokens": 97615,
+        "target_tokens_per_second": 33808.97510935698
+      },
+      "after_train_nll": 0.0001547042524716893,
+      "test": {
+        "response_nll": 0.028574218515489924,
+        "success_by_role": {
+          "agentic": 0.5,
+          "coding": 0.75
+        },
+        "elapsed_seconds": 1.0419567500066478,
+        "traces": [
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 0,
+            "prompt": "Write Python solve(x) returning x+0.\n",
+            "answer": "def solve(x):\n return x+0\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+0\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 3,
+            "prompt": "Write Python solve(x) returning x+3.\n",
+            "answer": "def solve(x):\n return x+3\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+8\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 6,
+            "prompt": "Write Python solve(x) returning x+6.\n",
+            "answer": "def solve(x):\n return x+6\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+6\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "+",
+            "number": 9,
+            "prompt": "Write Python solve(x) returning x+9.\n",
+            "answer": "def solve(x):\n return x+9\n",
+            "split": "test",
+            "response": "def solve(x):\n return x+9\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 1,
+            "prompt": "Write Python solve(x) returning x-1.\n",
+            "answer": "def solve(x):\n return x-1\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-9\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 4,
+            "prompt": "Write Python solve(x) returning x-4.\n",
+            "answer": "def solve(x):\n return x-4\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-3\n",
+            "passed": false
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 7,
+            "prompt": "Write Python solve(x) returning x-7.\n",
+            "answer": "def solve(x):\n return x-7\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-7\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "-",
+            "number": 10,
+            "prompt": "Write Python solve(x) returning x-10.\n",
+            "answer": "def solve(x):\n return x-10\n",
+            "split": "test",
+            "response": "def solve(x):\n return x-10\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 2,
+            "prompt": "Write Python solve(x) returning x*2.\n",
+            "answer": "def solve(x):\n return x*2\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*2\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 5,
+            "prompt": "Write Python solve(x) returning x*5.\n",
+            "answer": "def solve(x):\n return x*5\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*5\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 8,
+            "prompt": "Write Python solve(x) returning x*8.\n",
+            "answer": "def solve(x):\n return x*8\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*8\n",
+            "passed": true
+          },
+          {
+            "role": "coding",
+            "operation": "*",
+            "number": 11,
+            "prompt": "Write Python solve(x) returning x*11.\n",
+            "answer": "def solve(x):\n return x*11\n",
+            "split": "test",
+            "response": "def solve(x):\n return x*11\n",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 0,
+            "prompt": "File solve.py returns x. Test requires x+0.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 3,
+            "prompt": "File solve.py returns x. Test requires x+3.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+3\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+8\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 6,
+            "prompt": "File solve.py returns x. Test requires x+6.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x++\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "+",
+            "number": 9,
+            "prompt": "File solve.py returns x. Test requires x+9.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 1,
+            "prompt": "File solve.py returns x. Test requires x-1.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 4,
+            "prompt": "File solve.py returns x. Test requires x-4.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-4\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-3\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 7,
+            "prompt": "File solve.py returns x. Test requires x-7.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "-",
+            "number": 10,
+            "prompt": "File solve.py returns x. Test requires x-10.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+            "passed": true
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 2,
+            "prompt": "File solve.py returns x. Test requires x*2.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*3\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 5,
+            "prompt": "File solve.py returns x. Test requires x*5.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*1\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 8,
+            "prompt": "File solve.py returns x. Test requires x*8.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*8\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*g\\n\"}",
+            "passed": false
+          },
+          {
+            "role": "agentic",
+            "operation": "*",
+            "number": 11,
+            "prompt": "File solve.py returns x. Test requires x*11.\nEmit JSON edit action with tool and code.\n",
+            "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+            "split": "test",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+            "passed": true
+          }
+        ]
+      },
+      "exports": {
+        "coding": {
+          "parameters": 76996,
+          "masked_parent_max_logit_error": 0.0,
+          "test": {
+            "response_nll": 0.029118479395205257,
+            "success_by_role": {
+              "coding": 0.75
+            },
+            "elapsed_seconds": 0.27534650001325645,
+            "traces": [
+              {
+                "role": "coding",
+                "operation": "+",
+                "number": 0,
+                "prompt": "Write Python solve(x) returning x+0.\n",
+                "answer": "def solve(x):\n return x+0\n",
+                "split": "test",
+                "response": "def solve(x):\n return x+0\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "+",
+                "number": 3,
+                "prompt": "Write Python solve(x) returning x+3.\n",
+                "answer": "def solve(x):\n return x+3\n",
+                "split": "test",
+                "response": "def solve(x):\n return x+8\n",
+                "passed": false
+              },
+              {
+                "role": "coding",
+                "operation": "+",
+                "number": 6,
+                "prompt": "Write Python solve(x) returning x+6.\n",
+                "answer": "def solve(x):\n return x+6\n",
+                "split": "test",
+                "response": "def solve(x):\n return x+6\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "+",
+                "number": 9,
+                "prompt": "Write Python solve(x) returning x+9.\n",
+                "answer": "def solve(x):\n return x+9\n",
+                "split": "test",
+                "response": "def solve(x):\n return x+9\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "-",
+                "number": 1,
+                "prompt": "Write Python solve(x) returning x-1.\n",
+                "answer": "def solve(x):\n return x-1\n",
+                "split": "test",
+                "response": "def solve(x):\n return x-9\n",
+                "passed": false
+              },
+              {
+                "role": "coding",
+                "operation": "-",
+                "number": 4,
+                "prompt": "Write Python solve(x) returning x-4.\n",
+                "answer": "def solve(x):\n return x-4\n",
+                "split": "test",
+                "response": "def solve(x):\n return x-3\n",
+                "passed": false
+              },
+              {
+                "role": "coding",
+                "operation": "-",
+                "number": 7,
+                "prompt": "Write Python solve(x) returning x-7.\n",
+                "answer": "def solve(x):\n return x-7\n",
+                "split": "test",
+                "response": "def solve(x):\n return x-7\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "-",
+                "number": 10,
+                "prompt": "Write Python solve(x) returning x-10.\n",
+                "answer": "def solve(x):\n return x-10\n",
+                "split": "test",
+                "response": "def solve(x):\n return x-10\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "*",
+                "number": 2,
+                "prompt": "Write Python solve(x) returning x*2.\n",
+                "answer": "def solve(x):\n return x*2\n",
+                "split": "test",
+                "response": "def solve(x):\n return x*2\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "*",
+                "number": 5,
+                "prompt": "Write Python solve(x) returning x*5.\n",
+                "answer": "def solve(x):\n return x*5\n",
+                "split": "test",
+                "response": "def solve(x):\n return x*5\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "*",
+                "number": 8,
+                "prompt": "Write Python solve(x) returning x*8.\n",
+                "answer": "def solve(x):\n return x*8\n",
+                "split": "test",
+                "response": "def solve(x):\n return x*8\n",
+                "passed": true
+              },
+              {
+                "role": "coding",
+                "operation": "*",
+                "number": 11,
+                "prompt": "Write Python solve(x) returning x*11.\n",
+                "answer": "def solve(x):\n return x*11\n",
+                "split": "test",
+                "response": "def solve(x):\n return x*11\n",
+                "passed": true
+              }
+            ]
+          }
+        },
+        "agentic": {
+          "parameters": 76996,
+          "masked_parent_max_logit_error": 0.0,
+          "test": {
+            "response_nll": 0.028301250751201924,
+            "success_by_role": {
+              "agentic": 0.5
+            },
+            "elapsed_seconds": 0.7645981659879908,
+            "traces": [
+              {
+                "role": "agentic",
+                "operation": "+",
+                "number": 0,
+                "prompt": "File solve.py returns x. Test requires x+0.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+0\\n\"}",
+                "passed": true
+              },
+              {
+                "role": "agentic",
+                "operation": "+",
+                "number": 3,
+                "prompt": "File solve.py returns x. Test requires x+3.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+3\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+8\\n\"}",
+                "passed": false
+              },
+              {
+                "role": "agentic",
+                "operation": "+",
+                "number": 6,
+                "prompt": "File solve.py returns x. Test requires x+6.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x++\\n\"}",
+                "passed": false
+              },
+              {
+                "role": "agentic",
+                "operation": "+",
+                "number": 9,
+                "prompt": "File solve.py returns x. Test requires x+9.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+9\\n\"}",
+                "passed": true
+              },
+              {
+                "role": "agentic",
+                "operation": "-",
+                "number": 1,
+                "prompt": "File solve.py returns x. Test requires x-1.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+                "passed": true
+              },
+              {
+                "role": "agentic",
+                "operation": "-",
+                "number": 4,
+                "prompt": "File solve.py returns x. Test requires x-4.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-4\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-3\\n\"}",
+                "passed": false
+              },
+              {
+                "role": "agentic",
+                "operation": "-",
+                "number": 7,
+                "prompt": "File solve.py returns x. Test requires x-7.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+                "passed": true
+              },
+              {
+                "role": "agentic",
+                "operation": "-",
+                "number": 10,
+                "prompt": "File solve.py returns x. Test requires x-10.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-10\\n\"}",
+                "passed": true
+              },
+              {
+                "role": "agentic",
+                "operation": "*",
+                "number": 2,
+                "prompt": "File solve.py returns x. Test requires x*2.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*3\\n\"}",
+                "passed": false
+              },
+              {
+                "role": "agentic",
+                "operation": "*",
+                "number": 5,
+                "prompt": "File solve.py returns x. Test requires x*5.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*1\\n\"}",
+                "passed": false
+              },
+              {
+                "role": "agentic",
+                "operation": "*",
+                "number": 8,
+                "prompt": "File solve.py returns x. Test requires x*8.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*8\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*g\\n\"}",
+                "passed": false
+              },
+              {
+                "role": "agentic",
+                "operation": "*",
+                "number": 11,
+                "prompt": "File solve.py returns x. Test requires x*11.\nEmit JSON edit action with tool and code.\n",
+                "answer": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+                "split": "test",
+                "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*11\\n\"}",
+                "passed": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "pretraining": {
+    "trace": [
+      {
+        "step": 1,
+        "loss": 31.893800735473633
+      },
+      {
+        "step": 100,
+        "loss": 0.11151096969842911
+      },
+      {
+        "step": 200,
+        "loss": 0.03229503333568573
+      },
+      {
+        "step": 300,
+        "loss": 0.03784773871302605
+      }
+    ],
+    "elapsed_seconds": 2.1670278329984285,
+    "target_tokens": 97611,
+    "target_tokens_per_second": 45043.72233417031
+  },
+  "completed_runs": [
+    "dense_continuation",
+    "unrestricted_moe",
+    "grouped_moe"
+  ]
+}

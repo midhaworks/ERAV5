@@ -1,0 +1,69 @@
+{
+  "results_sha256": "66287c362b6bd64aa69427a416ba4e918cd35de10adf4694c5a9988c6a8c44b5",
+  "checks": [
+    {
+      "task": "shipping",
+      "turn": 1,
+      "exact_match": true,
+      "action_match": true
+    },
+    {
+      "task": "shipping",
+      "turn": 9,
+      "exact_match": false,
+      "action_match": true
+    },
+    {
+      "task": "shipping",
+      "turn": 13,
+      "exact_match": true,
+      "action_match": true
+    },
+    {
+      "task": "pagination",
+      "turn": 1,
+      "exact_match": true,
+      "action_match": true
+    },
+    {
+      "task": "pagination",
+      "turn": 7,
+      "exact_match": true,
+      "action_match": true
+    },
+    {
+      "task": "pagination",
+      "turn": 11,
+      "exact_match": true,
+      "action_match": true
+    },
+    {
+      "task": "ledger",
+      "turn": 1,
+      "exact_match": true,
+      "action_match": true
+    },
+    {
+      "task": "ledger",
+      "turn": 7,
+      "exact_match": false,
+      "action_match": true
+    },
+    {
+      "task": "ledger",
+      "turn": 11,
+      "exact_match": true,
+      "action_match": true
+    }
+  ],
+  "bundles_replayed": 5,
+  "cache_gate_passed": false,
+  "exact_matching_pairs": 7,
+  "total_pairs": 9,
+  "action_matching_pairs": 9,
+  "matched_subset_generated_tokens": 214,
+  "matched_subset_fresh_seconds": 56.14930566502153,
+  "matched_subset_cached_seconds": 28.62401462701382,
+  "matched_subset_speed_ratio": 1.9616153218434567,
+  "peak_mlx_bytes": 3909172808
+}

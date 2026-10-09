@@ -1,0 +1,3087 @@
+{
+  "seed": 27,
+  "status": "synthetic_prompt_selector_pilot",
+  "parent_checkpoint_sha256": "6a14e74b05d855d85ff0e69605f0536cab42824454ee82e37274d7b0a68c45d8",
+  "data_sha256": "d73cc1f07cfbcd7675ab0204b63c244592838f56728b3634750a229554aafeb1",
+  "selector_training": {
+    "parameters": 8290,
+    "steps": 300,
+    "selected_step": 300,
+    "validation_loss": 0.00043317818199284375,
+    "elapsed_seconds": 0.07790437500807457,
+    "trace": [
+      {
+        "step": 10,
+        "train_loss": 0.6350132822990417,
+        "validation_loss": 0.6228398680686951
+      },
+      {
+        "step": 20,
+        "train_loss": 0.4634455740451813,
+        "validation_loss": 0.439131498336792
+      },
+      {
+        "step": 30,
+        "train_loss": 0.21533548831939697,
+        "validation_loss": 0.19194863736629486
+      },
+      {
+        "step": 40,
+        "train_loss": 0.05901111289858818,
+        "validation_loss": 0.05070262774825096
+      },
+      {
+        "step": 50,
+        "train_loss": 0.01610184647142887,
+        "validation_loss": 0.01423187181353569
+      },
+      {
+        "step": 60,
+        "train_loss": 0.006634914316236973,
+        "validation_loss": 0.006093012634664774
+      },
+      {
+        "step": 70,
+        "train_loss": 0.003929883241653442,
+        "validation_loss": 0.0037057148292660713
+      },
+      {
+        "step": 80,
+        "train_loss": 0.002873317338526249,
+        "validation_loss": 0.002745238831266761
+      },
+      {
+        "step": 90,
+        "train_loss": 0.002336739329621196,
+        "validation_loss": 0.0022458417806774378
+      },
+      {
+        "step": 100,
+        "train_loss": 0.002002123976126313,
+        "validation_loss": 0.0019305673195049167
+      },
+      {
+        "step": 110,
+        "train_loss": 0.001761548570357263,
+        "validation_loss": 0.0017008548602461815
+      },
+      {
+        "step": 120,
+        "train_loss": 0.001572951441630721,
+        "validation_loss": 0.0015196441672742367
+      },
+      {
+        "step": 130,
+        "train_loss": 0.0014178570127114654,
+        "validation_loss": 0.0013704515295103192
+      },
+      {
+        "step": 140,
+        "train_loss": 0.001286926562897861,
+        "validation_loss": 0.0012441793223842978
+      },
+      {
+        "step": 150,
+        "train_loss": 0.0011746569070965052,
+        "validation_loss": 0.001135807135142386
+      },
+      {
+        "step": 160,
+        "train_loss": 0.0010774002876132727,
+        "validation_loss": 0.0010419376194477081
+      },
+      {
+        "step": 170,
+        "train_loss": 0.000992492539808154,
+        "validation_loss": 0.0009598964243195951
+      },
+      {
+        "step": 180,
+        "train_loss": 0.0009179044282063842,
+        "validation_loss": 0.0008878351072780788
+      },
+      {
+        "step": 190,
+        "train_loss": 0.0008519903058186173,
+        "validation_loss": 0.0008241292671300471
+      },
+      {
+        "step": 200,
+        "train_loss": 0.0007934800814837217,
+        "validation_loss": 0.0007675702217966318
+      },
+      {
+        "step": 210,
+        "train_loss": 0.0007412704289890826,
+        "validation_loss": 0.0007170809549279511
+      },
+      {
+        "step": 220,
+        "train_loss": 0.0006944884662516415,
+        "validation_loss": 0.0006718423101119697
+      },
+      {
+        "step": 230,
+        "train_loss": 0.0006523913471028209,
+        "validation_loss": 0.0006311536417342722
+      },
+      {
+        "step": 240,
+        "train_loss": 0.0006143767386674881,
+        "validation_loss": 0.000594387121964246
+      },
+      {
+        "step": 250,
+        "train_loss": 0.0005799279897473752,
+        "validation_loss": 0.0005610401858575642
+      },
+      {
+        "step": 260,
+        "train_loss": 0.000548594631254673,
+        "validation_loss": 0.0005307362298481166
+      },
+      {
+        "step": 270,
+        "train_loss": 0.0005200132145546377,
+        "validation_loss": 0.0005030783941037953
+      },
+      {
+        "step": 280,
+        "train_loss": 0.0004938398487865925,
+        "validation_loss": 0.00047776917926967144
+      },
+      {
+        "step": 290,
+        "train_loss": 0.00046985902008600533,
+        "validation_loss": 0.00045452421181835234
+      },
+      {
+        "step": 300,
+        "train_loss": 0.0004477723559830338,
+        "validation_loss": 0.00043317818199284375
+      }
+    ]
+  },
+  "classifier_standard": {
+    "correct": 48,
+    "total": 48,
+    "accuracy_by_role": {
+      "coding": 1.0,
+      "agentic": 1.0
+    },
+    "balanced_accuracy": 1.0,
+    "traces": [
+      {
+        "prompt": "Write Python solve(x) returning x+0.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+0. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+0. Edited solve.py:\ndef solve(x):\n return x+0\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+3.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+3. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+3. Edited solve.py:\ndef solve(x):\n return x+3\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+6.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+6. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+6. Edited solve.py:\ndef solve(x):\n return x+6\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+9.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+9. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+9. Edited solve.py:\ndef solve(x):\n return x+9\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-1.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-1. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-1. Edited solve.py:\ndef solve(x):\n return x-1\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-4.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-4. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-4. Edited solve.py:\ndef solve(x):\n return x-4\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-7.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-7. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-7. Edited solve.py:\ndef solve(x):\n return x-7\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-10.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-10. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-10. Edited solve.py:\ndef solve(x):\n return x-10\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*2.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*2. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*2. Edited solve.py:\ndef solve(x):\n return x*2\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*5.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*5. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*5. Edited solve.py:\ndef solve(x):\n return x*5\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*8.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*8. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*8. Edited solve.py:\ndef solve(x):\n return x*8\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*11.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*11. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*11. Edited solve.py:\ndef solve(x):\n return x*11\nNext JSON action?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      }
+    ]
+  },
+  "classifier_shifted": {
+    "correct": 48,
+    "total": 48,
+    "accuracy_by_role": {
+      "coding": 1.0,
+      "agentic": 1.0
+    },
+    "balanced_accuracy": 1.0,
+    "traces": [
+      {
+        "prompt": "Return Python solve(x) for x+0.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x+0.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+0. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+0. Edited file:\ndef solve(x):\n return x+0\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x+3.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x+3.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+3. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+3. Edited file:\ndef solve(x):\n return x+3\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x+6.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x+6.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+6. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+6. Edited file:\ndef solve(x):\n return x+6\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x+9.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x+9.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+9. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x+9. Edited file:\ndef solve(x):\n return x+9\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x-1.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x-1.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-1. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-1. Edited file:\ndef solve(x):\n return x-1\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x-4.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x-4.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-4. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-4. Edited file:\ndef solve(x):\n return x-4\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x-7.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x-7.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-7. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-7. Edited file:\ndef solve(x):\n return x-7\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x-10.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x-10.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-10. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x-10. Edited file:\ndef solve(x):\n return x-10\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x*2.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x*2.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*2. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*2. Edited file:\ndef solve(x):\n return x*2\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x*5.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x*5.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*5. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*5. Edited file:\ndef solve(x):\n return x*5\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x*8.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x*8.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*8. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*8. Edited file:\ndef solve(x):\n return x*8\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Return Python solve(x) for x*11.\n",
+        "expected_role": "coding",
+        "chosen_group": "coding",
+        "correct": true
+      },
+      {
+        "prompt": "Read and fix solve.py for x*11.\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*11. Read tool output: def solve(x): return x\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      },
+      {
+        "prompt": "Goal x*11. Edited file:\ndef solve(x):\n return x*11\nNext tool action in JSON?\n",
+        "expected_role": "agentic",
+        "chosen_group": "agentic",
+        "correct": true
+      }
+    ]
+  },
+  "oracle": {
+    "scores": {
+      "agentic": {
+        "passed": 6,
+        "total": 12,
+        "success_rate": 0.5,
+        "model_calls": 36,
+        "calls_per_success": 6.0
+      },
+      "coding": {
+        "passed": 9,
+        "total": 12,
+        "success_rate": 0.75,
+        "model_calls": 12,
+        "calls_per_success": 1.3333333333333333
+      }
+    },
+    "traces": [
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+0\n",
+        "passed": true
+      },
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+0. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+1\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+0. Edited solve.py:\ndef solve(x):\n return x+1\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+3\n",
+        "passed": true
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+3. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+3\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+3. Edited solve.py:\ndef solve(x):\n return x+3\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+6\n",
+        "passed": true
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+6. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+6. Edited solve.py:\ndef solve(x):\n return x+6\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+4\n",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+9. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+4\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+9. Edited solve.py:\ndef solve(x):\n return x+4\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-1\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-1. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-1. Edited solve.py:\ndef solve(x):\n return x-1\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-4\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-4. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-6\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-4. Edited solve.py:\ndef solve(x):\n return x-6\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-7\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-7. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-7. Edited solve.py:\ndef solve(x):\n return x-7\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-10\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-10. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-11\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-10. Edited solve.py:\ndef solve(x):\n return x-11\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*2\n",
+        "passed": true
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*2. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*2. Edited solve.py:\ndef solve(x):\n return x*2\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*5\n",
+        "passed": true
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*5. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*5. Edited solve.py:\ndef solve(x):\n return x*5\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*0\n",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*8. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*0\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*8. Edited solve.py:\ndef solve(x):\n return x*0\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*10\n",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*11. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*10\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*11. Edited solve.py:\ndef solve(x):\n return x*10\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      }
+    ],
+    "routing": [
+      {
+        "prompt": "Write Python solve(x) returning x+0.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+0. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+0. Edited solve.py:\ndef solve(x):\n return x+1\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+3.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+3. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+3. Edited solve.py:\ndef solve(x):\n return x+3\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+6.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+6. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+6. Edited solve.py:\ndef solve(x):\n return x+6\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+9.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+9. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+9. Edited solve.py:\ndef solve(x):\n return x+4\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-1.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-1. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-1. Edited solve.py:\ndef solve(x):\n return x-1\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-4.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-4. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-4. Edited solve.py:\ndef solve(x):\n return x-6\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-7.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-7. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-7. Edited solve.py:\ndef solve(x):\n return x-7\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-10.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-10. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-10. Edited solve.py:\ndef solve(x):\n return x-11\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*2.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*2. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*2. Edited solve.py:\ndef solve(x):\n return x*2\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*5.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*5. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*5. Edited solve.py:\ndef solve(x):\n return x*5\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*8.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*8. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*8. Edited solve.py:\ndef solve(x):\n return x*0\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*11.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*11. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*11. Edited solve.py:\ndef solve(x):\n return x*10\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      }
+    ],
+    "elapsed_seconds": 1.3332424999971408
+  },
+  "learned": {
+    "scores": {
+      "agentic": {
+        "passed": 6,
+        "total": 12,
+        "success_rate": 0.5,
+        "model_calls": 36,
+        "calls_per_success": 6.0
+      },
+      "coding": {
+        "passed": 9,
+        "total": 12,
+        "success_rate": 0.75,
+        "model_calls": 12,
+        "calls_per_success": 1.3333333333333333
+      }
+    },
+    "traces": [
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+0\n",
+        "passed": true
+      },
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+0. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+1\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+0. Edited solve.py:\ndef solve(x):\n return x+1\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+3\n",
+        "passed": true
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+3. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+3\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+3. Edited solve.py:\ndef solve(x):\n return x+3\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+6\n",
+        "passed": true
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+6. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+6\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+6. Edited solve.py:\ndef solve(x):\n return x+6\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x+4\n",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x+9. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x+4\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x+9. Edited solve.py:\ndef solve(x):\n return x+4\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-1\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-1. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-1\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-1. Edited solve.py:\ndef solve(x):\n return x-1\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-4\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-4. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-6\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-4. Edited solve.py:\ndef solve(x):\n return x-6\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-7\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-7. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-7\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-7. Edited solve.py:\ndef solve(x):\n return x-7\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x-10\n",
+        "passed": true
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x-10. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x-11\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x-10. Edited solve.py:\ndef solve(x):\n return x-11\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*2\n",
+        "passed": true
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*2. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*2\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*2. Edited solve.py:\ndef solve(x):\n return x*2\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*5\n",
+        "passed": true
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "agentic",
+        "passed": true,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*5. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*5\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*5. Edited solve.py:\ndef solve(x):\n return x*5\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests passed"
+          }
+        ],
+        "failure": null
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*0\n",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*8. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*0\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*8. Edited solve.py:\ndef solve(x):\n return x*0\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "coding",
+        "response": "def solve(x):\n return x*10\n",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+            "response": "{\"tool\":\"read\"}",
+            "accepted": true,
+            "tool_result": "def solve(x): return x"
+          },
+          {
+            "phase": "edit",
+            "prompt": "Goal x*11. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+            "response": "{\"tool\":\"edit\",\"code\":\"def solve(x):\\n return x*10\\n\"}",
+            "accepted": true,
+            "tool_result": "edit accepted"
+          },
+          {
+            "phase": "test",
+            "prompt": "Goal x*11. Edited solve.py:\ndef solve(x):\n return x*10\nNext JSON action?\n",
+            "response": "{\"tool\":\"test\"}",
+            "accepted": true,
+            "tool_result": "tests failed"
+          }
+        ],
+        "failure": "tests_failed"
+      }
+    ],
+    "routing": [
+      {
+        "prompt": "Write Python solve(x) returning x+0.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+0. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+0. Edited solve.py:\ndef solve(x):\n return x+1\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+3.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+3. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+3. Edited solve.py:\ndef solve(x):\n return x+3\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+6.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+6. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+6. Edited solve.py:\ndef solve(x):\n return x+6\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x+9.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+9. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x+9. Edited solve.py:\ndef solve(x):\n return x+4\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-1.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-1. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-1. Edited solve.py:\ndef solve(x):\n return x-1\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-4.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-4. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-4. Edited solve.py:\ndef solve(x):\n return x-6\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-7.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-7. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-7. Edited solve.py:\ndef solve(x):\n return x-7\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x-10.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-10. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x-10. Edited solve.py:\ndef solve(x):\n return x-11\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*2.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*2. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*2. Edited solve.py:\ndef solve(x):\n return x*2\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*5.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*5. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*5. Edited solve.py:\ndef solve(x):\n return x*5\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*8.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*8. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*8. Edited solve.py:\ndef solve(x):\n return x*0\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Write Python solve(x) returning x*11.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*11. Read solve.py: def solve(x): return x\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Goal x*11. Edited solve.py:\ndef solve(x):\n return x*10\nNext JSON action?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      }
+    ],
+    "elapsed_seconds": 1.381733999995049
+  },
+  "shifted_oracle": {
+    "scores": {
+      "agentic": {
+        "passed": 0,
+        "total": 12,
+        "success_rate": 0.0,
+        "model_calls": 12,
+        "calls_per_success": null
+      },
+      "coding": {
+        "passed": 0,
+        "total": 12,
+        "success_rate": 0.0,
+        "model_calls": 12,
+        "calls_per_success": null
+      }
+    },
+    "traces": [
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "coding",
+        "response": " rn ref solve(x):\n return x+2\n",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+            "response": "{\"turn re(x):\":\":\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "wrong_tool_or_schema"
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "coding",
+        "response": " rede(e solve(x):\n return x+4\n",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+            "response": "{\"turn re(x):\"te(x)\":\"tefff rn re(x+SSSSSSSSSt):\"turn x+4\\n\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      }
+    ],
+    "routing": [
+      {
+        "prompt": "Return Python solve(x) for x+0.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+0.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x+3.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+3.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x+6.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+6.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x+9.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+9.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-1.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-1.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-4.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-4.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-7.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-7.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-10.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-10.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*2.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*2.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*5.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*5.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*8.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*8.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*11.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*11.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      }
+    ],
+    "elapsed_seconds": 0.1949800409784075
+  },
+  "shifted_learned": {
+    "scores": {
+      "agentic": {
+        "passed": 0,
+        "total": 12,
+        "success_rate": 0.0,
+        "model_calls": 12,
+        "calls_per_success": null
+      },
+      "coding": {
+        "passed": 0,
+        "total": 12,
+        "success_rate": 0.0,
+        "model_calls": 12,
+        "calls_per_success": null
+      }
+    },
+    "traces": [
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 0,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+0.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 3,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+3.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 6,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+6.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "+",
+        "number": 9,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x+9.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 1,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-1.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 4,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-4.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 7,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-7.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "coding",
+        "response": " rn ref solve(x):\n return x+2\n",
+        "passed": false
+      },
+      {
+        "operation": "-",
+        "number": 10,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x-10.\nNext JSON action?\n",
+            "response": "{\"turn re(x):\":\":\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "wrong_tool_or_schema"
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 2,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*2.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 5,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*5.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "coding",
+        "response": "x}",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 8,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*8.\nNext JSON action?\n",
+            "response": "{\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "coding",
+        "response": " rede(e solve(x):\n return x+4\n",
+        "passed": false
+      },
+      {
+        "operation": "*",
+        "number": 11,
+        "split": "test",
+        "role": "agentic",
+        "passed": false,
+        "events": [
+          {
+            "phase": "read",
+            "prompt": "Repair solve.py to return x*11.\nNext JSON action?\n",
+            "response": "{\"turn re(x):\"te(x)\":\"tefff rn re(x+SSSSSSSSSt):\"turn x+4\\n\"}",
+            "accepted": false
+          }
+        ],
+        "failure": "invalid_json"
+      }
+    ],
+    "routing": [
+      {
+        "prompt": "Return Python solve(x) for x+0.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+0.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x+3.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+3.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x+6.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+6.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x+9.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x+9.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-1.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-1.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-4.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-4.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-7.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-7.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x-10.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x-10.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*2.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*2.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*5.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*5.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*8.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*8.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      },
+      {
+        "prompt": "Return Python solve(x) for x*11.\n",
+        "chosen_group": "coding",
+        "expected_role": "coding"
+      },
+      {
+        "prompt": "Read and fix solve.py for x*11.\nNext tool action in JSON?\n",
+        "chosen_group": "agentic",
+        "expected_role": "agentic"
+      }
+    ],
+    "elapsed_seconds": 0.19874324998818338
+  }
+}

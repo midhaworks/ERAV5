@@ -1,0 +1,21 @@
+{
+  "selection": "HumanEval/0 through HumanEval/7, numeric ID order; no task substitution",
+  "task_ids": [
+    "HumanEval/0",
+    "HumanEval/1",
+    "HumanEval/2",
+    "HumanEval/3",
+    "HumanEval/4",
+    "HumanEval/5",
+    "HumanEval/6",
+    "HumanEval/7"
+  ],
+  "model_revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "max_tokens": 512,
+  "temperature": 0,
+  "enable_thinking": false,
+  "metric": "one greedy complete-function generation per task; unchanged official tests",
+  "scope": "eight-task subset, not full HumanEval, SOTA, agentic or production evaluation",
+  "contamination": "externally authored, but public since 2021; pretraining contamination unknown",
+  "safety": "macOS sandbox required before executing candidates; no unrestricted fallback"
+}

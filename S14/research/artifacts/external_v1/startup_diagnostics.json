@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "scoped",
+    "returncode": -6,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "variant": "read_only",
+    "returncode": 0,
+    "stdout": "startup_ok\n",
+    "stderr": ""
+  },
+  {
+    "variant": "map_only",
+    "returncode": -6,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "variant": "device_read",
+    "returncode": -6,
+    "stdout": "",
+    "stderr": ""
+  }
+]

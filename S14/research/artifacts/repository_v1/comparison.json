@@ -1,0 +1,43 @@
+{
+  "scope": "single observed run per profile on reused authored development repositories",
+  "source_sha256": {
+    "serialized": "d493eefb889ef8686993c9e6d323bb3e909b16073041a997638c93eeff4880bf",
+    "bundled": "a9a68602fe5f41634bb3ffa26863fda0775803d88c1019689abffcc33fb7b475"
+  },
+  "metrics": {
+    "serialized": {
+      "passed": 3,
+      "total": 3,
+      "turns": 35,
+      "accepted_tool_calls": 30,
+      "read_calls": 10,
+      "bundled_read_turns": 0,
+      "protocol_invalid_turns": 5,
+      "generated_tokens": 1646,
+      "generation_seconds": 378.9809187509818,
+      "tokens_per_second": 4.343226580970802,
+      "episode_seconds": 381.5542187910178,
+      "peak_mlx_gib": 3.547698564827442
+    },
+    "bundled": {
+      "passed": 3,
+      "total": 3,
+      "turns": 24,
+      "accepted_tool_calls": 32,
+      "read_calls": 12,
+      "bundled_read_turns": 3,
+      "protocol_invalid_turns": 1,
+      "generated_tokens": 1424,
+      "generation_seconds": 259.4337039560778,
+      "tokens_per_second": 5.488878192330336,
+      "episode_seconds": 262.38859708298696,
+      "peak_mlx_gib": 3.631255693733692
+    }
+  },
+  "observed_episode_time_ratio": 1.4541570138062887,
+  "observed_episode_time_reduction": 0.31231635201313124,
+  "same_tasks_and_model": true,
+  "prefix_cache_enabled": false,
+  "causal_kernel_speedup_claim": false,
+  "production_qualified": false
+}

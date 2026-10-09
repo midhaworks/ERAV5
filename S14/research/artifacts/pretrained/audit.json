@@ -1,0 +1,182 @@
+{
+  "results_sha256": "caf455b4831c543a61699c0f7492d890d7027e256589d934e2d01cbf8fab8fe7",
+  "input_preservation_checked_for": "rotate",
+  "outcomes": [
+    {
+      "task": "stable_unique",
+      "role": "coding",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "stable_unique",
+      "role": "coding",
+      "style": "reworded",
+      "passed": false,
+      "error": "ValueError: Only plain solve function allowed"
+    },
+    {
+      "task": "stable_unique",
+      "role": "repair",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "stable_unique",
+      "role": "repair",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "balanced",
+      "role": "coding",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "balanced",
+      "role": "coding",
+      "style": "reworded",
+      "passed": false,
+      "error": "ValueError: Only plain solve function allowed"
+    },
+    {
+      "task": "balanced",
+      "role": "repair",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "balanced",
+      "role": "repair",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "first_index",
+      "role": "coding",
+      "style": "direct",
+      "passed": false,
+      "error": "wrong_answer",
+      "actual": 2,
+      "expected": 1
+    },
+    {
+      "task": "first_index",
+      "role": "coding",
+      "style": "reworded",
+      "passed": false,
+      "error": "wrong_answer",
+      "actual": 2,
+      "expected": 1
+    },
+    {
+      "task": "first_index",
+      "role": "repair",
+      "style": "direct",
+      "passed": false,
+      "error": "wrong_answer",
+      "actual": 3,
+      "expected": 1
+    },
+    {
+      "task": "first_index",
+      "role": "repair",
+      "style": "reworded",
+      "passed": false,
+      "error": "wrong_answer",
+      "actual": 3,
+      "expected": 1
+    },
+    {
+      "task": "runs",
+      "role": "coding",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "runs",
+      "role": "coding",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "runs",
+      "role": "repair",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "runs",
+      "role": "repair",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "rotate",
+      "role": "coding",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "rotate",
+      "role": "coding",
+      "style": "reworded",
+      "passed": false,
+      "error": "ValueError: Only plain solve function allowed"
+    },
+    {
+      "task": "rotate",
+      "role": "repair",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "rotate",
+      "role": "repair",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "positive_sum",
+      "role": "coding",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "positive_sum",
+      "role": "coding",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "positive_sum",
+      "role": "repair",
+      "style": "direct",
+      "passed": true,
+      "error": null
+    },
+    {
+      "task": "positive_sum",
+      "role": "repair",
+      "style": "reworded",
+      "passed": true,
+      "error": null
+    }
+  ]
+}

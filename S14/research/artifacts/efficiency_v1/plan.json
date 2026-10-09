@@ -1,0 +1,25 @@
+{
+  "selection": {
+    "shipping": [
+      1,
+      9,
+      13
+    ],
+    "pagination": [
+      1,
+      7,
+      11
+    ],
+    "ledger": [
+      1,
+      7,
+      11
+    ]
+  },
+  "max_tokens": 512,
+  "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "source_sha256": "d493eefb889ef8686993c9e6d323bb3e909b16073041a997638c93eeff4880bf",
+  "comparison": "same fixed historical prompts; fresh versus history-only prefix cache",
+  "order": "alternate fresh-first/cached-first by selected-prompt index",
+  "gate": "exact token ids, text and finish reason match; report failures without enabling reuse"
+}

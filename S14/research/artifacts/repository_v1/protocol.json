@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "revision": "0e7ffd5c629ef7719d4cbc04069232580bfa9d9c",
+  "max_calls": 16,
+  "max_tokens": 512,
+  "temperature": 0,
+  "enable_thinking": false,
+  "full_run_tasks": 3,
+  "primary_metric": "finished with fresh visible pass and all hidden integration tests passing",
+  "stop_rule": "one full run; no selective retries or edits to suite after inference",
+  "scope": "authored multi-file miniature repositories, not public benchmark or production qualification"
+}
