@@ -1,0 +1,30 @@
+{
+  "seed": 14,
+  "task": "piecewise linear regression (sign of x[0] selects one of two rules)",
+  "train_examples": 4096,
+  "validation_examples": 1024,
+  "input_dim": 8,
+  "output_dim": 1,
+  "dense_steps": 500,
+  "moe_steps_after_conversion": 800,
+  "experts": 4,
+  "top_k": 2,
+  "dense_parameters": 9,
+  "moe_parameters": 72,
+  "dense_train_mse": 3.858891487121582,
+  "dense_validation_mse": 4.349681377410889,
+  "moe_conversion_train_mse": 3.850186586380005,
+  "moe_conversion_validation_mse": 4.33489465713501,
+  "moe_final_train_mse": 0.11738787591457367,
+  "moe_final_validation_mse": 0.16662870347499847,
+  "moe_validation_topk_assignments": [
+    525,
+    430,
+    535,
+    558
+  ],
+  "moe_validation_router_entropy": 0.5594637989997864,
+  "dense_reduced_loss": true,
+  "moe_reduced_loss_after_conversion": true,
+  "moe_beats_dense_validation": true
+}
